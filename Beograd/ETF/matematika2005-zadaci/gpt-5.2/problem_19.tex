@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Broj načina na koji se mogu poređati u niz $n$ nula i $k$ jedinica, tako da nijedne dve jedinice nisu susedne, ako je $k\le n+1$ je:
+\[
+\text{(A) }\binom{n+1}{k}\quad
+\text{(B) }\binom{n}{k}\quad
+\text{(C) }\frac{n!}{k!}\quad
+\text{(D) }\frac{(n+1)!}{k!}\quad
+\text{(E) }\binom{n-1}{k}\quad
+\text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Najpre poređamo $n$ nula:
+\[
+0\ \ 0\ \ 0\ \ \cdots\ \ 0
+\]
+Između i sa obe strane nula postoji ukupno $n+1$ ``mesta'' (razmaka) u koje možemo ubacivati jedinice:
+\[
+\_\,0\,\_\,0\,\_\,0\,\_ \cdots 0\,\_
+\]
+Da se dve jedinice ne bi dodirivale, u svaki razmak možemo staviti najviše jednu jedinicu. Zato biramo $k$ razmaka od ukupno $n+1$ i u njih stavljamo jedinice.
+
+Broj načina je
+\[
+\binom{n+1}{k}.
+\]
+
+\subsection*{Answer}
+$\binom{n+1}{k}$ (option \textbf{A}).
+
+\end{document}
+

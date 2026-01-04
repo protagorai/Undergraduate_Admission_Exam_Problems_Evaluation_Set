@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+The set of all real solutions to the inequality 
+\[
+\frac{|3^x - 1| - |3 - 3^x| - 2}{\sqrt{4^x - 2^{x+3} + 16}} \geq 0
+\]
+is of the form $(a, b) \cup (b, +\infty)$ for some real numbers $a$, $b$, $c$, $d$ where $-\infty < a < b < c < d < +\infty$.
+
+(A) $(a, b)$ \quad (B) $[a, b) \cup (b, +\infty)$ \quad (C) $[a, +\infty)$ \quad (D) $(a, b) \cup [c, d)$ \quad (E) $(-\infty, a] \cup [b, c]$
+
+\subsection*{Solution}
+First, analyze the denominator: $\sqrt{4^x - 2^{x+3} + 16}$
+
+Let $t = 2^x > 0$:
+\[
+4^x - 2^{x+3} + 16 = t^2 - 8t + 16 = (t - 4)^2
+\]
+
+So $\sqrt{(t-4)^2} = |t - 4| = |2^x - 4|$
+
+The denominator is zero when $2^x = 4$, i.e., $x = 2$.
+
+For the fraction to be defined and $\geq 0$, we need:
+\begin{itemize}
+\item $x \neq 2$ (denominator $\neq 0$)
+\item Numerator $\geq 0$
+\end{itemize}
+
+\textbf{Numerator:} $|3^x - 1| - |3 - 3^x| - 2$
+
+Let $u = 3^x > 0$.
+
+\textbf{Case 1:} $u \geq 3$ (i.e., $x \geq 1$)
+\[
+(u - 1) - (u - 3) - 2 = u - 1 - u + 3 - 2 = 0
+\]
+Numerator $= 0 \geq 0$ ✓
+
+\textbf{Case 2:} $1 \leq u < 3$ (i.e., $0 \leq x < 1$)
+\[
+(u - 1) - (3 - u) - 2 = u - 1 - 3 + u - 2 = 2u - 6
+\]
+This is $\geq 0$ when $u \geq 3$, but we're in $1 \leq u < 3$, so numerator $< 0$ ✗
+
+\textbf{Case 3:} $0 < u < 1$ (i.e., $x < 0$)
+\[
+(1 - u) - (3 - u) - 2 = 1 - u - 3 + u - 2 = -4 < 0
+\]
+Numerator $< 0$ ✗
+
+So the solution is $x \geq 1$ with $x \neq 2$, which is $[1, 2) \cup (2, +\infty)$.
+
+This matches form (B) with $a = 1$, $b = 2$.
+
+\subsection*{Answer}
+(B) $[a, b) \cup (b, +\infty)$
+
+\end{document}

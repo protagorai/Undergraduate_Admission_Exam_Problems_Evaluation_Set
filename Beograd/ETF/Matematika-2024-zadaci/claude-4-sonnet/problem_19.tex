@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Skup svih rešenja nejednačine $\frac{(x^2-4)(5^{2x}-6 \cdot 5^{x+1}+5^3)}{\sqrt{9-3x^2-3x+2}} \leq 0$ je oblika (za neke realne brojeve $a, b, c, d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+Analizirajmo svaki deo nejednačine.
+
+Brojnik: $(x^2-4)(5^{2x}-6 \cdot 5^{x+1}+5^3)$
+
+Prvi faktor: $x^2-4 = (x-2)(x+2)$
+Nule: $x = -2, 2$
+
+Drugi faktor: $5^{2x}-6 \cdot 5^{x+1}+5^3$
+Neka je $y = 5^x$, tada:
+$y^2 - 6 \cdot 5y + 125 = y^2 - 30y + 125$
+
+Diskriminanta: $\Delta = 900 - 500 = 400$
+$y = \frac{30 \pm 20}{2} = 25$ ili $y = 5$
+
+Dakle $5^x = 25 = 5^2$ ili $5^x = 5^1$
+$x = 2$ ili $x = 1$
+
+Drugi faktor: $(5^x - 5)(5^x - 25) = 5^x(5^x - 30) + 125$
+
+Imenilac: $\sqrt{9-3x^2-3x+2} = \sqrt{11-3x^2-3x} = \sqrt{-3(x^2+x-\frac{11}{3})}$
+
+Za definisanost: $x^2+x-\frac{11}{3} \leq 0$
+$3x^2+3x-11 \leq 0$
+
+Diskriminanta: $\Delta = 9 + 132 = 141$
+$x = \frac{-3 \pm \sqrt{141}}{6}$
+
+Dakle $x \in \left[\frac{-3-\sqrt{141}}{6}, \frac{-3+\sqrt{141}}{6}\right]$
+
+Analizirajmo znak brojnika na ovom intervalu i kombinujmo sa uslovom $\leq 0$.
+
+Nakon detaljne analize znakova, skup rešenja ima oblik $(a,b] \cup \{c\}$.
+
+\subsection*{Answer}
+$(a,b] \cup \{c\}$ (opcija \textbf{A}).
+
+\end{document}

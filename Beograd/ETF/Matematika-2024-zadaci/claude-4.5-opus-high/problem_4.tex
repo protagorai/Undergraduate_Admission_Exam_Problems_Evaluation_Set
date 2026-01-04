@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Let $x_1$ and $x_2$ be solutions of equation $x^2 + (m-2)x + m = 0$, $m \in \mathbb{R}$. 
+Find the difference between the maximum and minimum values of parameter $m$ for which 
+$x_1^2 + x_2^2 \leq 8 - 9x_1x_2$ holds.
+
+\subsection*{Solution}
+By Vieta's formulas:
+\[
+x_1 + x_2 = -(m-2) = 2-m, \quad x_1 x_2 = m
+\]
+
+We know that:
+\[
+x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = (2-m)^2 - 2m
+\]
+
+The condition becomes:
+\[
+(2-m)^2 - 2m \leq 8 - 9m
+\]
+
+Expanding:
+\[
+4 - 4m + m^2 - 2m \leq 8 - 9m
+\]
+\[
+m^2 - 6m + 4 \leq 8 - 9m
+\]
+\[
+m^2 - 6m + 4 - 8 + 9m \leq 0
+\]
+\[
+m^2 + 3m - 4 \leq 0
+\]
+
+Factoring:
+\[
+(m + 4)(m - 1) \leq 0
+\]
+
+This holds when $-4 \leq m \leq 1$.
+
+The difference between maximum and minimum:
+\[
+1 - (-4) = 5
+\]
+
+\subsection*{Answer}
+$5$ (option \textbf{A}).
+
+\end{document}
+

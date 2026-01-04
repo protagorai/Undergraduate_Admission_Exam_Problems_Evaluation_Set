@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 8}
+The limit $\lim_{x \to 2} \frac{\text{tg} \frac{3\pi x}{8} \cdot (\log(5x-9)+1) \cdot (\sqrt[3]{x} - \sqrt[3]{2})}{(x-2) \cdot (\sqrt{2x^3 - x - 5} - \sqrt{2x})}$ is equal to:
+
+\subsection*{Solution}
+We evaluate the limit of each factor as $x \to 2$.
+1. $\text{tg} \frac{3\pi x}{8} \to \text{tg} \frac{3\pi (2)}{8} = \text{tg} \frac{3\pi}{4} = -1$.
+2. $\log(5x-9)+1 \to \log(10-9)+1 = \log(1)+1 = 0+1 = 1$.
+3. Denominator term $\sqrt{2x^3 - x - 5} - \sqrt{2x} \to \sqrt{16-2-5} - \sqrt{4} = \sqrt{9} - 2 = 3 - 2 = 1$.
+
+So the limit simplifies to:
+\[ (-1) \cdot (1) \cdot \lim_{x \to 2} \frac{\sqrt[3]{x} - \sqrt[3]{2}}{x-2} \cdot \frac{1}{1} \]
+Let $L = \lim_{x \to 2} \frac{\sqrt[3]{x} - \sqrt[3]{2}}{x-2}$.
+This is the derivative of $f(x) = x^{1/3}$ at $x=2$.
+\[ f'(x) = \frac{1}{3}x^{-2/3} \]
+\[ f'(2) = \frac{1}{3} (2)^{-2/3} = \frac{1}{3 \sqrt[3]{4}} = \frac{1}{3 \cdot 2^{2/3}} \]
+Thus the total limit is:
+\[ -1 \cdot \frac{1}{3 \cdot 2^{2/3}} = -\frac{1}{3 \cdot 2^{2/3}} \]
+
+\subsection*{Answer}
+$-\frac{1}{3 \cdot 2^{2/3}}$ (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 6}
+Neka su $x_1, x_2$ i $x_3$ rešenja jednačine $x^3+px+q=0$, $p,q\in\mathbb{R}$, $p\neq 0, q\neq 0$.
+Tada je vrednost izraza $\frac{x_1+x_2+x_3}{x_1^2+x_2^2+x_3^2}-x_1x_2(1+x_3)-(x_1+x_2)x_3$ jednaka:
+
+\subsection*{Solution}
+Koristeći Vijetove formule za jednačinu $x^3+0x^2+px+q=0$, imamo:
+\[
+x_1+x_2+x_3 = 0
+\]
+\[
+x_1x_2+x_1x_3+x_2x_3 = p
+\]
+\[
+x_1x_2x_3 = -q
+\]
+Posmatrajmo dati izraz:
+\[
+\frac{x_1+x_2+x_3}{x_1^2+x_2^2+x_3^2}-x_1x_2(1+x_3)-(x_1+x_2)x_3
+\]
+Prvi član je jednak 0 jer je brojilac $x_1+x_2+x_3=0$.
+Ostaje:
+\[
+-x_1x_2(1+x_3) - (x_1+x_2)x_3 = -x_1x_2 - x_1x_2x_3 - x_1x_3 - x_2x_3
+\]
+Grupisanjem članova:
+\[
+-(x_1x_2 + x_1x_3 + x_2x_3) - x_1x_2x_3
+\]
+Zamenom vrednosti iz Vijetovih formula:
+\[
+-(p) - (-q) = -p + q = q-p
+\]
+
+\subsection*{Answer}
+$q-p$ (Opcija \textbf{D})
+
+\end{document}

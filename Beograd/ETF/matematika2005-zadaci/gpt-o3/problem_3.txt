@@ -1,0 +1,3 @@
+Problem 3: Ako je x jednako x% od y , gde je x pozitivan realan broj, vrednost broja y jednaka je:
+
+(A) 100   (B) 200   (C) 10000   (D) Ne postoji   (E) Ne može se odrediti   (N) Ne znam

@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako realni brojevi $x$ i $y$ zadovoljavaju jednakost
+\[
+\frac{2x+i}{y+i}=\frac{1+i\sin\alpha}{1-i\sin 3\alpha}
+\qquad (\alpha\neq k\pi,\ \alpha\neq \tfrac{\pi}{2}+k\pi,\ k\in\mathbb Z,\ i^2=-1),
+\]
+tada je količnik $\dfrac{y}{x}$ jednak:
+\[
+\text{(A) }-4+2\cos 2\alpha\quad
+\text{(B) }4+2\cos 2\alpha\quad
+\text{(C) }2-4\cos 2\alpha\quad
+\text{(D) }-2-4\cos 2\alpha\quad
+\text{(E) }2-2\sin 2\alpha.
+\]
+
+\subsection*{Solution}
+Označimo
+\[
+R=\frac{1+i\sin\alpha}{1-i\sin 3\alpha}=a+ib.
+\]
+Tada iz
+\[
+\frac{2x+i}{y+i}=a+ib
+\]
+dobijamo
+\[
+2x+i=(a+ib)(y+i)=(a+ib)y+(a+ib)i=(ay-b)+i(by+a).
+\]
+Poređenjem realnog i imaginarnog dela sledi sistem
+\[
+2x=ay-b,\qquad 1=by+a.
+\]
+Za $a,b$ izračunamo eksplicitno:
+\[
+R=\frac{(1+i\sin\alpha)(1+i\sin 3\alpha)}{1+\sin^2 3\alpha}
+=\frac{1-\sin\alpha\sin 3\alpha}{1+\sin^2 3\alpha}
+i\frac{\sin\alpha+\sin 3\alpha}{1+\sin^2 3\alpha},
+\]
+pa
+\[
+a=\frac{1-\sin\alpha\sin 3\alpha}{1+\sin^2 3\alpha},
+\qquad
+b=\frac{\sin\alpha+\sin 3\alpha}{1+\sin^2 3\alpha}.
+\]
+Iz jednačine $1=by+a$ dobijamo
+\[
+y=\frac{1-a}{b}
+=\frac{\sin 3\alpha(\sin 3\alpha+\sin\alpha)}{\sin\alpha+\sin 3\alpha}
+=\sin 3\alpha.
+\]
+Zatim
+\[
+2x=ay-b
+=\frac{(1-\sin\alpha\sin 3\alpha)\sin 3\alpha-(\sin\alpha+\sin 3\alpha)}{1+\sin^2 3\alpha}
+=-\sin\alpha,
+\]
+pa je $x=-\dfrac{\sin\alpha}{2}$. Zato
+\[
+\frac{y}{x}=\frac{\sin 3\alpha}{-\sin\alpha/2}
+=-2\frac{\sin 3\alpha}{\sin\alpha}
+=-2\,(3-4\sin^2\alpha)
+=-6+8\sin^2\alpha.
+\]
+Kako je $\sin^2\alpha=\dfrac{1-\cos 2\alpha}{2}$, sledi
+\[
+\frac{y}{x}=-6+8\cdot\frac{1-\cos 2\alpha}{2}
+=-2-4\cos 2\alpha.
+\]
+
+\subsection*{Answer}
+$-2-4\cos 2\alpha$ (option \textbf{D}).
+
+\end{document}
+

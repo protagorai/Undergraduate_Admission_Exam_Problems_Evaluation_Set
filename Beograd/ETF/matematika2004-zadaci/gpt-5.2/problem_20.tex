@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Ako su $a,b,c$ istovremeno peti, sedamnaesti i trideset sedmi član i aritmetičke i geometrijske progresije,
+odrediti vrednost izraza
+\[
+a^{\,b-c}\cdot b^{\,c-a}\cdot c^{\,a-b}.
+\]
+
+\subsection*{Solution}
+Pošto su $a,b,c$ 5-ti, 17-ti i 37-mi član aritmetičke progresije, postoji razlika $d$ takva da
+\[
+b-a=12d,\qquad c-a=32d \quad\Rightarrow\quad d=\frac{c-a}{32},
+\]
+pa je
+\[
+b=a+12d=a+\frac{12}{32}(c-a)=a+\frac{3}{8}(c-a)=\frac{5a+3c}{8}.
+\]
+
+Pošto su $a,b,c$ ujedno i odgovarajući članovi geometrijske progresije, postoji količnik $r$ takav da
+\[
+b=ar^{12},\qquad c=ar^{32}.
+\]
+Eliminacijom $r$ dobijamo
+\[
+b=a\left(\frac{c}{a}\right)^{12/32}=a\left(\frac{c}{a}\right)^{3/8}=a^{5/8}c^{3/8}.
+\]
+Označimo $c=at$ sa $t>0$ (za realne vrednosti izraza uzimamo $a,c>0$), tada
+\[
+\frac{b}{a}=\frac{5+3t}{8}=t^{3/8}.
+\]
+Neka je $t=u^8$ sa $u>0$. Tada je $t^{3/8}=u^3$ i dobijamo jednačinu
+\[
+\frac{5+3u^8}{8}=u^3
+\quad\Longleftrightarrow\quad
+3u^8-8u^3+5=0.
+\]
+Primećujemo da je $u=1$ rešenje. Dalje,
+\[
+f(u)=3u^8-8u^3+5,\qquad f'(u)=24u^2(u^5-1),
+\]
+pa je $f$ strogo opadajuća na $(0,1)$ i strogo rastuća na $(1,+\infty)$, te je $u=1$ jedino pozitivno rešenje.
+Dakle $t=1$, tj. $c=a$, a zatim iz $b=\frac{5a+3c}{8}$ sledi i $b=a$. Znači $a=b=c$.
+
+Sada je traženi proizvod
+\[
+a^{b-c}\,b^{c-a}\,c^{a-b}=a^0\,b^0\,c^0=1.
+\]
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}
+

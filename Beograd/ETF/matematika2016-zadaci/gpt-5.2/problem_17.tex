@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+On a shelf there are $5$ English, $7$ Spanish, and $8$ French books, all distinct.
+In how many ways can they be arranged if all French books must be consecutive?
+
+\subsection*{Solution}
+Treat the $8$ French books as one block. Then we arrange
+\[
+5+7=12
+\]
+other distinct books together with this one block, i.e. $13$ distinct items in total.
+They can be arranged in $13!$ ways, and inside the French block the $8$ books can be permuted in $8!$ ways.
+Thus the total number of arrangements is
+\[
+13!\cdot 8!.
+\]
+
+\subsection*{Answer}
+$13!\cdot 8!$ (option \textbf{A}).
+
+\end{document}
+

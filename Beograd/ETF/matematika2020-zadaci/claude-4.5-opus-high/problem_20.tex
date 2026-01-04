@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the value of the expression $\tan 10° - \tan 50° + \tan 70°$.
+
+\subsection*{Solution}
+Let's denote $\alpha = 10°$. Then we need to find:
+\[
+\tan 10° - \tan 50° + \tan 70°
+\]
+
+Note that $50° = 60° - 10°$ and $70° = 60° + 10°$.
+
+Also, $70° = 90° - 20°$, so $\tan 70° = \cot 20°$.
+And $50° = 90° - 40°$, so $\tan 50° = \cot 40°$.
+
+Let's try a different approach. Note that $10° + 50° + 70° + 50° = 180°$... 
+
+Actually, let's use: $10° + 70° = 80°$ and $50° = 90° - 40°$.
+
+Using the identity $\tan A + \tan B = \frac{\sin(A+B)}{\cos A \cos B}$:
+
+$\tan 10° + \tan 70° = \frac{\sin 80°}{\cos 10° \cos 70°}$
+
+Since $\cos 70° = \sin 20°$ and $\sin 80° = \cos 10°$:
+\[
+\tan 10° + \tan 70° = \frac{\cos 10°}{\cos 10° \sin 20°} = \frac{1}{\sin 20°}
+\]
+
+Now we need:
+\[
+\frac{1}{\sin 20°} - \tan 50°
+\]
+
+Since $\tan 50° = \frac{\sin 50°}{\cos 50°} = \frac{\cos 40°}{\sin 40°} = \cot 40°$:
+\[
+\frac{1}{\sin 20°} - \cot 40° = \frac{1}{\sin 20°} - \frac{\cos 40°}{\sin 40°}
+\]
+
+Using $\sin 40° = 2\sin 20° \cos 20°$:
+\[
+= \frac{1}{\sin 20°} - \frac{\cos 40°}{2\sin 20° \cos 20°}
+\]
+\[
+= \frac{2\cos 20° - \cos 40°}{2\sin 20° \cos 20°}
+\]
+\[
+= \frac{2\cos 20° - \cos 40°}{\sin 40°}
+\]
+
+Using $\cos 40° = 2\cos^2 20° - 1$:
+\[
+2\cos 20° - (2\cos^2 20° - 1) = 2\cos 20° - 2\cos^2 20° + 1 = 1 + 2\cos 20°(1 - \cos 20°)
+\]
+
+Let me try yet another approach. Using the product-to-sum formulas:
+
+$\tan 10° - \tan 50° + \tan 70° = \tan 10° + \tan 70° - \tan 50°$
+
+We showed $\tan 10° + \tan 70° = \frac{1}{\sin 20°} = \csc 20°$.
+
+And $\tan 50° = \tan(60° - 10°) = \frac{\tan 60° - \tan 10°}{1 + \tan 60° \tan 10°} = \frac{\sqrt{3} - \tan 10°}{1 + \sqrt{3}\tan 10°}$
+
+This is getting complex. Let me try numerical verification:
+- $\tan 10° \approx 0.1763$
+- $\tan 50° \approx 1.1918$
+- $\tan 70° \approx 2.7475$
+
+$0.1763 - 1.1918 + 2.7475 = 1.7320 \approx \sqrt{3}$
+
+So the answer is $\sqrt{3}$.
+
+\subsection*{Answer}
+$\sqrt{3}$ (option \textbf{E}).
+
+\end{document}

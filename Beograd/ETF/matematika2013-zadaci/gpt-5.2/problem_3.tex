@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 3}
+Izračunati vrednost izraza
+\[
+\frac{x^{0.5}+1}{x+x^{0.5}+1}:\frac{1}{x^{1.5}-1},\qquad x\ge 0,\ x\ne 1.
+\]
+
+\subsection*{Rešenje}
+Neka je \(t=\sqrt{x}\) (\(t\ge 0\)). Tada je \(x=t^2\) i \(x^{1.5}=t^3\). Data vrednost je
+\[
+\frac{t+1}{t^2+t+1}\cdot (t^3-1).
+\]
+Pošto je \(t^3-1=(t-1)(t^2+t+1)\), dobijamo
+\[
+\frac{t+1}{t^2+t+1}\cdot (t-1)(t^2+t+1)=(t+1)(t-1)=t^2-1=x-1.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\ x-1}
+\]
+\end{document}
+

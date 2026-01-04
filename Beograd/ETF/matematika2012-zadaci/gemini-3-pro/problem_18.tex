@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 18}
+Skup svih realnih rešenja nejednačine $\frac{|1-x|}{1-|x|} < \frac{1+|x|}{|1+x|}$ je oblika (za neke realne brojeve $a$ i $b$ takve da je $0 < a < b < +\infty$):
+
+\subsection*{Solution}
+We solve by cases. Defined for $|x| \ne 1$ and $x \ne -1$.
+1) $x < -1$: $|x|=-x, |1-x|=1-x, |1+x|=-(1+x)$.
+$\frac{1-x}{1+x} < \frac{1-x}{-(1+x)}$. Since $1+x < 0$, multiply by $1+x$ flips sign. But dividing by $1-x$ (positive) gives:
+$\frac{1}{1+x} < \frac{1}{-(1+x)}$. Since $1+x$ is negative, LHS is negative, RHS is positive. True.
+So $(-\infty, -1)$ is a solution.
+2) $-1 < x < 0$: $|x|=-x, |1-x|=1-x, |1+x|=1+x$.
+$\frac{1-x}{1+x} < \frac{1-x}{1+x}$. False.
+3) $0 \le x < 1$: $|x|=x, |1-x|=1-x$.
+$\frac{1-x}{1-x} < \frac{1+x}{1+x} \implies 1 < 1$. False.
+4) $x > 1$: $|x|=x, |1-x|=x-1$.
+$\frac{x-1}{1-x} < \frac{1+x}{1+x} \implies -1 < 1$. True.
+So $(1, +\infty)$ is a solution.
+The solution set is $(-\infty, -1) \cup (1, +\infty)$.
+Comparing with forms, this is $(-\infty, -a) \cup (a, +\infty)$ with $a=1$.
+
+\subsection*{Answer}
+(C) $(-\infty, -a) \cup (a, +\infty)$
+
+\end{document}

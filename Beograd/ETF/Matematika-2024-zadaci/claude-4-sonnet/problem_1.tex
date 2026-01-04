@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Za $a \in R$, $a \neq 3$ izraz $\frac{a^3 - 27}{(a-3)^2} \cdot \frac{a^2 - 2a - 3}{(a+3)^2 - 3a}$ je jednak:
+
+\subsection*{Solution}
+Prvo ćemo faktorizovati brojnik i imenilac.
+
+Za brojnik prvog razlomka:
+\[a^3 - 27 = a^3 - 3^3 = (a-3)(a^2 + 3a + 9)\]
+
+Za imenilac drugog razlomka:
+\[(a+3)^2 - 3a = a^2 + 6a + 9 - 3a = a^2 + 3a + 9\]
+
+Za brojnik drugog razlomka:
+\[a^2 - 2a - 3 = (a-3)(a+1)\]
+
+Dakle, izraz postaje:
+\[\frac{(a-3)(a^2 + 3a + 9)}{(a-3)^2} \cdot \frac{(a-3)(a+1)}{a^2 + 3a + 9}\]
+
+Skraćujemo zajedničke faktore:
+\[\frac{(a-3)(a^2 + 3a + 9)}{(a-3)^2} \cdot \frac{(a-3)(a+1)}{a^2 + 3a + 9} = \frac{a^2 + 3a + 9}{a-3} \cdot \frac{(a-3)(a+1)}{a^2 + 3a + 9}\]
+
+\[= \frac{(a-3)(a+1)}{a-3} = a+1\]
+
+\subsection*{Answer}
+$a+1$ (opcija \textbf{C}).
+
+\end{document}

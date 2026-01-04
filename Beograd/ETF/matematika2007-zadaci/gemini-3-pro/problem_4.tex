@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Vrednost izraza $\frac{(1+i)^{2008} - (1-i)^{2009}}{(1+i)^{2006} + (1-i)^{2007}}$, $(i^2 = -1)$ iznosi :
+\[
+(A)\ i \quad (B)\ 1+i \quad (C)\ 1-i \quad (D)\ -i \quad (E)\ 2i \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Koristimo osobine kompleksnih brojeva:
+\[
+(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i
+\]
+\[
+(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i
+\]
+Sada možemo transformisati stepene u izrazu:
+\[
+(1+i)^{2008} = ((1+i)^2)^{1004} = (2i)^{1004} = 2^{1004} i^{1004} = 2^{1004} (i^4)^{251} = 2^{1004} \cdot 1 = 2^{1004}
+\]
+\[
+(1-i)^{2009} = (1-i) ((1-i)^2)^{1004} = (1-i) (-2i)^{1004} = (1-i) 2^{1004} i^{1004} = (1-i) 2^{1004}
+\]
+\[
+(1+i)^{2006} = ((1+i)^2)^{1003} = (2i)^{1003} = 2^{1003} i^{1003} = 2^{1003} (i^4)^{250} \cdot i^3 = 2^{1003} (-i)
+\]
+\[
+(1-i)^{2007} = (1-i) ((1-i)^2)^{1003} = (1-i) (-2i)^{1003} = (1-i) 2^{1003} (-1)^{1003} i^{1003} = (1-i) (-2^{1003}) (-i) = (1-i) 2^{1003} i = (i - i^2) 2^{1003} = (i+1) 2^{1003}
+\]
+
+Zamenimo ove vrednosti u početni izraz:
+\[
+\frac{2^{1004} - (1-i) 2^{1004}}{-i 2^{1003} + (1+i) 2^{1003}} = \frac{2^{1004} (1 - (1-i))}{2^{1003} (-i + 1 + i)}
+\]
+\[
+= \frac{2^{1004} (1 - 1 + i)}{2^{1003} \cdot 1} = \frac{2^{1004} i}{2^{1003}} = 2i
+\]
+
+\subsection*{Answer}
+$2i$ (option \textbf{E}).
+
+\end{document}

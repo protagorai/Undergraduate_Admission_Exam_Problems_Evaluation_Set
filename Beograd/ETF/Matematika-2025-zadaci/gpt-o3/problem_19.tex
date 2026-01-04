@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 19}
+Oko pravog valjka poluprečnika osnove $r$ i visine $3r$ opisuje se prava kupa čiji omotač dodiruje gornju osnovu valjka, dok se centri donjih osnova poklapaju. Odrediti minimalnu zapreminu takve kupe.
+
+\subsection*{Solution}
+Neka kupa ima poluprečnik osnove $R$ i visinu $H$.  Linearna sličnost preseka daje da se poluprečnik na visini $z$ meri formulom $\rho(z)=R(1-\tfrac{z}{H})$.  Uslov tangencije na visini $z=3r$ je
+\[
+\rho(3r)=r \;\Longrightarrow\; R\bigl(1-\tfrac{3r}{H}\bigr)=r\;\Longrightarrow\; R=\frac{rH}{H-3r},\qquad H>3r.
+\]
+Zapremina kupe
+\[
+V=\frac13\pi R^{2}H = \frac13\pi r^{2}\frac{H^{3}}{(H-3r)^{2}}.
+\]
+Postavimo $t=\tfrac{H}{r}>3$.  Tada
+\[
+f(t)=\frac{V}{\pi r^{3}}=\frac13\,\frac{t^{3}}{(t-3)^{2}}.
+\]
+Minimizujemo $f(t)$: $\ln f = \ln\tfrac13 +3\ln t-2\ln(t-3)$; izvod
+\[
+\frac{f'}{f}=\frac3t-\frac{2}{t-3}=0\;\Longrightarrow\;3(t-3)=2t\;\Longrightarrow\;t=9.
+\]
+Drugi izvod pokazuje minimum.  Tada
+\[
+V_{\min}=\frac13\pi r^{3}\,\frac{9^{3}}{6^{2}}=\frac{27\pi r^{3}}{4}.
+\]
+
+\subsection*{Answer}
+$\displaystyle \frac{27\pi r^{3}}{4}$ (opcija \textbf{C}).
+
+\end{document}

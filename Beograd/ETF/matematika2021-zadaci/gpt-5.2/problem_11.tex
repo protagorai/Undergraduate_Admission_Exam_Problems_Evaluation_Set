@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Tacke $A(-2,2)$ i $B(2,-2)$ su temena trougla $ABC$, a $N(1,2)$ je presek visina tog trougla.
+Zbir koordinata temena $C$ jednak je:
+(A) 3 \ (B) 5 \ (C) 7 \ (D) 9 \ (E) 11.
+
+\subsection*{Solution}
+Neka je $C=(x,y)$ i neka je $N=(1,2)$ ortocentar.
+Vazi:
+\begin{itemize}
+\item visina iz $A$ je normalna na $BC$, pa je $(B-C)\cdot(N-A)=0$,
+\item visina iz $B$ je normalna na $AC$, pa je $(A-C)\cdot(N-B)=0$.
+\end{itemize}
+Racunamo
+\[
+N-A=(1+2,\ 2-2)=(3,0),\qquad B-C=(2-x,\ -2-y).
+\]
+Prvi uslov:
+\[
+(B-C)\cdot(N-A)=3(2-x)+0(-2-y)=0 \ \Longrightarrow\ x=2.
+\]
+Dalje,
+\[
+N-B=(1-2,\ 2+2)=(-1,4),\qquad A-C=(-2-2,\ 2-y)=(-4,2-y).
+\]
+Drugi uslov:
+\[
+(A-C)\cdot(N-B)=(-4)(-1)+(2-y)\cdot 4=4+8-4y=0 \ \Longrightarrow\ y=3.
+\]
+Dakle $C=(2,3)$, pa je zbir koordinata $2+3=5$.
+
+\subsection*{Answer}
+$5$ (option \textbf{B}).
+
+\end{document}
+

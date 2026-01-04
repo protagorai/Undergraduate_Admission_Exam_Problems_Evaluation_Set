@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 20}
+Find the set of values of real parameter $p$ for which the equation $|x - p| + |x - 1| = 1$ has exactly two real and different solutions for some $a, b, c, d \in \mathbb{R}$ such that $-\infty < a < b < c < d < +\infty$.
+
+\subsection*{Solution}
+The equation $|x - p| + |x - 1| = 1$ involves two absolute value expressions. Let's analyze this by considering different cases based on the relative position of $x$ with respect to $p$ and $1$.
+
+First, let's consider the geometric interpretation: $|x - p|$ is the distance from $x$ to $p$, and $|x - 1|$ is the distance from $x$ to $1$. The equation asks for points where the sum of these distances equals $1$.
+
+\textbf{Case 1:} $p = 1$
+The equation becomes $|x - 1| + |x - 1| = 2|x - 1| = 1$, so $|x - 1| = \frac{1}{2}$.
+This gives $x = 1 \pm \frac{1}{2}$, so $x = \frac{1}{2}$ or $x = \frac{3}{2}$.
+This gives exactly two solutions.
+
+\textbf{Case 2:} $p \neq 1$
+Without loss of generality, let's assume $p < 1$ (the case $p > 1$ is symmetric).
+
+The critical points are $x = p$ and $x = 1$. We consider three intervals:
+
+\textbf{Subcase 2a:} $x < p$ (so $x < p < 1$)
+$|x - p| = p - x$ and $|x - 1| = 1 - x$
+Equation: $(p - x) + (1 - x) = 1$
+$p + 1 - 2x = 1$
+$x = \frac{p}{2}$
+
+For this to be valid, we need $\frac{p}{2} < p$, which is true when $p > 0$.
+Also, we need $\frac{p}{2} < 1$, which is true when $p < 2$.
+
+\textbf{Subcase 2b:} $p \leq x \leq 1$
+$|x - p| = x - p$ and $|x - 1| = 1 - x$
+Equation: $(x - p) + (1 - x) = 1$
+$1 - p = 1$
+$p = 0$
+
+This gives a solution only when $p = 0$, and then every $x \in [0, 1]$ is a solution (infinitely many solutions).
+
+\textbf{Subcase 2c:} $x > 1$ (so $p < 1 < x$)
+$|x - p| = x - p$ and $|x - 1| = x - 1$
+Equation: $(x - p) + (x - 1) = 1$
+$2x - p - 1 = 1$
+$x = \frac{p + 2}{2}$
+
+For this to be valid, we need $\frac{p + 2}{2} > 1$, which gives $p > 0$.
+
+Now, let's count the solutions:
+
+- If $p > 0$ and $p \neq 1$: We get solutions $x = \frac{p}{2}$ and $x = \frac{p + 2}{2}$. These are two distinct solutions.
+- If $p = 0$: We get infinitely many solutions in the interval $[0, 1]$.
+- If $p < 0$: From subcase 2a, we need $p > 0$ for a valid solution, so no solution from this case. From subcase 2c, we need $p > 0$, so no solution from this case either.
+
+Wait, let me reconsider the case $p < 0$ more carefully.
+
+If $p < 0 < 1$:
+
+\textbf{Subcase 2a:} $x < p < 0$
+$(p - x) + (1 - x) = 1 \Rightarrow x = \frac{p}{2}$
+Since $p < 0$, we have $\frac{p}{2} < 0 < p$, which contradicts $x < p$. So no solution here.
+
+\textbf{Subcase 2b:} $p \leq x \leq 0$
+$(x - p) + (1 - x) = 1 \Rightarrow 1 - p = 1 \Rightarrow p = 0$
+But we assumed $p < 0$, so no solution here.
+
+\textbf{Subcase 2c:} $0 < x < 1$
+$(x - p) + (1 - x) = 1 \Rightarrow 1 - p = 1 \Rightarrow p = 0$
+But we assumed $p < 0$, so no solution here.
+
+\textbf{Subcase 2d:} $x \geq 1$
+$(x - p) + (x - 1) = 1 \Rightarrow x = \frac{p + 2}{2}$
+For this to be valid, we need $\frac{p + 2}{2} \geq 1$, so $p \geq 0$. But we assumed $p < 0$, so no solution here.
+
+Therefore, if $p < 0$, there are no solutions.
+
+Similarly, if $p > 2$, we can show there are no solutions.
+
+The equation has exactly two solutions when $p \in (0, 1) \cup (1, 2)$.
+
+Looking at the answer choices, this corresponds to $(a,b) \cup (c,d)$ where $a = 0$, $b = 1$, $c = 1$, $d = 2$.
+
+\subsection*{Answer}
+$(a,b) \cup (c,d)$ (option \textbf{E}).
+
+\end{document}
+

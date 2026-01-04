@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Skup svih realnih rešenja nejednačine $\ln(x+1) > x^2 + 3x + 3$ je oblika (za neke realne brojeve $a, b$ takve da je $-1 < a < b < +\infty$):
+
+\subsection*{Solution}
+Posmatrajmo funkcije:
+\[
+g(x) = \ln(x+1), \quad h(x) = x^2 + 3x + 3
+\]
+
+Domen: $x > -1$.
+
+Za $x = 0$:
+\[
+g(0) = \ln 1 = 0, \quad h(0) = 3
+\]
+$0 < 3$ nije tačno, dakle $x = 0$ nije rešenje.
+
+Za $x = -1$ (granica domena):
+\[
+g(-1^+) \to -\infty, \quad h(-1) = 1 - 3 + 3 = 1
+\]
+
+Definišimo $f(x) = \ln(x+1) - x^2 - 3x - 3$.
+
+$f'(x) = \frac{1}{x+1} - 2x - 3$
+
+Za $x = -1$: $f'(-1^+) \to +\infty$
+
+Za $x = 0$: $f'(0) = 1 - 3 = -2 < 0$
+
+Funkcija $f$ raste blizu $x = -1$ i opada za veće $x$.
+
+$f(-1^+) = -\infty$, $f$ raste do nekog maksimuma, pa opada.
+
+Proverimo vrednosti:
+
+Za $x = -0.5$:
+\[
+g(-0.5) = \ln(0.5) \approx -0.693
+\]
+\[
+h(-0.5) = 0.25 - 1.5 + 3 = 1.75
+\]
+$-0.693 < 1.75$, nije rešenje.
+
+Za $x = -0.9$:
+\[
+g(-0.9) = \ln(0.1) \approx -2.303
+\]
+\[
+h(-0.9) = 0.81 - 2.7 + 3 = 1.11
+\]
+$-2.303 < 1.11$, nije rešenje.
+
+Pošto $\ln(x+1) \to -\infty$ kada $x \to -1^+$ i $h(x)$ je ograničeno odozdo na tom intervalu, nejednačina $\ln(x+1) > x^2 + 3x + 3$ nema rešenja.
+
+Zapravo, pošto je $h(x) = x^2 + 3x + 3 = (x + \frac{3}{2})^2 + \frac{3}{4} \geq \frac{3}{4}$ za sve $x$, a $\ln(x+1)$ može biti proizvoljno malo (negativno), i za velike $x$, $h(x)$ raste mnogo brže od $\ln(x+1)$, nejednačina nema rešenja.
+
+\subsection*{Answer}
+Nijedan od prethodno ponuđenih odgovora (option \textbf{E}).
+
+\end{document}

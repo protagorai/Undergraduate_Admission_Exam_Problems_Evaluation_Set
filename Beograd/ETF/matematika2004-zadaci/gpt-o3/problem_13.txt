@@ -1,0 +1,2 @@
+Sistem jednačina $3^x - 2^{y^2} = 77, \quad 3^{\frac{x}{2}} - 2^{\frac{y^2}{2}} = 7$ ima:
+A) jedno realno rešenje; B) dva realna rešenja; C) četiri realna rešenja; D) tri realna rešenja; E) prazan skup realnih rešenja; N) Ne znam.

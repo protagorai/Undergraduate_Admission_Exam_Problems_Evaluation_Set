@@ -1,0 +1,20 @@
+1. E 63
+2. B 36\pi
+3. A -\frac{2}{3}
+4. D 5
+5. B -\frac{4}{3}
+6. E 72
+7. A 4
+8. B 0
+9. A [a, +\infty)
+10. C 31
+11. D (a, b) \cup \{c\}
+12. B 4
+13. A \frac{1}{4\sqrt{2}}
+14. D 90^\circ
+15. B 4
+16. B [a, b) \cup (c, d]
+17. A 7x^2 - 5x + 13
+18. B (0, \frac{\pi}{6}] \cup [\frac{\pi}{3}, \frac{5\pi}{6}]
+19. C \frac{27\pi r^3}{4}
+20. B (a, b)

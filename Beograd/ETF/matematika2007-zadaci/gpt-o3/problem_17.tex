@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Naći zbir najveće i najmanje vrednosti funkcije
+\[
+f(z)=z^{3}+3z^{2}-72z+90
+\]
+na segmentu $[-5,5]$.
+
+\subsection*{Rešenje}
+Izvedena funkcija:
+\[
+f'(z)=3z^{2}+6z-72=3(z^{2}+2z-24)=3(z+6)(z-4).
+\]
+Stacionarne tačke: $z=-6$ i $z=4$ (od kojih $-6$ nije u domenu segmenta).
+Razmatramo tačke $z=-5,4,5$.
+\begin{align*}
+f(-5)&=-125+75+360+90=400,\\
+f(4)&=64+48-288+90=-86,\\
+f(5)&=125+75-360+90=-70.
+\end{align*}
+Najmanja vrednost je $-86$ (kod $z=4$), najveća $400$ (kod $z=-5$). Zbir je $314$.
+
+\subsection*{Odgovor}
+$314$ (opcija \textbf{A}).
+
+\end{document}

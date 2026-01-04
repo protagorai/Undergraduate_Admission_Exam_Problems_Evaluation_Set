@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako su $x_1, x_2, x_3$ koreni jednačine $px^3 + qx^2 + px + 1 = 0$, $(p, q \in R$ i $p \neq 0)$, tada vrednost izraza $\frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3}$ iznosi:
+
+(A) $-p/q$ \quad (B) $-1$ \quad (C) $1$ \quad (D) $p$ \quad (E) $-p$
+
+\subsection*{Solution}
+Koristimo Vijetove formule za kubnu jednačinu $px^3 + qx^2 + px + 1 = 0$:
+\[
+x_1 + x_2 + x_3 = -\frac{q}{p}
+\]
+\[
+x_1x_2 + x_1x_3 + x_2x_3 = \frac{p}{p} = 1
+\]
+\[
+x_1 \cdot x_2 \cdot x_3 = -\frac{1}{p}
+\]
+
+Sada računamo:
+\[
+\frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} = \frac{x_2x_3 + x_1x_3 + x_1x_2}{x_1x_2x_3}
+\]
+
+Zamenjujemo vrednosti iz Vijetovih formula:
+\[
+\frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} = \frac{1}{-\frac{1}{p}} = -p
+\]
+
+\subsection*{Answer}
+$-p$ (opcija \textbf{(E)}).
+
+\end{document}
+

@@ -1,0 +1,2 @@
+3. Vrednost izraza \left(\frac{x-9}{x+3\sqrt{x}-9}\right)^{0.5} \cdot \left(\frac{\sqrt{x}+3}{x^{1.5}-27}\right)^{0.5} - \sqrt{x}, za x \in (9, +\infty), je:
+A) x;   B) 3 - 2\sqrt{x};   C) -3;   D) \frac{3}{27};   E) \sqrt{x};   N) Ne znam.

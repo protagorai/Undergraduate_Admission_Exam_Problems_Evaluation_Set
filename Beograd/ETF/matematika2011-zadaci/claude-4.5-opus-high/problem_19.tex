@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Find the interval to which all real solutions of the equation $\log_{2011}(2010x) = \log_{2010}(2011x)$ belong.
+
+\subsection*{Solution}
+Let $y = \log_{2011}(2010x) = \log_{2010}(2011x)$.
+
+From the first equation: $2011^y = 2010x$, so $x = \frac{2011^y}{2010}$.
+
+From the second equation: $2010^y = 2011x$, so $x = \frac{2010^y}{2011}$.
+
+Setting these equal:
+\[
+\frac{2011^y}{2010} = \frac{2010^y}{2011}
+\]
+\[
+2011^{y+1} = 2010^{y+1}
+\]
+\[
+\left(\frac{2011}{2010}\right)^{y+1} = 1
+\]
+
+Since $\frac{2011}{2010} \neq 1$, we need $y + 1 = 0$, so $y = -1$.
+
+Now find $x$:
+\[
+x = \frac{2011^{-1}}{2010} = \frac{1}{2011 \cdot 2010}
+\]
+
+Let's verify: We need $x > 0$ for the logarithms to be defined. Since $x = \frac{1}{2011 \cdot 2010} > 0$, this is valid.
+
+Check: 
+\[
+2010x = \frac{2010}{2011 \cdot 2010} = \frac{1}{2011}
+\]
+\[
+\log_{2011}\left(\frac{1}{2011}\right) = -1 \checkmark
+\]
+\[
+2011x = \frac{2011}{2011 \cdot 2010} = \frac{1}{2010}
+\]
+\[
+\log_{2010}\left(\frac{1}{2010}\right) = -1 \checkmark
+\]
+
+Now, $x = \frac{1}{2011 \cdot 2010}$. We need to determine which interval this belongs to.
+
+Note that $\frac{1}{2011} < x < \frac{1}{2010}$ is false since $x = \frac{1}{2011 \cdot 2010}$ is much smaller.
+
+Actually: $x = \frac{1}{2011 \cdot 2010} \approx \frac{1}{4,042,110}$
+
+This is less than $\frac{1}{2011}$, so $0 < x < \frac{1}{2011}$.
+
+Looking at option (A): $\left(0, \frac{1}{2011}\right]$ - this includes our solution.
+
+Looking at option (B): $\left(\frac{1}{2011}, \frac{1}{2010}\right]$ - our $x$ is smaller than $\frac{1}{2011}$.
+
+The answer is \textbf{(A)} $\left(0, \frac{1}{2011}\right]$.
+
+\subsection*{Answer}
+\textbf{(A)} $\left(0, \frac{1}{2011}\right]$
+
+\end{document}

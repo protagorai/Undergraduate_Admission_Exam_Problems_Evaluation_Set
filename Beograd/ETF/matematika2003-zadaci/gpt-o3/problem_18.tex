@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 18}
+Одредити збир
+\[
+S_n = 1+11+111+\dots + \underbrace{11\dots1}_{n\text{ цифара}}.
+\]
+
+\subsection*{Solution}
+Децимални број који се састоји од $k$ јединица је
+\[
+ 10^{k-1}+10^{k-2}+\dots+10+1 = \frac{10^{k}-1}{9}.
+\]
+Стога
+\[
+ S_n = \sum_{k=1}^{n}\frac{10^{k}-1}{9}
+      = \frac1{9}\left(\frac{10^{n+1}-10}{10-1}-n\right)  
+      = \frac{10^{n+1}-10-9n}{81/9}=\frac{10^{n+1}-10-9n}{9}.
+\]
+Прерасподелом добијамо
+\[
+ S_n = \frac{1}{9}(10^{n+1}-9n-10).
+\]
+
+\subsection*{Answer}
+Опција \textbf{B}.
+
+\end{document}

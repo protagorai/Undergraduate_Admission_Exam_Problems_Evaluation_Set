@@ -1,0 +1,8 @@
+Problem 6
+Broj različitih polinoma oblika x^2 + px + q, za p, q \in \mathbb{R}, koji dele polinom x^4 - 3x^2 + 2 iznosi:
+(A) 2
+(B) 6
+(C) 3
+(D) 4
+(E) 5
+(N) Ne znam

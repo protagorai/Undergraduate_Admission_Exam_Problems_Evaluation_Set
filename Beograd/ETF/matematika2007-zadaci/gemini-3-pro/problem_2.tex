@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Ako je $x > 0$, onda je $\sqrt{x\sqrt{x\sqrt{x}}}$ jednako :
+\[
+(A)\ x\sqrt{x} \quad (B)\ x\sqrt[4]{x} \quad (C)\ \sqrt[8]{x} \quad (D)\ \sqrt[8]{x^3} \quad (E)\ \sqrt[8]{x^7} \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Zapišimo korene kao stepene sa racionalnim izložiocem:
+\[
+\sqrt{x} = x^{1/2}
+\]
+Izraz ispod srednjeg korena je:
+\[
+x \sqrt{x} = x \cdot x^{1/2} = x^{3/2}
+\]
+Zatim primenimo srednji koren:
+\[
+\sqrt{x \sqrt{x}} = (x^{3/2})^{1/2} = x^{3/4}
+\]
+Izraz ispod spoljašnjeg korena je:
+\[
+x \sqrt{x \sqrt{x}} = x \cdot x^{3/4} = x^{7/4}
+\]
+Konačno, primenimo spoljašnji koren:
+\[
+\sqrt{x \sqrt{x \sqrt{x}}} = (x^{7/4})^{1/2} = x^{7/8}
+\]
+Ovo se može zapisati kao $\sqrt[8]{x^7}$.
+
+\subsection*{Answer}
+$\sqrt[8]{x^7}$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 1}
+Ako je $a=2+\sqrt{3}$ i $b=2-\sqrt{3}$, onda je vrednost izraza $\left((a+a^{-1})+(b+b^{-1})\right)^{\frac{1}{2}}$ jednaka:
+
+\subsection*{Solution}
+Prvo izračunajmo vrednosti $a^{-1}$ i $b^{-1}$:
+\[
+a^{-1} = \frac{1}{2+\sqrt{3}} = \frac{2-\sqrt{3}}{(2+\sqrt{3})(2-\sqrt{3})} = \frac{2-\sqrt{3}}{4-3} = 2-\sqrt{3}
+\]
+\[
+b^{-1} = \frac{1}{2-\sqrt{3}} = \frac{2+\sqrt{3}}{(2-\sqrt{3})(2+\sqrt{3})} = \frac{2+\sqrt{3}}{4-3} = 2+\sqrt{3}
+\]
+Sada možemo izračunati izraze u zagradama:
+\[
+a+a^{-1} = (2+\sqrt{3}) + (2-\sqrt{3}) = 4
+\]
+\[
+b+b^{-1} = (2-\sqrt{3}) + (2+\sqrt{3}) = 4
+\]
+Zamenom ovih vrednosti u polazni izraz dobijamo:
+\[
+\left((a+a^{-1})+(b+b^{-1})\right)^{\frac{1}{2}} = (4+4)^{\frac{1}{2}} = 8^{\frac{1}{2}} = \sqrt{8} = 2\sqrt{2}
+\]
+
+\subsection*{Answer}
+$2\sqrt{2}$ (Opcija \textbf{B})
+
+\end{document}

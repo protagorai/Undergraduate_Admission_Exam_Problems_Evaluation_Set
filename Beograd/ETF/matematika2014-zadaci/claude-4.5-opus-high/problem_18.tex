@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Neka je $S$ skup svih realnih rešenja nejednačine $\tan x(1 - \tan^2 x)(1 - 3\tan^2 x)(1 + \tan 2x \cdot \tan 3x) > 0$ i neka je $S_1 \subset S$. Tada skup $S_1$ može biti:
+
+(A) $\displaystyle\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ \quad (B) $\displaystyle\left(\frac{\pi}{3}, \frac{\pi}{2}\right)$ \quad (C) $\displaystyle\left(\frac{3\pi}{4}, \pi\right)$ \quad (D) $\displaystyle\left(\frac{7\pi}{6}, \frac{3\pi}{2}\right)$ \quad (E) $\displaystyle\left(\frac{\pi}{2}, \frac{5\pi}{6}\right)$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's analyze the inequality:
+\[
+\tan x(1 - \tan^2 x)(1 - 3\tan^2 x)(1 + \tan 2x \cdot \tan 3x) > 0
+\]
+
+Note that $1 - \tan^2 x = \frac{\cos^2 x - \sin^2 x}{\cos^2 x} = \frac{\cos 2x}{\cos^2 x}$
+
+And $\tan 2x = \frac{2\tan x}{1-\tan^2 x}$, $\tan 3x = \frac{3\tan x - \tan^3 x}{1 - 3\tan^2 x}$
+
+So: $\tan 2x \cdot \tan 3x = \frac{2\tan x}{1-\tan^2 x} \cdot \frac{3\tan x - \tan^3 x}{1 - 3\tan^2 x} = \frac{2\tan x \cdot \tan x(3 - \tan^2 x)}{(1-\tan^2 x)(1 - 3\tan^2 x)}$
+
+$= \frac{2\tan^2 x(3 - \tan^2 x)}{(1-\tan^2 x)(1 - 3\tan^2 x)}$
+
+Then: $1 + \tan 2x \cdot \tan 3x = \frac{(1-\tan^2 x)(1 - 3\tan^2 x) + 2\tan^2 x(3 - \tan^2 x)}{(1-\tan^2 x)(1 - 3\tan^2 x)}$
+
+Numerator: $(1-\tan^2 x)(1 - 3\tan^2 x) + 2\tan^2 x(3 - \tan^2 x)$
+$= 1 - 3\tan^2 x - \tan^2 x + 3\tan^4 x + 6\tan^2 x - 2\tan^4 x$
+$= 1 + 2\tan^2 x + \tan^4 x = (1 + \tan^2 x)^2$
+
+So the expression becomes:
+\[
+\tan x(1 - \tan^2 x)(1 - 3\tan^2 x) \cdot \frac{(1 + \tan^2 x)^2}{(1-\tan^2 x)(1 - 3\tan^2 x)} > 0
+\]
+\[
+\tan x \cdot (1 + \tan^2 x)^2 > 0
+\]
+
+Since $(1 + \tan^2 x)^2 > 0$ always (when defined), we need $\tan x > 0$.
+
+This means $x \in (0, \frac{\pi}{2}) \cup (\pi, \frac{3\pi}{2}) \cup ...$ (first and third quadrants).
+
+Checking the options:
+- (A) $(-\frac{\pi}{2}, \frac{\pi}{2})$: includes negative $\tan x$ for $x \in (-\frac{\pi}{2}, 0)$ ✗
+- (B) $(\frac{\pi}{3}, \frac{\pi}{2})$: $\tan x > 0$ ✓
+- (C) $(\frac{3\pi}{4}, \pi)$: $\tan x < 0$ ✗
+- (D) $(\frac{7\pi}{6}, \frac{3\pi}{2})$: $\tan x > 0$ in third quadrant ✓
+- (E) $(\frac{\pi}{2}, \frac{5\pi}{6})$: $\tan x < 0$ ✗
+
+Both (B) and (D) work, but we need to check which is offered. Looking at the problem, option (B) is $(\frac{\pi}{3}, \frac{\pi}{2})$.
+
+\subsection*{Answer}
+$\displaystyle\left(\frac{\pi}{3}, \frac{\pi}{2}\right)$ (option \textbf{B}).
+
+\end{document}

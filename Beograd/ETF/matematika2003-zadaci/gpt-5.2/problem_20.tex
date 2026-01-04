@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Brojevi $2$, $\sqrt6$, $\dfrac{9}{2}$ su \v{c}lanovi:
+
+\subsection*{Solution}
+Treba proveriti da li postoji geometrijska progresija koja sadr\v{z}i ova tri broja kao neke svoje \v{c}lanove (ne moraju biti uzastopni).
+
+Uzmimo geometrijsku progresiju sa
+\[
+a_1=2,\qquad r=\frac{\sqrt6}{2}.
+\]
+Tada je
+\[
+a_2=a_1r=2\cdot\frac{\sqrt6}{2}=\sqrt6,
+\]
+pa se drugi broj pojavljuje kao drugi \v{c}lan.
+
+Proverimo da li se $\dfrac{9}{2}$ pojavljuje kao neki \v{c}lan:
+\[
+a_n=a_1r^{n-1}=2\left(\frac{\sqrt6}{2}\right)^{n-1}.
+\]
+Tra\v{z}imo $n$ takvo da je $a_n=\dfrac{9}{2}$, tj.
+\[
+2\left(\frac{\sqrt6}{2}\right)^{n-1}=\frac{9}{2}
+\quad\Longleftrightarrow\quad
+\left(\frac{\sqrt6}{2}\right)^{n-1}=\frac{9}{4}.
+\]
+Prime\v{c}ujemo da
+\[
+\left(\frac{\sqrt6}{2}\right)^4=\frac{(\sqrt6)^4}{2^4}=\frac{6^2}{16}=\frac{36}{16}=\frac{9}{4}.
+\]
+Dakle va\v{z}i $n-1=4$, tj.\ $n=5$, i stvarno je
+\[
+a_5=2\left(\frac{\sqrt6}{2}\right)^4=2\cdot\frac{9}{4}=\frac{9}{2}.
+\]
+Sva tri broja su \v{c}lanovi jedne geometrijske progresije.
+
+\subsection*{Answer}
+Geometrijske progresije (option \textbf{C}).
+
+\end{document}
+

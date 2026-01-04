@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Let $x_1$ and $x_2$ be roots of the equation $x^2 + bx + c = 0$ (where $b, c \in \mathbf{R} \setminus \{0\}$). Find the expression $x_1^4 + x_2^4$.
+
+Options: (A) $b^4 - 4b^2c + 2c^2$ \quad (B) $b^4 - 4b^2c^2 + 2c^2$ \quad (C) $b^4 - 4bc^2 + 2c^2$ \quad (D) $b^4 + 4c^2$ \quad (E) $b^4 - 4b^2c + 2c$ \quad (N) Ne znam
+
+\subsection*{Solution}
+By Vieta's formulas:
+\begin{align*}
+x_1 + x_2 &= -b \\
+x_1 x_2 &= c
+\end{align*}
+
+First, find $x_1^2 + x_2^2$:
+\[
+x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = b^2 - 2c
+\]
+
+Next, find $x_1^4 + x_2^4$:
+\[
+x_1^4 + x_2^4 = (x_1^2 + x_2^2)^2 - 2(x_1x_2)^2 = (b^2 - 2c)^2 - 2c^2
+\]
+
+Expanding:
+\[
+= b^4 - 4b^2c + 4c^2 - 2c^2 = b^4 - 4b^2c + 2c^2
+\]
+
+\subsection*{Answer}
+$b^4 - 4b^2c + 2c^2$ (option \textbf{A}).
+
+\end{document}

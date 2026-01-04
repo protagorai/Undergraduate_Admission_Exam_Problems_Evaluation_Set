@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Tangenta krive $y=e^{-x}$ (za $x>-1$) sece koordinatne ose u tackama $A$ i $B$.
+Ako je $O$ koordinatni pocetak, maksimalna povrsina trougla $OAB$ iznosi:
+
+\subsection*{Solution}
+Neka je dodirna tacka $T(t,e^{-t})$, gde je $t>-1$.
+Izvod je $y'=-e^{-x}$, pa je nagib tangente u $t$ jednak $-e^{-t}$.
+Jednacina tangente:
+\[
+y-e^{-t}=-e^{-t}(x-t)
+\quad\Longrightarrow\quad
+y=-e^{-t}x+e^{-t}(t+1).
+\]
+Preseci sa osama:
+\begin{itemize}
+\item sa $x$-osom ($y=0$): $x=t+1$;
+\item sa $y$-osom ($x=0$): $y=e^{-t}(t+1)$.
+\end{itemize}
+Povrsina trougla je
+\[
+S(t)=\frac12\,(t+1)\cdot e^{-t}(t+1)=\frac12 (t+1)^2 e^{-t}.
+\]
+Neka je $u=t+1>0$. Tada
+\[
+S(u)=\frac12 u^2 e^{-(u-1)}=\frac{e}{2}\,u^2 e^{-u}.
+\]
+Maksimizujemo $u^2e^{-u}$:
+\[
+\frac{d}{du}\left(u^2e^{-u}\right)=e^{-u}(2u-u^2)=e^{-u}u(2-u),
+\]
+pa maksimum nastaje za $u=2$.
+Tada je
+\[
+S_{\max}=\frac{e}{2}\cdot 4\cdot e^{-2}=\frac{2}{e}.
+\]
+
+\subsection*{Answer}
+$\dfrac{2}{e}$ (opcija \textbf{B}).
+
+\end{document}
+

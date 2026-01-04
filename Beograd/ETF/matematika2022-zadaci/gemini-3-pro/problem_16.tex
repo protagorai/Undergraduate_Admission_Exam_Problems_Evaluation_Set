@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 16}
+Razlika najvećeg i najmanjeg rešenja nejednačine $\sqrt[4]{(\sqrt{2}+1)^x} + \sqrt[4]{(\sqrt{2}-1)^x} \le 2\sqrt{2}$ je:
+\begin{itemize}
+    \item[(A)] 2
+    \item[(B)] 8
+    \item[(C)] 4
+    \item[(D)] 6
+    \item[(E)] 10
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Primetimo da je $(\sqrt{2}+1)(\sqrt{2}-1) = 2 - 1 = 1$.
+Dakle, $\sqrt{2}-1 = \frac{1}{\sqrt{2}+1} = (\sqrt{2}+1)^{-1}$.
+Uvedimo smenu $t = \sqrt[4]{(\sqrt{2}+1)^x} = (\sqrt{2}+1)^{x/4}$.
+Tada je $\sqrt[4]{(\sqrt{2}-1)^x} = (\sqrt{2}-1)^{x/4} = ((\sqrt{2}+1)^{-1})^{x/4} = t^{-1} = \frac{1}{t}$.
+Nejednačina postaje:
+\[ t + \frac{1}{t} \le 2\sqrt{2} \]
+Kako je $t > 0$, množimo sa $t$:
+\[ t^2 + 1 \le 2\sqrt{2}t \]
+\[ t^2 - 2\sqrt{2}t + 1 \le 0 \]
+Rešavamo kvadratnu jednačinu $t^2 - 2\sqrt{2}t + 1 = 0$:
+\[ t_{1,2} = \frac{2\sqrt{2} \pm \sqrt{8 - 4}}{2} = \frac{2\sqrt{2} \pm 2}{2} = \sqrt{2} \pm 1 \]
+Dakle, rešenje nejednačine po $t$ je:
+\[ \sqrt{2}-1 \le t \le \sqrt{2}+1 \]
+Vratimo smenu:
+\[ \sqrt{2}-1 \le (\sqrt{2}+1)^{x/4} \le \sqrt{2}+1 \]
+\[ (\sqrt{2}+1)^{-1} \le (\sqrt{2}+1)^{x/4} \le (\sqrt{2}+1)^1 \]
+Kako je osnova $\sqrt{2}+1 > 1$, logaritmovanjem (ili poređenjem eksponenata) dobijamo:
+\[ -1 \le \frac{x}{4} \le 1 \]
+\[ -4 \le x \le 4 \]
+Najveće rešenje je $x_{max} = 4$, a najmanje $x_{min} = -4$.
+Razlika je $4 - (-4) = 8$.
+
+\subsection*{Answer}
+8 (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+U trouglu $ABC$ je $AC = 3$ cm i $BC = 2$ cm, dok je ugao kod temena $C$ jednak $60°$. Neka je $D$ presečna tačka simetrale log ugla stranicom $AB$, a tačka $E$ na stranici $BC$ takva da je duž $DE$ paralelna sa $AC$. Površina trougla $CDE$ (u $\text{cm}^2$) jednaka je:
+
+\subsection*{Solution}
+Koristimo teoremu o simetrali ugla: simetrala deli naspramnu stranu u odnosu stranica koje čine ugao.
+
+\[
+\frac{AD}{DB} = \frac{AC}{BC} = \frac{3}{2}
+\]
+
+Dakle, $AD:DB = 3:2$, što znači da $D$ deli $AB$ u odnosu $3:2$.
+
+Pošto je $DE \parallel AC$, trouglovi $BDE$ i $BAC$ su slični.
+
+Iz sličnosti:
+\[
+\frac{BE}{BC} = \frac{BD}{BA} = \frac{DE}{AC}
+\]
+
+Imamo $BD:BA = 2:5$ (jer $AD:DB = 3:2$), pa:
+\[
+\frac{BE}{BC} = \frac{2}{5} \Rightarrow BE = \frac{2}{5} \cdot 2 = \frac{4}{5}
+\]
+
+Dakle, $CE = BC - BE = 2 - \frac{4}{5} = \frac{6}{5}$.
+
+Takođe:
+\[
+\frac{DE}{AC} = \frac{2}{5} \Rightarrow DE = \frac{2}{5} \cdot 3 = \frac{6}{5}
+\]
+
+Površina trougla $CDE$:
+\[
+S_{CDE} = \frac{1}{2} \cdot CE \cdot DE \cdot \sin(\angle CED)
+\]
+
+Pošto je $DE \parallel AC$, ugao $\angle CED = 180° - \angle ACB = 180° - 60° = 120°$.
+
+\[
+S_{CDE} = \frac{1}{2} \cdot \frac{6}{5} \cdot \frac{6}{5} \cdot \sin(120°) = \frac{1}{2} \cdot \frac{36}{25} \cdot \frac{\sqrt{3}}{2} = \frac{9\sqrt{3}}{25}
+\]
+
+\subsection*{Answer}
+$\frac{9\sqrt{3}}{25}$ (option \textbf{E}).
+
+\end{document}

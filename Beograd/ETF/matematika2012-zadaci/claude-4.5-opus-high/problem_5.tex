@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako se zna da je polinom $x^3 + ax^2 + bx - 4$ ($a, b \in \mathbf{R}$) deljiv polinomom $x^2 - 1$, tada zbir $a^2 + b^2$ iznosi:
+
+(A) 1 \quad (B) 17 \quad (C) 5 \quad (D) 3 \quad (E) 14 \quad (N) Ne znam
+
+\subsection*{Solution}
+If $x^3 + ax^2 + bx - 4$ is divisible by $x^2 - 1 = (x-1)(x+1)$, then $x = 1$ and $x = -1$ must be roots of the polynomial.
+
+For $x = 1$:
+\[
+1 + a + b - 4 = 0 \implies a + b = 3
+\]
+
+For $x = -1$:
+\[
+-1 + a - b - 4 = 0 \implies a - b = 5
+\]
+
+From these two equations:
+\[
+a + b = 3
+\]
+\[
+a - b = 5
+\]
+
+Adding: $2a = 8 \implies a = 4$
+
+Subtracting: $2b = -2 \implies b = -1$
+
+Therefore:
+\[
+a^2 + b^2 = 16 + 1 = 17
+\]
+
+\subsection*{Answer}
+$17$ (option \textbf{B}).
+
+\end{document}

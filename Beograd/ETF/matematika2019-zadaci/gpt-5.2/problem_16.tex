@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Dat je skup
+\[
+S=\left\{\left(\frac{-1+i\sqrt3}{2}\right)^{2019},\ \Im\!\left(\left(\frac{1+i}{\sqrt2}\right)^{2019}\right),\ 0.3333333,\ \frac{\pi}{3},\ \sin\frac{\pi}{3},\ \frac{22}{7}\right\},
+\]
+i skup racionalnih brojeva $\mathbb{Q}=\left\{\frac{p}{q}\mid p\in\mathbb{Z},\,q\in\mathbb{N}\right\}$.
+Broj elemenata skupa $S\cap\mathbb{Q}$ jednak je:
+
+\subsection*{Solution}
+Posmatramo elemente skupa $S$ jedan po jedan.
+
+\medskip
+\noindent\textbf{1) }$\left(\frac{-1+i\sqrt3}{2}\right)^{2019}$.
+Važi
+\[
+\frac{-1+i\sqrt3}{2}=\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}=e^{i\frac{2\pi}{3}}.
+\]
+Zato je
+\[
+\left(e^{i\frac{2\pi}{3}}\right)^{2019}=e^{i\frac{2019\cdot 2\pi}{3}}=e^{i\cdot 673\cdot 2\pi}=1\in\mathbb{Q}.
+\]
+
+\medskip
+\noindent\textbf{2) }$\Im\!\left(\left(\frac{1+i}{\sqrt2}\right)^{2019}\right)$.
+Važi $\frac{1+i}{\sqrt2}=e^{i\pi/4}$, pa
+\[
+\left(e^{i\pi/4}\right)^{2019}=e^{i\frac{2019\pi}{4}}=e^{i\frac{3\pi}{4}}
+=\cos\frac{3\pi}{4}+i\sin\frac{3\pi}{4}.
+\]
+Otuda je imaginarni deo $\sin\frac{3\pi}{4}=\frac{\sqrt2}{2}\notin\mathbb{Q}$.
+
+\medskip
+\noindent\textbf{3) }$0.3333333$ je konačan decimalni zapis, pa je racionalan.
+
+\medskip
+\noindent\textbf{4) }$\frac{\pi}{3}\notin\mathbb{Q}$ (iracionalan).
+
+\medskip
+\noindent\textbf{5) }$\sin\frac{\pi}{3}=\frac{\sqrt3}{2}\notin\mathbb{Q}$.
+
+\medskip
+\noindent\textbf{6) }$\frac{22}{7}\in\mathbb{Q}$.
+
+Dakle racionalni su tačno: $1$, $0.3333333$ i $\frac{22}{7}$, ukupno $3$ elementa.
+
+\subsection*{Answer}
+$3$ (option \textbf{B}).
+
+\end{document}
+

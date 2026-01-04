@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Data je aritmetička progresija $a_1, a_2, \dots$ čija je razlika $d=1$, a zbir prvih 98 članova $a_1 + a_2 + \dots + a_{98} = 137$. Tada je zbir $a_2 + a_4 + a_6 + \dots + a_{98}$ jednak:
+
+\subsection*{Solution}
+Neka je $S = a_1 + a_2 + \dots + a_{98} = 137$.
+Tražimo sumu parnih članova $S_{par} = a_2 + a_4 + \dots + a_{98}$.
+Neka je $S_{nep} = a_1 + a_3 + \dots + a_{97}$.
+Imamo $S_{par} + S_{nep} = 137$.
+Takođe, za svaki $k$, $a_{2k} = a_{2k-1} + d = a_{2k-1} + 1$.
+Broj parnih članova je 49.
+$S_{par} = \sum_{k=1}^{49} a_{2k} = \sum_{k=1}^{49} (a_{2k-1} + 1) = S_{nep} + 49$.
+Zamenom u prvu jednačinu:
+$S_{par} + (S_{par} - 49) = 137$.
+$2S_{par} = 137 + 49 = 186$.
+$S_{par} = 93$.
+
+\subsection*{Answer}
+$93$ (option \textbf{B}).
+
+\end{document}

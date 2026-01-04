@@ -1,0 +1,5 @@
+Problem 5
+
+Ako je \(|x + a| = a\) (\(a \ge 0\)), tada je \(\bigl\lvert |x| - a \bigr\rvert\) jednako:
+
+(A) 0   (B) \(a\)   (C) \(2a\)   (D) \(3a\)   (E) \(\dfrac{a}{2}\)   (N) Ne znam

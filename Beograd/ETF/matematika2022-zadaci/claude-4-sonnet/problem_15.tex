@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Zbir realnih rešenja jednačine $\text{tg}\left(x - \frac{\pi}{12}\right) \text{ctg}\left(x + \frac{\pi}{12}\right) = \frac{1}{3}$ na segmentu $[0, 2\pi]$ iznosi:
+
+\subsection*{Solution}
+Koristimo identitet $\text{tg} \alpha \cdot \text{ctg} \beta = \frac{\sin \alpha \cos \beta}{\cos \alpha \sin \beta}$.
+
+\[
+\text{tg}\left(x - \frac{\pi}{12}\right) \text{ctg}\left(x + \frac{\pi}{12}\right) = \frac{\sin\left(x - \frac{\pi}{12}\right) \cos\left(x + \frac{\pi}{12}\right)}{\cos\left(x - \frac{\pi}{12}\right) \sin\left(x + \frac{\pi}{12}\right)}
+\]
+
+Koristimo formule:
+\[
+\sin A \cos B = \frac{1}{2}[\sin(A+B) + \sin(A-B)]
+\]
+\[
+\cos A \sin B = \frac{1}{2}[\sin(A+B) - \sin(A-B)]
+\]
+
+Imamo:
+- $A = x - \frac{\pi}{12}$, $B = x + \frac{\pi}{12}$
+- $A + B = 2x$, $A - B = -\frac{\pi}{6}$
+
+\[
+\sin A \cos B = \frac{1}{2}[\sin(2x) + \sin(-\frac{\pi}{6})] = \frac{1}{2}[\sin(2x) - \frac{1}{2}]
+\]
+
+\[
+\cos A \sin B = \frac{1}{2}[\sin(2x) - \sin(-\frac{\pi}{6})] = \frac{1}{2}[\sin(2x) + \frac{1}{2}]
+\]
+
+Dakle:
+\[
+\frac{\sin A \cos B}{\cos A \sin B} = \frac{\sin(2x) - \frac{1}{2}}{\sin(2x) + \frac{1}{2}} = \frac{1}{3}
+\]
+
+Rešavamo:
+\[
+3(\sin(2x) - \frac{1}{2}) = \sin(2x) + \frac{1}{2}
+\]
+
+\[
+3\sin(2x) - \frac{3}{2} = \sin(2x) + \frac{1}{2}
+\]
+
+\[
+2\sin(2x) = 2
+\]
+
+\[
+\sin(2x) = 1
+\]
+
+\[
+2x = \frac{\pi}{2} + 2k\pi
+\]
+
+\[
+x = \frac{\pi}{4} + k\pi
+\]
+
+Na segmentu $[0, 2\pi]$: $x = \frac{\pi}{4}, \frac{5\pi}{4}$.
+
+Zbir: $\frac{\pi}{4} + \frac{5\pi}{4} = \frac{6\pi}{4} = \frac{3\pi}{2}$.
+
+\subsection*{Answer}
+$\frac{3\pi}{2}$ (option \textbf{E}).
+
+\end{document}

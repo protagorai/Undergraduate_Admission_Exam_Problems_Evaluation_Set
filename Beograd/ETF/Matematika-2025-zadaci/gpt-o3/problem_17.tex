@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 17}
+Za polinom $P_n(x)$ ($n\ge3$) važi
+\[
+P_n(x) \equiv 3 \pmod{x},\qquad P_n(x) \equiv -x+2 \pmod{x^{2}+1}.
+\]
+Odrediti ostatak pri deljenju polinoma
+\[
+Q(x)=P_n(x)^{2}+P_n(x)+1
+\]
+sa $x^{3}+x=x(x^{2}+1)$.
+
+\subsection*{Solution}
+Ostatak tražimo u obliku
+\[
+R(x)=ax^{2}+bx+c\qquad(\deg R<3).
+\]
+\paragraph{1. Uslov modulo $x$.}  Iz $P_n(0)=3$ sledi
+\[Q(0)=3^{2}+3+1=13 \;\Longrightarrow\;c=13.\]
+
+\paragraph{2. Uslov modulo $x^{2}+1$.}  Budući da je $P_n(x)\equiv -x+2 \pmod{x^{2}+1}$,
+\[
+Q(x)\equiv (-x+2)^{2}+(-x+2)+1 = x^{2}-5x+7 \pmod{x^{2}+1}.
+\]
+Pošto je $x^{2}\equiv -1$ modulo $x^{2}+1$, dobijamo
+\[
+Q(x)\equiv -1-5x+7 = 6-5x \pmod{x^{2}+1}.
+\]
+Ostatak $R(x)$ mora imati istu kongruenciju, pa
+\[
+R(x)- (6-5x)\equiv0\pmod{x^{2}+1}.
+\]
+Sa $c=13$ pišemo
+\[R(x)=ax^{2}+bx+13.
+\]
+Tada
+\[ax^{2}+bx+13-(6-5x)=ax^{2}+(b+5)x+7,
+\]
+što treba da bude višekratnik $x^{2}+1$, recimo $k(x^{2}+1)$.  Izjednačavanjem koeficijenata dobijamo $a=k$, $b+5=0$, $7=k$. Otuda $a=7$, $b=-5$.
+
+\paragraph{3. Ostatak.}
+\[
+R(x)=7x^{2}-5x+13.
+\]
+
+\subsection*{Answer}
+$7x^{2}-5x+13$ (opcija \textbf{A}).
+
+\end{document}

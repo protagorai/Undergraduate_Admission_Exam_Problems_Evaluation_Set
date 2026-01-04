@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Ako je $a = 0{,}1^{0{,}1}$, $b = 0{,}2^{0{,}2}$ i $c = 0{,}3^{0{,}3}$, tada je:
+
+\subsection*{Solution}
+We need to compare $a = 0.1^{0.1}$, $b = 0.2^{0.2}$, and $c = 0.3^{0.3}$.
+
+Let's take logarithms to compare these values:
+\[
+\ln a = 0.1 \ln(0.1) = 0.1 \cdot (-\ln 10) \approx 0.1 \cdot (-2.303) = -0.2303
+\]
+\[
+\ln b = 0.2 \ln(0.2) = 0.2 \cdot \ln(0.2) \approx 0.2 \cdot (-1.609) = -0.3219
+\]
+\[
+\ln c = 0.3 \ln(0.3) = 0.3 \cdot \ln(0.3) \approx 0.3 \cdot (-1.204) = -0.3612
+\]
+
+Since $\ln a > \ln b > \ln c$, we have $a > b > c$.
+
+All values are positive (since they are positive numbers raised to positive powers).
+
+Therefore: $c < b < a$.
+
+\subsection*{Answer}
+$c < b < a$ (option \textbf{D}).
+
+\end{document}

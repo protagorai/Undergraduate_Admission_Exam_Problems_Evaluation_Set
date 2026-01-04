@@ -1,0 +1,5 @@
+Problem 1
+
+Koji od pet datih izraza ima različitu vrednost od ostala četiri izraza?
+
+(A) 2^8    (B) 4^4    (C) 8^{3/3}    (D) 16^2    (E) 32^{6/5}    (N) Ne znam

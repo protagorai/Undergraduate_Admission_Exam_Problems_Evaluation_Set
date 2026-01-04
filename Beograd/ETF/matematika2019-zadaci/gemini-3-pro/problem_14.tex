@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 14}
+Zbir svih vrednosti parametra $a\in\mathbb{R}$ za koje grafici funkcija $y=(a+2)x^2-ax-3$ i $y=ax-4$ imaju tačno jednu zajedničku tačku jeste:
+
+\subsection*{Solution}
+Zajedničke tačke se dobijaju izjednačavanjem funkcija:
+$(a+2)x^2-ax-3 = ax-4$
+$(a+2)x^2 - 2ax + 1 = 0$
+Da bi postojala tačno jedna zajednička tačka, ova jednačina mora imati jedinstveno rešenje.
+Slučaj 1: Jednačina je linearna (koeficijent uz $x^2$ je 0).
+$a+2=0 \Rightarrow a=-2$. Jednačina postaje $4x+1=0$, što ima jedno rešenje.
+
+Slučaj 2: Jednačina je kvadratna i diskriminanta je 0.
+$D = (-2a)^2 - 4(a+2)(1) = 0$
+$4a^2 - 4a - 8 = 0$
+$a^2 - a - 2 = 0$
+$(a-2)(a+1) = 0 \Rightarrow a=2$ ili $a=-1$.
+
+Sve tražene vrednosti su $a \in \{-2, 2, -1\}$.
+Zbir vrednosti: $-2 + 2 + (-1) = -1$.
+
+\subsection*{Answer}
+$-1$ (Opcija \textbf{C})
+
+\end{document}

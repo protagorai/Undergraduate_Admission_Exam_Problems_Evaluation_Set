@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Neka je $S$ skup svih realnih brojeva $x$ za koje važi
+\[
+2\log_{\cos x}\sin x\le \log_{\sin x}\cot x
+\qquad (0<x<\pi).
+\]
+Odrediti oblik skupa $S$.
+
+\subsection*{Solution}
+Najpre odredimo domen da bi logaritmi bili definisani:
+\begin{itemize}
+\item $\log_{\cos x}\sin x$ traži $\cos x>0$ i $\cos x\ne 1$, kao i $\sin x>0$.
+\item $\log_{\sin x}\cot x$ traži $\sin x>0$, $\sin x\ne 1$ i $\cot x>0$.
+\end{itemize}
+Za $0<x<\pi$ imamo $\sin x>0$, a uslov $\cot x>0$ i $\cos x>0$ daje $x\in(0,\frac{\pi}{2})$ (pri čemu je $x\ne \frac{\pi}{2}$ ionako).
+Dakle, radimo na intervalu $(0,\frac{\pi}{2})$.
+
+Prevedimo nejednačinu na prirodne logaritme. Označimo
+\[
+A=\ln(\sin x),\qquad B=\ln(\cos x),
+\]
+pa je $A<0$ i $B<0$ za $x\in(0,\frac{\pi}{2})$.
+Tada je
+\[
+2\log_{\cos x}\sin x=2\frac{A}{B},
+\qquad
+\log_{\sin x}\cot x=\frac{\ln(\cot x)}{\ln(\sin x)}=\frac{\ln(\cos x)-\ln(\sin x)}{A}=\frac{B-A}{A}.
+\]
+Nejednačina postaje
+\[
+2\frac{A}{B}\le \frac{B-A}{A}.
+\]
+Množenjem sa $AB>0$ dobijamo ekvivalentno
+\[
+2A^2\le B^2-AB
+\quad\Longleftrightarrow\quad
+B^2-AB-2A^2\ge 0
+\quad\Longleftrightarrow\quad
+(B+A)(B-2A)\ge 0.
+\]
+Odnosno,
+\[
+\ln(\sin x\cos x)\cdot \ln\!\left(\frac{\cos x}{\sin^2 x}\right)\ge 0.
+\]
+Pošto je za $x\in(0,\frac{\pi}{2})$ uvek $\sin x\cos x<1$, sledi $\ln(\sin x\cos x)<0$,
+pa mora važiti
+\[
+\ln\!\left(\frac{\cos x}{\sin^2 x}\right)\le 0
+\quad\Longleftrightarrow\quad
+\frac{\cos x}{\sin^2 x}\le 1
+\quad\Longleftrightarrow\quad
+\cos x\le \sin^2 x.
+\]
+Zamenimo $\sin^2 x=1-\cos^2 x$ i označimo $t=\cos x\in(0,1)$:
+\[
+t\le 1-t^2
+\quad\Longleftrightarrow\quad
+t^2+t-1\le 0.
+\]
+Pozitivna nula ove kvadratne funkcije je
+\[
+t_0=\frac{-1+\sqrt5}{2}.
+\]
+Pošto je $\cos x$ opadajuća na $(0,\frac{\pi}{2})$, uslov $\cos x\le t_0$ daje
+\[
+x\ge x_0,\qquad x_0=\arccos\!\left(\frac{\sqrt5-1}{2}\right).
+\]
+Sa domenom dobijamo $S$ kao podskup $(0,\frac{\pi}{2})$, tj. praktično interval koji se pruža do $\frac{\pi}{2}$.
+
+\subsection*{Answer}
+$S$ je interval oblika $(a,b)$ (option \textbf{A}); ovde je
+$S=(x_0,\frac{\pi}{2})$ sa $x_0=\arccos\!\left(\frac{\sqrt5-1}{2}\right)$.
+
+\end{document}
+

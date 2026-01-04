@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 7}
+Ako su $x_1$ i $x_2$ rešenja jednačine $ax^2 + bx + c = 0$, tada su $x_1^3$ i $x_2^3$ rešenja jednačine:
+\begin{itemize}
+    \item[A)] $a^3x^2 - b^3x + a^3 + c^3 = 0$
+    \item[B)] $a^3x^2 + b^3x + c^3 + 1 = 0$
+    \item[C)] $a^3x^2 + b(b^2 - 3ac)x + c^3 = 0$
+    \item[D)] $a^3x^2 + (b^3 - 4abc)x + c^3 = 0$
+    \item[E)] $x^2 + (a^3 + b^3)x + a^3 + b^3 + c^3 = 0$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+From Vieta's formulas:
+\[ x_1 + x_2 = -\frac{b}{a}, \quad x_1 x_2 = \frac{c}{a}. \]
+We need a quadratic equation $y^2 - Sy + P = 0$ whose roots are $y_1 = x_1^3$ and $y_2 = x_2^3$.
+The sum of roots is:
+\[ S = x_1^3 + x_2^3 = (x_1 + x_2)(x_1^2 - x_1 x_2 + x_2^2) = (x_1 + x_2)((x_1 + x_2)^2 - 3x_1 x_2). \]
+Substitute the sums and products:
+\[ S = \left(-\frac{b}{a}\right) \left[\left(-\frac{b}{a}\right)^2 - 3\frac{c}{a}\right] = -\frac{b}{a} \left(\frac{b^2}{a^2} - \frac{3ac}{a^2}\right) = -\frac{b}{a} \cdot \frac{b^2 - 3ac}{a^2} = -\frac{b^3 - 3abc}{a^3}. \]
+The product of roots is:
+\[ P = x_1^3 x_2^3 = (x_1 x_2)^3 = \left(\frac{c}{a}\right)^3 = \frac{c^3}{a^3}. \]
+The equation is:
+\[ y^2 - \left(-\frac{b^3 - 3abc}{a^3}\right)y + \frac{c^3}{a^3} = 0. \]
+Multiply by $a^3$:
+\[ a^3 y^2 + (b^3 - 3abc)y + c^3 = 0. \]
+Factor out $b$ in the linear coefficient:
+\[ a^3 y^2 + b(b^2 - 3ac)y + c^3 = 0. \]
+Replacing $y$ with $x$ as per the options:
+\[ a^3 x^2 + b(b^2 - 3ac)x + c^3 = 0. \]
+
+\subsection*{Answer}
+The correct equation corresponds to option \textbf{C}.
+
+\end{document}

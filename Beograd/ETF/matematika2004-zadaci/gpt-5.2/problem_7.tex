@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Ako su $x_1$ i $x_2$ rešenja jednačine $ax^2+bx+c=0$, odrediti jednačinu čija su rešenja $x_1^3$ i $x_2^3$.
+
+\subsection*{Solution}
+Po Vijetovim formulama:
+\[
+x_1+x_2=-\frac{b}{a}=:s,\qquad x_1x_2=\frac{c}{a}=:p.
+\]
+Neka su $y_1=x_1^3$ i $y_2=x_2^3$. Tada je
+\[
+y_1+y_2=x_1^3+x_2^3=(x_1+x_2)^3-3x_1x_2(x_1+x_2)=s^3-3ps,
+\qquad
+y_1y_2=(x_1x_2)^3=p^3.
+\]
+Dakle, $y_1$ i $y_2$ su rešenja kvadratne jednačine
+\[
+y^2-(s^3-3ps)\,y+p^3=0.
+\]
+Uvrstimo $s=-\frac{b}{a}$ i $p=\frac{c}{a}$:
+\[
+s^3-3ps=\left(-\frac{b}{a}\right)^3-3\cdot\frac{c}{a}\cdot\left(-\frac{b}{a}\right)
+=-\frac{b^3}{a^3}+\frac{3bc}{a^2}=\frac{-b^3+3abc}{a^3}.
+\]
+Zato je
+\[
+y^2-\frac{-b^3+3abc}{a^3}y+\frac{c^3}{a^3}=0.
+\]
+Množenjem sa $a^3$ dobijamo traženu jednačinu:
+\[
+a^3y^2+b(b^2-3ac)y+c^3=0.
+\]
+
+\subsection*{Answer}
+$a^3x^2+b(b^2-3ac)x+c^3=0$ (option \textbf{C}).
+
+\end{document}
+

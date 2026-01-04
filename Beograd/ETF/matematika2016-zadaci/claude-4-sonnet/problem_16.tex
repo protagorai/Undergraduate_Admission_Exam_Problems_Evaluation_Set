@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Find all real solutions to the inequality:
+\[
+\frac{|\log_3|2x + 3|| - 3}{\log_3 x} > 0
+\]
+for some real numbers $a, b, c, d$ such that $-\infty < a < b < c < d < +\infty$.
+
+\subsection*{Solution}
+For the inequality to be defined, we need:
+1. $x > 0$ (for $\log_3 x$ to exist)
+2. $x \neq 1$ (for $\log_3 x \neq 0$)
+3. $2x + 3 \neq 0$, so $x \neq -\frac{3}{2}$ (automatically satisfied since $x > 0$)
+4. $|2x + 3| > 0$, which is true for all $x \neq -\frac{3}{2}$
+
+Since $x > 0$, we have $2x + 3 > 3 > 0$, so $|2x + 3| = 2x + 3$.
+
+The inequality becomes:
+\[
+\frac{|\log_3(2x + 3)| - 3}{\log_3 x} > 0
+\]
+
+For this fraction to be positive, numerator and denominator must have the same sign.
+
+Case 1: Both positive
+\[
+|\log_3(2x + 3)| - 3 > 0 \quad \text{and} \quad \log_3 x > 0
+\]
+
+From $\log_3 x > 0$: $x > 1$
+
+From $|\log_3(2x + 3)| > 3$:
+Either $\log_3(2x + 3) > 3$ or $\log_3(2x + 3) < -3$
+
+$\log_3(2x + 3) > 3 \Rightarrow 2x + 3 > 27 \Rightarrow x > 12$
+
+$\log_3(2x + 3) < -3 \Rightarrow 2x + 3 < \frac{1}{27} \Rightarrow x < \frac{1}{27} - \frac{3}{2} = \frac{2 - 81}{54} = -\frac{79}{54}$
+
+Since we need $x > 1$, only $x > 12$ works for Case 1.
+
+Case 2: Both negative
+\[
+|\log_3(2x + 3)| - 3 < 0 \quad \text{and} \quad \log_3 x < 0
+\]
+
+From $\log_3 x < 0$: $0 < x < 1$
+
+From $|\log_3(2x + 3)| < 3$:
+$-3 < \log_3(2x + 3) < 3$
+$\frac{1}{27} < 2x + 3 < 27$
+$\frac{1}{27} - 3 < 2x < 24$
+$-\frac{80}{27} < x < 12$
+
+Since we need $0 < x < 1$, we get $0 < x < 1$.
+
+But we need to check more carefully. For $0 < x < 1$:
+$2x + 3 \in (3, 5)$, so $\log_3(2x + 3) \in (\log_3 3, \log_3 5) = (1, \log_3 5)$
+
+Since $\log_3 5 > 1$ and $\log_3 5 < \log_3 9 = 2 < 3$, we have $|\log_3(2x + 3)| = \log_3(2x + 3) < 3$.
+
+So $|\log_3(2x + 3)| - 3 < 0$ for $0 < x < 1$.
+
+Therefore, the solution is $(0, 1) \cup (12, +\infty)$.
+
+Looking at the answer choices, this corresponds to $(a, b) \cup (c, +\infty)$ where $a = 0$, $b = 1$, $c = 12$.
+
+\subsection*{Answer}
+$(a, b) \cup (c, +\infty)$ (option \textbf{D}).
+
+\end{document}

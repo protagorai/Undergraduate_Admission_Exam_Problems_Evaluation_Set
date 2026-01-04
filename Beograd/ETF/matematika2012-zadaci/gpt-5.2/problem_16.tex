@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Find the number of real solutions of the equation
+\[
+\sqrt{3\cdot 2^{\log_{10}(2x)}+1}+\sqrt{2\cdot 2^{\log_{10}(2x)}+9}
+=\sqrt{13\cdot 2^{\log_{10}(2x)}-4}.
+\]
+Options: (A) $0$ \quad (B) $1$ \quad (C) $2$ \quad (D) $3$ \quad (E) none of the above.
+
+\subsection*{Solution}
+The expression $\log_{10}(2x)$ requires $x>0$.
+Set
+\[
+u=2^{\log_{10}(2x)}.
+\]
+As $x>0$ varies, $\log_{10}(2x)$ ranges over all real numbers, hence $u$ ranges over $(0,\infty)$.
+The equation becomes
+\[
+\sqrt{3u+1}+\sqrt{2u+9}=\sqrt{13u-4}.
+\]
+Square:
+\[
+3u+1+2u+9+2\sqrt{(3u+1)(2u+9)}=13u-4,
+\]
+so
+\[
+2\sqrt{(3u+1)(2u+9)}=8u-14,\qquad \Rightarrow\quad \sqrt{(3u+1)(2u+9)}=4u-7.
+\]
+Thus we must have $4u-7\ge 0$, i.e. $u\ge \frac74$.
+Square again:
+\[
+(3u+1)(2u+9)=(4u-7)^2.
+\]
+Compute:
+\[
+6u^2+29u+9=16u^2-56u+49
+\]
+\[
+\Rightarrow\ 10u^2-85u+40=0 \ \Rightarrow\ 2u^2-17u+8=0.
+\]
+Discriminant:
+\[
+\Delta=17^2-4\cdot 2\cdot 8=289-64=225,\quad \sqrt{\Delta}=15,
+\]
+so
+\[
+u=\frac{17\pm 15}{4}\in\left\{8,\ \frac12\right\}.
+\]
+The constraint $u\ge \frac74$ leaves only $u=8$, which indeed satisfies the original equation:
+\[
+\sqrt{3\cdot 8+1}+\sqrt{2\cdot 8+9}=5+5=10=\sqrt{13\cdot 8-4}.
+\]
+So there is exactly one $u$, hence exactly one $x$.
+
+\subsection*{Answer}
+There is exactly $1$ real solution (option \textbf{B}).
+
+\end{document}
+

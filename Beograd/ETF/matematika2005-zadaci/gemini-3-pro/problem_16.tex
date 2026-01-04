@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 16}
+Koeficijent uz $a^8$ u razvoju binoma $(\frac{1}{\sqrt[3]{a}} - a)^{12}$ je:
+(A) 0 (B) 456 (C) -220 (D) -70 (E) 70 (N) Ne znam
+
+\subsection*{Rešenje}
+Opšti član u razvoju binoma $(A+B)^n$ je $T_{k+1} = \binom{n}{k} A^{n-k} B^k$.
+Ovde je $A = a^{-1/3}$, $B = -a$, $n=12$.
+\[
+T_{k+1} = \binom{12}{k} (a^{-1/3})^{12-k} (-a)^k
+\]
+\[
+T_{k+1} = \binom{12}{k} a^{-\frac{12-k}{3}} (-1)^k a^k
+\]
+\[
+T_{k+1} = \binom{12}{k} (-1)^k a^{k - \frac{12-k}{3}}
+\]
+Eksponent uz $a$ treba da bude 8:
+\[
+k - \frac{12-k}{3} = 8
+\]
+Množimo sa 3:
+\[
+3k - (12-k) = 24
+\]
+\[
+3k - 12 + k = 24
+\]
+\[
+4k = 36 \implies k = 9
+\]
+Traženi koeficijent je:
+\[
+\binom{12}{9} (-1)^9 = -\binom{12}{3} = -\frac{12 \cdot 11 \cdot 10}{3 \cdot 2 \cdot 1} = -2 \cdot 11 \cdot 10 = -220
+\]
+
+\subsection*{Odgovor}
+-220 (opcija \textbf{C}).
+
+\end{document}

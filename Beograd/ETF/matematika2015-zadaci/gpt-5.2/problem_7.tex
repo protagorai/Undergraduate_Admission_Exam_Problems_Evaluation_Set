@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Ako je $a=0{,}1^{0{,}1}$, $b=0{,}2^{0{,}2}$ i $c=0{,}3^{0{,}3}$, odrediti poredak.
+
+\subsection*{Solution}
+Posmatrajmo funkciju $f(x)=x^x$ za $x\in(0,1)$.
+Vazi
+\[
+\ln f(x)=x\ln x,
+\]
+pa je
+\[
+\frac{d}{dx}(x\ln x)=\ln x+1.
+\]
+Za $x<\frac{1}{e}$ je $\ln x<-1$, pa je $\ln x+1<0$ i funkcija $x\ln x$ (a time i $x^x$) opada.
+
+Kako je $0{,}1,0{,}2,0{,}3<\frac{1}{e}$, sledi
+\[
+0{,}1^{0{,}1}>0{,}2^{0{,}2}>0{,}3^{0{,}3},
+\]
+tj.
+\[
+c<b<a.
+\]
+
+\subsection*{Answer}
+$c<b<a$ (opcija \textbf{D}).
+
+\end{document}
+

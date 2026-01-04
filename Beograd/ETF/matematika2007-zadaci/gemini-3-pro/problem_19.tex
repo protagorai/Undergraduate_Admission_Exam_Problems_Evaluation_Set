@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Dati su brojevi $a = \frac{\sin 1}{\sin 2}, b = \frac{\sin 2}{\sin 3}$ i $c = \frac{\sin 3}{\sin 4}$. Tada je :
+\[
+(A)\ a < b < c \quad (B)\ c < b < a \quad (C)\ c < a < b \quad (D)\ b < a < c \quad (E)\ a < c < b \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Uglovi su dati u radijanima.
+$1 \text{ rad} \approx 57^\circ$ (I kvadrant, $\sin > 0$)
+$2 \text{ rad} \approx 115^\circ$ (II kvadrant, $\sin > 0$)
+$3 \text{ rad} \approx 172^\circ$ (II kvadrant, $\sin > 0$)
+$4 \text{ rad} \approx 229^\circ$ (III kvadrant, $\sin < 0$)
+
+Analizirajmo znake:
+$a = \frac{\sin 1}{\sin 2} > 0$
+$b = \frac{\sin 2}{\sin 3} > 0$
+$c = \frac{\sin 3}{\sin 4} < 0$ (jer je imenilac negativan)
+Dakle, $c$ je najmanji broj.
+
+Uporedimo $a$ i $b$:
+$a = \frac{\sin 1}{2\sin 1 \cos 1} = \frac{1}{2\cos 1}$.
+Kako je $1 \text{ rad} \approx 60^\circ$, $\cos 1 \approx 0.5$. Preciznije, $\cos 1 < \cos(\pi/4) \approx 0.7$ i $\cos 1 > 0.5$.
+$a \approx \frac{1}{1.08} \approx 0.92$.
+$b = \frac{\sin 2}{\sin 3}$.
+$\sin 3 = \sin(\pi - 3) \approx \sin(0.14)$. Ovo je mali pozitivan broj.
+$\sin 2 \approx 0.9$.
+$b \approx \frac{0.9}{0.14} > 1$.
+Dakle, $a < 1 < b$.
+
+Poredak je $c < a < b$.
+
+\subsection*{Answer}
+$c < a < b$ (option \textbf{C}).
+
+\end{document}

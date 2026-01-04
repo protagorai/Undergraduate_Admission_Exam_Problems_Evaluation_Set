@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Neka je $B$ tačka na kružnici poluprečnika $r$ i $BC$ tangenta duž dužine 8 cm. Ako je $A$ tačka na istoj kružnici takva da je duž $AC$ dužine 9 cm i da sadrži centar kružnice, onda obim kružnice (u cm) iznosi:
+
+(A) $\frac{36}{17}\pi$ \quad (B) $2\pi$ \quad (C) $\frac{11}{9}\pi$ \quad (D) $\frac{17}{9}\pi$ \quad (E) $\frac{289}{324}\pi$
+
+\subsection*{Solution}
+Neka je $O$ centar kružnice poluprečnika $r$. Tačka $B$ je na kružnici, tako da je $OB = r$.
+
+$BC$ je tangenta na kružnicu u tački $B$, pa je $OB \perp BC$, odnosno ugao $OBC = 90°$.
+
+Tačka $A$ je na kružnici i $AC$ prolazi kroz centar $O$, što znači da je $AC$ dijametar kružnice produžen do tačke $C$, ili $A$ i $C$ su na suprotnim stranama od centra.
+
+Ako $C$ nije na kružnici (jer je $BC$ tangenta), a $AC$ sadrži centar $O$, onda:
+- $OA = r$ (pošto je $A$ na kružnici)
+- $AC = 9$ cm
+- $OC = AC - OA = 9 - r$ ili $OC = OA + AC$ zavisno od položaja
+
+Koristimo činjenicu da je $OB \perp BC$ i Pitagorinu teoremu u trouglu $OBC$:
+\[
+OC^2 = OB^2 + BC^2 = r^2 + 64
+\]
+
+Ako je $A$ diametralno suprotna tačka od preseka $AC$ sa kružnicom bliže $C$, tada:
+$OC = 9 - r$ (ako je $C$ van kružnice i $O$ između $A$ i $C$)
+
+\[
+(9-r)^2 = r^2 + 64
+\]
+\[
+81 - 18r + r^2 = r^2 + 64
+\]
+\[
+81 - 18r = 64
+\]
+\[
+18r = 17
+\]
+\[
+r = \frac{17}{18}
+\]
+
+Obim kružnice:
+\[
+O = 2\pi r = 2\pi \cdot \frac{17}{18} = \frac{17\pi}{9}
+\]
+
+\subsection*{Answer}
+$\frac{17}{9}\pi$ cm (opcija \textbf{(D)}).
+
+\end{document}
+

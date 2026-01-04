@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Given the complex number:
+\[
+z = \frac{\sqrt{2016} + i^{2019}}{\sqrt{2016} + i^{2017}}, \quad (i^2 = -1)
+\]
+Find the value of $\frac{z + \overline{z}}{2}$ (where $\overline{z}$ is the complex conjugate of $z$).
+
+\subsection*{Solution}
+First, let's simplify the powers of $i$:
+\begin{align}
+i^{2017} &= i^{4 \cdot 504 + 1} = (i^4)^{504} \cdot i = 1^{504} \cdot i = i\\
+i^{2019} &= i^{4 \cdot 504 + 3} = (i^4)^{504} \cdot i^3 = 1^{504} \cdot (-i) = -i
+\end{align}
+
+So our expression becomes:
+\[
+z = \frac{\sqrt{2016} + (-i)}{\sqrt{2016} + i} = \frac{\sqrt{2016} - i}{\sqrt{2016} + i}
+\]
+
+To find $z$, we multiply numerator and denominator by the conjugate of the denominator:
+\[
+z = \frac{\sqrt{2016} - i}{\sqrt{2016} + i} \cdot \frac{\sqrt{2016} - i}{\sqrt{2016} - i} = \frac{(\sqrt{2016} - i)^2}{(\sqrt{2016})^2 - (i)^2}
+\]
+
+\[
+= \frac{2016 - 2\sqrt{2016}i + i^2}{2016 - (-1)} = \frac{2016 - 2\sqrt{2016}i - 1}{2017} = \frac{2015 - 2\sqrt{2016}i}{2017}
+\]
+
+Therefore:
+\[
+z = \frac{2015}{2017} - \frac{2\sqrt{2016}}{2017}i
+\]
+
+The complex conjugate is:
+\[
+\overline{z} = \frac{2015}{2017} + \frac{2\sqrt{2016}}{2017}i
+\]
+
+Finally:
+\[
+\frac{z + \overline{z}}{2} = \frac{1}{2}\left(\frac{2015}{2017} - \frac{2\sqrt{2016}}{2017}i + \frac{2015}{2017} + \frac{2\sqrt{2016}}{2017}i\right) = \frac{2015}{2017}
+\]
+
+Since $\frac{2015}{2017} = \frac{2016-1}{2016+1} = \frac{2016-1}{2017}$, this equals $\frac{2015}{2017}$.
+
+\subsection*{Answer}
+$\frac{2015}{2017}$ (option \textbf{C}).
+
+\end{document}

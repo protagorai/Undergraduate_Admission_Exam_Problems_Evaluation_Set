@@ -1,0 +1,23 @@
+REŠENJA - PRIJEMNI ISPIT IZ MATEMATIKE ZA UPIS NA ELEKTROTEHNIČKI FAKULTET
+Univerzitet u Beogradu, 7. jul 2014.
+
+1. C - 2014
+2. D - 28%
+3. C - 2 - 4cos 2α
+4. C - 5/√2
+5. A - (0,1)
+6. A - x
+7. B - a < a³ < a²
+8. B - 2
+9. C - -3/2
+10. A - s·S/(s+S-1)
+11. A - (0,1]
+12. C - 7,5
+13. D - [14,18)
+14. A - √6/2
+15. E - 12
+16. B - 8√2 cm³
+17. D - (p/q)^((p+q)/(p-q))
+18. C - (3π/4, π)
+19. D - 2π/√3
+20. D - 154

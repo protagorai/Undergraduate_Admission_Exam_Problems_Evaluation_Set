@@ -1,0 +1,32 @@
+\section*{Zadatak 7}
+Izracunati granicnu vrednost
+\[
+\lim_{x\to 5\pi}\frac{e^{-\frac{1}{(5\pi-x)^2}+\sqrt{3\pi}}\cdot \log_2\!\left(\frac{x+3\pi}{2\pi}\right)}
+{\left(\sqrt{6x-5\pi}-2\sqrt{\pi}\right)\cdot \tg\!\left(\frac{x}{5}-\frac{4\pi}{3}\right)}.
+\]
+
+\subsection*{Resenje}
+Pri $x\to 5\pi$ vazi
+\[
+-\frac{1}{(5\pi-x)^2}\to -\infty \quad\Longrightarrow\quad
+e^{-\frac{1}{(5\pi-x)^2}+\sqrt{3\pi}}\to 0,
+\]
+dok je
+\[
+\log_2\!\left(\frac{x+3\pi}{2\pi}\right)\to \log_2\!\left(\frac{8\pi}{2\pi}\right)=\log_2 4=2.
+\]
+Dakle brojilac tezi nuli.
+Za imenilac:
+\[
+\sqrt{6x-5\pi}-2\sqrt{\pi}\to \sqrt{25\pi}-2\sqrt{\pi}=3\sqrt{\pi}\neq 0,
+\]
+\[
+\tg\!\left(\frac{x}{5}-\frac{4\pi}{3}\right)\to \tg\!\left(\pi-\frac{4\pi}{3}\right)=\tg\!\left(-\frac{\pi}{3}\right)=-\sqrt{3}\neq 0.
+\]
+Zato imenilac tezi nenultoj konstanti, a ceo razlomak tezi $0$.
+
+\subsection*{Odgovor}
+\[
+\boxed{(B)\;\; 0}
+\]
+

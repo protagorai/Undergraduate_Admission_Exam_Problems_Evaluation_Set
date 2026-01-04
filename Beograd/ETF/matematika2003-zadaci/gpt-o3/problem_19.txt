@@ -1,0 +1,2 @@
+19. Ako je \cos 2x : \cos 2x : \cos 4x = 1 : 2 : y, tada je y jednako:
+A) 4;   B) 5 + 3\sqrt{3};   C) 8;   D) 5 - 3\sqrt{3};   E) 4 - 3\sqrt{3};   N) Ne znam.

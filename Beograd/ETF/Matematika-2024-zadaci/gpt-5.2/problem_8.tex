@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Domen funkcije
+\[
+y=\sqrt{\log_{1/2}(3x^2-2x)}
+\]
+je skup oblika (za neke realne brojeve $a<b<c<d$):
+
+\subsection*{Solution}
+Da bi izraz bio definisan, mora va\u{z}iti:
+\[
+3x^2-2x>0\quad\text{i}\quad \log_{1/2}(3x^2-2x)\ge 0.
+\]
+Kako je baza $1/2\in(0,1)$, funkcija $\log_{1/2}$ je opadaju\u{c}a, pa je
+\[
+\log_{1/2}(u)\ge 0 \;\Longleftrightarrow\; 0<u\le 1.
+\]
+Dakle, tra\u{z}imo re\u{s}enja sistema
+\[
+0<3x^2-2x\le 1.
+\]
+Prvo:
+\[
+3x^2-2x=x(3x-2)>0 \;\Longleftrightarrow\; x<0\ \text{ili}\ x>\frac23.
+\]
+Drugo:
+\[
+3x^2-2x-1\le 0 \;\Longleftrightarrow\; (3x+1)(x-1)\le 0
+\;\Longleftrightarrow\; x\in\left[-\frac13,\,1\right].
+\]
+Presek daje
+\[
+\left[-\frac13,\,0\right)\ \cup\ \left(\frac23,\,1\right].
+\]
+
+\subsection*{Answer}
+$\left[-\dfrac13,0\right)\cup\left(\dfrac23,1\right]$ (option \textbf{A}).
+
+\end{document}
+
+

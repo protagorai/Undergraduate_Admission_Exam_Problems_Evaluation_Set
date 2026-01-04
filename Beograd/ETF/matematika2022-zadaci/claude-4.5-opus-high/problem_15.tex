@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the set of real solutions of the equation $\tan\left(x - \frac{\pi}{12}\right) \cot\left(x + \frac{\pi}{12}\right) = \frac{1}{3}$ on the segment $[0, 2\pi]$.
+
+(A) $3\pi$ \quad (B) $\pi/4$ \quad (C) $5\pi/4$ \quad (D) $4\pi$ \quad (E) $3\pi/2$
+
+\subsection*{Solution}
+The equation can be rewritten as:
+\[
+\frac{\tan\left(x - \frac{\pi}{12}\right)}{\tan\left(x + \frac{\pi}{12}\right)} = \frac{1}{3}
+\]
+
+Let $\alpha = x - \frac{\pi}{12}$ and $\beta = x + \frac{\pi}{12}$, so $\beta - \alpha = \frac{\pi}{6}$.
+
+We have $\tan \alpha = \frac{1}{3} \tan \beta$.
+
+Using the angle addition formula:
+\[
+\tan \beta = \tan\left(\alpha + \frac{\pi}{6}\right) = \frac{\tan \alpha + \tan \frac{\pi}{6}}{1 - \tan \alpha \tan \frac{\pi}{6}} = \frac{\tan \alpha + \frac{1}{\sqrt{3}}}{1 - \frac{\tan \alpha}{\sqrt{3}}}
+\]
+
+Let $t = \tan \alpha$. Then:
+\[
+t = \frac{1}{3} \cdot \frac{t + \frac{1}{\sqrt{3}}}{1 - \frac{t}{\sqrt{3}}} = \frac{t + \frac{1}{\sqrt{3}}}{3 - \frac{3t}{\sqrt{3}}} = \frac{t + \frac{1}{\sqrt{3}}}{3 - \sqrt{3}t}
+\]
+
+Cross-multiply:
+\[
+t(3 - \sqrt{3}t) = t + \frac{1}{\sqrt{3}}
+\]
+\[
+3t - \sqrt{3}t^2 = t + \frac{1}{\sqrt{3}}
+\]
+\[
+\sqrt{3}t^2 - 2t + \frac{1}{\sqrt{3}} = 0
+\]
+
+Multiply by $\sqrt{3}$:
+\[
+3t^2 - 2\sqrt{3}t + 1 = 0
+\]
+
+Using the quadratic formula:
+\[
+t = \frac{2\sqrt{3} \pm \sqrt{12 - 12}}{6} = \frac{2\sqrt{3}}{6} = \frac{\sqrt{3}}{3} = \frac{1}{\sqrt{3}}
+\]
+
+So $\tan\left(x - \frac{\pi}{12}\right) = \frac{1}{\sqrt{3}} = \tan \frac{\pi}{6}$
+
+\[
+x - \frac{\pi}{12} = \frac{\pi}{6} + n\pi, \quad n \in \mathbb{Z}
+\]
+\[
+x = \frac{\pi}{6} + \frac{\pi}{12} + n\pi = \frac{2\pi + \pi}{12} + n\pi = \frac{\pi}{4} + n\pi
+\]
+
+On $[0, 2\pi]$:
+\begin{itemize}
+\item $n = 0$: $x = \frac{\pi}{4}$
+\item $n = 1$: $x = \frac{\pi}{4} + \pi = \frac{5\pi}{4}$
+\end{itemize}
+
+The sum of solutions: $\frac{\pi}{4} + \frac{5\pi}{4} = \frac{6\pi}{4} = \frac{3\pi}{2}$
+
+\subsection*{Answer}
+$\frac{3\pi}{2}$ (option \textbf{E}).
+
+\end{document}

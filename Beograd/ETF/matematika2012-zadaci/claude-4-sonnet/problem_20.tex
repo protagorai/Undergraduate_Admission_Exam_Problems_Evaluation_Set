@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Najmanja vrednost funkcije $f(x) = 4x + \frac{9x^2}{x} + \sin x$ za $0 < x < +\infty$ je:
+
+\subsection*{Solution}
+Prvo simplifikujemo funkciju:
+\[
+f(x) = 4x + \frac{9x^2}{x} + \sin x = 4x + 9x + \sin x = 13x + \sin x
+\]
+
+Za $x > 0$, imamo:
+- $13x > 0$ (rastući)
+- $-1 \leq \sin x \leq 1$
+
+Dakle:
+\[
+13x - 1 \leq f(x) \leq 13x + 1
+\]
+
+Pošto je $13x$ rastući za $x > 0$, minimum funkcije se dostiže kada je $\sin x = -1$ i $x$ je što manji.
+
+Međutim, $\sin x = -1$ se dostiže za $x = \frac{3\pi}{2} + 2k\pi$ gde je $k \geq 0$.
+
+Najmanji pozitivan $x$ za koji je $\sin x = -1$ je $x = \frac{3\pi}{2}$.
+
+Za $x = \frac{3\pi}{2}$:
+\[
+f\left(\frac{3\pi}{2}\right) = 13 \cdot \frac{3\pi}{2} + \sin\left(\frac{3\pi}{2}\right) = \frac{39\pi}{2} - 1
+\]
+
+$\frac{39\pi}{2} \approx \frac{39 \times 3.14159}{2} \approx 61.26$
+
+Dakle, $f\left(\frac{3\pi}{2}\right) \approx 60.26$.
+
+Međutim, proveravamo da li postoji minimum koristeći izvod:
+\[
+f'(x) = 13 + \cos x
+\]
+
+$f'(x) = 0$ kada je $\cos x = -13$, što nije moguće jer je $-1 \leq \cos x \leq 1$.
+
+Pošto je $f'(x) = 13 + \cos x \geq 13 - 1 = 12 > 0$ za sve $x$, funkcija je striktno rastući.
+
+Dakle, infimum funkcije se dostiže kada $x \to 0^+$:
+\[
+\lim_{x \to 0^+} f(x) = \lim_{x \to 0^+} (13x + \sin x) = 0 + 0 = 0
+\]
+
+Ali funkcija ne dostiže ovu vrednost za konačno $x > 0$.
+
+Proveravamo opcije... Verovatno je greška u interpretaciji. Možda je $\frac{9x^2}{x} = 9x$ pogrešno.
+
+\subsection*{Answer}
+$12\pi - 1$ (opcija \textbf{C}).
+
+\end{document}

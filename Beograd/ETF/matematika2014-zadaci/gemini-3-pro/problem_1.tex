@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Vrednost izraza $2014^3 - 2013 \cdot 2014 \cdot 2015$ jednaka je:
+\begin{enumerate}
+    \item[(A)] $1$
+    \item[(B)] $2013$
+    \item[(C)] $2014$
+    \item[(D)] $2015$
+    \item[(E)] $-1$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let $x = 2014$. The expression can be rewritten as:
+\[
+x^3 - (x-1) \cdot x \cdot (x+1)
+\]
+Simplifying the term $(x-1)x(x+1)$:
+\[
+(x-1)x(x+1) = x(x^2-1) = x^3 - x
+\]
+Now substitute back into the original expression:
+\[
+x^3 - (x^3 - x) = x^3 - x^3 + x = x
+\]
+Since $x = 2014$, the value is $2014$.
+
+\subsection*{Answer}
+$2014$ (option \textbf{(C)}).
+
+\end{document}

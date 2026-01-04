@@ -1,0 +1,2 @@
+16. Broj realnih rešenja sistema jednačina 2^x 4^y = 32, \; \log((x-y)^2) = 2 \log 2 = 0 jednak je:
+A) 2;   B) 0;   C) 1;   D) 3;   E) 4;   N) Ne znam.

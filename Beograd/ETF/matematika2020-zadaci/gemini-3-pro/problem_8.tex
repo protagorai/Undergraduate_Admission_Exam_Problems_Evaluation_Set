@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Neka je definisan niz funkcija $f_n : \mathbb{R} \to \mathbb{R}$ sa $f_1(x)=2x+2020$, $f_{n+1}(x)=f_1(f_n(x))$, $n \in \mathbb{N}$. Tada je $f_{2020}(-2020)$ jednako:
+\[
+(A)\ 2^{2020}\quad (B)\ -2^{2020}\quad (C)\ 2020\quad (D)\ -2020\quad (E)\ 0\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Izračunajmo prvih nekoliko članova niza funkcija kako bismo uočili pravilnost.
+\[
+f_1(x) = 2x + 2020
+\]
+\[
+f_2(x) = f_1(f_1(x)) = 2(2x+2020) + 2020 = 4x + 2\cdot 2020 + 2020 = 2^2 x + (2^2-1)2020
+\]
+\[
+f_3(x) = f_1(f_2(x)) = 2(4x + 3\cdot 2020) + 2020 = 8x + 6\cdot 2020 + 2020 = 8x + 7\cdot 2020 = 2^3 x + (2^3-1)2020
+\]
+Opšta formula (koja se može dokazati indukcijom) je:
+\[
+f_n(x) = 2^n x + (2^n-1)2020
+\]
+Tražimo $f_{2020}(-2020)$. Zamenimo $n=2020$ i $x=-2020$:
+\[
+f_{2020}(-2020) = 2^{2020}(-2020) + (2^{2020}-1)2020
+\]
+\[
+f_{2020}(-2020) = -2020 \cdot 2^{2020} + 2020 \cdot 2^{2020} - 2020
+\]
+\[
+f_{2020}(-2020) = -2020
+\]
+
+\subsection*{Answer}
+$-2020$ (option \textbf{D}).
+
+\end{document}

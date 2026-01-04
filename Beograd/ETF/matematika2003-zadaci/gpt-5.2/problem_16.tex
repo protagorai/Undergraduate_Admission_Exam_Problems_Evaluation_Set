@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Odrediti broj realnih re\v{s}enja sistema
+\[
+2^x4^y=32,\qquad \log (x-y)^2-2\log 2=0,
+\]
+gde je $\log$ dekadni logaritam.
+
+\subsection*{Solution}
+Prva jedna\v{c}ina:
+\[
+2^x4^y=2^x(2^2)^y=2^{x+2y}=32=2^5
+\quad\Longrightarrow\quad
+x+2y=5.
+\]
+Druga jedna\v{c}ina:
+\[
+\log (x-y)^2-2\log 2=0
+\quad\Longrightarrow\quad
+\log (x-y)^2=\log 4
+\quad\Longrightarrow\quad
+(x-y)^2=4,
+\]
+pa je
+\[
+x-y=2 \quad\text{ili}\quad x-y=-2.
+\]
+
+\medskip
+\noindent\textbf{(i) $x-y=2$}: tada je $x=y+2$ i $y+2+2y=5\Rightarrow 3y=3\Rightarrow y=1$, $x=3$.
+
+\noindent\textbf{(ii) $x-y=-2$}: tada je $x=y-2$ i $y-2+2y=5\Rightarrow 3y=7\Rightarrow y=\frac73$, $x=\frac13$.
+
+Oba re\v{s}enja su realna i zadovoljavaju uslov $(x-y)^2>0$.
+
+\subsection*{Answer}
+$2$ re\v{s}enja (option \textbf{A}).
+
+\end{document}
+

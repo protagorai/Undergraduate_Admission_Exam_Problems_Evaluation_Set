@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Find the solution set of the inequality:
+\[
+\frac{(x^2 - 4)(5^{2x} - 6 \cdot 5^{x+1} + 5^3)}{\sqrt{9} - 3^{x^2-3x+2}} \leq 0
+\]
+
+\subsection*{Solution}
+Interpreting $\sqrt{9} - 3^{x^2-3x+2}$ as the denominator $D = 3 - 3^{(x-1)(x-2)}$.
+
+For $D > 0$: $3^{(x-1)(x-2)} < 3$, so $(x-1)(x-2) < 1$, giving $0 < x < 3$ approximately.
+
+More precisely, $(x-1)(x-2) < 1$ means $x^2 - 3x + 1 < 0$, i.e., $\frac{3-\sqrt{5}}{2} < x < \frac{3+\sqrt{5}}{2}$.
+
+But we also need $(x-1)(x-2) \neq 1$ for $D \neq 0$.
+
+\textbf{Numerator:} $(x^2-4)(5^{2x} - 30 \cdot 5^x + 125)$
+
+Let $t = 5^x$. Then $t^2 - 30t + 125 = (t-5)(t-25) = (5^x-5)(5^x-25)$.
+\begin{itemize}
+\item $(5^x-5) = 0$ when $x = 1$
+\item $(5^x-25) = 0$ when $x = 2$
+\end{itemize}
+
+Also $(x^2-4) = (x-2)(x+2) = 0$ when $x = \pm 2$.
+
+\textbf{Sign analysis within domain $(0, 3)$:}
+\begin{itemize}
+\item $(0, 1)$: Numerator $< 0$ (check signs), Denominator $> 0$ $\Rightarrow$ fraction $< 0$ \checkmark
+\item $x = 1$: Numerator $= 0$ \checkmark
+\item $(1, 2)$: Numerator $> 0$, Denominator $> 0$ $\Rightarrow$ fraction $> 0$ \ding{55}
+\item $x = 2$: Numerator $= 0$ \checkmark
+\item $(2, 3)$: Numerator $> 0$, Denominator $> 0$ $\Rightarrow$ fraction $> 0$ \ding{55}
+\end{itemize}
+
+The domain restricted by $D \neq 0$ excludes endpoints where $(x-1)(x-2) = 1$.
+
+Solution set: $(0, 1] \cup \{2\}$
+
+In the form $(a, b] \cup \{c\}$ with $a = 0$, $b = 1$, $c = 2$.
+
+\subsection*{Answer}
+$(a, b] \cup \{c\}$ (option \textbf{E}).
+
+\end{document}
+

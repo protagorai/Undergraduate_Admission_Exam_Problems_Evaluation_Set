@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 15}
+Zbir realnih rešenja jednačine $\text{tg}(x - \frac{\pi}{12}) \text{ctg}(x + \frac{\pi}{12}) = \frac{1}{3}$ na segmentu $[0, 2\pi]$ iznosi:
+\begin{itemize}
+    \item[(A)] $3\pi$
+    \item[(B)] $\pi/4$
+    \item[(C)] $5\pi/4$
+    \item[(D)] $4\pi$
+    \item[(E)] $3\pi/2$
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Jednačinu zapisujemo kao:
+\[ \frac{\sin(x - \pi/12)}{\cos(x - \pi/12)} \cdot \frac{\cos(x + \pi/12)}{\sin(x + \pi/12)} = \frac{1}{3} \]
+\[ 3 \sin(x - \pi/12) \cos(x + \pi/12) = \cos(x - \pi/12) \sin(x + \pi/12) \]
+Koristimo formule za pretvaranje proizvoda u zbir:
+\[ 3 \cdot \frac{1}{2}[\sin(2x) + \sin(-\pi/6)] = \frac{1}{2}[\sin(2x) + \sin(\pi/6)] \]
+\[ 3(\sin 2x - 1/2) = \sin 2x + 1/2 \]
+\[ 3\sin 2x - 3/2 = \sin 2x + 1/2 \]
+\[ 2\sin 2x = 2 \implies \sin 2x = 1 \]
+Rešenja su $2x = \pi/2 + 2k\pi$, tj. $x = \pi/4 + k\pi$.
+Na intervalu $[0, 2\pi]$:
+Za $k=0$, $x_1 = \pi/4$.
+Za $k=1$, $x_2 = 5\pi/4$.
+Provera uslova definisanosti (imenilac različit od nule):
+$\cos(x - \pi/12) \neq 0$: Za $\pi/4$, $\cos(\pi/6) \neq 0$. OK.
+$\sin(x + \pi/12) \neq 0$: Za $\pi/4$, $\sin(\pi/3) \neq 0$. OK.
+Zbir rešenja: $x_1 + x_2 = \pi/4 + 5\pi/4 = 6\pi/4 = 3\pi/2$.
+
+\subsection*{Answer}
+$3\pi/2$ (option \textbf{E}).
+
+\end{document}

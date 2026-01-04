@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ako je kompleksan broj $z$ rešenje jednačine $|z| - z + 2\bar{z} + 12i - 2 = 0$, onda je $|z|$ jednako:
+
+\subsection*{Solution}
+
+Let $z = x + iy$. Then $\bar{z} = x - iy$ and $|z| = \sqrt{x^2+y^2}$.
+The equation is:
+\[
+\sqrt{x^2+y^2} - (x+iy) + 2(x-iy) + 12i - 2 = 0.
+\]
+Separating real and imaginary parts:
+\[
+(\sqrt{x^2+y^2} - x + 2x - 2) + i(-y - 2y + 12) = 0.
+\]
+\[
+(\sqrt{x^2+y^2} + x - 2) + i(12 - 3y) = 0.
+\]
+From the imaginary part:
+\[
+12 - 3y = 0 \implies y = 4.
+\]
+From the real part:
+\[
+\sqrt{x^2+16} + x - 2 = 0 \implies \sqrt{x^2+16} = 2 - x.
+\]
+Squaring both sides (with condition $2-x \ge 0 \implies x \le 2$):
+\[
+x^2 + 16 = 4 - 4x + x^2.
+\]
+\[
+16 = 4 - 4x \implies 4x = -12 \implies x = -3.
+\]
+The condition $x \le 2$ is satisfied.
+So $z = -3 + 4i$.
+The modulus is:
+\[
+|z| = \sqrt{(-3)^2 + 4^2} = \sqrt{9+16} = \sqrt{25} = 5.
+\]
+
+
+\subsection*{Answer}
+5 (option \textbf{D}).
+
+\end{document}

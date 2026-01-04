@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+The number of real solutions of the equation $f(x) + f(f(x)) = x$, where $f(x) = |x| + a$ and $a > 0$, is:
+
+\subsection*{Solution}
+We have $f(x) = |x| + a$ where $a > 0$.
+
+The equation is: $f(x) + f(f(x)) = x$
+
+Let's substitute: $f(x) + f(|x| + a) = x$
+
+Since $|x| + a > 0$ for all real $x$ (because $a > 0$), we have:
+$f(|x| + a) = ||x| + a| + a = |x| + a + a = |x| + 2a$
+
+So our equation becomes:
+$(|x| + a) + (|x| + 2a) = x$
+$2|x| + 3a = x$
+$2|x| = x - 3a$
+
+For this equation to have solutions, we need $x - 3a \geq 0$, so $x \geq 3a$.
+
+Case 1: $x \geq 0$ (and $x \geq 3a$, so $x \geq 3a$ since $a > 0$)
+Then $|x| = x$, so: $2x = x - 3a$
+This gives: $x = -3a$
+
+But this contradicts $x \geq 3a > 0$, so there's no solution in this case.
+
+Case 2: $x < 0$ 
+Then $|x| = -x$, so: $2(-x) = x - 3a$
+This gives: $-2x = x - 3a$, so $-3x = -3a$, hence $x = a$.
+
+But this contradicts $x < 0$ since $a > 0$, so there's no solution in this case either.
+
+Wait, let me reconsider. We need $x - 3a \geq 0$ for the equation $2|x| = x - 3a$ to make sense.
+
+If $x \geq 3a > 0$, then $x > 0$, so $|x| = x$:
+$2x = x - 3a \Rightarrow x = -3a$
+
+This is impossible since $x \geq 3a > 0$ but $-3a < 0$.
+
+If $x < 3a$, then $x - 3a < 0$, but we need $2|x| = x - 3a \geq 0$, which is impossible.
+
+Therefore, there are no real solutions.
+
+\subsection*{Answer}
+$0$ (option \textbf{B}).
+
+\end{document}

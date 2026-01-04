@@ -1,0 +1,2 @@
+Date su dve paralelne prave. Na jednoj od njih je 10 a na drugoj 12 različitih tačaka. Broj trouglova koje određuju ove tačke je:
+A) $\binom{10}{2}\binom{12}{1} + \binom{10}{1}\binom{12}{2}$; B) $\binom{22}{3} - \binom{22}{2}$; C) $\binom{10}{1}\binom{12}{2}$; D) $\binom{10}{2}\binom{12}{1}$; E) $10 \cdot 9 \cdot 12 \cdot 11$; N) Ne znam.

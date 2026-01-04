@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 20}
+Skup vrednosti realnog parametra $p$ za koje jednačina
+\[
+|x-p|+|x-1|=1
+\]
+ima tačno dva realna i različita rešenja je oblika (za neke $a,b,c,d\in\mathbb{R}$ takve da je $-\infty<a<b<c<d<+\infty$).
+
+\subsection*{Solution}
+Za fiksne tačke $p$ i $1$ na realnoj osi, važi poznata nejednakost trougla:
+\[
+|x-p|+|x-1|\ge |p-1|
+\]
+za svako $x$, a jednakost važi za sve $x$ između $p$ i $1$.
+
+Ako je $|p-1|>1$, tada je minimalna vrednost leve strane veća od $1$, pa nema rešenja.
+Ako je $|p-1|=1$, tada je jednakost $|x-p|+|x-1|=1$ ispunjena za svaki $x$ iz segmenta između $p$ i $1$, pa ima beskonačno mnogo rešenja.
+Ako je $|p-1|<1$, tada je nivo-skup $|x-p|+|x-1|=1$ u 1D tačno dve tačke (jedna levo od $\min\{p,1\}$ i jedna desno od $\max\{p,1\}$), pa dobijamo tačno dva različita rešenja.
+
+Zato je traženi uslov
+\[
+|p-1|<1 \iff -1<p-1<1 \iff 0<p<2.
+\]
+
+\subsection*{Answer}
+$(0,2)$ (option \textbf{B}, sa $a=0,\ b=2$).
+
+\end{document}
+
+

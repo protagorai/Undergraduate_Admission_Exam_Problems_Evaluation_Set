@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Ukupan broj dijagonala pravilnog desetougla je:
+
+(A) 15 \quad (B) 20 \quad (C) 25 \quad (D) 30 \quad (E) 35 \quad (N) Ne znam
+
+\subsection*{Solution}
+A regular polygon with $n$ vertices has a total number of diagonals given by the formula:
+\[
+D = \frac{n(n-3)}{2}
+\]
+
+This formula comes from the fact that from each vertex we can draw $n-3$ diagonals (we cannot connect to itself or to the two adjacent vertices), giving $n(n-3)$ connections, but we divide by 2 because each diagonal is counted twice.
+
+For a decagon (desetougao), $n = 10$:
+\[
+D = \frac{10(10-3)}{2} = \frac{10 \cdot 7}{2} = \frac{70}{2} = 35
+\]
+
+\subsection*{Answer}
+$35$ (option \textbf{E}).
+
+\end{document}

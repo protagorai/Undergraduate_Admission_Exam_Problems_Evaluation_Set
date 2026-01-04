@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Find the number of ways to arrange $n$ zeros and $k$ ones in a row such that no two ones are adjacent, given $k \leq n + 1$.
+
+\subsection*{Solution}
+We need to place $k$ ones among $n$ zeros such that no two ones are adjacent.
+
+First, arrange the $n$ zeros in a row. This creates $n + 1$ possible positions for the ones (before the first zero, between consecutive zeros, and after the last zero):
+\[
+\_ \, 0 \, \_ \, 0 \, \_ \, 0 \, \_ \, \cdots \, \_ \, 0 \, \_
+\]
+
+There are $n + 1$ gaps (positions) where we can place ones.
+
+We need to choose $k$ of these $n + 1$ positions to place the ones (at most one in each position to ensure no two ones are adjacent).
+
+The number of ways to do this is:
+\[
+\binom{n+1}{k}
+\]
+
+\subsection*{Answer}
+$\binom{n+1}{k}$ (option \textbf{A}).
+
+\end{document}

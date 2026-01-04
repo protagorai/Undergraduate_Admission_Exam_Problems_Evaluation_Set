@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Let $x,y\in\mathbb{C}\setminus\{0\}$ and suppose
+\[
+\frac{x}{y}+4\frac{y}{x}=2.
+\]
+Find $\dfrac{x^3}{y^3}$.
+
+\subsection*{Solution}
+Set $t=\dfrac{x}{y}\neq 0$. Then the condition becomes
+\[
+t+\frac{4}{t}=2 \quad\Longrightarrow\quad t^2-2t+4=0.
+\]
+Solve:
+\[
+t=\frac{2\pm\sqrt{4-16}}{2}=1\pm i\sqrt3.
+\]
+Now compute $t^3$. Write $t$ in polar form: $|t|=\sqrt{1+3}=2$ and
+\[
+1\pm i\sqrt3=2\left(\cos\frac{\pi}{3}\pm i\sin\frac{\pi}{3}\right)=2e^{\pm i\pi/3}.
+\]
+Hence
+\[
+t^3=2^3 e^{\pm i\pi}=8(-1)=-8.
+\]
+But $t^3=(x/y)^3=x^3/y^3$.
+
+\subsection*{Answer}
+$-8$ (option \textbf{A}).
+
+\end{document}
+

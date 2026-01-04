@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 14}
+Broj različitih realnih rešenja jednačine $\sqrt{1-x} + \sqrt{1+x} - \sqrt{1-x^2} = \frac{5}{4}$ je:
+\begin{itemize}
+    \item[(A)] 0
+    \item[(B)] 1
+    \item[(C)] 4
+    \item[(D)] 2
+    \item[(E)] 3
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Domen: $1-x \ge 0$ i $1+x \ge 0 \implies x \in [-1, 1]$.
+Uvedimo smenu $t = \sqrt{1-x} + \sqrt{1+x}$.
+Kvadriranjem: $t^2 = 1-x + 1+x + 2\sqrt{1-x^2} = 2 + 2\sqrt{1-x^2}$.
+Odavde $\sqrt{1-x^2} = \frac{t^2-2}{2}$.
+Jednačina postaje:
+\[ t - \frac{t^2-2}{2} = \frac{5}{4} \]
+\[ 2t - t^2 + 2 = \frac{5}{2} \]
+\[ -t^2 + 2t + 2 = 2.5 \]
+\[ t^2 - 2t + 0.5 = 0 \]
+\[ 2t^2 - 4t + 1 = 0 \]
+Rešenja su $t_{1,2} = \frac{4 \pm \sqrt{16-8}}{4} = 1 \pm \frac{\sqrt{2}}{2}$.
+Analizirajmo opseg vrednosti funkcije $f(x) = \sqrt{1-x} + \sqrt{1+x}$.
+Minimum je za $x = \pm 1$, $f(\pm 1) = \sqrt{2} \approx 1.41$.
+Maksimum je za $x = 0$, $f(0) = 2$.
+Dakle, $t \in [\sqrt{2}, 2]$.
+$t_1 = 1 + \frac{\sqrt{2}}{2} \approx 1.707 \in [\sqrt{2}, 2]$.
+$t_2 = 1 - \frac{\sqrt{2}}{2} \approx 0.293 \notin [\sqrt{2}, 2]$.
+Imamo samo jedno validno rešenje za $t$.
+Iz $t = \sqrt{2 + 2\sqrt{1-x^2}}$, kako je $t < 2$, sledi $\sqrt{1-x^2} < 1$, tj. $x \neq 0$.
+Za datu vrednost $\sqrt{1-x^2} = k \in (0, 1)$, imamo $1-x^2 = k^2$, $x^2 = 1-k^2$, odakle slede dva rešenja $x = \pm \sqrt{1-k^2}$.
+Broj rešenja je 2.
+
+\subsection*{Answer}
+2 (option \textbf{D}).
+
+\end{document}

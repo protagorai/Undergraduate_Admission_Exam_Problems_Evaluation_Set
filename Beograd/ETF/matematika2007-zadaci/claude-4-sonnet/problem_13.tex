@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Vrednost izraza $\frac{\sin 86° + \sin 76° - \sin 26° - \sin 16°}{\cos 86° + \cos 76° + \cos 26° + \cos 16°}$ iznosi:
+\begin{enumerate}
+\item[(A)] $\sqrt{3}$
+\item[(B)] $\frac{\sqrt{3}}{2}$
+\item[(C)] $\frac{2}{\sqrt{3}}$
+\item[(D)] $\frac{1}{\sqrt{3}}$
+\item[(E)] 0
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Koristimo identitete za zbir i razliku sinusa i kosinusa.
+
+Primetimo da:
+\begin{align}
+86° &= 90° - 4° \\
+76° &= 90° - 14° \\
+26° &= 90° - 64° \\
+16° &= 90° - 74°
+\end{align}
+
+Takođe:
+\begin{align}
+\sin 86° &= \sin(90° - 4°) = \cos 4° \\
+\sin 76° &= \sin(90° - 14°) = \cos 14° \\
+\cos 86° &= \cos(90° - 4°) = \sin 4° \\
+\cos 76° &= \cos(90° - 14°) = \sin 14°
+\end{align}
+
+Dakle:
+\begin{align}
+\text{Brojilac} &= \cos 4° + \cos 14° - \sin 26° - \sin 16° \\
+\text{Imenilac} &= \sin 4° + \sin 14° + \cos 26° + \cos 16°
+\end{align}
+
+Koristimo formule za zbir:
+\[
+\sin A + \sin B = 2\sin\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)
+\]
+\[
+\cos A + \cos B = 2\cos\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)
+\]
+
+Za brojilac:
+\begin{align}
+\cos 4° + \cos 14° &= 2\cos 9° \cos 5° \\
+\sin 26° + \sin 16° &= 2\sin 21° \cos 5°
+\end{align}
+
+Dakle:
+\[
+\text{Brojilac} = 2\cos 9° \cos 5° - 2\sin 21° \cos 5° = 2\cos 5°(\cos 9° - \sin 21°)
+\]
+
+Pošto je $\sin 21° = \sin(90° - 69°) = \cos 69°$ i $\cos 9° = \cos 9°$, imamo:
+\[
+\cos 9° - \sin 21° = \cos 9° - \cos 69°
+\]
+
+Koristimo $\cos A - \cos B = -2\sin\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)$:
+\[
+\cos 9° - \cos 69° = -2\sin 39° \sin(-30°) = 2\sin 39° \sin 30° = 2\sin 39° \cdot \frac{1}{2} = \sin 39°
+\]
+
+Dakle:
+\[
+\text{Brojilac} = 2\cos 5° \sin 39°
+\]
+
+Slično za imenilac:
+\begin{align}
+\sin 4° + \sin 14° &= 2\sin 9° \cos 5° \\
+\cos 26° + \cos 16° &= 2\cos 21° \cos 5°
+\end{align}
+
+\[
+\text{Imenilac} = 2\sin 9° \cos 5° + 2\cos 21° \cos 5° = 2\cos 5°(\sin 9° + \cos 21°)
+\]
+
+Pošto je $\cos 21° = \sin 69°$:
+\[
+\sin 9° + \cos 21° = \sin 9° + \sin 69°
+\]
+
+Koristimo formulu za zbir sinusa:
+\[
+\sin 9° + \sin 69° = 2\sin 39° \cos 30° = 2\sin 39° \cdot \frac{\sqrt{3}}{2} = \sqrt{3}\sin 39°
+\]
+
+Dakle:
+\[
+\text{Imenilac} = 2\cos 5° \cdot \sqrt{3}\sin 39° = 2\sqrt{3}\cos 5° \sin 39°
+\]
+
+Konačno:
+\[
+\frac{\text{Brojilac}}{\text{Imenilac}} = \frac{2\cos 5° \sin 39°}{2\sqrt{3}\cos 5° \sin 39°} = \frac{1}{\sqrt{3}}
+\]
+
+\subsection*{Answer}
+Vrednost izraza je $\frac{1}{\sqrt{3}}$, što odgovara opciji \textbf{(D)}.
+
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 9}
+Odrediti skup svih realnih $x$ za koji važi
+\[
+\sqrt{x+3-4\sqrt{x-1}}+\sqrt{x+3+4\sqrt{x-1}}\ge 4.
+\]
+
+\subsection*{Solution}
+Traži se domen: $x-1\ge0\Rightarrow x\ge1$. Postavimo $u=\sqrt{x-1}\;(u\ge0)$, pa $x=u^2+1$ i $x+3=u^2+4$.
+Podkorenovi postaju $(u\pm2)^2$, te nejednačina glasi
+\[
+|u-2|+|u+2|\ge4.
+\]
+Za $u\ge0$ razmatramo slučajeve:
+\begin{itemize}
+  \item $0\le u\le2$: $|u-2|=2-u$, $|u+2|=u+2$ $\Rightarrow$ zbir $4$ (jednakstvo).
+  \item $u\ge2$: $|u-2|=u-2$, $|u+2|=u+2$ $\Rightarrow$ zbir $2u\ge4$.
+\end{itemize}
+Dakle nejednačina je ispunjena za svako $u\ge0$, odnosno za svako $x\ge1$.
+
+\subsection*{Answer}
+$[1,+\infty)$ (option \textbf{A} sa $a=1$).
+
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Dat je trougao $ABC$ sa stranicama $AB=\sqrt2\text{ cm}$ i $AC=\sqrt3\text{ cm}$.
+Neka je tačka $D$ na stranici $BC$ tako da je $\angle BAD=30^\circ$ i $\angle CAD=45^\circ$.
+Dužina duži $AD$ iznosi (u cm):
+\[
+\text{(A) }\frac{\sqrt6}{2}\quad
+\text{(B) }\frac{1}{\sqrt2+\sqrt6}\quad
+\text{(C) }\sqrt{\frac{5}{2}}\quad
+\text{(D) }\frac{\sqrt6+1}{\sqrt2+\sqrt6}\quad
+\text{(E) }\frac{1}{2}.
+\]
+
+\subsection*{Solution}
+Označimo $c=AB=\sqrt2$, $b=AC=\sqrt3$ i $\angle A=\angle BAC=30^\circ+45^\circ=75^\circ$.
+Najpre nađemo $a=BC$ iz kosinusne teoreme:
+\[
+a^2=b^2+c^2-2bc\cos 75^\circ=3+2-2\sqrt6\cos 75^\circ.
+\]
+Kako je
+\[
+\cos 75^\circ=\cos(45^\circ+30^\circ)=\frac{\sqrt6-\sqrt2}{4},
+\]
+sledi
+\[
+2\sqrt6\cos 75^\circ=2\sqrt6\cdot\frac{\sqrt6-\sqrt2}{4}
+=\frac{6-2\sqrt3}{2}=3-\sqrt3,
+\]
+pa je
+\[
+a^2=5-(3-\sqrt3)=2+\sqrt3,\qquad a=\sqrt{2+\sqrt3}.
+\]
+
+Poznata je trigonometrijska formula za podelu stranice cevijanom:
+iz zakona sinusa u trouglovima $ABD$ i $ACD$ i činjenice da su uglovi kod $D$ suplementarni,
+dobija se
+\[
+\frac{BD}{DC}=\frac{c\sin 30^\circ}{b\sin 45^\circ}.
+\]
+Zato je
+\[
+BD=a\cdot\frac{c\sin 30^\circ}{c\sin 30^\circ+b\sin 45^\circ}.
+\]
+Ovde je $c\sin 30^\circ=\sqrt2\cdot\frac12=\frac{\sqrt2}{2}$ i
+$b\sin 45^\circ=\sqrt3\cdot\frac{\sqrt2}{2}=\frac{\sqrt6}{2}$, pa
+\[
+BD=a\cdot\frac{\sqrt2}{\sqrt2+\sqrt6}.
+\]
+
+Ponovo iz zakona sinusa u trouglu $ABD$ važi
+\[
+\frac{AD}{\sin B}=\frac{BD}{\sin 30^\circ}\quad\Longrightarrow\quad AD=\frac{BD\sin B}{\sin 30^\circ}=2\,BD\,\sin B.
+\]
+Još je iz zakona sinusa u trouglu $ABC$:
+\[
+\sin B=\frac{b\sin A}{a}=\frac{\sqrt3\sin 75^\circ}{a}.
+\]
+Kako je $\sin 75^\circ=\frac{\sqrt6+\sqrt2}{4}$, dobijamo
+\[
+\sin B=\frac{\sqrt3(\sqrt6+\sqrt2)}{4a}=\frac{3\sqrt2+\sqrt6}{4a}.
+\]
+Sada:
+\[
+AD=2\cdot\left(a\frac{\sqrt2}{\sqrt2+\sqrt6}\right)\cdot\frac{3\sqrt2+\sqrt6}{4a}
+=\frac{1}{2}\cdot\frac{\sqrt2(3\sqrt2+\sqrt6)}{\sqrt2+\sqrt6}.
+\]
+Pošto je $\sqrt2(3\sqrt2+\sqrt6)=6+2\sqrt3=2(3+\sqrt3)$ i
+$\sqrt2+\sqrt6=\sqrt2(1+\sqrt3)$, sledi
+\[
+AD=\frac{1}{2}\cdot\frac{2(3+\sqrt3)}{\sqrt2(1+\sqrt3)}=\frac{\sqrt3}{\sqrt2}=\frac{\sqrt6}{2}.
+\]
+
+\subsection*{Answer}
+$\dfrac{\sqrt6}{2}$ (option \textbf{A}).
+
+\end{document}
+

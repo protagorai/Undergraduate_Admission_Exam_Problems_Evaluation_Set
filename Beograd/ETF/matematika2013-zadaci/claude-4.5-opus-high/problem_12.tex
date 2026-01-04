@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+In the binomial expansion of $\left(x - \frac{1}{\sqrt[5]{x}}\right)^{12}$ (where $x \in \mathbf{R} \setminus \{0\}$), find the term that does not contain $x$.
+
+Options: (A) $-132$ \quad (B) $66$ \quad (C) $11$ \quad (D) $-12$ \quad (E) $1$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Using the binomial theorem:
+\[
+\left(x - \frac{1}{\sqrt[5]{x}}\right)^{12} = \left(x - x^{-1/5}\right)^{12} = \sum_{k=0}^{12} \binom{12}{k} x^{12-k} \cdot (-x^{-1/5})^k
+\]
+
+The general term is:
+\[
+T_k = \binom{12}{k} x^{12-k} \cdot (-1)^k \cdot x^{-k/5} = \binom{12}{k} (-1)^k x^{12-k-k/5}
+\]
+
+Simplify the exponent:
+\[
+12 - k - \frac{k}{5} = 12 - \frac{6k}{5}
+\]
+
+For the term independent of $x$, set the exponent to 0:
+\[
+12 - \frac{6k}{5} = 0
+\]
+\[
+\frac{6k}{5} = 12
+\]
+\[
+k = 10
+\]
+
+The term with $k = 10$:
+\[
+T_{10} = \binom{12}{10} (-1)^{10} x^0 = \binom{12}{10} \cdot 1 \cdot 1 = \binom{12}{2} = \frac{12 \cdot 11}{2} = 66
+\]
+
+\subsection*{Answer}
+$66$ (option \textbf{B}).
+
+\end{document}

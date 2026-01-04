@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako je rešenje jednačine $4^{x+\sqrt{x^2-2}} - 5 \cdot 2^{x-1+\sqrt{x^2-2}} - 6 = 0$ oblika $\frac{p}{q}$, tada je $p + q$ jednako:
+
+\subsection*{Solution}
+Neka je $y = x + \sqrt{x^2 - 2}$. Tada je jednačina:
+$4^y - 5 \cdot 2^{y-1} - 6 = 0$
+$4^y - \frac{5}{2} \cdot 2^y - 6 = 0$
+$(2^2)^y - \frac{5}{2} \cdot 2^y - 6 = 0$
+$(2^y)^2 - \frac{5}{2} \cdot 2^y - 6 = 0$
+
+Neka je $t = 2^y$. Tada:
+$t^2 - \frac{5}{2}t - 6 = 0$
+$2t^2 - 5t - 12 = 0$
+$(2t + 3)(t - 4) = 0$
+
+Dakle $t = -\frac{3}{2}$ ili $t = 4$.
+
+Pošto je $t = 2^y > 0$, imamo $t = 4$, pa $2^y = 4 = 2^2$, što znači $y = 2$.
+
+Dakle:
+$x + \sqrt{x^2 - 2} = 2$
+$\sqrt{x^2 - 2} = 2 - x$
+
+Kvadriramo obe strane (uz uslov $2 - x \geq 0$, tj. $x \leq 2$):
+$x^2 - 2 = (2 - x)^2 = 4 - 4x + x^2$
+$x^2 - 2 = 4 - 4x + x^2$
+$-2 = 4 - 4x$
+$4x = 6$
+$x = \frac{3}{2}$
+
+Proveravamo: $x = \frac{3}{2} \leq 2$ ✓
+
+Takođe proveravamo da li je $x^2 - 2 \geq 0$:
+$\left(\frac{3}{2}\right)^2 - 2 = \frac{9}{4} - 2 = \frac{9 - 8}{4} = \frac{1}{4} > 0$ ✓
+
+I da li je $\sqrt{x^2 - 2} = 2 - x$:
+$\sqrt{\frac{1}{4}} = \frac{1}{2}$ i $2 - \frac{3}{2} = \frac{1}{2}$ ✓
+
+Dakle $x = \frac{3}{2}$, pa $p = 3$, $q = 2$, i $p + q = 5$.
+
+\subsection*{Answer}
+$5$ (opcija \textbf{C}).
+
+\end{document}

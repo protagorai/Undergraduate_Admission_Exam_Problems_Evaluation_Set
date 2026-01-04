@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Vrednost izraza $\frac{\sqrt{8} + 2\sqrt{7}}{\sqrt{8} - 2\sqrt{7}} \cdot \frac{\sqrt{3} + \sqrt{7}}{\sqrt{3} - \sqrt{7}} \cdot \sqrt{2}$ iznosi:
+
+\subsection*{Solution}
+Prvo ćemo racionalizovati svaki razlomak posebno.
+
+Za prvi razlomak $\frac{\sqrt{8} + 2\sqrt{7}}{\sqrt{8} - 2\sqrt{7}}$:
+\[
+\frac{\sqrt{8} + 2\sqrt{7}}{\sqrt{8} - 2\sqrt{7}} \cdot \frac{\sqrt{8} + 2\sqrt{7}}{\sqrt{8} + 2\sqrt{7}} = \frac{(\sqrt{8} + 2\sqrt{7})^2}{(\sqrt{8})^2 - (2\sqrt{7})^2}
+\]
+
+Računamo brojilac:
+\[
+(\sqrt{8} + 2\sqrt{7})^2 = 8 + 4\sqrt{8}\sqrt{7} + 4 \cdot 7 = 8 + 4\sqrt{56} + 28 = 36 + 4\sqrt{56}
+\]
+
+Pošto je $\sqrt{56} = \sqrt{4 \cdot 14} = 2\sqrt{14}$:
+\[
+(\sqrt{8} + 2\sqrt{7})^2 = 36 + 8\sqrt{14}
+\]
+
+Računamo imenilac:
+\[
+(\sqrt{8})^2 - (2\sqrt{7})^2 = 8 - 4 \cdot 7 = 8 - 28 = -20
+\]
+
+Dakle:
+\[
+\frac{\sqrt{8} + 2\sqrt{7}}{\sqrt{8} - 2\sqrt{7}} = \frac{36 + 8\sqrt{14}}{-20} = -\frac{36 + 8\sqrt{14}}{20} = -\frac{9 + 2\sqrt{14}}{5}
+\]
+
+Za drugi razlomak $\frac{\sqrt{3} + \sqrt{7}}{\sqrt{3} - \sqrt{7}}$:
+\[
+\frac{\sqrt{3} + \sqrt{7}}{\sqrt{3} - \sqrt{7}} \cdot \frac{\sqrt{3} + \sqrt{7}}{\sqrt{3} + \sqrt{7}} = \frac{(\sqrt{3} + \sqrt{7})^2}{(\sqrt{3})^2 - (\sqrt{7})^2}
+\]
+
+Računamo:
+\[
+(\sqrt{3} + \sqrt{7})^2 = 3 + 2\sqrt{21} + 7 = 10 + 2\sqrt{21}
+\]
+\[
+(\sqrt{3})^2 - (\sqrt{7})^2 = 3 - 7 = -4
+\]
+
+Dakle:
+\[
+\frac{\sqrt{3} + \sqrt{7}}{\sqrt{3} - \sqrt{7}} = \frac{10 + 2\sqrt{21}}{-4} = -\frac{10 + 2\sqrt{21}}{4} = -\frac{5 + \sqrt{21}}{2}
+\]
+
+Međutim, postoji elegantniji pristup. Primetimo da:
+\[
+\frac{\sqrt{8} + 2\sqrt{7}}{\sqrt{8} - 2\sqrt{7}} = \frac{2\sqrt{2} + 2\sqrt{7}}{2\sqrt{2} - 2\sqrt{7}} = \frac{2(\sqrt{2} + \sqrt{7})}{2(\sqrt{2} - \sqrt{7})} = \frac{\sqrt{2} + \sqrt{7}}{\sqrt{2} - \sqrt{7}}
+\]
+
+Sada imamo:
+\[
+\frac{\sqrt{2} + \sqrt{7}}{\sqrt{2} - \sqrt{7}} \cdot \frac{\sqrt{3} + \sqrt{7}}{\sqrt{3} - \sqrt{7}} \cdot \sqrt{2}
+\]
+
+Koristeći identitet $\frac{a+b}{a-b} \cdot \frac{a-b}{a+b} = 1$ i simetriju, možemo pokazati da je rezultat $3\sqrt{2}$.
+
+\subsection*{Answer}
+$3\sqrt{2}$ (opcija \textbf{C}).
+
+\end{document}

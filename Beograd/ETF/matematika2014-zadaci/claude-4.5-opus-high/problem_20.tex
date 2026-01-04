@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Iz skupa od 10 studenata, među kojima su samo jedan student elektrotehnike i samo jedan student matematike, biramo komisiju od 6 članova, ali tako da ako je u komisiji student elektrotehnike mora u toj komisiji biti i student matematike. Koliko se takvih komisija može obrazovati?
+
+(A) $210$ \quad (B) $98$ \quad (C) $126$ \quad (D) $154$ \quad (E) $165$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $E$ denote the electrical engineering student and $M$ denote the mathematics student.
+
+We need to count committees where: if $E$ is in the committee, then $M$ must also be in the committee.
+
+This is equivalent to: NOT ($E$ in committee AND $M$ not in committee).
+
+Total ways to choose 6 from 10: $\binom{10}{6} = 210$
+
+Invalid committees: $E$ is in but $M$ is not.
+- $E$ is in the committee (1 way)
+- $M$ is not in the committee
+- Choose remaining 5 members from the other 8 students (excluding both $E$ and $M$): $\binom{8}{5} = 56$
+
+Valid committees = Total - Invalid = $210 - 56 = 154$
+
+\textbf{Alternative approach:}
+
+Case 1: Neither $E$ nor $M$ is in the committee.
+Choose 6 from the remaining 8: $\binom{8}{6} = 28$
+
+Case 2: Both $E$ and $M$ are in the committee.
+Choose remaining 4 from the other 8: $\binom{8}{4} = 70$
+
+Case 3: $M$ is in but $E$ is not.
+Choose remaining 5 from the other 8: $\binom{8}{5} = 56$
+
+Total valid = $28 + 70 + 56 = 154$
+
+\subsection*{Answer}
+$154$ (option \textbf{D}).
+
+\end{document}

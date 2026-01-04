@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Neka je $B$ tačka na kružnici poluprečnika $r$ i $BC$ tangentna duž dužine 8 cm. Ako je $A$ tačka na istoj kružnici takva da je duž $AC$ dužine 9 cm i da sadrži centar kružnice, onda obim kružnice (u cm) iznosi:
+
+\subsection*{Solution}
+Označimo centar kružnice sa $O$.
+
+Dato je:
+\begin{itemize}
+\item $B$ je tačka na kružnici poluprečnika $r$
+\item $BC$ je tangenta na kružnicu, $|BC| = 8$ cm
+\item $A$ je tačka na kružnici, $|AC| = 9$ cm
+\item Duž $AC$ sadrži centar $O$
+\end{itemize}
+
+Pošto $A$ leži na kružnici i duž $AC$ sadrži centar $O$, to znači da $A$ i $C$ leže na istoj strani centra ili da je $C$ između $A$ i neke druge tačke na kružnici kroz centar.
+
+Pošto je $BC$ tangenta na kružnicu u tački $B$, ugao $\angle OBC = 90°$.
+
+U pravouglom trouglu $OBC$:
+\[
+|OC|^2 = |OB|^2 + |BC|^2 = r^2 + 8^2 = r^2 + 64
+\]
+
+Dakle: $|OC| = \sqrt{r^2 + 64}$.
+
+Pošto duž $AC$ sadrži centar $O$, imamo dva slučaja:
+1. $|AC| = |AO| + |OC| = r + \sqrt{r^2 + 64} = 9$
+2. $|AC| = ||AO| - |OC|| = |r - \sqrt{r^2 + 64}| = 9$
+
+Pošto je $\sqrt{r^2 + 64} > r$ za $r > 0$, drugi slučaj daje:
+$\sqrt{r^2 + 64} - r = 9$
+
+Rešavamo:
+\[
+\sqrt{r^2 + 64} = r + 9
+\]
+
+Kvadriramo obe strane:
+\[
+r^2 + 64 = (r + 9)^2 = r^2 + 18r + 81
+\]
+\[
+64 = 18r + 81
+\]
+\[
+18r = 64 - 81 = -17
+\]
+\[
+r = -\frac{17}{18}
+\]
+
+Ovo nije moguće jer je $r > 0$.
+
+Probajmo prvi slučaj:
+\[
+r + \sqrt{r^2 + 64} = 9
+\]
+\[
+\sqrt{r^2 + 64} = 9 - r
+\]
+
+Kvadriramo:
+\[
+r^2 + 64 = (9 - r)^2 = 81 - 18r + r^2
+\]
+\[
+64 = 81 - 18r
+\]
+\[
+18r = 81 - 64 = 17
+\]
+\[
+r = \frac{17}{18}
+\]
+
+Proveravamo: $\sqrt{(\frac{17}{18})^2 + 64} = \sqrt{\frac{289}{324} + 64} = \sqrt{\frac{289 + 20736}{324}} = \sqrt{\frac{21025}{324}} = \frac{145}{18}$
+
+$r + \sqrt{r^2 + 64} = \frac{17}{18} + \frac{145}{18} = \frac{162}{18} = 9$ ✓
+
+Obim kružnice je:
+\[
+O = 2\pi r = 2\pi \cdot \frac{17}{18} = \frac{17\pi}{9}
+\]
+
+\subsection*{Answer}
+$\frac{17\pi}{9}$ (opcija \textbf{D}).
+
+\end{document}

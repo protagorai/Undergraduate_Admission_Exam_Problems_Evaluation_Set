@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Dat je kvadar $ABCDA_1B_1C_1D_1$. Dužine dijagonala strana ovog kvadra su 7, 8 i 9. Susedna temena temenu $B$ su $A, C$ i $B_1$. Dužina visine iz temena $B$ piramide $ABCB_1$ jednaka je:
+
+\subsection*{Solution}
+Let edges at $B$ be $x, y, z$. Face diagonals $d_1, d_2, d_3$.
+$x^2+y^2=49$, $x^2+z^2=64$, $y^2+z^2=81$.
+Summing: $2(x^2+y^2+z^2) = 194 \implies \Sigma = 97$.
+$z^2 = 48 \implies z = 4\sqrt{3}$.
+$y^2 = 33 \implies y = \sqrt{33}$.
+$x^2 = 16 \implies x = 4$.
+Pyramid $ABCB_1$ has orthogonal edges at $B$. Volume $V = \frac{1}{6} xyz$.
+Also $V = \frac{1}{3} \text{Area}(ACB_1) \cdot h$.
+Base $ACB_1$ has sides 7, 8, 9. Semiperimeter $s=12$.
+Area $S = \sqrt{12(5)(4)(3)} = \sqrt{720} = 12\sqrt{5}$.
+$h = \frac{3V}{S} = \frac{xyz}{2S} = \frac{4 \cdot \sqrt{33} \cdot 4\sqrt{3}}{2 \cdot 12\sqrt{5}} = \frac{16 \cdot 3 \sqrt{11}}{24\sqrt{5}} = \frac{2\sqrt{11}}{\sqrt{5}} = \frac{2\sqrt{55}}{5}$.
+
+
+\subsection*{Answer}
+$\frac{2\sqrt{55}}{5}$ (option \textbf{C})
+
+\end{document}

@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je $\operatorname{tg}\alpha = -7$, $\alpha \in (\pi/2, \pi)$, tada $\frac{3\sin\alpha + \cos\alpha}{\cos\alpha - 3\sin\alpha}$ iznosi:
+
+\subsection*{Solution}
+Pošto je $\operatorname{tg}\alpha = -7$, imamo $\frac{\sin\alpha}{\cos\alpha} = -7$, što znači $\sin\alpha = -7\cos\alpha$.
+
+Takođe, iz osnovne trigonometrijske identiteta:
+$\sin^2\alpha + \cos^2\alpha = 1$
+$(-7\cos\alpha)^2 + \cos^2\alpha = 1$
+$49\cos^2\alpha + \cos^2\alpha = 1$
+$50\cos^2\alpha = 1$
+$\cos^2\alpha = \frac{1}{50}$
+
+Pošto je $\alpha \in (\pi/2, \pi)$ (drugi kvadrant), $\cos\alpha < 0$, pa je:
+$\cos\alpha = -\frac{1}{\sqrt{50}} = -\frac{1}{5\sqrt{2}} = -\frac{\sqrt{2}}{10}$
+
+I:
+$\sin\alpha = -7\cos\alpha = -7 \cdot \left(-\frac{\sqrt{2}}{10}\right) = \frac{7\sqrt{2}}{10}$
+
+Sada računamo:
+$\frac{3\sin\alpha + \cos\alpha}{\cos\alpha - 3\sin\alpha}$
+
+$= \frac{3 \cdot \frac{7\sqrt{2}}{10} + \left(-\frac{\sqrt{2}}{10}\right)}{-\frac{\sqrt{2}}{10} - 3 \cdot \frac{7\sqrt{2}}{10}}$
+
+$= \frac{\frac{21\sqrt{2}}{10} - \frac{\sqrt{2}}{10}}{-\frac{\sqrt{2}}{10} - \frac{21\sqrt{2}}{10}}$
+
+$= \frac{\frac{20\sqrt{2}}{10}}{-\frac{22\sqrt{2}}{10}}$
+
+$= \frac{2\sqrt{2}}{-\frac{22\sqrt{2}}{10}} = \frac{2\sqrt{2} \cdot 10}{-22\sqrt{2}} = \frac{20}{-22} = -\frac{10}{11}$
+
+\subsection*{Answer}
+$-\frac{10}{11}$ (opcija \textbf{B}).
+
+\end{document}

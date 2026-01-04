@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 18}
+Na koliko načina se mogu izabrati tri broja iz skupa prirodnih brojeva $\{1, 2, 3, \dots, 40\}$ tako da im zbir bude neparan broj?
+\[ (A)\ 1140 \quad (B)\ 3800 \quad (C)\ 6480 \quad (D)\ 4940 \quad (E)\ 14080 \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+The set contains 20 odd numbers ($1, 3, \dots, 39$) and 20 even numbers ($2, 4, \dots, 40$).
+The sum of three numbers is odd if either:
+1. All three are odd (Odd + Odd + Odd = Odd).
+2. Two are even and one is odd (Even + Even + Odd = Odd).
+
+Case 1: 3 odd numbers.
+Choose 3 from 20 odds: $\binom{20}{3} = \frac{20 \cdot 19 \cdot 18}{6} = 20 \cdot 19 \cdot 3 = 1140$.
+
+Case 2: 2 even and 1 odd.
+Choose 2 from 20 evens and 1 from 20 odds: $\binom{20}{2} \binom{20}{1} = \frac{20 \cdot 19}{2} \cdot 20 = 190 \cdot 20 = 3800$.
+
+Total ways = $1140 + 3800 = 4940$.
+
+\subsection*{Answer}
+$4940$ (option \textbf{D}).
+
+\end{document}

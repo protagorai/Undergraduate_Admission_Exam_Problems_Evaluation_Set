@@ -1,0 +1,70 @@
+PMF Kragujevac - Mathematics Entrance Exam 2024
+===============================================
+Solutions Summary
+
+Problem | Answer
+--------|--------
+   1    |   Г
+   2    |   Б
+   3    |   Г
+   4    |   Г
+   5    |   Б
+   6    |   А
+   7    |   В
+   8    |   В
+   9    |   Б
+  10    |   А
+  11    |   Д
+  12    |   Д
+  13    |   В
+  14    |   Д
+  15    |   А
+
+===============================================
+Detailed Answer Key:
+
+1. Г) -1
+   Expression with x = √2 and y = -1 - √2 simplifies to x + y = -1
+
+2. Б) 1
+   Sum of integer solutions: 0 + 1 = 1
+
+3. Г) 4
+   Integer solutions: {-3, -2, -1, 0} → 4 integers
+
+4. Г) 17
+   a = 2, b = -3, c = 2 → a² + b² + c² = 4 + 9 + 4 = 17
+
+5. Б) -3
+   Solutions: -12, -3, 12 → Sum = -3
+
+6. А) 1
+   Only integer solution: x = 0
+
+7. В) 20
+   Solutions x = 2, 4 → Sum of squares = 4 + 16 = 20
+
+8. В) 2
+   Solutions: x = π/24 and x = 5π/24
+
+9. Б) 5 cm
+   Side of rhombus = √(3² + 4²) = 5 cm
+
+10. А) 8/3 cm³
+    Volume = (1/3) × 4√3 × (2√3/3) = 8/3 cm³
+
+11. Д) 2x + y - 11 = 0
+    Point M(3, 5) lies on this line
+
+12. Д) -3/2
+    f(2) = -3/2
+
+13. В) 1
+    z = (-i)^2024 = 1
+
+14. Д) 6000
+    Count = 4 × 5 × 5 × 5 × 4 × 3 = 6000
+
+15. А) 324
+    First term = 2, fifth term = 162, product = 324
+

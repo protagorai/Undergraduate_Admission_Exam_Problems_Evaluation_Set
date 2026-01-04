@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+If $\sin \alpha = -\frac{5}{13}$ and $\alpha \in \left(\frac{3\pi}{2}, 2\pi\right)$, then $\tan\left(\frac{\pi}{4} + \alpha\right)$ is:
+
+\subsection*{Solution}
+Given: $\sin \alpha = -\frac{5}{13}$ and $\alpha \in \left(\frac{3\pi}{2}, 2\pi\right)$ (fourth quadrant).
+
+In the fourth quadrant, $\sin \alpha < 0$ and $\cos \alpha > 0$.
+
+Using the Pythagorean identity: $\sin^2 \alpha + \cos^2 \alpha = 1$
+\[
+\left(-\frac{5}{13}\right)^2 + \cos^2 \alpha = 1
+\]
+\[
+\frac{25}{169} + \cos^2 \alpha = 1
+\]
+\[
+\cos^2 \alpha = 1 - \frac{25}{169} = \frac{169 - 25}{169} = \frac{144}{169}
+\]
+
+Since $\alpha$ is in the fourth quadrant, $\cos \alpha > 0$:
+\[
+\cos \alpha = \frac{12}{13}
+\]
+
+Therefore:
+\[
+\tan \alpha = \frac{\sin \alpha}{\cos \alpha} = \frac{-\frac{5}{13}}{\frac{12}{13}} = -\frac{5}{12}
+\]
+
+Now we use the tangent addition formula:
+\[
+\tan\left(\frac{\pi}{4} + \alpha\right) = \frac{\tan \frac{\pi}{4} + \tan \alpha}{1 - \tan \frac{\pi}{4} \tan \alpha}
+\]
+
+Since $\tan \frac{\pi}{4} = 1$:
+\[
+\tan\left(\frac{\pi}{4} + \alpha\right) = \frac{1 + \tan \alpha}{1 - \tan \alpha} = \frac{1 + \left(-\frac{5}{12}\right)}{1 - \left(-\frac{5}{12}\right)}
+\]
+\[
+= \frac{1 - \frac{5}{12}}{1 + \frac{5}{12}} = \frac{\frac{12 - 5}{12}}{\frac{12 + 5}{12}} = \frac{\frac{7}{12}}{\frac{17}{12}} = \frac{7}{17}
+\]
+
+\subsection*{Answer}
+$\frac{7}{17}$ (option \textbf{D}).
+
+\end{document}

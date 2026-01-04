@@ -1,0 +1,2 @@
+10. Ako je zbir prva tri člana rastućeg aritmetičkog niza jednak 15 i njihov proizvod jednak 105, a zbir prvih n članova ovog niza jednak 1023, onda je n jednako:
+(A) 35   (B) 33   (C) 31   (D) 29   (E) 27   (N) Ne znam

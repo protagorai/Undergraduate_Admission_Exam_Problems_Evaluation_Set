@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Zbir najveće i najmanje vrednosti funkcije $f(x) = x^3 + 3x^2 - 72x + 90$ na segmentu $[-5, 5]$ iznosi :
+\[
+(A)\ 314 \quad (B)\ 330 \quad (C)\ 400 \quad (D)\ 412 \quad (E)\ 321 \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Prvo nađimo izvod funkcije da bismo odredili stacionarne tačke:
+\[
+f'(x) = 3x^2 + 6x - 72
+\]
+Izjednačimo izvod sa nulom:
+\[
+3(x^2 + 2x - 24) = 0
+\]
+\[
+x^2 + 2x - 24 = 0
+\]
+Rešenja su:
+\[
+x_{1,2} = \frac{-2 \pm \sqrt{4 + 96}}{2} = \frac{-2 \pm 10}{2}
+\]
+$x_1 = 4$, $x_2 = -6$.
+Tačka $x_2 = -6$ ne pripada segmentu $[-5, 5]$.
+Tačka $x_1 = 4$ pripada segmentu.
+Proveravamo vrednosti funkcije u krajevima segmenta i u stacionarnoj tački $x=4$:
+1) $f(-5) = (-5)^3 + 3(-5)^2 - 72(-5) + 90 = -125 + 75 + 360 + 90 = 400$.
+2) $f(4) = 4^3 + 3(4)^2 - 72(4) + 90 = 64 + 48 - 288 + 90 = -86$.
+3) $f(5) = 5^3 + 3(5)^2 - 72(5) + 90 = 125 + 75 - 360 + 90 = -70$.
+
+Najveća vrednost je $M = 400$ (u $x=-5$).
+Najmanja vrednost je $m = -86$ (u $x=4$).
+Zbir najveće i najmanje vrednosti:
+\[
+M + m = 400 + (-86) = 314
+\]
+
+\subsection*{Answer}
+314 (option \textbf{A}).
+
+\end{document}

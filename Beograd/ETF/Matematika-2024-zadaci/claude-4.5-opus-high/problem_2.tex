@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Compute the value of:
+\[
+\frac{(1+i)^{2024} + (1-i)^{2025} \cdot i}{(1-i)^{2024} + (1+i)^{2025} \cdot i}
+\]
+
+\subsection*{Solution}
+First, note that:
+\[
+(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i
+\]
+\[
+(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i
+\]
+
+Therefore:
+\[
+(1+i)^4 = (2i)^2 = -4, \quad (1-i)^4 = (-2i)^2 = -4
+\]
+
+Since $2024 = 4 \times 506$:
+\[
+(1+i)^{2024} = (-4)^{506} = 4^{506}
+\]
+\[
+(1-i)^{2024} = (-4)^{506} = 4^{506}
+\]
+
+For $2025 = 4 \times 506 + 1$:
+\[
+(1+i)^{2025} = 4^{506} \cdot (1+i)
+\]
+\[
+(1-i)^{2025} = 4^{506} \cdot (1-i)
+\]
+
+\textbf{Numerator:}
+\[
+4^{506} + 4^{506}(1-i) \cdot i = 4^{506}[1 + i - i^2] = 4^{506}[1 + i + 1] = 4^{506}(2 + i)
+\]
+
+\textbf{Denominator:}
+\[
+4^{506} + 4^{506}(1+i) \cdot i = 4^{506}[1 + i + i^2] = 4^{506}[1 + i - 1] = 4^{506} \cdot i
+\]
+
+\textbf{Result:}
+\[
+\frac{4^{506}(2+i)}{4^{506} \cdot i} = \frac{2+i}{i} = \frac{(2+i)(-i)}{i(-i)} = \frac{-2i - i^2}{1} = \frac{-2i + 1}{1} = 1 - 2i
+\]
+
+\subsection*{Answer}
+$1 - 2i$ (option \textbf{D}).
+
+\end{document}
+

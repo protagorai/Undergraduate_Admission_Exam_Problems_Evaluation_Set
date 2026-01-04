@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 20}
+Skup svih realnih rešenja nejednačine $\log_{2(x+1)^2-1} (\log_{2x^2+2x+3} (x^2-2x)) \ge 0$ je oblika (za neke realne brojeve $a, b, c$, takve da je $-\infty < a < b < c < +\infty$):
+\[ (A)\ (a,b) \cup (b,c) \quad (B)\ [a,b) \quad (C)\ (-\infty, a) \cup (b,c] \quad (D)\ (a,b] \cup (c, +\infty) \quad (E)\ [a,b] \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Let base $B = 2(x+1)^2-1 = 2x^2+4x+1$.
+Let inner base $C = 2x^2+2x+3$. Note $C = 2(x^2+x)+3 = 2(x+1/2)^2 + 2.5 \ge 2.5 > 1$ for all real $x$.
+Let argument $A = x^2-2x$.
+Domain conditions:
+1. $B > 0, B \ne 1$.
+2. $A > 0 \implies x(x-2) > 0 \implies x \in (-\infty, 0) \cup (2, \infty)$.
+3. $\log_C A > 0 \implies A > 1$ (since $C>1$). $x^2-2x-1 > 0 \implies x \in (-\infty, 1-\sqrt{2}) \cup (1+\sqrt{2}, \infty)$.
+   $1-\sqrt{2} \approx -0.41$.
+   So current domain: $(-\infty, 1-\sqrt{2}) \cup (1+\sqrt{2}, \infty)$ excluding bad $B$.
+
+Inequality: $\log_B (\log_C A) \ge 0$.
+
+Case 1: $B > 1$.
+$\log_C A \ge 1 \implies A \ge C$.
+$x^2-2x \ge 2x^2+2x+3$
+$0 \ge x^2+4x+3$
+$(x+1)(x+3) \le 0 \implies x \in [-3, -1]$.
+Check intersection with $B > 1$.
+$2x^2+4x+1 > 1 \implies 2x(x+2) > 0 \implies x \in (-\infty, -2) \cup (0, \infty)$.
+Intersection of $[-3, -1]$ with $(-\infty, -2) \cup (0, \infty)$ is $[-3, -2)$.
+Check intersection with domain $A > 1$: $[-3, -2)$ is subset of $(-\infty, -0.41)$.
+So $[-3, -2)$ is a solution set.
+
+Case 2: $0 < B < 1$.
+$0 < \log_C A \le 1$.
+LHS $0 < \log_C A$ holds on domain ($A > 1$).
+RHS $\log_C A \le 1 \implies A \le C \implies x \in (-\infty, -3] \cup [-1, \infty)$.
+Check intersection with $0 < B < 1$:
+$2x^2+4x+1 < 1 \implies x \in (-2, 0)$.
+$2x^2+4x+1 > 0 \implies x \in (-\infty, -1-\frac{\sqrt{2}}{2}) \cup (-1+\frac{\sqrt{2}}{2}, \infty)$.
+Combined $B \in (0,1): x \in (-2, -1-\frac{\sqrt{2}}{2}) \cup (-1+\frac{\sqrt{2}}{2}, 0)$.
+Approx: $(-2, -1.7) \cup (-0.3, 0)$.
+Intersect with $x \in (-\infty, -3] \cup [-1, \infty)$.
+- Interval $(-2, -1.7)$: Not in $(-\infty, -3]$ or $[-1, \infty)$. (Since $-1.7 < -1$).
+- Interval $(-0.3, 0)$: Subset of $[-1, \infty)$.
+But we also need domain $A > 1 \implies x < 1-\sqrt{2} \approx -0.41$.
+Interval $(-0.3, 0)$ has no overlap with $x < -0.41$.
+So no solutions in this case.
+
+Final solution: $[-3, -2)$.
+This is of form $[a, b)$.
+
+\subsection*{Answer}
+$[a, b)$ (option \textbf{B}).
+
+\end{document}

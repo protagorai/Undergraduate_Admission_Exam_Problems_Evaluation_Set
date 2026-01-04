@@ -1,0 +1,13 @@
+Problem 4
+Neka su x_1 i x_2 rešenja jednačine x^2 + (m - 2)x + m = 0, m \in \mathbb{R}.
+Razlika najveće i najmanje vrednosti parametra m za koje važi uslov
+
+    x_1^2 + x_2^2 \le 8 - 9 x_1 x_2
+
+iznosi:
+(A) 5
+(B) 1
+(C) 3
+(D) 6
+(E) 4
+(N) Ne znam

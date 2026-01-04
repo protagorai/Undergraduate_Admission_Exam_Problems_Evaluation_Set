@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 13}
+Наћи скуп свих реалних бројева $x$ за које важи
+\[
+(x-1)\sqrt{x^{2}-x-2}\;\ge 0.
+\]
+
+\subsection*{Solution}
+Прво одредимо домен израза.  Захтевамо
+\[
+ x^{2}-x-2\ge0\quad\Longrightarrow\quad(x-2)(x+1)\ge0\;\;\Longrightarrow\;\;x\le-1\;\text{или}\;x\ge2.
+\]
+Подкоренски израз је нев negative и његов корен је $\ge0$, тако да знак дате целине одређује фактор $(x-1)$.
+
+\paragraph{1.}  Када $x\ge2$ добијамо $(x-1)\ge1>0$, па је цео производ $\ge0$.
+
+\paragraph{2.}  Када $x\le-1$ имамо $(x-1)<0$, док је корен $>0$ (јер тада $x^{2}-x-2>0$), па је производ $<0$ и услов није задовољен.  Изузетак је тачка $x=-1$ у којој је корен нула, па је цео производ $0$.
+
+\paragraph{Резултат.}  Скуп решења је
+\[
+\boxed{\{-1\}\cup[2,\infty)}.
+\]
+
+\subsection*{Answer}
+Опција \textbf{C}.
+
+\end{document}

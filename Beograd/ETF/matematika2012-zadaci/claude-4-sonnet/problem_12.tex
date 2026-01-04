@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Vrednost izraza $8\sin^2 80° - 2\sqrt{3}\sin 40° - 2\cos 40°$ jednaka je:
+
+\subsection*{Solution}
+Koristimo identitete i transformacije.
+
+Prvo, $\sin^2 80° = \sin^2(90° - 10°) = \cos^2 10°$.
+
+Takođe, $\sin 40° = \sin(90° - 50°) = \cos 50°$ i $\cos 40° = \cos(90° - 50°) = \sin 50°$.
+
+Dakle, izraz postaje:
+\[
+8\cos^2 10° - 2\sqrt{3}\cos 50° - 2\sin 50°
+\]
+
+Koristimo identitet $\cos^2 \alpha = \frac{1 + \cos 2\alpha}{2}$:
+\[
+8 \cdot \frac{1 + \cos 20°}{2} - 2\sqrt{3}\cos 50° - 2\sin 50°
+\]
+\[
+= 4(1 + \cos 20°) - 2\sqrt{3}\cos 50° - 2\sin 50°
+\]
+\[
+= 4 + 4\cos 20° - 2\sqrt{3}\cos 50° - 2\sin 50°
+\]
+
+Sada, $\cos 50° = \sin 40°$ i $\sin 50° = \cos 40°$:
+\[
+= 4 + 4\cos 20° - 2\sqrt{3}\sin 40° - 2\cos 40°
+\]
+
+Koristimo identitet za kombinaciju sinusa i kosinusa:
+$a\sin \theta + b\cos \theta = \sqrt{a^2 + b^2}\sin(\theta + \phi)$ gde je $\tan \phi = \frac{b}{a}$.
+
+Za $-2\sqrt{3}\sin 40° - 2\cos 40°$:
+$a = -2\sqrt{3}$, $b = -2$
+
+$\sqrt{a^2 + b^2} = \sqrt{12 + 4} = 4$
+
+$\tan \phi = \frac{-2}{-2\sqrt{3}} = \frac{1}{\sqrt{3}} \Rightarrow \phi = 30°$
+
+Dakle:
+$-2\sqrt{3}\sin 40° - 2\cos 40° = -4\sin(40° + 30°) = -4\sin 70°$
+
+Izraz postaje:
+\[
+4 + 4\cos 20° - 4\sin 70°
+\]
+
+Pošto je $\sin 70° = \cos 20°$:
+\[
+= 4 + 4\cos 20° - 4\cos 20° = 4
+\]
+
+\subsection*{Answer}
+4 (opcija \textbf{D}).
+
+\end{document}

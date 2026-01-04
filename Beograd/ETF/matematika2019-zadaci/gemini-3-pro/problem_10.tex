@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 10}
+Zbir svih realnih rešenja jednačine $\sqrt{4x^2+9x+5}-\sqrt{2x^2+x-1}=\sqrt{x^2-1}$ jeste:
+
+\subsection*{Solution}
+Definisanost korena:
+$4x^2+9x+5 \ge 0$, $2x^2+x-1 \ge 0$, $x^2-1 \ge 0$.
+Faktorisanjem izraza pod korenima:
+$\sqrt{(x+1)(4x+5)} - \sqrt{(x+1)(2x-1)} = \sqrt{(x+1)(x-1)}$.
+Očigledno je $x=-1$ rešenje (svi koreni postaju 0).
+Za $x \neq -1$, možemo podeliti jednačinu sa $\sqrt{|x+1|}$.
+U domenu $x \ge 1$ (gde su svi faktori pozitivni):
+$\sqrt{4x+5} - \sqrt{2x-1} = \sqrt{x-1}$.
+Kvadriranjem:
+$4x+5 + 2x-1 - 2\sqrt{(4x+5)(2x-1)} = x-1$
+$6x+4 - (x-1) = 2\sqrt{8x^2+6x-5}$
+$5x+5 = 2\sqrt{8x^2+6x-5}$
+Kvadriranjem ponovo:
+$25(x^2+2x+1) = 4(8x^2+6x-5)$
+$25x^2+50x+25 = 32x^2+24x-20$
+$7x^2-26x-45 = 0$
+Rešenja kvadratne jednačine su $x_1=5$ i $x_2=-9/7$.
+$x=5$ pripada domenu $[1, \infty)$ i zadovoljava jednačinu.
+$x=-9/7$ ne zadovoljava uslove (proverom u polaznoj jednačini dobija se kontradikcija ili izrazi pod korenom nisu definisani na odgovarajući način da bi jednakost važila).
+Dakle, rešenja su $x_1=-1$ i $x_2=5$.
+Zbir rešenja je $-1+5=4$.
+
+\subsection*{Answer}
+$4$ (Opcija \textbf{A})
+
+\end{document}

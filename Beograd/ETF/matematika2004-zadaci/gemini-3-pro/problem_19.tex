@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 19}
+Neka je $S$ skup svih realnih brojeva $x$ za koje važi $2 \log_{\cos x} \sin x \le \log_{\sin x} \cot x \quad (0 < x < \pi)$. Tada je za neke brojeve $a, b, c, d, e, f \quad (a < b < c < d < e < f)$, skup $S$ oblika:
+\begin{itemize}
+    \item[A)] $(a, b)$
+    \item[B)] $[a, b] \cup [c, d]$
+    \item[C)] $(a, b) \cup (c, d)$
+    \item[D)] $[a, b]$
+    \item[E)] $(a, b) \cup (c, d) \cup (e, f)$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+First, determine the domain.
+The logarithms must be defined:
+\begin{itemize}
+    \item Bases $\cos x$ and $\sin x$ must be positive and not equal to 1.
+    \item Arguments $\sin x$ and $\cot x$ must be positive.
+\end{itemize}
+Given $0 < x < \pi$:
+$\sin x > 0$ is true on $(0, \pi)$. $\sin x \ne 1 \implies x \ne \pi/2$.
+$\cos x > 0 \implies x \in (0, \pi/2)$.
+$\cot x > 0 \implies \cos x / \sin x > 0 \implies \cos x > 0$ (since $\sin x > 0$).
+So the domain is $x \in (0, \pi/2)$.
+
+Now solve the inequality:
+\[ 2 \frac{\ln \sin x}{\ln \cos x} \le \frac{\ln \cot x}{\ln \sin x} = \frac{\ln \cos x - \ln \sin x}{\ln \sin x}. \]
+Let $u = \ln \sin x$ and $v = \ln \cos x$. Since $x \in (0, \pi/2)$, both $\sin x$ and $\cos x$ are in $(0, 1)$, so $u < 0$ and $v < 0$.
+The inequality is:
+\[ \frac{2u}{v} \le \frac{v-u}{u}. \]
+Subtract RHS:
+\[ \frac{2u}{v} - \frac{v-u}{u} \le 0 \implies \frac{2u^2 - v(v-u)}{uv} \le 0 \implies \frac{2u^2 - v^2 + uv}{uv} \le 0. \]
+Since $u < 0$ and $v < 0$, the denominator $uv > 0$. Thus:
+\[ 2u^2 + uv - v^2 \le 0 \implies (2u - v)(u + v) \le 0. \]
+Substitute back:
+\[ (2 \ln \sin x - \ln \cos x)(\ln \sin x + \ln \cos x) \le 0. \]
+\[ \ln \left(\frac{\sin^2 x}{\cos x}\right) \ln (\sin x \cos x) \le 0. \]
+Consider the second factor $\ln (\sin x \cos x) = \ln (\frac{1}{2} \sin 2x)$. Since $\sin 2x \le 1$, $\frac{1}{2} \sin 2x \le \frac{1}{2} < 1$, so the log is always negative.
+Therefore, the first factor must be non-negative:
+\[ \ln \left(\frac{\sin^2 x}{\cos x}\right) \ge 0 \implies \frac{\sin^2 x}{\cos x} \ge 1. \]
+Since $\cos x > 0$:
+\[ \sin^2 x \ge \cos x \implies 1 - \cos^2 x \ge \cos x \implies \cos^2 x + \cos x - 1 \le 0. \]
+Let $t = \cos x$. Since $x \in (0, \pi/2)$, $t \in (0, 1)$.
+The roots of $t^2 + t - 1 = 0$ are $\frac{-1 \pm \sqrt{5}}{2}$.
+Since $t > 0$, the condition is $0 < t \le \frac{\sqrt{5}-1}{2}$.
+In terms of $x$:
+\[ 0 < \cos x \le \frac{\sqrt{5}-1}{2}. \]
+Since $\cos x$ is decreasing:
+\[ \arccos\left(\frac{\sqrt{5}-1}{2}\right) \le x < \frac{\pi}{2}. \]
+Let $a = \arccos\left(\frac{\sqrt{5}-1}{2}\right)$ and $b = \pi/2$.
+The solution set is $[a, b)$.
+Looking at the options, the form is a single interval. Option D represents a closed interval $[a, b]$, which is the closest form for a continuous range including the start point, even though the end point is excluded by the domain.
+
+\subsection*{Answer}
+The set is of the form $[a, b]$, which corresponds to option \textbf{D}.
+
+\end{document}

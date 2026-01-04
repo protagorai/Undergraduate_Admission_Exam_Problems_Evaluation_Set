@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Dat je kompleksan broj $z = \frac{\sqrt{2016}+i^{2019}}{\sqrt{2016}+i^{2017}}$, $(i^2=-1)$. Tada je izraz $\frac{z+\bar{z}}{2}$ (gde je $\bar{z}$ konjugovano kompleksni broj broja $z$) jednak:
+
+\subsection*{Solution}
+Simplify powers of $i$:
+\[ i^{2019} = i^{4 \cdot 504 + 3} = i^3 = -i \]
+\[ i^{2017} = i^{4 \cdot 504 + 1} = i^1 = i \]
+Substitute into $z$:
+\[ z = \frac{\sqrt{2016}-i}{\sqrt{2016}+i} \]
+To remove the complex denominator, multiply numerator and denominator by the conjugate $\sqrt{2016}-i$:
+\[ z = \frac{(\sqrt{2016}-i)^2}{(\sqrt{2016}+i)(\sqrt{2016}-i)} = \frac{2016 - 2i\sqrt{2016} + i^2}{2016 - i^2} \]
+\[ z = \frac{2016 - 1 - 2i\sqrt{2016}}{2016 + 1} = \frac{2015 - 2i\sqrt{2016}}{2017} \]
+\[ z = \frac{2015}{2017} - i \frac{2\sqrt{2016}}{2017} \]
+The expression $\frac{z+\bar{z}}{2}$ represents the real part of $z$, Re($z$).
+\[ \text{Re}(z) = \frac{2015}{2017} \]
+
+\subsection*{Answer}
+$\frac{2015}{2017}$ (option \textbf{C})
+
+\end{document}

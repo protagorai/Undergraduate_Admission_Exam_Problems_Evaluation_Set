@@ -1,0 +1,10 @@
+Problem 7
+Baza piramide je pravougli trougao ABC sa hipotenuzom AB = c i uglom \angle BAC = 30^\circ.
+Ako je središte O hipotenuze AB ortogonalna projekcija vrha piramide S i važi SO = 4O,
+onda zapremina piramide iznosi:
+(A) (\sqrt{3} c^3)/24
+(B) c^3/48
+(C) (\sqrt{3} c^3)/54
+(D) c^3/(16\sqrt{3})
+(E) c^3/(9\sqrt{3})
+(N) Ne znam

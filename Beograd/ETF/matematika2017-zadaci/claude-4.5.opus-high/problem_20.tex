@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Let $A = \{1, 2, 3, 4, 5, 6, 7\}$. Find the total number of mappings $f: A \to A$ such that
+\[
+(\forall k \in A)\left(f(k) \neq \min\{k, 3\} \land (k > 3 \Rightarrow f(k) < k - 2)\right)
+\]
+where $\min\{a, b\} = \begin{cases} a, & a \leq b \\ b, & a > b \end{cases}$.
+
+(A) $2592$ \quad (B) $1722$ \quad (C) $3421$ \quad (D) $1628$
+
+\subsection*{Solution}
+Let's analyze the constraints for each $k \in A$:
+
+For $k \leq 3$: $\min\{k, 3\} = k$, so $f(k) \neq k$.
+\begin{itemize}
+\item $k = 1$: $f(1) \neq 1$ → 6 choices
+\item $k = 2$: $f(2) \neq 2$ → 6 choices
+\item $k = 3$: $f(3) \neq 3$ → 6 choices
+\end{itemize}
+
+For $k > 3$: $\min\{k, 3\} = 3$, so $f(k) \neq 3$ AND $f(k) < k - 2$.
+\begin{itemize}
+\item $k = 4$: $f(4) \neq 3$ and $f(4) < 2$, so $f(4) = 1$ → 1 choice
+\item $k = 5$: $f(5) \neq 3$ and $f(5) < 3$, so $f(5) \in \{1, 2\}$ → 2 choices
+\item $k = 6$: $f(6) \neq 3$ and $f(6) < 4$, so $f(6) \in \{1, 2\}$ → 2 choices
+\item $k = 7$: $f(7) \neq 3$ and $f(7) < 5$, so $f(7) \in \{1, 2, 4\}$ → 3 choices
+\end{itemize}
+
+Total number of mappings:
+\[
+6 \times 6 \times 6 \times 1 \times 2 \times 2 \times 3 = 216 \times 12 = 2592
+\]
+
+\subsection*{Answer}
+(A) $2592$
+
+\end{document}

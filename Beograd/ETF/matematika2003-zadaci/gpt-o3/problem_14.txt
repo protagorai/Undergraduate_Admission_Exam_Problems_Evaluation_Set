@@ -1,0 +1,2 @@
+14. U jednakokraki trougao ABC (AB = AC = 3\text{ cm}, BC = 2\text{ cm}) upisan je krug koji dodiruje krake AB i AC redom u tačkama D i E. Dužina duži DE jednaka je (u cm):
+A) \tfrac{10}{3};   B) \tfrac{5}{3};   C) \tfrac{13\sqrt{3}}{100};   D) \tfrac{3}{5};   E) \tfrac{7}{3};   N) Ne znam.

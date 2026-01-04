@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 18}
+Odrediti skup svih $x\in(0,\pi)$ za koje važi
+\[
+(2\sin x)^{\sin^{2}x}\ge1.
+\]
+
+\subsection*{Solution}
+Neka je $B=2\sin x\;(>0)$ baza potencije, a $E=\sin^{2}x\;(\ge0)$ eksponent.
+
+\paragraph{1. Posmatranje slučajeva prema bazi.}
+Za pozitivnu bazu $B$ i nenegativan eksponent $E$ važi:
+\begin{itemize}
+  \item Ako je $B>1$, tada je $B^{E}>1$ (uz $E>0$) ili $=1$ (ako je $E=0$).
+  \item Ako je $0<B<1$, tada je $B^{E}<1$ za svako $E>0$.
+  \item Ako je $B=1$, tada je $B^{E}=1$ za svako $E$.
+\end{itemize}
+
+\paragraph{2. Gde je baza $>1$?}
+$B>1\iff 2\sin x>1\iff \sin x>\tfrac12\iff x\in(\tfrac{\pi}{6},\tfrac{5\pi}{6}).$
+Za sve te $x$ vrijedi \(E=\sin^{2}x>0\), pa je nejednačina ispunjena.
+
+\paragraph{3. Rubni slučajevi $B=1$.}
+$B=1$ kada je $\sin x=\tfrac12$, odnosno $x=\tfrac{\pi}{6}$ ili $x=\tfrac{5\pi}{6}$. Tada izraz iznosi $1$ bez obzira na $E$, pa su te tačke prihvatljive.
+
+\paragraph{4. Baza $<1$.}
+Za $x\in(0,\tfrac{\pi}{6})\cup(\tfrac{5\pi}{6},\pi)$ imamo $B<1$ i $E>0$, pa je izraz $<1$ – ne zadovoljava uslov.
+
+\paragraph{5. Rešenje.}
+\[
+\boxed{\left[\tfrac{\pi}{6},\,\tfrac{5\pi}{6}\right]}.
+\]
+
+\subsection*{Answer}
+$[\pi/6,\,5\pi/6]$ (opcija \textbf{E}).
+
+\end{document}

@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+The set of points in the plane $xOy$ for which the distance to point $A(1, 0)$ is twice the distance to point $B(-2, 0)$ represents:
+
+\subsection*{Solution}
+Let $P(x, y)$ be any point in the plane. The condition states:
+\[
+|PA| = 2|PB|
+\]
+
+The distance from $P$ to $A(1, 0)$ is:
+\[
+|PA| = \sqrt{(x - 1)^2 + y^2}
+\]
+
+The distance from $P$ to $B(-2, 0)$ is:
+\[
+|PB| = \sqrt{(x + 2)^2 + y^2}
+\]
+
+The condition becomes:
+\[
+\sqrt{(x - 1)^2 + y^2} = 2\sqrt{(x + 2)^2 + y^2}
+\]
+
+Squaring both sides:
+\[
+(x - 1)^2 + y^2 = 4[(x + 2)^2 + y^2]
+\]
+
+Expanding:
+\[
+x^2 - 2x + 1 + y^2 = 4[x^2 + 4x + 4 + y^2]
+\]
+\[
+x^2 - 2x + 1 + y^2 = 4x^2 + 16x + 16 + 4y^2
+\]
+
+Rearranging:
+\[
+x^2 - 2x + 1 + y^2 - 4x^2 - 16x - 16 - 4y^2 = 0
+\]
+\[
+-3x^2 - 18x - 15 - 3y^2 = 0
+\]
+\[
+3x^2 + 18x + 15 + 3y^2 = 0
+\]
+\[
+x^2 + 6x + 5 + y^2 = 0
+\]
+\[
+(x + 3)^2 - 9 + 5 + y^2 = 0
+\]
+\[
+(x + 3)^2 + y^2 = 4
+\]
+
+This is the equation of a circle with center $(-3, 0)$ and radius $2$.
+
+\subsection*{Answer}
+Circle (option \textbf{B}).
+
+\end{document}

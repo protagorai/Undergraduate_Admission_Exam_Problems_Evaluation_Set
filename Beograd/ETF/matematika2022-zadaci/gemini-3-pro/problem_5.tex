@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 5}
+Ostatak pri deljenju polinoma $P(x) = x^{2022} - 2x^{2021} + x^{2019} - x^2 + 2x + 1$ polinomom $Q(x) = x^2 + 1$ iznosi:
+\begin{itemize}
+    \item[(A)] $-2x+1$
+    \item[(B)] 1
+    \item[(C)] $-x-1$
+    \item[(D)] $x-1$
+    \item[(E)] $-x+1$
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Nule polinoma $Q(x) = x^2 + 1$ su $x = i$ i $x = -i$.
+Prema Bezujevom stavu, ostatak $R(x)$ pri deljenju sa $x^2 + 1$ je linearni polinom $ax + b$ takav da je $P(i) = R(i)$.
+Računamo $P(i)$:
+\[ P(i) = i^{2022} - 2i^{2021} + i^{2019} - i^2 + 2i + 1 \]
+Koristimo osobine stepena imaginarne jedinice $i$:
+$i^1 = i, i^2 = -1, i^3 = -i, i^4 = 1$.
+Eksponenti modulo 4:
+$2022 \equiv 2 \pmod 4 \implies i^{2022} = -1$
+$2021 \equiv 1 \pmod 4 \implies i^{2021} = i$
+$2019 \equiv 3 \pmod 4 \implies i^{2019} = -i$
+Zamenom dobijamo:
+\[ P(i) = (-1) - 2(i) + (-i) - (-1) + 2i + 1 \]
+\[ P(i) = -1 - 2i - i + 1 + 2i + 1 = 1 - i \]
+Ostatak je oblika $R(x) = ax + b$, pa je $R(i) = ai + b$.
+Izjednačavanjem:
+\[ ai + b = 1 - i \]
+Poređenjem realnih i imaginarnih delova:
+$b = 1$
+$a = -1$
+Dakle, ostatak je $R(x) = -x + 1$.
+
+\subsection*{Answer}
+$-x + 1$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 20}
+Broj načina na koji se mogu izabrati četiri različita broja iz skupa $\{1, 2, \dots, 9\}$ tako da je bar jedan od njih deljiv sa četiri i bar jedan od njih strogo veći od pet iznosi:
+
+\subsection*{Solution}
+Ukupan broj načina da izaberemo 4 broja od 9 je $\binom{9}{4} = \frac{9 \cdot 8 \cdot 7 \cdot 6}{4 \cdot 3 \cdot 2 \cdot 1} = 126$.
+
+Definišimo skupove "loših" izbora.
+Uslov 1: Bar jedan deljiv sa 4. (Brojevi deljivi sa 4 su $\{4, 8\}$).
+Uslov 2: Bar jedan veći od 5. (Brojevi veći od 5 su $\{6, 7, 8, 9\}$).
+
+Neka je $S$ skup svih kombinacija.
+Neka je $A$ svojstvo da izbor NEMA broj deljiv sa 4.
+Neka je $B$ svojstvo da izbor NEMA broj veći od 5.
+
+Tražimo broj kombinacija koje nemaju ni $A$ ni $B$ (dakle ispunjavaju oba pozitivna uslova).
+To je $|S| - |A \cup B|$.
+$|A \cup B| = |A| + |B| - |A \cap B|$.
+
+Izračunajmo $|A|$:
+Biramo 4 broja iz skupa bez $\{4, 8\}$. Skup je $\{1, 2, 3, 5, 6, 7, 9\}$ (7 brojeva).
+$|A| = \binom{7}{4} = \binom{7}{3} = \frac{7 \cdot 6 \cdot 5}{6} = 35$.
+
+Izračunajmo $|B|$:
+Biramo 4 broja iz skupa bez $\{6, 7, 8, 9\}$. Skup je $\{1, 2, 3, 4, 5\}$ (5 brojeva).
+$|B| = \binom{5}{4} = 5$.
+
+Izračunajmo $|A \cap B|$:
+Biramo 4 broja tako da nema ni $\{4, 8\}$ ni $\{6, 7, 8, 9\}$.
+Zabranjeni su: $4, 6, 7, 8, 9$.
+Dozvoljeni su: $\{1, 2, 3, 5\}$ (4 broja).
+$|A \cap B| = \binom{4}{4} = 1$.
+
+$|A \cup B| = 35 + 5 - 1 = 39$.
+Traženi broj je $126 - 39 = 87$.
+
+\subsection*{Answer}
+$87$ (option \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako je $|x|>2$, $x\in\mathbb{R}$, tada je izraz
+\[
+\frac{x+2+\sqrt{x^2-4}}{x+2-\sqrt{x^2-4}}
++
+\frac{x+2-\sqrt{x^2-4}}{x+2+\sqrt{x^2-4}}
+\]
+identički jednak:
+\[
+\text{(A)}~4\quad
+\text{(B)}~-4\quad
+\text{(C)}~x\quad
+\text{(D)}~2x\quad
+\text{(E)}~4x.
+\]
+
+\subsection*{Solution}
+Označimo $a=x+2$ i $b=\sqrt{x^2-4}$ (za $|x|>2$ je $b\in\mathbb{R}$). Tada je
+\[
+\frac{a+b}{a-b}+\frac{a-b}{a+b}
+ =\frac{(a+b)^2+(a-b)^2}{a^2-b^2}
+ =\frac{2a^2+2b^2}{a^2-b^2}
+ =2\cdot\frac{a^2+b^2}{a^2-b^2}.
+\]
+Sada:
+\[
+a^2=(x+2)^2=x^2+4x+4,\qquad b^2=x^2-4.
+\]
+Zato
+\[
+a^2+b^2=(x^2+4x+4)+(x^2-4)=2x^2+4x=2x(x+2),
+\]
+\[
+a^2-b^2=(x^2+4x+4)-(x^2-4)=4x+8=4(x+2).
+\]
+Ubacivanjem dobijamo
+\[
+2\cdot\frac{2x(x+2)}{4(x+2)}=x.
+\]
+
+\subsection*{Answer}
+$x$ (option \textbf{C}).
+
+\end{document}
+

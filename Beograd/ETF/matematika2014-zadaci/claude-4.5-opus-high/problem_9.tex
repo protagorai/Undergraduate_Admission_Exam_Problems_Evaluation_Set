@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Data je kvadratna funkcija $f(x) = x^2 + bx + c$ $(b, c \in \mathbf{R})$ takva da je $f(f(1)) = f(f(2)) = 0$, pri čemu je $f(1) \neq f(2)$. Vrednost $f(0)$ jednaka je:
+
+(A) $-6$ \quad (B) $-\frac{2}{3}$ \quad (C) $-\frac{3}{2}$ \quad (D) $-\frac{1}{4}$ \quad (E) $-2$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $f(1) = u$ and $f(2) = v$ where $u \neq v$.
+
+Since $f(f(1)) = f(u) = 0$ and $f(f(2)) = f(v) = 0$, both $u$ and $v$ are roots of $f(x) = 0$.
+
+So $f(x) = (x - u)(x - v) = x^2 - (u+v)x + uv$.
+
+Comparing with $f(x) = x^2 + bx + c$:
+\[
+b = -(u+v), \quad c = uv
+\]
+
+Now compute $f(1)$ and $f(2)$:
+\[
+f(1) = 1 + b + c = u
+\]
+\[
+f(2) = 4 + 2b + c = v
+\]
+
+From these:
+\[
+1 + b + c = u \implies 1 - (u+v) + uv = u \implies 1 - u - v + uv = u
+\]
+\[
+1 - v + uv = 2u \implies 1 - v(1-u) = 2u \quad (1)
+\]
+
+\[
+4 + 2b + c = v \implies 4 - 2(u+v) + uv = v
+\]
+\[
+4 - 2u - 2v + uv = v \implies 4 - 2u + uv = 3v \quad (2)
+\]
+
+From equation (1): $1 + uv - v = 2u$, so $uv = 2u + v - 1$.
+
+Substituting into equation (2):
+\[
+4 - 2u + (2u + v - 1) = 3v
+\]
+\[
+4 - 2u + 2u + v - 1 = 3v
+\]
+\[
+3 + v = 3v \implies 3 = 2v \implies v = \frac{3}{2}
+\]
+
+From $uv = 2u + v - 1$:
+\[
+u \cdot \frac{3}{2} = 2u + \frac{3}{2} - 1
+\]
+\[
+\frac{3u}{2} = 2u + \frac{1}{2}
+\]
+\[
+3u = 4u + 1 \implies -u = 1 \implies u = -1
+\]
+
+Therefore:
+\[
+c = uv = (-1) \cdot \frac{3}{2} = -\frac{3}{2}
+\]
+
+And $f(0) = c = -\frac{3}{2}$.
+
+\subsection*{Answer}
+$-\frac{3}{2}$ (option \textbf{C}).
+
+\end{document}

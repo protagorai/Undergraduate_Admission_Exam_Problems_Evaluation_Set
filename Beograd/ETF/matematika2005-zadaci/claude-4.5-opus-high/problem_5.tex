@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+If $x_1$ and $x_2$ are solutions of the equation $x^2 + x - 2005 = 0$, find $2x_1^2 + x_1x_2 + x_2^2 + x_1 - 2005$.
+
+\subsection*{Solution}
+By Vieta's formulas for $x^2 + x - 2005 = 0$:
+\begin{align*}
+x_1 + x_2 &= -1 \\
+x_1 \cdot x_2 &= -2005
+\end{align*}
+
+We need to find: $2x_1^2 + x_1x_2 + x_2^2 + x_1 - 2005$
+
+Rewrite as:
+\[
+2x_1^2 + x_1x_2 + x_2^2 + x_1 - 2005 = x_1^2 + x_1x_2 + x_2^2 + x_1^2 + x_1 - 2005
+\]
+
+Since $x_1$ is a root: $x_1^2 + x_1 - 2005 = 0$, so $x_1^2 + x_1 = 2005$.
+
+Also:
+\[
+x_1^2 + x_1x_2 + x_2^2 = (x_1 + x_2)^2 - x_1x_2 = (-1)^2 - (-2005) = 1 + 2005 = 2006
+\]
+
+Therefore:
+\[
+2x_1^2 + x_1x_2 + x_2^2 + x_1 - 2005 = (x_1^2 + x_1x_2 + x_2^2) + (x_1^2 + x_1 - 2005)
+\]
+\[
+= 2006 + 0 = 2006
+\]
+
+\subsection*{Answer}
+$2006$ (option \textbf{B}).
+
+\end{document}

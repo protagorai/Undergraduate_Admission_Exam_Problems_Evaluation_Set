@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Odrediti skup svih $x$ koji zadovoljavaju nejednačinu
+\[
+\frac{(x+1)(x+2)}{(x-1)(x-2)}\ge1.
+\]
+
+\subsection*{Rešenje}
+Prebacivanjem na zajednički imenilac:
+\[
+\frac{(x+1)(x+2)-(x-1)(x-2)}{(x-1)(x-2)}\ge0.
+\]
+Brojilac:
+\begin{align*}
+(x+1)(x+2)&=x^{2}+3x+2,\\
+(x-1)(x-2)&=x^{2}-3x+2,\\
+\Rightarrow&(x+1)(x+2)-(x-1)(x-2)=6x.
+\end{align*}
+Stoga nejednačina postaje
+\[
+\frac{6x}{(x-1)(x-2)}\ge0.
+\]
+Faktori su $6>0$, pa znak zavisi od $x$ i imenilaca.
+Kritične tačke: $x=-\infty,0,1,2$. Postavimo tabelu znakova:
+\[
+\begin{array}{c|ccccc}
+ x & -\infty & 0 & 1 & 2 & +\infty\\\hline
+6x & - & - & 0 & + & +\\
+(x-1) & - & - & 0 & + & +\\
+(x-2) & - & - & - & 0 & +\\\hline
+\text{Ceо izraz} & - & - & \times & 0+ & +
+\end{array}
+\]
+Izraz je nenegativan na segmentima $[0,1)\cup(2,\infty)$.
+\subsection*{Odgovor}
+$[0,1]\cup(2,\infty)$ (opcija \textbf{D}).
+
+\end{document}

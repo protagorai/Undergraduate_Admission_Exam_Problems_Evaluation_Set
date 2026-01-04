@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Vrednost izraza
+\[
+\cos\frac{\pi}{7}-\cos\frac{2\pi}{7}+\cos\frac{3\pi}{7}
+\]
+jeste:
+(A) $1$ \ (B) $\frac12$ \ (C) $-\frac12$ \ (D) $-\frac14$ \ (E) $0$.
+
+\subsection*{Solution}
+Oznacimo $\theta=\frac{\pi}{7}$. Tada je izraz
+\[
+S=\cos\theta-\cos 2\theta+\cos 3\theta.
+\]
+Uvedimo kompleksan broj
+\[
+\omega=e^{i\theta}=e^{i\pi/7}.
+\]
+Tada je $\omega^7=e^{i\pi}=-1$, pa su resenja jednacine $z^7=-1$ upravo
+\[
+\omega^1,\ \omega^3,\ \omega^5,\ \omega^7,\ \omega^9,\ \omega^{11},\ \omega^{13}.
+\]
+To su koreni polinoma $z^7+1$, pa je njihov zbir jednak $0$ (jer je koeficijent uz $z^6$ jednak $0$):
+\[
+\omega+\omega^3+\omega^5+\omega^7+\omega^9+\omega^{11}+\omega^{13}=0.
+\]
+Uparimo kompleksno konjugovane clanove (jer je $\overline{\omega^k}=\omega^{-k}=\omega^{14-k}$):
+\[
+(\omega+\omega^{13})+(\omega^3+\omega^{11})+(\omega^5+\omega^9)+\omega^7=0.
+\]
+Kako je $\omega^7=-1$ i $\omega^k+\omega^{-k}=2\cos(k\theta)$, dobijamo
+\[
+2\cos\theta+2\cos 3\theta+2\cos 5\theta-1=0
+\ \Longrightarrow\ 
+\cos\theta+\cos 3\theta+\cos 5\theta=\frac12.
+\]
+Ali je $5\theta=\frac{5\pi}{7}=\pi-\frac{2\pi}{7}$, pa je
+\[
+\cos 5\theta=\cos\!\left(\pi-2\theta\right)=-\cos 2\theta.
+\]
+Zato
+\[
+S=\cos\theta-\cos 2\theta+\cos 3\theta
+=\cos\theta+\cos 3\theta+\cos 5\theta
+=\frac12.
+\]
+
+\subsection*{Answer}
+$\dfrac12$ (option \textbf{B}).
+
+\end{document}
+

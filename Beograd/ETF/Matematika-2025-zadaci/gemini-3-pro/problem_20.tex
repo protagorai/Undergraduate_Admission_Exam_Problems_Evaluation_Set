@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Skup vrednosti realnog parametra $p$ za koje jednačina $|x-p| + |x-1| = 1$ ima tačno dva realna i različita rešenja je oblika (za neke $a,b,c,d \in R$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+
+Let $f(x) = |x-p| + |x-1|$.
+The minimum value of $f(x)$ is $|p-1|$.
+If $|p-1| > 1$, no solution.
+If $|p-1| = 1$, infinite solutions (the segment between $p$ and 1).
+If $|p-1| < 1$, min value is $< 1$. The function has V-shape characteristics outside the interval $[p,1]$ (or $[1,p]$). The value 1 is strictly greater than the minimum $|p-1|$. Since $f(x) \to \infty$ as $x \to \pm \infty$, the line $y=1$ intersects the graph at exactly two points.
+So we need $|p-1| < 1 \implies -1 < p-1 < 1 \implies 0 < p < 2$.
+However, we must ensure the solutions are distinct. If min value $< 1$, the intersection happens on the sloped parts, so solutions are distinct.
+The set is $(0, 2)$.
+This corresponds to interval $(a, b)$.
+
+
+\subsection*{Answer}
+(a, b) (option \textbf{B}).
+
+\end{document}

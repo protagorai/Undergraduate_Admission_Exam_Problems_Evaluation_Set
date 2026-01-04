@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+U razvoju binoma $\left(\sqrt{ax^2 + x\sqrt{\frac{1}{ax^2}}}\right)^{13}$ $(a > 0, x > 0)$, član koji ne sadrži $x$ glasi:
+\begin{enumerate}
+\item[(A)] $1287a^3$
+\item[(B)] $1024a^4$
+\item[(C)] $390a^2$
+\item[(D)] $516a$
+\item[(E)] $52a^5$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Prvo simplifikujemo izraz pod korenom:
+\[
+\sqrt{ax^2 + x\sqrt{\frac{1}{ax^2}}} = \sqrt{ax^2 + x \cdot \frac{1}{\sqrt{ax^2}}} = \sqrt{ax^2 + \frac{x}{\sqrt{a}x}} = \sqrt{ax^2 + \frac{1}{\sqrt{a}}}
+\]
+
+Međutim, ovo nije tačno. Vratimo se na početak:
+\[
+\sqrt{\frac{1}{ax^2}} = \frac{1}{\sqrt{ax^2}} = \frac{1}{x\sqrt{a}}
+\]
+
+Dakle:
+\[
+ax^2 + x\sqrt{\frac{1}{ax^2}} = ax^2 + x \cdot \frac{1}{x\sqrt{a}} = ax^2 + \frac{1}{\sqrt{a}}
+\]
+
+Ovo još uvek nije u obliku pogodnom za binomni razvoj. Pokušajmo drugačiji pristup.
+
+Možda je trebalo da bude:
+\[
+\sqrt{ax^2} + x\sqrt{\frac{1}{ax^2}} = x\sqrt{a} + x \cdot \frac{1}{x\sqrt{a}} = x\sqrt{a} + \frac{1}{\sqrt{a}}
+\]
+
+Ako je to slučaj, tada imamo:
+\[
+\left(x\sqrt{a} + \frac{1}{\sqrt{a}}\right)^{13}
+\]
+
+U binomnom razvoju $(u + v)^{13}$, opšti član je:
+\[
+\binom{13}{k} u^{13-k} v^k
+\]
+
+U našem slučaju $u = x\sqrt{a}$ i $v = \frac{1}{\sqrt{a}}$, pa je opšti član:
+\[
+\binom{13}{k} (x\sqrt{a})^{13-k} \left(\frac{1}{\sqrt{a}}\right)^k = \binom{13}{k} x^{13-k} (\sqrt{a})^{13-k} \frac{1}{(\sqrt{a})^k}
+\]
+\[
+= \binom{13}{k} x^{13-k} (\sqrt{a})^{13-k-k} = \binom{13}{k} x^{13-k} (\sqrt{a})^{13-2k}
+\]
+
+Za član koji ne sadrži $x$, potrebno je $13 - k = 0$, tj. $k = 13$.
+
+Tada je član:
+\[
+\binom{13}{13} x^0 (\sqrt{a})^{13-26} = 1 \cdot (\sqrt{a})^{-13} = \frac{1}{(\sqrt{a})^{13}} = \frac{1}{a^{13/2}}
+\]
+
+Ovo ne odgovara nijednom od ponuđenih odgovora.
+
+Možda je problem u interpretaciji. Pokušajmo sa $k = 6$ ili $k = 7$ da vidimo da li dobijamo konstantan član.
+
+Za $k = 6$:
+\[
+\binom{13}{6} x^7 (\sqrt{a})^{1} = \binom{13}{6} x^7 \sqrt{a}
+\]
+
+Za $k = 7$:
+\[
+\binom{13}{7} x^6 (\sqrt{a})^{-1} = \binom{13}{7} x^6 \frac{1}{\sqrt{a}}
+\]
+
+Nijedan od ovih ne daje konstantan član.
+
+\subsection*{Answer}
+Na osnovu analize, odgovor je \textbf{(N) Ne znam} jer interpretacija problema nije jasna.
+
+\end{document}

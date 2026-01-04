@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Neka su $x_1,x_2,x_3$ rešenja jednačine $x^3+px+q=0$, gde su $p,q\in\mathbb{R}$, $p\neq 0$, $q\neq 0$.
+Odrediti vrednost izraza
+\[
+\frac{x_1+x_2+x_3}{x_1^2+x_2^2+x_3^2}-x_1x_2(1+x_3)-(x_1+x_2)x_3.
+\]
+
+\subsection*{Solution}
+Po Vijetovim formulama za $x^3+px+q=0$ važi
+\[
+x_1+x_2+x_3=0,\qquad x_1x_2+x_1x_3+x_2x_3=p,\qquad x_1x_2x_3=-q.
+\]
+Prvi član je zato nula:
+\[
+\frac{x_1+x_2+x_3}{x_1^2+x_2^2+x_3^2}=0.
+\]
+Dalje, iz $x_1+x_2=-x_3$ sledi
+\[
+-(x_1+x_2)x_3=-(-x_3)x_3=x_3^2.
+\]
+Takođe,
+\[
+-x_1x_2(1+x_3)=-x_1x_2-x_1x_2x_3=-x_1x_2+q.
+\]
+Zato je ceo izraz jednak
+\[
+(-x_1x_2+x_3^2)+q.
+\]
+Ali iz formule za $p$ dobijamo
+\[
+p=x_1x_2+x_3(x_1+x_2)=x_1x_2-x_3^2 \quad\Rightarrow\quad x_3^2-x_1x_2=-p.
+\]
+Otuda je vrednost izraza
+\[
+-p+q=q-p.
+\]
+
+\subsection*{Answer}
+$q-p$ (option \textbf{D}).
+
+\end{document}
+

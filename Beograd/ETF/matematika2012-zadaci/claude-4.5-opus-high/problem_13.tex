@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Ako je $\log_2 3 = a$ i $\log_5 2 = b$, tada je $\log_{24} 50$ jednako:
+
+(A) $\frac{b+2}{b(a+3)}$ \quad (B) $\frac{b+1}{b(a+4)}$ \quad (C) $\frac{b-2}{b(a-4)}$ \quad (D) $\frac{b+1}{b(a+3)}$ \quad (E) $\frac{b-2}{(b+1)(a+3)}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+We have $\log_2 3 = a$, so $2^a = 3$.
+
+We have $\log_5 2 = b$, so $5^b = 2$, which means $\log_2 5 = \frac{1}{b}$.
+
+We need to find $\log_{24} 50$.
+
+Using change of base formula:
+\[
+\log_{24} 50 = \frac{\log_2 50}{\log_2 24}
+\]
+
+Calculate $\log_2 50$:
+\[
+\log_2 50 = \log_2 (2 \cdot 25) = \log_2 2 + \log_2 25 = 1 + 2\log_2 5 = 1 + \frac{2}{b}
+\]
+
+Calculate $\log_2 24$:
+\[
+\log_2 24 = \log_2 (8 \cdot 3) = \log_2 8 + \log_2 3 = 3 + a
+\]
+
+Therefore:
+\[
+\log_{24} 50 = \frac{1 + \frac{2}{b}}{3 + a} = \frac{\frac{b+2}{b}}{a+3} = \frac{b+2}{b(a+3)}
+\]
+
+\subsection*{Answer}
+$\frac{b+2}{b(a+3)}$ (option \textbf{A}).
+
+\end{document}

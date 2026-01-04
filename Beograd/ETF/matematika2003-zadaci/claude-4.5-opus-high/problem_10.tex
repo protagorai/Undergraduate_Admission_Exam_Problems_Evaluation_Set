@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Jednačina $x^3 + x^2 + ax + b = 0$ $(a, b \in \mathbb{R})$ ima rešenja $1 - \sqrt{2}$ i $1 + \sqrt{2}$. Proizvod svih rešenja date jednačine je:
+
+\textbf{A)} $-2$; \quad \textbf{B)} $-3$; \quad \textbf{C)} $2$; \quad \textbf{D)} $0$; \quad \textbf{E)} $3$
+
+\subsection*{Solution}
+Neka su koreni jednačine $x_1 = 1 - \sqrt{2}$, $x_2 = 1 + \sqrt{2}$ i $x_3$ (treći koren).
+
+Po Vijetovim formulama za kubnu jednačinu $x^3 + x^2 + ax + b = 0$:
+\begin{itemize}
+\item $x_1 + x_2 + x_3 = -1$ (negativan koeficijent uz $x^2$)
+\item $x_1 \cdot x_2 \cdot x_3 = -b$ (negativan slobodan član)
+\end{itemize}
+
+Izračunajmo $x_1 + x_2$:
+\[
+x_1 + x_2 = (1 - \sqrt{2}) + (1 + \sqrt{2}) = 2
+\]
+
+Iz prve Vijetove formule:
+\[
+2 + x_3 = -1 \Rightarrow x_3 = -3
+\]
+
+Izračunajmo proizvod $x_1 \cdot x_2$:
+\[
+x_1 \cdot x_2 = (1 - \sqrt{2})(1 + \sqrt{2}) = 1 - 2 = -1
+\]
+
+Proizvod svih korena:
+\[
+x_1 \cdot x_2 \cdot x_3 = (-1) \cdot (-3) = 3
+\]
+
+\subsection*{Answer}
+$3$ (option \textbf{E}).
+
+\end{document}

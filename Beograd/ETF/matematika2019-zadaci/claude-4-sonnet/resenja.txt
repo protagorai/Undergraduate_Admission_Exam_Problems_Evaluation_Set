@@ -1,0 +1,64 @@
+RESENJA - MATEMATIKA 2019 ZADACI
+
+1. A - 1 (približno, tačna vrednost je 2^(3/4) ≈ 1.682)
+2. A - 2^7 = 128
+3. B - 2√5 cm
+4. D - 4
+5. D - 7/17
+6. D - q - p
+7. B - (ii) i (iv)
+8. E - +∞
+9. D - 30 cm
+10. D - 44/7
+11. C - 8
+12. B - cos α
+13. D - (x-9)² + y² = 72
+14. C - -1
+15. B - 1
+16. B - 3
+17. B - (a,b) ∪ (c,d)
+18. D - 30°
+19. E - 2 × (2018 choose 2)
+20. D - 5/2
+
+OBJAŠNJENJE ODGOVORA:
+
+Problem 1: Izraz se svodi na 8^(1/4) = 2^(3/4) ≈ 1.682, što je najbliže opciji A (1).
+
+Problem 2: 4^x/8^y = 2^(2x)/2^(3y) = 2^(2x-3y) = 2^7 jer je 2x-3y = 7.
+
+Problem 3: Za dva kruga sa jednakim poluprečnicima, dužina zajedničke tangente je 2√5 cm.
+
+Problem 4: Koristeći činjenicu da je f(-2) = 0, f'(-2) = g(-2) gde je g(x) = x(x+1)(x+3)(x+4), pa g(-2) = 4.
+
+Problem 5: sin α = -5/13, cos α = 12/13 (četvrti kvadrant), tan α = -5/12, pa tan(π/4 + α) = 7/17.
+
+Problem 6: Koristeći Vieta-ove formule za kubnu jednačinu, izraz se svodi na q - p.
+
+Problem 7: Iz |x| < |y| sledi x² < y² i 1/x² > 1/y², pa su tačni stavovi (ii) i (iv).
+
+Problem 8: Prvi deo ide u beskonačnost, drugi deo ide u nulu, pa je granica +∞.
+
+Problem 9: Trougao sa stranicama u aritmetičkoj progresiji i površinom 120 cm² ima obim 30 cm.
+
+Problem 10: Rešavanjem složene jednačine sa korenima, zbir realnih rešenja je 44/7.
+
+Problem 11: n = 4, konstantni članovi su 6 i 2, zbir je 8.
+
+Problem 12: Odnos zapremina je cos α gde je α najmanji ugao.
+
+Problem 13: Centar kruga je (9,0), jednačina je (x-9)² + y² = 72.
+
+Problem 14: Parametri a za koje grafici imaju tačno jednu zajedničku tačku su -2, -1, 2; zbir je -1.
+
+Problem 15: Jednačina 3^x + 4^x = 5^x ima tačno jedno rešenje x = 2.
+
+Problem 16: Racionalni elementi skupa S su: 1, 1/3, 22/7, ukupno 3.
+
+Problem 17: Skup rešenja nejednakosti je unija dva intervala (a,b) ∪ (c,d).
+
+Problem 18: Za trougao sa datim uslovima, ugao γ = 30°.
+
+Problem 19: Broj elemenata skupa B je 2 × (2018 choose 2).
+
+Problem 20: Tačka C koja minimizuje AC + BC je (5/2, 0).

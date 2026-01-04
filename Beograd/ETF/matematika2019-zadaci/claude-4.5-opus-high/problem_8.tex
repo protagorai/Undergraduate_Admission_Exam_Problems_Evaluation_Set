@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+The limit $\lim_{x \to \infty} \left(\frac{x^3 - 6x^2 + 11x - 6}{x^2 - 6x + 9} - \frac{\sin(x - 3)}{\ln(2x - 5) + \cos \frac{\pi}{x}}\right)$ is:
+
+\subsection*{Solution}
+Let's analyze each part of the expression separately.
+
+First, let's factor the polynomials:
+- $x^3 - 6x^2 + 11x - 6 = (x-1)(x-2)(x-3)$
+- $x^2 - 6x + 9 = (x-3)^2$
+
+So the first fraction becomes:
+\[
+\frac{x^3 - 6x^2 + 11x - 6}{x^2 - 6x + 9} = \frac{(x-1)(x-2)(x-3)}{(x-3)^2} = \frac{(x-1)(x-2)}{x-3}
+\]
+
+As $x \to \infty$:
+\[
+\frac{(x-1)(x-2)}{x-3} = \frac{x^2 - 3x + 2}{x - 3} \sim \frac{x^2}{x} = x \to \infty
+\]
+
+More precisely:
+\[
+\frac{x^2 - 3x + 2}{x - 3} = x + \frac{2}{x-3} \to \infty
+\]
+
+For the second fraction, as $x \to \infty$:
+- $\sin(x - 3)$ oscillates between -1 and 1
+- $\ln(2x - 5) \to \infty$
+- $\cos \frac{\pi}{x} \to \cos 0 = 1$
+
+So $\ln(2x - 5) + \cos \frac{\pi}{x} \to \infty$, and therefore:
+\[
+\frac{\sin(x - 3)}{\ln(2x - 5) + \cos \frac{\pi}{x}} \to 0
+\]
+
+Therefore:
+\[
+\lim_{x \to \infty} \left(\frac{x^3 - 6x^2 + 11x - 6}{x^2 - 6x + 9} - \frac{\sin(x - 3)}{\ln(2x - 5) + \cos \frac{\pi}{x}}\right) = \infty - 0 = \infty
+\]
+
+Wait, let me double-check the polynomial factorization:
+$x^3 - 6x^2 + 11x - 6$
+
+Let me try $x = 1$: $1 - 6 + 11 - 6 = 0$ ✓
+Let me try $x = 2$: $8 - 24 + 22 - 6 = 0$ ✓
+Let me try $x = 3$: $27 - 54 + 33 - 6 = 0$ ✓
+
+So indeed $x^3 - 6x^2 + 11x - 6 = (x-1)(x-2)(x-3)$.
+
+The analysis above is correct, so the limit is $+\infty$.
+
+\subsection*{Answer}
+$+\infty$ (option \textbf{E}).
+
+\end{document}

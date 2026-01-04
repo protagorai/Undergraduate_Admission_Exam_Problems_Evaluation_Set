@@ -1,0 +1,19 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Date su funkcije $f(x) = \frac{x-2016}{x+2016}$ i $g(x) = \frac{1-f(x)}{1+f(x)}$. Tada je $f(g(x))$ jednako:
+
+\subsection*{Solution}
+First simplify $g(x)$. Let $k=2016$. $f(x) = \frac{x-k}{x+k}$.
+\[ g(x) = \frac{1 - \frac{x-k}{x+k}}{1 + \frac{x-k}{x+k}} = \frac{\frac{x+k-(x-k)}{x+k}}{\frac{x+k+(x-k)}{x+k}} = \frac{2k}{2x} = \frac{k}{x} \]
+Now compute $f(g(x)) = f(k/x)$:
+\[ f(k/x) = \frac{k/x - k}{k/x + k} = \frac{k(1/x - 1)}{k(1/x + 1)} = \frac{1-x}{x} \cdot \frac{x}{1+x} = \frac{1-x}{1+x} \]
+
+
+\subsection*{Answer}
+$\frac{1-x}{1+x}$ (option \textbf{C})
+
+\end{document}

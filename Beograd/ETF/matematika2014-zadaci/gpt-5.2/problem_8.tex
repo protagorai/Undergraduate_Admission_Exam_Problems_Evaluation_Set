@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Odnos binomnih koeficijenata uz stepen $x^{1007}$ $(x\in(0,+\infty))$ u razvoju binoma $(1+x)^{2014}$ i $(1+x)^{2013}$ redom, iznosi:
+\[
+\text{(A) }\frac{1007}{1006}\quad
+\text{(B) }2\quad
+\text{(C) }\frac{3}{2}\quad
+\text{(D) }\frac{1}{2014}\quad
+\text{(E) }\frac{1}{2015}.
+\]
+
+\subsection*{Solution}
+Koeficijent uz $x^{1007}$ u razvoju $(1+x)^n$ je $\binom{n}{1007}$. Dakle traženi odnos je
+\[
+\frac{\binom{2014}{1007}}{\binom{2013}{1007}}
+=\frac{\frac{2014!}{1007!\,1007!}}{\frac{2013!}{1007!\,1006!}}
+=2014\cdot\frac{1006!}{1007!}
+=\frac{2014}{1007}=2.
+\]
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}
+

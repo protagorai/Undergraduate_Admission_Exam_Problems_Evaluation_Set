@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Data je kvadratna funkcija $f(x) = x^2+bx+c$ ($b,c \in \mathbf{R}$) takva da je $f(f(1)) = f(f(2)) = 0$, pri čemu je $f(1) \neq f(2)$. Vrednost $f(0)$ jednaka je:
+\begin{enumerate}
+    \item[(A)] $-6$
+    \item[(B)] $-\frac{2}{3}$
+    \item[(C)] $-\frac{3}{2}$
+    \item[(D)] $\frac{1}{4}$
+    \item[(E)] $-2$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let $f(1) = u$ and $f(2) = v$. We are given $u \neq v$.
+The condition $f(f(1)) = f(f(2)) = 0$ translates to $f(u) = 0$ and $f(v) = 0$.
+Thus, $u$ and $v$ are the roots of the quadratic equation $f(x) = x^2+bx+c = 0$.
+By Vieta's formulas:
+\[
+u+v = -b
+\]
+\[
+uv = c
+\]
+Also, we can express $u$ and $v$ using the function definition:
+\[
+u = f(1) = 1+b+c
+\]
+\[
+v = f(2) = 4+2b+c
+\]
+Substitute $c = uv$:
+\[
+u = 1+b+uv \quad (1)
+\]
+\[
+v = 4+2b+uv \quad (2)
+\]
+Subtract (1) from (2):
+\[
+v-u = 3+b \implies b = v-u-3
+\]
+Substitute $b = -(u+v)$:
+\[
+v-u = 3 - (u+v) \implies v-u = 3-u-v \implies 2v = 3 \implies v = \frac{3}{2}
+\]
+Now find $b$:
+\[
+b = \frac{3}{2} - u - 3 = -u - \frac{3}{2}
+\]
+Since $b = -(u+v) = -(u+3/2)$, this is consistent.
+Now use equation (1) with $b = -(u+3/2)$:
+\[
+u = 1 - (u+3/2) + u(3/2)
+\]
+\[
+u = 1 - u - 3/2 + 3u/2 = -1/2 + u/2
+\]
+\[
+u/2 = -1/2 \implies u = -1
+\]
+So the roots are $u = -1$ and $v = 3/2$.
+Then $c = uv = (-1)(3/2) = -3/2$.
+The value of $f(0)$ is $c$.
+\[
+f(0) = c = -3/2
+\]
+
+\subsection*{Answer}
+$-\frac{3}{2}$ (option \textbf{(C)}).
+
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Let $a\in\mathbb{R}\setminus\{0\}$ and let $x_1,x_2$ be the roots of
+\[
+ax^2+ax+1=0.
+\]
+Find all $a$ such that
+\[
+\frac{(x_1+1)^2+(x_2+1)^2}{(x_1-1)^2+(x_2-1)^2}\le 1.
+\]
+
+\subsection*{Solution}
+Divide the quadratic by $a\ne 0$:
+\[
+x^2+x+\frac{1}{a}=0.
+\]
+Hence by Vieta,
+\[
+S=x_1+x_2=-1,\qquad P=x_1x_2=\frac{1}{a}.
+\]
+Compute
+\[
+x_1^2+x_2^2=S^2-2P=1-\frac{2}{a}.
+\]
+Now
+\[
+(x_1+1)^2+(x_2+1)^2=(x_1^2+x_2^2)+2S+2=\left(1-\frac{2}{a}\right)-2+2=1-\frac{2}{a},
+\]
+\[
+(x_1-1)^2+(x_2-1)^2=(x_1^2+x_2^2)-2S+2=\left(1-\frac{2}{a}\right)+2+2=5-\frac{2}{a}.
+\]
+Thus the inequality becomes
+\[
+\frac{1-\frac{2}{a}}{5-\frac{2}{a}}\le 1.
+\]
+Bring to one side:
+\[
+\frac{1-\frac{2}{a}}{5-\frac{2}{a}}-1
+=\frac{1-\frac{2}{a}-\left(5-\frac{2}{a}\right)}{5-\frac{2}{a}}
+=\frac{-4}{5-\frac{2}{a}}\le 0.
+\]
+Since $-4<0$, this holds exactly when the denominator is positive:
+\[
+5-\frac{2}{a}>0.
+\]
+If $a<0$, then $\frac{2}{a}<0$ and the inequality is automatically true.
+If $a>0$, we get $5>\frac{2}{a}\iff a>\frac{2}{5}$.
+Also $a\ne \frac{2}{5}$ because then the denominator is $0$.
+
+Therefore,
+\[
+a\in(-\infty,0)\cup\left(\frac{2}{5},+\infty\right).
+\]
+
+\subsection*{Answer}
+$(-\infty,0)\cup\left(\dfrac{2}{5},+\infty\right)$ (option \textbf{B}).
+
+\end{document}
+

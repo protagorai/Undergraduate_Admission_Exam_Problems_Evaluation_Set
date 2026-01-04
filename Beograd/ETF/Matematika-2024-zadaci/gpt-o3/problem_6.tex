@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Koliko ima različitih polinoma oblika
+\[
+P(x)=x^{2}+px+q, \qquad p,q\in\mathbb R,
+\]
+koji \\emph{deli} (kao činilac) polinom
+\[
+F(x)=x^{4}-3x^{2}+2?
+\]
+
+\subsection*{Rešenje}
+\textbf{1.}  Faktorizujemo četvrtostepeni polinom.
+Stavimo $t=x^{2}$, тада
+\[
+F(x)=t^{2}-3t+2=(t-1)(t-2).
+\]
+Vraćajući $t=x^{2}$ dobijamo
+\[
+F(x)=(x^{2}-1)(x^{2}-2).
+\]
+\textbf{2.}  Njegove nule su
+\[
+\pm1,\;\pm\sqrt2.
+\]
+Kvadratni delilac sa realnim koeficijentima nastaje izborom произвольне двојке ovih četири корена (budući da se faktor polinoma formira kao $(x-r_{1})(x-r_{2})$).
+
+Broj takvih izbora jednak je броју комбинација $\binom{4}{2}=6$.
+Свака изабрана двојка даје различит полином степена 2 са водећим коефицијентом 1 (на пример $x^{2}-1$, $x^{2}-2$, $x^{2}-(1+\sqrt2)x+\sqrt2$ итд.).  Сви они заиста деле $F(x)$ јер су њихови корени подскуп скупа корена четворостепеног полинома.
+
+\subsection*{Odgovor}
+\[6\qquad (\text{opcija B})\]
+
+\end{document}

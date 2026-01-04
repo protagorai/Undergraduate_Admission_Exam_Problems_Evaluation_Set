@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Ako je $k \in \mathbf{Z}$ i $0{,}0010101 \cdot 10^k > 1001$, koja je najmanja moguća vrednost za $k$?
+
+\subsection*{Solution}
+We need to find the smallest integer $k$ such that:
+\[
+0{,}0010101 \cdot 10^k > 1001
+\]
+
+First, let's express $0{,}0010101$ in scientific notation:
+\[
+0{,}0010101 = 1{,}0101 \times 10^{-3}
+\]
+
+So we need:
+\[
+1{,}0101 \times 10^{-3} \cdot 10^k > 1001
+\]
+\[
+1{,}0101 \times 10^{k-3} > 1001
+\]
+
+Since $1001 \approx 10^3$, we need:
+\[
+10^{k-3} > \frac{1001}{1{,}0101} \approx 991
+\]
+
+For $k-3 = 2$: $10^2 = 100 < 991$ — not sufficient.
+
+For $k-3 = 3$: $10^3 = 1000 > 991$ — sufficient.
+
+Let's verify with $k = 6$:
+\[
+0{,}0010101 \cdot 10^6 = 1010{,}1 > 1001 \checkmark
+\]
+
+Let's check $k = 5$:
+\[
+0{,}0010101 \cdot 10^5 = 101{,}01 < 1001
+\]
+
+Therefore, the smallest value is $k = 6$.
+
+\subsection*{Answer}
+$6$ (option \textbf{D}).
+
+\end{document}

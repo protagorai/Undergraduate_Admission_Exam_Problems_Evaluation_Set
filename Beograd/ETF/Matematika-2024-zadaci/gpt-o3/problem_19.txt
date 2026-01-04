@@ -1,0 +1,12 @@
+Problem 19
+Skup svih rešenja nejednačine
+
+    (x^2 - 4)(5x^2 - 6 \cdot 5^{x + 1} + 5^3) / \sqrt{9 - 3^x - 3^{x + 2}} \le 0
+
+je oblika (za neke realne brojeve a, b, c, d takve da je -\infty < a < b < c < d < +\infty):
+(A) (a, b) \cup {c}
+(B) (a, b] \cup [c, +\infty)
+(C) {a} \cup {b} \cup {c}
+(D) {a} \cup (b, c] \cup {d}
+(E) (a, b] \cup {c}
+(N) Ne znam

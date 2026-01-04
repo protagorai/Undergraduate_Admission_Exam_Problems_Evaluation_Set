@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Broj realnih rešenja sistema jednačina $2^x \cdot 4^y = 32$, $\log(x-y)^2 - 2\log 2 = 0$ jednak je:
+
+\textbf{A)} 2; \quad \textbf{B)} 0; \quad \textbf{C)} 1; \quad \textbf{D)} 3; \quad \textbf{E)} 4
+
+\subsection*{Solution}
+\textbf{Prva jednačina:}
+\[
+2^x \cdot 4^y = 32
+\]
+\[
+2^x \cdot 2^{2y} = 2^5
+\]
+\[
+x + 2y = 5 \quad \text{...(1)}
+\]
+
+\textbf{Druga jednačina:}
+\[
+\log(x-y)^2 - 2\log 2 = 0
+\]
+\[
+\log(x-y)^2 = \log 4
+\]
+\[
+(x-y)^2 = 4
+\]
+\[
+x - y = 2 \quad \text{ili} \quad x - y = -2 \quad \text{...(2)}
+\]
+
+\textbf{Slučaj 1:} $x - y = 2$
+
+Iz (1): $x + 2y = 5$
+
+Sabiranjem: $2x + y = 7$... Ne, rešimo direktno:
+
+$x = y + 2$
+
+$(y + 2) + 2y = 5$
+
+$3y = 3 \Rightarrow y = 1$
+
+$x = 3$
+
+Provera: $(x-y)^2 = (3-1)^2 = 4$ \checkmark
+
+\textbf{Slučaj 2:} $x - y = -2$
+
+$x = y - 2$
+
+$(y - 2) + 2y = 5$
+
+$3y = 7 \Rightarrow y = \frac{7}{3}$
+
+$x = \frac{7}{3} - 2 = \frac{1}{3}$
+
+Provera: $(x-y)^2 = (\frac{1}{3} - \frac{7}{3})^2 = (-2)^2 = 4$ \checkmark
+
+Oba rešenja su validna: $(x, y) = (3, 1)$ i $(x, y) = (\frac{1}{3}, \frac{7}{3})$.
+
+Broj realnih rešenja: \textbf{2}
+
+\subsection*{Answer}
+$2$ (option \textbf{A}).
+
+\end{document}

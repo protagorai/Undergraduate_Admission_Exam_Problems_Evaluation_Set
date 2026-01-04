@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+The number of solutions to the equation $9^{|3x-1|} = 3^{5x-2}$ is:
+
+A) $0$; B) $1$; C) $2$; D) $3$; E) $4$; N) Ne znam.
+
+\subsection*{Solution}
+Since $9 = 3^2$, we can rewrite the equation as:
+\[
+(3^2)^{|3x-1|} = 3^{5x-2}
+\]
+
+\[
+3^{2|3x-1|} = 3^{5x-2}
+\]
+
+Since the bases are equal, the exponents must be equal:
+\[
+2|3x-1| = 5x-2
+\]
+
+We need to consider two cases based on the absolute value:
+
+\textbf{Case 1:} $3x - 1 \geq 0$, i.e., $x \geq \frac{1}{3}$
+
+Then $|3x-1| = 3x-1$, so:
+\[
+2(3x-1) = 5x-2
+\]
+\[
+6x - 2 = 5x - 2
+\]
+\[
+x = 0
+\]
+
+But $x = 0 < \frac{1}{3}$, so this doesn't satisfy our condition $x \geq \frac{1}{3}$.
+
+\textbf{Case 2:} $3x - 1 < 0$, i.e., $x < \frac{1}{3}$
+
+Then $|3x-1| = -(3x-1) = 1-3x$, so:
+\[
+2(1-3x) = 5x-2
+\]
+\[
+2 - 6x = 5x - 2
+\]
+\[
+4 = 11x
+\]
+\[
+x = \frac{4}{11}
+\]
+
+We need to check if $x = \frac{4}{11} < \frac{1}{3}$:
+$\frac{4}{11} = \frac{12}{33}$ and $\frac{1}{3} = \frac{11}{33}$
+
+Since $\frac{12}{33} > \frac{11}{33}$, we have $\frac{4}{11} > \frac{1}{3}$, which contradicts our assumption.
+
+Let me recalculate Case 1 more carefully:
+For $x \geq \frac{1}{3}$: $2(3x-1) = 5x-2 \Rightarrow 6x-2 = 5x-2 \Rightarrow x = 0$
+
+Since $0 < \frac{1}{3}$, this is not valid.
+
+For $x < \frac{1}{3}$: $2(1-3x) = 5x-2 \Rightarrow 2-6x = 5x-2 \Rightarrow 4 = 11x \Rightarrow x = \frac{4}{11}$
+
+Since $\frac{4}{11} \approx 0.36 > \frac{1}{3} \approx 0.33$, this contradicts $x < \frac{1}{3}$.
+
+Therefore, there are no solutions.
+
+\subsection*{Answer}
+$0$ (option \textbf{A}).
+
+\end{document}

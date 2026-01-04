@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako je rešenje jednačine
+\[
+4^{x+\sqrt{x^2-2}}-5\cdot 2^{x-1+\sqrt{x^2-2}}=6
+\]
+oblika $\dfrac{p}{q}$, tada je $p+q$ jednako:
+\[
+\text{(A) }-3\quad \text{(B) }4\quad \text{(C) }5\quad \text{(D) }-5\quad \text{(E) }-4\quad \text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Označimo
+\[
+t=2^{x+\sqrt{x^2-2}} \quad (>0).
+\]
+Tada je
+\[
+4^{x+\sqrt{x^2-2}}=\left(2^2\right)^{x+\sqrt{x^2-2}}=2^{2(x+\sqrt{x^2-2})}=t^2,
+\]
+a
+\[
+2^{x-1+\sqrt{x^2-2}}=2^{-1}\cdot 2^{x+\sqrt{x^2-2}}=\frac{t}{2}.
+\]
+Jednačina postaje
+\[
+t^2-5\cdot\frac{t}{2}=6 \;\Longleftrightarrow\; 2t^2-5t-12=0.
+\]
+Rešenja su
+\[
+t=\frac{5\pm \sqrt{25+96}}{4}=\frac{5\pm 11}{4}\in\left\{4,-\frac{3}{2}\right\}.
+\]
+Pošto je $t>0$, sledi $t=4$, odnosno
+\[
+2^{x+\sqrt{x^2-2}}=4=2^2 \Rightarrow x+\sqrt{x^2-2}=2.
+\]
+Zato je $\sqrt{x^2-2}=2-x$ (pa $x\le 2$). Kvadriranjem:
+\[
+x^2-2=(2-x)^2=x^2-4x+4 \Rightarrow -2=-4x+4 \Rightarrow x=\frac{3}{2}.
+\]
+Dakle, $x=\frac{p}{q}=\frac{3}{2}$ pa je $p+q=3+2=5$.
+
+\subsection*{Answer}
+$5$ (option \textbf{C}).
+
+\end{document}
+

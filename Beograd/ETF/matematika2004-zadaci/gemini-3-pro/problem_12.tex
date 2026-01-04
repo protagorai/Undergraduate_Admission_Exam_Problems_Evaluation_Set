@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 12}
+Data je funkcija $f(x) = 2x - x^2$. Tada je $f(f(f(1-x)))$ jednako:
+\begin{itemize}
+    \item[A)] $2x^4 - x^8$
+    \item[B)] $2x - x^{16}$
+    \item[C)] $1 - (1-x)^8$
+    \item[D)] $2x^3 - x^8$
+    \item[E)] $1 - x^8$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+We can rewrite the function as:
+\[ f(x) = -(x^2 - 2x) = -(x^2 - 2x + 1 - 1) = -(x-1)^2 + 1 = 1 - (1-x)^2. \]
+Let's compute the composition step by step.
+First, compute $f(1-x)$:
+\[ f(1-x) = 1 - (1 - (1-x))^2 = 1 - x^2. \]
+Next, compute $f(f(1-x)) = f(1-x^2)$:
+\[ f(1-x^2) = 1 - (1 - (1-x^2))^2 = 1 - (x^2)^2 = 1 - x^4. \]
+Finally, compute $f(f(f(1-x))) = f(1-x^4)$:
+\[ f(1-x^4) = 1 - (1 - (1-x^4))^2 = 1 - (x^4)^2 = 1 - x^8. \]
+
+\subsection*{Answer}
+The result is $1 - x^8$, which corresponds to option \textbf{E}.
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Find the number of real solutions in $(0,2\pi)$ of
+\[
+3\tan^2 x-8\cos^2 x+1=0.
+\]
+Options: (A) $2$ \quad (B) $3$ \quad (C) $4$ \quad (D) $5$ \quad (E) $6$.
+
+\subsection*{Solution}
+Let $t=\tan x$. Then $\cos^2 x=\dfrac{1}{1+t^2}$.
+Substitute into the equation:
+\[
+3t^2-8\cdot\frac{1}{1+t^2}+1=0.
+\]
+Multiply by $1+t^2$:
+\[
+(3t^2+1)(1+t^2)-8=0.
+\]
+Expand:
+\[
+3t^4+4t^2+1-8=0 \ \Rightarrow\ 3t^4+4t^2-7=0.
+\]
+Set $u=t^2\ge 0$:
+\[
+3u^2+4u-7=0.
+\]
+Discriminant $D=4^2+4\cdot 3\cdot 7=16+84=100$, so
+\[
+u=\frac{-4\pm 10}{6}\in\left\{1,\ -\frac{7}{3}\right\}.
+\]
+Only $u=1$ is valid, hence $t^2=1$ and $\tan x=\pm 1$.
+
+In $(0,2\pi)$, $\tan x=1$ at $x=\frac{\pi}{4},\frac{5\pi}{4}$ and $\tan x=-1$ at $x=\frac{3\pi}{4},\frac{7\pi}{4}$, giving $4$ solutions.
+
+\subsection*{Answer}
+$4$ solutions (option \textbf{C}).
+
+\end{document}
+

@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+If the polynomial
+\[
+P(x)=x^{2016}+x^{2015}-x^{2014}+ax^{2013}-bx^2+c \qquad (a,b,c\in\mathbb{R})
+\]
+is divisible by $x^3-x$, find $4a^2+3b^2+8c^2$.
+
+\subsection*{Solution}
+Since $x^3-x=x(x-1)(x+1)$, divisibility implies
+\[
+P(0)=P(1)=P(-1)=0.
+\]
+First,
+\[
+P(0)=c=0\Rightarrow c=0.
+\]
+Next,
+\[
+P(1)=1+1-1+a-b+c=1+a-b=0\Rightarrow b=1+a.
+\]
+Finally, using parity of powers at $x=-1$:
+\[
+P(-1)=1-1-1-a-b+c=-1-a-b=0\Rightarrow b=-1-a.
+\]
+Thus $1+a=-1-a\Rightarrow a=-1$, hence $b=0$ and $c=0$.
+Therefore
+\[
+4a^2+3b^2+8c^2=4\cdot 1+0+0=4.
+\]
+
+\subsection*{Answer}
+$4$ (option \textbf{A}).
+
+\end{document}
+

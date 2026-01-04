@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Broj različitih vrednosti parametra $p \in R$ za koje jednačina $\frac{p^2}{x+1} - \frac{x(p+2)}{x^2-1} = \frac{2p}{1-x^2}$ nema rešenja iznosi:
+
+(A) 1 \quad (B) 2 \quad (C) 0 \quad (D) više od 3 \quad (E) 3
+
+\subsection*{Solution}
+Jednačina:
+\[
+\frac{p^2}{x+1} - \frac{x(p+2)}{(x-1)(x+1)} = \frac{-2p}{(x-1)(x+1)}
+\]
+Definisanost: $x \neq 1, x \neq -1$.
+Množimo sa $(x-1)(x+1)$:
+\[
+p^2(x-1) - x(p+2) = -2p
+\]
+\[
+p^2x - p^2 - px - 2x = -2p
+\]
+\[
+x(p^2 - p - 2) = p^2 - 2p
+\]
+\[
+x(p-2)(p+1) = p(p-2)
+\]
+
+Jednačina nema rešenja ako:
+1. Koeficijent uz $x$ je 0, a slobodni član $\neq 0$.
+$(p-2)(p+1) = 0 \Rightarrow p=2$ ili $p=-1$.
+Ako $p=2$: $0 \cdot x = 2(0) = 0$. $0=0$. Ovo ima beskonačno rešenja ($x \in R \setminus \{1, -1\}$). Dakle $p=2$ nije tražena vrednost.
+Ako $p=-1$: $0 \cdot x = -1(-3) = 3$. $0=3$. Nemoguće. Dakle za $p=-1$ nema rešenja.
+
+2. Jedinstveno rešenje koje se dobije iz linearne jednačine poklapa se sa zabranjenim vrednostima ($1$ ili $-1$).
+Ako $(p-2)(p+1) \neq 0$, tj. $p \neq 2, p \neq -1$.
+\[
+x = \frac{p(p-2)}{(p-2)(p+1)} = \frac{p}{p+1}
+\]
+Proverimo kada je $x = 1$:
+$\frac{p}{p+1} = 1 \Rightarrow p = p+1 \Rightarrow 0=1$. Nemoguće.
+Proverimo kada je $x = -1$:
+$\frac{p}{p+1} = -1 \Rightarrow p = -p - 1 \Rightarrow 2p = -1 \Rightarrow p = -1/2$.
+Za $p = -1/2$, dobijamo $x = -1$, što nije dozvoljeno. Dakle za $p = -1/2$ nema rešenja.
+
+Dakle, vrednosti $p$ za koje jednačina nema rešenja su $p = -1$ i $p = -1/2$.
+Ukupno 2 vrednosti.
+
+\subsection*{Answer}
+$2$ (opcija \textbf{(B)}).
+
+\end{document}

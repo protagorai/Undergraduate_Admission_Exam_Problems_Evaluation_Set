@@ -1,0 +1,67 @@
+REŠENJA - Prijemni ispit iz matematike za upis na Elektrotehnički fakultet
+Univerzitet u Beogradu, 29. jun 2015.
+Šifra zadataka: 12151
+
+================================================================================
+
+1.  (D) 6
+    k = 6 je najmanja vrednost za koju važi 0,0010101 · 10^k > 1001
+
+2.  (D) (2/3)√3
+    Najkraće rastojanje između paralelnih pravih je (2√3)/3
+
+3.  (C) y² + (a+1)y + a² - a + 1 = 0
+    Kvadratna jednačina čija su rešenja y₁ = ax₁ + x₂ i y₂ = x₁ + ax₂
+
+4.  (A) 3/5
+    k = 3/5 minimizuje moduo kompleksnog broja
+
+5.  (B) 30°
+    Oštar ugao romba je 30°
+
+6.  (E) 7:4
+    Odnos površina valjka i kupe je 7:4
+
+7.  (D) c < b < a
+    Poredak je 0,3^0,3 < 0,2^0,2 < 0,1^0,1
+
+8.  (B) 82/125
+    Vrednost izraza sin(x/2)cos(5x/2) = 82/125
+
+9.  (B) 0
+    Jednačina f(x) + f(f(x)) = x nema realnih rešenja
+
+10. (C) 72
+    2^A = 72
+
+11. (E) 3
+    Ukupno 3 para celih brojeva (x, y) zadovoljava oba uslova
+
+12. (C) 84
+    Binomni koeficijent uz √x je 84
+
+13. (D) [4·10⁵, 5·10⁵)
+    N = 427608 pripada intervalu [400000, 500000)
+
+14. (B) 93
+    Zbir a₂ + a₄ + a₆ + ... + a₉₈ = 93
+
+15. (A) (-∞, a] ∪ [b, c] ∪ [d, +∞)
+    Skup rešenja je oblika (-∞, a] ∪ [b, c] ∪ [d, +∞)
+
+16. (E) 5
+    Postoji 5 parova (p, q) koji zadovoljavaju uslov deljivosti
+
+17. (C) 3
+    Izraz a²/b² + b/a = 3
+
+18. (B) 2/e
+    Maksimalna površina trougla OAB je 2/e
+
+19. (B) (π/6, π/4]
+    Jedno rešenje pripada intervalu (π/6, π/4]
+
+20. (C) [3√3, 6)
+    Sva realna rešenja se nalaze u skupu [3√3, 6)
+
+================================================================================

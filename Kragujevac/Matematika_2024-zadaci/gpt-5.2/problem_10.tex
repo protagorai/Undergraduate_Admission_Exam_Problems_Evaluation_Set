@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+The base of a quadrilateral pyramid is a rectangle whose diagonals have length $4$ cm and form a $60^\circ$ angle.
+If each lateral edge makes a $30^\circ$ angle with the base plane, find the volume of the pyramid.
+
+\subsection*{Solution}
+Let the rectangle sides be $a$ and $b$.
+Its diagonal length gives
+\[
+a^2+b^2=4^2=16.
+\]
+Diagonals correspond to vectors $(a,b)$ and $(a,-b)$, so
+\[
+\cos 60^\circ=\frac{(a,b)\cdot(a,-b)}{\|(a,b)\|\|(a,-b)\|}
+\;=\;\frac{a^2-b^2}{a^2+b^2}
+\;=\;\frac{a^2-b^2}{16}.
+\]
+Thus $\frac12=\frac{a^2-b^2}{16}$, hence $a^2-b^2=8$. Solving
+\[
+a^2=\frac{16+8}{2}=12,\qquad b^2=\frac{16-8}{2}=4,
+\]
+so $a=2\sqrt3$, $b=2$, and base area is
+\[
+S=ab=4\sqrt3.
+\]
+
+If a segment makes angle $\alpha$ with the plane, then $\sin\alpha=\frac{\text{height component}}{\text{segment length}}$.
+Here each lateral edge has $\alpha=30^\circ$, so for each lateral edge of length $L$ we have $h=L\sin30^\circ=L/2$, i.e. $L=2h$.
+Hence all lateral edges are equal, so the apex is equally distant from all rectangle vertices; its projection is the intersection of the diagonals (rectangle center).
+Distance from the center to any vertex equals half the diagonal: $r=2$.
+
+By the right triangle (apex--center--vertex),
+\[
+L^2=h^2+r^2=h^2+4,
+\]
+and with $L=2h$:
+\[
+(2h)^2=h^2+4 \Rightarrow 3h^2=4 \Rightarrow h=\frac{2}{\sqrt3}.
+\]
+Volume:
+\[
+V=\frac13 Sh=\frac13\cdot 4\sqrt3 \cdot \frac{2}{\sqrt3}=\frac{8}{3}\text{ cm}^3.
+\]
+
+\subsection*{Answer}
+$\dfrac{8}{3}\text{ cm}^3$ (option \textbf{A}).
+
+\end{document}
+
+
+
+
+
+
+
+
+
+

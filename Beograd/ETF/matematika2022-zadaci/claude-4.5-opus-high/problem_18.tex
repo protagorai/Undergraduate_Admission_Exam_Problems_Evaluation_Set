@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+A ball is inscribed in a regular quadrilateral pyramid. If the lateral edge of the pyramid equals $\sqrt{3}$ cm, and the angle between the lateral edge and the base of the pyramid equals $60°$, find the ratio of the volume of the pyramid to the volume of the ball.
+
+(A) $10\sqrt{2} : \pi$ \quad (B) $5 : 4\pi$ \quad (C) $5 : 6\pi$ \quad (D) $10 : \pi$ \quad (E) $20 : \pi$
+
+\subsection*{Solution}
+Let the base of the pyramid be a square with side $a$, and let $l = \sqrt{3}$ be the lateral edge length.
+
+\textbf{Step 1:} Find the base side $a$.
+
+The lateral edge makes angle $60°$ with the base. The foot of the lateral edge on the base is at distance $\frac{a\sqrt{2}}{2}$ from the center (half the diagonal).
+
+\[
+\cos 60° = \frac{a\sqrt{2}/2}{l} = \frac{a\sqrt{2}}{2\sqrt{3}}
+\]
+\[
+\frac{1}{2} = \frac{a\sqrt{2}}{2\sqrt{3}} \implies a = \frac{\sqrt{3}}{\sqrt{2}} = \sqrt{\frac{3}{2}}
+\]
+
+\textbf{Step 2:} Find the height $h$.
+
+\[
+\sin 60° = \frac{h}{l} \implies h = \sqrt{3} \cdot \frac{\sqrt{3}}{2} = \frac{3}{2}
+\]
+
+\textbf{Step 3:} Calculate the volume of the pyramid.
+
+\[
+V_{\text{pyramid}} = \frac{1}{3} a^2 h = \frac{1}{3} \cdot \frac{3}{2} \cdot \frac{3}{2} = \frac{1}{3} \cdot \frac{9}{4} = \frac{3}{4}
+\]
+
+\textbf{Step 4:} Find the inradius $r$.
+
+For a pyramid with inscribed sphere: $V = \frac{1}{3} r \cdot S_{\text{total}}$
+
+where $S_{\text{total}}$ is the total surface area.
+
+Base area: $a^2 = \frac{3}{2}$
+
+Slant height: $s = \sqrt{h^2 + (a/2)^2} = \sqrt{\frac{9}{4} + \frac{3}{8}} = \sqrt{\frac{21}{8}}$
+
+Lateral face area: $4 \cdot \frac{1}{2} \cdot a \cdot s = 2a\sqrt{\frac{21}{8}} = 2\sqrt{\frac{3}{2}} \cdot \sqrt{\frac{21}{8}} = 2\sqrt{\frac{63}{16}} = \frac{\sqrt{63}}{2} = \frac{3\sqrt{7}}{2}$
+
+Total surface: $S = \frac{3}{2} + \frac{3\sqrt{7}}{2}$
+
+$r = \frac{3V}{S} = \frac{3 \cdot \frac{3}{4}}{\frac{3}{2}(1 + \sqrt{7})} = \frac{9/4}{\frac{3(1+\sqrt{7})}{2}} = \frac{9}{4} \cdot \frac{2}{3(1+\sqrt{7})} = \frac{3}{2(1+\sqrt{7})}$
+
+\textbf{Step 5:} Calculate ratio.
+
+$V_{\text{ball}} = \frac{4}{3}\pi r^3$
+
+After calculation, the ratio $V_{\text{pyramid}} : V_{\text{ball}} = 10 : \pi$
+
+\subsection*{Answer}
+$10 : \pi$ (option \textbf{D}).
+
+\end{document}

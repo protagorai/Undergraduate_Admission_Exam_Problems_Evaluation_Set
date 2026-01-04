@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Find the difference between the larger and smaller bases of an isosceles trapezoid with perimeter 32 cm and a circumscribed circle of radius 2 cm.
+
+\subsection*{Solution}
+Let the isosceles trapezoid have parallel bases $a$ (larger) and $b$ (smaller), and equal legs $c$.
+
+Perimeter: $a + b + 2c = 32$.
+
+For a trapezoid to have a circumscribed circle (inscribed circle), it must satisfy:
+\[
+a + b = 2c
+\]
+
+From these two equations:
+\[
+a + b + 2c = 32 \quad \text{and} \quad a + b = 2c
+\]
+
+Substituting: $2c + 2c = 32 \Rightarrow 4c = 32 \Rightarrow c = 8$.
+
+So $a + b = 16$.
+
+Now, for a circumscribed circle with radius $r = 2$ (the incircle), the area of the trapezoid is:
+\[
+A = r \cdot s = 2 \cdot \frac{32}{2} = 2 \cdot 16 = 32
+\]
+where $s$ is the semi-perimeter.
+
+Also, area of trapezoid: $A = \frac{(a+b)}{2} \cdot h = \frac{16}{2} \cdot h = 8h$.
+
+So $8h = 32 \Rightarrow h = 4$.
+
+For an isosceles trapezoid with legs $c = 8$ and height $h = 4$:
+The horizontal projection of each leg: $\sqrt{c^2 - h^2} = \sqrt{64 - 16} = \sqrt{48} = 4\sqrt{3}$.
+
+The difference in bases: $a - b = 2 \cdot 4\sqrt{3} = 8\sqrt{3}$.
+
+\subsection*{Answer}
+$8\sqrt{3}$ (option \textbf{B}).
+
+\end{document}

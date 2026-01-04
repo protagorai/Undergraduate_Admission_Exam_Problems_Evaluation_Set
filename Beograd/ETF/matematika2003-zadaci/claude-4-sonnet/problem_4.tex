@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+The difference $\cos^2 \frac{x+y}{2} - \sin^2 \frac{x-y}{2}$ equals:
+
+A) $\sin(x - y)$; B) $\cos x \cos y$; C) $\sin x \cos y$; D) $\sin x \sin y$; E) $\sin(x + y)$; N) Ne znam.
+
+\subsection*{Solution}
+We use the identity $\cos^2 \alpha - \sin^2 \beta = \cos^2 \alpha - (1 - \cos^2 \beta) = \cos^2 \alpha + \cos^2 \beta - 1$.
+
+However, it's better to use the identity $\cos^2 \alpha - \sin^2 \beta = \cos^2 \alpha - \sin^2 \beta$.
+
+Let's use the identity $\cos^2 \theta = \frac{1 + \cos(2\theta)}{2}$ and $\sin^2 \theta = \frac{1 - \cos(2\theta)}{2}$:
+
+\[
+\cos^2 \frac{x+y}{2} = \frac{1 + \cos(x+y)}{2}
+\]
+
+\[
+\sin^2 \frac{x-y}{2} = \frac{1 - \cos(x-y)}{2}
+\]
+
+Therefore:
+\[
+\cos^2 \frac{x+y}{2} - \sin^2 \frac{x-y}{2} = \frac{1 + \cos(x+y)}{2} - \frac{1 - \cos(x-y)}{2}
+\]
+
+\[
+= \frac{1 + \cos(x+y) - 1 + \cos(x-y)}{2} = \frac{\cos(x+y) + \cos(x-y)}{2}
+\]
+
+Using the sum-to-product formula $\cos A + \cos B = 2\cos\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)$:
+
+\[
+\cos(x+y) + \cos(x-y) = 2\cos\left(\frac{(x+y)+(x-y)}{2}\right)\cos\left(\frac{(x+y)-(x-y)}{2}\right)
+\]
+
+\[
+= 2\cos(x)\cos(y)
+\]
+
+Therefore:
+\[
+\cos^2 \frac{x+y}{2} - \sin^2 \frac{x-y}{2} = \frac{2\cos x \cos y}{2} = \cos x \cos y
+\]
+
+\subsection*{Answer}
+$\cos x \cos y$ (option \textbf{B}).
+
+\end{document}

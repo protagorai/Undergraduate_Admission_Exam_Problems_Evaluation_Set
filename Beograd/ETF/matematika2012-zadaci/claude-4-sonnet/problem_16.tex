@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Ukupan broj realnih rešenja jednačine $\sqrt{3} \cdot 2^{\log_{10} 2x} + 1 + \sqrt{2} \cdot 2^{\log_{10} 2x} + 9 = \sqrt{13} \cdot 2^{\log_{10} 2x} + 4$ je:
+
+\subsection*{Solution}
+Neka je $y = 2^{\log_{10} 2x}$.
+
+Jednačina postaje:
+\[
+\sqrt{3} \cdot y + 1 + \sqrt{2} \cdot y + 9 = \sqrt{13} \cdot y + 4
+\]
+\[
+(\sqrt{3} + \sqrt{2}) y + 10 = \sqrt{13} y + 4
+\]
+\[
+(\sqrt{3} + \sqrt{2} - \sqrt{13}) y = 4 - 10 = -6
+\]
+\[
+y = \frac{-6}{\sqrt{3} + \sqrt{2} - \sqrt{13}}
+\]
+
+Proveravamo da li je $\sqrt{3} + \sqrt{2} - \sqrt{13} \neq 0$:
+$\sqrt{3} \approx 1.732$, $\sqrt{2} \approx 1.414$, $\sqrt{13} \approx 3.606$
+
+$\sqrt{3} + \sqrt{2} \approx 3.146 < 3.606 = \sqrt{13}$
+
+Dakle, $\sqrt{3} + \sqrt{2} - \sqrt{13} < 0$, pa je $y > 0$.
+
+Sada rešavamo $2^{\log_{10} 2x} = y$:
+
+Koristimo svojstvo $2^{\log_{10} 2x} = 2^{\log_{10} 2 + \log_{10} x} = 2^{\log_{10} 2} \cdot 2^{\log_{10} x}$
+
+Pošto je $2^{\log_{10} 2} = 2^{\log_{10} 2}$ (konstanta), i $2^{\log_{10} x} = x^{\log_{10} 2}$:
+
+Ovo postaje kompleksno. Pokušajmo drugačiji pristup.
+
+Koristimo $2^{\log_{10} 2x} = (2x)^{\log_{10} 2}$.
+
+Dakle, $(2x)^{\log_{10} 2} = y$.
+
+Pošto je $\log_{10} 2 \approx 0.301$:
+$(2x)^{0.301} = y$
+
+$2x = y^{\frac{1}{0.301}} = y^{\frac{1000}{301}}$
+
+$x = \frac{1}{2} y^{\frac{1000}{301}}$
+
+Pošto je $y > 0$, postoji jedinstveno rešenje za $x > 0$.
+
+Međutim, treba proveriti da li je $x > 0$ (jer je $2x$ u logaritmu).
+
+\subsection*{Answer}
+1 (opcija \textbf{B}).
+
+\end{document}

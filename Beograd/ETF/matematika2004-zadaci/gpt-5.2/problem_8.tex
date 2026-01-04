@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Ako je
+\[
+\log_{b^2}x+\log_{x^2}b=1,\qquad b>0,\ b\ne 1,\ x>0,\ x\ne 1,
+\]
+odrediti $x$.
+
+\subsection*{Solution}
+Prebacimo sve na logaritme sa osnovom $b$ i $x$:
+\[
+\log_{b^2}x=\frac{\ln x}{\ln b^2}=\frac{\ln x}{2\ln b}=\frac12\log_b x,
+\qquad
+\log_{x^2}b=\frac{\ln b}{\ln x^2}=\frac{\ln b}{2\ln x}=\frac12\log_x b.
+\]
+Jednačina postaje
+\[
+\frac12\big(\log_b x+\log_x b\big)=1
+\quad\Longleftrightarrow\quad
+\log_b x+\log_x b=2.
+\]
+Označimo $u=\log_b x$. Tada je $\log_x b=\frac1u$, pa dobijamo
+\[
+u+\frac1u=2
+\quad\Longleftrightarrow\quad
+u^2-2u+1=0
+\quad\Longleftrightarrow\quad
+(u-1)^2=0,
+\]
+odakle je $u=1$, tj.
+\[
+\log_b x=1 \Longleftrightarrow x=b.
+\]
+
+\subsection*{Answer}
+$x=b$ (option \textbf{C}).
+
+\end{document}
+

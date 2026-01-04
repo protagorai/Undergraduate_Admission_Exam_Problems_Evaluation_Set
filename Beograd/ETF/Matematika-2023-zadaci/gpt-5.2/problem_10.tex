@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Zapremina prave pravilne četvorostrane zarubljene piramide, dijagonale 18 cm i stranica osnove 14 cm i 10 cm, iznosi (u cm$^3$):
+
+(A) 436 \quad (B) 218 \quad (C) 109 \quad (D) 900 \quad (E) 872
+
+\subsection*{Solution}
+Osnove su kvadrati sa stranicama $a=14$ i $b=10$.
+Površine osnova su $B_1 = 14^2 = 196$ i $B_2 = 10^2 = 100$.
+Prostorna dijagonala piramide je $D=18$.
+Posmatrajmo dijagonalni presek piramide. To je jednakokraki trapez čije su osnovice dijagonale kvadrata $d_1 = 14\sqrt{2}$ i $d_2 = 10\sqrt{2}$, a dijagonala tog trapeza je ista kao prostorna dijagonala piramide, $D=18$. Visina tog trapeza je visina piramide $H$.
+Neka su $x$ i $y$ projekcije dijagonale trapeza na donju osnovicu.
+U jednakokrakom trapezu, projekcija dijagonale na veću osnovicu je srednja linija trapeza, tj. $\frac{d_1+d_2}{2}$?
+Ne, projekcija dijagonale $D$ na ravan donje osnove (ako vrh projekujemo ortogonalno) ima dužinu...
+Posmatrajmo pravougli trougao koji čine: visina $H$, dijagonala $D$, i projekcija dijagonale na ravan osnove $p$.
+Ta projekcija $p$ spaja teme donje osnove sa suprotnim temenom gornje osnove (projektovanim).
+Zapravo, u dijagonalnom preseku (trapezu), ako spustimo visinu iz temena gornje osnove, dobijamo pravougli trougao sa hipotenuzom $D$ i katetama $H$ i $x$.
+Dužina $x$ je dijagonala donje osnove minus "deo".
+Tačnije, $x = \sqrt{(\frac{d_1+d_2}{2})^2}$?
+U jednakokrakom trapezu sa osnovicama $d_1, d_2$, dijagonala $D$ se projektuje na osnovicu kao duž dužine $\frac{d_1+d_2}{2}$.
+Proverimo: $x = d_2 + \frac{d_1-d_2}{2} = \frac{d_1+d_2}{2}$. Da.
+Dakle $p = \frac{14\sqrt{2} + 10\sqrt{2}}{2} = 12\sqrt{2}$.
+
+Pitagorina teorema:
+$H^2 + p^2 = D^2$.
+$H^2 + (12\sqrt{2})^2 = 18^2$.
+$H^2 + 144 \cdot 2 = 324$.
+$H^2 + 288 = 324$.
+$H^2 = 36 \Rightarrow H = 6$.
+
+Zapremina zarubljene piramide:
+\[
+V = \frac{H}{3} (B_1 + B_2 + \sqrt{B_1 B_2})
+\]
+\[
+V = \frac{6}{3} (196 + 100 + \sqrt{196 \cdot 100}) = 2 (296 + 14 \cdot 10) = 2 (296 + 140) = 2 \cdot 436 = 872
+\]
+
+\subsection*{Answer}
+$872$ (opcija \textbf{(E)}).
+
+\end{document}

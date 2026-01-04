@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Granična vrednost $\lim_{x \to 0} \frac{e^{\sin^2 x} - \cos x}{\sqrt{x^2 + 1} - 1}$ iznosi:
+
+\subsection*{Solution}
+Koristićemo Tejlorove razvoje oko $x = 0$.
+
+Za brojnik:
+\[e^{\sin^2 x} = e^{x^2 + O(x^4)} = 1 + x^2 + \frac{x^4}{2} + O(x^6)\]
+\[\cos x = 1 - \frac{x^2}{2} + \frac{x^4}{24} + O(x^6)\]
+
+Dakle:
+\[e^{\sin^2 x} - \cos x = (1 + x^2 + \frac{x^4}{2}) - (1 - \frac{x^2}{2} + \frac{x^4}{24}) + O(x^6)\]
+\[= x^2 + \frac{x^2}{2} + \frac{x^4}{2} - \frac{x^4}{24} + O(x^6)\]
+\[= \frac{3x^2}{2} + \frac{11x^4}{24} + O(x^6)\]
+
+Za imenilac:
+\[\sqrt{x^2 + 1} = (1 + x^2)^{1/2} = 1 + \frac{x^2}{2} - \frac{x^4}{8} + O(x^6)\]
+
+Dakle:
+\[\sqrt{x^2 + 1} - 1 = \frac{x^2}{2} - \frac{x^4}{8} + O(x^6)\]
+
+Granična vrednost:
+\[\lim_{x \to 0} \frac{\frac{3x^2}{2} + O(x^4)}{\frac{x^2}{2} + O(x^4)} = \lim_{x \to 0} \frac{\frac{3x^2}{2}}{\frac{x^2}{2}} = \frac{3/2}{1/2} = 3\]
+
+\subsection*{Answer}
+$3$ (opcija \textbf{D}).
+
+\end{document}

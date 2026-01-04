@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 5}
+Ako je $\sin\alpha=-\frac{5}{13}$ i $\alpha\in\left(\frac{3\pi}{2}, 2\pi\right)$, onda je $\text{tg}\left(\frac{\pi}{4}+\alpha\right)$ jednak:
+
+\subsection*{Solution}
+Kako je $\alpha$ u IV kvadrantu, kosinus je pozitivan:
+\[
+\cos\alpha = \sqrt{1-\sin^2\alpha} = \sqrt{1-\left(-\frac{5}{13}\right)^2} = \sqrt{1-\frac{25}{169}} = \sqrt{\frac{144}{169}} = \frac{12}{13}
+\]
+Tada je $\text{tg}\alpha = \frac{\sin\alpha}{\cos\alpha} = \frac{-5/13}{12/13} = -\frac{5}{12}$.
+Koristimo adicionu formulu za tangens:
+\[
+\text{tg}\left(\frac{\pi}{4}+\alpha\right) = \frac{\text{tg}\frac{\pi}{4} + \text{tg}\alpha}{1 - \text{tg}\frac{\pi}{4}\text{tg}\alpha}
+\]
+Kako je $\text{tg}\frac{\pi}{4} = 1$:
+\[
+\text{tg}\left(\frac{\pi}{4}+\alpha\right) = \frac{1 + (-\frac{5}{12})}{1 - 1 \cdot (-\frac{5}{12})} = \frac{1 - \frac{5}{12}}{1 + \frac{5}{12}} = \frac{\frac{7}{12}}{\frac{17}{12}} = \frac{7}{17}
+\]
+
+\subsection*{Answer}
+$\frac{7}{17}$ (Opcija \textbf{D})
+
+\end{document}

@@ -1,0 +1,20 @@
+1 B -2
+2 A 2
+3 A 100
+4 A 5
+5 B 2006
+6 B -10/11
+7 E 320
+8 A 1+sqrt(2)
+9 A 2
+10 C (a^2-b^2)/c^2
+11 C nema međusobno jednakih
+12 B 8sqrt(3)
+13 D 5
+14 A 2
+15 B [a,b)
+16 A 0
+17 E -4 (nema rešenja)
+18 N Ne znam
+19 A C(n+1,k)
+20 B 4sqrt(3)/9

@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 17}
+Dati su izrazi $E_1 = \sin^2 \frac{x+y}{2} + \cos x \cos y, E_2 = \cos^2 \frac{x-y}{2} - \sin x \sin y, E_3 = \cos^2 \frac{x+y}{2} + \sin x \sin y, E_4 = \sin^2 \frac{x-y}{2} + \cos x \cos y$. Tačan je iskaz:
+\begin{itemize}
+    \item[A)] $E_1 \neq E_2, E_3 = E_4$
+    \item[B)] $E_1 = E_2, E_3 \neq E_4$
+    \item[C)] Među datim izrazima nema međusobno jednakih
+    \item[D)] $E_1 = E_2, E_3 = E_4$
+    \item[E)] $E_1 = E_3, E_2 = E_4$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Let's simplify $E_1$.
+Recall that $\cos(x+y) = \cos x \cos y - \sin x \sin y$, so $\cos x \cos y = \cos(x+y) + \sin x \sin y$.
+\[ E_1 = \sin^2 \frac{x+y}{2} + \cos(x+y) + \sin x \sin y. \]
+Using the half-angle identity $\cos(x+y) = 1 - 2\sin^2 \frac{x+y}{2}$:
+\[ E_1 = \sin^2 \frac{x+y}{2} + (1 - 2\sin^2 \frac{x+y}{2}) + \sin x \sin y = 1 - \sin^2 \frac{x+y}{2} + \sin x \sin y = \cos^2 \frac{x+y}{2} + \sin x \sin y. \]
+We observe that this is exactly expression $E_3$. So $E_1 = E_3$.
+
+Now let's simplify $E_4$.
+Recall that $\cos(x-y) = \cos x \cos y + \sin x \sin y$, so $\cos x \cos y = \cos(x-y) - \sin x \sin y$.
+\[ E_4 = \sin^2 \frac{x-y}{2} + \cos(x-y) - \sin x \sin y. \]
+Using the identity $\cos(x-y) = 1 - 2\sin^2 \frac{x-y}{2}$:
+\[ E_4 = \sin^2 \frac{x-y}{2} + (1 - 2\sin^2 \frac{x-y}{2}) - \sin x \sin y = 1 - \sin^2 \frac{x-y}{2} - \sin x \sin y = \cos^2 \frac{x-y}{2} - \sin x \sin y. \]
+We observe that this is exactly expression $E_2$. So $E_2 = E_4$.
+
+Thus, $E_1 = E_3$ and $E_2 = E_4$.
+
+\subsection*{Answer}
+The correct statement is $E_1 = E_3, E_2 = E_4$, which corresponds to option \textbf{E}.
+
+\end{document}

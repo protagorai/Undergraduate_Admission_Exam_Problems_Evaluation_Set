@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 17}
+
+Jedna\v cina je
+\[
+\bigl(\log_{\sin x} 2\bigr)\bigl(\log_{\sin^2 x}\tfrac{4}{3}\bigr)=2\log_{\frac43}2.
+\]
+\subsection*{Domen}
+Da bi \(\log_{\sin x}2\) bio definisan, mora biti \(\sin x>0\) i \(\sin x\ne 1\).
+Za \(\log_{\sin^2 x}\frac43\) mora biti \(\sin x\ne 0\) i \(\sin^2 x\ne 1\).
+Dakle:
+\[
+\sin x\in(0,1).
+\]
+
+\subsection*{Svo\dj enje jedna\v cine}
+Koristimo promenu osnove:
+\[
+\log_{\sin x}2=\frac{\ln 2}{\ln(\sin x)},\qquad
+\log_{\sin^2 x}\frac43=\frac{\ln\frac43}{\ln(\sin^2 x)}=\frac{\ln\frac43}{2\ln(\sin x)}
+\]
+(jer je \(\sin x>0\)).
+Zato je leva strana
+\[
+\frac{\ln2}{\ln(\sin x)}\cdot \frac{\ln\frac43}{2\ln(\sin x)}
+=\frac{\ln2\cdot \ln\frac43}{2(\ln(\sin x))^2}.
+\]
+Desna strana je
+\[
+2\log_{\frac43}2=2\cdot\frac{\ln2}{\ln\frac43}.
+\]
+Izjedna\v cimo i skratimo \(\ln2\ne 0\):
+\[
+\frac{\ln\frac43}{2(\ln(\sin x))^2}= \frac{2}{\ln\frac43}
+\quad\Rightarrow\quad
+\left(\ln\frac43\right)^2=4(\ln(\sin x))^2.
+\]
+Zato je
+\[
+|\ln(\sin x)|=\frac12\ln\frac43=\ln\sqrt{\frac43}=\ln\frac{2}{\sqrt3}.
+\]
+Dakle,
+\[
+\ln(\sin x)=\pm \ln\frac{2}{\sqrt3}
+\quad\Rightarrow\quad
+\sin x\in\left\{\frac{2}{\sqrt3},\frac{\sqrt3}{2}\right\}.
+\]
+Po\v sto je \(\sin x\in(0,1)\), mogu\'ce je samo
+\[
+\sin x=\frac{\sqrt3}{2}.
+\]
+Re\v senja su
+\[
+x=\frac{\pi}{3}+2k\pi\quad\text{ili}\quad x=\frac{2\pi}{3}+2k\pi,\qquad k\in\mathbb{Z}.
+\]
+
+\subsection*{Uslov iz teksta}
+Tra\v zi se skup \(S\) koji ima ta\v cno tri zajedni\v cka elementa sa skupom re\v senja.
+U ponu\dj enim skupovima jedino (E) sadr\v zi ta\v cno tri ugla koja su kongruentna sa \(\pi/3\) ili \(2\pi/3\) po modulu \(2\pi\):
+\[
+\frac{2\pi}{3},\quad -\frac{4\pi}{3}=\frac{2\pi}{3}-2\pi,\quad -\frac{5\pi}{3}=\frac{\pi}{3}-2\pi.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{S\ \text{je dat u (E)}}.
+\]
+
+\end{document}
+

@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Zbir
+\[
+1+11+111+\cdots+\underbrace{11\ldots 1}_{n}
+\]
+jednak je:
+
+\subsection*{Solution}
+Broj sa $k$ jedinica je
+\[
+1+10+10^2+\cdots+10^{k-1}=\frac{10^k-1}{9}.
+\]
+Zato je tra\v{z}eni zbir
+\[
+S=\sum_{k=1}^{n}\frac{10^k-1}{9}
+=\frac{1}{9}\left(\sum_{k=1}^{n}10^k-\sum_{k=1}^{n}1\right)
+=\frac{1}{9}\left(\sum_{k=1}^{n}10^k-n\right).
+\]
+Geometrijski zbir daje
+\[
+\sum_{k=1}^{n}10^k=10\cdot\frac{10^n-1}{10-1}=\frac{10^{n+1}-10}{9}.
+\]
+Ubacivanjem dobijamo
+\[
+S=\frac{1}{9}\left(\frac{10^{n+1}-10}{9}-n\right)
+=\frac{10^{n+1}-10-9n}{81}.
+\]
+
+\subsection*{Answer}
+$\dfrac{10^{n+1}-10-9n}{81}$ (option \textbf{A}).
+
+\end{document}
+

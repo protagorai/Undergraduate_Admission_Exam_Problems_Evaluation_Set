@@ -1,0 +1,2 @@
+12. Broj rešenja jednačine (\cos x) \sin^2 x - x \sin x + 1 = 1 na intervalu [0, \frac{\pi}{2}] je:
+A) 0;   B) 1;   C) 2;   D) 3;   E) 4;   N) Ne znam.

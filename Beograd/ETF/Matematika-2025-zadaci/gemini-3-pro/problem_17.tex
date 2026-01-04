@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako polinom $P_n(x)$ ($n \ge 3$) pri deljenju sa $x$ daje ostatak 3, a pri deljenju sa $x^2+1$ daje ostatak $-x+2$, onda polinom $(P_n(x))^2 + P_n(x) + 1$ pri deljenju sa $x^3+x$ daje ostatak:
+
+\subsection*{Solution}
+
+$P_n(0) = 3$.
+$P_n(i) = -i+2$.
+Let $F(x) = P_n(x)^2 + P_n(x) + 1$.
+Remainder $R(x)$ when dividing by $x(x^2+1)$ is $Ax^2+Bx+C$.
+$F(0) = P_n(0)^2 + P_n(0) + 1 = 9+3+1 = 13 \implies C=13$.
+$F(i) = (-i+2)^2 + (-i+2) + 1 = (i^2-4i+4) - i + 3 = 3-4i-i+3 = 6-5i$.
+$R(i) = -A + Bi + 13 = 6-5i$.
+$-A+13 = 6 \implies A=7$.
+$B = -5$.
+$R(x) = 7x^2 - 5x + 13$.
+
+
+\subsection*{Answer}
+7x^2 - 5x + 13 (option \textbf{A}).
+
+\end{document}

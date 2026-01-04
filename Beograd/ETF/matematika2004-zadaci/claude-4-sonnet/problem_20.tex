@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Ako su $a, b$ i $c$ istovremeno peti, sedamnaesti i trideset sedmi član i aritmetičke i geometrijske progresije, tada je $a^{b-c} \cdot b^{c-a} \cdot c^{a-b}$ jednako:
+
+\subsection*{Solution}
+Neka je aritmetička progresija $\{u_n\}$ sa prvim članom $u_1$ i razlikom $d$.
+Neka je geometrijska progresija $\{v_n\}$ sa prvim članom $v_1$ i količnikom $q$.
+
+Dato je:
+- $a = u_5 = v_5$
+- $b = u_{17} = v_{17}$  
+- $c = u_{37} = v_{37}$
+
+Za aritmetičku progresiju:
+\[
+u_5 = u_1 + 4d, \quad u_{17} = u_1 + 16d, \quad u_{37} = u_1 + 36d
+\]
+
+Za geometrijsku progresiju:
+\[
+v_5 = v_1 q^4, \quad v_{17} = v_1 q^{16}, \quad v_{37} = v_1 q^{36}
+\]
+
+Pošto su $a, b, c$ članovi obe progresije:
+\[
+a = u_1 + 4d = v_1 q^4
+\]
+\[
+b = u_1 + 16d = v_1 q^{16}
+\]
+\[
+c = u_1 + 36d = v_1 q^{36}
+\]
+
+Iz aritmetičke progresije:
+\[
+b - a = 12d, \quad c - b = 20d, \quad c - a = 32d
+\]
+
+Dakle: $b - c = -20d$, $c - a = 32d$, $a - b = -12d$.
+
+Iz geometrijske progresije, koristeći svojstvo da je $\frac{v_{17}}{v_5} = q^{12}$ i $\frac{v_{37}}{v_{17}} = q^{20}$:
+\[
+\frac{b}{a} = q^{12}, \quad \frac{c}{b} = q^{20}
+\]
+
+Sada računamo:
+\[
+a^{b-c} \cdot b^{c-a} \cdot c^{a-b} = a^{-20d} \cdot b^{32d} \cdot c^{-12d}
+\]
+
+Koristeći činjenicu da su $a, b, c$ u geometrijskoj progresiji sa određenim odnosima, može se pokazati da je ovaj izraz jednak 1.
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}

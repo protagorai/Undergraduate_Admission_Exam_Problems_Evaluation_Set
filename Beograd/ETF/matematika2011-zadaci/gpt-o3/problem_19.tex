@@ -1,0 +1,24 @@
+\begin{solution}
+\textbf{Zadatak 19.}
+
+Jednačina
+\[\log_{2011}(2010\,z)=\log_{2010}(2011\,z)\] pretvaramo pomoću prirodnog logaritma:
+\[
+\frac{\ln(2010z)}{\ln2011}=\frac{\ln(2011z)}{\ln2010}.
+\]
+Pomnožimo ukršteno:
+\[\bigl(\ln2010+\ln z\bigr)\ln2010=\bigl(\ln2011+\ln z\bigr)\ln2011.\]
+Sabrane članove sa $\ln z$ skupimo:
+\[(\ln2010-\ln2011)\,\ln z=\ln2011\,\ln2011-\ln2010\,\ln2010.
+\]
+Leva zagrada je negativna pa delimo:
+\[
+\ln z=\frac{(\ln2011)^{2}-(\ln2010)^{2}}{\ln2010-\ln2011}=-(\ln2011+\ln2010).
+\]
+Dakle
+\[z=e^{-\ln(2011\cdot2010)}=\frac1{2011\cdot2010}=\frac1{4\,042\,110}.
+\]
+Broj je strogo pozitivan i manji od $1/2011$, te spada u interval
+\[\boxed{\left(0,\dfrac1{2011}\right]}\;\Rightarrow\;(A).
+\]
+\end{solution}

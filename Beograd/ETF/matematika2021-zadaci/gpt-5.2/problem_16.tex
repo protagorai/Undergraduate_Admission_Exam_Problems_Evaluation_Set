@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Broj svih resenja sistema
+\[
+\sin^2 x+\sin^2 y=\frac34,\qquad x+y=\frac{5\pi}{12},
+\]
+takvih da je $x\in(-\pi,2\pi)$ i $y\in(-2\pi,\pi)$, jeste:
+(A) 9 \ (B) 7 \ (C) 3 \ (D) 4 \ (E) 5.
+
+\subsection*{Solution}
+Iz $x+y=\frac{5\pi}{12}$ sledi $y=\frac{5\pi}{12}-x$.
+Koristimo $\sin^2 t=\frac{1-\cos 2t}{2}$:
+\begin{align*}
+\sin^2 x+\sin^2 y=\frac34
+&\iff \frac{1-\cos 2x}{2}+\frac{1-\cos 2y}{2}=\frac34\\
+&\iff \cos 2x+\cos 2y=\frac12.
+\end{align*}
+Ovde je
+\[
+2y=2\left(\frac{5\pi}{12}-x\right)=\frac{5\pi}{6}-2x.
+\]
+Zato
+\[
+\cos 2x+\cos\!\left(\frac{5\pi}{6}-2x\right)=\frac12.
+\]
+Primena formule $\cos A+\cos B=2\cos\frac{A+B}{2}\cos\frac{A-B}{2}$ daje
+\[
+2\cos\!\left(\frac{5\pi}{12}\right)\cos\!\left(2x-\frac{5\pi}{12}\right)=\frac12.
+\]
+Poznato je $\cos\!\left(\frac{5\pi}{12}\right)=\cos 75^\circ=\frac{\sqrt6-\sqrt2}{4}$, pa je
+\[
+\cos\!\left(2x-\frac{5\pi}{12}\right)
+=\frac{1}{4\cos(5\pi/12)}=\frac{1}{\sqrt6-\sqrt2}=\frac{\sqrt6+\sqrt2}{4}=\cos\!\left(\frac{\pi}{12}\right).
+\]
+Dakle,
+\[
+2x-\frac{5\pi}{12}=\pm\frac{\pi}{12}+2k\pi.
+\]
+Odavde dobijamo dve familije:
+\[
+2x=\frac{\pi}{2}+2k\pi \ \Longrightarrow\ x=\frac{\pi}{4}+k\pi,
+\]
+\[
+2x=\frac{\pi}{3}+2k\pi \ \Longrightarrow\ x=\frac{\pi}{6}+k\pi.
+\]
+Sada proverimo ogranicenja za $x$ i $y=\frac{5\pi}{12}-x$.
+
+\medskip
+\textbf{(1) $x=\frac{\pi}{4}+k\pi$.}
+U intervalu $(-\pi,2\pi)$ dobijamo $k=-1,0,1$, tj.\ $x\in\{-\frac{3\pi}{4},\frac{\pi}{4},\frac{5\pi}{4}\}$.
+Odgovarajuci $y$ su:
+\[
+y=\frac{5\pi}{12}-x\in\left\{\frac{7\pi}{6},\frac{\pi}{6},-\frac{5\pi}{6}\right\}.
+\]
+Uslov $y<\pi$ izbacuje $\frac{7\pi}{6}$, pa ostaju 2 resenja.
+
+\medskip
+\textbf{(2) $x=\frac{\pi}{6}+k\pi$.}
+U intervalu $(-\pi,2\pi)$ dobijamo $k=-1,0,1$, tj.\ $x\in\{-\frac{5\pi}{6},\frac{\pi}{6},\frac{7\pi}{6}\}$.
+Odgovarajuci $y$ su:
+\[
+y=\frac{5\pi}{12}-x\in\left\{\frac{5\pi}{4},\frac{\pi}{4},-\frac{3\pi}{4}\right\}.
+\]
+Uslov $y<\pi$ izbacuje $\frac{5\pi}{4}$, pa ostaju 2 resenja.
+
+\medskip
+Ukupno ima $2+2=4$ resenja.
+
+\subsection*{Answer}
+$4$ (option \textbf{D}).
+
+\end{document}
+

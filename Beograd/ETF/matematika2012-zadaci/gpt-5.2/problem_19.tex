@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+In how many ways can $5$ boys and $2$ girls be arranged in a row if the girls are not adjacent?
+
+Options: (A) $240$ \quad (B) $3600$ \quad (C) $7680$ \quad (D) $2400$ \quad (E) $250$.
+
+\subsection*{Solution}
+Arrange the $5$ boys first: $5!$ ways. This creates $6$ gaps (including the ends) where girls can be placed:
+\[
+\_\,B\,\_\,B\,\_\,B\,\_\,B\,\_\,B\,\_.
+\]
+Choose $2$ of these $6$ gaps for the girls: $\binom{6}{2}$ ways, and arrange the two girls: $2!$ ways.
+Thus the total is
+\[
+5!\binom{6}{2}\cdot 2!=120\cdot 15\cdot 2=3600.
+\]
+
+\subsection*{Answer}
+$3600$ (option \textbf{B}).
+
+\end{document}
+

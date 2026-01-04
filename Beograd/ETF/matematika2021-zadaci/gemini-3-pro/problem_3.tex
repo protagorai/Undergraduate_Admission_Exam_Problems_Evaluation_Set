@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 3}
+Neka je data funkcija $f(x) = \ln\left|\frac{x-1}{x+1}\right|$. Koja od sledećih tvrđenja su tačna?
+
+\subsection*{Rešenje}
+Proverimo tvrđenja:
+
+(i) $f(0) = \ln\left|\frac{-1}{1}\right| = \ln 1 = 0$. Tačno.
+
+(ii) $f(-x) = \ln\left|\frac{-x-1}{-x+1}\right| = \ln\left|\frac{-(x+1)}{-(x-1)}\right| = \ln\left|\frac{x+1}{x-1}\right| = \ln\left|\left(\frac{x-1}{x+1}\right)^{-1}\right| = -\ln\left|\frac{x-1}{x+1}\right| = -f(x)$.
+Funkcija je neparna. Tačno.
+
+(iii) Funkcija je definisana kada je $\frac{x-1}{x+1} \neq 0$ i $x+1 \neq 0$. Dakle, $x \neq 1$ i $x \neq -1$. Domen je $\mathbb{R} \setminus \{-1, 1\}$.
+Tvrđenje kaže da je definisana na $\mathbb{R} \setminus \{-1\}$, što nije potpuno tačno (fali $x \neq 1$).
+Međutim, često se u zadacima podrazumeva "gde je izraz definisan", a tvrdnja eksplicitno navodi skup. Skup $\mathbb{R} \setminus \{-1\}$ sadrži 1, gde funkcija nije definisana ($\ln 0$). Dakle, tvrđenje je netačno.
+
+(iv) $f(2x+1) + f(2x-1) = \ln\left|\frac{2x}{2x+2}\right| + \ln\left|\frac{2x-2}{2x}\right| = \ln\left|\frac{x}{x+1}\right| + \ln\left|\frac{x-1}{x}\right| = \ln\left|\frac{x}{x+1} \cdot \frac{x-1}{x}\right| = \ln\left|\frac{x-1}{x+1}\right| = f(x)$. Tačno.
+
+(v) Provera za $f(3x) - f(2x) = f(x)$ ne važi generalno.
+
+Tačna tvrđenja su (i), (ii) i (iv).
+
+\subsection*{Odgovor}
+(i), (ii) i (iv) (opcija \textbf{B}).
+
+\end{document}

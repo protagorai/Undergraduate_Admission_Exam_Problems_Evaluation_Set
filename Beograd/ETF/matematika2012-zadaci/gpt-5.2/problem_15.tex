@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Let $i^2=-1$ and let $\varepsilon$ be a complex number satisfying $\varepsilon^2+\varepsilon+1=0$.
+Solve for $x$:
+\[
+\frac{x-1}{x+1}=\varepsilon\cdot \frac{1+i}{1-i}.
+\]
+Options:
+(A) $-2\varepsilon+1-2i$ \quad
+(B) $-2\varepsilon-1+2i$ \quad
+(C) $-2\varepsilon-1-2i$ \quad
+(D) $2\varepsilon+1-2i$ \quad
+(E) $2\varepsilon-1-2i$.
+
+\subsection*{Solution}
+First simplify
+\[
+\frac{1+i}{1-i}=\frac{(1+i)^2}{(1-i)(1+i)}=\frac{1+2i+i^2}{1+1}=\frac{2i}{2}=i.
+\]
+So the equation becomes
+\[
+\frac{x-1}{x+1}=i\varepsilon.
+\]
+Solve:
+\[
+x-1=i\varepsilon(x+1)\ \Rightarrow\ x-i\varepsilon x=1+i\varepsilon
+\ \Rightarrow\ x(1-i\varepsilon)=1+i\varepsilon,
+\]
+thus
+\[
+x=\frac{1+i\varepsilon}{1-i\varepsilon}.
+\]
+Rationalize by multiplying numerator and denominator by $(1+i\varepsilon)$:
+\[
+x=\frac{(1+i\varepsilon)^2}{(1-i\varepsilon)(1+i\varepsilon)}=\frac{1+2i\varepsilon+(i\varepsilon)^2}{1+\varepsilon^2}
+=\frac{1+2i\varepsilon-\varepsilon^2}{1+\varepsilon^2}.
+\]
+Using $\varepsilon^2+\varepsilon+1=0$ we have $\varepsilon^2=-\varepsilon-1$, hence
+\[
+1+\varepsilon^2=1-\varepsilon-1=-\varepsilon.
+\]
+Therefore
+\[
+x=\frac{1+2i\varepsilon-\varepsilon^2}{-\varepsilon}
+=-\frac{1}{\varepsilon}-2i+\frac{\varepsilon^2}{\varepsilon}
+=-\frac{1}{\varepsilon}-2i+\varepsilon.
+\]
+Since $\varepsilon^3=1$ for roots of $\varepsilon^2+\varepsilon+1=0$, we have $\frac{1}{\varepsilon}=\varepsilon^2$.
+Then
+\[
+x=\varepsilon-\varepsilon^2-2i.
+\]
+But $-\varepsilon^2=\varepsilon+1$, so
+\[
+x=\varepsilon+(\varepsilon+1)-2i=2\varepsilon+1-2i.
+\]
+
+\subsection*{Answer}
+$2\varepsilon+1-2i$ (option \textbf{D}).
+
+\end{document}
+

@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 15}
+Skup realnih rešenja jednačine $4^x - 7 \cdot 2^{\frac{x-3}{2}} = 2^{-x}$ sadrži se u intervalu:
+\[ (A)\ (-9, -2] \quad (B)\ (0, 3] \quad (C)\ (-2, 0] \quad (D)\ (7, 12] \quad (E)\ (3, 7] \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+The equation is:
+\[ 4^x - 7 \cdot 2^{\frac{x-3}{2}} = 2^{-x} \]
+Rewrite terms using base 2:
+\[ (2^x)^2 - 7 \cdot 2^{x/2} \cdot 2^{-3/2} = \frac{1}{2^x} \]
+Let $2^{x/2} = t$ (so $t > 0$). Then $2^x = t^2$ and $4^x = t^4$.
+The equation becomes:
+\[ t^4 - 7 \cdot t \cdot \frac{1}{2\sqrt{2}} = \frac{1}{t^2} \]
+Multiply by $t^2$:
+\[ t^6 - \frac{7}{2\sqrt{2}} t^3 - 1 = 0 \]
+Let $u = t^3 = (2^{x/2})^3 = 2^{3x/2}$.
+\[ u^2 - \frac{7}{2\sqrt{2}} u - 1 = 0 \]
+Solve for $u$:
+\[ u = \frac{\frac{7}{2\sqrt{2}} \pm \sqrt{\frac{49}{8} + 4}}{2} = \frac{\frac{7}{2\sqrt{2}} \pm \sqrt{\frac{49+32}{8}}}{2} = \frac{\frac{7}{2\sqrt{2}} \pm \sqrt{\frac{81}{8}}}{2} \]
+\[ u = \frac{\frac{7}{2\sqrt{2}} \pm \frac{9}{2\sqrt{2}}}{2} = \frac{7 \pm 9}{4\sqrt{2}} \]
+Since $u = 2^{3x/2} > 0$, take the positive root:
+\[ u = \frac{16}{4\sqrt{2}} = \frac{4}{\sqrt{2}} = 2\sqrt{2} = 2^1 \cdot 2^{1/2} = 2^{3/2} \]
+So $2^{3x/2} = 2^{3/2}$.
+Equating exponents:
+\[ \frac{3x}{2} = \frac{3}{2} \implies x = 1 \]
+The solution is $x=1$.
+We need to find the interval containing $x=1$.
+(A) $(-9, -2]$
+(B) $(0, 3]$ - Contains 1.
+(C) $(-2, 0]$
+(D) $(7, 12]$
+(E) $(3, 7]$
+
+\subsection*{Answer}
+$(0, 3]$ (option \textbf{B}).
+
+\end{document}

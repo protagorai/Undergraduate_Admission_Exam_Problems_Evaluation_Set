@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Find the set of solutions for the inequality $12\arcctg^2 x + \pi \arcctg x - \pi^2 \leq 0$ (where $-\infty < a < b < \infty$):
+
+\subsection*{Solution}
+Let $u = \arcctg x$. Then the inequality becomes:
+\[
+12u^2 + \pi u - \pi^2 \leq 0
+\]
+
+This is a quadratic inequality in $u$. Let's find the roots:
+\[
+12u^2 + \pi u - \pi^2 = 0
+\]
+
+Using the quadratic formula:
+\[
+u = \frac{-\pi \pm \sqrt{\pi^2 + 48\pi^2}}{24} = \frac{-\pi \pm \sqrt{49\pi^2}}{24} = \frac{-\pi \pm 7\pi}{24}
+\]
+
+So:
+\[
+u_1 = \frac{-\pi - 7\pi}{24} = \frac{-8\pi}{24} = -\frac{\pi}{3}
+\]
+
+\[
+u_2 = \frac{-\pi + 7\pi}{24} = \frac{6\pi}{24} = \frac{\pi}{4}
+\]
+
+Since the coefficient of $u^2$ is positive (12 > 0), the parabola opens upward, so:
+\[
+12u^2 + \pi u - \pi^2 \leq 0 \text{ when } -\frac{\pi}{3} \leq u \leq \frac{\pi}{4}
+\]
+
+Now we need to convert back to $x$:
+\[
+-\frac{\pi}{3} \leq \arcctg x \leq \frac{\pi}{4}
+\]
+
+Since $\arcctg$ is a decreasing function:
+- When $\arcctg x = \frac{\pi}{4}$, we have $x = \ctg(\frac{\pi}{4}) = 1$
+- When $\arcctg x = -\frac{\pi}{3}$, we have $x = \ctg(-\frac{\pi}{3}) = -\ctg(\frac{\pi}{3}) = -\frac{1}{\sqrt{3}} = -\frac{\sqrt{3}}{3}$
+
+Since $\arcctg$ is decreasing, the inequality $-\frac{\pi}{3} \leq \arcctg x \leq \frac{\pi}{4}$ corresponds to:
+\[
+1 \leq x \leq \sqrt{3}
+\]
+
+Wait, let me recalculate. We have $\ctg(\frac{\pi}{3}) = \frac{1}{\sqrt{3}}$, so $\ctg(-\frac{\pi}{3}) = -\frac{1}{\sqrt{3}}$.
+
+Since $\arcctg$ is decreasing:
+- $\arcctg x = \frac{\pi}{4} \Rightarrow x = 1$
+- $\arcctg x = -\frac{\pi}{3} \Rightarrow x = -\frac{1}{\sqrt{3}} = -\frac{\sqrt{3}}{3}$
+
+For $-\frac{\pi}{3} \leq \arcctg x \leq \frac{\pi}{4}$, since $\arcctg$ is decreasing:
+\[
+1 \leq x \leq \sqrt{3}
+\]
+
+Actually, let me be more careful. We have $\ctg(-\frac{\pi}{3}) = -\ctg(\frac{\pi}{3}) = -\frac{1}{\sqrt{3}}$.
+
+But $\frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$, so $\ctg(-\frac{\pi}{3}) = -\frac{\sqrt{3}}{3}$.
+
+And $\sqrt{3} \approx 1.732$, so $\frac{\sqrt{3}}{3} \approx 0.577$.
+
+Since $\arcctg$ is decreasing and maps $\mathbb{R}$ to $(0, \pi)$:
+- $\arcctg(\sqrt{3}) = \frac{\pi}{6}$
+- $\arcctg(1) = \frac{\pi}{4}$
+- $\arcctg(0) = \frac{\pi}{2}$
+- $\arcctg(-\frac{\sqrt{3}}{3}) = \frac{2\pi}{3}$
+
+Wait, I think I made an error. Let me recalculate $\ctg(-\frac{\pi}{3})$.
+
+$\ctg(-\frac{\pi}{3}) = \frac{\cos(-\frac{\pi}{3})}{\sin(-\frac{\pi}{3})} = \frac{\cos(\frac{\pi}{3})}{-\sin(\frac{\pi}{3})} = \frac{\frac{1}{2}}{-\frac{\sqrt{3}}{2}} = -\frac{1}{\sqrt{3}}$
+
+So $x = -\frac{1}{\sqrt{3}} = -\frac{\sqrt{3}}{3}$.
+
+Since $\arcctg$ is decreasing, for $-\frac{\pi}{3} \leq \arcctg x \leq \frac{\pi}{4}$:
+The solution is $1 \leq x \leq \sqrt{3}$.
+
+Looking at the options, this corresponds to $[1, \sqrt{3}]$.
+
+\subsection*{Answer}
+$[a, b]$ where $a = 1$ and $b = \sqrt{3}$ (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Zbir najveće i najmanje vrednosti funkcije $f(x) = x^3 + 3x^2 - 72x + 90$ na segmentu $[-5, 5]$ iznosi:
+\begin{enumerate}
+\item[(A)] 314
+\item[(B)] 330
+\item[(C)] 400
+\item[(D)] 412
+\item[(E)] 321
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Da bismo našli ekstremne vrednosti, prvo nalazimo kritične tačke:
+\[
+f'(x) = 3x^2 + 6x - 72 = 3(x^2 + 2x - 24) = 3(x + 6)(x - 4)
+\]
+
+Kritične tačke su $x = -6$ i $x = 4$.
+
+Na segmentu $[-5, 5]$, samo $x = 4$ je kritična tačka (jer $-6 \notin [-5, 5]$).
+
+Računamo vrednosti funkcije u kritičnoj tačci i na krajevima segmenta:
+
+Za $x = -5$:
+\[
+f(-5) = (-5)^3 + 3(-5)^2 - 72(-5) + 90 = -125 + 75 + 360 + 90 = 400
+\]
+
+Za $x = 4$:
+\[
+f(4) = 4^3 + 3 \cdot 4^2 - 72 \cdot 4 + 90 = 64 + 48 - 288 + 90 = -86
+\]
+
+Za $x = 5$:
+\[
+f(5) = 5^3 + 3 \cdot 5^2 - 72 \cdot 5 + 90 = 125 + 75 - 360 + 90 = -70
+\]
+
+Proveravamo da li je $x = 4$ minimum ili maksimum:
+\[
+f''(x) = 6x + 6
+\]
+\[
+f''(4) = 6 \cdot 4 + 6 = 30 > 0
+\]
+
+Dakle, $x = 4$ je lokalni minimum.
+
+Poređujemo vrednosti:
+\begin{itemize}
+\item $f(-5) = 400$
+\item $f(4) = -86$
+\item $f(5) = -70$
+\end{itemize}
+
+Najveća vrednost je $f(-5) = 400$.
+Najmanja vrednost je $f(4) = -86$.
+
+Zbir najveće i najmanje vrednosti:
+\[
+400 + (-86) = 314
+\]
+
+\subsection*{Answer}
+Zbir najveće i najmanje vrednosti je 314, što odgovara opciji \textbf{(A)}.
+
+\end{document}

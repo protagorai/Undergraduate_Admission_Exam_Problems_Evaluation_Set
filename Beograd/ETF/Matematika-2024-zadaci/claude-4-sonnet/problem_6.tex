@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Broj različitih polinoma oblika $x^2 + px + q$, za $p, q \in \mathbb{R}$, koji dele polinom $x^4 - 3x^2 + 2$ iznosi:
+
+\subsection*{Solution}
+Prvo ćemo faktorizovati polinom $x^4 - 3x^2 + 2$.
+
+Neka je $y = x^2$, tada imamo:
+\[y^2 - 3y + 2 = 0\]
+
+Faktorizujemo:
+\[y^2 - 3y + 2 = (y-1)(y-2) = (x^2-1)(x^2-2)\]
+
+Dakle:
+\[x^4 - 3x^2 + 2 = (x^2-1)(x^2-2) = (x-1)(x+1)(x-\sqrt{2})(x+\sqrt{2})\]
+
+Sada tražimo polinome drugog stepena koji dele ovaj polinom. Polinom drugog stepena može imati:
+1. Dva realna korena
+2. Dva konjugovano kompleksna korena
+
+Mogući polinomi drugog stepena koji dele $x^4 - 3x^2 + 2$ su:
+1. $(x-1)(x+1) = x^2 - 1$
+2. $(x-\sqrt{2})(x+\sqrt{2}) = x^2 - 2$
+3. $(x-1)(x-\sqrt{2}) = x^2 - (1+\sqrt{2})x + \sqrt{2}$
+4. $(x-1)(x+\sqrt{2}) = x^2 + (\sqrt{2}-1)x - \sqrt{2}$
+5. $(x+1)(x-\sqrt{2}) = x^2 + (1-\sqrt{2})x - \sqrt{2}$
+6. $(x+1)(x+\sqrt{2}) = x^2 + (1+\sqrt{2})x + \sqrt{2}$
+
+Dakle, imamo 6 različitih polinoma drugog stepena.
+
+\subsection*{Answer}
+$6$ (opcija \textbf{B}).
+
+\end{document}

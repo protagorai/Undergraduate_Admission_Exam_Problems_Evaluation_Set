@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+If $f(x) = x(x+1)(x+2)(x+3)(x+4)$, then $f'(-2)$ equals:
+
+\subsection*{Solution}
+We need to find the derivative of $f(x) = x(x+1)(x+2)(x+3)(x+4)$ and evaluate it at $x = -2$.
+
+Notice that $f(-2) = (-2)(-2+1)(-2+2)(-2+3)(-2+4) = (-2)(-1)(0)(1)(2) = 0$.
+
+Since one of the factors is zero at $x = -2$, we can use the fact that $f(x)$ has a zero at $x = -2$.
+
+Let's rewrite $f(x)$ by factoring out $(x+2)$:
+\[
+f(x) = x(x+1)(x+2)(x+3)(x+4) = (x+2) \cdot g(x)
+\]
+where $g(x) = x(x+1)(x+3)(x+4)$.
+
+Using the product rule:
+\[
+f'(x) = g(x) + (x+2)g'(x)
+\]
+
+At $x = -2$:
+\[
+f'(-2) = g(-2) + (-2+2)g'(-2) = g(-2) + 0 \cdot g'(-2) = g(-2)
+\]
+
+Now we calculate $g(-2)$:
+\[
+g(-2) = (-2)(-2+1)(-2+3)(-2+4) = (-2)(-1)(1)(2) = 4
+\]
+
+Therefore, $f'(-2) = 4$.
+
+\subsection*{Answer}
+4 (option \textbf{D}).
+
+\end{document}

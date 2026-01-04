@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 9}
+Obim trougla čije stranice obrazuju aritmetičku progresiju sa razlikom $4\,\text{cm}$ i čiji je jedan ugao $120^\circ$ jednak je:
+
+\subsection*{Solution}
+Neka su stranice trougla $a, b, c$ gde je $a = x-4$, $b = x$, $c = x+4$.
+Najveća stranica je $c$ i ona se nalazi naspram najvećeg ugla od $120^\circ$.
+Primenom kosinusne teoreme:
+\[
+c^2 = a^2 + b^2 - 2ab \cos(120^\circ)
+\]
+\[
+(x+4)^2 = (x-4)^2 + x^2 - 2(x-4)x \left(-\frac{1}{2}\right)
+\]
+\[
+x^2+8x+16 = x^2-8x+16 + x^2 + x(x-4)
+\]
+\[
+x^2+8x+16 = 2x^2-8x+16 + x^2-4x
+\]
+\[
+x^2+8x = 3x^2-12x
+\]
+\[
+2x^2 - 20x = 0 \Rightarrow 2x(x-10) = 0
+\]
+Kako stranica mora biti pozitivna ($x>4$), rešenje je $x=10$.
+Stranice su $6, 10, 14$.
+Obim je $P = 6+10+14 = 30\,\text{cm}$.
+
+\subsection*{Answer}
+$30\,\text{cm}$ (Opcija \textbf{D})
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Razlika najvećeg i najmanjeg realnog rešenja nejednačine $\log_{\frac{1}{2}}(\sqrt{x+1} - x) \leq 2$, iznosi:
+
+(A) $9/4$ \quad (B) nijedan od ponuđenih odgovora \quad (C) $1/2$ \quad (D) $2$ \quad (E) $1$
+
+\subsection*{Solution}
+Nejednačina: $\log_{1/2}(\sqrt{x+1}-x) \leq 2$.
+Osnova logaritma je $1/2 < 1$, pa se znak menja:
+$\sqrt{x+1}-x \geq (1/2)^2 = 1/4$.
+Takođe uslov logaritma: $\sqrt{x+1}-x > 0$.
+
+Rešavamo $\sqrt{x+1} \geq x + 1/4$.
+Uslov korena: $x+1 \geq 0 \Rightarrow x \geq -1$.
+
+Slučaj 1: $x + 1/4 < 0 \Rightarrow x < -1/4$.
+Tada je nejednačina automatski tačna jer je leva strana $\geq 0$ a desna $< 0$.
+Uz uslov $x \geq -1$, imamo interval $[-1, -1/4)$.
+Provera uslova logaritma: $\sqrt{x+1} > x$.
+Za $x < -1/4$, $x$ je negativno, koren pozitivan, pa važi.
+
+Slučaj 2: $x + 1/4 \geq 0 \Rightarrow x \geq -1/4$.
+Kvadriramo:
+$x+1 \geq x^2 + x/2 + 1/16$.
+$x^2 - x/2 + 1/16 - 1 \leq 0$.
+$x^2 - x/2 - 15/16 \leq 0$.
+$16x^2 - 8x - 15 \leq 0$.
+Nule kvadratne funkcije:
+$x_{1,2} = \frac{8 \pm \sqrt{64 + 4 \cdot 16 \cdot 15}}{32} = \frac{8 \pm \sqrt{64 + 960}}{32} = \frac{8 \pm \sqrt{1024}}{32} = \frac{8 \pm 32}{32}$.
+$x_1 = 40/32 = 5/4$.
+$x_2 = -24/32 = -3/4$.
+Rešenje kvadratne nejednačine je $[-3/4, 5/4]$.
+Presek sa uslovom $x \geq -1/4$: $[-1/4, 5/4]$.
+
+Ukupno rešenje (unija slučajeva): $[-1, -1/4) \cup [-1/4, 5/4] = [-1, 5/4]$.
+Uslov $\sqrt{x+1} > x$:
+Za $x \in [-1, 5/4]$, ako je $x \leq 0$, tačno je.
+Ako je $x > 0$, kvadriramo: $x+1 > x^2 \Rightarrow x^2-x-1 < 0$.
+Nule $(1 \pm \sqrt{5})/2$. $\approx (1 \pm 2.23)/2$. $1.61$ i $-0.61$.
+Interval $(-0.61, 1.61)$.
+$5/4 = 1.25$.
+$1.25 < 1.61$, tako da je uslov ispunjen za sve $x \in [-1, 5/4]$.
+
+Najmanje rešenje $x_{min} = -1$.
+Najveće rešenje $x_{max} = 5/4$.
+Razlika: $5/4 - (-1) = 9/4$.
+
+\subsection*{Answer}
+$9/4$ (opcija \textbf{(A)}).
+
+\end{document}

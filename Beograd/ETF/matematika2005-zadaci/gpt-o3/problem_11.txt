@@ -1,0 +1,9 @@
+Problem 11: Date su funkcije f1(x) = x,  f2(x) = x^2 / x,  f3(x) = √x^2,  f4(x) = (√x)^2.
+Tačan je iskaz:
+
+(A) Sve funkcije su međusobno jednake
+(B) f1 = f2 ≠ f3
+(C) Među datim funkcijama nema međusobno jednakih
+(D) f1 = f3 ≠ f4
+(E) f1 ≠ f3 = f4
+(N) Ne znam

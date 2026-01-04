@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 11}
+Neka je $x\in\mathbb{R}$ pozitivan broj i neka je $n\in\mathbb{N}$ paran broj. Zbir svih binomnih koeficijenata u razvoju binoma $\left(x^{2019}+\frac{1}{x^{2019}}\right)^n$ četiri puta je veći od zbira svih binomnih koeficijenata u razvoju binoma $\left(\sqrt{x}+\frac{1}{\sqrt{x}}\right)^{\frac{n}{2}}$. Zbir onih članova ova dva razvoja binoma koji ne sadrže $x$ jeste:
+
+\subsection*{Solution}
+Zbir binomnih koeficijenata u razvoju $(a+b)^n$ je $2^n$.
+Za prvi binom zbir je $2^n$.
+Za drugi binom $\left(\dots\right)^{n/2}$ zbir je $2^{n/2}$.
+Dato je $2^n = 4 \cdot 2^{n/2} = 2^2 \cdot 2^{n/2} = 2^{n/2+2}$.
+Izjednačavanjem eksponenata: $n = n/2 + 2 \Rightarrow n/2 = 2 \Rightarrow n=4$.
+
+Tražimo članove koji ne sadrže $x$.
+1. Razvoj $\left(x^{2019}+x^{-2019}\right)^4$:
+Opšti član je $\binom{4}{k}(x^{2019})^{4-k}(x^{-2019})^k = \binom{4}{k}x^{2019(4-2k)}$.
+Član ne zavisi od $x$ ako je $4-2k=0 \Rightarrow k=2$.
+Vrednost člana je $\binom{4}{2} = 6$.
+
+2. Razvoj $\left(x^{1/2}+x^{-1/2}\right)^2$:
+Opšti član je $\binom{2}{k}(x^{1/2})^{2-k}(x^{-1/2})^k = \binom{2}{k}x^{\frac{1}{2}(2-2k)} = \binom{2}{k}x^{1-k}$.
+Član ne zavisi od $x$ ako je $1-k=0 \Rightarrow k=1$.
+Vrednost člana je $\binom{2}{1} = 2$.
+
+Zbir ovih članova je $6+2=8$.
+
+\subsection*{Answer}
+$8$ (Opcija \textbf{C})
+
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Broj realnih rešenja sistema $x^2 - 3xy + 5y^2 = 1$, $x^2 + xy + y^2 = 1$ je:
+
+\subsection*{Solution}
+
+Subtract the second equation from the first:
+\[
+(x^2 - 3xy + 5y^2) - (x^2 + xy + y^2) = 1 - 1
+\]
+\[
+-4xy + 4y^2 = 0 \implies -4y(x - y) = 0.
+\]
+Case 1: $y = 0$.
+Substitute into the second equation:
+\[
+x^2 + 0 + 0 = 1 \implies x^2 = 1 \implies x = \pm 1.
+\]
+Solutions: $(1, 0)$ and $(-1, 0)$.
+
+Case 2: $x - y = 0 \implies x = y$.
+Substitute into the second equation:
+\[
+x^2 + x(x) + x^2 = 1 \implies 3x^2 = 1 \implies x^2 = \frac{1}{3} \implies x = \pm \frac{1}{\sqrt{3}}.
+\]
+Since $y=x$, solutions are $(\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$ and $(-\frac{1}{\sqrt{3}}, -\frac{1}{\sqrt{3}})$.
+
+All 4 solutions are real and distinct.
+
+
+\subsection*{Answer}
+4 (option \textbf{A}).
+
+\end{document}

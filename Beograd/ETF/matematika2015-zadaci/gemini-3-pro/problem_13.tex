@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Ako je $N$ broj šestocifrenih brojeva koji u svom zapisu sadrže cifru 1 bar na jednom mestu, tada $N$ pripada intervalu:
+
+\subsection*{Solution}
+Ukupan broj šestocifrenih brojeva je $9 \cdot 10^5 = 900.000$ (prva cifra ne može biti 0).
+Izračunajmo broj onih koji NE sadrže cifru 1.
+Cifre na raspolaganju su $\{0, 2, 3, 4, 5, 6, 7, 8, 9\}$.
+Prva cifra (ne sme biti 0 i ne 1): 8 mogućnosti ($2 \dots 9$).
+Ostale 5 cifre: 9 mogućnosti (sve osim 1).
+Broj takvih brojeva je $8 \cdot 9^5$.
+$9^5 = 59049$.
+$8 \cdot 59049 = 472392$.
+Broj brojeva koji sadrže bar jednu jedinicu je $N = 900000 - 472392 = 427608$.
+Ovaj broj pripada intervalu $[4 \cdot 10^5, 5 \cdot 10^5]$.
+
+\subsection*{Answer}
+$[4 \cdot 10^5, 5 \cdot 10^5]$ (option \textbf{D}).
+
+\end{document}

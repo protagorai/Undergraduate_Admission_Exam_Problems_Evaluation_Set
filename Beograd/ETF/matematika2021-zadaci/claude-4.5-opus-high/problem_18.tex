@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Ostatak pri deljenju polinoma $P(x) = x^{2024} + x^{2023} + x^{2022} + x^{2021} + x^{20} + 1$ polinomom $Q(x) = x^3 + x^2 + x + 1$ jeste:
+
+\subsection*{Solution}
+Primetimo da je $Q(x) = x^3 + x^2 + x + 1 = \frac{x^4 - 1}{x - 1}$ za $x \neq 1$.
+
+Koreni od $Q(x)$ su $x = -1, i, -i$ (primitivni četvrti koreni iz jedinice, osim 1).
+
+Ostatak pri deljenju je polinom stepena najviše 2: $R(x) = ax^2 + bx + c$.
+
+Koristimo činjenicu da je $P(x) \equiv R(x) \pmod{Q(x)}$, pa je $P(\omega) = R(\omega)$ za svaki koren $\omega$ od $Q(x)$.
+
+\textbf{Za $x = -1$:}
+\[
+P(-1) = (-1)^{2024} + (-1)^{2023} + (-1)^{2022} + (-1)^{2021} + (-1)^{20} + 1
+\]
+\[
+= 1 - 1 + 1 - 1 + 1 + 1 = 2
+\]
+\[
+R(-1) = a - b + c = 2
+\]
+
+\textbf{Za $x = i$:}
+\[
+i^{2024} = i^{4 \cdot 506} = 1
+\]
+\[
+i^{2023} = i^{2024-1} = i^{-1} = -i
+\]
+\[
+i^{2022} = i^{-2} = -1
+\]
+\[
+i^{2021} = i^{-3} = i
+\]
+\[
+i^{20} = i^{4 \cdot 5} = 1
+\]
+\[
+P(i) = 1 + (-i) + (-1) + i + 1 + 1 = 2
+\]
+\[
+R(i) = a \cdot (-1) + b \cdot i + c = -a + c + bi = 2
+\]
+Dakle: $-a + c = 2$ i $b = 0$.
+
+\textbf{Za $x = -i$:}
+\[
+(-i)^{2024} = i^{2024} = 1
+\]
+\[
+(-i)^{2023} = -(-i)^{2024}/(-i) = -1/(-i) = -i \cdot (-1) = i
+\]
+
+Zapravo: $(-i)^{2023} = (-1)^{2023} \cdot i^{2023} = -1 \cdot (-i) = i$
+\[
+(-i)^{2022} = (-1)^{2022} \cdot i^{2022} = 1 \cdot (-1) = -1
+\]
+\[
+(-i)^{2021} = (-1)^{2021} \cdot i^{2021} = -1 \cdot i = -i
+\]
+\[
+(-i)^{20} = 1
+\]
+\[
+P(-i) = 1 + i + (-1) + (-i) + 1 + 1 = 2
+\]
+\[
+R(-i) = a \cdot (-1) + b \cdot (-i) + c = -a + c - bi = 2
+\]
+Potvrđuje: $-a + c = 2$ i $b = 0$.
+
+Iz $a - b + c = 2$ i $b = 0$: $a + c = 2$.
+Iz $-a + c = 2$: $c - a = 2$.
+
+Rešavamo sistem:
+\[
+a + c = 2
+\]
+\[
+-a + c = 2
+\]
+Sabiranjem: $2c = 4$, pa $c = 2$.
+Oduzimanjem: $2a = 0$, pa $a = 0$.
+
+Dakle $R(x) = 2$.
+
+\subsection*{Answer}
+$R(x) = 2$, odnosno ostatak je konstanta $2$ (option \textbf{B}).
+
+\end{document}

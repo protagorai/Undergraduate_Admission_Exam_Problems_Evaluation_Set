@@ -1,0 +1,7 @@
+Problem 4
+
+Ukupan broj realnih rešenja jednačine
+\sqrt{\frac{(x + 1)^2}{x + 1}} = |x + 1|
+je:
+
+(A) 0    (B) 1    (C) 2    (D) 3    (E) 4    (N) Ne znam

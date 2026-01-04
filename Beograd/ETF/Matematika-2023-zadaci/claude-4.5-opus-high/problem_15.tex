@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Binomni koeficijent četvrtog člana u razvoju binoma $\left(\sqrt{2} + \frac{1}{\sqrt[3]{2}}\right)^n$, $n \in N$, veći je 26 puta od binomnog koeficijenta trećeg člana. Broj racionalnih sabiraka u ovom razvoju iznosi:
+
+(A) 9 \quad (B) 14 \quad (C) 15 \quad (D) 16 \quad (E) 13
+
+\subsection*{Solution}
+Binomni koeficijent $k$-tog člana (brojimo od 1) je $\binom{n}{k-1}$.
+
+Binomni koeficijent 4. člana: $\binom{n}{3}$
+
+Binomni koeficijent 3. člana: $\binom{n}{2}$
+
+Uslov:
+\[
+\binom{n}{3} = 26 \cdot \binom{n}{2}
+\]
+\[
+\frac{n!}{3!(n-3)!} = 26 \cdot \frac{n!}{2!(n-2)!}
+\]
+\[
+\frac{n(n-1)(n-2)}{6} = 26 \cdot \frac{n(n-1)}{2}
+\]
+\[
+\frac{n-2}{6} = \frac{26}{2} = 13
+\]
+\[
+n - 2 = 78
+\]
+\[
+n = 80
+\]
+
+Sada tražimo broj racionalnih sabiraka u razvoju $\left(\sqrt{2} + \frac{1}{\sqrt[3]{2}}\right)^{80}$.
+
+Opšti član razvoja:
+\[
+T_{k+1} = \binom{80}{k} \cdot (\sqrt{2})^{80-k} \cdot \left(\frac{1}{\sqrt[3]{2}}\right)^k = \binom{80}{k} \cdot 2^{\frac{80-k}{2}} \cdot 2^{-\frac{k}{3}}
+\]
+\[
+= \binom{80}{k} \cdot 2^{\frac{80-k}{2} - \frac{k}{3}} = \binom{80}{k} \cdot 2^{\frac{3(80-k) - 2k}{6}} = \binom{80}{k} \cdot 2^{\frac{240 - 5k}{6}}
+\]
+
+Da bi član bio racionalan, eksponent mora biti ceo broj:
+\[
+\frac{240 - 5k}{6} \in \mathbb{Z}
+\]
+\[
+240 - 5k \equiv 0 \pmod{6}
+\]
+\[
+5k \equiv 240 \equiv 0 \pmod{6}
+\]
+\[
+5k \equiv 0 \pmod{6}
+\]
+
+Pošto je $\gcd(5, 6) = 1$, imamo $k \equiv 0 \pmod{6}$.
+
+Dakle $k \in \{0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78\}$ (svi umnošci od 6 do 78, uključujući 0 i 78 jer je $k \leq 80$).
+
+Broj takvih vrednosti: $k = 6m$ za $m = 0, 1, 2, \ldots, 13$, što je 14 vrednosti.
+
+\subsection*{Answer}
+$14$ (opcija \textbf{(B)}).
+
+\end{document}
+

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Neka je $S_1$ skup rešenja nejednačine $|\sqrt{x + 1}| > 1$ i $S_2$ skup rešenja nejednačine $\sqrt{|x + 1|} > 1$. Tada je:
+
+\subsection*{Solution}
+Prvo rešavamo $|\sqrt{x + 1}| > 1$:
+
+Za $\sqrt{x + 1}$ da bude definisan, potrebno je $x + 1 \geq 0$, tj. $x \geq -1$.
+
+Kada je $x \geq -1$, imamo $\sqrt{x + 1} \geq 0$, pa je $|\sqrt{x + 1}| = \sqrt{x + 1}$.
+
+Nejednačina postaje:
+\[
+\sqrt{x + 1} > 1
+\]
+\[
+x + 1 > 1
+\]
+\[
+x > 0
+\]
+
+Dakle, $S_1 = (0, +\infty)$.
+
+Sada rešavamo $\sqrt{|x + 1|} > 1$:
+
+Kvadriranjem obe strane:
+\[
+|x + 1| > 1
+\]
+
+Ovo daje:
+\[
+x + 1 > 1 \quad \text{ili} \quad x + 1 < -1
+\]
+\[
+x > 0 \quad \text{ili} \quad x < -2
+\]
+
+Dakle, $S_2 = (-\infty, -2) \cup (0, +\infty)$.
+
+Poređenjem: $S_1 = (0, +\infty)$ i $S_2 = (-\infty, -2) \cup (0, +\infty)$.
+
+Vidimo da je $S_1 \subset S_2$.
+
+\subsection*{Answer}
+$S_1 \subset S_2$ (option \textbf{C}).
+
+\end{document}

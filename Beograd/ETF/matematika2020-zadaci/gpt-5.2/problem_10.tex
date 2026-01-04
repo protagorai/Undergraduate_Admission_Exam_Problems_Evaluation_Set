@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 10}
+
+Posmatramo jedna\v cinu
+\[
+2x^2-6x+\sqrt{x^2-3x+6}+2=0.
+\]
+Po\v sto je
+\[
+x^2-3x+6=\left(x-\frac32\right)^2+\frac{15}{4}>0,
+\]
+koren je definisan za svaki realan \(x\).
+
+Prebacimo koren:
+\[
+\sqrt{x^2-3x+6}=-2x^2+6x-2=-2(x^2-3x+1).
+\]
+Leva strana je \(\ge 0\), pa mora va\v ziti
+\[
+-2(x^2-3x+1)\ge 0 \quad\Rightarrow\quad x^2-3x+1\le 0.
+\]
+Ozna\v cimo
+\[
+t=x^2-3x+6.
+\]
+Tada je \(x^2-3x+1=t-5\), pa jedna\v cina postaje
+\[
+\sqrt{t}= -2(t-5)=10-2t.
+\]
+Odavde je neophodno \(10-2t\ge 0\Rightarrow t\le 5\).
+
+Sada kvadriramo:
+\[
+t=(10-2t)^2=4(5-t)^2=4(t^2-10t+25)=4t^2-40t+100,
+\]
+pa
+\[
+4t^2-41t+100=0.
+\]
+Diskriminanta je
+\[
+\Delta=41^2-4\cdot 4\cdot 100=1681-1600=81,
+\]
+pa su re\v senja
+\[
+t=\frac{41\pm 9}{8}\in\left\{\frac{25}{4},\,4\right\}.
+\]
+Uslov \(t\le 5\) daje jedino \(t=4\).
+
+Dakle
+\[
+x^2-3x+6=4\quad\Rightarrow\quad x^2-3x+2=0
+\quad\Rightarrow\quad (x-1)(x-2)=0,
+\]
+pa su kandidati \(x=1\) i \(x=2\). Provera u po\v cetnoj jedna\v cini daje da oba zadovoljavaju.
+
+Zato broj realnih re\v senja iznosi \(2\).
+
+\subsection*{Odgovor}
+\[
+\boxed{2}\qquad\text{(A)}
+\]
+
+\end{document}
+

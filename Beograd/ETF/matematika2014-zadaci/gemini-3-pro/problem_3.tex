@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako realni brojevi $x$ i $y$ zadovoljavaju jednakost $\frac{2x+i}{y+i} = \frac{1+i\sin\alpha}{1-i\sin 3\alpha}$, $(\alpha \neq k\pi, \alpha \neq \frac{\pi}{2} + k\pi, k \in \mathbf{Z}, i^2 = -1)$, tada je količnik $\frac{y}{x}$ jednak:
+\begin{enumerate}
+    \item[(A)] $-4+2\cos 2\alpha$
+    \item[(B)] $4+2\cos 2\alpha$
+    \item[(C)] $2-4\cos 2\alpha$
+    \item[(D)] $-2-4\cos 2\alpha$
+    \item[(E)] $2-2\sin 2\alpha$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+We are given:
+\[
+\frac{2x+i}{y+i} = \frac{1+i\sin\alpha}{1-i\sin 3\alpha}
+\]
+Cross-multiplying gives:
+\[
+(2x+i)(1-i\sin 3\alpha) = (y+i)(1+i\sin\alpha)
+\]
+Expanding both sides:
+\[
+2x - 2xi\sin 3\alpha + i - i^2\sin 3\alpha = y + iy\sin\alpha + i + i^2\sin\alpha
+\]
+Using $i^2 = -1$:
+\[
+2x - i(2x\sin 3\alpha) + i + \sin 3\alpha = y + i(y\sin\alpha) + i - \sin\alpha
+\]
+Grouping real and imaginary parts:
+\[
+(2x + \sin 3\alpha) + i(1 - 2x\sin 3\alpha) = (y - \sin\alpha) + i(1 + y\sin\alpha)
+\]
+Equating imaginary parts:
+\[
+1 - 2x\sin 3\alpha = 1 + y\sin\alpha \implies -2x\sin 3\alpha = y\sin\alpha
+\]
+Since $\alpha \neq k\pi$, $\sin\alpha \neq 0$, so we can divide by $\sin\alpha$:
+\[
+y = -2x \frac{\sin 3\alpha}{\sin\alpha}
+\]
+Equating real parts:
+\[
+2x + \sin 3\alpha = y - \sin\alpha
+\]
+Substitute $y$:
+\[
+2x + \sin 3\alpha = -2x \frac{\sin 3\alpha}{\sin\alpha} - \sin\alpha
+\]
+\[
+2x \left(1 + \frac{\sin 3\alpha}{\sin\alpha}\right) = -(\sin\alpha + \sin 3\alpha)
+\]
+\[
+2x \left(\frac{\sin\alpha + \sin 3\alpha}{\sin\alpha}\right) = -(\sin\alpha + \sin 3\alpha)
+\]
+Assuming $\sin\alpha + \sin 3\alpha \neq 0$, we get:
+\[
+\frac{2x}{\sin\alpha} = -1 \implies x = -\frac{1}{2}\sin\alpha
+\]
+Then $y$:
+\[
+y = -2\left(-\frac{1}{2}\sin\alpha\right) \frac{\sin 3\alpha}{\sin\alpha} = \sin 3\alpha
+\]
+The quotient $\frac{y}{x}$:
+\[
+\frac{y}{x} = \frac{\sin 3\alpha}{-\frac{1}{2}\sin\alpha} = -2 \frac{3\sin\alpha - 4\sin^3\alpha}{\sin\alpha} = -2(3 - 4\sin^2\alpha) = -6 + 8\sin^2\alpha
+\]
+Using $\sin^2\alpha = \frac{1-\cos 2\alpha}{2}$:
+\[
+\frac{y}{x} = -6 + 8\left(\frac{1-\cos 2\alpha}{2}\right) = -6 + 4(1-\cos 2\alpha) = -6 + 4 - 4\cos 2\alpha = -2 - 4\cos 2\alpha
+\]
+
+\subsection*{Answer}
+$-2-4\cos 2\alpha$ (option \textbf{(D)}).
+
+\end{document}

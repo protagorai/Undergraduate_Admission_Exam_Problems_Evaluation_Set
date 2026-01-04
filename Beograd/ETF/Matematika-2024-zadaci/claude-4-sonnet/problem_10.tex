@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Zbir svih realnih rešenja jednačine $\sqrt[3]{x-3} + \sqrt[3]{x-1} = \sqrt[3]{2x-4}$ iznosi:
+
+\subsection*{Solution}
+Neka je $a = \sqrt[3]{x-3}$, $b = \sqrt[3]{x-1}$, i $c = \sqrt[3]{2x-4}$.
+
+Tada imamo:
+\[a + b = c\]
+
+Takođe:
+\[a^3 = x - 3\]
+\[b^3 = x - 1\]
+\[c^3 = 2x - 4\]
+
+Iz prve dve jednačine:
+\[b^3 - a^3 = (x-1) - (x-3) = 2\]
+
+Koristeći identitet $b^3 - a^3 = (b-a)(b^2 + ab + a^2)$:
+\[(b-a)(b^2 + ab + a^2) = 2\]
+
+Iz $a + b = c$, imamo $c^3 = (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$.
+
+Dakle:
+\[2x - 4 = (x-3) + 3ab(a+b) + (x-1)\]
+\[2x - 4 = 2x - 4 + 3ab \cdot c\]
+\[0 = 3abc\]
+
+Dakle, $abc = 0$, što znači da je $a = 0$, $b = 0$, ili $c = 0$.
+
+Slučaj 1: $a = 0$
+\[\sqrt[3]{x-3} = 0 \Rightarrow x = 3\]
+
+Proveravamo: $\sqrt[3]{3-3} + \sqrt[3]{3-1} = 0 + \sqrt[3]{2} = \sqrt[3]{2}$
+$\sqrt[3]{2 \cdot 3 - 4} = \sqrt[3]{2}$ ✓
+
+Slučaj 2: $b = 0$
+\[\sqrt[3]{x-1} = 0 \Rightarrow x = 1\]
+
+Proveravamo: $\sqrt[3]{1-3} + \sqrt[3]{1-1} = \sqrt[3]{-2} + 0 = -\sqrt[3]{2}$
+$\sqrt[3]{2 \cdot 1 - 4} = \sqrt[3]{-2} = -\sqrt[3]{2}$ ✓
+
+Slučaj 3: $c = 0$
+\[\sqrt[3]{2x-4} = 0 \Rightarrow x = 2\]
+
+Proveravamo: $\sqrt[3]{2-3} + \sqrt[3]{2-1} = \sqrt[3]{-1} + \sqrt[3]{1} = -1 + 1 = 0$
+$\sqrt[3]{2 \cdot 2 - 4} = \sqrt[3]{0} = 0$ ✓
+
+Zbir svih rešenja: $3 + 1 + 2 = 6$.
+
+\subsection*{Answer}
+$6$ (opcija \textbf{B}).
+
+\end{document}

@@ -1,0 +1,2 @@
+Neka je $S$ skup svih realnih brojeva $x$ za koje važi $2 \log_{\cos x} \sin x \le \log_{\sin x} \cot x \quad (0 < x < \pi)$. Tada je za neke brojeve $a, b, c, d, e, f \quad (a < b < c < d < e < f)$, skup $S$ oblika:
+A) $(a, b)$; B) $[a, b] \cup [c, d]$; C) $(a, b) \cup (c, d)$; D) $[a, b]$; E) $(a, b) \cup (c, d) \cup (e, f)$; N) Ne znam.

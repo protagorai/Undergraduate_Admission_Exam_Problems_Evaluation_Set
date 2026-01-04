@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 19}
+Neka je data kvadratna jednačina $p^2x^2 + p^3x + 1 = 0$, $p > 0$. Za koju vrednost parametra $p$ izraz $x_1^4 + x_2^4$ dostiže svoju minimalnu vrednost?
+
+\subsection*{Rešenje}
+Vietove formule: $x_1+x_2 = -p$, $x_1x_2 = 1/p^2$.
+$x_1^4+x_2^4 = (x_1^2+x_2^2)^2 - 2x_1^2x_2^2 = ((x_1+x_2)^2 - 2x_1x_2)^2 - 2(x_1x_2)^2$.
+$= (p^2 - 2/p^2)^2 - 2/p^4 = p^4 - 4 + 4/p^4 - 2/p^4 = p^4 + \frac{2}{p^4} - 4$.
+Neka je $t = p^4$. Funkcija $f(t) = t + 2/t - 4$ na $(0, \infty)$.
+Izvod $f'(t) = 1 - 2/t^2$. $f'(t)=0 \implies t^2=2 \implies t=\sqrt{2}$.
+$p^4 = \sqrt{2} \implies p = \sqrt[4]{\sqrt{2}} = \sqrt[8]{2}$.
+
+\subsection*{Odgovor}
+$\sqrt[8]{2}$ (opcija \textbf{A}).
+
+\end{document}

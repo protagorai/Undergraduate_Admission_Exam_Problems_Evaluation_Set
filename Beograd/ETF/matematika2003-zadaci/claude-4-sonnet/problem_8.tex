@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Given functions $f_1(x) = 1$, $f_2(x) = \frac{|\sin x|}{\sqrt{1-\cos^2 x}}$, $f_3(x) = \frac{|\cos x|}{\sqrt{1-\sin^2 x}}$, $f_4(x) = \tan x \cdot \cot x$. Which statement is true:
+
+A) None of the given functions are mutually equal; B) All functions are mutually equal; C) $f_1 \neq f_2 = f_3$; D) $f_1 = f_4 \neq f_3$; E) $f_2 \neq f_3 = f_4 \neq f_1$; N) Ne znam.
+
+\subsection*{Solution}
+Let's analyze each function:
+
+$f_1(x) = 1$ (constant function)
+
+$f_2(x) = \frac{|\sin x|}{\sqrt{1-\cos^2 x}}$
+
+Since $\sin^2 x + \cos^2 x = 1$, we have $1 - \cos^2 x = \sin^2 x$.
+Therefore: $\sqrt{1-\cos^2 x} = \sqrt{\sin^2 x} = |\sin x|$
+
+So: $f_2(x) = \frac{|\sin x|}{|\sin x|} = 1$ (for $x$ where $\sin x \neq 0$)
+
+$f_3(x) = \frac{|\cos x|}{\sqrt{1-\sin^2 x}}$
+
+Since $\sin^2 x + \cos^2 x = 1$, we have $1 - \sin^2 x = \cos^2 x$.
+Therefore: $\sqrt{1-\sin^2 x} = \sqrt{\cos^2 x} = |\cos x|$
+
+So: $f_3(x) = \frac{|\cos x|}{|\cos x|} = 1$ (for $x$ where $\cos x \neq 0$)
+
+$f_4(x) = \tan x \cdot \cot x = \frac{\sin x}{\cos x} \cdot \frac{\cos x}{\sin x} = 1$ (for $x$ where $\sin x \neq 0$ and $\cos x \neq 0$)
+
+However, we need to consider the domains:
+- $f_1(x) = 1$ is defined for all real $x$
+- $f_2(x) = 1$ is defined for $x$ where $\sin x \neq 0$
+- $f_3(x) = 1$ is defined for $x$ where $\cos x \neq 0$  
+- $f_4(x) = 1$ is defined for $x$ where $\sin x \neq 0$ and $\cos x \neq 0$
+
+Since the domains are different, the functions are not identical, but where they are all defined, they all equal 1.
+
+\subsection*{Answer}
+All functions are mutually equal (option \textbf{B}).
+
+\end{document}

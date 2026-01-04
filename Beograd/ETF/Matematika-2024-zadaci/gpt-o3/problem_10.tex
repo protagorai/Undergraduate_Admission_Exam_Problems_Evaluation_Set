@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Odrediti zbir svih realnih rešenja jednačine
+\[
+\sqrt{3-x}+\sqrt{x-1}=\sqrt{2x-4}.
+\]
+
+\subsection*{Rešenje}
+\textbf{1.}  Domen.
+Svi izrazi pod korenom moraju biti nenegativni:
+\[
+\begin{aligned}
+3-x &\ge0 &\Rightarrow&\;x\le3,\\
+x-1 &\ge0 &\Rightarrow&\;x\ge1,\\
+2x-4 &\ge0 &\Rightarrow&\;x\ge2.
+\end{aligned}
+\]
+Zajednički domen je \(2\le x\le3\).
+
+\textbf{2.}  Kvadriranje.
+Stavimo
+\[
+a=\sqrt{3-x},\qquad b=\sqrt{x-1},\qquad c=\sqrt{2x-4}=\sqrt{2}\,\sqrt{x-2}.
+\]
+Jednačina je \(a+b=c\).  Kvadriranjem dobijamo
+\[
+a^{2}+b^{2}+2ab=c^{2}.
+\]
+Ali \(a^{2}=3-x,\;b^{2}=x-1\Rightarrow a^{2}+b^{2}=2\).  Tako
+\[
+2+2ab=2x-4\quad\Longrightarrow\quad ab=x-3.
+\]
+S leve strane je \(ab=\sqrt{(3-x)(x-1)}\ge0\), dok je desna strana \(x-3\le0\) (jer je \(x\le3\)).  Jedini način da budu jednake jeste da su 
+obе нуле, што подразумева
+\[
+\begin{cases}
+\sqrt{(3-x)(x-1)}=0\\
+x-3=0.
+\end{cases}\qquad\Longrightarrow\qquad x=3.
+\]
+Provera pokazuje da \(x=3\) zaista zadovoljava originalnu jednakost.
+
+\textbf{3.}  Zbir rešenja.
+Pošto postoji samo jedno rešenje, zbir je \(3\).
+
+\subsection*{Odgovor}
+\[3\qquad(\text{opcija C})\]
+
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Skup vrednosti parametra $m \in \mathbb{R}$ za koje jednačina $(1-m)x^2 + (m-2)x + 1 = 0$ ima dva različita realna rešenja je oblika (za neke $a, b \in \mathbb{R}$ za koje je $-\infty < a < b < \infty$):
+
+\subsection*{Solution}
+Za kvadratnu jednačinu $ax^2 + bx + c = 0$ da ima dva različita realna rešenja, potrebno je:
+1. $a \neq 0$ (da bude kvadratna)
+2. $\Delta > 0$ (diskriminanta pozitivna)
+
+U našem slučaju:
+- $a = 1-m$
+- $b = m-2$ 
+- $c = 1$
+
+Uslov 1: $1-m \neq 0 \Rightarrow m \neq 1$
+
+Uslov 2: $\Delta = (m-2)^2 - 4(1-m)(1) > 0$
+\[
+\Delta = (m-2)^2 - 4(1-m) = m^2 - 4m + 4 - 4 + 4m = m^2 > 0
+\]
+
+Dakle $m^2 > 0 \Rightarrow m \neq 0$
+
+Kombinujući uslove: $m \neq 0$ i $m \neq 1$
+
+To znači $m \in (-\infty, 0) \cup (0, 1) \cup (1, \infty)$
+
+Ovo je oblika $(a,b) \cup (b,\infty)$ gde je $a = -\infty$ i $b = 0$, ili možemo pisati kao $\mathbb{R} \setminus \{0,1\}$.
+
+\subsection*{Answer}
+$(a,\infty)$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Grani\u{c}na vrednost
+\[
+\lim_{x\to 0}\frac{e^{\sin^2 x}-\cos x}{\sqrt{x^2+1}-1}
+\]
+iznosi:
+
+\subsection*{Solution}
+Koristimo razvoj oko nule:
+\[
+\sin x=x+O(x^3)\ \Rightarrow\ \sin^2 x=x^2+O(x^4),
+\]
+\[
+e^{\sin^2 x}=1+\sin^2 x+O(\sin^4 x)=1+x^2+O(x^4),
+\]
+\[
+\cos x=1-\frac{x^2}{2}+O(x^4).
+\]
+Zato je brojilac:
+\[
+e^{\sin^2 x}-\cos x=\left(1+x^2+O(x^4)\right)-\left(1-\frac{x^2}{2}+O(x^4)\right)
+=\frac{3}{2}x^2+O(x^4).
+\]
+Imenilac:
+\[
+\sqrt{1+x^2}=1+\frac{x^2}{2}+O(x^4)\ \Rightarrow\ \sqrt{1+x^2}-1=\frac{x^2}{2}+O(x^4).
+\]
+Zato je
+\[
+\lim_{x\to 0}\frac{e^{\sin^2 x}-\cos x}{\sqrt{x^2+1}-1}
+=\lim_{x\to 0}\frac{\frac32 x^2+O(x^4)}{\frac12 x^2+O(x^4)}=3.
+\]
+
+\subsection*{Answer}
+$3$ (option \textbf{D}).
+
+\end{document}
+
+
+
+

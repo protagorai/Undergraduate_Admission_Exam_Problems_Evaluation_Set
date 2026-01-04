@@ -1,0 +1,5 @@
+Problem 19
+
+Sva realna rešenja jednačine \log_{2011}(2010 z) = \log_{2010}(2011 z) pripadaju intervalu:
+
+(A) \left(0, \frac{1}{2011}\right]    (B) \left(\frac{1}{2011}, \frac{1}{2010}\right]    (C) \left(\frac{1}{2010}, 1\right]    (D) \left(1, \frac{2011}{2010}\right]    (E) \left(\frac{2011}{2010}, +\infty\right)    (N) Ne znam

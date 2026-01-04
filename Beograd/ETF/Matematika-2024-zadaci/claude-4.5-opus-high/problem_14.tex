@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Three points divide a circle in the ratio $6:7:11$. Find the value of the smallest angle of the triangle formed by these points.
+
+\subsection*{Solution}
+The three arcs are in ratio $6:7:11$.
+
+Total parts: $6 + 7 + 11 = 24$
+
+Each part corresponds to:
+\[
+\frac{360°}{24} = 15°
+\]
+
+The three arcs subtend central angles:
+\begin{itemize}
+\item Arc 1: $6 \times 15° = 90°$
+\item Arc 2: $7 \times 15° = 105°$
+\item Arc 3: $11 \times 15° = 165°$
+\end{itemize}
+
+By the inscribed angle theorem, an inscribed angle is half the central angle subtending the same arc.
+
+Each angle of the triangle is inscribed and subtends the arc opposite to it:
+\begin{itemize}
+\item Angle opposite to arc of $90°$: $\frac{90°}{2} = 45°$
+\item Angle opposite to arc of $105°$: $\frac{105°}{2} = 52.5°$
+\item Angle opposite to arc of $165°$: $\frac{165°}{2} = 82.5°$
+\end{itemize}
+
+Verification: $45° + 52.5° + 82.5° = 180°$ \checkmark
+
+The smallest angle is $45°$.
+
+\subsection*{Answer}
+$45°$ (option \textbf{D}).
+
+\end{document}
+

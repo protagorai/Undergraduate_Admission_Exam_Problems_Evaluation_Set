@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Дате су функције
+\[
+ f_1(x)=1,\quad f_2(x)=\frac{1-\sin x}{\sqrt{1-\cos^{2}x}},\quad f_3(x)=\frac{1-\cos x}{\sqrt{1-\sin^{2}x}},\quad f_4(x)=\tan x\,\cot x.
+\]
+Изабрати тачан исказ о њиховој једнакости.
+
+\subsection*{Solution}
+\begin{itemize}
+\item $f_1(x)=1$.
+\item $f_2(x)$:  у имениоцу је $\sqrt{1-\cos^{2}x}=\sqrt{\sin^{2}x}=|\sin x|$.  Дакле
+  \[
+   f_2(x)=\frac{1-\sin x}{|\sin x|}.
+  \]
+  За $\sin x>0$ добијамо $f_2=\dfrac{1-\sin x}{\sin x}=\frac1{\sin x}-1$, а за $\sin x<0$ знак се мења.
+  Уопштено, $f_2(x)$ није константна.
+\item $f_3(x)$ аналогно даје $f_3=\dfrac{1-\cos x}{|\cos x|}$, такође неконстантна.
+\item $f_4(x)=\tan x\,\cot x=1$ (пошто су то реципрочне функције кад су обе дефинисане).
+\end{itemize}
+У местима где су све функције дефинисане ($\sin x\neq0,\,\cos x\neq0$) имамо
+\[
+ f_1(x)=1=f_4(x),\qquad f_2(x)\neq1,\; f_3(x)\neq1.
+\]
+Ниједне две функције осим $f_1$ и $f_4$ нису једнаке.
+
+Провера понуђених исказа показује да ниједан тачно не описује ову ситуацију, па се бира \textbf{N) Ne znam}.
+
+\subsection*{Answer}
+\textbf{N) Ne znam.}
+
+\end{document}

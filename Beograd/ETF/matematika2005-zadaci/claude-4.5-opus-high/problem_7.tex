@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+In a geometric progression with common ratio 2, the sum of the first seven terms is 635. Find the seventh term.
+
+\subsection*{Solution}
+Let the first term be $a_1$ and common ratio $r = 2$.
+
+The sum of first $n$ terms of a geometric progression:
+\[
+S_n = a_1 \cdot \frac{r^n - 1}{r - 1}
+\]
+
+For $n = 7$ and $r = 2$:
+\[
+S_7 = a_1 \cdot \frac{2^7 - 1}{2 - 1} = a_1 \cdot \frac{128 - 1}{1} = 127a_1
+\]
+
+Given $S_7 = 635$:
+\[
+127a_1 = 635 \implies a_1 = \frac{635}{127} = 5
+\]
+
+The seventh term:
+\[
+a_7 = a_1 \cdot r^6 = 5 \cdot 2^6 = 5 \cdot 64 = 320
+\]
+
+\subsection*{Answer}
+$320$ (option \textbf{E}).
+
+\end{document}

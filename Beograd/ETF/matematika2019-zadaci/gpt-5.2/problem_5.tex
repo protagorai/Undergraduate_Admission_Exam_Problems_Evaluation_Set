@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako je $\sin\alpha=-\frac{5}{13}$ i $\alpha\in\left(\frac{3\pi}{2},2\pi\right)$, odrediti
+\[
+\tan\!\left(\frac{\pi}{4}+\alpha\right).
+\]
+
+\subsection*{Solution}
+Kako je $\alpha$ u IV kvadrantu, $\cos\alpha>0$. Zato
+\[
+\cos\alpha=\sqrt{1-\sin^2\alpha}=\sqrt{1-\frac{25}{169}}=\sqrt{\frac{144}{169}}=\frac{12}{13}.
+\]
+Tada je
+\[
+\tan\alpha=\frac{\sin\alpha}{\cos\alpha}=\frac{-5/13}{12/13}=-\frac{5}{12}.
+\]
+Koristimo formulu za tangens zbira:
+\[
+\tan\left(\frac{\pi}{4}+\alpha\right)=\frac{\tan\frac{\pi}{4}+\tan\alpha}{1-\tan\frac{\pi}{4}\tan\alpha}
+=\frac{1+\tan\alpha}{1-\tan\alpha}.
+\]
+Za $\tan\alpha=-\frac{5}{12}$ dobijamo
+\[
+\frac{1-\frac{5}{12}}{1+\frac{5}{12}}=\frac{\frac{7}{12}}{\frac{17}{12}}=\frac{7}{17}.
+\]
+
+\subsection*{Answer}
+$\dfrac{7}{17}$ (option \textbf{D}).
+
+\end{document}
+

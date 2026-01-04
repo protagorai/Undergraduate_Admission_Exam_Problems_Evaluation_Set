@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 7}
+Neka je $S_1$ skup rešenja nejednačine $|\sqrt{x+1}| > 1$ i $S_2$ skup rešenja nejednačine $\sqrt{|x+1|} > 1$. Tada je:
+\[ (A)\ S_1=S_2 \quad (B)\ S_1 \supset S_2 \quad (C)\ S_1 \subset S_2 \quad (D)\ S_1 = \mathbf{R}, S_2 \ne \varnothing \quad (E)\ \text{nijedan od ponuđenih odgovora} \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+For $S_1$: $|\sqrt{x+1}| > 1$.
+The square root $\sqrt{x+1}$ is defined for $x+1 \ge 0 \implies x \ge -1$.
+Since $\sqrt{x+1}$ is non-negative, $|\sqrt{x+1}| = \sqrt{x+1}$.
+So $\sqrt{x+1} > 1$.
+Square both sides: $x+1 > 1 \implies x > 0$.
+So $S_1 = (0, +\infty)$.
+
+For $S_2$: $\sqrt{|x+1|} > 1$.
+Defined for all $x \in \mathbf{R}$ (since $|x+1| \ge 0$).
+Square both sides: $|x+1| > 1$.
+This means $x+1 > 1$ or $x+1 < -1$.
+$x > 0$ or $x < -2$.
+So $S_2 = (-\infty, -2) \cup (0, +\infty)$.
+
+Comparing $S_1$ and $S_2$, we see that $S_1$ is a proper subset of $S_2$.
+$S_1 \subset S_2$.
+
+\subsection*{Answer}
+$S_1 \subset S_2$ (option \textbf{C}).
+
+\end{document}

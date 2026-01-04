@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Date su funkcije: $f_1(x) = 2^{\log_2 x}$, $f_2(x) = \log_2 2^x$, $f_3(x) = x$, $f_4(x) = (x \cdot 2^{-\log_2 \sqrt{x}})^2$. Tačan je iskaz:
+\begin{enumerate}
+\item[(A)] Međusobno nema međusobno jednakih
+\item[(B)] $f_1 = f_2 = f_3 \neq f_4$
+\item[(C)] $f_1 \neq f_2 = f_3 \neq f_4$
+\item[(D)] $f_2 \neq f_1 = f_2 \neq f_4$
+\item[(E)] $f_2 \neq f_1 = f_3 \neq f_4$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Analizirajmo svaku funkciju:
+
+\textbf{Funkcija $f_1(x) = 2^{\log_2 x}$:}
+Koristeći svojstvo $a^{\log_a b} = b$ (za $a > 0, a \neq 1, b > 0$):
+\[
+f_1(x) = 2^{\log_2 x} = x \quad \text{(za } x > 0\text{)}
+\]
+
+\textbf{Funkcija $f_2(x) = \log_2 2^x$:}
+Koristeći svojstvo $\log_a a^b = b$:
+\[
+f_2(x) = \log_2 2^x = x \quad \text{(za sve } x \in \mathbb{R}\text{)}
+\]
+
+\textbf{Funkcija $f_3(x) = x$:}
+\[
+f_3(x) = x \quad \text{(za sve } x \in \mathbb{R}\text{)}
+\]
+
+\textbf{Funkcija $f_4(x) = (x \cdot 2^{-\log_2 \sqrt{x}})^2$:}
+Prvo simplifikujemo $2^{-\log_2 \sqrt{x}}$:
+\[
+2^{-\log_2 \sqrt{x}} = \frac{1}{2^{\log_2 \sqrt{x}}} = \frac{1}{\sqrt{x}}
+\]
+
+Dakle:
+\[
+f_4(x) = \left(x \cdot \frac{1}{\sqrt{x}}\right)^2 = \left(\frac{x}{\sqrt{x}}\right)^2 = \left(\sqrt{x}\right)^2 = x \quad \text{(za } x > 0\text{)}
+\]
+
+\textbf{Poređenje domena:}
+\begin{itemize}
+\item $f_1(x)$: definisana za $x > 0$
+\item $f_2(x)$: definisana za sve $x \in \mathbb{R}$
+\item $f_3(x)$: definisana za sve $x \in \mathbb{R}$
+\item $f_4(x)$: definisana za $x > 0$
+\end{itemize}
+
+\textbf{Poređenje funkcija:}
+Na domenu $x > 0$:
+\begin{itemize}
+\item $f_1(x) = x$
+\item $f_2(x) = x$
+\item $f_3(x) = x$
+\item $f_4(x) = x$
+\end{itemize}
+
+Međutim, $f_2$ i $f_3$ su definisane na celom $\mathbb{R}$, dok su $f_1$ i $f_4$ definisane samo za $x > 0$.
+
+Dakle:
+\begin{itemize}
+\item $f_1 = f_4$ (oba su jednaki $x$ na domenu $x > 0$)
+\item $f_2 = f_3$ (oba su jednaki $x$ na celom $\mathbb{R}$)
+\item $f_1 \neq f_2$ jer imaju različite domene
+\end{itemize}
+
+\subsection*{Answer}
+Tačan iskaz je \textbf{(E)} $f_2 \neq f_1 = f_4 \neq f_3$ (mada opcija (E) kaže $f_2 \neq f_1 = f_3 \neq f_4$, što nije tačno). 
+
+Međutim, na osnovu analize, najbliži tačan odgovor je da $f_1 = f_4$ i $f_2 = f_3$, ali $f_1 \neq f_2$ zbog različitih domena.
+
+Odgovor je \textbf{(N) Ne znam} jer nijedna opcija ne odgovara tačno.
+
+\end{document}

@@ -1,0 +1,2 @@
+Ako je $\log_{b^2} x + \log_{x^2} b = 1, b>0, b \ne 1, x \ne 1$, tada je $x$ jednako:
+A) $\frac{1}{b}$; B) $\frac{1}{b^2}$; C) $b$; D) $b^2$; E) $\sqrt{b}$; N) Ne znam.

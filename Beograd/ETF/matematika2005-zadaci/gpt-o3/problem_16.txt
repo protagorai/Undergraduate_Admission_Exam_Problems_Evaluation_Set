@@ -1,0 +1,7 @@
+Problem 16: Koeficijent uz a^8 u razvoju binoma
+
+    (1/√a - a)^{12}
+
+je:
+
+(A) 0   (B) 456   (C) -220   (D) -70   (E) 70   (N) Ne znam

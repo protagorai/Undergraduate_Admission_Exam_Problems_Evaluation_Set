@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Skup svih rešenja nejednačine $\frac{(x+1)(x+2)}{(x-1)(x-2)} \geq 1$ je:
+\begin{enumerate}
+\item[(A)] $(-\infty, +\infty)$
+\item[(B)] $[0, +\infty)$
+\item[(C)] $[0, 1]$
+\item[(D)] $[0, 1) \cup (2, +\infty)$
+\item[(E)] $(-\infty, 0] \cup (2, +\infty)$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Prvo prenosimo sve na jednu stranu:
+\[
+\frac{(x+1)(x+2)}{(x-1)(x-2)} - 1 \geq 0
+\]
+
+\[
+\frac{(x+1)(x+2) - (x-1)(x-2)}{(x-1)(x-2)} \geq 0
+\]
+
+Računamo brojilac:
+\[
+(x+1)(x+2) - (x-1)(x-2) = x^2 + 3x + 2 - (x^2 - 3x + 2) = x^2 + 3x + 2 - x^2 + 3x - 2 = 6x
+\]
+
+Dakle nejednačina postaje:
+\[
+\frac{6x}{(x-1)(x-2)} \geq 0
+\]
+
+Analiziramo znak izraza $\frac{6x}{(x-1)(x-2)}$:
+
+Nule brojilaca: $x = 0$
+Nule imenioca: $x = 1, x = 2$ (ove vrednosti nisu u domenu)
+
+Pravimo tabelu znakova:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Interval & $(-\infty, 0)$ & $(0, 1)$ & $(1, 2)$ & $(2, +\infty)$ \\
+\hline
+$6x$ & $-$ & $+$ & $+$ & $+$ \\
+\hline
+$(x-1)$ & $-$ & $-$ & $+$ & $+$ \\
+\hline
+$(x-2)$ & $-$ & $-$ & $-$ & $+$ \\
+\hline
+$(x-1)(x-2)$ & $+$ & $+$ & $-$ & $+$ \\
+\hline
+$\frac{6x}{(x-1)(x-2)}$ & $-$ & $+$ & $-$ & $+$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Nejednačina $\frac{6x}{(x-1)(x-2)} \geq 0$ je zadovoljena kada je izraz pozitivan ili nula.
+
+Iz tabele vidimo da je izraz:
+\begin{itemize}
+\item Negativan na $(-\infty, 0)$
+\item Pozitivan na $(0, 1)$
+\item Nula za $x = 0$
+\item Negativan na $(1, 2)$
+\item Pozitivan na $(2, +\infty)$
+\end{itemize}
+
+Dakle, rešenje je:
+\[
+x \in [0, 1) \cup (2, +\infty)
+\]
+
+Napomena: $x = 1$ i $x = 2$ nisu u domenu jer čine imenilac nulom.
+
+\subsection*{Answer}
+Skup rešenja je $[0, 1) \cup (2, +\infty)$, što odgovara opciji \textbf{(D)}.
+
+\end{document}

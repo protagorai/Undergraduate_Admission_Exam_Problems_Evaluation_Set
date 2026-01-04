@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 20}
+
+Tra\v zi se vrednost izraza
+\[
+\tan 10^\circ-\tan 50^\circ+\tan 70^\circ.
+\]
+Ozna\v cimo \(t=\tan 10^\circ\). Koristimo formule za tangens zbira i razlike sa \(60^\circ\):
+\[
+\tan 70^\circ=\tan(60^\circ+10^\circ)=\frac{\sqrt3+t}{1-\sqrt3\,t},
+\]
+\[
+\tan 50^\circ=\tan(60^\circ-10^\circ)=\frac{\sqrt3-t}{1+\sqrt3\,t}.
+\]
+Ra\v cunamo razliku:
+\[
+\tan 70^\circ-\tan 50^\circ=
+\frac{\sqrt3+t}{1-\sqrt3 t}-\frac{\sqrt3-t}{1+\sqrt3 t}
+=\frac{(\sqrt3+t)(1+\sqrt3 t)-(\sqrt3-t)(1-\sqrt3 t)}{1-3t^2}.
+\]
+Brojilac je
+\[
+(\sqrt3+t)(1+\sqrt3 t)=\sqrt3+4t+\sqrt3 t^2,
+\]
+\[
+(\sqrt3-t)(1-\sqrt3 t)=\sqrt3-4t+\sqrt3 t^2,
+\]
+pa je razlika \(8t\). Dakle
+\[
+\tan 70^\circ-\tan 50^\circ=\frac{8t}{1-3t^2}.
+\]
+Zato je ceo izraz
+\[
+t+\frac{8t}{1-3t^2}=t\left(1+\frac{8}{1-3t^2}\right)
+=t\cdot\frac{9-3t^2}{1-3t^2}
+=3\,t\cdot\frac{3-t^2}{1-3t^2}.
+\]
+Sada koristimo formulu za \(\tan 3\theta\):
+\[
+\tan 30^\circ=\tan(3\cdot 10^\circ)=\frac{3t-t^3}{1-3t^2}
+=t\cdot\frac{3-t^2}{1-3t^2}.
+\]
+Po\v sto je \(\tan 30^\circ=\frac{1}{\sqrt3}\), dobijamo
+\[
+t\cdot\frac{3-t^2}{1-3t^2}=\frac{1}{\sqrt3}.
+\]
+Zato je
+\[
+3\,t\cdot\frac{3-t^2}{1-3t^2}=3\cdot\frac{1}{\sqrt3}=\sqrt3.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{\sqrt3}\qquad\text{(E)}
+\]
+
+\end{document}
+

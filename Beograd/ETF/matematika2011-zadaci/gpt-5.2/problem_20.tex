@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Skup svih realnih vrednosti $x$ za koje važi nejednakost
+\[
+\frac{3\cdot 3^{2x}-4\cdot 4^{2x}}{\left| -1+5^{x+1}\right|-4}<0
+\]
+je oblika (za neke realne brojeve $a,b$ takve da je $-\infty<a<b<+\infty$):
+\[
+\text{(A)}~(0,a)\quad
+\text{(B)}~(-\infty,a)\cup(b,+\infty)\quad
+\text{(C)}~[a,b]\quad
+\text{(D)}~(a,b)\quad
+\text{(E)}~(a,b)\cup(b,+\infty).
+\]
+
+\subsection*{Solution}
+Posmatrajmo znak brojioca i imenioca.
+
+\textbf{Brojilac.} Važi
+\[
+3\cdot 3^{2x}-4\cdot 4^{2x}=3^{2x+1}-4^{2x+1}.
+\]
+Pošto je $4>3$, razlika $3^t-4^t$ je:
+\[
+\begin{cases}
+>0, & t<0,\\
+=0, & t=0,\\
+<0, & t>0,
+\end{cases}
+\qquad t=2x+1.
+\]
+Zato je brojilac $>0$ za $x<-\frac12$, jednak $0$ za $x=-\frac12$, a $<0$ za $x>-\frac12$.
+
+\textbf{Imenilac.} Neka je $u=5^{x+1}>0$. Tada je
+\[
+\left|-1+5^{x+1}\right|-4=|u-1|-4.
+\]
+Pošto je $u>0$, jedina mogućnost za $|u-1|=4$ je $u-1=4$, tj.\ $u=5$, pa je imenilac $0$ za $x=0$.
+
+Ako je $x>0$, onda je $u=5^{x+1}>5$, pa je $|u-1|-4=u-1-4=u-5>0$.
+
+Ako je $x<0$, onda je $u<5$, pa je $|u-1|-4<0$.
+
+\textbf{Nejednakost.} Razlomak je $<0$ kada brojilac i imenilac imaju suprotne znake, uz uslov da nisu nula.
+
+- Za $x<0$ imenilac je negativan, pa treba brojilac pozitivan: $x<-\frac12$.
+- Za $x>0$ imenilac je pozitivan, a brojilac je negativan (jer $x>0>-\frac12$), pa svi $x>0$ rade.
+
+Isključujemo $x=-\frac12$ (razlomak je $0$) i $x=0$ (nedozvoljeno).
+
+Zato je skup rešenja:
+\[
+(-\infty,-\tfrac12)\cup(0,+\infty),
+\]
+što je oblika $(-\infty,a)\cup(b,+\infty)$.
+
+\subsection*{Answer}
+$(-\infty,-\tfrac12)\cup(0,+\infty)$ (option \textbf{B}), gde su $a=-\tfrac12$, $b=0$.
+
+\end{document}
+

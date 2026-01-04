@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Find the sum of all integer solutions of
+\[
+3|x-1|+x\le 4.
+\]
+
+\subsection*{Solution}
+Let $t=x-1$, so $x=t+1$. Then
+\[
+3|t|+(t+1)\le 4 \quad\Longleftrightarrow\quad 3|t|+t\le 3.
+\]
+If $t\ge 0$, then $3t+t\le 3\Rightarrow 4t\le 3\Rightarrow t=0$, giving $x=1$.
+
+If $t<0$, then $3(-t)+t\le 3\Rightarrow -2t\le 3\Rightarrow t\ge -\frac32$, hence $t=-1$, giving $x=0$.
+
+Thus the integer solutions are $x\in\{0,1\}$ and their sum is $0+1=1$.
+
+\subsection*{Answer}
+$1$ (option \textbf{Б}).
+
+\end{document}
+
+
+
+
+
+
+
+

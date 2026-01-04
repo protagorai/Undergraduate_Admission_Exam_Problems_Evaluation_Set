@@ -1,0 +1,7 @@
+Problem 17: Ako je rešenje jednačine
+
+    4 + √(x^2 - 2) - 5 ⋅ 2^{x - 1 + √(x^2 - 2)} = 6
+
+oblika p / q, tada je p + q jednako:
+
+(A) -3   (B) 4   (C) 5   (D) -5   (E) -4   (N) Ne znam

@@ -1,0 +1,2 @@
+Ako je $\frac{a}{A} = \frac{b}{B} = \frac{c}{C} = k$, tada je $\frac{4a-3b+c}{4A-3B+C}$ jednako:
+A) $2k$; B) $k$; C) $\frac{2k}{3}$; D) $-2k$; E) $\frac{k}{2}$; N) Ne znam.

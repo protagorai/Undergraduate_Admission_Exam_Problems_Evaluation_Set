@@ -1,0 +1,7 @@
+Problem 20
+
+Skup svih realnih vrednosti x za koje važi nejednakost
+\frac{3 + 3^{2x} - 4\cdot 4^{2x}}{| -1 + 5^{x + 1} |} - 4 < 0
+je oblika (za neke realne brojeve a, b takve da je -\infty < a < b < +\infty):
+
+(A) (0, a)    (B) (-\infty, a) \cup (b, +\infty)    (C) [a, b]    (D) (a, b)    (E) (a, b) \cup (b, +\infty)    (N) Ne znam

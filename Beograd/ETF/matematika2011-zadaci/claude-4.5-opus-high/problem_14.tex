@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+In how many ways can we form a five-member committee from 2 mathematicians and 8 engineers such that exactly one mathematician is on the committee?
+
+\subsection*{Solution}
+We need to choose exactly 1 mathematician from 2 mathematicians, and exactly 4 engineers from 8 engineers.
+
+\textbf{Number of ways to choose 1 mathematician from 2:}
+\[
+\binom{2}{1} = 2
+\]
+
+\textbf{Number of ways to choose 4 engineers from 8:}
+\[
+\binom{8}{4} = \frac{8!}{4! \cdot 4!} = \frac{8 \times 7 \times 6 \times 5}{4 \times 3 \times 2 \times 1} = \frac{1680}{24} = 70
+\]
+
+\textbf{Total number of ways:}
+\[
+\binom{2}{1} \times \binom{8}{4} = 2 \times 70 = 140
+\]
+
+\subsection*{Answer}
+\textbf{(E)} 140
+
+\end{document}

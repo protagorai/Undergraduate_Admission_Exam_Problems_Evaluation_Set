@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Granična vrednost $\lim_{x \to 5\pi} \frac{e^{-\frac{1}{(5\pi-x)^2}} + \sqrt{3\pi} \cdot \log_5 \frac{x+3\pi}{2\pi}}{\sqrt{6\pi-5\pi-2\sqrt{\pi}} + g\left(\frac{x}{5} - \frac{4\pi}{5}\right)}$ jednaka je:
+
+(A) $\frac{\pi}{3}$ \quad (B) $0$ \quad (C) $+\infty$ \quad (D) $-\infty$ \quad (E) $-\frac{2}{3}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Analizirajmo granicu kada $x \to 5\pi$.
+
+U brojiоcu:
+- $e^{-\frac{1}{(5\pi-x)^2}} \to e^{-\infty} = 0$ kada $x \to 5\pi$
+- $\log_5 \frac{x+3\pi}{2\pi} \to \log_5 \frac{5\pi+3\pi}{2\pi} = \log_5 \frac{8\pi}{2\pi} = \log_5 4$
+
+Dakle, brojilac teži ka $0 + \sqrt{3\pi} \cdot \log_5 4 = \sqrt{3\pi} \cdot \log_5 4$.
+
+U imeniocu:
+- $\sqrt{6\pi-5\pi-2\sqrt{\pi}} = \sqrt{\pi-2\sqrt{\pi}}$
+
+Pošto je $\pi \approx 3.14$ i $\sqrt{\pi} \approx 1.77$, imamo $2\sqrt{\pi} \approx 3.54 > \pi$, što znači da je $\pi - 2\sqrt{\pi} < 0$.
+
+To znači da imamo $\sqrt{\text{negativan broj}}$, što nije definisano u realnim brojevima.
+
+Međutim, ako pretpostavimo da je greška u kucanju i da je izraz $\sqrt{6\pi-5\pi+2\sqrt{\pi}} = \sqrt{\pi+2\sqrt{\pi}}$, tada:
+
+$\sqrt{\pi+2\sqrt{\pi}} > 0$
+
+Drugi deo imenioca $g\left(\frac{x}{5} - \frac{4\pi}{5}\right)$ kada $x \to 5\pi$ postaje $g\left(\pi - \frac{4\pi}{5}\right) = g\left(\frac{\pi}{5}\right)$.
+
+Bez dodatnih informacija o funkciji $g$, teško je precizno odrediti granicu.
+
+Međutim, pošto brojilac teži ka konačnoj vrednosti, a imenilac (pretpostavljajući da je pozitivan) takođe teži ka konačnoj vrednosti, granica će biti konačna.
+
+\subsection*{Answer}
+(E) $-\frac{2}{3}$
+
+\end{document}

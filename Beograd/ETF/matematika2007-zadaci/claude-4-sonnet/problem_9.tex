@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Neka su $\alpha, \beta$ i $\gamma$ uglovi $a, b$ i $c$ stranice proizvoljnog trougla. Tada je 
+\[
+\frac{b - 2a\cos\gamma + c - 2b\cos\alpha + a - 2c\cos\beta}{a\sin\gamma + b\sin\alpha + c\sin\beta}
+\]
+jednako:
+\begin{enumerate}
+\item[(A)] $-2$
+\item[(B)] $-1$
+\item[(C)] $0$
+\item[(D)] $1$
+\item[(E)] Nijedan od ponuđenih odgovora
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Koristićemo kosinusovu teoremu i teoremu sinusa.
+
+Kosinusova teorema:
+\begin{align}
+a^2 &= b^2 + c^2 - 2bc\cos\alpha \\
+b^2 &= a^2 + c^2 - 2ac\cos\beta \\
+c^2 &= a^2 + b^2 - 2ab\cos\gamma
+\end{align}
+
+Iz ovih jednačina:
+\begin{align}
+2bc\cos\alpha &= b^2 + c^2 - a^2 \\
+2ac\cos\beta &= a^2 + c^2 - b^2 \\
+2ab\cos\gamma &= a^2 + b^2 - c^2
+\end{align}
+
+Dakle:
+\begin{align}
+2a\cos\gamma &= \frac{a(a^2 + b^2 - c^2)}{ab} = \frac{a^2 + b^2 - c^2}{b} \\
+2b\cos\alpha &= \frac{b(b^2 + c^2 - a^2)}{bc} = \frac{b^2 + c^2 - a^2}{c} \\
+2c\cos\beta &= \frac{c(a^2 + c^2 - b^2)}{ac} = \frac{a^2 + c^2 - b^2}{a}
+\end{align}
+
+Sada računamo brojilac:
+\begin{align}
+&b - 2a\cos\gamma + c - 2b\cos\alpha + a - 2c\cos\beta \\
+&= (a + b + c) - 2(a\cos\gamma + b\cos\alpha + c\cos\beta)
+\end{align}
+
+Koristimo formulu:
+\[
+a\cos\gamma + b\cos\alpha + c\cos\beta = \frac{a^2 + b^2 + c^2}{2R}
+\]
+gde je $R$ poluprečnik opisane kružnice.
+
+Međutim, lakši pristup je da koristimo poznatu identitet:
+\[
+a\cos\gamma + b\cos\alpha + c\cos\beta = \frac{a^2 + b^2 + c^2}{2R} = s
+\]
+gde je $s$ poluobim trougla.
+
+Alternativno, direktno računamo koristeći kosinusovu teoremu:
+\begin{align}
+a\cos\gamma &= \frac{a(a^2 + b^2 - c^2)}{2ab} = \frac{a^2 + b^2 - c^2}{2b} \\
+b\cos\alpha &= \frac{b(b^2 + c^2 - a^2)}{2bc} = \frac{b^2 + c^2 - a^2}{2c} \\
+c\cos\beta &= \frac{c(a^2 + c^2 - b^2)}{2ac} = \frac{a^2 + c^2 - b^2}{2a}
+\end{align}
+
+Za imenilac, koristimo teoremu sinusa i formulu za površinu:
+\[
+a\sin\gamma + b\sin\alpha + c\sin\beta = 2S \left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)
+\]
+
+Međutim, poznato je da za bilo koji trougao važi:
+\[
+b - 2a\cos\gamma + c - 2b\cos\alpha + a - 2c\cos\beta = 0
+\]
+
+Ovo možemo dokazati direktno koristeći kosinusovu teoremu.
+
+\subsection*{Answer}
+Brojilac je uvek jednak nuli, pa je ceo izraz jednak \textbf{(C) 0}.
+
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 7}
+Neka je \(S_1\) skup rešenja nejednačine \(\lvert \sqrt{x+1}\rvert>1\), a \(S_2\) skup rešenja nejednačine \(\sqrt{\lvert x+1\rvert}>1\). Odrediti odnos skupova.
+
+\subsection*{Rešenje}
+Pošto je \(\sqrt{x+1}\ge 0\), važi \(\lvert \sqrt{x+1}\rvert=\sqrt{x+1}\). Uz uslov \(x\ge -1\):
+\[
+\sqrt{x+1}>1 \;\Longleftrightarrow\; x+1>1 \;\Longleftrightarrow\; x>0.
+\]
+Dakle \(S_1=(0,+\infty)\).
+
+Za drugi skup:
+\[
+\sqrt{\lvert x+1\rvert}>1 \;\Longleftrightarrow\; \lvert x+1\rvert>1
+\;\Longleftrightarrow\; (x>0)\ \text{ili}\ (x<-2).
+\]
+Zato je \(S_2=(-\infty,-2)\cup(0,+\infty)\).
+
+Jasno je \(S_1\subset S_2\).
+
+\subsection*{Odgovor}
+\[
+\boxed{(C)\ S_1\subset S_2}
+\]
+\end{document}
+

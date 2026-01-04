@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 8}
+Izračunati
+\[
+\frac{\cos\alpha+i\sin\alpha+1}{\cos\alpha+i\sin\alpha-1}\qquad (i^2=-1,\ \alpha\ne 2k\pi).
+\]
+
+\subsection*{Rešenje}
+Neka je \(z=\cos\alpha+i\sin\alpha=e^{i\alpha}\). Tada je traženo
+\[
+\frac{z+1}{z-1}=\frac{e^{i\alpha}+1}{e^{i\alpha}-1}.
+\]
+Pišemo \(e^{i\alpha}=e^{i\alpha/2}\cdot e^{i\alpha/2}\) i dobijamo:
+\[
+e^{i\alpha}+1=e^{i\alpha/2}\left(e^{i\alpha/2}+e^{-i\alpha/2}\right)=2e^{i\alpha/2}\cos\frac{\alpha}{2},
+\]
+\[
+e^{i\alpha}-1=e^{i\alpha/2}\left(e^{i\alpha/2}-e^{-i\alpha/2}\right)=2ie^{i\alpha/2}\sin\frac{\alpha}{2}.
+\]
+Zato je
+\[
+\frac{e^{i\alpha}+1}{e^{i\alpha}-1}
+=\frac{2e^{i\alpha/2}\cos(\alpha/2)}{2ie^{i\alpha/2}\sin(\alpha/2)}
+=\frac{\cos(\alpha/2)}{i\sin(\alpha/2)}
+=-i\cot\frac{\alpha}{2}.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(A)\ -i\cdot\ctg\frac{\alpha}{2}}
+\]
+\end{document}
+

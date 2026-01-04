@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 18}
+Skup svih realnih rešenja nejednačine
+\[
+(2\sin x)^{\sin x-\sin 2x}\ge 1
+\]
+na intervalu $(0,\pi)$ je.
+
+\subsection*{Solution}
+Na $(0,\pi)$ je $\sin x>0$, pa je osnova $2\sin x>0$.
+Neka su
+\[
+B=2\sin x,\qquad E=\sin x-\sin 2x=\sin x-2\sin x\cos x=\sin x(1-2\cos x).
+\]
+Pošto je $B>0$, posmatramo slučajeve:
+\begin{itemize}
+\item ako je $B>1$ (tj. $\sin x>\tfrac12$), onda je $B^E\ge 1 \iff E\ge 0$;
+\item ako je $0<B<1$ (tj. $\sin x<\tfrac12$), onda je $B^E\ge 1 \iff E\le 0$;
+\item ako je $B=1$ (tj. $\sin x=\tfrac12$), tada je $B^E=1$ za svako $E$.
+\end{itemize}
+
+Na $(0,\pi)$ je $\sin x>0$, pa znak $E$ određuje $1-2\cos x$:
+\[
+E\ge 0 \iff \cos x\le \tfrac12 \iff x\in\left[\frac{\pi}{3},\pi\right),
+\]
+\[
+E\le 0 \iff \cos x\ge \tfrac12 \iff x\in\left(0,\frac{\pi}{3}\right].
+\]
+Takođe,
+\[
+\sin x>\tfrac12 \iff x\in\left(\frac{\pi}{6},\frac{5\pi}{6}\right),\qquad
+\sin x<\tfrac12 \iff x\in\left(0,\frac{\pi}{6}\right)\cup\left(\frac{5\pi}{6},\pi\right).
+\]
+
+Zato su rešenja:
+\[
+\left(\left(\frac{\pi}{6},\frac{5\pi}{6}\right)\cap\left[\frac{\pi}{3},\pi\right)\right)\ \cup\
+\left(\left(0,\frac{\pi}{6}\right)\cap\left(0,\frac{\pi}{3}\right]\right)\ \cup\ \left\{x:\sin x=\tfrac12\right\}.
+\]
+To je
+\[
+\left[\frac{\pi}{3},\frac{5\pi}{6}\right)\ \cup\ \left(0,\frac{\pi}{6}\right)\ \cup\ \left\{\frac{\pi}{6},\frac{5\pi}{6}\right\}
+=\left(0,\frac{\pi}{6}\right]\cup\left[\frac{\pi}{3},\frac{5\pi}{6}\right].
+\]
+
+\subsection*{Answer}
+$\left(0,\dfrac{\pi}{6}\right]\cup\left[\dfrac{\pi}{3},\dfrac{5\pi}{6}\right]$ (option \textbf{D}).
+
+\end{document}
+
+

@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Ako je $N$ broj sestocifrenih brojeva koji u svom zapisu sadrze cifru $1$ bar na jednom mestu, odrediti intervalu kome pripada $N$.
+
+\subsection*{Solution}
+Ukupan broj sestocifrenih brojeva je
+\[
+900000 \quad (100000\text{ do }999999).
+\]
+Prebrojimo one koji \emph{ne sadrze} cifru $1$.
+Prva cifra moze biti bilo koja od $2,3,\dots,9$ (ne sme biti $0$ niti $1$), dakle $8$ izbora.
+Svaka od preostalih 5 cifara moze biti bilo koja osim $1$, dakle $9$ izbora po mestu.
+Zato je broj brojeva bez cifre $1$ jednak
+\[
+8\cdot 9^5=8\cdot 59049=472392.
+\]
+Otuda
+\[
+N=900000-472392=427608.
+\]
+Jasno je $4\cdot 10^5\le 427608<5\cdot 10^5$.
+
+\subsection*{Answer}
+$N\in[4\cdot 10^5,\,5\cdot 10^5)$ (opcija \textbf{D}).
+
+\end{document}
+

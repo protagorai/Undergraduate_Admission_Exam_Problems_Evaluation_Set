@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 7}
+Broj realnih rešenja sistema
+\[
+\begin{cases}
+x^2-3xy+5y^2=1,\\
+x^2+xy+y^2=1
+\end{cases}
+\]
+je jednak.
+
+\subsection*{Solution}
+Oduzmimo drugu jednačinu od prve:
+\[
+(x^2-3xy+5y^2)-(x^2+xy+y^2)=0 \Rightarrow -4xy+4y^2=0
+\Rightarrow 4y(y-x)=0.
+\]
+Dakle, ili je $y=0$ ili je $y=x$.
+
+\medskip
+\noindent\textbf{1) $y=0$:} tada iz $x^2+xy+y^2=1$ sledi $x^2=1$, pa $x=\pm1$.
+
+\medskip
+\noindent\textbf{2) $y=x$:} tada $x^2+xy+y^2=3x^2=1$, pa $x=\pm \frac{1}{\sqrt3}$ i $y=x$.
+
+Ukupno dobijamo $2+2=4$ realna rešenja.
+
+\subsection*{Answer}
+$4$ (option \textbf{A}).
+
+\end{document}
+
+

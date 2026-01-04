@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 20}
+Za koje realne vrednosti parametra $p$ jednačina
+\[
+|x-p|+|x-1|=1
+\]
+ima tačno dva realna i različita rešenja?
+
+\subsection*{Solution}
+Posmatrajmo funkciju
+\[f(x)=|x-p|+|x-1|.\]
+To je komadno–linearna, neispodbijena V–oblik kriva sa 
+minimalnom vrednošću jednakoj udaljenosti između fiksnih tačaka $p$ i $1$:
+\[
+\min_{x\in\mathbb R}f(x)=|p-1|,\qquad\text{a minimum se postiže za sve }x\in[\min\{p,1\},\max\{p,1\}].
+\]
+
+\paragraph{1. Potreban uslov.}
+Da bi jednakost $f(x)=1$ uopšte imala rešenja, mora
+\[|p-1|\le1.\]
+
+\paragraph{2. Broj rešenja.}
+• Ako $|p-1|>1$ – nema rešenja (najmanja vrednost je veća od 1).
+
+• Ako $|p-1|=1$ – nivo $1$ prolazi tačno kroz čitav segment $[\min\{p,1\},\max\{p,1\}]$ pa daje beskonačno mnogo rešenja.
+
+• Ako $|p-1|<1$ – nivo $1$ seče graf na tačno 
+dve tačke simetrično raspoređene levo i desno od segmenta minimuma (po jedna tačka ispred i iza), dakle postoje baš dva različita realna rešenja.
+
+\paragraph{3. Skup parametara.}
+Uslov za tačno dva rešenja je
+\[
+|p-1|<1\;\Longleftrightarrow\;0<p<2.
+\]
+To je otvoreni interval $(0,2)$.
+
+\subsection*{Answer}
+$(0,2)$ (opcija \textbf{B}).
+
+\end{document}

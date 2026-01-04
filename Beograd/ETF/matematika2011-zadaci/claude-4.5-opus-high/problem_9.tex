@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+If $f(x) = \left(\frac{x+1}{x-1}\right)^2$ for $x \neq \pm 1$, find $f\left(\frac{x+1}{x-1}\right) - f\left(\frac{x-1}{x+1}\right)$.
+
+\subsection*{Solution}
+First, let's compute $f\left(\frac{x+1}{x-1}\right)$.
+
+Let $u = \frac{x+1}{x-1}$. Then:
+\[
+f(u) = \left(\frac{u+1}{u-1}\right)^2
+\]
+
+We need to find $\frac{u+1}{u-1}$ where $u = \frac{x+1}{x-1}$:
+\[
+u + 1 = \frac{x+1}{x-1} + 1 = \frac{x+1 + x-1}{x-1} = \frac{2x}{x-1}
+\]
+\[
+u - 1 = \frac{x+1}{x-1} - 1 = \frac{x+1 - x+1}{x-1} = \frac{2}{x-1}
+\]
+\[
+\frac{u+1}{u-1} = \frac{\frac{2x}{x-1}}{\frac{2}{x-1}} = \frac{2x}{2} = x
+\]
+
+So $f\left(\frac{x+1}{x-1}\right) = x^2$.
+
+Now let's compute $f\left(\frac{x-1}{x+1}\right)$.
+
+Let $v = \frac{x-1}{x+1}$. Then:
+\[
+v + 1 = \frac{x-1}{x+1} + 1 = \frac{x-1 + x+1}{x+1} = \frac{2x}{x+1}
+\]
+\[
+v - 1 = \frac{x-1}{x+1} - 1 = \frac{x-1 - x-1}{x+1} = \frac{-2}{x+1}
+\]
+\[
+\frac{v+1}{v-1} = \frac{\frac{2x}{x+1}}{\frac{-2}{x+1}} = \frac{2x}{-2} = -x
+\]
+
+So $f\left(\frac{x-1}{x+1}\right) = (-x)^2 = x^2$.
+
+Therefore:
+\[
+f\left(\frac{x+1}{x-1}\right) - f\left(\frac{x-1}{x+1}\right) = x^2 - x^2 = 0
+\]
+
+\subsection*{Answer}
+\textbf{(C)} 0
+
+\end{document}

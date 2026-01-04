@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 7}
+Baza piramide je pravougli trougao $ABC$ sa hipotenuzom $AB=c$ i uglom $\angle BAC = 30^\circ$. Ako je središte $O$ hipotenuze $AB$ ortogonalna projekcija vrha piramide $S$ i važi $SO = AO$, onda zapremina piramide iznosi:
+
+\subsection*{Solution}
+1. Analiza baze:
+Baza je pravougli trougao sa hipotenuzom $c$. Katete su $a$ (naspram $A=30^\circ$) i $b$ (naspram $B=60^\circ$).
+Iz definicije sinusa i kosinusa:
+$a = c \sin 30^\circ = c/2$.
+$b = c \cos 30^\circ = c\sqrt{3}/2$.
+Površina baze $B_{aza} = \frac{1}{2} ab = \frac{1}{2} \cdot \frac{c}{2} \cdot \frac{c\sqrt{3}}{2} = \frac{c^2\sqrt{3}}{8}$.
+
+2. Visina piramide:
+Projekcija vrha $S$ je $O$, središte hipotenuze.
+Visina piramide je $H = SO$.
+Dato je $SO = AO$.
+U pravouglom trouglu, središte hipotenuze je centar opisanog kruga, pa važi $AO = BO = CO = c/2$.
+Dakle, $H = c/2$.
+
+3. Zapremina:
+$V = \frac{1}{3} B_{aza} H$.
+$V = \frac{1}{3} \cdot \frac{c^2\sqrt{3}}{8} \cdot \frac{c}{2} = \frac{c^3\sqrt{3}}{48}$.
+
+Proverimo ponuđene odgovore.
+(A) $\frac{\sqrt{3}c^3}{24}$
+(B) $\frac{c^3}{48}$
+(C) $\frac{\sqrt{3}c^3}{54}$
+(D) $\frac{c^3}{16\sqrt{3}}$
+(E) $\frac{c^3}{9\sqrt{3}}$
+
+Primetimo da je $\frac{c^3}{16\sqrt{3}} = \frac{c^3\sqrt{3}}{16 \cdot 3} = \frac{c^3\sqrt{3}}{48}$.
+Ovo se poklapa sa našim rezultatom.
+
+\subsection*{Answer}
+$\frac{c^3}{16\sqrt{3}}$ (option \textbf{D}).
+
+\end{document}
+

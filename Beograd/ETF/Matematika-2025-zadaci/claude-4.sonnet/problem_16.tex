@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 16}
+Find the set of all real solutions to the inequality $\sqrt{7 - \log_2 x^2} + \log_2 x^4 > 4$ for some $a, b, c, d \in \mathbb{R}$ such that $-\infty < a < b < c < d < +\infty$.
+
+\subsection*{Solution}
+First, let's simplify the logarithmic terms:
+- $\log_2 x^2 = 2\log_2 |x|$
+- $\log_2 x^4 = 4\log_2 |x|$
+
+So the inequality becomes:
+\[
+\sqrt{7 - 2\log_2 |x|} + 4\log_2 |x| > 4
+\]
+
+For the square root to be defined, we need:
+\[
+7 - 2\log_2 |x| \geq 0 \Rightarrow \log_2 |x| \leq \frac{7}{2} \Rightarrow |x| \leq 2^{7/2} = 8\sqrt{2}
+\]
+
+Also, for the logarithms to be defined, we need $x \neq 0$.
+
+Let $t = \log_2 |x|$. Then our inequality becomes:
+\[
+\sqrt{7 - 2t} + 4t > 4
+\]
+
+with the constraint $t \leq \frac{7}{2}$.
+
+Rearranging:
+\[
+\sqrt{7 - 2t} > 4 - 4t
+\]
+
+We need to consider two cases based on the sign of $4 - 4t$:
+
+\textbf{Case 1:} $4 - 4t \leq 0$, i.e., $t \geq 1$
+In this case, the right side is non-positive while the left side is non-negative, so the inequality is always satisfied.
+
+\textbf{Case 2:} $4 - 4t > 0$, i.e., $t < 1$
+We can square both sides:
+\[
+7 - 2t > (4 - 4t)^2 = 16 - 32t + 16t^2
+\]
+\[
+7 - 2t > 16 - 32t + 16t^2
+\]
+\[
+0 > 16t^2 - 30t + 9
+\]
+\[
+16t^2 - 30t + 9 < 0
+\]
+
+Using the quadratic formula:
+\[
+t = \frac{30 \pm \sqrt{900 - 576}}{32} = \frac{30 \pm \sqrt{324}}{32} = \frac{30 \pm 18}{32}
+\]
+
+So $t_1 = \frac{12}{32} = \frac{3}{8}$ and $t_2 = \frac{48}{32} = \frac{3}{2}$.
+
+The quadratic is negative between its roots: $\frac{3}{8} < t < \frac{3}{2}$.
+
+But we're in Case 2 where $t < 1$, so we have $\frac{3}{8} < t < 1$.
+
+Combining both cases:
+- Case 1: $t \geq 1$ (always satisfied)
+- Case 2: $\frac{3}{8} < t < 1$
+
+So the solution is $t > \frac{3}{8}$, subject to the constraint $t \leq \frac{7}{2}$.
+
+Therefore: $\frac{3}{8} < t \leq \frac{7}{2}$.
+
+Converting back to $x$:
+\[
+\frac{3}{8} < \log_2 |x| \leq \frac{7}{2}
+\]
+\[
+2^{3/8} < |x| \leq 2^{7/2}
+\]
+\[
+2^{3/8} < |x| \leq 8\sqrt{2}
+\]
+
+This gives us:
+\[
+x \in (-8\sqrt{2}, -2^{3/8}) \cup (2^{3/8}, 8\sqrt{2}]
+\]
+
+Looking at the answer choices, this corresponds to the form $[a,b) \cup (c,d]$.
+
+\subsection*{Answer}
+$[a,b) \cup (c,d]$ (option \textbf{B}).
+
+\end{document}
+

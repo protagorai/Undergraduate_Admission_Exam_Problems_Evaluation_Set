@@ -1,0 +1,7 @@
+Problem 3
+
+Ako je |x| > 2, x \in \mathbb{R}, tada je izraz
+\frac{x + 2 + \sqrt{x^2 - 4}}{x + 2 - \sqrt{x^2 - 4}} + \frac{x + 2 - \sqrt{x^2 - 4}}{x + 2 + \sqrt{x^2 - 4}}
+identički jednak:
+
+(A) 4    (B) -4    (C) x    (D) 2x    (E) 4x    (N) Ne znam

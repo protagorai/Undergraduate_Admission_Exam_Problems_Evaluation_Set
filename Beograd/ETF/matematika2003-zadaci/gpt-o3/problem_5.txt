@@ -1,0 +1,2 @@
+5. Proizvod rešenja jednačine \sqrt{x} \log \sqrt{x} = 10 je:
+A) 2;   B) 1;   C) \frac{1}{100};   D) 100;   E) 10;   N) Ne znam.

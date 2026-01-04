@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 13}
+
+Nejedna\v cina je
+\[
+\left(\sqrt{7+4\sqrt3}\right)^{\cos x}+\left(\sqrt{7-4\sqrt3}\right)^{\cos x}\le 4,
+\]
+a tra\v zi se broj celobrojnih re\v senja \(x\in[-2\pi,\sqrt3+\sqrt5]\).
+
+Najpre uprostim konstante:
+\[
+7\pm 4\sqrt3=(2\pm \sqrt3)^2,
+\]
+pa je
+\[
+\sqrt{7+4\sqrt3}=2+\sqrt3=:a,\qquad \sqrt{7-4\sqrt3}=2-\sqrt3=\frac1a.
+\]
+Tada je nejedna\v cina
+\[
+a^{\cos x}+a^{-\cos x}\le 4.
+\]
+Ozna\v cimo \(c=\cos x\in[-1,1]\) i \(t=a^c>0\). Tada je \(t\in[a^{-1},a]\) i
+\[
+t+\frac1t\le 4
+\quad\Longleftrightarrow\quad
+t^2-4t+1\le 0
+\quad\Longleftrightarrow\quad
+(t-2)^2\le 3.
+\]
+Odavde
+\[
+t\in[2-\sqrt3,\,2+\sqrt3]=\left[\frac1a,\,a\right],
+\]
+pa je uslov ispunjen za svaki \(t\in[a^{-1},a]\), odnosno za svaki \(c\in[-1,1]\).
+Dakle, nejedna\v cina va\v zi za svako realno \(x\).
+
+Zato su re\v senja svi celi brojevi u intervalu \([ -2\pi,\sqrt3+\sqrt5]\).
+Numeri\v cki,
+\[
+-2\pi\approx -6.283,\qquad \sqrt3+\sqrt5\approx 3.968.
+\]
+Celobrojne vrednosti su
+\[
+-6,-5,-4,-3,-2,-1,0,1,2,3,
+\]
+ukupno \(10\) brojeva.
+
+\subsection*{Odgovor}
+\[
+\boxed{10}\qquad\text{(D)}
+\]
+
+\end{document}
+

@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+If $\sin \alpha = -\frac{5}{13}$ and $\alpha \in \left(\frac{3\pi}{2}, 2\pi\right)$, then $\tan\left(\frac{\pi}{4} + \alpha\right)$ equals:
+
+\subsection*{Solution}
+First, we need to find $\cos \alpha$ and $\tan \alpha$.
+
+Since $\sin^2 \alpha + \cos^2 \alpha = 1$:
+\[
+\cos^2 \alpha = 1 - \sin^2 \alpha = 1 - \left(-\frac{5}{13}\right)^2 = 1 - \frac{25}{169} = \frac{169 - 25}{169} = \frac{144}{169}
+\]
+
+Therefore: $\cos \alpha = \pm\frac{12}{13}$
+
+Since $\alpha \in \left(\frac{3\pi}{2}, 2\pi\right)$ (fourth quadrant), we have $\cos \alpha > 0$.
+
+So: $\cos \alpha = \frac{12}{13}$
+
+Now we can find $\tan \alpha$:
+\[
+\tan \alpha = \frac{\sin \alpha}{\cos \alpha} = \frac{-\frac{5}{13}}{\frac{12}{13}} = -\frac{5}{12}
+\]
+
+Using the tangent addition formula:
+\[
+\tan\left(\frac{\pi}{4} + \alpha\right) = \frac{\tan\frac{\pi}{4} + \tan\alpha}{1 - \tan\frac{\pi}{4}\tan\alpha}
+\]
+
+Since $\tan\frac{\pi}{4} = 1$:
+\[
+\tan\left(\frac{\pi}{4} + \alpha\right) = \frac{1 + \tan\alpha}{1 - \tan\alpha} = \frac{1 + \left(-\frac{5}{12}\right)}{1 - \left(-\frac{5}{12}\right)}
+\]
+
+\[
+= \frac{1 - \frac{5}{12}}{1 + \frac{5}{12}} = \frac{\frac{12-5}{12}}{\frac{12+5}{12}} = \frac{\frac{7}{12}}{\frac{17}{12}} = \frac{7}{17}
+\]
+
+\subsection*{Answer}
+$\frac{7}{17}$ (option \textbf{D}).
+
+\end{document}

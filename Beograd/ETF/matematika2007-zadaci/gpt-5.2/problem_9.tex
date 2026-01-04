@@ -1,0 +1,48 @@
+\section*{Zadatak 9}
+
+Neka su \(\alpha,\beta,\gamma\) uglovi, a \(a,b,c\) stranice proizvoljnog trougla (stranica \(a\) naspram ugla \(\alpha\), itd).
+Izračunati
+\[
+S=\frac{b-2a\cos\gamma}{a\sin\gamma}
++\frac{c-2b\cos\alpha}{b\sin\alpha}
++\frac{a-2c\cos\beta}{c\sin\beta}.
+\]
+
+\subsection*{Rešenje}
+Koristimo kosinusni teorem:
+\[
+\cos\gamma=\frac{a^2+b^2-c^2}{2ab}
+\;\Longrightarrow\;
+2a\cos\gamma=\frac{a^2+b^2-c^2}{b}.
+\]
+Zato
+\[
+b-2a\cos\gamma
+=b-\frac{a^2+b^2-c^2}{b}
+=\frac{c^2-a^2}{b},
+\]
+pa je
+\[
+\frac{b-2a\cos\gamma}{a\sin\gamma}
+=\frac{c^2-a^2}{ab\sin\gamma}.
+\]
+Analogno dobijamo
+\[
+\frac{c-2b\cos\alpha}{b\sin\alpha}=\frac{a^2-b^2}{bc\sin\alpha},
+\qquad
+\frac{a-2c\cos\beta}{c\sin\beta}=\frac{b^2-c^2}{ac\sin\beta}.
+\]
+Sada koristimo da je površina trougla
+\[
+\Delta=\frac12 ab\sin\gamma=\frac12 bc\sin\alpha=\frac12 ac\sin\beta,
+\]
+odakle je \(ab\sin\gamma=bc\sin\alpha=ac\sin\beta=2\Delta\). Tada
+\[
+S=\frac{c^2-a^2}{2\Delta}+\frac{a^2-b^2}{2\Delta}+\frac{b^2-c^2}{2\Delta}=0.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(C)\;0}
+\]
+

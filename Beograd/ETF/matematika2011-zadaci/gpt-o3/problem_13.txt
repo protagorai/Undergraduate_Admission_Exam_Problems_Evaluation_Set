@@ -1,0 +1,5 @@
+Problem 13
+
+Ostatak pri deljenju polinoma x^{243} + x^{81} + x^{27} + x^{9} + x^{3} + x polinomom x^{2} - 1 iznosi:
+
+(A) 0    (B) 1    (C) 2x    (D) 4x    (E) 6x    (N) Ne znam

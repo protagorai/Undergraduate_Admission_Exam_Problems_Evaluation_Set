@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Maksimalna zapremina pravilne trostrane prizme, čiji je obim jedne bočne strane $S$, jednaka je:
+
+(A) $\frac{S^3 \cdot \sqrt{3}}{216}$ \quad (B) $\frac{S^3 \cdot \sqrt{3}}{196}$ \quad (C) $S^3 \cdot \sqrt{3}$ \quad (D) $\frac{S^3 \cdot \sqrt{3}}{21}$ \quad (E) nijedan od prethodno pomenutih odgovora \quad (N) Ne znam
+
+\subsection*{Solution}
+Neka je $a$ stranica osnove (jednakostraničnog trougla) i $h$ visina prizme.
+
+Obim jedne bočne strane je $S = 2a + 2h$ (jer je bočna strana pravougaonik sa stranicama $a$ i $h$).
+
+Dakle: $a + h = \frac{S}{2}$, pa $h = \frac{S}{2} - a$.
+
+Površina osnove jednakostraničnog trougla sa stranicom $a$ je:
+\[
+P = \frac{a^2\sqrt{3}}{4}
+\]
+
+Zapremina prizme je:
+\[
+V = P \cdot h = \frac{a^2\sqrt{3}}{4} \cdot \left(\frac{S}{2} - a\right) = \frac{a^2\sqrt{3}}{4} \cdot \frac{S - 2a}{2}
+\]
+\[
+V = \frac{a^2\sqrt{3}(S - 2a)}{8}
+\]
+
+Da bismo našli maksimum, diferenciramo po $a$:
+\[
+\frac{dV}{da} = \frac{\sqrt{3}}{8}[2a(S - 2a) + a^2(-2)] = \frac{\sqrt{3}}{8}[2aS - 4a^2 - 2a^2] = \frac{\sqrt{3}}{8}[2aS - 6a^2]
+\]
+\[
+\frac{dV}{da} = \frac{\sqrt{3}a}{4}[S - 3a]
+\]
+
+Postavljamo $\frac{dV}{da} = 0$:
+$a = 0$ (minimum) ili $S - 3a = 0$, tj. $a = \frac{S}{3}$.
+
+Za $a = \frac{S}{3}$:
+$h = \frac{S}{2} - \frac{S}{3} = \frac{3S - 2S}{6} = \frac{S}{6}$
+
+Maksimalna zapremina je:
+\[
+V_{max} = \frac{(\frac{S}{3})^2\sqrt{3}}{4} \cdot \frac{S}{6} = \frac{S^2\sqrt{3}}{36} \cdot \frac{S}{6} = \frac{S^3\sqrt{3}}{216}
+\]
+
+\subsection*{Answer}
+(A) $\frac{S^3 \cdot \sqrt{3}}{216}$
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Jedno od realnih rešenja jednačine $\log_{\cos x} \sin x = 4\log_{\sin x} \cos x$ pripada intervalu:
+
+\subsection*{Solution}
+Let $u = \log_{\cos x} \sin x$. Then $\log_{\sin x} \cos x = \dfrac{1}{u}$ (by the change of base property).
+
+The equation becomes:
+\[
+u = \frac{4}{u}
+\]
+\[
+u^2 = 4
+\]
+\[
+u = \pm 2
+\]
+
+\textbf{Case 1:} $u = 2$, i.e., $\log_{\cos x} \sin x = 2$
+
+This means $\sin x = \cos^2 x = 1 - \sin^2 x$.
+
+Let $s = \sin x$:
+\[
+s = 1 - s^2 \implies s^2 + s - 1 = 0 \implies s = \frac{-1 + \sqrt{5}}{2}
+\]
+(taking positive root since we need $\sin x > 0$ for the logarithm to be defined)
+
+So $\sin x = \dfrac{\sqrt{5} - 1}{2} \approx 0.618$.
+
+\textbf{Case 2:} $u = -2$, i.e., $\log_{\cos x} \sin x = -2$
+
+This means $\sin x = \cos^{-2} x = \dfrac{1}{\cos^2 x}$.
+
+So $\sin x \cos^2 x = 1$, which gives $\sin x(1 - \sin^2 x) = 1$.
+
+Let $s = \sin x$: $s - s^3 = 1$, i.e., $s^3 - s + 1 = 0$.
+
+This cubic has no real roots in $(0, 1)$ since $f(s) = s^3 - s + 1 > 0$ for $s \in (0, 1)$.
+
+So we use Case 1: $\sin x = \dfrac{\sqrt{5} - 1}{2}$.
+
+For the logarithms to be defined with positive base $\neq 1$, we need $0 < \cos x < 1$ and $0 < \sin x < 1$, which means $x \in \left(0, \dfrac{\pi}{4}\right)$ or similar intervals.
+
+From $\sin x = \dfrac{\sqrt{5} - 1}{2} \approx 0.618$:
+\[
+x = \arcsin\left(\frac{\sqrt{5} - 1}{2}\right) \approx 38.17° \approx 0.666 \text{ rad}
+\]
+
+Since $\dfrac{\pi}{6} \approx 0.524$ and $\dfrac{\pi}{4} \approx 0.785$:
+
+$x \approx 0.666$ is in $\left(\dfrac{\pi}{6}, \dfrac{\pi}{4}\right)$.
+
+\subsection*{Answer}
+$\left(\dfrac{\pi}{6}, \dfrac{\pi}{4}\right]$ (option \textbf{B}).
+
+\end{document}

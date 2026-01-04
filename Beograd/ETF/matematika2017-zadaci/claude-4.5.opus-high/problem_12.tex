@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Find the total number of real solutions to the equation $\sin 3|x| + \sqrt{3}\cos 3x = \sqrt{2}$ on the interval $\left[-\frac{\pi}{2}, \pi\right]$.
+
+(A) $2$ \quad (B) $3$ \quad (C) $4$ \quad (D) $5$ \quad (E) $6$
+
+\subsection*{Solution}
+For $x \geq 0$: $|x| = x$, so the equation becomes:
+\[
+\sin 3x + \sqrt{3}\cos 3x = \sqrt{2}
+\]
+
+This can be written as:
+\[
+2\left(\frac{1}{2}\sin 3x + \frac{\sqrt{3}}{2}\cos 3x\right) = \sqrt{2}
+\]
+\[
+2\sin\left(3x + \frac{\pi}{3}\right) = \sqrt{2}
+\]
+\[
+\sin\left(3x + \frac{\pi}{3}\right) = \frac{\sqrt{2}}{2}
+\]
+
+Solutions: $3x + \frac{\pi}{3} = \frac{\pi}{4} + 2k\pi$ or $3x + \frac{\pi}{3} = \frac{3\pi}{4} + 2k\pi$
+
+For $x \in [0, \pi]$:
+\begin{itemize}
+\item $3x + \frac{\pi}{3} \in [\frac{\pi}{3}, 3\pi + \frac{\pi}{3}] = [\frac{\pi}{3}, \frac{10\pi}{3}]$
+\item From $3x + \frac{\pi}{3} = \frac{\pi}{4}$: $x = -\frac{\pi}{36}$ (not in range)
+\item From $3x + \frac{\pi}{3} = \frac{3\pi}{4}$: $x = \frac{5\pi}{36}$ ✓
+\item From $3x + \frac{\pi}{3} = \frac{\pi}{4} + 2\pi = \frac{9\pi}{4}$: $x = \frac{23\pi}{36}$ ✓
+\item From $3x + \frac{\pi}{3} = \frac{3\pi}{4} + 2\pi = \frac{11\pi}{4}$: $x = \frac{29\pi}{36}$ ✓
+\end{itemize}
+
+For $x < 0$: Let $x = -t$ where $t > 0$, $|x| = t$:
+\[
+\sin 3t + \sqrt{3}\cos(-3t) = \sin 3t + \sqrt{3}\cos 3t = \sqrt{2}
+\]
+
+Same equation! For $x \in [-\frac{\pi}{2}, 0)$, $t \in (0, \frac{\pi}{2}]$:
+\begin{itemize}
+\item $3t + \frac{\pi}{3} \in (\frac{\pi}{3}, \frac{3\pi}{2} + \frac{\pi}{3}] = (\frac{\pi}{3}, \frac{11\pi}{6}]$
+\item From $3t + \frac{\pi}{3} = \frac{3\pi}{4}$: $t = \frac{5\pi}{36}$, so $x = -\frac{5\pi}{36}$ ✓
+\end{itemize}
+
+Total: 4 solutions.
+
+\subsection*{Answer}
+(C) $4$
+
+\end{document}

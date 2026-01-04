@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Data je funkcija $f(x) = 2x - x^2$. Tada je $f(f(f(1-x)))$ jednako:
+
+A) $2x^4 - x^8$; \quad B) $2x - x^{16}$; \quad C) $1-(1-x)^8$; \quad D) $2x^3 - x^8$; \quad E) $1-x^8$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Primetimo da $f(x) = 2x - x^2 = 1 - (1-x)^2$.
+
+Zaista: $1 - (1-x)^2 = 1 - (1 - 2x + x^2) = 2x - x^2$.
+
+Neka je $g(x) = 1 - x$. Tada:
+\[
+f(x) = 1 - (1-x)^2 = g(g(x)^2)
+\]
+
+Primetimo još korisnije: ako stavimo $y = 1 - x$, tada:
+\[
+f(1-x) = 2(1-x) - (1-x)^2 = 1 - (1-(1-x))^2 = 1 - x^2
+\]
+
+Dakle $f(1-x) = 1 - x^2$.
+
+Sada:
+\[
+f(f(1-x)) = f(1 - x^2) = 1 - (x^2)^2 = 1 - x^4
+\]
+
+I konačno:
+\[
+f(f(f(1-x))) = f(1 - x^4) = 1 - (x^4)^2 = 1 - x^8
+\]
+
+\subsection*{Odgovor}
+$1 - x^8$ (opcija \textbf{E}).
+
+\end{document}

@@ -1,0 +1,8 @@
+Problem 19 (Matematika 2023)
+Polulopta poluprečnika r upisana je u pravu pravilnu četvorostranu piramidu tako da osnova polulopte leži u ravni osnove piramide i sve bočne strane dodiruju loptu. Ako je površina piramide minimalna, osnovna ivica iznosi:
+a) (2√3/3) r
+b) 48r/9
+c) (4√3/3) r
+d) (√3/4) r
+e) (16√3/9) r
+n) Ne znam

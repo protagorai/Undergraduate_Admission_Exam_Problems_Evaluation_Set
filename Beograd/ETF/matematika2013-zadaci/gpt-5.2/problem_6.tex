@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 6}
+Ako je
+\[
+\frac{\cos(\alpha+\beta)}{\cos(\alpha-\beta)}=\frac13,
+\]
+odrediti \(\tan\alpha\cdot\tan\beta\) (uz uslove iz zadatka da su imenitelji definisani).
+
+\subsection*{Rešenje}
+Koristimo formule:
+\[
+\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta=\cos\alpha\cos\beta\,(1-\tan\alpha\tan\beta),
+\]
+\[
+\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta=\cos\alpha\cos\beta\,(1+\tan\alpha\tan\beta).
+\]
+Neka je \(t=\tan\alpha\tan\beta\). Tada
+\[
+\frac{1-t}{1+t}=\frac13 \;\Rightarrow\; 3-3t=1+t \;\Rightarrow\; 2=4t \;\Rightarrow\; t=\frac12.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(B)\ \frac12}
+\]
+\end{document}
+

@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Izraz $5^{\frac{3-\log_{10}5}{\log_{10}25}}$ je jednak izrazu:
+
+(A) $10\sqrt{2}$ \quad (B) $5$ \quad (C) $\displaystyle\frac{5}{\sqrt{2}}$ \quad (D) $\displaystyle\frac{10}{\sqrt{2}}$ \quad (E) $5^{\frac{1}{5}}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $\log_{10} 5 = a$. Then $\log_{10} 25 = \log_{10} 5^2 = 2a$.
+
+The expression becomes:
+\[
+5^{\frac{3-a}{2a}}
+\]
+
+Since $\log_{10} 5 = \log_{10} \frac{10}{2} = 1 - \log_{10} 2$, we have $a = 1 - \log_{10} 2$.
+
+But let's compute directly. Note that $5 = \frac{10}{2}$, so:
+\[
+\log_{10} 5 = 1 - \log_{10} 2
+\]
+
+Also, $\log_{10} 2 \approx 0.301$, so $\log_{10} 5 \approx 0.699$.
+
+Let's use exact values. We have:
+\[
+5^{\frac{3-\log_{10}5}{2\log_{10}5}} = 5^{\frac{3}{2\log_{10}5} - \frac{1}{2}}
+\]
+
+Note that $\frac{1}{\log_{10}5} = \log_5 10$, so:
+\[
+\frac{3}{2\log_{10}5} = \frac{3}{2} \log_5 10
+\]
+
+Therefore:
+\[
+5^{\frac{3}{2}\log_5 10 - \frac{1}{2}} = 5^{\frac{3}{2}\log_5 10} \cdot 5^{-\frac{1}{2}} = 10^{\frac{3}{2}} \cdot \frac{1}{\sqrt{5}} = \frac{10\sqrt{10}}{\sqrt{5}} = 10\sqrt{2}
+\]
+
+\subsection*{Answer}
+$10\sqrt{2}$ (option \textbf{A}).
+
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Sva realna rešenja jednačine
+\[
+\log_{2011}(2010x)=\log_{2010}(2011x)
+\]
+pripadaju intervalu:
+\[
+\text{(A)}~\left(0,\frac{1}{2011}\right]\quad
+\text{(B)}~\left(\frac{1}{2011},\frac{1}{2010}\right]\quad
+\text{(C)}~\left(\frac{1}{2010},1\right]\quad
+\text{(D)}~\left(1,\frac{2011}{2010}\right]\quad
+\text{(E)}~\left(\frac{2011}{2010},+\infty\right).
+\]
+
+\subsection*{Solution}
+Uslov definisanosti: $2010x>0$ i $2011x>0$, pa je $x>0$.
+
+Koristimo promenu osnove:
+\[
+\log_{2011}(2010x)=\frac{\ln(2010x)}{\ln 2011},\qquad
+\log_{2010}(2011x)=\frac{\ln(2011x)}{\ln 2010}.
+\]
+Jednačina postaje
+\[
+\frac{\ln(2010x)}{\ln 2011}=\frac{\ln(2011x)}{\ln 2010}
+\;\Rightarrow\;
+\ln(2010x)\,\ln 2010=\ln(2011x)\,\ln 2011.
+\]
+Neka su $a=\ln 2010$ i $b=\ln 2011$. Tada:
+\[
+a(a+\ln x)=b(b+\ln x)
+\;\Rightarrow\;
+a^2+a\ln x=b^2+b\ln x
+\;\Rightarrow\;
+(a-b)\ln x=b^2-a^2=-(a-b)(a+b).
+\]
+Pošto je $a\neq b$, delimo sa $(a-b)$ i dobijamo
+\[
+\ln x=-(a+b)=-\ln 2010-\ln 2011=-\ln(2010\cdot 2011).
+\]
+Dakle
+\[
+x=\frac{1}{2010\cdot 2011}.
+\]
+Očigledno je $0<x<\frac{1}{2011}$, pa rešenje pripada intervalu iz opcije (A).
+
+\subsection*{Answer}
+$x=\dfrac{1}{2010\cdot 2011}\in\left(0,\dfrac{1}{2011}\right]$ (option \textbf{A}).
+
+\end{document}
+

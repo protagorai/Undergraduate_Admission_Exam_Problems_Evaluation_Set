@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Neka je data kvadratna jednacina
+\[
+p^2x^2+p^3x+1=0,
+\]
+gde je $p$ pozitivan realan broj, i neka su $x_1$ i $x_2$ realna resenja date jednacine.
+Za koju vrednost parametra $p$ izraz $x_1^4+x_2^4$ dostize svoju minimalnu vrednost?
+\[
+\text{(A) }\sqrt[8]{2}\quad
+\text{(B) }\sqrt[4]{2}\quad
+\text{(C) }\sqrt2\quad
+\text{(D) }\sqrt[4]{2+\sqrt2}\quad
+\text{(E) }\sqrt[4]{2-\sqrt2}.
+\]
+
+\subsection*{Solution}
+Podelimo jednacinu sa $p^2>0$:
+\[
+x^2+px+\frac{1}{p^2}=0.
+\]
+Za realne korene mora biti diskriminanta nenegativna:
+\[
+\Delta=p^2-\frac{4}{p^2}\ge 0 \ \Longleftrightarrow\ p^4\ge 4 \ \Longleftrightarrow\ p\ge \sqrt2.
+\]
+Po Vijetovim formulama
+\[
+x_1+x_2=-p,\qquad x_1x_2=\frac{1}{p^2}.
+\]
+Izracunajmo
+\[
+x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=p^2-\frac{2}{p^2}.
+\]
+Zatim
+\[
+x_1^4+x_2^4=(x_1^2+x_2^2)^2-2(x_1x_2)^2
+=\left(p^2-\frac{2}{p^2}\right)^2-2\cdot\frac{1}{p^4}.
+\]
+Sredjivanjem:
+\[
+\left(p^2-\frac{2}{p^2}\right)^2=p^4-4+\frac{4}{p^4},
+\]
+pa je
+\[
+x_1^4+x_2^4=p^4-4+\frac{2}{p^4}.
+\]
+Neka je $t=p^4$. Tada je $t\ge 4$ i trazimo minimum funkcije
+\[
+F(t)=t+\frac{2}{t}-4,\qquad t\ge 4.
+\]
+Derivat je $F'(t)=1-\frac{2}{t^2}>0$ za $t\ge 4$, pa je $F$ rastuca na $[4,\infty)$.
+Zato minimum na tom intervalu nastaje na levom kraju: $t=4$, tj.\ $p^4=4$.
+Otuda
+\[
+p=4^{1/4}=\sqrt2.
+\]
+
+\subsection*{Answer}
+$p=\sqrt2$ (option \textbf{C}).
+
+\end{document}
+

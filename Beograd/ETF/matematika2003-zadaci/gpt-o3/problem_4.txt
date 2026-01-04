@@ -1,0 +1,2 @@
+4. Razlika \cos^2(x+y) - \sin^2(x+y) jednaka je:
+A) \sin(x-y);   B) \cos x \cos y;   C) \sin x \cos y;   D) \sin x \sin y;   E) \sin(x+y);   N) Ne znam.

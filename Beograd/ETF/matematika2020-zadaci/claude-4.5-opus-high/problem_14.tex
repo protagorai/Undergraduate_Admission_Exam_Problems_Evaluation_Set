@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+The solution set of the inequality $12\arctan^2 x + \pi \arctan x - \pi^2 \leq 0$ has the form $(-\infty, a] \cup [b, +\infty)$ for some real numbers $a$ and $b$ such that $-\infty < a < b < \infty$. Find this set.
+
+\subsection*{Solution}
+Let $t = \arctan x$, where $t \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$.
+
+The inequality becomes:
+\[
+12t^2 + \pi t - \pi^2 \leq 0
+\]
+
+Using the quadratic formula:
+\[
+t = \frac{-\pi \pm \sqrt{\pi^2 + 48\pi^2}}{24} = \frac{-\pi \pm \sqrt{49\pi^2}}{24} = \frac{-\pi \pm 7\pi}{24}
+\]
+
+So $t_1 = \frac{-\pi + 7\pi}{24} = \frac{6\pi}{24} = \frac{\pi}{4}$ and $t_2 = \frac{-\pi - 7\pi}{24} = \frac{-8\pi}{24} = -\frac{\pi}{3}$.
+
+The quadratic $12t^2 + \pi t - \pi^2$ opens upward (coefficient of $t^2$ is positive), so the inequality $12t^2 + \pi t - \pi^2 \leq 0$ holds when:
+\[
+-\frac{\pi}{3} \leq t \leq \frac{\pi}{4}
+\]
+
+Since $t = \arctan x$ and $\arctan$ is an increasing function:
+\[
+-\frac{\pi}{3} \leq \arctan x \leq \frac{\pi}{4}
+\]
+
+Taking tangent of all parts:
+\[
+\tan\left(-\frac{\pi}{3}\right) \leq x \leq \tan\left(\frac{\pi}{4}\right)
+\]
+\[
+-\sqrt{3} \leq x \leq 1
+\]
+
+So $a = -\sqrt{3}$ and $b = 1$.
+
+Wait, but the problem says the solution is $(-\infty, a] \cup [b, +\infty)$, which would be two unbounded intervals. Let me re-read the problem...
+
+Looking at the answer options:
+\begin{itemize}
+    \item (A) $(-\infty, a] \cup [b, +\infty)$
+    \item (B) $[a, b]$
+    \item (C) $\bigcup_{k \in \mathbb{Z}} [a + 2k\pi, b + 2k\pi]$
+    \item (D) $\bigcup_{k \in \mathbb{Z}} [a + k\pi, b + k\pi]$
+    \item (E) $\left(-\frac{\pi}{2}, a\right] \cup \left[b, \frac{\pi}{2}\right)$
+\end{itemize}
+
+Since $\arctan x$ has range $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ and is a bijection from $\mathbb{R}$ to this interval, the solution set is simply $[a, b] = [-\sqrt{3}, 1]$.
+
+Actually, looking at the form of the answers, they seem to be asking about the form, not the specific values. The solution is a single closed interval $[a, b]$ where $a = -\sqrt{3}$ and $b = 1$.
+
+\subsection*{Answer}
+$[a, b]$ where $a = -\sqrt{3}$, $b = 1$ (option \textbf{B}).
+
+\end{document}

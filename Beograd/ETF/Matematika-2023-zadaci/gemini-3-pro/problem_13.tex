@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Pri deljenju polinoma $P_1$ polinomom $x^2 - 1$ dobija se ostatak $x$, a pri deljenju polinoma $P_2$ polinomom $x^2 - 1$ dobija se ostatak $x + 2$. Tada je ostatak pri deljenju polinoma $P_1 \cdot P_2$ polinomom $x^2 - 1$ jednak:
+
+(A) 1 \quad (B) $x + 2$ \quad (C) $2x$ \quad (D) $2x + 1$ \quad (E) $2x - 1$
+
+\subsection*{Solution}
+Možemo pisati:
+$P_1(x) = Q_1(x)(x^2-1) + x$
+$P_2(x) = Q_2(x)(x^2-1) + (x+2)$
+
+Proizvod:
+$P_1(x)P_2(x) = [Q_1(x)(x^2-1) + x] \cdot [Q_2(x)(x^2-1) + (x+2)]$
+Svi članovi koji sadrže $(x^2-1)$ su deljivi sa $x^2-1$.
+Ostatak zavisi samo od proizvoda ostataka:
+$R(x) = x(x+2) = x^2 + 2x$.
+Sada treba naći ostatak pri deljenju $x^2+2x$ sa $x^2-1$.
+$x^2+2x = 1 \cdot (x^2-1) + 1 + 2x = (x^2-1) + (2x+1)$.
+Ostatak je $2x+1$.
+
+\subsection*{Answer}
+$2x+1$ (opcija \textbf{(D)}).
+
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ukupan broj realnih rešenja jednačine $3\operatorname{tg}^2 x - 8\cos^2 x + 1 = 0$ koja pripadaju intervalu $(0, 2\pi)$ je:
+
+\subsection*{Solution}
+Prepisujemo jednačinu koristeći $\operatorname{tg} x = \frac{\sin x}{\cos x}$:
+\[
+3 \frac{\sin^2 x}{\cos^2 x} - 8\cos^2 x + 1 = 0
+\]
+
+Množimo sa $\cos^2 x$ (pretpostavljamo $\cos x \neq 0$):
+\[
+3\sin^2 x - 8\cos^4 x + \cos^2 x = 0
+\]
+
+Koristimo $\sin^2 x = 1 - \cos^2 x$:
+\[
+3(1 - \cos^2 x) - 8\cos^4 x + \cos^2 x = 0
+\]
+\[
+3 - 3\cos^2 x - 8\cos^4 x + \cos^2 x = 0
+\]
+\[
+3 - 2\cos^2 x - 8\cos^4 x = 0
+\]
+
+Neka je $u = \cos^2 x$. Tada:
+\[
+3 - 2u - 8u^2 = 0
+\]
+\[
+8u^2 + 2u - 3 = 0
+\]
+
+Koristeći kvadratnu formulu:
+\[
+u = \frac{-2 \pm \sqrt{4 + 96}}{16} = \frac{-2 \pm \sqrt{100}}{16} = \frac{-2 \pm 10}{16}
+\]
+
+Dakle, $u_1 = \frac{8}{16} = \frac{1}{2}$ i $u_2 = \frac{-12}{16} = -\frac{3}{4}$.
+
+Pošto je $u = \cos^2 x \geq 0$, uzimamo samo $u = \frac{1}{2}$.
+
+$\cos^2 x = \frac{1}{2} \Rightarrow \cos x = \pm \frac{1}{\sqrt{2}} = \pm \frac{\sqrt{2}}{2}$
+
+U intervalu $(0, 2\pi)$:
+- $\cos x = \frac{\sqrt{2}}{2}$ za $x = \frac{\pi}{4}$ i $x = \frac{7\pi}{4}$
+- $\cos x = -\frac{\sqrt{2}}{2}$ za $x = \frac{3\pi}{4}$ i $x = \frac{5\pi}{4}$
+
+Međutim, treba proveriti da li su ova rešenja validna (da li je $\cos x \neq 0$).
+
+Sva četiri rešenja imaju $\cos x \neq 0$, pa su sva validna.
+
+Takođe treba proveriti slučaj kada je $\cos x = 0$ (tj. $x = \frac{\pi}{2}, \frac{3\pi}{2}$), ali tada $\operatorname{tg} x$ nije definisan.
+
+\subsection*{Answer}
+4 (opcija \textbf{C}).
+
+\end{document}

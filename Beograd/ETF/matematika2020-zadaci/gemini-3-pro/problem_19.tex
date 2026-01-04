@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Date su tačke $A(2, 2)$, $A'(-2, -2)$, $B(4, -4)$ i $B'(-4, 4)$. Duži $AA'$ i $BB'$ su ose elipse $\mathcal{E}$. Ako je $Y(0, y_0)$, $y_0 > 0$, tačka preseka $y$-ose i elipse $\mathcal{E}$, onda je $y_0$ jednako:
+\[
+(A)\ \frac{8}{\sqrt{5}}\quad (B)\ \frac{4\sqrt{2}}{\sqrt{5}}\quad (C)\ \frac{8\sqrt{2}}{\sqrt{5}}\quad (D)\ \frac{4}{\sqrt{5}}\quad (E)\ \frac{32}{\sqrt{5}}\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Ose elipse leže na pravama određenim tačkama $A, A'$ i $B, B'$.
+Prava $AA'$ prolazi kroz $(0,0)$ i $(2,2)$, njena jednačina je $y=x$.
+Prava $BB'$ prolazi kroz $(0,0)$ i $(4,-4)$, njena jednačina je $y=-x$.
+Ove prave su međusobno normalne, što odgovara osama elipse. Centar elipse je u koordinatnom početku $O(0,0)$.
+Poluose elipse su:
+$a = OA = \sqrt{2^2+2^2} = \sqrt{8} = 2\sqrt{2}$.
+$b = OB = \sqrt{4^2+(-4)^2} = \sqrt{32} = 4\sqrt{2}$.
+Jednačina elipse u koordinatnom sistemu rotiranom za $45^\circ$ (gde su ose $u$ i $v$ poklapaju sa $y=x$ i $y=-x$) bila bi:
+\[
+\frac{u^2}{a^2} + \frac{v^2}{b^2} = 1
+\]
+Rotacija koordinata za ugao $\alpha = -45^\circ$ (da bi se $y=x$ poklopilo sa novom x-osom) ili prosto korišćenje rastojanja:
+Za proizvoljnu tačku $M(x,y)$, koordinate u sistemu osa elipse su projekcije na prave $y=x$ i $y=-x$.
+$u = \frac{x+y}{\sqrt{2}}$, $v = \frac{-x+y}{\sqrt{2}}$.
+Zamenom u jednačinu elipse:
+\[
+\frac{(\frac{x+y}{\sqrt{2}})^2}{8} + \frac{(\frac{-x+y}{\sqrt{2}})^2}{32} = 1
+\]
+\[
+\frac{(x+y)^2}{16} + \frac{(y-x)^2}{64} = 1
+\]
+Množenjem sa 64:
+\[
+4(x+y)^2 + (y-x)^2 = 64
+\]
+Tražimo presek sa y-osom, dakle $x=0$.
+\[
+4(0+y)^2 + (y-0)^2 = 64
+\]
+\[
+4y^2 + y^2 = 64
+\]
+\[
+5y^2 = 64 \implies y^2 = \frac{64}{5}
+\]
+\[
+y = \pm \frac{8}{\sqrt{5}}
+\]
+Kako je $y_0 > 0$, imamo $y_0 = \frac{8}{\sqrt{5}}$.
+
+\subsection*{Answer}
+$\frac{8}{\sqrt{5}}$ (option \textbf{A}).
+
+\end{document}

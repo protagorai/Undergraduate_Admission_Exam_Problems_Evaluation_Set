@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Dati su izrazi $E_1 = \sin^2 \frac{x+y}{2} + \cos x \cos y$, $E_2 = \cos^2 \frac{x-y}{2} - \sin x \sin y$, $E_3 = \cos^2 \frac{x+y}{2} + \sin x \sin y$, $E_4 = \sin^2 \frac{x-y}{2} + \cos x \cos y$. Tačan je iskaz:
+
+\subsection*{Solution}
+Koristimo trigonometrijske identitete:
+
+Za $E_1$:
+\[
+\sin^2 \frac{x+y}{2} = \frac{1 - \cos(x+y)}{2}
+\]
+\[
+E_1 = \frac{1 - \cos(x+y)}{2} + \cos x \cos y = \frac{1 - (\cos x \cos y - \sin x \sin y)}{2} + \cos x \cos y
+\]
+\[
+= \frac{1 - \cos x \cos y + \sin x \sin y}{2} + \cos x \cos y = \frac{1 + \cos x \cos y + \sin x \sin y}{2}
+\]
+
+Za $E_2$:
+\[
+\cos^2 \frac{x-y}{2} = \frac{1 + \cos(x-y)}{2}
+\]
+\[
+E_2 = \frac{1 + \cos(x-y)}{2} - \sin x \sin y = \frac{1 + (\cos x \cos y + \sin x \sin y)}{2} - \sin x \sin y
+\]
+\[
+= \frac{1 + \cos x \cos y + \sin x \sin y - 2\sin x \sin y}{2} = \frac{1 + \cos x \cos y - \sin x \sin y}{2}
+\]
+
+Za $E_3$:
+\[
+\cos^2 \frac{x+y}{2} = \frac{1 + \cos(x+y)}{2}
+\]
+\[
+E_3 = \frac{1 + \cos(x+y)}{2} + \sin x \sin y = \frac{1 + \cos x \cos y - \sin x \sin y}{2} + \sin x \sin y
+\]
+\[
+= \frac{1 + \cos x \cos y + \sin x \sin y}{2}
+\]
+
+Za $E_4$:
+\[
+\sin^2 \frac{x-y}{2} = \frac{1 - \cos(x-y)}{2}
+\]
+\[
+E_4 = \frac{1 - \cos(x-y)}{2} + \cos x \cos y = \frac{1 - \cos x \cos y - \sin x \sin y}{2} + \cos x \cos y
+\]
+\[
+= \frac{1 + \cos x \cos y - \sin x \sin y}{2}
+\]
+
+Dakle: $E_1 = E_3$ i $E_2 = E_4$.
+
+\subsection*{Answer}
+$E_1 = E_3, E_2 = E_4$ (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ukupan broj realnih rešenja jednačine $3\tan^2 x - 8\cos^2 x + 1 = 0$ koja pripadaju intervalu $(0, 2\pi)$ je:
+
+(A) 2 \quad (B) 3 \quad (C) 4 \quad (D) 5 \quad (E) 6 \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's rewrite the equation. We have $\tan^2 x = \frac{\sin^2 x}{\cos^2 x}$.
+
+Using $\sin^2 x = 1 - \cos^2 x$:
+\[
+3 \cdot \frac{1 - \cos^2 x}{\cos^2 x} - 8\cos^2 x + 1 = 0
+\]
+
+Let $u = \cos^2 x$, where $0 < u \leq 1$ (and $u \neq 0$ since $\tan x$ must be defined):
+\[
+\frac{3(1-u)}{u} - 8u + 1 = 0
+\]
+
+Multiply by $u$:
+\[
+3(1-u) - 8u^2 + u = 0
+\]
+\[
+3 - 3u - 8u^2 + u = 0
+\]
+\[
+-8u^2 - 2u + 3 = 0
+\]
+\[
+8u^2 + 2u - 3 = 0
+\]
+
+Using the quadratic formula:
+\[
+u = \frac{-2 \pm \sqrt{4 + 96}}{16} = \frac{-2 \pm 10}{16}
+\]
+
+So $u = \frac{8}{16} = \frac{1}{2}$ or $u = \frac{-12}{16} = -\frac{3}{4}$.
+
+Since $u = \cos^2 x \geq 0$, we reject $u = -\frac{3}{4}$.
+
+So $\cos^2 x = \frac{1}{2}$, which means $\cos x = \pm\frac{1}{\sqrt{2}} = \pm\frac{\sqrt{2}}{2}$.
+
+In the interval $(0, 2\pi)$:
+\begin{itemize}
+    \item $\cos x = \frac{\sqrt{2}}{2}$: $x = \frac{\pi}{4}, \frac{7\pi}{4}$
+    \item $\cos x = -\frac{\sqrt{2}}{2}$: $x = \frac{3\pi}{4}, \frac{5\pi}{4}$
+\end{itemize}
+
+We need to verify that $\tan x$ is defined at these points (i.e., $\cos x \neq 0$), which is true for all four values.
+
+Therefore, there are 4 solutions.
+
+\subsection*{Answer}
+$4$ (option \textbf{C}).
+
+\end{document}

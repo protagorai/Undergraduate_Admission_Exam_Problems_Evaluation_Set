@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Zbir svih vrednosti parametra $a\in\mathbb{R}$ za koje grafici funkcija
+\[
+y=(a+2)x^2-ax-3 \qquad \text{i}\qquad y=ax-4
+\]
+imaju tačno jednu zajedničku tačku jednak je:
+
+\subsection*{Solution}
+Zajedničke tačke dobijamo iz jednačine
+\[
+(a+2)x^2-ax-3=ax-4 \;\Rightarrow\; (a+2)x^2-2ax+1=0.
+\]
+
+\medskip
+\noindent\textbf{1) Ako je $a\neq -2$:} imamo kvadratnu jednačinu. Da bi imala tačno jedno realno rešenje, diskriminanta mora biti nula:
+\[
+\Delta=(-2a)^2-4(a+2)\cdot 1=4a^2-4a-8=4(a^2-a-2)=4(a-2)(a+1).
+\]
+Dakle $\Delta=0$ daje $a=2$ ili $a=-1$.
+
+\medskip
+\noindent\textbf{2) Ako je $a=-2$:} kvadratni član nestaje i dobijamo linearnu jednačinu
+\[
+(-2+2)x^2-2(-2)x+1=4x+1=0,
+\]
+koja ima tačno jedno rešenje, pa i $a=-2$ odgovara.
+
+Zato su tražene vrednosti $a\in\{-2,-1,2\}$, a njihov zbir je
+\[
+-2+(-1)+2=-1.
+\]
+
+\subsection*{Answer}
+$-1$ (option \textbf{C}).
+
+\end{document}
+

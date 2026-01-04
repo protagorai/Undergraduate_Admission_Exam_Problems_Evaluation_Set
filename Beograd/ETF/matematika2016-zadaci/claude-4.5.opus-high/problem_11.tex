@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Given the vertices of a triangle $A(-8, 4)$, $B(-2, 1)$, and $C(1, -3)$, with orthocenter $H(x_0, y_0)$, find the value of $y_0 - x_0$.
+
+\subsection*{Solution}
+The orthocenter is the intersection of altitudes. Let's find two altitudes.
+
+\textbf{Altitude from $A$ perpendicular to $BC$:}
+
+Slope of $BC$: $m_{BC} = \frac{-3 - 1}{1 - (-2)} = \frac{-4}{3}$
+
+Slope of altitude from $A$: $m_1 = \frac{3}{4}$ (negative reciprocal)
+
+Equation: $y - 4 = \frac{3}{4}(x + 8)$
+\[y = \frac{3}{4}x + 6 + 4 = \frac{3}{4}x + 10\]
+
+\textbf{Altitude from $B$ perpendicular to $AC$:}
+
+Slope of $AC$: $m_{AC} = \frac{-3 - 4}{1 - (-8)} = \frac{-7}{9}$
+
+Slope of altitude from $B$: $m_2 = \frac{9}{7}$ (negative reciprocal)
+
+Equation: $y - 1 = \frac{9}{7}(x + 2)$
+\[y = \frac{9}{7}x + \frac{18}{7} + 1 = \frac{9}{7}x + \frac{25}{7}\]
+
+\textbf{Finding intersection:}
+\[\frac{3}{4}x + 10 = \frac{9}{7}x + \frac{25}{7}\]
+
+Multiply by 28:
+\[21x + 280 = 36x + 100\]
+\[180 = 15x\]
+\[x_0 = 12\]
+
+Wait, let me recalculate. $280 - 100 = 180$ and $36 - 21 = 15$, so $x = 12$. But this seems too large given the triangle coordinates.
+
+Let me recompute:
+\[21x + 280 = 36x + 100\]
+\[-15x = -180\]
+\[x_0 = 12\]
+
+Hmm, let me verify by checking the altitude equations again.
+
+Actually, I should double-check my slope calculations:
+- $m_{BC} = \frac{-3-1}{1-(-2)} = \frac{-4}{3}$ ✓
+- $m_{AC} = \frac{-3-4}{1-(-8)} = \frac{-7}{9}$ ✓
+
+For $x_0 = 12$:
+\[y_0 = \frac{3}{4}(12) + 10 = 9 + 10 = 19\]
+
+Let me verify with the other equation:
+\[y_0 = \frac{9}{7}(12) + \frac{25}{7} = \frac{108 + 25}{7} = \frac{133}{7} = 19\] ✓
+
+So $H = (12, 19)$ but this seems outside the triangle (which is expected for an obtuse triangle).
+
+Actually, wait - looking at the options (A) 7, (B) 6, (C) 5, (D) 4, (E) 8, the answer should be small.
+
+Let me reconsider. Perhaps I made an arithmetic error. Let me redo:
+
+$y - 4 = \frac{3}{4}(x + 8) \Rightarrow 4y - 16 = 3x + 24 \Rightarrow 3x - 4y + 40 = 0$
+
+$y - 1 = \frac{9}{7}(x + 2) \Rightarrow 7y - 7 = 9x + 18 \Rightarrow 9x - 7y + 25 = 0$
+
+From first: $3x - 4y = -40$
+From second: $9x - 7y = -25$
+
+Multiply first by 3: $9x - 12y = -120$
+Subtract: $5y = 95 \Rightarrow y_0 = 19$
+
+Then: $3x = -40 + 4(19) = -40 + 76 = 36 \Rightarrow x_0 = 12$
+
+So $y_0 - x_0 = 19 - 12 = 7$.
+
+\subsection*{Answer}
+$7$ (option \textbf{A}).
+
+\end{document}

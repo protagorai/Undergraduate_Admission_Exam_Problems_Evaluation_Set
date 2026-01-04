@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Sva realna resenja jednacine
+\[
+\frac{x+\sqrt3}{\sqrt{x}+\sqrt{x+\sqrt3}}+\frac{x-\sqrt3}{\sqrt{x}-\sqrt{x-\sqrt3}}=\sqrt{x}
+\]
+nalaze se u skupu:
+
+\subsection*{Solution}
+Najpre domen: mora biti $x\ge 0$ i $x-\sqrt3\ge 0$, dakle $x\ge \sqrt3$.
+
+Racionalisemo:
+\[
+\frac{x+\sqrt3}{\sqrt{x}+\sqrt{x+\sqrt3}}
+=(x+\sqrt3)\cdot\frac{\sqrt{x+\sqrt3}-\sqrt{x}}{(x+\sqrt3)-x}
+=\frac{(x+\sqrt3)(\sqrt{x+\sqrt3}-\sqrt{x})}{\sqrt3},
+\]
+\[
+\frac{x-\sqrt3}{\sqrt{x}-\sqrt{x-\sqrt3}}
+=(x-\sqrt3)\cdot\frac{\sqrt{x}+\sqrt{x-\sqrt3}}{x-(x-\sqrt3)}
+=\frac{(x-\sqrt3)(\sqrt{x}+\sqrt{x-\sqrt3})}{\sqrt3}.
+\]
+Suma je
+\[
+\frac{1}{\sqrt3}\Big((x+\sqrt3)\sqrt{x+\sqrt3}+(x-\sqrt3)\sqrt{x-\sqrt3}-2\sqrt3\,\sqrt{x}\Big).
+\]
+Jednacina zato postaje
+\[
+(x+\sqrt3)\sqrt{x+\sqrt3}+(x-\sqrt3)\sqrt{x-\sqrt3}=3\sqrt3\,\sqrt{x}.
+\]
+Uvedimo smenu $x=\sqrt3\,t$ (pa je $t\ge 1$). Tada je
+\[
+(t+1)^{3/2}+(t-1)^{3/2}=3\sqrt{t}.
+\]
+Pokazimo da je $x=2$ resenje. Tada je $t=\dfrac{x}{\sqrt3}=\dfrac{2}{\sqrt3}$.
+
+Vratimo se na oblik pre smene:
+\[
+(x+\sqrt3)\sqrt{x+\sqrt3}+(x-\sqrt3)\sqrt{x-\sqrt3}=3\sqrt3\,\sqrt{x}.
+\]
+Za $x=2$ oznacimo
+\[
+a=\sqrt{2+\sqrt3},\qquad b=\sqrt{2-\sqrt3}.
+\]
+Tada je $ab=\sqrt{(2+\sqrt3)(2-\sqrt3)}=1$ i $a+b=\sqrt6$ (jer $(a+b)^2=4+2=6$).
+Leva strana postaje $a^3+b^3$, pa
+\[
+a^3+b^3=(a+b)^3-3ab(a+b)=(\sqrt6)^3-3\cdot 1\cdot \sqrt6=6\sqrt6-3\sqrt6=3\sqrt6.
+\]
+Desna strana je $3\sqrt3\sqrt2=3\sqrt6$, pa jednakost vazi i $x=2$ je resenje.
+
+Da drugih resenja nema, posmatramo funkciju
+\[
+h(t)=(t+1)^{3/2}+(t-1)^{3/2}-3\sqrt{t}\qquad (t\ge 1).
+\]
+Za $t>1$ je
+\[
+h'(t)=\frac{3}{2}\left(\sqrt{t+1}+\sqrt{t-1}-\frac{1}{\sqrt{t}}\right).
+\]
+Kako je za $t\ge 1$ $\sqrt{t+1}\ge 1$ i $\frac{1}{\sqrt{t}}\le 1$, dobijamo $h'(t)>0$, pa je $h$ strogo rastuca.
+Posto je $h(1)=2\sqrt2-3<0$ i $h\!\left(\frac{2}{\sqrt3}\right)=0$, sledi da je jedino resenje $t=\frac{2}{\sqrt3}$, tj. $x=2$.
+
+Dakle, jedino resenje je $x=2$, pa (naravno) sva resenja leze u intervalu $[\sqrt3,2\sqrt3)$.
+
+\subsection*{Answer}
+$[\sqrt3,2\sqrt3)$ (opcija \textbf{A}); konkretno, resenje je $x=2$.
+
+\end{document}
+

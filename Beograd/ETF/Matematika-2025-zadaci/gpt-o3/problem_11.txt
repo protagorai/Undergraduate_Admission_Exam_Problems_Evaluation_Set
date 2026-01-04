@@ -1,0 +1,2 @@
+11. Skup svih vrednosti realnog parametra m za koje realna rešenja x1 i x2 jednačine (m−1)x^2 + 2mx + m + 2 = 0 zadovoljavaju uslov x1/x2 + x2/x1 ≥ 2 je oblika (za −∞ < a < b < c < ∞):
+(A) (a,b]   (B) (−∞,a] ∪ (b,+∞)   (C) (−∞,a] ∪ [b,c]   (D) (a,b) ∪ {c}   (E) (a,b] ∪ [c,+∞)   (N) Ne znam

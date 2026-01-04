@@ -1,0 +1,7 @@
+Problem 12
+
+Zbir beskonačne geometrijske progresije
+\frac{\sqrt{2} + 1}{\sqrt{2} - 1} + \frac{1}{2 - \sqrt{2}} + \frac{1}{2} + \dots
+jednak je:
+
+(A) 2 + \sqrt{2}    (B) 2 - \sqrt{2}    (C) 1    (D) 4 + 3 \sqrt{2}    (E) 4 - 3 \sqrt{2}    (N) Ne znam

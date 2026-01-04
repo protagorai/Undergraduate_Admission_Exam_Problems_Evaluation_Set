@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Prva dva člana rastuće geometrijske progresije su rešenja jednačine $\dfrac{2^{2\sin x}}{1 + 2^{2\sin x}} = 1 - \dfrac{3 - 2^{2\sin x}}{5 - 2^{2\sin x}}$ na intervalu $(0, \pi)$. Ako je zbir ove progresije $651\pi$, tada je ukupan broj njenih članova jednak:
+
+\subsection*{Solution}
+Let $t = 2^{2\sin x}$. Since $\sin x \in [-1, 1]$, we have $t \in [2^{-2}, 2^2] = [\frac{1}{4}, 4]$.
+
+The equation becomes:
+\[
+\frac{t}{1 + t} = 1 - \frac{3 - t}{5 - t}
+\]
+\[
+\frac{t}{1 + t} = \frac{5 - t - (3 - t)}{5 - t} = \frac{2}{5 - t}
+\]
+
+Cross-multiplying:
+\[
+t(5 - t) = 2(1 + t)
+\]
+\[
+5t - t^2 = 2 + 2t
+\]
+\[
+-t^2 + 3t - 2 = 0
+\]
+\[
+t^2 - 3t + 2 = 0
+\]
+\[
+(t - 1)(t - 2) = 0
+\]
+
+So $t = 1$ or $t = 2$.
+
+\textbf{For $t = 1$:} $2^{2\sin x} = 1 = 2^0 \Rightarrow \sin x = 0$
+On $(0, \pi)$: no solution (endpoints excluded).
+
+\textbf{For $t = 2$:} $2^{2\sin x} = 2 = 2^1 \Rightarrow \sin x = \frac{1}{2}$
+On $(0, \pi)$: $x = \frac{\pi}{6}$ or $x = \frac{5\pi}{6}$
+
+The first two terms of the increasing GP are $a_1 = \frac{\pi}{6}$ and $a_2 = \frac{5\pi}{6}$.
+
+The common ratio: $r = \frac{a_2}{a_1} = \frac{5\pi/6}{\pi/6} = 5$
+
+Sum of GP with $n$ terms:
+\[
+S_n = a_1 \cdot \frac{r^n - 1}{r - 1} = \frac{\pi}{6} \cdot \frac{5^n - 1}{4} = 651\pi
+\]
+\[
+\frac{5^n - 1}{24} = 651
+\]
+\[
+5^n - 1 = 651 \times 24 = 15624
+\]
+\[
+5^n = 15625 = 5^6
+\]
+\[
+n = 6
+\]
+
+\subsection*{Answer}
+$6$ (option \textbf{B}).
+
+\end{document}

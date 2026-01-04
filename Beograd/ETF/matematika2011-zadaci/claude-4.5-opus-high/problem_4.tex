@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Find the total number of real solutions of the equation $\displaystyle\frac{\sqrt{(x+1)^2}}{x+1} = |x+1|$.
+
+\subsection*{Solution}
+Note that $\sqrt{(x+1)^2} = |x+1|$.
+
+So the equation becomes:
+\[
+\frac{|x+1|}{x+1} = |x+1|
+\]
+
+For this equation to be defined, we need $x + 1 \neq 0$, i.e., $x \neq -1$.
+
+\textbf{Case 1:} $x > -1$ (so $x + 1 > 0$)
+
+Then $|x+1| = x+1$, and the equation becomes:
+\[
+\frac{x+1}{x+1} = x+1 \implies 1 = x+1 \implies x = 0
+\]
+This is valid since $0 > -1$. So $x = 0$ is a solution.
+
+\textbf{Case 2:} $x < -1$ (so $x + 1 < 0$)
+
+Then $|x+1| = -(x+1)$, and the equation becomes:
+\[
+\frac{-(x+1)}{x+1} = -(x+1) \implies -1 = -(x+1) \implies -1 = -x - 1 \implies x = 0
+\]
+But this contradicts $x < -1$, so there's no solution in this case.
+
+Therefore, there is exactly \textbf{1} real solution: $x = 0$.
+
+\subsection*{Answer}
+\textbf{(B)} 1
+
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+When expanding $2x\left(1 + \sqrt[3]{x}\right)^{10} + x^4\left(x^2 + \frac{1}{\sqrt[5]{x^2}}\right)^{12} + 5x^2\left(\sqrt[6]{x} - \frac{1}{\sqrt[6]{x}}\right)^{18}$ ($x \in \mathbf{R}^+$), one term is $A \cdot x^4$. Find $A$.
+
+(A) $-3994$ \quad (B) $2122$ \quad (C) $-2451$ \quad (D) $1326$ \quad (E) $-1452$
+
+\subsection*{Solution}
+We need to find the coefficient of $x^4$ in each expansion.
+
+\textbf{First term:} $2x(1 + x^{1/3})^{10}$
+
+We need $x \cdot x^{k/3} = x^4$, so $1 + k/3 = 4$, giving $k = 9$.
+\[
+\text{Coefficient} = 2 \cdot \binom{10}{9} = 2 \cdot 10 = 20
+\]
+
+\textbf{Second term:} $x^4(x^2 + x^{-2/5})^{12}$
+
+We need $x^4 \cdot x^{2a} \cdot x^{-2(12-a)/5} = x^4$, where $a$ is the power of $x^2$.
+\[
+4 + 2a - \frac{2(12-a)}{5} = 4 \Rightarrow 2a - \frac{24-2a}{5} = 0
+\]
+\[
+10a - 24 + 2a = 0 \Rightarrow 12a = 24 \Rightarrow a = 2
+\]
+\[
+\text{Coefficient} = \binom{12}{2} = 66
+\]
+
+\textbf{Third term:} $5x^2(x^{1/6} - x^{-1/6})^{18}$
+
+Using binomial expansion: $(x^{1/6} - x^{-1/6})^{18} = \sum_{k=0}^{18} \binom{18}{k}(-1)^{18-k} x^{k/6} \cdot x^{-(18-k)/6}$
+
+The exponent of $x$ is: $\frac{k - (18-k)}{6} = \frac{2k - 18}{6} = \frac{k-9}{3}$
+
+We need: $2 + \frac{k-9}{3} = 4$, so $\frac{k-9}{3} = 2$, giving $k = 15$.
+\[
+\text{Coefficient} = 5 \cdot \binom{18}{15} \cdot (-1)^{3} = 5 \cdot 816 \cdot (-1) = -4080
+\]
+
+\textbf{Total:} $A = 20 + 66 - 4080 = -3994$
+
+\subsection*{Answer}
+(A) $-3994$
+
+\end{document}

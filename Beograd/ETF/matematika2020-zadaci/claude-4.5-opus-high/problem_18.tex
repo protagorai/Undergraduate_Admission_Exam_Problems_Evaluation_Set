@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+In a cyclic quadrilateral $ABCD$, diagonal $BD$ is perpendicular to side $BC$, angles $\angle ABC$ and $\angle BAD$ are both equal to $120°$, and the length of side $AD$ is 1 cm. Find the product of the length of diagonal $BD$ and the length of side $CD$.
+
+\subsection*{Solution}
+Given information:
+\begin{itemize}
+    \item $ABCD$ is a cyclic quadrilateral (inscribed in a circle)
+    \item $BD \perp BC$
+    \item $\angle ABC = \angle BAD = 120°$
+    \item $AD = 1$ cm
+\end{itemize}
+
+In a cyclic quadrilateral, opposite angles sum to $180°$:
+\[
+\angle ABC + \angle ADC = 180° \implies \angle ADC = 180° - 120° = 60°
+\]
+\[
+\angle BAD + \angle BCD = 180° \implies \angle BCD = 180° - 120° = 60°
+\]
+
+Since $BD \perp BC$, we have $\angle DBC = 90°$.
+
+In triangle $BCD$:
+\[
+\angle BCD + \angle BDC + \angle DBC = 180°
+\]
+\[
+60° + \angle BDC + 90° = 180° \implies \angle BDC = 30°
+\]
+
+In triangle $ABD$:
+\[
+\angle ABD = \angle ABC - \angle DBC = 120° - 90° = 30°
+\]
+\[
+\angle ADB = 180° - \angle BAD - \angle ABD = 180° - 120° - 30° = 30°
+\]
+
+Since $\angle ABD = \angle ADB = 30°$, triangle $ABD$ is isoceles with $AD = AB = 1$ cm.
+
+Using the Law of Sines in triangle $ABD$:
+\[
+\frac{BD}{\sin(\angle BAD)} = \frac{AD}{\sin(\angle ABD)}
+\]
+\[
+\frac{BD}{\sin 120°} = \frac{1}{\sin 30°}
+\]
+\[
+BD = \frac{\sin 120°}{\sin 30°} = \frac{\frac{\sqrt{3}}{2}}{\frac{1}{2}} = \sqrt{3} \text{ cm}
+\]
+
+Using the Law of Sines in triangle $BCD$:
+\[
+\frac{CD}{\sin(\angle DBC)} = \frac{BD}{\sin(\angle BCD)}
+\]
+\[
+\frac{CD}{\sin 90°} = \frac{\sqrt{3}}{\sin 60°}
+\]
+\[
+CD = \frac{\sqrt{3} \cdot 1}{\frac{\sqrt{3}}{2}} = \frac{\sqrt{3} \cdot 2}{\sqrt{3}} = 2 \text{ cm}
+\]
+
+The product $BD \cdot CD = \sqrt{3} \cdot 2 = 2\sqrt{3}$ cm$^2$.
+
+\subsection*{Answer}
+$2\sqrt{3}$ cm$^2$ (option \textbf{C}).
+
+\end{document}

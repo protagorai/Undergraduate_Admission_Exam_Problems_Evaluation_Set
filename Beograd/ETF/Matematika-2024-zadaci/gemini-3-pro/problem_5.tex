@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 5}
+U razvoju binoma $\left(2^x - \frac{3}{4^x}\right)^9$, $x \in \mathbb{R} \setminus \{0\}$, član koji ne sadrži $x$ je jednak:
+
+\subsection*{Solution}
+Opšti član u razvoju binoma $(A+B)^n$ je $\binom{n}{k} A^{n-k} B^k$.
+Ovde je $n=9$, $A=2^x$, $B=-3 \cdot 4^{-x} = -3 \cdot 2^{-2x}$.
+
+Tražimo $k$ tako da član ne zavisi od $x$.
+$T_{k+1} = \binom{9}{k} (2^x)^{9-k} (-3 \cdot 2^{-2x})^k$
+$T_{k+1} = \binom{9}{k} 2^{x(9-k)} (-3)^k 2^{-2xk}$
+$T_{k+1} = \binom{9}{k} (-3)^k 2^{9x - kx - 2kx} = \binom{9}{k} (-3)^k 2^{x(9-3k)}$
+
+Da član ne bi sadržao $x$, eksponent uz 2 mora biti 0:
+$9 - 3k = 0 \implies 3k = 9 \implies k = 3$.
+
+Traženi član je:
+$T_4 = \binom{9}{3} (-3)^3$.
+$\binom{9}{3} = \frac{9 \cdot 8 \cdot 7}{3 \cdot 2 \cdot 1} = 3 \cdot 4 \cdot 7 = 84$.
+$(-3)^3 = -27$.
+
+Vrednost: $84 \cdot (-27) = - (84 \cdot 27)$.
+$84 \cdot 27 = 84(20 + 7) = 1680 + 588 = 2268$.
+Dakle, rezultat je $-2268$.
+
+\subsection*{Answer}
+$-2268$ (option \textbf{E}).
+
+\end{document}
+

@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 3}
+If for a complex number $z$ the equation $2z + 3\bar{z} = 10 + 3i$ holds, where $\bar{z}$ is the complex conjugate of $z$, then the modulus of $z$ is equal to:
+
+\subsection*{Solution}
+Let $z = x + iy$ where $x, y \in \mathbb{R}$. Then $\bar{z} = x - iy$.
+Substitute these into the given equation:
+\[ 2(x + iy) + 3(x - iy) = 10 + 3i \]
+Expand the terms:
+\[ 2x + 2iy + 3x - 3iy = 10 + 3i \]
+Group real and imaginary parts:
+\[ (2x + 3x) + i(2y - 3y) = 10 + 3i \]
+\[ 5x - iy = 10 + 3i \]
+Equating the real and imaginary parts on both sides:
+1. Real part: $5x = 10 \implies x = 2$.
+2. Imaginary part: $-y = 3 \implies y = -3$.
+Thus, the complex number is $z = 2 - 3i$.
+The modulus of $z$ is:
+\[ |z| = \sqrt{x^2 + y^2} = \sqrt{2^2 + (-3)^2} = \sqrt{4 + 9} = \sqrt{13} \]
+
+\subsection*{Answer}
+$\sqrt{13}$ (option \textbf{C}).
+
+\end{document}

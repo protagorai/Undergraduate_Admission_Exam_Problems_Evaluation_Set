@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+If the ratio of the binomial coefficients of the fourth and third terms in the expansion of $\left(\sqrt[3]{5} - \sqrt[5]{3}\right)^n$ $(n \in \mathbb{N}, n \geq 3)$ equals 10, find the number of rational terms in this expansion.
+
+(A) 2 \quad (B) 1 \quad (C) 4 \quad (D) 3 \quad (E) greater than 4
+
+\subsection*{Solution}
+The general term in the binomial expansion of $(a + b)^n$ is:
+\[
+T_{k+1} = \binom{n}{k} a^{n-k} b^k
+\]
+
+Here $a = \sqrt[3]{5} = 5^{1/3}$ and $b = -\sqrt[5]{3} = -3^{1/5}$.
+
+\textbf{Find $n$:}
+
+The third term has $k = 2$: coefficient $\binom{n}{2}$
+
+The fourth term has $k = 3$: coefficient $\binom{n}{3}$
+
+Given ratio:
+\[
+\frac{\binom{n}{3}}{\binom{n}{2}} = 10
+\]
+\[
+\frac{n!/(3!(n-3)!)}{n!/(2!(n-2)!)} = \frac{(n-2)!}{3 \cdot (n-3)!} = \frac{n-2}{3} = 10
+\]
+\[
+n - 2 = 30 \implies n = 32
+\]
+
+\textbf{Find rational terms:}
+
+The $(k+1)$-th term is:
+\[
+T_{k+1} = \binom{32}{k} (5^{1/3})^{32-k} (-3^{1/5})^k = \binom{32}{k} (-1)^k \cdot 5^{(32-k)/3} \cdot 3^{k/5}
+\]
+
+For this to be rational, both exponents must be integers:
+\begin{itemize}
+\item $\frac{32-k}{3} \in \mathbb{Z} \implies 32 - k \equiv 0 \pmod{3} \implies k \equiv 2 \pmod{3}$
+\item $\frac{k}{5} \in \mathbb{Z} \implies k \equiv 0 \pmod{5}$
+\end{itemize}
+
+We need $k \equiv 2 \pmod{3}$ and $k \equiv 0 \pmod{5}$ with $0 \leq k \leq 32$.
+
+Multiples of 5 in $[0, 32]$: $0, 5, 10, 15, 20, 25, 30$
+
+Check $k \equiv 2 \pmod{3}$:
+\begin{itemize}
+\item $k = 0$: $0 \equiv 0 \pmod{3}$ \ding{55}
+\item $k = 5$: $5 \equiv 2 \pmod{3}$ \checkmark
+\item $k = 10$: $10 \equiv 1 \pmod{3}$ \ding{55}
+\item $k = 15$: $15 \equiv 0 \pmod{3}$ \ding{55}
+\item $k = 20$: $20 \equiv 2 \pmod{3}$ \checkmark
+\item $k = 25$: $25 \equiv 1 \pmod{3}$ \ding{55}
+\item $k = 30$: $30 \equiv 0 \pmod{3}$ \ding{55}
+\end{itemize}
+
+Valid values: $k = 5$ and $k = 20$
+
+\textbf{Number of rational terms: 2}
+
+\subsection*{Answer}
+$2$ (option \textbf{A}).
+
+\end{document}

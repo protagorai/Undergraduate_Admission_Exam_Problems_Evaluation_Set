@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 6}
+Neka su $\alpha, \beta$ i $\gamma$ uglovi a $a, b, c$ stranice trougla. Tada je $a \sin(\beta - \gamma) + b \sin(\gamma - \alpha) + c \sin(\alpha - \beta)$ jednako:
+\begin{itemize}
+    \item[A)] $2 \cos(\alpha + \beta - \gamma)$
+    \item[B)] $\cos(\alpha - \beta - \gamma)$
+    \item[C)] $1$
+    \item[D)] $0$
+    \item[E)] $-1$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Using the Sine Law, we have $a = 2R \sin \alpha$, $b = 2R \sin \beta$, and $c = 2R \sin \gamma$, where $R$ is the circumradius.
+Substitute these into the expression:
+\[ E = 2R \sin \alpha \sin(\beta - \gamma) + 2R \sin \beta \sin(\gamma - \alpha) + 2R \sin \gamma \sin(\alpha - \beta). \]
+Expand the sine of difference terms:
+\begin{align*}
+\sin \alpha \sin(\beta - \gamma) &= \sin \alpha (\sin \beta \cos \gamma - \cos \beta \sin \gamma) \\
+&= \sin \alpha \sin \beta \cos \gamma - \sin \alpha \cos \beta \sin \gamma.
+\end{align*}
+Similarly:
+\begin{align*}
+\sin \beta \sin(\gamma - \alpha) &= \sin \beta (\sin \gamma \cos \alpha - \cos \gamma \sin \alpha) \\
+&= \sin \beta \sin \gamma \cos \alpha - \sin \beta \cos \gamma \sin \alpha.
+\end{align*}
+\begin{align*}
+\sin \gamma \sin(\alpha - \beta) &= \sin \gamma (\sin \alpha \cos \beta - \cos \alpha \sin \beta) \\
+&= \sin \gamma \sin \alpha \cos \beta - \sin \gamma \cos \alpha \sin \beta.
+\end{align*}
+Summing these up:
+\begin{align*}
+E/2R &= (\sin \alpha \sin \beta \cos \gamma - \sin \alpha \cos \beta \sin \gamma) \\
+&\quad + (\sin \beta \sin \gamma \cos \alpha - \sin \beta \cos \gamma \sin \alpha) \\
+&\quad + (\sin \gamma \sin \alpha \cos \beta - \sin \gamma \cos \alpha \sin \beta).
+\end{align*}
+Notice the cancellation:
+The term $\sin \alpha \sin \beta \cos \gamma$ is canceled by $-\sin \beta \cos \gamma \sin \alpha$.
+The term $-\sin \alpha \cos \beta \sin \gamma$ is canceled by $\sin \gamma \sin \alpha \cos \beta$.
+The term $\sin \beta \sin \gamma \cos \alpha$ is canceled by $-\sin \gamma \cos \alpha \sin \beta$.
+So all terms cancel out.
+\[ E = 0. \]
+
+\subsection*{Answer}
+The value is $0$, which corresponds to option \textbf{D}.
+
+\end{document}

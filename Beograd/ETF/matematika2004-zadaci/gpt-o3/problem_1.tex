@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Ako je $i$ imaginarna jedinica onda je količnik $\displaystyle\frac{i^{2004}+i^{2005}}{i^{2003}-i^{2002}}$ jednak:
+A) $0$\; B) $-i$\; C) $1$\; D) $-1$\; E) $i$\; N) Ne znam.
+
+\subsection*{Solution}
+Potencije imaginarne jedinice imaju period $4$:
+\[i^1=i,\; i^2=-1,\; i^3=-i,\; i^4=1.\]
+Stoga
+\[i^{2004}=1,\quad i^{2005}=i,\quad i^{2003}=-i,\quad i^{2002}=-1.\]
+Zamenom dobijamo
+\[\frac{i^{2004}+i^{2005}}{i^{2003}-i^{2002}}=\frac{1+i}{-i+1}=\frac{1+i}{1-i}.\]
+Množenjem sa kontragradijentom imenilaca
+\[\frac{1+i}{1-i}\cdot\frac{1+i}{1+i}=\frac{(1+i)^2}{1-(-1)}=\frac{1+2i+i^2}{2}=\frac{2i}{2}=i.\]
+
+\subsection*{Answer}
+$i$ (opcija \textbf{E}).
+
+\end{document}

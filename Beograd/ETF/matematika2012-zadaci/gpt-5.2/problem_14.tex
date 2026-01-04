@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Two sides of a triangle are $21$ and $9\sqrt2$ with the included angle $45^\circ$. Find the sum of the inradius and circumradius of the triangle.
+
+Options:
+(A) $3(2-\sqrt3)$ \quad
+(B) $6(\sqrt2-1)$ \quad
+(C) $6(\sqrt2+1)$ \quad
+(D) $6(2+\sqrt3)$ \quad
+(E) $6(\sqrt3-\sqrt2)$.
+
+\subsection*{Solution}
+Let the given sides be $a=21$, $b=9\sqrt2$ and the included angle be $C=45^\circ$.
+
+\paragraph{Third side.}
+By the cosine law,
+\[
+c^2=a^2+b^2-2ab\cos C.
+\]
+Compute:
+\[
+a^2=441,\quad b^2=(9\sqrt2)^2=162,\quad 2ab\cos45^\circ=2\cdot 21\cdot 9\sqrt2\cdot\frac{\sqrt2}{2}=378,
+\]
+so
+\[
+c^2=441+162-378=225 \ \Rightarrow\ c=15.
+\]
+
+\paragraph{Area.}
+\[
+K=\frac12 ab\sin C=\frac12\cdot 21\cdot 9\sqrt2\cdot\frac{\sqrt2}{2}
+=\frac12\cdot 21\cdot 9=\frac{189}{2}.
+\]
+
+\paragraph{Inradius.}
+The semiperimeter is
+\[
+s=\frac{a+b+c}{2}=\frac{21+9\sqrt2+15}{2}=18+\frac{9\sqrt2}{2}.
+\]
+Thus
+\[
+r=\frac{K}{s}
+=\frac{\frac{189}{2}}{18+\frac{9\sqrt2}{2}}
+=\frac{189}{36+9\sqrt2}
+=\frac{21}{4+\sqrt2}.
+\]
+Rationalizing:
+\[
+r=\frac{21(4-\sqrt2)}{(4+\sqrt2)(4-\sqrt2)}=\frac{21(4-\sqrt2)}{14}
+=\frac32(4-\sqrt2)=6-\frac{3\sqrt2}{2}.
+\]
+
+\paragraph{Circumradius.}
+\[
+R=\frac{abc}{4K}=\frac{21\cdot 9\sqrt2\cdot 15}{4\cdot \frac{189}{2}}
+=\frac{2835\sqrt2}{378}=\frac{105\sqrt2}{14}=\frac{15\sqrt2}{2}.
+\]
+
+Therefore
+\[
+r+R=\left(6-\frac{3\sqrt2}{2}\right)+\frac{15\sqrt2}{2}=6+6\sqrt2=6(\sqrt2+1).
+\]
+
+\subsection*{Answer}
+$6(\sqrt2+1)$ (option \textbf{C}).
+
+\end{document}
+

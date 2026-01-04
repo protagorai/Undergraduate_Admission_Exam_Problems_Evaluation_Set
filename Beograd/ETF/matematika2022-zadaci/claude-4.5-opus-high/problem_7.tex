@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Find the limit $\displaystyle\lim_{x \to \frac{\pi}{4}} \frac{\cot^3 x - 1}{2 - \cot x - \cot^3 x}$.
+
+(A) $3/2$ \quad (B) $-3/4$ \quad (C) $1$ \quad (D) $3/4$ \quad (E) $-3/2$
+
+\subsection*{Solution}
+Let $u = \cot x$. As $x \to \frac{\pi}{4}$, we have $u \to \cot\frac{\pi}{4} = 1$.
+
+The limit becomes:
+\[
+\lim_{u \to 1} \frac{u^3 - 1}{2 - u - u^3}
+\]
+
+At $u = 1$, both numerator and denominator equal zero, so we have an indeterminate form $\frac{0}{0}$.
+
+\textbf{Factor the numerator:}
+\[
+u^3 - 1 = (u - 1)(u^2 + u + 1)
+\]
+
+\textbf{Factor the denominator:}
+\[
+2 - u - u^3 = -(u^3 + u - 2)
+\]
+
+We need to factor $u^3 + u - 2$. Since $u = 1$ is a root:
+\[
+u^3 + u - 2 = (u - 1)(u^2 + u + 2)
+\]
+
+Verification: $(u-1)(u^2 + u + 2) = u^3 + u^2 + 2u - u^2 - u - 2 = u^3 + u - 2$ \checkmark
+
+\textbf{Simplify:}
+\[
+\frac{u^3 - 1}{2 - u - u^3} = \frac{(u-1)(u^2 + u + 1)}{-(u-1)(u^2 + u + 2)} = -\frac{u^2 + u + 1}{u^2 + u + 2}
+\]
+
+\textbf{Evaluate the limit:}
+\[
+\lim_{u \to 1} \left(-\frac{u^2 + u + 1}{u^2 + u + 2}\right) = -\frac{1 + 1 + 1}{1 + 1 + 2} = -\frac{3}{4}
+\]
+
+\subsection*{Answer}
+$-\frac{3}{4}$ (option \textbf{B}).
+
+\end{document}

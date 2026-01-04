@@ -1,0 +1,20 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Neka su $\alpha,\beta,\gamma$ uglovi, a $a,b,c$ odgovarajuće stranice trougla. Odrediti vrednost izraza
+\[a\sin(\beta-\gamma)+b\sin(\gamma-\alpha)+c\sin(\alpha-\beta).\]
+Dati odgovori:
+A) $2\cos(\alpha+\beta-\gamma)$\; B) $\cos(\alpha-\beta-\gamma)$\; C) $1$\; D) $0$\; E) $-1$\; N) Ne znam.
+
+\subsection*{Solution}
+Po sinusovom zakonu $a=2R\sin\alpha$, $b=2R\sin\beta$, $c=2R\sin\gamma$ ($R$ je poluprečnik opisane kružnice). Zamenimo:
+\[E=2R\bigl[\sin\alpha\sin(\beta-\gamma)+\sin\beta\sin(\gamma-\alpha)+\sin\gamma\sin(\alpha-\beta)\bigr].\]
+Koristimo formulaciju $\sin(u-v)=\sin u\cos v-\cos u\sin v$ i sabiranjem dobijamo da se svi članovi uzajamno poništavaju (po cikličnosti). Posle skraćivanja ostaje $E=0$.
+
+\subsection*{Answer}
+$0$ (opcija \textbf{D}).
+
+\end{document}

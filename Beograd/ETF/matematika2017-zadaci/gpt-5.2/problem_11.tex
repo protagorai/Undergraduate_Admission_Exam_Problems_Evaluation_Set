@@ -1,0 +1,41 @@
+\section*{Zadatak 11}
+U aritmeti\v{c}koj progresiji poznati su \v{c}lanovi $a_{54}=\alpha$ i $a_{70}=\beta$ ($\alpha,\beta\in\mathbb{R}$, $\alpha\neq \beta$).
+Odrediti zbir prvih $160$ \v{c}lanova te progresije.
+
+\subsection*{Re\v{s}enje}
+Za aritmeti\v{c}ku progresiju va\v{z}i
+\[
+a_n=a_1+(n-1)d.
+\]
+Iz uslova dobijamo sistem
+\[
+a_1+53d=\alpha,\qquad a_1+69d=\beta.
+\]
+Oduzimanjem:
+\[
+16d=\beta-\alpha \;\Longrightarrow\; d=\frac{\beta-\alpha}{16}.
+\]
+Zatim
+\[
+a_1=\alpha-53d=\alpha-53\cdot\frac{\beta-\alpha}{16}.
+\]
+Zbir prvih $160$ \v{c}lanova je
+\[
+S_{160}=\frac{160}{2}\bigl(2a_1+159d\bigr)=80\bigl(2a_1+159d\bigr).
+\]
+Ra\v{c}unamo
+\[
+2a_1+159d
+ =2\left(\alpha-53\frac{\beta-\alpha}{16}\right)+159\frac{\beta-\alpha}{16}
+=\frac{-21\alpha+53\beta}{16}.
+\]
+Otuda
+\[
+S_{160}=80\cdot \frac{-21\alpha+53\beta}{16}=5(-21\alpha+53\beta).
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\;\; 5(-21\alpha+53\beta)}
+\]
+

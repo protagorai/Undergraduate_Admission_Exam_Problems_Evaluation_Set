@@ -1,0 +1,11 @@
+Problem 13
+
+Vrednost izraza
+
+\[
+\frac{\sin 86^{\circ} + \sin 76^{\circ} - \sin 26^{\circ} - \sin 16^{\circ}}{\cos 86^{\circ} + \cos 76^{\circ} + \cos 26^{\circ} + \cos 16^{\circ}}
+\]
+
+iznosi:
+
+(A) \(\sqrt{3}\)   (B) \(\dfrac{\sqrt{3}}{2}\)   (C) \(\dfrac{2}{\sqrt{3}}\)   (D) \(\dfrac{1}{\sqrt{3}}\)   (E) 0   (N) Ne znam

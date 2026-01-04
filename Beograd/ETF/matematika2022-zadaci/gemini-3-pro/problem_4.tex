@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 4}
+Skup vrednosti parametra $m \in R$ za koje jednačina $(1 - m)x^2 + (m - 2)x + 1 = 0$ ima dva različita realna rešenja je oblika (za neke $a, b \in R$ za koje je $-\infty < a < b < \infty$):
+\begin{itemize}
+    \item[(A)] $R \setminus \{a\}$
+    \item[(B)] $(a, b) \cup (b, \infty)$
+    \item[(C)] $[a, \infty)$
+    \item[(D)] $R \setminus \{a, b\}$
+    \item[(E)] $(a, \infty)$
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Da bi kvadratna jednačina $Ax^2 + Bx + C = 0$ imala dva različita realna rešenja, moraju biti ispunjena dva uslova:
+1. Koeficijent uz $x^2$ mora biti različit od nule ($A \neq 0$).
+2. Diskriminanta mora biti veća od nule ($D > 0$).
+
+Ovde je $A = 1 - m$, $B = m - 2$, $C = 1$.
+Uslov 1:
+\[ 1 - m \neq 0 \implies m \neq 1 \]
+
+Uslov 2:
+\[ D = B^2 - 4AC = (m - 2)^2 - 4(1 - m) \cdot 1 \]
+\[ D = m^2 - 4m + 4 - 4 + 4m = m^2 \]
+Zahtevamo $D > 0$, tj. $m^2 > 0$. Ovo je tačno za svako $m \in R$ osim za $m = 0$.
+Dakle, $m \neq 0$.
+
+Kombinovanjem uslova imamo $m \in R \setminus \{0, 1\}$.
+Ovo odgovara skupu $R \setminus \{a, b\}$ gde su $a$ i $b$ brojevi 0 i 1.
+Poredak $a < b$ znači $a=0, b=1$.
+
+\subsection*{Answer}
+$R \setminus \{a, b\}$ (option \textbf{D}).
+
+\end{document}

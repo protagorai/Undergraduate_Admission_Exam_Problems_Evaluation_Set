@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Find the acute angle at which the tangent to the curve $2x^2 + 3y^2 = 5$ at point $(1, 1)$ and the tangent to the curve $x^2 - 4x + y^2 + 6y = 3$ at point $(2, 1)$ intersect.
+
+(A) $\arctan\frac{1}{2}$ \quad (B) $\arctan\frac{3}{2}$ \quad (C) $\arctan\frac{2}{3}$ \quad (D) $\arctan\frac{1}{6}$ \quad (E) $\arctan\frac{3}{5}$
+
+\subsection*{Solution}
+\textbf{First curve:} $2x^2 + 3y^2 = 5$
+
+Implicit differentiation: $4x + 6y\frac{dy}{dx} = 0$
+
+At $(1, 1)$: $4 + 6\frac{dy}{dx} = 0 \Rightarrow \frac{dy}{dx} = -\frac{2}{3}$
+
+So slope $m_1 = -\frac{2}{3}$.
+
+\textbf{Second curve:} $x^2 - 4x + y^2 + 6y = 3$
+
+Implicit differentiation: $2x - 4 + 2y\frac{dy}{dx} + 6\frac{dy}{dx} = 0$
+
+At $(2, 1)$: $4 - 4 + 2\frac{dy}{dx} + 6\frac{dy}{dx} = 0 \Rightarrow 8\frac{dy}{dx} = 0 \Rightarrow \frac{dy}{dx} = 0$
+
+So slope $m_2 = 0$.
+
+\textbf{Angle between lines:}
+The angle $\theta$ between two lines with slopes $m_1$ and $m_2$ is given by:
+\[
+\tan\theta = \left|\frac{m_1 - m_2}{1 + m_1 m_2}\right|
+\]
+
+\[
+\tan\theta = \left|\frac{-\frac{2}{3} - 0}{1 + (-\frac{2}{3})(0)}\right| = \left|\frac{-\frac{2}{3}}{1}\right| = \frac{2}{3}
+\]
+
+Therefore:
+\[
+\theta = \arctan\frac{2}{3}
+\]
+
+\subsection*{Answer}
+(C) $\arctan\frac{2}{3}$
+
+\end{document}

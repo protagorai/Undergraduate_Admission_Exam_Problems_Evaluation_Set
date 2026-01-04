@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Ako je $\log_a b=\sqrt2$ tada je $\log_{\frac{b}{a}}(ab)$ jednako:
+\[
+\text{(A) }\sqrt2+1\quad \text{(B) }\sqrt2-1\quad \text{(C) }3-2\sqrt2\quad \text{(D) }3+2\sqrt2\quad \text{(E) }1+2\sqrt2\quad \text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Iz $\log_a b=\sqrt2$ sledi (prelazak na prirodne logaritme)
+\[
+\frac{\ln b}{\ln a}=\sqrt2 \quad\Rightarrow\quad \ln b=\sqrt2\,\ln a.
+\]
+Tada je
+\[
+\log_{\frac{b}{a}}(ab)=\frac{\ln(ab)}{\ln(b/a)}=\frac{\ln a+\ln b}{\ln b-\ln a}
+=\frac{(1+\sqrt2)\ln a}{(\sqrt2-1)\ln a}=\frac{1+\sqrt2}{\sqrt2-1}.
+\]
+Racionalizacijom:
+\[
+\frac{1+\sqrt2}{\sqrt2-1}\cdot \frac{\sqrt2+1}{\sqrt2+1}=\frac{(1+\sqrt2)^2}{2-1}=3+2\sqrt2.
+\]
+
+\subsection*{Answer}
+$3+2\sqrt2$ (option \textbf{D}).
+
+\end{document}
+

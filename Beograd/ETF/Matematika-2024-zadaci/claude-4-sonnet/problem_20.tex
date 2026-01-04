@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Broj načina na koji se mogu izabrati četiri različita broja iz skupa $\{1, 2, \ldots, 9\}$ tako da je bar jedan od njih deljiv sa četiri i bar jedan od njih strogo veći od pet iznosi:
+
+\subsection*{Solution}
+Analizirajmo skup $\{1, 2, 3, 4, 5, 6, 7, 8, 9\}$.
+
+Brojevi deljivi sa 4: $\{4, 8\}$
+Brojevi strogo veći od 5: $\{6, 7, 8, 9\}$
+
+Koristićemo princip uključivanja-isključivanja.
+
+Ukupan broj načina da izaberemo 4 broja iz 9: $\binom{9}{4} = 126$
+
+Neka je:
+- $A$ = skup načina gde bar jedan broj je deljiv sa 4
+- $B$ = skup načina gde bar jedan broj je strogo veći od 5
+
+Tražimo $|A \cap B|$.
+
+$|A \cap B| = |A| + |B| - |A \cup B|$
+
+Ali lakše je koristiti komplement:
+$|A \cap B| = |\text{ukupno}| - |\overline{A} \cup \overline{B}|$
+$= |\text{ukupno}| - |\overline{A}| - |\overline{B}| + |\overline{A} \cap \overline{B}|$
+
+$\overline{A}$ = nijedan broj nije deljiv sa 4
+Biramo iz $\{1, 2, 3, 5, 6, 7, 9\}$ (7 brojeva): $\binom{7}{4} = 35$
+
+$\overline{B}$ = nijedan broj nije strogo veći od 5
+Biramo iz $\{1, 2, 3, 4, 5\}$ (5 brojeva): $\binom{5}{4} = 5$
+
+$\overline{A} \cap \overline{B}$ = nijedan broj nije deljiv sa 4 i nijedan nije strogo veći od 5
+Biramo iz $\{1, 2, 3, 5\}$ (4 broja): $\binom{4}{4} = 1$
+
+Dakle:
+$|A \cap B| = 126 - 35 - 5 + 1 = 87$
+
+\subsection*{Answer}
+$87$ (opcija \textbf{B}).
+
+\end{document}

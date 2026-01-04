@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Find all $m\in\mathbb{R}$ such that the quadratic
+\[
+(1-m)x^2+(m-2)x+1=0
+\]
+has two distinct real roots.
+
+\subsection*{Solution}
+For a quadratic to have two distinct real roots we need:
+\[
+1-m\neq 0 \quad\text{and}\quad \Delta>0.
+\]
+Here
+\[
+\Delta=(m-2)^2-4(1-m)\cdot 1
+=\bigl(m^2-4m+4\bigr)-4+4m=m^2.
+\]
+Thus $\Delta>0 \iff m\neq 0$. Also $1-m\neq 0 \iff m\neq 1$.
+Therefore
+\[
+m\in \mathbb{R}\setminus\{0,1\}.
+\]
+
+\subsection*{Answer}
+$\mathbb{R}\setminus\{0,1\}$ (option \textbf{D}).
+
+\end{document}
+

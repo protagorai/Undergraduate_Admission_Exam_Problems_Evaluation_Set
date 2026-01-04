@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Skup rešenja sistema nejednačina
+\[
+x^2-4\le 0,\qquad 1-2x+x^2>0,\qquad x^2-(3+\sqrt3)x+2+\sqrt3>0
+\]
+je oblika:
+\[
+\text{(A) }[a,b]\quad \text{(B) }[a,b)\quad \text{(C) }(a,b)\cup(b,+\infty)\quad \text{(D) }(a,b]\quad \text{(E) }(-\infty,a]\quad \text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Prva nejednačina:
+\[
+x^2-4\le 0 \Rightarrow -2\le x\le 2.
+\]
+Druga nejednačina je
+\[
+1-2x+x^2=(x-1)^2>0 \Rightarrow x\neq 1.
+\]
+Treća nejednačina: nađimo nule kvadratnog polinoma
+\[
+x^2-(3+\sqrt3)x+2+\sqrt3=0.
+\]
+Diskriminanta je
+\[
+\Delta=(3+\sqrt3)^2-4(2+\sqrt3)=4+2\sqrt3=(1+\sqrt3)^2,
+\]
+pa su nule
+\[
+x=\frac{(3+\sqrt3)\pm(1+\sqrt3)}{2}\in\{1,\,2+\sqrt3\}.
+\]
+Kako je koeficijent uz $x^2$ pozitivan, nejednačina $>0$ važi za
+\[
+x<1\quad \text{ili}\quad x>2+\sqrt3.
+\]
+Presek sa $[-2,2]$ daje samo $[-2,1)$ (deo $x>2+\sqrt3$ nema preseka), a uslov $x\neq 1$ je već zadovoljen.
+
+\subsection*{Answer}
+$[-2,1)$ je oblika $[a,b)$ (option \textbf{B}), gde je $a=-2$, $b=1$.
+
+\end{document}
+

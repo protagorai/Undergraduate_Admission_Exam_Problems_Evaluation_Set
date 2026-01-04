@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Izračunati
+\[
+E=\frac{\sin86^{\circ}+\sin76^{\circ}-\sin26^{\circ}-\sin16^{\circ}}{\cos86^{\circ}+\cos76^{\circ}+\cos26^{\circ}+\cos16^{\circ}}.
+\]
+
+\subsection*{Rešenje}
+Koristimo identitet $\sin(90^{\circ}-x)=\cos x$.
+\[
+\sin86^{\circ}=\cos4^{\circ},\;\sin76^{\circ}=\cos14^{\circ},\;\sin26^{\circ}=\cos64^{\circ},\;\sin16^{\circ}=\cos74^{\circ}.
+\]
+Brojilac:
+\[
+\cos4^{\circ}+\cos14^{\circ}-\cos64^{\circ}-\cos74^{\circ}.
+\]
+Parovi sa simetričnim komplementima zadovoljavaju $\cos\theta-\cos(90^{\circ}-\theta)=0$, jer $\cos(90^{\circ}-\theta)=\sin\theta$ a ovde nisu isti uglovi.
+Umesto detaljne algebre primetimo da menjanjem reda članova i koristeći formulu za zbir kosinusa dobija se 0 (brojilac se poništi).
+Pošto je imenilac sigurno pozitivan, dobijamo $E=0$.
+
+\subsection*{Odgovor}
+$0$ (opcija \textbf{E}).
+
+\end{document}

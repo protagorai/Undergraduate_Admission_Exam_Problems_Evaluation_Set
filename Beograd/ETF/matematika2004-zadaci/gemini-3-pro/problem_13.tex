@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 13}
+Sistem jednačina $3^x - 2^{y^2} = 77$, $3^{\frac{x}{2}} - 2^{\frac{y^2}{2}} = 7$ ima:
+\begin{itemize}
+    \item[A)] jedno realno rešenje
+    \item[B)] dva realna rešenja
+    \item[C)] četiri realna rešenja
+    \item[D)] tri realna rešenja
+    \item[E)] prazan skup realnih rešenja
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Let $u = 3^{x/2}$ and $v = 2^{y^2/2}$. Since they are exponential functions, $u > 0$ and $v > 0$.
+The system becomes:
+\begin{align*}
+u^2 - v^2 &= 77 \\
+u - v &= 7
+\end{align*}
+Factor the first equation:
+\[ (u-v)(u+v) = 77. \]
+Substitute $u-v=7$:
+\[ 7(u+v) = 77 \implies u+v = 11. \]
+Now we have a linear system for $u$ and $v$:
+\begin{align*}
+u - v &= 7 \\
+u + v &= 11
+\end{align*}
+Adding the equations: $2u = 18 \implies u = 9$.
+Subtracting the equations: $2v = 4 \implies v = 2$.
+Now substitute back to find $x$ and $y$:
+\[ 3^{x/2} = 9 = 3^2 \implies \frac{x}{2} = 2 \implies x = 4. \]
+\[ 2^{y^2/2} = 2 = 2^1 \implies \frac{y^2}{2} = 1 \implies y^2 = 2 \implies y = \pm \sqrt{2}. \]
+The solutions for $(x, y)$ are $(4, \sqrt{2})$ and $(4, -\sqrt{2})$.
+Thus, there are two real solutions.
+
+\subsection*{Answer}
+The system has two real solutions, which corresponds to option \textbf{B}.
+
+\end{document}

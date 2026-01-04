@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the total number of real solutions of the system of equations:
+\[\sqrt{x-1} + \sqrt[3]{y} = 1, \quad x - y = 2\]
+
+\subsection*{Solution}
+From the second equation: $x = y + 2$.
+
+Substituting into the first equation:
+\[\sqrt{y + 2 - 1} + \sqrt[3]{y} = 1\]
+\[\sqrt{y + 1} + \sqrt[3]{y} = 1\]
+
+For this equation to be valid, we need $y + 1 \geq 0$, i.e., $y \geq -1$.
+
+Let $f(y) = \sqrt{y+1} + \sqrt[3]{y}$.
+
+At $y = -1$: $f(-1) = 0 + \sqrt[3]{-1} = -1 < 1$
+
+At $y = 0$: $f(0) = 1 + 0 = 1$ ✓
+
+So $y = 0$ is a solution, giving $x = 2$.
+
+Let's check if there are other solutions by analyzing $f(y)$:
+
+For $y > 0$: $f(y) = \sqrt{y+1} + \sqrt[3]{y} > 1 + 0 = 1$, so $f(y) > 1$.
+
+For $-1 \leq y < 0$: 
+- $\sqrt{y+1}$ ranges from $0$ to $1$
+- $\sqrt[3]{y}$ is negative
+
+At $y = -1$: $f(-1) = 0 + (-1) = -1$
+At $y = 0$: $f(0) = 1 + 0 = 1$
+
+$f(y)$ is continuous and strictly increasing on $[-1, 0]$ (both terms are increasing).
+
+$f'(y) = \frac{1}{2\sqrt{y+1}} + \frac{1}{3y^{2/3}} > 0$ for $y \in (-1, 0)$
+
+Since $f$ is strictly increasing from $-1$ to $1$ on $[-1, 0]$, there is exactly one value where $f(y) = 1$, which is $y = 0$.
+
+Therefore, there is exactly \textbf{1} solution: $(x, y) = (2, 0)$.
+
+\subsection*{Verification}
+For $(x, y) = (2, 0)$:
+\[\sqrt{2-1} + \sqrt[3]{0} = 1 + 0 = 1 \checkmark\]
+\[2 - 0 = 2 \checkmark\]
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}

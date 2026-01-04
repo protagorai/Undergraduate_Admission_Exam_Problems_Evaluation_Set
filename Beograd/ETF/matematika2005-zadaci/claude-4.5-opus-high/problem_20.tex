@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the maximum area of a rectangle inscribed in the parabolic segment bounded by $y = 1 - x^2$ and the line $y = 0$, where one side of the rectangle lies on the $x$-axis.
+
+\subsection*{Solution}
+The parabola $y = 1 - x^2$ intersects the $x$-axis at $x = \pm 1$.
+
+Let the rectangle have vertices at $(\pm a, 0)$ and $(\pm a, 1 - a^2)$ where $0 < a < 1$.
+
+The width of the rectangle is $2a$ and the height is $1 - a^2$.
+
+Area:
+\[
+A(a) = 2a(1 - a^2) = 2a - 2a^3
+\]
+
+To maximize, take the derivative and set it to zero:
+\[
+A'(a) = 2 - 6a^2 = 0
+\]
+\[
+a^2 = \frac{1}{3}
+\]
+\[
+a = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}
+\]
+
+The maximum area is:
+\[
+A = 2 \cdot \frac{1}{\sqrt{3}} \left(1 - \frac{1}{3}\right) = \frac{2}{\sqrt{3}} \cdot \frac{2}{3} = \frac{4}{3\sqrt{3}} = \frac{4\sqrt{3}}{9}
+\]
+
+\subsection*{Answer}
+$\frac{4\sqrt{3}}{9}$ (option \textbf{B}).
+
+\end{document}

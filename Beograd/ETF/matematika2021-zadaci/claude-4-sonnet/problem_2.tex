@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Which of the following inequalities are correct?
+\begin{align}
+\text{(i)} \quad &\sqrt{3} < \sqrt{2} \\
+\text{(ii)} \quad &\sqrt[4]{3} + \sqrt{3} < \sqrt{2} + \sqrt{2} \\
+\text{(iii)} \quad &3\sqrt{5} < 5\sqrt{3} \\
+\text{(iv)} \quad &\sqrt{12} + 3\sqrt{75} < 2\sqrt{48} + 5\sqrt{3} \\
+\text{(v)} \quad &\sqrt{9} + 4\sqrt{5} < \sqrt{19} - 8\sqrt{3}
+\end{align}
+
+\subsection*{Solution}
+Let's check each inequality:
+
+\textbf{(i)} $\sqrt{3} < \sqrt{2}$: Since $3 > 2$, we have $\sqrt{3} > \sqrt{2}$. This is \textbf{false}.
+
+\textbf{(ii)} $\sqrt[4]{3} + \sqrt{3} < \sqrt{2} + \sqrt{2}$: 
+$\sqrt[4]{3} \approx 1.316$, $\sqrt{3} \approx 1.732$, so LHS $\approx 3.048$
+$\sqrt{2} + \sqrt{2} = 2\sqrt{2} \approx 2.828$
+Since $3.048 > 2.828$, this is \textbf{false}.
+
+\textbf{(iii)} $3\sqrt{5} < 5\sqrt{3}$:
+Squaring both sides: $(3\sqrt{5})^2 = 45$ and $(5\sqrt{3})^2 = 75$
+Since $45 < 75$, we have $3\sqrt{5} < 5\sqrt{3}$. This is \textbf{true}.
+
+\textbf{(iv)} $\sqrt{12} + 3\sqrt{75} < 2\sqrt{48} + 5\sqrt{3}$:
+$\sqrt{12} = 2\sqrt{3}$, $3\sqrt{75} = 3 \cdot 5\sqrt{3} = 15\sqrt{3}$
+$2\sqrt{48} = 2 \cdot 4\sqrt{3} = 8\sqrt{3}$
+LHS: $2\sqrt{3} + 15\sqrt{3} = 17\sqrt{3}$
+RHS: $8\sqrt{3} + 5\sqrt{3} = 13\sqrt{3}$
+Since $17\sqrt{3} > 13\sqrt{3}$, this is \textbf{false}.
+
+\textbf{(v)} $\sqrt{9} + 4\sqrt{5} < \sqrt{19} - 8\sqrt{3}$:
+$\sqrt{9} = 3$, so LHS $= 3 + 4\sqrt{5} \approx 3 + 8.944 = 11.944$
+RHS $= \sqrt{19} - 8\sqrt{3} \approx 4.359 - 13.856 = -9.497$
+Since $11.944 > -9.497$, this is \textbf{false}.
+
+Only inequality (iii) is correct.
+
+\subsection*{Answer}
+Only (iii) (option \textbf{A}).
+
+\end{document}

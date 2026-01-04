@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Broj realnih rešenja sistema jednačina
+\[
+\log_{|x-y|}\frac{xy}{2}=2,\qquad x+y=xy+1
+\]
+je:
+\[
+\text{(A) }1\quad \text{(B) }2\quad \text{(C) }4\quad \text{(D) }3\quad \text{(E) }0\quad \text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Iz $\log_{|x-y|}\dfrac{xy}{2}=2$ sledi (uz uslove $|x-y|>0$, $|x-y|\neq 1$ i $xy>0$):
+\[
+\frac{xy}{2}=|x-y|^2=(x-y)^2 \quad\Rightarrow\quad xy=2(x-y)^2.
+\]
+Druga jednačina daje
+\[
+x+y=xy+1 \;\Longleftrightarrow\; xy-x-y+1=0 \;\Longleftrightarrow\; (x-1)(y-1)=0.
+\]
+Dakle, $x=1$ ili $y=1$.
+
+\medskip\noindent
+\textbf{1) $x=1$.} Tada $xy=y$ i
+\[
+y=2(1-y)^2=2(1-2y+y^2)\Rightarrow 2y^2-5y+2=0.
+\]
+Rešenja su $y=\dfrac{5\pm 3}{4}$, tj. $y=2$ ili $y=\dfrac12$.
+Za $y=2$ je $|x-y|=|1-2|=1$ (nedozvoljeno). Za $y=\dfrac12$ je $|x-y|=\dfrac12$ (dozvoljeno).
+Dakle, $(1,\tfrac12)$ je rešenje.
+
+\medskip\noindent
+\textbf{2) $y=1$.} Simetrično dobijamo $x=2$ ili $x=\dfrac12$, a $x=2$ otpada jer daje $|x-y|=1$. Ostaje $(\tfrac12,1)$.
+
+Ukupno su $2$ realna rešenja.
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}
+

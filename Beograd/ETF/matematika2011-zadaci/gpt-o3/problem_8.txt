@@ -1,0 +1,7 @@
+Problem 8
+
+Neka su u proizvoljnom trouglu \alpha, \beta, \gamma uglovi, a, b i c dužine stranica naspram datih uglova i R poluprečnik opisanog kruga, tada je izraz
+3 - \cos^2 \alpha - \cos^2 \beta - \cos^2 \gamma
+jednak:
+
+(A) R^2    (B) 2R^2    (C) 3R^2    (D) 4R^2    (E) 5R^2    (N) Ne znam

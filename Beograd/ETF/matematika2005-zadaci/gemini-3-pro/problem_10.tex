@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 10}
+U proizvoljnom trouglu čije su stranice $a, b$ i $c$ i odgovarajući uglovi $\alpha$ i $\beta$ količnik $\frac{\sin(\alpha - \beta)}{\sin(\alpha + \beta)}$ jednak je:
+(A) $\frac{(a-b)^2}{c^2}$ (B) $\frac{c^2}{a^2-b^2}$ (C) $\frac{a^2-b^2}{c^2}$ (D) $\frac{c^2}{(a-b)^2}$ (E) $\frac{(a-b)^2}{(a+b)^2}$ (N) Ne znam
+
+\subsection*{Rešenje}
+Iz sinusne teoreme imamo $a = 2R \sin \alpha$, $b = 2R \sin \beta$, $c = 2R \sin \gamma$.
+U trouglu važi $\alpha + \beta + \gamma = 180^\circ$, pa je $\sin(\alpha + \beta) = \sin(180^\circ - \gamma) = \sin \gamma$.
+Dakle, imenilac je $\sin \gamma = \frac{c}{2R}$.
+
+Brojilac razvijamo koristeći adicionu formulu:
+\[
+\sin(\alpha - \beta) = \sin \alpha \cos \beta - \cos \alpha \sin \beta
+\]
+Koristimo kosinusnu teoremu za $\cos \alpha$ i $\cos \beta$:
+\[
+\cos \alpha = \frac{b^2 + c^2 - a^2}{2bc}, \quad \cos \beta = \frac{a^2 + c^2 - b^2}{2ac}
+\]
+Zamenom u izraz za brojilac (uz $\sin \alpha = \frac{a}{2R}, \sin \beta = \frac{b}{2R}$):
+\[
+\frac{a}{2R} \cdot \frac{a^2 + c^2 - b^2}{2ac} - \frac{b^2 + c^2 - a^2}{2bc} \cdot \frac{b}{2R}
+\]
+\[
+= \frac{1}{4Rc} (a^2 + c^2 - b^2) - \frac{1}{4Rc} (b^2 + c^2 - a^2)
+\]
+\[
+= \frac{1}{4Rc} (a^2 + c^2 - b^2 - b^2 - c^2 + a^2)
+\]
+\[
+= \frac{1}{4Rc} (2a^2 - 2b^2) = \frac{2(a^2 - b^2)}{4Rc} = \frac{a^2 - b^2}{2Rc}
+\]
+Konačno, traženi količnik je:
+\[
+\frac{\sin(\alpha - \beta)}{\sin(\alpha + \beta)} = \frac{\frac{a^2 - b^2}{2Rc}}{\frac{c}{2R}} = \frac{a^2 - b^2}{2Rc} \cdot \frac{2R}{c} = \frac{a^2 - b^2}{c^2}
+\]
+
+\subsection*{Odgovor}
+$\frac{a^2-b^2}{c^2}$ (opcija \textbf{C}).
+
+\end{document}

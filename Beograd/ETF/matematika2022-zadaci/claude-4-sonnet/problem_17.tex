@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako je odnos binomnih koeficijenata četvrtog i trećeg člana u razvoju binoma $\left(\sqrt[4]{5} - \sqrt[4]{3}\right)^n$ $(n \in \mathbb{N}, n \geq 3)$ jednak 10, onda je broj racionalnih članova u ovom razvoju jednak:
+
+\subsection*{Solution}
+U razvoju binoma $(a + b)^n$, četvrti član je $\binom{n}{3}a^{n-3}b^3$, a treći član je $\binom{n}{2}a^{n-2}b^2$.
+
+Odnos binomnih koeficijenata:
+\[
+\frac{\binom{n}{3}}{\binom{n}{2}} = 10
+\]
+
+\[
+\frac{\frac{n!}{3!(n-3)!}}{\frac{n!}{2!(n-2)!}} = \frac{2!(n-2)!}{3!(n-3)!} = \frac{2 \cdot (n-2)!}{6 \cdot (n-3)!} = \frac{n-2}{3} = 10
+\]
+
+Dakle:
+\[
+n - 2 = 30 \Rightarrow n = 32
+\]
+
+Sada tražimo racionalne članove u razvoju $\left(\sqrt[4]{5} - \sqrt[4]{3}\right)^{32}$.
+
+Opšti član je:
+\[
+T_{k+1} = \binom{32}{k} (\sqrt[4]{5})^{32-k} (-\sqrt[4]{3})^k = \binom{32}{k} (-1)^k 5^{\frac{32-k}{4}} 3^{\frac{k}{4}}
+\]
+
+Da bi član bio racionalan, potrebno je da budu $\frac{32-k}{4}$ i $\frac{k}{4}$ celi brojevi.
+
+To znači da $k$ i $32-k$ moraju biti deljivi sa 4.
+
+Pošto je $32-k \equiv -k \pmod{4}$, potrebno je $k \equiv 0 \pmod{4}$.
+
+Za $k = 0, 4, 8, 12, 16, 20, 24, 28, 32$, imamo 9 vrednosti.
+
+\subsection*{Answer}
+Više od 4 (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+If $N$ is the number of six-digit numbers that contain exactly one digit 1 in their decimal representation, then $N$ belongs to the interval:
+
+\subsection*{Solution}
+We need to count six-digit numbers that contain exactly one digit 1.
+
+A six-digit number has the form $d_1d_2d_3d_4d_5d_6$ where $d_1 \in \{1,2,3,4,5,6,7,8,9\}$ (first digit cannot be 0) and $d_i \in \{0,1,2,3,4,5,6,7,8,9\}$ for $i = 2,3,4,5,6$.
+
+We consider two cases:
+
+\textbf{Case 1:} The digit 1 is in the first position.
+Then $d_1 = 1$ and each of $d_2, d_3, d_4, d_5, d_6$ must be chosen from $\{0,2,3,4,5,6,7,8,9\}$ (9 choices each).
+Number of such numbers: $1 \times 9^5 = 9^5 = 59049$
+
+\textbf{Case 2:} The digit 1 is not in the first position.
+Then $d_1 \in \{2,3,4,5,6,7,8,9\}$ (8 choices), exactly one of $d_2, d_3, d_4, d_5, d_6$ equals 1, and the remaining four digits are chosen from $\{0,2,3,4,5,6,7,8,9\}$ (9 choices each).
+
+We have 5 positions to place the digit 1 (positions 2, 3, 4, 5, or 6).
+Number of such numbers: $8 \times 5 \times 9^4 = 8 \times 5 \times 6561 = 40 \times 6561 = 262440$
+
+Total: $N = 59049 + 262440 = 321489$
+
+Let's check which interval this belongs to:
+- $[10^5, 2 \times 10^5) = [100000, 200000)$: No
+- $[2 \times 10^5, 3 \times 10^5) = [200000, 300000)$: No  
+- $[3 \times 10^5, 4 \times 10^5) = [300000, 400000)$: Yes
+- $[4 \times 10^5, 5 \times 10^5) = [400000, 500000)$: No
+- $[5 \times 10^5, 6 \times 10^5) = [500000, 600000)$: No
+
+Since $321489 \in [300000, 400000) = [3 \times 10^5, 4 \times 10^5)$, the answer corresponds to option (C).
+
+\subsection*{Answer}
+$[3 \times 10^5, 4 \times 10^5)$ (option \textbf{C}).
+
+\end{document}

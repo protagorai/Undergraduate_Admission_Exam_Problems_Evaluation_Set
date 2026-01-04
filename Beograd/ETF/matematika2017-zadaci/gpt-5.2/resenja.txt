@@ -1,0 +1,21 @@
+1) (C)  \sqrt[3]{-89}\in(-5,-4)
+2) (A)  P=\sqrt[3]{36\pi V^2}
+3) (A)  \sqrt[4]{x}+\frac{1}{\sqrt[4]{x}}=\sqrt{2+\sqrt{5}}
+4) (D)  |w|=\sqrt{2}
+5) (B)  P(-2)=24
+6) (B)  f'(1/2)=5+3\pi
+7) (B)  \lim=0
+8) (A)  A=-3994
+9) (C)  31
+10) (B)  \cos\angle BAC+\cos\angle ACB=\frac{2}{\sqrt{7}}
+11) (D)  S_{160}=5(-21\alpha+53\beta)
+12) (C)  4 rešenja
+13) (C)  \theta=\arctg\frac{2}{3}
+14) (B)  [1,2)\cup(2,+\infty)
+15) (C)  1 rešenje: (x,y)=(6,16)
+16) (A)  zbir rešenja = -1 \in [-3,0)
+17) (D)  4
+18) (A)  V_{\max}=\frac{\sqrt{3}\,S^3}{216}
+19) (B)  (-\infty,\tfrac13)\cup\{\tfrac58,1\}\cup(\tfrac32,+\infty)
+20) (A)  2592
+

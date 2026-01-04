@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 15}
+Poluprečnik kruga koji sadrži tačke $(-2, 0)$ i $(1, -3)$ a centar mu pripada pravoj $x + y = 0$, jeste:
+\begin{itemize}
+    \item[A)] $\sqrt{13}$
+    \item[B)] $\frac{\sqrt{13}}{2}$
+    \item[C)] $\sqrt{\frac{13}{2}}$
+    \item[D)] $\frac{13}{2}$
+    \item[E)] $\sqrt{\frac{13}{6}}$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Let the center of the circle be $C(p, q)$. Since the center lies on the line $x+y=0$, we have $q = -p$. So $C(p, -p)$.
+The distance from the center to the given points must be equal (the radius $R$).
+Points: $A(-2, 0)$ and $B(1, -3)$.
+\[ CA^2 = CB^2 \]
+\[ (p - (-2))^2 + (-p - 0)^2 = (p - 1)^2 + (-p - (-3))^2 \]
+\[ (p+2)^2 + p^2 = (p-1)^2 + (3-p)^2 \]
+Expand the terms:
+\[ p^2 + 4p + 4 + p^2 = p^2 - 2p + 1 + 9 - 6p + p^2 \]
+\[ 2p^2 + 4p + 4 = 2p^2 - 8p + 10 \]
+Subtract $2p^2$ from both sides:
+\[ 4p + 4 = -8p + 10 \]
+\[ 12p = 6 \implies p = \frac{1}{2}. \]
+The center is $(1/2, -1/2)$.
+Now calculate $R^2$:
+\[ R^2 = \left(\frac{1}{2} + 2\right)^2 + \left(-\frac{1}{2}\right)^2 = \left(\frac{5}{2}\right)^2 + \frac{1}{4} = \frac{25}{4} + \frac{1}{4} = \frac{26}{4} = \frac{13}{2}. \]
+The radius is:
+\[ R = \sqrt{\frac{13}{2}}. \]
+
+\subsection*{Answer}
+The radius is $\sqrt{\frac{13}{2}}$, which corresponds to option \textbf{C}.
+
+\end{document}

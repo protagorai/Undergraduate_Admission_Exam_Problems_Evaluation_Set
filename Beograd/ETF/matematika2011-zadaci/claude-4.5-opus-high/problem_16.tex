@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+In the binomial expansion of $(x+y)^n$ where $x, y \in \mathbf{R}$, $n \in \mathbf{N}$, the second term equals 240, the third term equals 720, and the fourth term equals 1080. Find the sum $x + y + n$.
+
+\subsection*{Solution}
+The general term in the expansion of $(x+y)^n$ is:
+\[
+T_{k+1} = \binom{n}{k} x^{n-k} y^k
+\]
+
+So:
+\begin{align*}
+T_2 &= \binom{n}{1} x^{n-1} y = nx^{n-1}y = 240 \\
+T_3 &= \binom{n}{2} x^{n-2} y^2 = \frac{n(n-1)}{2} x^{n-2} y^2 = 720 \\
+T_4 &= \binom{n}{3} x^{n-3} y^3 = \frac{n(n-1)(n-2)}{6} x^{n-3} y^3 = 1080
+\end{align*}
+
+Let's find ratios:
+\[
+\frac{T_3}{T_2} = \frac{\frac{n(n-1)}{2} x^{n-2} y^2}{n x^{n-1} y} = \frac{(n-1)y}{2x} = \frac{720}{240} = 3
+\]
+
+So $(n-1)y = 6x$.
+
+\[
+\frac{T_4}{T_3} = \frac{\frac{n(n-1)(n-2)}{6} x^{n-3} y^3}{\frac{n(n-1)}{2} x^{n-2} y^2} = \frac{(n-2)y}{3x} = \frac{1080}{720} = \frac{3}{2}
+\]
+
+So $(n-2)y = \frac{9x}{2}$.
+
+From the two equations:
+\begin{align*}
+(n-1)y &= 6x \\
+(n-2)y &= \frac{9x}{2}
+\end{align*}
+
+Dividing:
+\[
+\frac{(n-1)y}{(n-2)y} = \frac{6x}{\frac{9x}{2}} = \frac{6 \cdot 2}{9} = \frac{4}{3}
+\]
+\[
+\frac{n-1}{n-2} = \frac{4}{3}
+\]
+\[
+3(n-1) = 4(n-2)
+\]
+\[
+3n - 3 = 4n - 8
+\]
+\[
+n = 5
+\]
+
+From $(n-1)y = 6x$: $4y = 6x \Rightarrow y = \frac{3x}{2}$
+
+Now use $T_2 = 240$:
+\[
+nx^{n-1}y = 5x^4 \cdot \frac{3x}{2} = \frac{15x^5}{2} = 240
+\]
+\[
+x^5 = 32 \Rightarrow x = 2
+\]
+
+Then $y = \frac{3 \cdot 2}{2} = 3$.
+
+Therefore: $x + y + n = 2 + 3 + 5 = 10$.
+
+\subsection*{Answer}
+\textbf{(C)} 10
+
+\end{document}

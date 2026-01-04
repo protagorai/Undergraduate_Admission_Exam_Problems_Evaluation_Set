@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+The set of solutions of the inequality $\log_{\sin x} \cos x + \log_{\cos x} \sin x > 2$ on the segment $[0, 2\pi]$ is the union (for some real numbers $a, b, c, d$ such that $0 \leq a < b < c < d \leq 2\pi$):
+
+\subsection*{Solution}
+First, let's determine the domain. We need:
+\begin{align}
+\sin x > 0, \sin x \neq 1\\
+\cos x > 0, \cos x \neq 1\\
+\cos x > 0 \text{ (for } \log_{\sin x} \cos x \text{ to be defined)}\\
+\sin x > 0 \text{ (for } \log_{\cos x} \sin x \text{ to be defined)}
+\end{align}
+
+This gives us the first quadrant where both $\sin x > 0$ and $\cos x > 0$, excluding points where $\sin x = 1$ or $\cos x = 1$.
+
+On $[0, 2\pi]$, this means $x \in (0, \frac{\pi}{2})$.
+
+Let $u = \log_{\sin x} \cos x$ and $v = \log_{\cos x} \sin x$.
+
+Note that $u \cdot v = \log_{\sin x} \cos x \cdot \log_{\cos x} \sin x = 1$ (by change of base formula).
+
+So we have $u + v > 2$ where $uv = 1$.
+
+Let $s = u + v$. Then $u$ and $v$ are roots of the quadratic equation $t^2 - st + 1 = 0$.
+
+For real roots, we need discriminant $\geq 0$: $s^2 - 4 \geq 0$, so $s \geq 2$ or $s \leq -2$.
+
+Since we want $s > 2$, we need $u + v > 2$.
+
+From $uv = 1$ and $u + v = s > 2$, both $u$ and $v$ are positive (since their product is positive and their sum is positive).
+
+Now, $u = \log_{\sin x} \cos x = \frac{\ln \cos x}{\ln \sin x}$ and $v = \frac{\ln \sin x}{\ln \cos x}$.
+
+For $x \in (0, \frac{\pi}{2})$, we have $0 < \sin x < 1$ and $0 < \cos x < 1$, so $\ln \sin x < 0$ and $\ln \cos x < 0$.
+
+The condition $u + v > 2$ becomes:
+$\frac{\ln \cos x}{\ln \sin x} + \frac{\ln \sin x}{\ln \cos x} > 2$
+
+Let $a = \ln \sin x < 0$ and $b = \ln \cos x < 0$. Then:
+$\frac{b}{a} + \frac{a}{b} > 2$
+
+Since $a < 0$ and $b < 0$, both $\frac{b}{a} > 0$ and $\frac{a}{b} > 0$.
+
+$\frac{b}{a} + \frac{a}{b} = \frac{b^2 + a^2}{ab} > 2$
+
+Since $a < 0$ and $b < 0$, we have $ab > 0$, so:
+$b^2 + a^2 > 2ab$
+$(a - b)^2 > 0$
+
+This is always true unless $a = b$, i.e., unless $\ln \sin x = \ln \cos x$, which means $\sin x = \cos x$, i.e., $x = \frac{\pi}{4}$.
+
+But we need strict inequality, so the solution is $(0, \frac{\pi}{4}) \cup (\frac{\pi}{4}, \frac{\pi}{2})$.
+
+However, looking at the answer choices, this would be written as $(a,b) \cup (c,d)$ where $a = 0$, $b = \frac{\pi}{4}$, $c = \frac{\pi}{4}$, $d = \frac{\pi}{2}$.
+
+But the choices suggest intervals that don't include the endpoints of $(0, \frac{\pi}{2})$.
+
+Looking at the options, $(a,b) \cup (c,d)$ suggests two separate intervals.
+
+\subsection*{Answer}
+$(a,b) \cup (c,d)$ (option \textbf{B}).
+
+\end{document}

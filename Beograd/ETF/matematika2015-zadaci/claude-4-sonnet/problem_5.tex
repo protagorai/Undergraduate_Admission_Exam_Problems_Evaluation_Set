@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+If the diagonals of a rhombus satisfy $d_1 = (2-\sqrt{3})d_2$, then the acute angle of the rhombus is:
+
+\subsection*{Solution}
+In a rhombus, the diagonals are perpendicular and bisect each other. Let's denote the side length as $a$ and the acute angle as $\alpha$.
+
+If we place the rhombus with center at origin and diagonals along the coordinate axes, the vertices are at:
+$(\pm \frac{d_1}{2}, 0)$ and $(0, \pm \frac{d_2}{2})$
+
+The side length can be found using the Pythagorean theorem:
+\[a^2 = \left(\frac{d_1}{2}\right)^2 + \left(\frac{d_2}{2}\right)^2 = \frac{d_1^2 + d_2^2}{4}\]
+
+Also, in a rhombus with acute angle $\alpha$, the relationship between diagonals and the angle is:
+\[\tan\left(\frac{\alpha}{2}\right) = \frac{d_1}{d_2}\]
+
+Given that $d_1 = (2-\sqrt{3})d_2$, we have:
+\[\tan\left(\frac{\alpha}{2}\right) = 2-\sqrt{3}\]
+
+We can recognize that $2-\sqrt{3} = \tan(15°)$ because:
+\[\tan(15°) = \tan(45° - 30°) = \frac{\tan(45°) - \tan(30°)}{1 + \tan(45°)\tan(30°)} = \frac{1 - \frac{1}{\sqrt{3}}}{1 + \frac{1}{\sqrt{3}}} = \frac{\sqrt{3} - 1}{\sqrt{3} + 1}\]
+
+Rationalizing:
+\[\frac{\sqrt{3} - 1}{\sqrt{3} + 1} \cdot \frac{\sqrt{3} - 1}{\sqrt{3} - 1} = \frac{(\sqrt{3} - 1)^2}{3 - 1} = \frac{3 - 2\sqrt{3} + 1}{2} = \frac{4 - 2\sqrt{3}}{2} = 2 - \sqrt{3}\]
+
+Therefore, $\frac{\alpha}{2} = 15°$, which means $\alpha = 30°$.
+
+\subsection*{Answer}
+$30°$ (option \textbf{B}).
+
+\end{document}

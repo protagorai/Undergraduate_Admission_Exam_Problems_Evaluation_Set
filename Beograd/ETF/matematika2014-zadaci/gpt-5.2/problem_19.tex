@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Od lista hartije kružnog oblika izrezan je kružni isečak od koga je napravljen konusni levak najveće zapremine.
+Centralni ugao tog kružnog isečka u radijanima je:
+\[
+\text{(A) }\frac{\pi}{3}\quad
+\text{(B) }\frac{2\pi\sqrt6}{3}\quad
+\text{(C) }\frac{2\pi}{3}\quad
+\text{(D) }\frac{2\pi}{\sqrt3}\quad
+\text{(E) }\frac{\pi\sqrt6}{2}.
+\]
+
+\subsection*{Solution}
+Neka je poluprečnik početnog kruga $L$; to je izvodnica kupe (kosina) dobijene savijanjem isečka.
+Ako je centralni ugao isečka $\theta$, onda je dužina luka $L\theta$, a to postaje obim osnove kupe:
+\[
+2\pi r=L\theta \ \Longrightarrow\ r=\frac{L\theta}{2\pi}.
+\]
+Visina kupe je
+\[
+h=\sqrt{L^2-r^2}=L\sqrt{1-\frac{\theta^2}{4\pi^2}}.
+\]
+Zapremina je
+\[
+V=\frac13\pi r^2h
+=\frac13\pi\left(\frac{L^2\theta^2}{4\pi^2}\right)\cdot
+L\sqrt{1-\frac{\theta^2}{4\pi^2}}
+\,=\,\frac{L^3}{12\pi}\,\theta^2\sqrt{1-\frac{\theta^2}{4\pi^2}}.
+\]
+Pošto je $L$ konstanta, maksimizujemo funkciju u promenljivoj $u=\frac{\theta}{2\pi}\in(0,1]$:
+\[
+f(u)=u^2\sqrt{1-u^2}.
+\]
+Maksimizujemo $f(u)^2=u^4(1-u^2)=u^4-u^6$:
+\[
+\frac{d}{du}(u^4-u^6)=4u^3-6u^5=2u^3(2-3u^2).
+\]
+Za maksimum (uz $u>0$) dobijamo $u^2=\frac{2}{3}$, tj.\ $u=\sqrt{\frac{2}{3}}=\frac{\sqrt6}{3}$.
+Zato je
+\[
+\theta=2\pi u=2\pi\cdot\frac{\sqrt6}{3}=\frac{2\pi\sqrt6}{3}.
+\]
+
+\subsection*{Answer}
+$\dfrac{2\pi\sqrt6}{3}$ (option \textbf{B}).
+
+\end{document}
+

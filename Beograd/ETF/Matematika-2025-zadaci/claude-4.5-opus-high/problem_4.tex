@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ako je kompleksan broj $z$ rešenje jednačine $|z| - z + 2\bar{z} + 12i - 2 = 0$, onda je $|z|$ jednako:
+
+\subsection*{Solution}
+Neka je $z = x + iy$, gde su $x, y \in \mathbb{R}$.
+
+Tada:
+\begin{itemize}
+    \item $|z| = \sqrt{x^2 + y^2}$
+    \item $\bar{z} = x - iy$
+\end{itemize}
+
+Zamenjujemo u jednačinu:
+\[
+\sqrt{x^2 + y^2} - (x + iy) + 2(x - iy) + 12i - 2 = 0
+\]
+
+Sređujemo:
+\[
+\sqrt{x^2 + y^2} - x - iy + 2x - 2iy + 12i - 2 = 0
+\]
+\[
+\sqrt{x^2 + y^2} + x - 2 + i(-y - 2y + 12) = 0
+\]
+\[
+\sqrt{x^2 + y^2} + x - 2 + i(12 - 3y) = 0
+\]
+
+Da bi kompleksan broj bio jednak nuli, i realni i imaginarni deo moraju biti nula:
+
+Imaginarni deo:
+\[
+12 - 3y = 0 \Rightarrow y = 4
+\]
+
+Realni deo:
+\[
+\sqrt{x^2 + y^2} + x - 2 = 0
+\]
+\[
+\sqrt{x^2 + 16} = 2 - x
+\]
+
+Da bi ovo imalo smisla, mora biti $2 - x \geq 0$, tj. $x \leq 2$.
+
+Kvadriramo obe strane:
+\[
+x^2 + 16 = (2 - x)^2 = 4 - 4x + x^2
+\]
+\[
+16 = 4 - 4x
+\]
+\[
+12 = -4x
+\]
+\[
+x = -3
+\]
+
+Proveravamo: $x = -3 \leq 2$ ✓
+
+Dakle $z = -3 + 4i$.
+
+Računamo $|z|$:
+\[
+|z| = \sqrt{(-3)^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+\]
+
+\subsection*{Answer}
+$5$ (opcija \textbf{D}).
+
+\end{document}

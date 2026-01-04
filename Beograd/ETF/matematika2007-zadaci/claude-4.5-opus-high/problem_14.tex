@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Ako je $x^2 + 4x + 6$ faktor od $x^4 + ax^2 + b$, tada je $a + b$ jednako:
+
+(A) 12 \quad (B) 24 \quad (C) 32 \quad (D) 36 \quad (E) 40 \quad (N) Ne znam
+
+\subsection*{Solution}
+If $x^2 + 4x + 6$ is a factor of $x^4 + ax^2 + b$, then we can write:
+\[
+x^4 + ax^2 + b = (x^2 + 4x + 6)(x^2 + cx + d)
+\]
+
+for some constants $c$ and $d$.
+
+Expanding the right side:
+\begin{align*}
+(x^2 + 4x + 6)(x^2 + cx + d) &= x^4 + cx^3 + dx^2 + 4x^3 + 4cx^2 + 4dx + 6x^2 + 6cx + 6d \\
+&= x^4 + (c+4)x^3 + (d + 4c + 6)x^2 + (4d + 6c)x + 6d
+\end{align*}
+
+Comparing coefficients with $x^4 + 0 \cdot x^3 + ax^2 + 0 \cdot x + b$:
+
+\begin{itemize}
+\item $x^3$: $c + 4 = 0 \Rightarrow c = -4$
+\item $x^1$: $4d + 6c = 0 \Rightarrow 4d + 6(-4) = 0 \Rightarrow 4d = 24 \Rightarrow d = 6$
+\item $x^2$: $a = d + 4c + 6 = 6 + 4(-4) + 6 = 6 - 16 + 6 = -4$
+\item $x^0$: $b = 6d = 6 \cdot 6 = 36$
+\end{itemize}
+
+Therefore:
+\[
+a + b = -4 + 36 = 32
+\]
+
+\subsection*{Answer}
+$32$ (option \textbf{C}).
+
+\end{document}

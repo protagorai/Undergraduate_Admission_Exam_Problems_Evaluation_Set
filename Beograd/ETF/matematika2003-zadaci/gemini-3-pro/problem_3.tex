@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 3}
+Vrednost izraza $\left(\frac{x-9}{x+3\sqrt{x}+9} : \frac{x^{0.5}+3}{x^{1.5}-27}\right)^{0.5} - x^{0.5}$, za $x \in (9, +\infty)$, je:
+
+A) $x$; B) $3-2\sqrt{x}$; C) $-3$; D) $\frac{3}{27}$; E) $\sqrt{x}$; N) Ne znam.
+
+\subsection*{Solution}
+Uvedimo smenu $t = \sqrt{x} = x^{0.5}$. Tada je $x = t^2$, $x^{1.5} = t^3$.
+Uslov $x \in (9, +\infty)$ znači $t > 3$.
+Izraz postaje:
+\[ I = \left(\frac{t^2-9}{t^2+3t+9} : \frac{t+3}{t^3-27}\right)^{0.5} - t \]
+Razložimo polinome:
+$t^2-9 = (t-3)(t+3)$
+$t^3-27 = (t-3)(t^2+3t+9)$
+Zamenimo u izraz:
+\[ \frac{t^2-9}{t^2+3t+9} : \frac{t+3}{t^3-27} = \frac{(t-3)(t+3)}{t^2+3t+9} \cdot \frac{(t-3)(t^2+3t+9)}{t+3} \]
+Skraćivanjem dobijamo:
+\[ (t-3)(t-3) = (t-3)^2 \]
+Sada izraz postaje:
+\[ I = ((t-3)^2)^{0.5} - t = |t-3| - t \]
+Pošto je $t > 3$, važi $t-3 > 0$, pa je $|t-3| = t-3$.
+\[ I = t - 3 - t = -3 \]
+
+\subsection*{Answer}
+$-3$ (option \textbf{C}).
+\end{document}

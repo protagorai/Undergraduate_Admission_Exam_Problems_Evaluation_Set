@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+A right regular quadrilateral prism (square base) is cut by a plane that contains a base edge. If the area of the cross-section is twice the area of the base, find the angle between this plane and the base plane.
+
+Options: (A) $15^\circ$ \quad (B) $30^\circ$ \quad (C) $45^\circ$ \quad (D) $60^\circ$ \quad (E) $75^\circ$.
+
+\subsection*{Solution}
+Let the square base have side length $a$ and lie in the plane $z=0$ with an edge along the $x$-axis.
+Any plane containing that edge can be written as
+\[
+z=ky,
+\]
+for some $k>0$ (it contains all points with $y=0$, in particular the base edge).
+
+Assume the plane intersects the opposite lateral face at $y=a$ (this is the intended configuration; otherwise the given ratio would depend on the prism height).
+Then, for a fixed $x$, the segment of the cross-section goes from $(x,0,0)$ to $(x,a,ka)$, so its length is
+\[
+\sqrt{a^2+(ka)^2}=a\sqrt{1+k^2}.
+\]
+The cross-section is a parallelogram with the other side equal to the base edge length $a$, hence its area is
+\[
+S_{\text{sec}}=a\cdot a\sqrt{1+k^2}=a^2\sqrt{1+k^2}.
+\]
+The base area is $S_{\text{base}}=a^2$, and $S_{\text{sec}}=2S_{\text{base}}$ gives
+\[
+a^2\sqrt{1+k^2}=2a^2 \ \Rightarrow\ \sqrt{1+k^2}=2 \ \Rightarrow\ k^2=3.
+\]
+The angle $\theta$ between the planes equals the angle between their normals.
+For $z=ky$ a normal vector is $(0,-k,1)$, while for $z=0$ it is $(0,0,1)$, so
+\[
+\cos\theta=\frac{|(0,-k,1)\cdot(0,0,1)|}{\sqrt{k^2+1}}=\frac{1}{\sqrt{k^2+1}}=\frac12,
+\]
+thus $\theta=60^\circ$.
+
+\subsection*{Answer}
+$60^\circ$ (option \textbf{D}).
+
+\end{document}
+

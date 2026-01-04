@@ -1,0 +1,2 @@
+3. Ako je log_a b = 6, za a,b ∈ (0,1) ∪ (1,+∞), onda je log_b(a^2 b) + log_{√a}(a / √{b^8}) jednako:
+(A) -\frac{2}{3}   (B) 1   (C) 11   (D) \frac{2}{3}   (E) \frac{29}{9}   (N) Ne znam

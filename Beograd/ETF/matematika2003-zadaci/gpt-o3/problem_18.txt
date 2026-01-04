@@ -1,0 +1,2 @@
+18. Zbir 1 + 11 + 111 + \dots + (\underbrace{11\dots1}_{n \text{ cifara}}) je jednak:
+A) \tfrac{1}{11}(10^{n+1} - 10 - 9n);   B) \tfrac{1}{9}(10^n - 9n + 8);   C) \tfrac{1}{11}(10^{n+1} - 19n);   D) \tfrac{1}{9}(10^{2n} - 40n - 50);   E) \tfrac{1}{11}(11^n - n + 1);   N) Ne znam.

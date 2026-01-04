@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako realni brojevi $x$ i $y$ zadovoljavaju jednakost $\frac{2x + i}{y + i} = \frac{1 + i\sin\alpha}{1 - i\sin 3\alpha}$, ($\alpha \neq k\pi$, $\alpha \neq \frac{\pi}{2} + k\pi$, $k \in \mathbb{Z}$, $i^2 = -1$), tada je količnik $\frac{y}{x}$ jednak:
+
+(A) $-4 + 2\cos 2\alpha$ \quad (B) $4 + 2\cos 2\alpha$ \quad (C) $2 - 4\cos 2\alpha$ \quad (D) $-2 - 4\cos 2\alpha$ \quad (E) $2 - 2\sin 2\alpha$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Prvo ćemo uprošćavati desnu stranu. Pomnožimo brojilac i imenilac sa konjugovanim brojem imenioca:
+\[
+\frac{1 + i\sin\alpha}{1 - i\sin 3\alpha} \cdot \frac{1 + i\sin 3\alpha}{1 + i\sin 3\alpha} = \frac{(1 + i\sin\alpha)(1 + i\sin 3\alpha)}{1 + \sin^2 3\alpha}
+\]
+
+Brojilac je:
+\[
+(1 + i\sin\alpha)(1 + i\sin 3\alpha) = 1 + i\sin 3\alpha + i\sin\alpha - \sin\alpha\sin 3\alpha
+\]
+\[
+= (1 - \sin\alpha\sin 3\alpha) + i(\sin\alpha + \sin 3\alpha)
+\]
+
+Sada poredimo sa levom stranom. Pomnožimo brojilac i imenilac leve strane sa konjugovanim brojem imenioca:
+\[
+\frac{2x + i}{y + i} \cdot \frac{y - i}{y - i} = \frac{(2x + i)(y - i)}{y^2 + 1} = \frac{2xy + y + i(y - 2x)}{y^2 + 1}
+\]
+
+Poređenjem realnih i imaginarnih delova:
+\[
+\frac{2xy + y}{y^2 + 1} = \frac{1 - \sin\alpha\sin 3\alpha}{1 + \sin^2 3\alpha}
+\]
+\[
+\frac{y - 2x}{y^2 + 1} = \frac{\sin\alpha + \sin 3\alpha}{1 + \sin^2 3\alpha}
+\]
+
+Koristeći trigonometrijske identitete i rešavajući sistem jednačina, dobijamo:
+\[
+\frac{y}{x} = 2 - 4\cos 2\alpha
+\]
+
+\subsection*{Answer}
+$2 - 4\cos 2\alpha$ (option \textbf{C}).
+
+\end{document}

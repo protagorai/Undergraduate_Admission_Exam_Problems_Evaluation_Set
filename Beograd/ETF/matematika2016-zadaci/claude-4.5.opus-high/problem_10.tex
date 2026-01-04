@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+In an isosceles triangle $ABC$ with $AB = AC = b$ and $\angle BAC = 30°$, find the sum of the heights of the triangle.
+
+\subsection*{Solution}
+Let's place the triangle with $A$ at the origin, and the angle bisector of $\angle BAC$ along the positive y-axis.
+
+Since $\angle BAC = 30°$, each half-angle is $15°$.
+
+The base $BC$ is perpendicular to the angle bisector. Using the isosceles triangle properties:
+\begin{itemize}
+\item Base angles: $\angle ABC = \angle ACB = \frac{180° - 30°}{2} = 75°$
+\item $BC = 2 \cdot b \sin 15°$
+\end{itemize}
+
+The three heights are:
+\begin{enumerate}
+\item $h_a$ - height from $A$ to $BC$: $h_a = b \cos 15°$
+\item $h_b$ - height from $B$ to $AC$: Using area, $\frac{1}{2} \cdot AC \cdot h_b = \frac{1}{2} \cdot AB \cdot AC \cdot \sin 30°$
+
+So $h_b = AB \cdot \sin 30° = b \cdot \frac{1}{2} = \frac{b}{2}$
+\item $h_c$ - height from $C$ to $AB$: By symmetry, $h_c = h_b = \frac{b}{2}$
+\end{enumerate}
+
+Sum of heights:
+\[h_a + h_b + h_c = b \cos 15° + \frac{b}{2} + \frac{b}{2} = b \cos 15° + b = b(1 + \cos 15°)\]
+
+Now, $\cos 15° = \cos(45° - 30°) = \cos 45° \cos 30° + \sin 45° \sin 30°$
+\[= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4}\]
+
+Therefore:
+\[h_a + h_b + h_c = b\left(1 + \frac{\sqrt{6} + \sqrt{2}}{4}\right) = b \cdot \frac{4 + \sqrt{6} + \sqrt{2}}{4} = \frac{b}{4}(4 + \sqrt{2} + \sqrt{6})\]
+
+This matches option (C): $\frac{b}{4}(4 + \sqrt{2} + \sqrt{6})$.
+
+\subsection*{Answer}
+$\dfrac{b}{4}(4 + \sqrt{2} + \sqrt{6})$ (option \textbf{C}).
+
+\end{document}

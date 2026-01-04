@@ -1,0 +1,2 @@
+16. Skup svih realnih rešenja nejednačine √{7 − \log_2 x^2} + \log_2 x^4 > 4 je oblika (za neke a,b,c,d ∈ ℝ, −∞ < a < b < c < d < +∞):
+(A) [a,b]   (B) [a,b] ∪ (c,d]   (C) (−∞,a] ∪ [b,c]   (D) (−∞,a] ∪ (b,c) ∪ (d,+∞)   (E) [a,b] ∪ [c,+∞)   (N) Ne znam

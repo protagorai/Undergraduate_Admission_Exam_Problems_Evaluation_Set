@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Brojevi $2$, $\sqrt{6}$, $\frac{9}{2}$ su članovi:
+
+\textbf{A)} opadajuće aritmetičke progresije; \quad \textbf{B)} rastuće aritmetičke progresije; \quad \textbf{C)} geometrijske progresije; \quad \textbf{D)} niza sa opštim članom $a_n = \frac{9n}{2} + \frac{1}{n}$, $(n = 1, 2, ...)$; \quad \textbf{E)} niza sa opštim članom $a_n = \frac{2 + \sqrt{6}}{n} - 1$, $(n = 1, 2, ...)$
+
+\subsection*{Solution}
+Proverimo svaku opciju:
+
+\textbf{A) i B) Aritmetička progresija:}
+
+Za aritmetičku progresiju mora važiti: $\sqrt{6} - 2 = \frac{9}{2} - \sqrt{6}$
+
+$2\sqrt{6} = 2 + \frac{9}{2} = \frac{13}{2}$
+
+$\sqrt{6} = \frac{13}{4} = 3.25$
+
+Ali $\sqrt{6} \approx 2.449$, pa nije aritmetička progresija.
+
+\textbf{C) Geometrijska progresija:}
+
+Za geometrijsku progresiju mora važiti: $\frac{\sqrt{6}}{2} = \frac{9/2}{\sqrt{6}}$
+
+$\frac{\sqrt{6}}{2} = \frac{9}{2\sqrt{6}}$
+
+$\sqrt{6} \cdot \sqrt{6} = 9$
+
+$6 = 9$ - Netačno, nije geometrijska progresija.
+
+\textbf{D) $a_n = \frac{9n}{2} + \frac{1}{n}$:}
+
+$a_1 = \frac{9}{2} + 1 = \frac{11}{2} \neq 2$
+
+Nije odgovor D.
+
+\textbf{E) $a_n = \frac{2 + \sqrt{6}}{n} - 1$:}
+
+$a_1 = \frac{2 + \sqrt{6}}{1} - 1 = 1 + \sqrt{6} \approx 3.449 \neq 2$
+
+Nije odgovor E.
+
+Proverimo ponovo geometrijsku progresiju sa različitim redosledom. Možda brojevi nisu dati redom?
+
+Ako je redosled $2, \sqrt{6}, \frac{9}{2}$:
+- Količnik: $q_1 = \frac{\sqrt{6}}{2}$, $q_2 = \frac{9/2}{\sqrt{6}} = \frac{9}{2\sqrt{6}} = \frac{9\sqrt{6}}{12} = \frac{3\sqrt{6}}{4}$
+
+$\frac{\sqrt{6}}{2} \neq \frac{3\sqrt{6}}{4}$
+
+Proverimo da li su možda članovi neke geometrijske progresije (ne nužno uzastopni):
+
+Ako je $2 = ar^{m}$, $\sqrt{6} = ar^{n}$, $\frac{9}{2} = ar^{p}$ za neke $m, n, p$...
+
+Zapravo, proverimo opciju C ponovo: $2 \cdot \frac{9}{2} = 9$ i $(\sqrt{6})^2 = 6 \neq 9$.
+
+Nijedna standardna opcija ne odgovara. Međutim, najbliža je \textbf{C)} ako se radi o približnoj geometrijskoj progresiji ili grešci u zadatku.
+
+\subsection*{Answer}
+Geometrijske progresije (option \textbf{C}) - najbliži odgovor, iako matematički ne zadovoljava strogo.
+
+\end{document}

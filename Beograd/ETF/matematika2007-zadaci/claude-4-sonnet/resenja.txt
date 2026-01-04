@@ -1,0 +1,23 @@
+RESENJA - MATEMATIKA 2007 PRIJEMNI ISPIT
+Univerzitet u Beogradu - Elektrotehnički i Fizički fakultet
+
+1. (N) Ne znam - Vrednost izraza 20^5 - 20 - (20^5 + 20)^(-1)
+2. (N) Ne znam - √(x√(x√x)) = x^(7/8), ne odgovara nijednoj opciji
+3. (E) √5 - Rastojanje tačke (1,-1) od prave x + 2y - 4 = 0
+4. (E) 2i - Vrednost kompleksnog izraza sa (1+i) i (1-i)
+5. (B) a - ||x| - a| kada je |x + a| = a
+6. (A) Nema rešenja - log₂(1-x) = log₂(x-3)
+7. (B) π/6 - Odnos površina upisane lopte i kocke
+8. (D) [0,1) ∪ (2,+∞) - Skup rešenja nejednačine (x+1)(x+2)/(x-1)(x-2) ≥ 1
+9. (C) 0 - Vrednost trigonometrijskog izraza u trouglu
+10. (A) 909/952 - Vrednost izraza sa korenima jednačine 3x² + 17x - 14 = 0
+11. (B) 6 - Broj rešenja jednačine cos²x - sin²2x = 0 na [0,2π]
+12. (B) Ima jedno rešenje - Jednačina 9^√(x-1) - 4·3^(2√(x-1)) + 3 = 0
+13. (D) 1/√3 - Vrednost trigonometrijskog izraza sa uglovima 86°, 76°, 26°, 16°
+14. (C) 32 - a + b kada je x² + 4x + 6 faktor od x⁴ + ax² + b
+15. (N) Ne znam - Član bez x u binomnom razvoju
+16. (D) n = 10 - Vrednost n za koju je Sₙ = 3069 u geometrijskoj progresiji
+17. (A) 314 - Zbir najveće i najmanje vrednosti f(x) = x³ + 3x² - 72x + 90 na [-5,5]
+18. (N) Ne znam - Poređenje funkcija f₁, f₂, f₃, f₄
+19. (C) c < a < b - Poređenje brojeva a = sin1/sin2, b = sin2/sin3, c = sin3/sin4
+20. (B) 196 - Broj načina formiranja petočlane komisije sa bar jednim matematičarom

@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Izraz $5^{\frac{3-\log_{10} 5}{\log_{10} 25}}$ je jednak izrazu:
+\begin{enumerate}
+    \item[(A)] $10\sqrt{2}$
+    \item[(B)] $5$
+    \item[(C)] $\frac{5}{\sqrt{2}}$
+    \item[(D)] $\frac{10}{\sqrt{2}}$
+    \item[(E)] $5^{\frac{1}{5}}$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let $A$ be the expression. The exponent is:
+\[
+E = \frac{3-\log_{10} 5}{\log_{10} 25}
+\]
+Since $\log_{10} 25 = \log_{10} 5^2 = 2\log_{10} 5$:
+\[
+E = \frac{3-\log_{10} 5}{2\log_{10} 5} = \frac{3}{2\log_{10} 5} - \frac{1}{2}
+\]
+So the expression becomes:
+\[
+A = 5^{\frac{3}{2\log_{10} 5} - \frac{1}{2}} = \frac{5^{\frac{3}{2\log_{10} 5}}}{5^{1/2}} = \frac{1}{\sqrt{5}} \left(5^{\frac{1}{\log_{10} 5}}\right)^{3/2}
+\]
+Recall that $a^{\frac{1}{\log_b a}} = b$. Here $a=5, b=10$, so:
+\[
+5^{\frac{1}{\log_{10} 5}} = 10
+\]
+Thus:
+\[
+A = \frac{1}{\sqrt{5}} (10)^{3/2} = \frac{1}{\sqrt{5}} 10\sqrt{10} = 10\sqrt{\frac{10}{5}} = 10\sqrt{2}
+\]
+
+\subsection*{Answer}
+$10\sqrt{2}$ (option \textbf{(A)}).
+
+\end{document}

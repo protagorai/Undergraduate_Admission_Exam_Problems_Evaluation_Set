@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Bočne strane trostrane piramide su pravougli trouglovi sa temenom pravog ugla u vrhu piramide. Površine tih bočnih strana su 6 cm², 8 cm² i 12 cm². Zapremina piramide je:
+
+(A) 6 cm³ \quad (B) $8\sqrt{2}$ cm³ \quad (C) 8 cm³ \quad (D) $6\sqrt{2}$ cm³ \quad (E) 12 cm³ \quad (N) Ne znam
+
+\subsection*{Solution}
+Neka je vrh piramide u koordinatnom početku $O(0,0,0)$, a neka su ostala tri temena $A$, $B$ i $C$.
+
+Pošto su bočne strane pravougli trouglovi sa pravim uglom u vrhu piramide, vektori $\overrightarrow{OA}$, $\overrightarrow{OB}$ i $\overrightarrow{OC}$ su međusobno ortogonalni.
+
+Postavimo koordinatni sistem tako da je:
+- $A(a, 0, 0)$
+- $B(0, b, 0)$  
+- $C(0, 0, c)$
+
+Površine bočnih strana su:
+- Površina trougla $OAB$: $S_1 = \frac{1}{2}|a||b| = \frac{ab}{2} = 6$ ⟹ $ab = 12$
+- Površina trougla $OBC$: $S_2 = \frac{1}{2}|b||c| = \frac{bc}{2} = 8$ ⟹ $bc = 16$  
+- Površina trougla $OAC$: $S_3 = \frac{1}{2}|a||c| = \frac{ac}{2} = 12$ ⟹ $ac = 24$
+
+Iz sistema jednačina:
+\[
+ab = 12, \quad bc = 16, \quad ac = 24
+\]
+
+Množeći sve tri jednačine:
+\[
+(ab)(bc)(ac) = 12 \cdot 16 \cdot 24 = 4608
+\]
+\[
+a^2b^2c^2 = 4608 \Rightarrow abc = \sqrt{4608} = \sqrt{2304 \cdot 2} = 48\sqrt{2}
+\]
+
+Iz $abc = 48\sqrt{2}$ i $ab = 12$:
+\[
+c = \frac{48\sqrt{2}}{12} = 4\sqrt{2}
+\]
+
+Iz $abc = 48\sqrt{2}$ i $bc = 16$:
+\[
+a = \frac{48\sqrt{2}}{16} = 3\sqrt{2}
+\]
+
+Iz $abc = 48\sqrt{2}$ i $ac = 24$:
+\[
+b = \frac{48\sqrt{2}}{24} = 2\sqrt{2}
+\]
+
+Zapremina tetraedra sa ortogonalnim ivicama $a$, $b$, $c$ je:
+\[
+V = \frac{1}{6}abc = \frac{1}{6} \cdot 48\sqrt{2} = 8\sqrt{2}
+\]
+
+\subsection*{Answer}
+$8\sqrt{2}$ cm³ (option \textbf{B}).
+
+\end{document}

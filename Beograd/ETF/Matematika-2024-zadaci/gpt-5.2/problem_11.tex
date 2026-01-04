@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Date su funkcije
+\[
+f_1(x)=\sqrt{(x-1)^2},\quad
+f_2(x)=\frac{x^2-1}{x+1},\quad
+f_3(x)=x^2-\frac{x^3+1}{x+1},\quad
+f_4(x)=2^{\log_2(x-1)}.
+\]
+Ta\u{c}an iskaz glasi:
+
+\subsection*{Solution}
+Imamo
+\[
+f_1(x)=\sqrt{(x-1)^2}=|x-1|,\qquad D_{f_1}=\mathbb{R}.
+\]
+Dalje,
+\[
+f_2(x)=\frac{(x-1)(x+1)}{x+1}=x-1,\quad x\neq -1,
+\]
+pa je $D_{f_2}=\mathbb{R}\setminus\{-1\}$.
+Za $f_3$ koristimo $x^3+1=(x+1)(x^2-x+1)$:
+\[
+f_3(x)=x^2-\frac{(x+1)(x^2-x+1)}{x+1}=x^2-(x^2-x+1)=x-1,\quad x\neq -1,
+\]
+pa je $f_2=f_3$ kao funkcije (isti domen i iste vrednosti).
+
+Za $f_4$ mora va\u{z}iti $x-1>0$, tj. $x>1$, i tada
+\[
+f_4(x)=2^{\log_2(x-1)}=x-1,\qquad D_{f_4}=(1,\infty).
+\]
+Dakle $f_4$ nije jednaka $f_2$ (razli\u{c}it domen), a $f_1$ nije jednaka ostalima jer je $f_1(x)=|x-1|$.
+
+\subsection*{Answer}
+$f_1\ne f_2=f_3\ne f_4\ne f_1$ (option \textbf{C}).
+
+\end{document}
+
+
+
+

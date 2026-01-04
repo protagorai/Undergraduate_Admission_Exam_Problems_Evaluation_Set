@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Neka je data funkcija
+\[
+f(x)=\ln\left|\frac{x-1}{x+1}\right|.
+\]
+Koja od sledecih tvrdjenja su tacna?
+\begin{align*}
+&(i)\ f(0)=0.\\
+&(ii)\ \text{Funkcija } f \text{ je neparna.}\\
+&(iii)\ f \text{ je definisana na skupu } \mathbb{R}\setminus\{-1\}.\\
+&(iv)\ \text{Za svako } x\neq 0 \text{ iz domena vazi } f(2x+1)+f(2x-1)=f(x).\\
+&(v)\ \text{Za svako } x \text{ takvo da su } x,2x,3x \text{ u domenu vazi } f(3x)-f(2x)=f(x).
+\end{align*}
+
+\subsection*{Solution}
+\textbf{Domen.} Potrebno je $x+1\neq 0$ i $\frac{x-1}{x+1}\neq 0$, tj.\ $x\neq -1$ i $x\neq 1$.
+Dakle,
+\[
+D_f=\mathbb{R}\setminus\{-1,1\},
+\]
+pa je (iii) \emph{netacno}.
+
+\medskip
+\textbf{(i)} Racunamo:
+\[
+f(0)=\ln\left|\frac{-1}{1}\right|=\ln 1=0,
+\]
+pa je (i) \emph{tacno}.
+
+\medskip
+\textbf{(ii)} Za $x\in D_f$:
+\[
+f(-x)=\ln\left|\frac{-x-1}{-x+1}\right|
+\;=\;\ln\left|\frac{x+1}{x-1}\right|
+\;=\;\ln\left(\frac{1}{\left|\frac{x-1}{x+1}\right|}\right)
+\;=\;-f(x),
+\]
+pa je (ii) \emph{tacno}.
+
+\medskip
+\textbf{(iv)} Za $x\neq 0$ (i $x\neq\pm 1$) dobijamo
+\[
+f(2x+1)=\ln\left|\frac{2x}{2x+2}\right|=\ln\left|\frac{x}{x+1}\right|,
+\qquad
+f(2x-1)=\ln\left|\frac{2x-2}{2x}\right|=\ln\left|\frac{x-1}{x}\right|.
+\]
+Sabiranjem:
+\[
+f(2x+1)+f(2x-1)=\ln\left|\frac{x}{x+1}\cdot\frac{x-1}{x}\right|
+=\ln\left|\frac{x-1}{x+1}\right|=f(x),
+\]
+pa je (iv) \emph{tacno}.
+
+\medskip
+\textbf{(v)} Nije identitet: npr.\ za $x=2$ (dozvoljeno) dobijamo
+\[
+f(6)-f(4)=\ln\left|\frac{5}{7}\right|-\ln\left|\frac{3}{5}\right|
+\neq \ln\left|\frac{1}{3}\right|=f(2),
+\]
+pa je (v) \emph{netacno}.
+
+\medskip
+Tacna su (i), (ii) i (iv).
+
+\subsection*{Answer}
+(i), (ii) i (iv) (option \textbf{B}).
+
+\end{document}
+

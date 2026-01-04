@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Broj različitih vrednosti parametra $p \in \mathbb{R}$ za koje jednačina $\frac{p^2}{x+1} - \frac{x(p+2)}{x^2-1} = \frac{2p}{1-x^2}$ nema rešenja iznosi:
+
+\subsection*{Solution}
+Polazimo od jednačine:
+\[
+\frac{p^2}{x+1} - \frac{x(p+2)}{x^2-1} = \frac{2p}{1-x^2}
+\]
+
+Primetimo da je $x^2 - 1 = (x-1)(x+1)$ i $1 - x^2 = -(x^2-1) = -(x-1)(x+1)$.
+
+Jednačina postaje:
+\[
+\frac{p^2}{x+1} - \frac{x(p+2)}{(x-1)(x+1)} = \frac{2p}{-(x-1)(x+1)}
+\]
+\[
+\frac{p^2}{x+1} - \frac{x(p+2)}{(x-1)(x+1)} = -\frac{2p}{(x-1)(x+1)}
+\]
+
+Množimo celu jednačinu sa $(x-1)(x+1)$, uz uslov $x \neq \pm 1$:
+\[
+p^2(x-1) - x(p+2) = -2p
+\]
+\[
+p^2x - p^2 - xp - 2x = -2p
+\]
+\[
+p^2x - xp - 2x = p^2 - 2p
+\]
+\[
+x(p^2 - p - 2) = p^2 - 2p
+\]
+\[
+x(p^2 - p - 2) = p(p - 2)
+\]
+
+Faktorizujemo $p^2 - p - 2 = (p-2)(p+1)$:
+\[
+x(p-2)(p+1) = p(p-2)
+\]
+
+\textbf{Slučaj 1:} $p = 2$
+Jednačina postaje $0 = 0$, što je uvek tačno. Ali treba proveriti originalnu jednačinu.
+
+Za $p = 2$:
+\[
+\frac{4}{x+1} - \frac{4x}{x^2-1} = \frac{4}{1-x^2}
+\]
+\[
+\frac{4}{x+1} - \frac{4x}{(x-1)(x+1)} = -\frac{4}{(x-1)(x+1)}
+\]
+
+Množimo sa $(x-1)(x+1)$:
+\[
+4(x-1) - 4x = -4
+\]
+\[
+4x - 4 - 4x = -4
+\]
+\[
+-4 = -4
+\]
+
+Ovo je identitet, pa jednačina ima beskonačno rešenja (za sve $x \neq \pm 1$).
+
+\textbf{Slučaj 2:} $p = -1$
+Jednačina postaje $0 = -(-1)(-3) = -3$, što je nemoguće.
+Dakle, za $p = -1$ nema rešenja.
+
+\textbf{Slučaj 3:} $p \neq 2$ i $p \neq -1$
+\[
+x = \frac{p(p-2)}{(p-2)(p+1)} = \frac{p}{p+1}
+\]
+
+Treba proveriti da li je $x = \frac{p}{p+1} \neq \pm 1$.
+
+$x = 1$: $\frac{p}{p+1} = 1 \Rightarrow p = p + 1 \Rightarrow 0 = 1$ (nemoguće)
+
+$x = -1$: $\frac{p}{p+1} = -1 \Rightarrow p = -(p+1) \Rightarrow p = -p - 1 \Rightarrow 2p = -1 \Rightarrow p = -\frac{1}{2}$
+
+Za $p = -\frac{1}{2}$, dobijamo $x = -1$, što nije u domenu.
+
+Dakle, jednačina nema rešenja za $p = -1$ i $p = -\frac{1}{2}$.
+
+Ukupno 2 vrednosti parametra.
+
+\subsection*{Answer}
+$2$ (opcija \textbf{B}).
+
+\end{document}

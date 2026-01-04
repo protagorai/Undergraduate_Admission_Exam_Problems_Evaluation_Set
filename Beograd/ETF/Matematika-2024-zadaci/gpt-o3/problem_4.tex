@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Neka su $x_1$ i $x_2$ koreni kvadratne jednačine
+\[
+x^{2}+(m-2)x+m=0, \qquad m\in\mathbb R.
+\]
+Za koje vrednosti parametra $m$ je ispunjen uslov
+\[
+x_1^{2}+x_2^{2}\le 8-9x_1x_2?
+\]
+Kolika je razlika najveće и најмање takve vrednosti parametra $m$?
+
+\subsection*{Rešenje}
+\textbf{1.}  Za kvadratnu $x^{2}+px+q=0$ važi
+\[
+x_{1}+x_{2}=-p, \qquad x_{1}x_{2}=q.
+\]
+Ovde je $p=m-2$, $q=m$, pa
+\[
+S:=x_{1}+x_{2}=2-m, \qquad P:=x_{1}x_{2}=m.
+\]
+
+\textbf{2.}  Prepišemo dati uslov koristeći $S$ i $P$.
+Pošto $x_{1}^{2}+x_{2}^{2}=S^{2}-2P$, zahtev postaje
+\[
+S^{2}-2P\;\le\;8-9P \quad\Longrightarrow\quad S^{2}\le 8-7P.
+\]
+
+Zamenimo $S=2-m$ i $P=m$:
+\[
+(2-m)^{2}\le 8-7m.
+\]
+Razvijanje:
+\[
+m^{2}-4m+4\le 8-7m \;\Longrightarrow\;m^{2}+3m-4\le0.
+\]
+
+\textbf{3.} Rešimo kvadratnu nejednačinu $m^{2}+3m-4\le0$.  Nule su
+\[
+m_{1}=-4,\qquad m_{2}=1.
+\]
+(Najlakše: faktorišemo $(m+4)(m-1)$.)  Kako je koeficijent uz $m^{2}$ pozitivan, parabola je okrenuta naviše, pa je nejednakost ispunjena za
+\[
+-4\le m\le1.
+\]
+
+\textbf{4.}  Tražena razlika je $1-(-4)=5$.
+
+\subsection*{Odgovor}
+\[5\qquad(\text{opcija A})\]
+
+\end{document}

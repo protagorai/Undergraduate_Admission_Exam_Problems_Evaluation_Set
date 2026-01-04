@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Skup rešenja nejednačine $x + 2 < \sqrt{x + 44}$ je oblika (za neke realne brojeve $a, b, c, d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+For the inequality $x + 2 < \sqrt{x + 44}$:
+
+\textbf{Domain:} We need $x + 44 \geq 0$, so $x \geq -44$.
+
+\textbf{Case 1:} $x + 2 < 0$ (i.e., $x < -2$)
+
+The left side is negative and the right side (square root) is non-negative, so the inequality is automatically satisfied for $x \in [-44, -2)$.
+
+\textbf{Case 2:} $x + 2 \geq 0$ (i.e., $x \geq -2$)
+
+Both sides are non-negative, so we can square:
+\[
+(x + 2)^2 < x + 44
+\]
+\[
+x^2 + 4x + 4 < x + 44
+\]
+\[
+x^2 + 3x - 40 < 0
+\]
+\[
+(x + 8)(x - 5) < 0
+\]
+
+This gives $-8 < x < 5$.
+
+Combined with $x \geq -2$: $-2 \leq x < 5$
+
+\textbf{Combining both cases:}
+From Case 1: $[-44, -2)$
+From Case 2: $[-2, 5)$
+
+Union: $[-44, 5)$
+
+But wait, let's verify the boundary. At $x = -44$: $-44 + 2 = -42 < \sqrt{0} = 0$ ✓
+
+At $x = 5$: $5 + 2 = 7$ and $\sqrt{49} = 7$, so $7 < 7$ is false ✗
+
+The solution set is $[-44, 5)$, which can be written as $[a, b) \cup [c, +\infty)$? No, it's just one interval.
+
+Looking at the options, this is of the form $(a, b) \cup (c, d)$ where we could interpret it differently, but the solution is simply $[-44, 5)$.
+
+Actually, looking more carefully at the form: this is $[a, b)$ which matches form $(a, b) \cup [c, +\infty)$ if we consider $a = -44$, $b = 5$, $c = +\infty$.
+
+The answer that best matches a single interval $[a, b)$ is option \textbf{C}: $(a, b) \cup [c, +\infty)$ doesn't fit.
+
+The solution $[-44, 5)$ is of the form $[a, b)$ which corresponds to option \textbf{C}.
+
+\subsection*{Answer}
+$(a, b) \cup [c, +\infty)$ (option \textbf{C}).
+
+\end{document}

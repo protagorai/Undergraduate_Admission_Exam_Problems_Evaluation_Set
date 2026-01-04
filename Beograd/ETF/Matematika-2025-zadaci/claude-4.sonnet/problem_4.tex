@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 4}
+If complex number $z$ solves the equation $|z| - z + 2\bar{z} + 12i - 2 = 0$, find $|z|$.
+
+\subsection*{Solution}
+Let $z = x + yi$ where $x, y \in \mathbb{R}$. Then $\bar{z} = x - yi$ and $|z| = \sqrt{x^2 + y^2}$.
+
+Substituting into the equation:
+\[
+\sqrt{x^2 + y^2} - (x + yi) + 2(x - yi) + 12i - 2 = 0
+\]
+
+Simplifying:
+\[
+\sqrt{x^2 + y^2} - x - yi + 2x - 2yi + 12i - 2 = 0
+\]
+\[
+\sqrt{x^2 + y^2} + x - 2 + i(-y - 2y + 12) = 0
+\]
+\[
+\sqrt{x^2 + y^2} + x - 2 + i(-3y + 12) = 0
+\]
+
+For this complex equation to equal zero, both the real and imaginary parts must be zero:
+
+Real part: $\sqrt{x^2 + y^2} + x - 2 = 0$
+Imaginary part: $-3y + 12 = 0$
+
+From the imaginary part: $y = 4$.
+
+Substituting into the real part:
+\[
+\sqrt{x^2 + 16} + x - 2 = 0
+\]
+\[
+\sqrt{x^2 + 16} = 2 - x
+\]
+
+For this equation to have a solution, we need $2 - x \geq 0$, so $x \leq 2$.
+
+Squaring both sides:
+\[
+x^2 + 16 = (2 - x)^2 = 4 - 4x + x^2
+\]
+\[
+16 = 4 - 4x
+\]
+\[
+12 = -4x
+\]
+\[
+x = -3
+\]
+
+Let's verify: $x = -3 \leq 2$ ✓
+
+Check: $\sqrt{(-3)^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$
+And $2 - (-3) = 5$ ✓
+
+So $z = -3 + 4i$ and $|z| = \sqrt{(-3)^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$.
+
+Let's verify our solution in the original equation:
+$|z| - z + 2\bar{z} + 12i - 2 = 5 - (-3 + 4i) + 2(-3 - 4i) + 12i - 2$
+$= 5 + 3 - 4i - 6 - 8i + 12i - 2$
+$= (5 + 3 - 6 - 2) + i(-4 - 8 + 12)$
+$= 0 + 0i = 0$ ✓
+
+\subsection*{Answer}
+$5$ (option \textbf{D}).
+
+\end{document}
+

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+U jednakokraki trougao osnovice dužine 12 cm i odgovarajuće visine dužine 8 cm, upisan je pravougaonik maksimalne površine tako da mu jedna stranica pripada osnovici trougla. Obim pravougaonika (u cm) je:
+
+A) $20$; \quad B) $16$; \quad C) $14$; \quad D) $24$; \quad E) $10$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Neka je $x$ dužina stranice pravougaonika koja leži na osnovici, a $y$ visina pravougaonika.
+
+Iz sličnosti trouglova (mali trougao iznad pravougaonika i ceo trougao):
+\[
+\frac{12 - x}{12} = \frac{y}{8} \quad \text{(širina malog trougla je } 12-x \text{ na visini } 8-y \text{)}
+\]
+
+Zapravo, koristimo sličnost drugačije. Na visini $y$ od osnovice, širina trougla je:
+\[
+\frac{8-y}{8} \cdot 12 = 12 - \frac{3y}{2}
+\]
+
+Ali pravougaonik ima širinu $x$, pa:
+\[
+x = 12 - \frac{3y}{2}
+\]
+
+Površina pravougaonika:
+\[
+P = xy = \left(12 - \frac{3y}{2}\right)y = 12y - \frac{3y^2}{2}
+\]
+
+Maksimum nalazimo iz $\frac{dP}{dy} = 0$:
+\[
+12 - 3y = 0 \Rightarrow y = 4
+\]
+
+Tada:
+\[
+x = 12 - \frac{3 \cdot 4}{2} = 12 - 6 = 6
+\]
+
+Obim pravougaonika:
+\[
+O = 2(x + y) = 2(6 + 4) = 20 \text{ cm}
+\]
+
+\subsection*{Odgovor}
+$20$ cm (opcija \textbf{A}).
+
+\end{document}

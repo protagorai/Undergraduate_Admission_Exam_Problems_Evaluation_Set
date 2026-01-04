@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Koje od sledećih nejednakosti su tačne?
+\begin{itemize}
+\item[(i)] $\sqrt[3]{3} < \sqrt{2}$
+\item[(ii)] $\sqrt[3]{3 + \sqrt{3}} < \sqrt{2 + \sqrt{2}}$
+\item[(iii)] $3\sqrt{5} < 5\sqrt{3}$
+\item[(iv)] $\sqrt{12} + 3\sqrt{75} < 2\sqrt{48} + 5\sqrt{3}$
+\item[(v)] $\sqrt{9 + 4\sqrt{5}} < \sqrt{19 - 8\sqrt{3}}$
+\end{itemize}
+
+\subsection*{Solution}
+
+\textbf{(i)} $\sqrt[3]{3} < \sqrt{2}$
+
+Podignimo obe strane na šesti stepen:
+\[
+(\sqrt[3]{3})^6 = 3^2 = 9, \quad (\sqrt{2})^6 = 2^3 = 8
+\]
+Pošto je $9 > 8$, nejednakost (i) je \textbf{netačna}.
+
+\textbf{(ii)} $\sqrt[3]{3 + \sqrt{3}} < \sqrt{2 + \sqrt{2}}$
+
+Izračunajmo približne vrednosti:
+\[
+\sqrt{3} \approx 1.732, \quad 3 + \sqrt{3} \approx 4.732, \quad \sqrt[3]{4.732} \approx 1.679
+\]
+\[
+\sqrt{2} \approx 1.414, \quad 2 + \sqrt{2} \approx 3.414, \quad \sqrt{3.414} \approx 1.848
+\]
+Dakle $1.679 < 1.848$, nejednakost (ii) je \textbf{tačna}.
+
+\textbf{(iii)} $3\sqrt{5} < 5\sqrt{3}$
+
+Kvadrirajmo obe strane:
+\[
+(3\sqrt{5})^2 = 9 \cdot 5 = 45, \quad (5\sqrt{3})^2 = 25 \cdot 3 = 75
+\]
+Pošto je $45 < 75$, nejednakost (iii) je \textbf{tačna}.
+
+\textbf{(iv)} $\sqrt{12} + 3\sqrt{75} < 2\sqrt{48} + 5\sqrt{3}$
+
+Pojednostavimo:
+\[
+\sqrt{12} = 2\sqrt{3}, \quad \sqrt{75} = 5\sqrt{3}, \quad \sqrt{48} = 4\sqrt{3}
+\]
+Leva strana: $2\sqrt{3} + 3 \cdot 5\sqrt{3} = 2\sqrt{3} + 15\sqrt{3} = 17\sqrt{3}$
+
+Desna strana: $2 \cdot 4\sqrt{3} + 5\sqrt{3} = 8\sqrt{3} + 5\sqrt{3} = 13\sqrt{3}$
+
+Pošto je $17\sqrt{3} > 13\sqrt{3}$, nejednakost (iv) je \textbf{netačna}.
+
+\textbf{(v)} $\sqrt{9 + 4\sqrt{5}} < \sqrt{19 - 8\sqrt{3}}$
+
+Primetimo da je $9 + 4\sqrt{5} = 4 + 4\sqrt{5} + 5 = (2 + \sqrt{5})^2$, pa je $\sqrt{9 + 4\sqrt{5}} = 2 + \sqrt{5} \approx 4.236$.
+
+Za desnu stranu: $19 - 8\sqrt{3} \approx 19 - 13.856 = 5.144$, pa je $\sqrt{5.144} \approx 2.268$.
+
+Pošto je $4.236 > 2.268$, nejednakost (v) je \textbf{netačna}.
+
+Tačne su samo (ii) i (iii).
+
+\subsection*{Answer}
+(ii) i (iii) (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+In an isosceles triangle $ABC$ with $AB=AC=b$ and $\angle BAC=30^\circ$, find the sum of its three altitudes.
+
+\subsection*{Solution}
+The area is
+\[
+K=\frac12\cdot AB\cdot AC\cdot \sin 30^\circ
+=\frac12\cdot b\cdot b\cdot \frac12=\frac{b^2}{4}.
+\]
+Let $BC$ be the base. By the law of cosines:
+\[
+BC^2=b^2+b^2-2b^2\cos 30^\circ
+=2b^2\left(1-\frac{\sqrt3}{2}\right)=b^2(2-\sqrt3),
+\]
+so
+\[
+BC=b\sqrt{2-\sqrt3}=b\cdot\frac{\sqrt6-\sqrt2}{2}.
+\]
+Altitude from $A$ is
+\[
+h_a=\frac{2K}{BC}
+=\frac{\frac{b^2}{2}}{b(\sqrt6-\sqrt2)/2}
+=\frac{b}{\sqrt6-\sqrt2}
+=\frac{b(\sqrt6+\sqrt2)}{6-2}
+=\frac{b(\sqrt6+\sqrt2)}{4}.
+\]
+Altitudes from $B$ and $C$ to the equal sides are
+\[
+h_b=\frac{2K}{AC}=\frac{\frac{b^2}{2}}{b}=\frac{b}{2},\qquad
+h_c=\frac{2K}{AB}=\frac{b}{2}.
+\]
+Therefore,
+\[
+h_a+h_b+h_c=\frac{b(\sqrt6+\sqrt2)}{4}+b
+=\frac{b}{4}\left(4+\sqrt2+\sqrt6\right).
+\]
+
+\subsection*{Answer}
+$\dfrac{b}{4}\left(4+\sqrt2+\sqrt6\right)$ (option \textbf{C}).
+
+\end{document}
+

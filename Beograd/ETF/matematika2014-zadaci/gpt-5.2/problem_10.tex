@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Neka je $s=1+q+q^2+\cdots\ (|q|<1)$ i $S=1+Q+Q^2+\cdots\ (|Q|<1)$, gde su $s$ i $S$ dati brojevi.
+Tada je zbir
+\[
+1+qQ+q^2Q^2+q^3Q^3+\cdots
+\]
+jednak:
+\[
+\text{(A) }\frac{sS}{s+S-1}\quad
+\text{(B) }\frac{sS}{2sS-s-S+1}\quad
+\text{(C) }\frac{sS}{sS+s+S-2}\quad
+\text{(D) }\frac{2sS-1}{s+S-1}\quad
+\text{(E) }sS.
+\]
+
+\subsection*{Solution}
+Pošto je $s=\frac{1}{1-q}$ i $S=\frac{1}{1-Q}$, imamo
+\[
+q=1-\frac{1}{s}=\frac{s-1}{s},\qquad Q=1-\frac{1}{S}=\frac{S-1}{S}.
+\]
+Traženi zbir je geometrijski niz:
+\[
+1+qQ+(qQ)^2+\cdots=\frac{1}{1-qQ}.
+\]
+Dalje,
+\[
+1-qQ
+=1-\frac{(s-1)(S-1)}{sS}
+=\frac{sS-(s-1)(S-1)}{sS}
+=\frac{s+S-1}{sS}.
+\]
+Zato je
+\[
+\frac{1}{1-qQ}=\frac{sS}{s+S-1}.
+\]
+
+\subsection*{Answer}
+$\dfrac{sS}{s+S-1}$ (option \textbf{A}).
+
+\end{document}
+

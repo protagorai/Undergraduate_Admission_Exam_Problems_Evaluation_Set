@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Solve the inequality
+\[
+\frac{|1-x|}{1-|x|}<\frac{1+|x|}{|1+x|}.
+\]
+The solution set has the form (for some real $a,b$ with $0<a<b<\infty$):
+
+Options:
+(A) $(-\infty,-a)$ \quad
+(B) $(a,+\infty)$ \quad
+(C) $(-\infty,-a)\cup(a,+\infty)$ \quad
+(D) $(-b,-a)\cup(a,b)$ \quad
+(E) $(-\infty,-a)\cup(-a,a)\cup(a,+\infty)$.
+
+\subsection*{Solution}
+The inequality is defined when $1-|x|\neq 0$ and $|1+x|\neq 0$, so $x\neq \pm 1$.
+
+We solve by cases.
+
+\paragraph{1) $x>1$.}
+Then $|x|=x$, $|1-x|=x-1$, $|1+x|=1+x$. Hence
+\[
+\frac{|1-x|}{1-|x|}=\frac{x-1}{1-x}=-1,\qquad
+\frac{1+|x|}{|1+x|}=\frac{1+x}{1+x}=1,
+\]
+so $-1<1$ holds for all $x>1$.
+
+\paragraph{2) $0\le x<1$.}
+Then $|x|=x$, $|1-x|=1-x$, $|1+x|=1+x$, so both sides equal $1$ and the strict inequality fails.
+
+\paragraph{3) $-1<x<0$.}
+Then $|x|=-x$, $|1-x|=1-x$, $|1+x|=1+x$, and again both sides are equal, so no solutions.
+
+\paragraph{4) $x<-1$.}
+Then $|x|=-x$, $|1-x|=1-x$, and $|1+x|=-(1+x)=-1-x$. Thus
+\[
+\frac{|1-x|}{1-|x|}=\frac{1-x}{1+x}<0,\qquad
+\frac{1+|x|}{|1+x|}=\frac{1-x}{-1-x}>0,
+\]
+so the inequality is true for all $x<-1$.
+
+Therefore the solution set is
+\[
+(-\infty,-1)\cup(1,\infty),
+\]
+which matches option (C) with $a=1$.
+
+\subsection*{Answer}
+$(-\infty,-1)\cup(1,\infty)$ (option \textbf{C}).
+
+\end{document}
+

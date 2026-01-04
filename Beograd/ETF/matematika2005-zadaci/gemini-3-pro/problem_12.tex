@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 12}
+Razlika veće i manje osnovice jednakokrakog trapeza čiji je obim 32cm a poluprečnik upisanog krug 2cm, iznosi (u cm):
+(A) $\sqrt{3}$ (B) $8\sqrt{3}$ (C) $\sqrt{6}$ (D) $3\sqrt{2}$ (E) $6\sqrt{6}$ (N) Ne znam
+
+\subsection*{Rešenje}
+Neka su osnovice trapeza $a$ i $b$ ($a > b$) i krak $c$.
+Pošto je trapez tangentni (može se upisati krug), zbir naspramnih stranica je jednak:
+\[
+a + b = c + c = 2c
+\]
+Obim je $P = a + b + 2c = 32$.
+Zamenom $a+b=2c$:
+\[
+2c + 2c = 32 \implies 4c = 32 \implies c = 8 \text{ cm}
+\]
+Tada je $a+b = 16$.
+Poluprečnik upisanog kruga je $r=2$ cm, pa je visina trapeza $h = 2r = 4$ cm.
+Kod jednakokrakog trapeza, ako spustimo visinu iz temena manje osnovice na veću, dobijamo pravougli trougao sa hipotenuzom $c$, katetom $h$ i drugom katetom $\frac{a-b}{2}$.
+Pitagorina teorema:
+\[
+c^2 = h^2 + \left(\frac{a-b}{2}\right)^2
+\]
+\[
+8^2 = 4^2 + \left(\frac{a-b}{2}\right)^2
+\]
+\[
+64 = 16 + \left(\frac{a-b}{2}\right)^2
+\]
+\[
+\left(\frac{a-b}{2}\right)^2 = 48
+\]
+\[
+\frac{a-b}{2} = \sqrt{48} = \sqrt{16 \cdot 3} = 4\sqrt{3}
+\]
+\[
+a - b = 8\sqrt{3}
+\]
+
+\subsection*{Odgovor}
+$8\sqrt{3}$ (opcija \textbf{B}).
+
+\end{document}

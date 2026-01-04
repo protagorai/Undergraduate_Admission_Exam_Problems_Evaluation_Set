@@ -1,0 +1,7 @@
+Problem 11
+
+Ukupan broj realnih rešenja sistema jednačina
+\frac{x + y}{x - y} + \frac{x - y}{x + y} = \frac{5}{2}, \quad x^2 + y^2 = 20
+jeste:
+
+(A) 0    (B) 2    (C) 4    (D) 6    (E) 8    (N) Ne znam

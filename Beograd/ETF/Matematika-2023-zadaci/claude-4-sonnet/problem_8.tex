@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Zbir svih rešenja jednačine $z^2 + z\bar{z} + i\bar{z} = 0$, $z \in \mathbb{C}$, iznosi:
+
+\subsection*{Solution}
+Neka je $z = x + iy$ gde su $x, y \in \mathbb{R}$.
+
+Tada je $\bar{z} = x - iy$ i $z\bar{z} = |z|^2 = x^2 + y^2$.
+
+Jednačina postaje:
+\[
+(x + iy)^2 + (x^2 + y^2) + i(x - iy) = 0
+\]
+
+Razvijamo:
+\[
+x^2 + 2ixy - y^2 + x^2 + y^2 + ix + y = 0
+\]
+\[
+(2x^2) + i(2xy + x) + y = 0
+\]
+
+Grupisamo realne i imaginarne delove:
+\[
+2x^2 + y = 0 \quad \text{(realni deo)}
+\]
+\[
+2xy + x = 0 \quad \text{(imaginarni deo)}
+\]
+
+Iz druge jednačine:
+\[
+x(2y + 1) = 0
+\]
+
+Dakle, $x = 0$ ili $y = -\frac{1}{2}$.
+
+\textbf{Slučaj 1:} $x = 0$
+
+Iz prve jednačine: $2 \cdot 0^2 + y = 0$, pa je $y = 0$.
+
+Dakle, $z_1 = 0$.
+
+\textbf{Slučaj 2:} $y = -\frac{1}{2}$
+
+Iz prve jednačine: $2x^2 + (-\frac{1}{2}) = 0$, pa je $2x^2 = \frac{1}{2}$, tj. $x^2 = \frac{1}{4}$.
+
+Dakle, $x = \pm\frac{1}{2}$.
+
+To daje rešenja:
+\[
+z_2 = \frac{1}{2} - \frac{i}{2}, \quad z_3 = -\frac{1}{2} - \frac{i}{2}
+\]
+
+Zbir svih rešenja:
+\[
+z_1 + z_2 + z_3 = 0 + \left(\frac{1}{2} - \frac{i}{2}\right) + \left(-\frac{1}{2} - \frac{i}{2}\right) = -i
+\]
+
+\subsection*{Answer}
+$-i$ (opcija \textbf{D}).
+
+\end{document}

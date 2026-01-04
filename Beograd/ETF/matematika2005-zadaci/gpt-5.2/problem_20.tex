@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Maksimalna površina pravougaonika upisanog u parabolički odsečak ograničen parabolom $y=1-x^2$ i pravom $y=0$, tako da mu jedna stranica pripada $x$-osi, jeste:
+\[
+\text{(A) }\frac{1}{9}\sqrt3\quad
+\text{(B) }\frac{4}{9}\sqrt3\quad
+\text{(C) }\frac{8}{9}\sqrt3\quad
+\text{(D) }\sqrt3\quad
+\text{(E) }2\sqrt3\quad
+\text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Neka je pravougaonik simetričan u odnosu na $y$-osu, sa temenima na paraboli u tačkama $(\pm x,\,1-x^2)$, gde je $x\in[0,1]$.
+Tada je širina $2x$, a visina $1-x^2$, pa je površina
+\[
+A(x)=2x(1-x^2).
+\]
+Derivišemo:
+\[
+A'(x)=2(1-x^2)+2x(-2x)=2-2x^2-4x^2=2-6x^2.
+\]
+Maksimum je kada je $A'(x)=0$, tj. $x^2=\frac{1}{3}$, pa je $x=\frac{1}{\sqrt3}$.
+Tada
+\[
+A_{\max}=2\cdot \frac{1}{\sqrt3}\left(1-\frac13\right)=\frac{2}{\sqrt3}\cdot\frac23=\frac{4}{3\sqrt3}
+=\frac{4\sqrt3}{9}.
+\]
+
+\subsection*{Answer}
+$\dfrac{4\sqrt3}{9}$ (option \textbf{B}).
+
+\end{document}
+

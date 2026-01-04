@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Ako je $x > 0$, onda je $\sqrt{x\sqrt{x\sqrt{x}}}$ jednako:
+
+(A) $x\sqrt{x}$ \quad (B) $x\sqrt[4]{x}$ \quad (C) $\sqrt[8]{x}$ \quad (D) $\sqrt[8]{x^3}$ \quad (E) $\sqrt[8]{x^7}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+We work from the inside out. Let's express everything in terms of powers of $x$.
+
+Start with the innermost expression:
+\[
+\sqrt{x} = x^{1/2}
+\]
+
+Then:
+\[
+x\sqrt{x} = x \cdot x^{1/2} = x^{3/2}
+\]
+
+Next:
+\[
+\sqrt{x\sqrt{x}} = \sqrt{x^{3/2}} = x^{3/4}
+\]
+
+Then:
+\[
+x\sqrt{x\sqrt{x}} = x \cdot x^{3/4} = x^{7/4}
+\]
+
+Finally:
+\[
+\sqrt{x\sqrt{x\sqrt{x}}} = \sqrt{x^{7/4}} = x^{7/8} = \sqrt[8]{x^7}
+\]
+
+\subsection*{Answer}
+$\sqrt[8]{x^7}$ (option \textbf{E}).
+
+\end{document}

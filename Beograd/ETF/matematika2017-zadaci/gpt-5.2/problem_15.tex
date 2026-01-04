@@ -1,0 +1,84 @@
+\section*{Zadatak 15}
+Odrediti ukupan broj realnih re\v{s}enja sistema
+\[
+y\cdot (|x|-2)^{\log_y(|x|-2)}=(|x|-2)^{5/2},\qquad
+\log_4 y\cdot \log_y(y-3x+6)=1.
+\]
+
+\subsection*{Re\v{s}enje}
+Neka je $A=|x|-2$. Da bi sistem imao smisla, mora biti
+\[
+A>0 \;(\Leftrightarrow |x|>2),\qquad y>0,\ y\neq 1,\qquad y-3x+6>0.
+\]
+
+\paragraph{1) Druga jedna\v{c}ina}
+Kori\v{s}\'cenjem promene osnove:
+\[
+\log_4 y\cdot \log_y(y-3x+6)=\frac{\ln y}{\ln 4}\cdot \frac{\ln(y-3x+6)}{\ln y}
+=\frac{\ln(y-3x+6)}{\ln 4}=\log_4(y-3x+6).
+\]
+Uslov je $=1$, pa je
+\[
+\log_4(y-3x+6)=1 \;\Longrightarrow\; y-3x+6=4 \;\Longrightarrow\; x=\frac{y+2}{3}.
+\]
+
+\paragraph{2) Prva jedna\v{c}ina}
+Neka je $t=\log_y A$. Tada je $A=y^t$ i
+\[
+A^{\log_y A}=A^t=(y^t)^t=y^{t^2}.
+\]
+Prva jedna\v{c}ina postaje
+\[
+y\cdot y^{t^2}= (y^t)^{5/2}
+\;\Longrightarrow\;
+y^{1+t^2}=y^{\frac{5}{2}t}.
+\]
+Po\v{s}to je $y>0$ i $y\neq 1$, sledi
+\[
+1+t^2=\frac{5}{2}t
+\;\Longrightarrow\;
+2t^2-5t+2=0
+\;\Longrightarrow\;
+t\in\left\{2,\frac12\right\}.
+\]
+Dakle, $A=|x|-2$ mora biti ili $y^2$ ili $\sqrt{y}$.
+
+Po\v{s}to je $y>0$, imamo $x=\frac{y+2}{3}>0$, pa je $|x|=x$ i $A=x-2$.
+
+\subparagraph{(i) $x-2=y^2$}
+\[
+\frac{y+2}{3}-2=y^2
+\;\Longrightarrow\;
+\frac{y-4}{3}=y^2
+\;\Longrightarrow\;
+3y^2-y+4=0,
+\]
+\v{s}to nema realna re\v{s}enja (diskriminanta je $1-48<0$).
+
+\subparagraph{(ii) $x-2=\sqrt{y}$}
+\[
+\frac{y+2}{3}-2=\sqrt{y}
+\;\Longrightarrow\;
+\frac{y-4}{3}=\sqrt{y}.
+\]
+Stavimo $u=\sqrt{y}>0$, tada je $y=u^2$ i dobijamo
+\[
+\frac{u^2-4}{3}=u
+\;\Longrightarrow\;
+u^2-3u-4=0
+\;\Longrightarrow\;
+u=4.
+\]
+Zato je $y=16$, a zatim
+\[
+x=\frac{y+2}{3}=\frac{18}{3}=6.
+\]
+Ovaj par zadovoljava i $|x|>2$ i $y\neq 1$.
+
+Dakle sistem ima ta\v{c}no jedno realno re\v{s}enje.
+
+\subsection*{Odgovor}
+\[
+\boxed{(C)\;\; 1}
+\]
+

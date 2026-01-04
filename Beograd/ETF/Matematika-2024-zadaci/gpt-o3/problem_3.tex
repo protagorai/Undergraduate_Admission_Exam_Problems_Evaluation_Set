@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Izračunati vrednost izraza
+\[
+49^{1-\log_{7} 2}\; + \;5^{-\log_{5} 4}.
+\]
+
+\subsection*{Rešenje}
+\textbf{1.} Posmatrajmo prvi sabirak.  Primetimo da je $49=7^{2}$, pa
+\[
+49^{1-\log_{7} 2}=49^{1}\,49^{-\log_{7}2}=49\,(7^{2})^{-\log_{7}2}=49\,7^{-2\log_{7}2}.
+\]
+Svojstvo $a^{\log_{a}x}=x$ daje $7^{-2\log_{7}2}=2^{-2}=\tfrac14$, tako da
+\[
+49^{1-\log_{7}2}=49\cdot\tfrac14=\tfrac{49}{4}.
+\]
+
+\textbf{2.} Други sabirak се решава истим принципом:
+\[
+5^{-\log_{5}4}=5^{\log_{5}4^{-1}}=4^{-1}=\tfrac14.
+\]
+
+\textbf{3.} Sabiranjem dobijamo
+\[
+\tfrac{49}{4}+\tfrac14=\tfrac{50}{4}=\tfrac{25}{2}.
+\]
+
+\subsection*{Odgovor}
+\[\displaystyle \frac{25}{2}\qquad(\text{opcija B})\]
+
+\end{document}

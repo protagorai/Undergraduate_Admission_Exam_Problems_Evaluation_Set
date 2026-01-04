@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Ako su $x_1$ i $x_2$ rešenja jednačine $3x^2 + 17x - 14 = 0$, tada je vrednost izraza $\frac{3x_1^2 + 5x_1 x_2 + 3x_2^2}{4x_1 x_2^2 + 4x_2^2 x_2}$ jednaka:
+\begin{enumerate}
+\item[(A)] $\frac{909}{952}$
+\item[(B)] $\frac{303}{238}$
+\item[(C)] $\frac{101}{352}$
+\item[(D)] $\frac{5}{9}$
+\item[(E)] $\frac{13}{3}$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Iz Viètovih formula za jednačinu $3x^2 + 17x - 14 = 0$:
+\begin{align}
+x_1 + x_2 &= -\frac{17}{3} \\
+x_1 \cdot x_2 &= -\frac{14}{3}
+\end{align}
+
+Prvo primetimo da postoji greška u kucanju u imenilacu. Verovatno je trebalo da bude $4x_1^2 x_2 + 4x_1 x_2^2$ umesto $4x_1 x_2^2 + 4x_2^2 x_2$.
+
+Pretpostavimo da je imenilac $4x_1^2 x_2 + 4x_1 x_2^2 = 4x_1 x_2(x_1 + x_2)$.
+
+Sada računamo brojilac:
+\[
+3x_1^2 + 5x_1 x_2 + 3x_2^2 = 3(x_1^2 + x_2^2) + 5x_1 x_2
+\]
+
+Koristimo identitet $x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2$:
+\begin{align}
+x_1^2 + x_2^2 &= \left(-\frac{17}{3}\right)^2 - 2\left(-\frac{14}{3}\right) \\
+&= \frac{289}{9} + \frac{28}{3} \\
+&= \frac{289}{9} + \frac{84}{9} \\
+&= \frac{373}{9}
+\end{align}
+
+Dakle:
+\begin{align}
+3x_1^2 + 5x_1 x_2 + 3x_2^2 &= 3 \cdot \frac{373}{9} + 5 \cdot \left(-\frac{14}{3}\right) \\
+&= \frac{373}{3} - \frac{70}{3} \\
+&= \frac{303}{3} \\
+&= 101
+\end{align}
+
+Za imenilac:
+\begin{align}
+4x_1 x_2(x_1 + x_2) &= 4 \cdot \left(-\frac{14}{3}\right) \cdot \left(-\frac{17}{3}\right) \\
+&= 4 \cdot \frac{14 \cdot 17}{9} \\
+&= 4 \cdot \frac{238}{9} \\
+&= \frac{952}{9}
+\end{align}
+
+Konačno:
+\[
+\frac{3x_1^2 + 5x_1 x_2 + 3x_2^2}{4x_1^2 x_2 + 4x_1 x_2^2} = \frac{101}{\frac{952}{9}} = \frac{101 \cdot 9}{952} = \frac{909}{952}
+\]
+
+\subsection*{Answer}
+Vrednost izraza je $\frac{909}{952}$, što odgovara opciji \textbf{(A)}.
+
+\end{document}

@@ -1,0 +1,12 @@
+Problem 15
+Broj rešenja jednačine
+
+    (\cos 3x + \cos 4x + \cos 5x)/(\sin x - \sqrt{3} \cos x) = 0
+
+na segmentu [0, \pi] iznosi:
+(A) 2
+(B) 4
+(C) 5
+(D) 6
+(E) više od 6
+(N) Ne znam

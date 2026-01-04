@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 16}
+Ukupan broj realnih rešenja jednačine $\sqrt{3 \cdot 2^{\log_{10} 2x} + 1} + \sqrt{2 \cdot 2^{\log_{10} 2x} + 9} = \sqrt{13 \cdot 2^{\log_{10} 2x} - 4}$ je:
+
+\subsection*{Solution}
+Let $u = 2^{\log_{10} 2x}$. The domain requires $2x > 0 \implies x > 0$.
+The equation is $\sqrt{3u+1} + \sqrt{2u+9} = \sqrt{13u-4}$.
+Square both sides:
+\[
+3u+1 + 2u+9 + 2\sqrt{(3u+1)(2u+9)} = 13u-4
+\]
+\[
+5u+10 + 2\sqrt{6u^2 + 29u + 9} = 13u-4
+\]
+\[
+2\sqrt{6u^2 + 29u + 9} = 8u - 14
+\]
+Divide by 2:
+\[
+\sqrt{6u^2 + 29u + 9} = 4u - 7
+\]
+Condition: $4u-7 \ge 0 \implies u \ge \frac{7}{4}$.
+Square again:
+\[
+6u^2 + 29u + 9 = 16u^2 - 56u + 49
+\]
+\[
+10u^2 - 85u + 40 = 0
+\]
+Divide by 5:
+\[
+2u^2 - 17u + 8 = 0
+\]
+Solutions:
+\[
+u = \frac{17 \pm \sqrt{289 - 64}}{4} = \frac{17 \pm 15}{4}
+\]
+$u_1 = \frac{32}{4} = 8$ and $u_2 = \frac{2}{4} = \frac{1}{2}$.
+Since $u \ge 1.75$, only $u=8$ is valid.
+$2^{\log_{10} 2x} = 8 \implies \log_{10} 2x = 3 \implies 2x = 1000 \implies x = 500$.
+There is exactly 1 real solution.
+
+\subsection*{Answer}
+(B) 1
+
+\end{document}

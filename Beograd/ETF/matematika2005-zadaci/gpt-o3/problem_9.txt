@@ -1,0 +1,7 @@
+Problem 9: Zbir koeficijenata pravca tangenti kružnice
+
+    x^2 + y^2 = 2
+
+koje sadrže presečnu tačku pravih x - y - 1 = 0 i x + y - 3 = 0 je:
+
+(A) 2   (B) √6   (C) -2   (D) -√6   (E) 2√6   (N) Ne znam

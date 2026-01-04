@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Date su funkcije
+\[
+f_{1}(x)=2^{\log_{2}x},\;f_{2}(x)=\log_{2}2^{x},\;f_{3}(x)=x,\;f_{4}(x)=(x\cdot2^{-\log_{2}\sqrt{x}})^{2}.
+\]
+Koji iskaz je tačan?
+
+\subsection*{Rešenje}
+Za $x>0$ imamo:
+\[
+f_{1}(x)=2^{\log_{2}x}=x,\qquad f_{2}(x)=\log_{2}2^{x}=x,\qquad f_{3}(x)=x.
+\]
+Dakle $f_{1}=f_{2}=f_{3}$ na domenu $x>0$.
+Posmatrajmo $f_{4}$:
+\begin{align*}
+2^{-\log_{2}\sqrt{x}}&=2^{-\frac12\log_{2}x}=x^{-1/2},\\
+(x\cdot x^{-1/2})^{2}&=(x^{1/2})^{2}=x.
+\end{align*}
+Sledi $f_{4}(x)=x$.
+Dakle sve četiri funkcije su jednake: $f_{1}=f_{2}=f_{3}=f_{4}$.
+
+\subsection*{Odgovor}
+(B) $f_{1}=f_{2}=f_{3}=f_{4}$.
+
+\end{document}

@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je $f\left(\frac{1-x}{1+x}\right) = x$ ($x \in \mathbf{R} \setminus \{-1, 0, 1\}$), tada je $f(f(x))$ jednako:
+\begin{enumerate}
+    \item[(A)] $x$
+    \item[(B)] $\frac{1-x}{1+x}$
+    \item[(C)] $\frac{1}{x}$
+    \item[(D)] $\frac{1+x}{1-x}$
+    \item[(E)] $2x$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let $t = \frac{1-x}{1+x}$. We express $x$ in terms of $t$:
+\[
+t(1+x) = 1-x \implies t+tx = 1-x \implies x(t+1) = 1-t \implies x = \frac{1-t}{1+t}
+\]
+Substituting this into the given equation $f(t) = x$, we get:
+\[
+f(t) = \frac{1-t}{1+t}
+\]
+Now we find $f(f(x))$.
+\[
+f(x) = \frac{1-x}{1+x}
+\]
+\[
+f(f(x)) = f\left(\frac{1-x}{1+x}\right) = \frac{1-\frac{1-x}{1+x}}{1+\frac{1-x}{1+x}}
+\]
+Multiplying numerator and denominator by $1+x$:
+\[
+f(f(x)) = \frac{(1+x)-(1-x)}{(1+x)+(1-x)} = \frac{2x}{2} = x
+\]
+
+\subsection*{Answer}
+$x$ (option \textbf{(A)}).
+
+\end{document}

@@ -1,0 +1,7 @@
+Problem 4: Ako kompleksan broj z zadovoljava jednakost
+
+    z + 2\bar z = 12 + 3i, \qquad (i^2 = -1)
+
+tada je |z| jednako:
+
+(A) 5   (B) 13   (C) 15   (D) 9   (E) 10   (N) Ne znam

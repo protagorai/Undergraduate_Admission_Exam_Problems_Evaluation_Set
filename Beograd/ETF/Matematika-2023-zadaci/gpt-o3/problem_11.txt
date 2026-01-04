@@ -1,0 +1,10 @@
+Problem 11 (Matematika 2023)
+Broj realnih i različitih rešenja jednačine
+cos 7x − sin 5x = √3 (cos 5x − sin 7x)
+na intervalu [0, π/2] je:
+a) >4
+b) 2
+c) 4
+d) 1
+e) 3
+n) Ne znam

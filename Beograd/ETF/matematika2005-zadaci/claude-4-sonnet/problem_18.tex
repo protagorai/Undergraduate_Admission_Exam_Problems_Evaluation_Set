@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Ako je $\operatorname{tg}\alpha = \frac{(1 + \operatorname{tg} 1°)(1 + \operatorname{tg} 2°) - 2}{(1 - \operatorname{tg} 1°)(1 - \operatorname{tg} 2°) - 2}$ i $\alpha \in (0, 90°)$, tada je $\alpha$:
+
+\subsection*{Solution}
+Koristimo formulu za tangens zbira:
+$\operatorname{tg}(A + B) = \frac{\operatorname{tg}A + \operatorname{tg}B}{1 - \operatorname{tg}A \operatorname{tg}B}$
+
+Odatle:
+$1 - \operatorname{tg}A \operatorname{tg}B = \frac{\operatorname{tg}A + \operatorname{tg}B}{\operatorname{tg}(A + B)}$
+
+I:
+$(1 + \operatorname{tg}A)(1 + \operatorname{tg}B) = 1 + \operatorname{tg}A + \operatorname{tg}B + \operatorname{tg}A \operatorname{tg}B$
+
+$(1 - \operatorname{tg}A)(1 - \operatorname{tg}B) = 1 - \operatorname{tg}A - \operatorname{tg}B + \operatorname{tg}A \operatorname{tg}B$
+
+Dakle:
+$(1 + \operatorname{tg}A)(1 + \operatorname{tg}B) - (1 - \operatorname{tg}A)(1 - \operatorname{tg}B) = 2(\operatorname{tg}A + \operatorname{tg}B)$
+
+$(1 + \operatorname{tg}A)(1 + \operatorname{tg}B) + (1 - \operatorname{tg}A)(1 - \operatorname{tg}B) = 2(1 + \operatorname{tg}A \operatorname{tg}B)$
+
+Za $A = 1°$ i $B = 2°$:
+$\operatorname{tg}\alpha = \frac{(1 + \operatorname{tg} 1°)(1 + \operatorname{tg} 2°) - 2}{(1 - \operatorname{tg} 1°)(1 - \operatorname{tg} 2°) - 2}$
+
+Koristeći identitet:
+$\operatorname{tg}(45° - A) = \frac{1 - \operatorname{tg}A}{1 + \operatorname{tg}A}$
+
+I:
+$\operatorname{tg}(45° + A) = \frac{1 + \operatorname{tg}A}{1 - \operatorname{tg}A}$
+
+Možemo pokazati da je:
+$\operatorname{tg}\alpha = \operatorname{tg}(45° - 3°) = \operatorname{tg}42°$
+
+\subsection*{Answer}
+$42°$ (opcija \textbf{C}).
+
+\end{document}

@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the total number of real solutions to the system of equations:
+\[
+\begin{cases}
+\sqrt{x - 1} + \sqrt[3]{y} = 1\\
+x - y = 2
+\end{cases}
+\]
+
+\subsection*{Solution}
+From the second equation: $x = y + 2$.
+
+Substituting into the first equation:
+\[
+\sqrt{(y + 2) - 1} + \sqrt[3]{y} = 1
+\]
+\[
+\sqrt{y + 1} + \sqrt[3]{y} = 1
+\]
+
+For $\sqrt{y + 1}$ to be defined, we need $y \geq -1$.
+
+Let $u = \sqrt[3]{y}$, so $y = u^3$. The equation becomes:
+\[
+\sqrt{u^3 + 1} + u = 1
+\]
+\[
+\sqrt{u^3 + 1} = 1 - u
+\]
+
+For the right side to be non-negative, we need $1 - u \geq 0$, so $u \leq 1$.
+
+Also, since $y = u^3 \geq -1$, we need $u^3 \geq -1$, which gives $u \geq -1$.
+
+So we have $-1 \leq u \leq 1$.
+
+Squaring both sides (valid since both sides are non-negative):
+\[
+u^3 + 1 = (1 - u)^2 = 1 - 2u + u^2
+\]
+\[
+u^3 + 1 = 1 - 2u + u^2
+\]
+\[
+u^3 - u^2 + 2u = 0
+\]
+\[
+u(u^2 - u + 2) = 0
+\]
+
+This gives us $u = 0$ or $u^2 - u + 2 = 0$.
+
+For $u^2 - u + 2 = 0$:
+The discriminant is $\Delta = 1 - 8 = -7 < 0$, so there are no real solutions.
+
+Therefore, $u = 0$ is the only solution.
+
+When $u = 0$: $y = u^3 = 0$ and $x = y + 2 = 2$.
+
+Let's verify: $\sqrt{2 - 1} + \sqrt[3]{0} = 1 + 0 = 1$ ✓
+And: $2 - 0 = 2$ ✓
+
+We should also check that our squaring didn't introduce extraneous solutions:
+When $u = 0$: $\sqrt{0^3 + 1} = 1$ and $1 - u = 1 - 0 = 1$, so $1 = 1$ ✓
+
+Therefore, there is exactly 1 real solution: $(x, y) = (2, 0)$.
+
+\subsection*{Answer}
+1 (option \textbf{B}).
+
+\end{document}

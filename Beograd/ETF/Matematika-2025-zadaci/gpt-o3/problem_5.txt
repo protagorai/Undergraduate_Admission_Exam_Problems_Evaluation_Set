@@ -1,0 +1,2 @@
+5. Ako je \sin\frac{α}{2} = \frac{1}{\sqrt{5}}, za α ∈ (π, 2π), onda je tg α jednako:
+(A) \frac{3}{4}   (B) -\frac{4}{3}   (C) \frac{1}{2}   (D) -\frac{1}{3}   (E) \frac{7}{3}   (N) Ne znam

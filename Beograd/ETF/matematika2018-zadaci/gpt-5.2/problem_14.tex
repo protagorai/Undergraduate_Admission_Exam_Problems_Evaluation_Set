@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Prva dva člana rastuće geometrijske progresije su rešenja jednačine
+\[
+\frac{2^{2\sin x}}{1+2^{2\sin x}} = 1-\frac{3-2^{2\sin x}}{5-2^{2\sin x}}
+\]
+na intervalu $(0,\pi)$. Ako je zbir ove progresije $651\pi$, odrediti ukupan broj članova.
+
+\subsection*{Solution}
+Označimo $t=2^{2\sin x}>0$. Desna strana jednačine je
+\[
+1-\frac{3-t}{5-t}=\frac{5-t-(3-t)}{5-t}=\frac{2}{5-t}.
+\]
+Jednačina postaje
+\[
+\frac{t}{1+t}=\frac{2}{5-t}.
+\]
+Množenjem dobijamo
+\[
+t(5-t)=2(1+t)\;\Longleftrightarrow\; 5t-t^2=2+2t
+\;\Longleftrightarrow\; t^2-3t+2=0
+\;\Longleftrightarrow\; (t-1)(t-2)=0.
+\]
+Slučaj $t=1$ daje $2^{2\sin x}=1\Rightarrow \sin x=0$, tj. $x\in\{0,\pi\}$, što nije u $(0,\pi)$.
+Zato mora biti $t=2$, pa
+\[
+2^{2\sin x}=2 \;\Longleftrightarrow\; 2\sin x=1 \;\Longleftrightarrow\; \sin x=\frac12.
+\]
+Na $(0,\pi)$ rešenja su
+\[
+x_1=\frac{\pi}{6},\qquad x_2=\frac{5\pi}{6}.
+\]
+To su prva dva člana geometrijske progresije, pa je količnik
+\[
+q=\frac{x_2}{x_1}=\frac{5\pi/6}{\pi/6}=5,\qquad a_1=\frac{\pi}{6}.
+\]
+Zbir prvih $n$ članova je
+\[
+S_n=a_1\frac{q^n-1}{q-1}=\frac{\pi}{6}\cdot\frac{5^n-1}{4}=\pi\cdot\frac{5^n-1}{24}.
+\]
+Po uslovu $S_n=651\pi$, pa
+\[
+\frac{5^n-1}{24}=651 \;\Longleftrightarrow\; 5^n-1=15624 \;\Longleftrightarrow\; 5^n=15625=5^6,
+\]
+odakle je $n=6$.
+
+\subsection*{Answer}
+$6$ (option \textbf{B}).
+
+\end{document}
+

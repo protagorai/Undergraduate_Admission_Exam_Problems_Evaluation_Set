@@ -1,0 +1,9 @@
+Problem 14
+Tri tačke dele kružnicu u odnosu 6:7:11.
+Vrednost najmanjeg ugla trougla određenog tim tačkama iznosi:
+(A) 18^\circ
+(B) 30^\circ
+(C) 36^\circ
+(D) 45^\circ
+(E) 54^\circ
+(N) Ne znam

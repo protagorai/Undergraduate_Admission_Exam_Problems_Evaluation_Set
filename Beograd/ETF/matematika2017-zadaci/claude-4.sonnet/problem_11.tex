@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+U aritmetičkoj progresiji poznati su članovi $a_{54} = \alpha$ i $a_{70} = \beta$. ($\alpha, \beta \in \mathbb{R}, \alpha \neq \beta$). Tada je zbir prvih 160 članova te progresije jednak:
+
+(A) $85\alpha + 75\beta$ \quad (B) $5(-19\alpha + 51\beta + 32)$ \quad (C) $\frac{3(37\alpha-62\beta)}{-5}$ \quad (D) $5(-21\alpha + 53\beta)$ \quad (E) $\frac{75(-11\alpha+43\beta)}{16}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+U aritmetičkoj progresiji je $a_n = a_1 + (n-1)d$, gde je $d$ razlika.
+
+Imamo:
+\[
+a_{54} = a_1 + 53d = \alpha
+\]
+\[
+a_{70} = a_1 + 69d = \beta
+\]
+
+Oduzimanjem prve jednačine od druge:
+\[
+16d = \beta - \alpha \Rightarrow d = \frac{\beta - \alpha}{16}
+\]
+
+Iz prve jednačine:
+\[
+a_1 = \alpha - 53d = \alpha - 53 \cdot \frac{\beta - \alpha}{16} = \alpha - \frac{53(\beta - \alpha)}{16}
+\]
+\[
+a_1 = \alpha - \frac{53\beta - 53\alpha}{16} = \frac{16\alpha - 53\beta + 53\alpha}{16} = \frac{69\alpha - 53\beta}{16}
+\]
+
+Zbir prvih $n$ članova aritmetičke progresije je:
+\[
+S_n = \frac{n}{2}(2a_1 + (n-1)d)
+\]
+
+Za $n = 160$:
+\[
+S_{160} = \frac{160}{2}(2a_1 + 159d) = 80(2a_1 + 159d)
+\]
+
+Zamenimo vrednosti:
+\[
+S_{160} = 80\left(2 \cdot \frac{69\alpha - 53\beta}{16} + 159 \cdot \frac{\beta - \alpha}{16}\right)
+\]
+\[
+= 80 \cdot \frac{2(69\alpha - 53\beta) + 159(\beta - \alpha)}{16}
+\]
+\[
+= 80 \cdot \frac{138\alpha - 106\beta + 159\beta - 159\alpha}{16}
+\]
+\[
+= 80 \cdot \frac{-21\alpha + 53\beta}{16} = 5(-21\alpha + 53\beta)
+\]
+
+\subsection*{Answer}
+(D) $5(-21\alpha + 53\beta)$
+
+\end{document}

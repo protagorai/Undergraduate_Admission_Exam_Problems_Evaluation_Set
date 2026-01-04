@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Dužina stranice kvadrata $ABCD$ jednaka je $8\,\text{cm}$. Kružnica prolazi kroz temena $A$ i $D$ i dodiruje stranicu $BC$. Površina kruga koji određuje ta kružnica jeste:
+\[
+(A)\ 16\pi\,\text{cm}^2\quad (B)\ 25\pi\,\text{cm}^2\quad (C)\ \frac{64}{25}\pi\,\text{cm}^2\quad (D)\ 64\pi\,\text{cm}^2\quad (E)\ \frac{25}{64}\pi\,\text{cm}^2\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Neka je stranica kvadrata $a=8$. Postavimo koordinatni sistem tako da su temena $A(-4, 0)$ i $D(4, 0)$. Tada su $B(-4, 8)$ i $C(4, 8)$.
+Kružnica prolazi kroz $A$ i $D$, pa njen centar $O$ mora biti na simetrali duži $AD$, odnosno na y-osi. Neka je $O(0, k)$.
+Poluprečnik kružnice je rastojanje od centra do tačke na kružnici, npr. $A$:
+\[
+R^2 = (0 - (-4))^2 + (k - 0)^2 = 16 + k^2
+\]
+Kružnica dodiruje stranicu $BC$. Stranica $BC$ leži na pravoj $y=8$.
+Rastojanje od centra $O(0, k)$ do prave $y=8$ mora biti jednako poluprečniku $R$.
+Dakle, $R = |8-k|$.
+Izjednačimo kvadrate poluprečnika:
+\[
+16 + k^2 = (8-k)^2
+\]
+\[
+16 + k^2 = 64 - 16k + k^2
+\]
+\[
+16k = 48 \implies k = 3
+\]
+Sada možemo naći poluprečnik:
+\[
+R = 8 - k = 8 - 3 = 5
+\]
+Površina kruga je:
+\[
+P = R^2 \pi = 5^2 \pi = 25\pi\,\text{cm}^2
+\]
+
+\subsection*{Answer}
+$25\pi\,\text{cm}^2$ (option \textbf{B}).
+
+\end{document}

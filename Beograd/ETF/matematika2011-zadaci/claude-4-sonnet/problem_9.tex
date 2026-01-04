@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Ako je $f(x) = \left(\frac{x + 1}{x - 1}\right)^2$ $(x \neq \pm 1)$ tada je $f\left(\frac{x + 1}{x - 1}\right) - f\left(\frac{x - 1}{x + 1}\right)$ jednako:
+
+(A) $\left(\frac{x + 1}{x - 1}\right)^2$ \quad (B) $\left(\frac{x - 1}{x + 1}\right)^2$ \quad (C) $0$ \quad (D) $\frac{x^2 - 1}{x^2 + 1}$ \quad (E) $-\left(\frac{x - 1}{x + 1}\right)^2$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Given $f(x) = \left(\frac{x + 1}{x - 1}\right)^2$, we need to find $f\left(\frac{x + 1}{x - 1}\right) - f\left(\frac{x - 1}{x + 1}\right)$.
+
+First, let's calculate $f\left(\frac{x + 1}{x - 1}\right)$:
+
+Let $u = \frac{x + 1}{x - 1}$. Then:
+$$f(u) = \left(\frac{u + 1}{u - 1}\right)^2$$
+
+We need to find $\frac{u + 1}{u - 1}$ where $u = \frac{x + 1}{x - 1}$:
+
+$$\frac{u + 1}{u - 1} = \frac{\frac{x + 1}{x - 1} + 1}{\frac{x + 1}{x - 1} - 1}$$
+
+For the numerator:
+$$\frac{x + 1}{x - 1} + 1 = \frac{x + 1 + (x - 1)}{x - 1} = \frac{2x}{x - 1}$$
+
+For the denominator:
+$$\frac{x + 1}{x - 1} - 1 = \frac{x + 1 - (x - 1)}{x - 1} = \frac{2}{x - 1}$$
+
+Therefore:
+$$\frac{u + 1}{u - 1} = \frac{\frac{2x}{x - 1}}{\frac{2}{x - 1}} = \frac{2x}{2} = x$$
+
+So $f\left(\frac{x + 1}{x - 1}\right) = x^2$.
+
+Now let's calculate $f\left(\frac{x - 1}{x + 1}\right)$:
+
+Let $v = \frac{x - 1}{x + 1}$. Then:
+$$f(v) = \left(\frac{v + 1}{v - 1}\right)^2$$
+
+We need to find $\frac{v + 1}{v - 1}$ where $v = \frac{x - 1}{x + 1}$:
+
+For the numerator:
+$$\frac{x - 1}{x + 1} + 1 = \frac{x - 1 + (x + 1)}{x + 1} = \frac{2x}{x + 1}$$
+
+For the denominator:
+$$\frac{x - 1}{x + 1} - 1 = \frac{x - 1 - (x + 1)}{x + 1} = \frac{-2}{x + 1}$$
+
+Therefore:
+$$\frac{v + 1}{v - 1} = \frac{\frac{2x}{x + 1}}{\frac{-2}{x + 1}} = \frac{2x}{-2} = -x$$
+
+So $f\left(\frac{x - 1}{x + 1}\right) = (-x)^2 = x^2$.
+
+Therefore:
+$$f\left(\frac{x + 1}{x - 1}\right) - f\left(\frac{x - 1}{x + 1}\right) = x^2 - x^2 = 0$$
+
+\subsection*{Answer}
+(C) $0$
+
+\end{document}

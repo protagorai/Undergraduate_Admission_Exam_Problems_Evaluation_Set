@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+In a cuboid $ABCDA_1B_1C_1D_1$, the face diagonals have lengths $7$, $8$, and $9$.
+Adjacent to vertex $B$ are $A$, $C$, and $B_1$.
+Find the length of the altitude from $B$ in the pyramid $ABCB_1$ (i.e. the distance from $B$ to the plane through $A,C,B_1$).
+
+\subsection*{Solution}
+Let the edge lengths be $AB=p$, $BC=q$, and $BB_1=r$. Then the three face diagonals are
+\[
+\sqrt{p^2+q^2},\quad \sqrt{p^2+r^2},\quad \sqrt{q^2+r^2},
+\]
+which equal $7,8,9$ in some order. Taking
+\[
+p^2+q^2=49,\quad p^2+r^2=64,\quad q^2+r^2=81
+\]
+gives
+\[
+q^2-p^2=17,\quad p^2+q^2=49 \Rightarrow q^2=33,\ p^2=16,\ r^2=48.
+\]
+So
+\[
+p=4,\quad q=\sqrt{33},\quad r=4\sqrt3.
+\]
+Place coordinates:
+\[
+A(0,0,0),\ B(4,0,0),\ C(4,\sqrt{33},0),\ B_1(4,0,4\sqrt3).
+\]
+Plane $(ACB_1)$ passes through $A$ and has normal vector
+\[
+\vec n=\overrightarrow{AC}\times \overrightarrow{AB_1},
+\quad \overrightarrow{AC}=(4,\sqrt{33},0),\ \overrightarrow{AB_1}=(4,0,4\sqrt3).
+\]
+Compute
+\[
+\vec n=(4\sqrt{99},-16\sqrt3,-4\sqrt{33})=4(3\sqrt{11},-4\sqrt3,-\sqrt{33}).
+\]
+Thus a plane equation is
+\[
+3\sqrt{11}\,x-4\sqrt3\,y-\sqrt{33}\,z=0.
+\]
+Distance from $B(4,0,0)$ to this plane is
+\[
+d=\frac{|3\sqrt{11}\cdot 4|}{\sqrt{(3\sqrt{11})^2+(4\sqrt3)^2+(\sqrt{33})^2}}
+=\frac{12\sqrt{11}}{\sqrt{99+48+33}}
+=\frac{12\sqrt{11}}{\sqrt{180}}
+=\frac{12\sqrt{11}}{6\sqrt5}
+=\frac{2\sqrt{55}}{5}.
+\]
+
+\subsection*{Answer}
+$\dfrac{2\sqrt{55}}{5}$ (option \textbf{C}).
+
+\end{document}
+

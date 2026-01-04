@@ -1,0 +1,5 @@
+Problem 17
+
+Maksimalni obim pravougaonika upisanog u krug datog poluprečnika r iznosi:
+
+(A) 5\sqrt{2}\, r    (B) 4\sqrt{2}\, r    (C) \sqrt{2}\, r    (D) 3\sqrt{2}\, r    (E) Nijedan od ponuđenih odgovora    (N) Ne znam

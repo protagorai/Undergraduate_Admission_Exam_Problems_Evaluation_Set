@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Rešenje jednačine $2^{16^x} = 16^{2^x}$ jeste:
+
+\subsection*{Solution}
+Prepisujemo jednačinu koristeći činjenicu da je $16 = 2^4$:
+\[
+2^{16^x} = (2^4)^{2^x} = 2^{4 \cdot 2^x}
+\]
+
+Dakle, jednačina postaje:
+\[
+2^{16^x} = 2^{4 \cdot 2^x}
+\]
+
+Pošto su osnove jednake, eksponenti moraju biti jednaki:
+\[
+16^x = 4 \cdot 2^x
+\]
+
+Prepisujemo $16^x$ kao $(2^4)^x = 2^{4x}$:
+\[
+2^{4x} = 4 \cdot 2^x = 2^2 \cdot 2^x = 2^{2+x}
+\]
+
+Ponovo, pošto su osnove jednake:
+\[
+4x = 2 + x
+\]
+
+Rešavamo za $x$:
+\[
+4x - x = 2
+\]
+\[
+3x = 2
+\]
+\[
+x = \frac{2}{3}
+\]
+
+\subsection*{Answer}
+$\frac{2}{3}$ (opcija \textbf{B}).
+
+\end{document}

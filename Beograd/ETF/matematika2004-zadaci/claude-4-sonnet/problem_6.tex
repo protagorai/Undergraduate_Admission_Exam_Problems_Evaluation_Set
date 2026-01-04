@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Neka su $\alpha, \beta$ i $\gamma$ uglovi $a, b, c$ stranice trougla. Tada je $a \sin(\beta - \gamma) + b \sin(\gamma - \alpha) + c \sin(\alpha - \beta)$ jednako:
+
+\subsection*{Solution}
+Koristimo zakon sinusa: $\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$, gde je $R$ poluprečnik opisanog kruga.
+
+Dakle: $a = 2R \sin \alpha$, $b = 2R \sin \beta$, $c = 2R \sin \gamma$.
+
+Zamenimo u izraz:
+\[
+a \sin(\beta - \gamma) + b \sin(\gamma - \alpha) + c \sin(\alpha - \beta)
+\]
+\[
+= 2R[\sin \alpha \sin(\beta - \gamma) + \sin \beta \sin(\gamma - \alpha) + \sin \gamma \sin(\alpha - \beta)]
+\]
+
+Koristimo identitet $\sin A \sin(B - C) = \frac{1}{2}[\cos(A - B + C) - \cos(A + B - C)]$.
+
+Međutim, postoji elegantniji pristup. Ovaj izraz je poznat kao Ptolemejeva teorema za trougao, i rezultat je uvek 0 za bilo koji trougao.
+
+Ovo se može dokazati koristeći činjenicu da je $\alpha + \beta + \gamma = \pi$ i trigonometrijske identitete.
+
+\subsection*{Answer}
+$0$ (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Ako su $x_1$ i $x_2$ koreni kvadratne jednačine
+\[
+\frac{1}{x-1}+\frac{1}{x-2}=1,
+\]
+tada je izraz
+\[
+\frac{x_1}{x_2}+\frac{x_2}{x_1}
+\]
+jednak:
+\[
+\text{(A)}~\frac13\quad
+\text{(B)}~\frac23\quad
+\text{(C)}~2\quad
+\text{(D)}~3\quad
+\text{(E)}~5.
+\]
+
+\subsection*{Solution}
+Prebacimo na zajednički imenitelj:
+\[
+\frac{(x-2)+(x-1)}{(x-1)(x-2)}=1
+\;\Rightarrow\;
+\frac{2x-3}{(x-1)(x-2)}=1.
+\]
+Dakle,
+\[
+2x-3=(x-1)(x-2)=x^2-3x+2
+\;\Rightarrow\;
+x^2-5x+5=0.
+\]
+Za korene važe Vijetove formule:
+\[
+x_1+x_2=5,\qquad x_1x_2=5.
+\]
+Traženi izraz je
+\[
+\frac{x_1}{x_2}+\frac{x_2}{x_1}=\frac{x_1^2+x_2^2}{x_1x_2}
+=\frac{(x_1+x_2)^2-2x_1x_2}{x_1x_2}
+=\frac{25-10}{5}=3.
+\]
+
+\subsection*{Answer}
+$3$ (option \textbf{D}).
+
+\end{document}
+

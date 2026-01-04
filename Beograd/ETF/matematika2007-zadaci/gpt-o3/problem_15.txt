@@ -1,0 +1,5 @@
+Problem 15
+
+U razvoju binoma \(\left( \sqrt{a^{2}x} + \sqrt{\dfrac{1}{ax^{2}}} \right)^{13}\) (\(a > 0, x > 0\)), član koji ne sadrži \(x\) glasi:
+
+(A) \(1287a^{3}\)   (B) \(1024a^{4}\)   (C) \(390a^{2}\)   (D) \(516a\)   (E) \(52a^{5}\)   (N) Ne znam

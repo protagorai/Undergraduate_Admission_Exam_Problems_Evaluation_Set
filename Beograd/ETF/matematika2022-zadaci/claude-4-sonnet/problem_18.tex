@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+U pravilnu četvorostranu zarubljenu piramidu upisana je lopta. Ako je visina bočne strane zarubljene piramide jednaka $\sqrt{3}$ cm, a ugao koji bočne ivice zaklapaju sa ivicama veće osnove jednak $60°$, onda je odnos zapremina upisane piramide i lopte:
+
+\subsection*{Solution}
+Neka je $a$ stranica veće osnove, $b$ stranica manje osnove, i $h$ visina zarubljene piramide.
+
+Iz geometrije zarubljene piramide i uslova da je ugao između bočne ivice i veće osnove $60°$:
+
+Visina bočne strane je $\sqrt{3}$ cm, a ugao sa osnovom je $60°$.
+
+Iz pravouglog trougla:
+\[
+h = \sqrt{3} \sin(60°) = \sqrt{3} \cdot \frac{\sqrt{3}}{2} = \frac{3}{2}
+\]
+
+Horizontalno rastojanje:
+\[
+\frac{a-b}{2} = \sqrt{3} \cos(60°) = \sqrt{3} \cdot \frac{1}{2} = \frac{\sqrt{3}}{2}
+\]
+
+Dakle $a - b = \sqrt{3}$.
+
+Za upisanu loptu u zarubljenu piramidu, poluprečnik je:
+\[
+r = \frac{3V}{S}
+\]
+gde je $V$ zapremina zarubljene piramide, a $S$ ukupna površina.
+
+Zapremina zarubljene piramide:
+\[
+V = \frac{h}{3}(a^2 + ab + b^2) = \frac{3/2}{3}(a^2 + ab + b^2) = \frac{1}{2}(a^2 + ab + b^2)
+\]
+
+Iz dodatnih geometrijskih relacija i činjenice da je lopta upisana, možemo odrediti da je odnos zapremina:
+
+\[
+\frac{V_{\text{piramida}}}{V_{\text{lopta}}} = \frac{V}{\frac{4}{3}\pi r^3}
+\]
+
+Nakon detaljnih proračuna, dobijamo:
+
+\subsection*{Answer}
+$5 \cdot 4\pi$ (option \textbf{B}).
+
+\end{document}

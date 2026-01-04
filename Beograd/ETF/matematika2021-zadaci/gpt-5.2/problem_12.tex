@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Dat je konveksan cetvorougao $ABCD$ u kojem je $\angle ABD=50^\circ$, $\angle ADB=80^\circ$,
+$\angle ACB=40^\circ$ i $\angle DBC=\angle BDC+30^\circ$.
+Tada je $\angle DBC$ jednak:
+(A) $40^\circ$ \ (B) $45^\circ$ \ (C) $55^\circ$ \ (D) $65^\circ$ \ (E) $70^\circ$.
+
+\subsection*{Solution}
+Oznacimo
+\[
+x=\angle DBC,\qquad y=\angle BDC,
+\]
+pa je dato $x=y+30^\circ$.
+
+U trouglu $ABD$ znamo $\angle ABD=50^\circ$ i $\angle ADB=80^\circ$, pa je
+\[
+\angle BAD=180^\circ-50^\circ-80^\circ=50^\circ.
+\]
+Posmatrajmo sada uglove cetvorougla kod temena $B$ i $D$.
+Kako je dijagonala $BD$ unutar konveksnog cetvorougla, vazi
+\[
+\angle ABC=\angle ABD+\angle DBC=50^\circ+x,
+\]
+\[
+\angle ADC=\angle ADB+\angle BDC=80^\circ+y.
+\]
+Koristeci $x=y+30^\circ$ dobijamo
+\[
+\angle ADC=80^\circ+y=80^\circ+(x-30^\circ)=50^\circ+x=\angle ABC.
+\]
+Dakle, uglovi $\angle ABC$ i $\angle ADC$ su jednaki i obe ``vide'' duz $AC$.
+To znaci da tacke $A,B,C,D$ leze na istoj kruznici (cetvorougao je ciklican).
+
+U ciklicnom cetvorouglu su suprotni uglovi suplementni, pa je
+\[
+\angle ABC+\angle ADC=180^\circ.
+\]
+Ali $\angle ABC=\angle ADC$, pa mora biti
+\[
+2\angle ABC=180^\circ \ \Longrightarrow\ \angle ABC=90^\circ.
+\]
+Zato
+\[
+50^\circ+x=\angle ABC=90^\circ \ \Longrightarrow\ x=40^\circ.
+\]
+
+\subsection*{Answer}
+$40^\circ$ (option \textbf{A}).
+
+\end{document}
+

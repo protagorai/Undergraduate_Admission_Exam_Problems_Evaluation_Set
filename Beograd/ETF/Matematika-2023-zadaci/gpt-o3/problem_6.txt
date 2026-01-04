@@ -1,0 +1,9 @@
+Problem 6 (Matematika 2023)
+Ako su x1,x2,x3 koreni jednačine px^3 + qx^2 + px + 1 = 0 (p≠0), vrednost izraza
+1/x1 + 1/x2 + 1/x3 je:
+a) −p/q
+b) −1
+c) 1
+d) p
+e) −p
+n) Ne znam

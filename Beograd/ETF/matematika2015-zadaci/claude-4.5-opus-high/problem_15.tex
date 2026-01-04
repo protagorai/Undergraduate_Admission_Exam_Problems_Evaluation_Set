@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Skup svih realnih vrednosti $x$ za koje važi nejednakost $|4^{3x} - 2^{4x+2} \cdot 3^{x+1} + 20 \cdot 12^x \cdot 3^x| \geq 8 \cdot 6^x(8^{x-1} + 6^x)$ je oblika (za neke realne brojeve $a, b, c$ i $d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+Let's simplify using substitutions. Let $u = 2^x$ and $v = 3^x$.
+
+Left side:
+\[
+4^{3x} = 2^{6x} = u^6
+\]
+\[
+2^{4x+2} \cdot 3^{x+1} = 4 \cdot 2^{4x} \cdot 3 \cdot 3^x = 12u^4v
+\]
+\[
+20 \cdot 12^x \cdot 3^x = 20 \cdot (2^2 \cdot 3)^x \cdot 3^x = 20u^2v \cdot v = 20u^2v^2
+\]
+
+So LHS $= |u^6 - 12u^4v + 20u^2v^2|$
+
+Right side:
+\[
+8 \cdot 6^x(8^{x-1} + 6^x) = 8 \cdot 2^x \cdot 3^x \left(\frac{2^{3x}}{8} + 2^x \cdot 3^x\right) = 8uv\left(\frac{u^3}{8} + uv\right)
+\]
+\[
+= 8uv \cdot \frac{u^3}{8} + 8uv \cdot uv = u^4v + 8u^2v^2
+\]
+
+So the inequality becomes:
+\[
+|u^6 - 12u^4v + 20u^2v^2| \geq u^4v + 8u^2v^2
+\]
+
+Divide by $u^2v^2$ (positive):
+\[
+\left|\frac{u^4}{v^2} - 12\frac{u^2}{v} + 20\right| \geq \frac{u^2}{v} + 8
+\]
+
+Let $t = \dfrac{u^2}{v} = \dfrac{2^{2x}}{3^x} = \left(\dfrac{4}{3}\right)^x \cdot 3^{x-x} = \left(\dfrac{4}{3}\right)^x$.
+
+So we have:
+\[
+|t^2 - 12t + 20| \geq t + 8
+\]
+
+Factor: $t^2 - 12t + 20 = (t-2)(t-10)$
+
+\textbf{Case 1:} $t \leq 2$ or $t \geq 10$: $(t-2)(t-10) \geq 0$
+\[
+t^2 - 12t + 20 \geq t + 8
+\]
+\[
+t^2 - 13t + 12 \geq 0
+\]
+\[
+(t-1)(t-12) \geq 0
+\]
+So $t \leq 1$ or $t \geq 12$.
+
+Combined with $t \leq 2$ or $t \geq 10$: $t \leq 1$ or $t \geq 12$.
+
+\textbf{Case 2:} $2 < t < 10$: $(t-2)(t-10) < 0$
+\[
+-(t^2 - 12t + 20) \geq t + 8
+\]
+\[
+-t^2 + 12t - 20 \geq t + 8
+\]
+\[
+-t^2 + 11t - 28 \geq 0
+\]
+\[
+t^2 - 11t + 28 \leq 0
+\]
+\[
+(t-4)(t-7) \leq 0
+\]
+So $4 \leq t \leq 7$.
+
+Combined with $2 < t < 10$: $4 \leq t \leq 7$.
+
+Overall: $t \leq 1$ or $4 \leq t \leq 7$ or $t \geq 12$.
+
+Since $t = (4/3)^x$: $t \leq 1 \Leftrightarrow x \leq 0$, $t = 4 \Leftrightarrow x = \log_{4/3}4$, etc.
+
+The solution is $(-\infty, a] \cup [b, c] \cup [d, +\infty)$ form, which matches option \textbf{A}: $(-\infty, a] \cup [b, c] \cup [d, +\infty)$.
+
+\subsection*{Answer}
+$(-\infty, a] \cup [b, c] \cup [d, +\infty)$ (option \textbf{A}).
+
+\end{document}

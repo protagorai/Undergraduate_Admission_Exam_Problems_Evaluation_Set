@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Vrednost izraza $\displaystyle\frac{\sin 86° + \sin 76° - \sin 26° - \sin 16°}{\cos 86° + \cos 76° + \cos 26° + \cos 16°}$ iznosi:
+
+(A) $\sqrt{3}$ \quad (B) $\frac{\sqrt{3}}{2}$ \quad (C) $\frac{2}{\sqrt{3}}$ \quad (D) $\frac{1}{\sqrt{3}}$ \quad (E) $0$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's use sum-to-product formulas.
+
+For the numerator, group terms:
+\[
+(\sin 86° - \sin 26°) + (\sin 76° - \sin 16°)
+\]
+
+Using $\sin A - \sin B = 2\cos\frac{A+B}{2}\sin\frac{A-B}{2}$:
+\[
+\sin 86° - \sin 26° = 2\cos 56° \sin 30° = 2\cos 56° \cdot \frac{1}{2} = \cos 56°
+\]
+\[
+\sin 76° - \sin 16° = 2\cos 46° \sin 30° = 2\cos 46° \cdot \frac{1}{2} = \cos 46°
+\]
+
+Numerator $= \cos 56° + \cos 46°$
+
+Using $\cos A + \cos B = 2\cos\frac{A+B}{2}\cos\frac{A-B}{2}$:
+\[
+\cos 56° + \cos 46° = 2\cos 51° \cos 5°
+\]
+
+For the denominator:
+\[
+(\cos 86° + \cos 26°) + (\cos 76° + \cos 16°)
+\]
+\[
+\cos 86° + \cos 26° = 2\cos 56° \cos 30° = 2\cos 56° \cdot \frac{\sqrt{3}}{2} = \sqrt{3}\cos 56°
+\]
+\[
+\cos 76° + \cos 16° = 2\cos 46° \cos 30° = 2\cos 46° \cdot \frac{\sqrt{3}}{2} = \sqrt{3}\cos 46°
+\]
+
+Denominator $= \sqrt{3}(\cos 56° + \cos 46°) = \sqrt{3} \cdot 2\cos 51° \cos 5°$
+
+The ratio:
+\[
+\frac{2\cos 51° \cos 5°}{\sqrt{3} \cdot 2\cos 51° \cos 5°} = \frac{1}{\sqrt{3}}
+\]
+
+\subsection*{Answer}
+$\frac{1}{\sqrt{3}}$ (option \textbf{D}).
+
+\end{document}

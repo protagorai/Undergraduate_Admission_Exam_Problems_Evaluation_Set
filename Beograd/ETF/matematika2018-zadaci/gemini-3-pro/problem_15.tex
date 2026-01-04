@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 15}
+Given the function $f(x) = x^2 - 2\alpha x + \alpha^2 + 2\alpha - 8$, where $\alpha \in \mathbb{R}$. Let $S$ be the set of all values of $\alpha$ such that $f$ has at least one real zero and $f(x) \geq 0$ for every $x \in [0, 3]$. Then set $S$ is equal to:
+
+\subsection*{Solution}
+1. Condition for at least one real zero: Discriminant $D \geq 0$.
+\[ D = (-2\alpha)^2 - 4(\alpha^2 + 2\alpha - 8) = 4\alpha^2 - 4\alpha^2 - 8\alpha + 32 = -8\alpha + 32 \]
+\[ -8\alpha + 32 \geq 0 \implies \alpha \leq 4 \]
+
+2. Condition $f(x) \geq 0$ on $[0, 3]$.
+   Since the parabola opens upwards and has real roots (from condition 1), the function is negative between the roots.
+   Let the roots be $x_1$ and $x_2$ with $x_1 \leq x_2$.
+   We need the interval $(x_1, x_2)$ (where $f(x) < 0$) to not intersect $[0, 3]$.
+   This means either both roots are $\leq 0$ or both roots are $\geq 3$.
+   
+   Roots are $x = \frac{2\alpha \pm \sqrt{D}}{2} = \alpha \pm \sqrt{8-2\alpha}$.
+   
+   Case A: $x_2 \leq 0$.
+   $\alpha + \sqrt{8-2\alpha} \leq 0 \implies \sqrt{8-2\alpha} \leq -\alpha$.
+   Requires $\alpha \leq 0$.
+   Squaring: $8-2\alpha \leq \alpha^2 \implies \alpha^2 + 2\alpha - 8 \geq 0$.
+   $(\alpha+4)(\alpha-2) \geq 0$.
+   $\alpha \in (-\infty, -4] \cup [2, \infty)$.
+   Intersect with $\alpha \leq 0$: $\alpha \in (-\infty, -4]$.
+   
+   Case B: $x_1 \geq 3$.
+   $\alpha - \sqrt{8-2\alpha} \geq 3 \implies \alpha - 3 \geq \sqrt{8-2\alpha}$.
+   Requires $\alpha \geq 3$.
+   Squaring: $(\alpha-3)^2 \geq 8-2\alpha \implies \alpha^2 - 6\alpha + 9 \geq 8 - 2\alpha$.
+   $\alpha^2 - 4\alpha + 1 \geq 0$.
+   Roots of quadratic: $2 \pm \sqrt{3}$.
+   Solution: $\alpha \in (-\infty, 2-\sqrt{3}] \cup [2+\sqrt{3}, \infty)$.
+   Intersect with $\alpha \geq 3$ ($2+\sqrt{3} \approx 3.73$): $\alpha \in [2+\sqrt{3}, \infty)$.
+   
+   Combining with $D \geq 0$ ($\alpha \leq 4$):
+   For Case B: $\alpha \in [2+\sqrt{3}, 4]$.
+   For Case A: $\alpha \in (-\infty, -4]$ (matches $\alpha \leq 4$).
+   
+   Total set $S$: $(-\infty, -4] \cup [2+\sqrt{3}, 4]$.
+
+\subsection*{Answer}
+$(-\infty, -4] \cup [2+\sqrt{3}, 4]$ (option \textbf{B}).
+
+\end{document}

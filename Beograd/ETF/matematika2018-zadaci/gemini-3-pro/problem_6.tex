@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 6}
+Given functions:
+$f_1(x) = \ln((x+3)^5(x-1)^2)$,
+$f_2(x) = 5\ln(x+3) + \ln(x-1)^2$,
+$f_3(x) = \ln(x+3)^5 + 2\ln(x-1)$,
+$f_4(x) = 5\ln(x+3) + 2\ln(x-1)$.
+The correct statement is:
+
+\subsection*{Solution}
+We determine the domain of definition for each function:
+1. $f_1(x) = \ln((x+3)^5(x-1)^2)$.
+   Condition: $(x+3)^5(x-1)^2 > 0$.
+   Since $(x-1)^2 > 0$ for $x \neq 1$, we need $(x+3)^5 > 0 \implies x+3 > 0 \implies x > -3$.
+   Domain $D_1 = (-3, 1) \cup (1, \infty)$.
+   
+2. $f_2(x) = 5\ln(x+3) + \ln(x-1)^2$.
+   Conditions: $x+3 > 0$ and $(x-1)^2 > 0$.
+   $x > -3$ and $x \neq 1$.
+   Domain $D_2 = (-3, 1) \cup (1, \infty)$.
+   Note: $\ln((x+3)^5(x-1)^2) = \ln(x+3)^5 + \ln(x-1)^2 = 5\ln(x+3) + \ln(x-1)^2$ on $D_1$.
+   So $f_1 = f_2$.
+
+3. $f_3(x) = \ln(x+3)^5 + 2\ln(x-1)$.
+   Conditions: $(x+3)^5 > 0 \implies x > -3$ and $x-1 > 0 \implies x > 1$.
+   Domain $D_3 = (1, \infty)$.
+
+4. $f_4(x) = 5\ln(x+3) + 2\ln(x-1)$.
+   Conditions: $x+3 > 0$ and $x-1 > 0$.
+   Domain $D_4 = (1, \infty)$.
+   On $D_4$, $f_3(x) = 5\ln(x+3) + 2\ln(x-1) = f_4(x)$.
+   So $f_3 = f_4$.
+
+Comparing domains: $D_1 = D_2 \neq D_3 = D_4$.
+Thus $f_1 = f_2$ and $f_3 = f_4$, but $f_1 \neq f_3$ due to different domains.
+The correct statement is $f_1 = f_2 \neq f_3 = f_4$.
+
+\subsection*{Answer}
+$f_1 = f_2 \neq f_3 = f_4$ (option \textbf{C}).
+
+\end{document}

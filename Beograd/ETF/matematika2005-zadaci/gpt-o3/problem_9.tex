@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Odrediti zbir koeficijenata pravca dodirnica kružnice
+\[
+x^{2}+y^{2}=2
+\]
+koje prolaze kroz presečnu tačku pravih $x-y-1=0$ i $x+y-3=0$.
+
+\subsection*{Rešenje}
+Presečna tačka pravih je rešenje sistema:
+\[
+\begin{cases}
+x-y=1\\
+x+y=3
+\end{cases}\;\Rightarrow\;(x,y)=(2,1).
+\]
+Tangenta na kružnicu $x^{2}+y^{2}=2$ sa nagibom $k$ ima oblik $y=kx+ n$; dodirnost zahteva da udaljenost centra $(0,0)$ od prave iznosi $\sqrt2$:
+\[
+\frac{|n|}{\sqrt{1+k^{2}}}=\sqrt2\;\Rightarrow\;n=\pm2\sqrt{1+k^{2}}.
+\]
+Pošto tačka $(2,1)$ leži na pravoj, važi $1=2k+n$.
+Kvadriranjem i sređivanjem dobijamo kvadratnu jednačinu za $k$:
+\[
+(1-2k)^{2}=2(1+k^{2})\;\Longrightarrow\;2k^{2}-4k-1=0.
+\]
+Rešavanjem dobijamo
+\[
+k_{1,2}=\frac{4\pm\sqrt{24}}{4}=1\pm\frac{\sqrt6}{2},\quad k_{1}+k_{2}=2.
+\]
+
+\subsection*{Odgovor}
+$2$ (opcija \textbf{A}).
+
+\end{document}

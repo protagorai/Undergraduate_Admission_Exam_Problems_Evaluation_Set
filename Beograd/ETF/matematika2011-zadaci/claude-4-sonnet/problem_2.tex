@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Vrednost izraza $\left(\frac{i^{2011} + i^{2012}}{i^{2013} - i^{2014}}\right)^{2015}$, $(i^2 = -1)$, jednaka je:
+
+(A) $-1$ \quad (B) $0$ \quad (C) $1$ \quad (D) $i$ \quad (E) $-i$ \quad (N) Ne znam
+
+\subsection*{Solution}
+First, let's find the pattern of powers of $i$:
+\begin{align}
+i^1 &= i\\
+i^2 &= -1\\
+i^3 &= i^2 \cdot i = -i\\
+i^4 &= i^2 \cdot i^2 = (-1)(-1) = 1
+\end{align}
+
+The pattern repeats every 4 powers: $i^{4k+r} = i^r$ for $r \in \{0,1,2,3\}$.
+
+Now let's calculate each power:
+\begin{align}
+2011 &= 4 \cdot 502 + 3 \Rightarrow i^{2011} = i^3 = -i\\
+2012 &= 4 \cdot 503 + 0 \Rightarrow i^{2012} = i^0 = 1\\
+2013 &= 4 \cdot 503 + 1 \Rightarrow i^{2013} = i^1 = i\\
+2014 &= 4 \cdot 503 + 2 \Rightarrow i^{2014} = i^2 = -1
+\end{align}
+
+Substituting:
+\begin{align}
+\frac{i^{2011} + i^{2012}}{i^{2013} - i^{2014}} &= \frac{-i + 1}{i - (-1)} = \frac{1 - i}{i + 1}
+\end{align}
+
+To simplify this, multiply numerator and denominator by the conjugate of the denominator:
+\begin{align}
+\frac{1 - i}{i + 1} \cdot \frac{-i + 1}{-i + 1} &= \frac{(1 - i)(1 - i)}{(i + 1)(1 - i)}\\
+&= \frac{(1 - i)^2}{1 - i^2}\\
+&= \frac{1 - 2i + i^2}{1 - (-1)}\\
+&= \frac{1 - 2i - 1}{2}\\
+&= \frac{-2i}{2} = -i
+\end{align}
+
+Therefore:
+$$\left(\frac{i^{2011} + i^{2012}}{i^{2013} - i^{2014}}\right)^{2015} = (-i)^{2015}$$
+
+Since $2015 = 4 \cdot 503 + 3$, we have $(-i)^{2015} = (-i)^3 = (-1)^3 \cdot i^3 = (-1)(-i) = i$.
+
+\subsection*{Answer}
+(D) $i$
+
+\end{document}

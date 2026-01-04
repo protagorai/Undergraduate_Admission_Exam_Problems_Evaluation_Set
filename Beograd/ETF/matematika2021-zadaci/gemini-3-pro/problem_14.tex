@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 14}
+Na koliko načina dve osobe, $A$ i $B$, mogu da podele 8 različitih knjiga, ukoliko ne moraju sve knjige biti podeljene, osoba $A$ mora da dobije bar jednu knjigu, dok osoba $B$ ne mora da dobije nijednu knjigu?
+
+\subsection*{Rešenje}
+Svaka knjiga može završiti kod osobe A, osobe B, ili ostati nepodeljena (3 mogućnosti).
+Ukupan broj raspodela bez ograničenja je $3^8$.
+Ograničenje je da A mora dobiti bar jednu knjigu.
+Broj raspodela gde A ne dobija nijednu knjigu (sve idu B-u ili ostaju nepodeljene) je $2^8$.
+Traženi broj načina je $3^8 - 2^8$.
+$3^8 = 6561$.
+$2^8 = 256$.
+$6561 - 256 = 6305$.
+
+\subsection*{Odgovor}
+6305 (opcija \textbf{A}).
+
+\end{document}

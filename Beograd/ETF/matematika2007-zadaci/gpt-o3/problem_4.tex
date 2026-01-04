@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Izračunati
+\[
+\frac{(1+i)^{2008}-(1-i)^{2009}}{(1+i)^{2006}+(1-i)^{2007}},\qquad i^{2}=-1.
+\]
+
+\subsection*{Rešenje}
+Zapišimo $1+i$ i $1-i$ u trigonometrijskom obliku:
+\[
+1+i=\sqrt2\,e^{i\pi/4},\qquad 1-i=\sqrt2\,e^{-i\pi/4}.
+\]
+Tada su
+\begin{align*}
+(1+i)^{2008}&=2^{1004}e^{i\,2008\,\pi/4}=2^{1004},\\
+(1-i)^{2009}&=2^{1004.5}e^{-i\,2009\,\pi/4}=2^{1004}\sqrt2\,e^{-i\pi/4},\\
+(1+i)^{2006}&=2^{1003}e^{i\,2006\,\pi/4}=2^{1003}(-i),\\
+(1-i)^{2007}&=2^{1003}\sqrt2\,e^{-i7\pi/4}=2^{1003}(1+i).
+\end{align*}
+Zbir u imenilacu zato glasi
+\[
+(1+i)^{2006}+(1-i)^{2007}=2^{1003}\bigl(-i+1+i\bigr)=2^{1003}.
+\]
+Brojilac je
+\[
+(1+i)^{2008}-(1-i)^{2009}=2^{1004}\bigl[1-\sqrt2\,e^{-i\pi/4}\bigr].
+\]
+Izračunajmo $\sqrt2\,e^{-i\pi/4}=\sqrt2\,(\tfrac{\sqrt2}{2}-i\tfrac{\sqrt2}{2})=1-i$, pa
+\[
+1-\sqrt2\,e^{-i\pi/4}=1-(1-i)=i.
+\]
+Tako dobijamo
+\[
+\frac{(1+i)^{2008}-(1-i)^{2009}}{(1+i)^{2006}+(1-i)^{2007}}=\frac{2^{1004}i}{2^{1003}}=2i.
+\]
+\subsection*{Odgovor}
+$2i$ (opcija \textbf{E}).
+
+\end{document}

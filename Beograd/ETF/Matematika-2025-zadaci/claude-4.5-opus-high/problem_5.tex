@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako je $\sin\frac{\alpha}{2} = \frac{1}{\sqrt{5}}$, za $\alpha \in (\pi, 2\pi)$, onda je $\tan\alpha$ jednako:
+
+\subsection*{Solution}
+Dato je $\sin\frac{\alpha}{2} = \frac{1}{\sqrt{5}}$ i $\alpha \in (\pi, 2\pi)$.
+
+Pošto je $\alpha \in (\pi, 2\pi)$, sledi $\frac{\alpha}{2} \in \left(\frac{\pi}{2}, \pi\right)$, što znači da je $\frac{\alpha}{2}$ u drugom kvadrantu.
+
+U drugom kvadrantu, sinus je pozitivan, a kosinus je negativan.
+
+Koristimo identitet $\sin^2\frac{\alpha}{2} + \cos^2\frac{\alpha}{2} = 1$:
+\[
+\cos^2\frac{\alpha}{2} = 1 - \sin^2\frac{\alpha}{2} = 1 - \frac{1}{5} = \frac{4}{5}
+\]
+
+Pošto je $\frac{\alpha}{2}$ u drugom kvadrantu:
+\[
+\cos\frac{\alpha}{2} = -\frac{2}{\sqrt{5}}
+\]
+
+Sada koristimo dvostruke uglove:
+\[
+\sin\alpha = 2\sin\frac{\alpha}{2}\cos\frac{\alpha}{2} = 2 \cdot \frac{1}{\sqrt{5}} \cdot \left(-\frac{2}{\sqrt{5}}\right) = -\frac{4}{5}
+\]
+
+\[
+\cos\alpha = \cos^2\frac{\alpha}{2} - \sin^2\frac{\alpha}{2} = \frac{4}{5} - \frac{1}{5} = \frac{3}{5}
+\]
+
+Dakle:
+\[
+\tan\alpha = \frac{\sin\alpha}{\cos\alpha} = \frac{-\frac{4}{5}}{\frac{3}{5}} = -\frac{4}{3}
+\]
+
+\subsection*{Answer}
+$-\frac{4}{3}$ (opcija \textbf{B}).
+
+\end{document}

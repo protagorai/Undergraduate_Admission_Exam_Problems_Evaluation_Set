@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 13}
+Granična vrednost
+\[
+\lim_{x\to 2}\frac{x\sqrt{x}-\sqrt{2}\,x-2\sqrt{x}+2\sqrt{2}}{x^3-4x^2+4x}
+\]
+iznosi.
+
+\subsection*{Solution}
+Brojilac grupišemo:
+\[
+x\sqrt{x}-2\sqrt{x}=\sqrt{x}(x-2),\qquad
+-\sqrt{2}\,x+2\sqrt{2}=-\sqrt{2}(x-2),
+\]
+pa je
+\[
+x\sqrt{x}-\sqrt{2}\,x-2\sqrt{x}+2\sqrt{2}=(x-2)(\sqrt{x}-\sqrt{2}).
+\]
+Imenilac:
+\[
+x^3-4x^2+4x=x(x^2-4x+4)=x(x-2)^2.
+\]
+Zato je razlomak
+\[
+\frac{(x-2)(\sqrt{x}-\sqrt{2})}{x(x-2)^2}=\frac{\sqrt{x}-\sqrt{2}}{x(x-2)}.
+\]
+Racionalizujemo:
+\[
+\sqrt{x}-\sqrt{2}=\frac{x-2}{\sqrt{x}+\sqrt{2}},
+\]
+pa dobijamo
+\[
+\lim_{x\to 2}\frac{1}{x(\sqrt{x}+\sqrt{2})}
+=\frac{1}{2( \sqrt{2}+\sqrt{2})}=\frac{1}{4\sqrt{2}}.
+\]
+
+\subsection*{Answer}
+$\dfrac{1}{4\sqrt2}$ (option \textbf{A}).
+
+\end{document}
+
+

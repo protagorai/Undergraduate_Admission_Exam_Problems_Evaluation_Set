@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Dati su izrazi:
+\begin{align*}
+E_1 &= \sin^2\frac{x+y}{2} + \cos x \cos y\\
+E_2 &= \cos^2\frac{x-y}{2} - \sin x \sin y\\
+E_3 &= \cos^2\frac{x+y}{2} + \sin x \sin y\\
+E_4 &= \sin^2\frac{x-y}{2} + \cos x \cos y
+\end{align*}
+
+Tačan je iskaz:
+
+A) $E_1 \neq E_2$, $E_3 = E_4$; \quad B) $E_1 = E_2$, $E_3 \neq E_4$; \quad C) Među datim izrazima nema međusobno jednakih;
+
+D) $E_1 = E_2$, $E_3 = E_4$; \quad E) $E_1 = E_3$, $E_2 = E_4$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Koristimo formule:
+\begin{align*}
+\sin^2\frac{\alpha}{2} &= \frac{1 - \cos\alpha}{2}\\
+\cos^2\frac{\alpha}{2} &= \frac{1 + \cos\alpha}{2}\\
+\cos x \cos y &= \frac{1}{2}[\cos(x-y) + \cos(x+y)]\\
+\sin x \sin y &= \frac{1}{2}[\cos(x-y) - \cos(x+y)]
+\end{align*}
+
+\textbf{Računamo $E_1$:}
+\[
+E_1 = \frac{1 - \cos(x+y)}{2} + \frac{\cos(x-y) + \cos(x+y)}{2} = \frac{1 - \cos(x+y) + \cos(x-y) + \cos(x+y)}{2}
+\]
+\[
+= \frac{1 + \cos(x-y)}{2}
+\]
+
+\textbf{Računamo $E_2$:}
+\[
+E_2 = \frac{1 + \cos(x-y)}{2} - \frac{\cos(x-y) - \cos(x+y)}{2} = \frac{1 + \cos(x-y) - \cos(x-y) + \cos(x+y)}{2}
+\]
+\[
+= \frac{1 + \cos(x+y)}{2}
+\]
+
+\textbf{Računamo $E_3$:}
+\[
+E_3 = \frac{1 + \cos(x+y)}{2} + \frac{\cos(x-y) - \cos(x+y)}{2} = \frac{1 + \cos(x+y) + \cos(x-y) - \cos(x+y)}{2}
+\]
+\[
+= \frac{1 + \cos(x-y)}{2}
+\]
+
+\textbf{Računamo $E_4$:}
+\[
+E_4 = \frac{1 - \cos(x-y)}{2} + \frac{\cos(x-y) + \cos(x+y)}{2} = \frac{1 - \cos(x-y) + \cos(x-y) + \cos(x+y)}{2}
+\]
+\[
+= \frac{1 + \cos(x+y)}{2}
+\]
+
+\textbf{Zaključak:}
+\[
+E_1 = E_3 = \frac{1 + \cos(x-y)}{2}, \quad E_2 = E_4 = \frac{1 + \cos(x+y)}{2}
+\]
+
+Dakle $E_1 = E_3$ i $E_2 = E_4$.
+
+\subsection*{Odgovor}
+$E_1 = E_3$, $E_2 = E_4$ (opcija \textbf{E}).
+
+\end{document}

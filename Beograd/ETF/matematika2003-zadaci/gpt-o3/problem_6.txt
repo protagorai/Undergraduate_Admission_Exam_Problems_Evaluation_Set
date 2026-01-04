@@ -1,0 +1,2 @@
+6. Površina trougla, čiji su uglovi \alpha, \beta i \gamma, a R poluprečnik opisanog kruga, jednaka je:
+A) 2R^2 \sin \alpha \sin \beta \sin \gamma;   B) \frac{1}{2} R^2 \sin \alpha \sin \gamma;   C) \frac{1}{2} R^2 \cos \alpha \cos \gamma;   D) R^2 \sin \alpha \cos \beta \cos \gamma;   E) 2R^2 \cos \alpha \sin(\beta+\gamma);   N) Ne znam.

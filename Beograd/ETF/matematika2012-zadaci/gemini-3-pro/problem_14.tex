@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 14}
+Stranice trougla su 21 i $9\sqrt{2}$ a njima zahvaćeni ugao $45^\circ$. Zbir poluprečnika upisanog i opisanog kruga tog trougla je:
+
+\subsection*{Solution}
+Let $a=21, b=9\sqrt{2}, \gamma=45^\circ$.
+Find side $c$ using Cosine Rule:
+\[
+c^2 = a^2 + b^2 - 2ab \cos \gamma = 21^2 + (9\sqrt{2})^2 - 2 \cdot 21 \cdot 9\sqrt{2} \cdot \frac{\sqrt{2}}{2}
+\]
+\[
+c^2 = 441 + 162 - 378 = 225 \implies c = 15
+\]
+Area $S = \frac{1}{2} ab \sin \gamma = \frac{1}{2} \cdot 21 \cdot 9\sqrt{2} \cdot \frac{\sqrt{2}}{2} = \frac{189 \cdot 2}{4} = \frac{189}{2}$.
+Semi-perimeter $s = \frac{21 + 9\sqrt{2} + 15}{2} = \frac{36 + 9\sqrt{2}}{2}$.
+Inradius $r = \frac{S}{s} = \frac{189/2}{(36+9\sqrt{2})/2} = \frac{189}{9(4+\sqrt{2})} = \frac{21}{4+\sqrt{2}} = \frac{21(4-\sqrt{2})}{14} = \frac{3(4-\sqrt{2})}{2} = 6 - \frac{3\sqrt{2}}{2}$.
+Circumradius $R = \frac{abc}{4S} = \frac{21 \cdot 9\sqrt{2} \cdot 15}{4 \cdot (189/2)} = \frac{2835\sqrt{2}}{378} = \frac{15\sqrt{2}}{2}$.
+Sum $r+R$:
+\[
+r+R = 6 - \frac{3\sqrt{2}}{2} + \frac{15\sqrt{2}}{2} = 6 + \frac{12\sqrt{2}}{2} = 6 + 6\sqrt{2} = 6(1+\sqrt{2})
+\]
+
+\subsection*{Answer}
+(C) $6(\sqrt{2}+1)$
+
+\end{document}

@@ -1,0 +1,2 @@
+7. Broj realnih rešenja sistema  x^2 − 3xy + 5y^2 = 1,   x^2 + xy + y^2 = 1  je:
+(A) 4   (B) 2   (C) veći od 4   (D) 1   (E) 3   (N) Ne znam

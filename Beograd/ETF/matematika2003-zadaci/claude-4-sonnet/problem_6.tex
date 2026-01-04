@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+The area of a triangle whose angles are $\alpha$, $\beta$, and $\gamma$, and $R$ is the circumradius of the inscribed circle, equals:
+
+A) $2R^2 \sin \alpha \sin \beta \sin \gamma$; B) $\frac{1}{2}R^2 \sin \alpha \sin \beta \sin \gamma$; C) $\frac{1}{2}R^2 \cos \alpha \cos \beta \cos \gamma$; D) $R^2 \sin \alpha \cos \beta \cos \gamma$; E) $2R^2 \cos \alpha \sin(\beta + \gamma)$; N) Ne znam.
+
+\subsection*{Solution}
+For a triangle with circumradius $R$, we know that the sides are related to the angles by:
+\[
+a = 2R \sin \alpha, \quad b = 2R \sin \beta, \quad c = 2R \sin \gamma
+\]
+
+The area of the triangle can be calculated using:
+\[
+S = \frac{1}{2}bc \sin \alpha = \frac{1}{2}ac \sin \beta = \frac{1}{2}ab \sin \gamma
+\]
+
+Using the first formula:
+\[
+S = \frac{1}{2}bc \sin \alpha = \frac{1}{2} \cdot (2R \sin \beta) \cdot (2R \sin \gamma) \cdot \sin \alpha
+\]
+
+\[
+= \frac{1}{2} \cdot 4R^2 \sin \beta \sin \gamma \sin \alpha = 2R^2 \sin \alpha \sin \beta \sin \gamma
+\]
+
+\subsection*{Answer}
+$2R^2 \sin \alpha \sin \beta \sin \gamma$ (option \textbf{A}).
+
+\end{document}

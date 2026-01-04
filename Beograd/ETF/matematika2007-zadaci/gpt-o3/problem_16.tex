@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+U geometrijskoj progresiji dati su
+\[
+a_{1}+a_{5}=51,\qquad a_{2}+a_{6}=102.
+\]
+Odredити $n$ za koji je zbir prvih $n$ članova $S_{n}=3069$.
+
+\subsection*{Rešenje}
+Neka je prvi član $a$ a količnik $q$.
+\[
+a_{1}=a,\quad a_{5}=aq^{4}\;\Rightarrow\;a(1+q^{4})=51\tag{1}
+\]
+\[
+a_{2}=aq,\quad a_{6}=aq^{5}\;\Rightarrow\;aq(1+q^{4})=102.\tag{2}
+\]
+Podelimo (2) sa (1):
+\[q=\frac{102}{51}=2.\]
+Iz (1) potom sledi $a(1+16)=51\Rightarrow a=\frac{51}{17}=3$.
+
+Zbir $n$ prvih članova geometrijskog niza sa količnikom $q=2$ je
+\[
+S_{n}=a\frac{q^{n}-1}{q-1}=3(2^{n}-1).
+\]
+Postavljamo $3(2^{n}-1)=3069\;\Rightarrow\;2^{n}-1=1023\;\Rightarrow\;2^{n}=1024=2^{10}$,
+pa je $n=10$.
+
+\subsection*{Odgovor}
+$n=10$ (opcija \textbf{D}).
+
+\end{document}

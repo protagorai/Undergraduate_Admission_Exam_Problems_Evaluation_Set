@@ -1,0 +1,67 @@
+RESENJA - Prijemni ispit iz matematike za upis na Elektrotehnicki fakultet
+Univerzitet u Beogradu, 29. jun 2020.
+================================================================================
+
+1.  (A) 1/2
+    Vrednost izraza log_4(3) * log_5(4) * log_6(5) * log_7(6) * log_8(7) * log_9(8) = 1/2
+
+2.  (D) 54°
+    Ugao kruznog isecka cija povrsina je 15% povrsine kruga = 54°
+
+3.  (C) 2
+    Vrednost izraza (4 + sqrt(15))(sqrt(10) - sqrt(6)) * sqrt(4 - sqrt(15)) = 2
+
+4.  (A) g(x) = (1/9)x² - (2/3)x + 4
+    Inverzna funkcija za f(x) = 3*sqrt(x-3) + 3
+
+5.  (C) 7
+    Vrednost izraza a(b + c) za parabolu f(x) = ax² + bx + c sa datim grafikom = 7
+
+6.  (D) -6
+    Proizvod najmanjeg i najveceg korena polinoma P(x) = x⁴ - 9x² + 18 je -6
+
+7.  (A) 4(1 + Im²z) = 7
+    Realni deo kompleksnog broja (z - z² + 2z³)(2 - z + z²) za z = (-1 + i*sqrt(3))/2
+
+8.  (D) -2020
+    f_2020(-2020) = -2020, gde je f_1(x) = 2x + 2020, f_{n+1}(x) = f_1(f_n(x))
+
+9.  (D) 3P
+    Zbir povrsina svih figura F_n dobijenih opisanim postupkom = 3P
+
+10. (A) 2
+    Broj realnih resenja jednacine 2x² - 6x + sqrt(x² - 3x + 6) + 2 = 0 je 2
+
+11. (C) (0, 21)
+    Realno resenje jednacine x + log_21(3^x + 1) = x*log_21(7) + log_21(756) pripada intervalu (0, 21)
+
+12. (B) 25π cm²
+    Povrsina kruga koji prolazi kroz temena A i D kvadrata i dodiruje stranicu BC = 25π cm²
+
+13. (D) 10
+    Broj celobrojnih resenja nejednacine (sqrt(7+4*sqrt(3)))^(cos x) + (sqrt(7-4*sqrt(3)))^(cos x) ≤ 4
+    na intervalu [-2π, sqrt(3) + sqrt(5)] je 10
+
+14. (B) [a, b] = [-sqrt(3), 1]
+    Skup resenja nejednacine 12*arctg²x + π*arctgx - π² ≤ 0 je oblika [a, b]
+
+15. (A) 0
+    Broj svih realnih resenja jednacine sin²x + 1/sin²x = sin x je 0
+
+16. (A) a²/4
+    Povrsina cetvorougla MNPQ u pravilnom tetraedru ABCD sa ivicom a = a²/4
+
+17. (A) S = {π/4, 3π/4, 5π/4, 7π/4, 11π/4, 15π/4}
+    Skup S koji ima tacno tri zajednicka elementa sa skupom resenja date jednacine
+
+18. (C) 2*sqrt(3) cm²
+    Proizvod duzine dijagonale BD i duzine stranice CD u tetivnom cetvorouglu = 2*sqrt(3) cm²
+
+19. (A) 8/sqrt(5) = 8*sqrt(5)/5
+    y_0 = 8/sqrt(5) za tacku Y(0, y_0) na preseku y-ose i elipse
+
+20. (E) sqrt(3)
+    Vrednost izraza tg10° - tg50° + tg70° = sqrt(3)
+
+================================================================================
+Napomena: Resenja su dobijena samostalnim resavanjem zadataka.

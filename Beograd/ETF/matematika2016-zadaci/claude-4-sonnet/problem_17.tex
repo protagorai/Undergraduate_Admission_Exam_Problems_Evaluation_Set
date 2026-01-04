@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+On a shelf there are 5 books in English, 7 in Spanish and 8 in French. All books are different. In how many ways can the books be arranged if all books written in French must be together?
+
+\subsection*{Solution}
+We need to arrange 20 books total (5 + 7 + 8 = 20) with the constraint that all 8 French books must be together.
+
+We can treat the 8 French books as a single unit. So we have:
+- 1 unit of French books
+- 5 English books  
+- 7 Spanish books
+
+This gives us 13 objects to arrange: 1 + 5 + 7 = 13.
+
+These 13 objects can be arranged in $13!$ ways.
+
+Within the French unit, the 8 French books can be arranged among themselves in $8!$ ways.
+
+Therefore, the total number of arrangements is:
+\[
+13! \times 8!
+\]
+
+Let's calculate:
+\[
+13! = 6,227,020,800
+\]
+\[
+8! = 40,320
+\]
+\[
+13! \times 8! = 6,227,020,800 \times 40,320 = 251,133,798,400,000
+\]
+
+However, looking at the answer choices, they seem to be in a different format. Let me reconsider.
+
+The answer choices suggest we should express this as a combination or permutation formula.
+
+We have $13! \times 8!$.
+
+Looking at the options:
+- Option A: $13! \cdot 8!$
+- Option B: $13 \cdot 8!$  
+- Option C: $13 \cdot \binom{12}{5} + 7! \cdot 8!$
+- Option D: $\binom{20}{7} \cdot \binom{13}{8} \cdot 5!$
+
+Option A matches our calculation exactly: $13! \cdot 8!$.
+
+\subsection*{Answer}
+$13! \cdot 8!$ (option \textbf{A}).
+
+\end{document}

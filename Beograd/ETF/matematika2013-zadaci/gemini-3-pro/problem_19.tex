@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 19}
+Ukupan broj realnih rešenja jednačine $\sin 14x - \sin 12x + 8\sin x - \cos 13x = 4$ na intervalu $(0, 2\pi)$ je:
+\[ (A)\ 0 \quad (B)\ 1 \quad (C)\ 2 \quad (D)\ 3 \quad (E)\ 4 \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Use sum-to-product formula: $\sin A - \sin B = 2\sin\frac{A-B}{2}\cos\frac{A+B}{2}$.
+$\sin 14x - \sin 12x = 2\sin x \cos 13x$.
+The equation becomes:
+\[ 2\sin x \cos 13x - \cos 13x + 8\sin x - 4 = 0 \]
+Group terms:
+\[ \cos 13x (2\sin x - 1) + 4(2\sin x - 1) = 0 \]
+\[ (2\sin x - 1)(\cos 13x + 4) = 0 \]
+Since $|\cos 13x| \le 1$, the term $(\cos 13x + 4)$ is always positive (between 3 and 5).
+Thus, we must have:
+\[ 2\sin x - 1 = 0 \implies \sin x = \frac{1}{2} \]
+On the interval $(0, 2\pi)$, $\sin x = 1/2$ at $x = \frac{\pi}{6}$ and $x = \frac{5\pi}{6}$.
+Both solutions are valid.
+Number of solutions is 2.
+
+\subsection*{Answer}
+$2$ (option \textbf{C}).
+
+\end{document}

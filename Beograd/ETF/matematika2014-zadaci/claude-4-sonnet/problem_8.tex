@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Odnos binomnih koeficijenata uz stepen $x^{1007}$, ($x \in (0,+\infty)$) u razvoju binoma $(1+x)^{2014}$ i $(1+x)^{2013}$ redom, iznosi:
+
+(A) $\frac{1007}{1006}$ \quad (B) $2$ \quad (C) $\frac{3}{2}$ \quad (D) $\frac{1}{2014}$ \quad (E) $\frac{1}{2015}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+U razvoju binoma $(1+x)^n$ koeficijent uz $x^k$ je $\binom{n}{k}$.
+
+Za binom $(1+x)^{2014}$, koeficijent uz $x^{1007}$ je $\binom{2014}{1007}$.
+
+Za binom $(1+x)^{2013}$, koeficijent uz $x^{1007}$ je $\binom{2013}{1007}$.
+
+Odnos je:
+\[
+\frac{\binom{2014}{1007}}{\binom{2013}{1007}} = \frac{\frac{2014!}{1007! \cdot 1007!}}{\frac{2013!}{1007! \cdot 1006!}}
+\]
+
+\[
+= \frac{2014!}{1007! \cdot 1007!} \cdot \frac{1007! \cdot 1006!}{2013!} = \frac{2014! \cdot 1006!}{2013! \cdot 1007!}
+\]
+
+\[
+= \frac{2014 \cdot 2013! \cdot 1006!}{2013! \cdot 1007 \cdot 1006!} = \frac{2014}{1007} = 2
+\]
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}

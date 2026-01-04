@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Find the remainder when dividing polynomial $P(x) = x^{2024} + x^{2023} + x^{2022} + x^{2021} + x^{20} + 1$ by polynomial $Q(x) = x^3 + x^2 + x + 1$.
+
+\subsection*{Solution}
+First, let's factor $Q(x)$:
+\[
+Q(x) = x^3 + x^2 + x + 1 = x^2(x + 1) + (x + 1) = (x + 1)(x^2 + 1)
+\]
+
+Since $\deg(Q) = 3$, the remainder when dividing $P(x)$ by $Q(x)$ is a polynomial of degree at most 2.
+Let $R(x) = ax^2 + bx + c$ be this remainder.
+
+Then $P(x) = Q(x) \cdot S(x) + R(x)$ for some polynomial $S(x)$.
+
+The roots of $Q(x)$ are $x = -1$ and $x = \pm i$.
+
+At these roots, $P(x) = R(x)$.
+
+\textbf{At $x = -1$:}
+\[
+P(-1) = (-1)^{2024} + (-1)^{2023} + (-1)^{2022} + (-1)^{2021} + (-1)^{20} + 1
+\]
+\[
+= 1 - 1 + 1 - 1 + 1 + 1 = 2
+\]
+
+So $R(-1) = a - b + c = 2$.
+
+\textbf{At $x = i$:}
+Note that $i^4 = 1$, so:
+- $i^{2024} = i^{4 \cdot 506} = (i^4)^{506} = 1^{506} = 1$
+- $i^{2023} = i^{4 \cdot 505 + 3} = i^3 = -i$
+- $i^{2022} = i^{4 \cdot 505 + 2} = i^2 = -1$
+- $i^{2021} = i^{4 \cdot 505 + 1} = i$
+- $i^{20} = i^{4 \cdot 5} = 1$
+
+So:
+\[
+P(i) = 1 + (-i) + (-1) + i + 1 + 1 = 2
+\]
+
+Therefore $R(i) = a(i)^2 + b(i) + c = -a + bi + c = 2$.
+
+\textbf{At $x = -i$:}
+Similarly:
+- $(-i)^{2024} = 1$
+- $(-i)^{2023} = i$
+- $(-i)^{2022} = -1$
+- $(-i)^{2021} = -i$
+- $(-i)^{20} = 1$
+
+So:
+\[
+P(-i) = 1 + i + (-1) + (-i) + 1 + 1 = 2
+\]
+
+Therefore $R(-i) = a(-i)^2 + b(-i) + c = -a - bi + c = 2$.
+
+From the equations:
+- $a - b + c = 2$
+- $-a + bi + c = 2$
+- $-a - bi + c = 2$
+
+From the last two: $bi = -bi$, so $2bi = 0$, which means $b = 0$.
+
+From the first and third equations with $b = 0$:
+$a + c = 2$ and $-a + c = 2$
+
+Adding: $2c = 4$, so $c = 2$.
+Subtracting: $2a = 0$, so $a = 0$.
+
+Therefore, $R(x) = 2$.
+
+\subsection*{Answer}
+2 (option \textbf{B}).
+
+\end{document}

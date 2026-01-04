@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Pravilna četvorostrana prizma presečena je sa ravni koja sadrži osnovnu ivicu prizme. Ako je površina preseka ravni i prizme dva puta veća od površine baze, tada je ugao između te ravni i baze prizme jednak:
+
+(A) $15°$ \quad (B) $30°$ \quad (C) $45°$ \quad (D) $60°$ \quad (E) $75°$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let the base of the regular quadrilateral prism (square prism) have side $a$. The base area is $a^2$.
+
+The cutting plane contains one edge of the base (of length $a$) and cuts through the prism. The cross-section is a rectangle with one side being the base edge $a$ and the other side being the slant height from the base to where the plane exits the prism.
+
+If the angle between the cutting plane and the base is $\alpha$, and the plane contains a base edge, then the cross-section is a rectangle. The width is $a$ (the base edge), and the height in the cutting plane depends on the angle.
+
+For a plane containing one base edge and making angle $\alpha$ with the base, the cross-section is a parallelogram. When the plane passes through the opposite edge at the top, the cross-section becomes a rectangle with dimensions $a$ (base edge) and $\frac{a}{\cos\alpha}$ (the slant across).
+
+Actually, let's reconsider. The cross-section through a base edge at angle $\alpha$ creates a rectangle with base $a$ and the other dimension being $\frac{a}{\sin\alpha}$ where $a$ is the distance to the opposite edge.
+
+If the cross-section area is $2a^2$ and one side is $a$, the other side must be $2a$.
+
+For a plane through one base edge at angle $\alpha$, the cross-section width perpendicular to that edge in the slant plane is $\frac{a}{\sin\alpha}$.
+
+So: $a \cdot \frac{a}{\sin\alpha} = 2a^2$
+
+This gives: $\frac{1}{\sin\alpha} = 2$, so $\sin\alpha = \frac{1}{2}$, meaning $\alpha = 30°$.
+
+\subsection*{Answer}
+$30°$ (option \textbf{B}).
+
+\end{document}

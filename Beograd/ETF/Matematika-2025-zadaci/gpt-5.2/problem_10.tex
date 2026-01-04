@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 10}
+Ako je zbir prva tri člana rastućeg aritmetičkog niza jednak $15$ i njihov proizvod jednak $105$,
+a zbir prvih $n$ članova tog niza jednak $1023$, onda je $n$ jednako.
+
+\subsection*{Solution}
+Neka su prva tri člana $a,\,a+d,\,a+2d$ sa $d>0$.
+Uslov zbira daje:
+\[
+a+(a+d)+(a+2d)=3a+3d=15 \Rightarrow a+d=5.
+\]
+Dakle srednji član je $5$, pa su članovi $5-d,\ 5,\ 5+d$.
+Uslov proizvoda:
+\[
+(5-d)\cdot 5\cdot (5+d)=5(25-d^2)=105 \Rightarrow 25-d^2=21 \Rightarrow d^2=4 \Rightarrow d=2.
+\]
+Dakle niz je $3,5,7,\dots$ sa $a_1=3$ i $d=2$.
+Zbir prvih $n$ članova:
+\[
+S_n=\frac{n}{2}\bigl(2a_1+(n-1)d\bigr)
+=\frac{n}{2}\bigl(6+2n-2\bigr)=\frac{n}{2}(2n+4)=n(n+2).
+\]
+Uslov $S_n=1023$ daje
+\[
+n(n+2)=1023 \Rightarrow n^2+2n-1023=0.
+\]
+\[
+\Delta=4+4092=4096=64^2 \Rightarrow n=\frac{-2+64}{2}=31.
+\]
+
+\subsection*{Answer}
+$31$ (option \textbf{C}).
+
+\end{document}
+
+

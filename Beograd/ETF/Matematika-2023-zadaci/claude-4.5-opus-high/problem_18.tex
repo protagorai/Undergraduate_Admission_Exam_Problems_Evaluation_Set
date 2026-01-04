@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Broj različitih vrednosti parametra $p \in R$ za koje jednačina $\frac{p^2}{x+1} - \frac{x(p+2)}{x^2-1} = \frac{2p}{1-x^2}$ nema rešenja iznosi:
+
+(A) 1 \quad (B) 2 \quad (C) 0 \quad (D) više od 3 \quad (E) 3
+
+\subsection*{Solution}
+Primetimo da je $x^2 - 1 = (x-1)(x+1)$ i $1 - x^2 = -(x^2-1)$.
+
+Jednačina postaje:
+\[
+\frac{p^2}{x+1} - \frac{x(p+2)}{(x-1)(x+1)} = \frac{-2p}{x^2-1}
+\]
+
+Domen: $x \neq 1$ i $x \neq -1$.
+
+Množimo sa $(x-1)(x+1)$:
+\[
+p^2(x-1) - x(p+2) = -2p
+\]
+\[
+p^2 x - p^2 - px - 2x = -2p
+\]
+\[
+x(p^2 - p - 2) = p^2 - 2p
+\]
+\[
+x(p^2 - p - 2) = p(p - 2)
+\]
+
+Faktorizujemo $p^2 - p - 2 = (p-2)(p+1)$:
+\[
+x(p-2)(p+1) = p(p-2)
+\]
+
+\textbf{Slučaj 1:} $p = 2$
+
+Jednačina postaje $0 = 0$, što je tačno za sve $x$ u domenu. Dakle jednačina ima beskonačno rešenja, ne "nema rešenja".
+
+\textbf{Slučaj 2:} $p \neq 2$
+
+Delimo sa $(p-2)$:
+\[
+x(p+1) = p
+\]
+
+\textbf{Podslučaj 2a:} $p = -1$
+
+Jednačina postaje $0 = -1$, što je nemoguće. Dakle za $p = -1$ jednačina nema rešenja.
+
+\textbf{Podslučaj 2b:} $p \neq -1$
+\[
+x = \frac{p}{p+1}
+\]
+
+Ovo rešenje mora biti u domenu, tj. $x \neq 1$ i $x \neq -1$.
+
+$x = 1$: $\frac{p}{p+1} = 1 \Rightarrow p = p + 1$, nemoguće. Dakle $x \neq 1$ za sve $p$.
+
+$x = -1$: $\frac{p}{p+1} = -1 \Rightarrow p = -p - 1 \Rightarrow 2p = -1 \Rightarrow p = -\frac{1}{2}$
+
+Za $p = -\frac{1}{2}$ dobijamo $x = -1$, što nije u domenu. Dakle za $p = -\frac{1}{2}$ jednačina nema rešenja.
+
+Vrednosti $p$ za koje jednačina nema rešenja: $p = -1$ i $p = -\frac{1}{2}$.
+
+\subsection*{Answer}
+$2$ (opcija \textbf{(B)}).
+
+\end{document}
+

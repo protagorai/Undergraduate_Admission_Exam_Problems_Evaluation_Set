@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Ako je $k \in \mathbf{Z}$ i $0,0010101 \cdot 10^k > 1001$, koja je najmanja moguća vrednost za $k$?
+
+\subsection*{Solution}
+Posmatrajmo datu nejednačinu:
+\[
+0,0010101 \cdot 10^k > 1001.
+\]
+Broj $0,0010101$ možemo zapisati kao $1,0101 \cdot 10^{-3}$.
+Tada nejednačina postaje:
+\[
+1,0101 \cdot 10^{-3} \cdot 10^k > 1,001 \cdot 10^3
+\]
+\[
+1,0101 \cdot 10^{k-3} > 1,001 \cdot 10^3
+\]
+Deljenjem sa $1,0101$ (koje je približno $1$) dobijamo:
+\[
+10^{k-3} > \frac{1,001}{1,0101} \cdot 10^3
+\]
+Primetimo da je $1,001 < 1,0101$, pa je razlomak $\frac{1,001}{1,0101}$ malo manji od 1.
+Preciznije,
+\[
+0,0010101 \cdot 10^k = 1010,1 \cdot 10^{k-6}.
+\]
+Želimo da ovo bude veće od $1001$.
+\[
+1010,1 \cdot 10^{k-6} > 1001.
+\]
+Ako je $k=6$, imamo $1010,1 \cdot 10^0 = 1010,1 > 1001$, što je tačno.
+Ako je $k=5$, imamo $1010,1 \cdot 10^{-1} = 101,01 > 1001$, što nije tačno.
+Dakle, najmanja celobrojna vrednost za $k$ je $6$.
+
+\subsection*{Answer}
+$6$ (option \textbf{D}).
+
+\end{document}

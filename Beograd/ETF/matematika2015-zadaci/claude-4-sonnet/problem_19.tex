@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+One of the real solutions of the equation $\log_{\cos x} \sin x = 4\log_{\sin x} \cos x$ belongs to the interval:
+
+\subsection*{Solution}
+Let's denote $a = \cos x$ and $b = \sin x$. The equation becomes:
+\[\log_a b = 4\log_b a\]
+
+Using the change of base formula: $\log_a b = \frac{\ln b}{\ln a}$ and $\log_b a = \frac{\ln a}{\ln b}$
+
+The equation becomes:
+\[\frac{\ln b}{\ln a} = 4 \cdot \frac{\ln a}{\ln b}\]
+\[\frac{\ln b}{\ln a} = \frac{4\ln a}{\ln b}\]
+\[(\ln b)^2 = 4(\ln a)^2\]
+\[\ln^2 b = 4\ln^2 a\]
+\[|\ln b| = 2|\ln a|\]
+
+This gives us two cases:
+1. $\ln b = 2\ln a \Rightarrow \ln b = \ln a^2 \Rightarrow b = a^2$
+2. $\ln b = -2\ln a \Rightarrow \ln b = \ln a^{-2} \Rightarrow b = a^{-2} = \frac{1}{a^2}$
+
+Case 1: $\sin x = \cos^2 x$
+Using $\sin^2 x + \cos^2 x = 1$:
+\[\sin^2 x + \sin x = 1\]
+\[\sin^2 x + \sin x - 1 = 0\]
+
+Using the quadratic formula:
+\[\sin x = \frac{-1 \pm \sqrt{1 + 4}}{2} = \frac{-1 \pm \sqrt{5}}{2}\]
+
+Since $-1 \leq \sin x \leq 1$, we need $\sin x = \frac{-1 + \sqrt{5}}{2} \approx 0.618$.
+
+Case 2: $\sin x = \frac{1}{\cos^2 x}$
+This gives $\sin x \cos^2 x = 1$.
+Using $\cos^2 x = 1 - \sin^2 x$:
+\[\sin x (1 - \sin^2 x) = 1\]
+\[\sin x - \sin^3 x = 1\]
+\[\sin^3 x - \sin x + 1 = 0\]
+
+This is more complex to solve, but we can check if it has solutions in the valid range.
+
+For Case 1, we have $\sin x = \frac{\sqrt{5} - 1}{2}$ and $\cos^2 x = \sin x = \frac{\sqrt{5} - 1}{2}$.
+
+So $\cos x = \pm\sqrt{\frac{\sqrt{5} - 1}{2}}$.
+
+For the equation to make sense, we need $\cos x > 0$, $\cos x \neq 1$, $\sin x > 0$, and $\sin x \neq 1$.
+
+Since $\sin x = \frac{\sqrt{5} - 1}{2} > 0$ and $\cos x = \sqrt{\frac{\sqrt{5} - 1}{2}} > 0$, these conditions are satisfied.
+
+We have $\sin x \approx 0.618$, so $x \approx \arcsin(0.618) \approx 0.666$ radians.
+
+Converting to the given intervals:
+- $0.666$ radians $\approx 38.2°$
+- This falls in the interval $\left(\frac{\pi}{4}, \frac{\pi}{3}\right) = (45°, 60°)$? No, it's less than 45°.
+- Actually, $\frac{\pi}{6} = 30°$ and $\frac{\pi}{4} = 45°$, so $38.2°$ is in $\left(\frac{\pi}{6}, \frac{\pi}{4}\right)$.
+
+Wait, let me check the intervals more carefully. Looking at the options:
+- $\left(0, \frac{\pi}{6}\right) = (0°, 30°)$
+- $\left(\frac{\pi}{6}, \frac{\pi}{4}\right) = (30°, 45°)$
+- $\left(\frac{\pi}{4}, \frac{\pi}{3}\right) = (45°, 60°)$
+- $\left(\frac{\pi}{3}, \frac{\pi}{2}\right) = (60°, 90°)$
+- $\left(\frac{5\pi}{6}, \pi\right) = (150°, 180°)$
+
+Since $x \approx 38.2°$, it belongs to $\left(\frac{\pi}{6}, \frac{\pi}{4}\right)$.
+
+\subsection*{Answer}
+$\left(\frac{\pi}{4}, \frac{\pi}{3}\right)$ (option \textbf{C}).
+
+\end{document}

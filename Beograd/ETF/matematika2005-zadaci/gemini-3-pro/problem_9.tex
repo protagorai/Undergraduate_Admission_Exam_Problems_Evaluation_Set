@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 9}
+Zbir koeficijenata pravca tangenti kružnice $x^2 + y^2 = 2$ koje sadrže presečnu tačku pravih $x - y - 1 = 0$ i $x + y - 3 = 0$ je:
+(A) 2 (B) $\sqrt{6}$ (C) -2 (D) $-\sqrt{6}$ (E) $2\sqrt{6}$ (N) Ne znam
+
+\subsection*{Rešenje}
+Prvo nađimo presečnu tačku pravih rešavanjem sistema:
+\begin{align*}
+x - y &= 1 \\
+x + y &= 3
+\end{align*}
+Sabiranjem jednačina dobijamo $2x = 4 \implies x = 2$.
+Zamenom u prvu jednačinu: $2 - y = 1 \implies y = 1$.
+Presečna tačka je $M(2, 1)$.
+
+Kružnica $x^2 + y^2 = 2$ ima centar u $O(0,0)$ i poluprečnik $r = \sqrt{2}$.
+Jednačina prave koja prolazi kroz $M(2, 1)$ sa koeficijentom pravca $k$ je:
+\[
+y - 1 = k(x - 2) \implies kx - y + (1 - 2k) = 0
+\]
+Da bi ova prava bila tangenta kružnice, rastojanje od centra $(0,0)$ do prave mora biti jednako poluprečniku $r=\sqrt{2}$:
+\[
+\frac{|k \cdot 0 - 0 + 1 - 2k|}{\sqrt{k^2 + (-1)^2}} = \sqrt{2}
+\]
+\[
+\frac{|1 - 2k|}{\sqrt{k^2 + 1}} = \sqrt{2}
+\]
+Kvadriranjem:
+\[
+(1 - 2k)^2 = 2(k^2 + 1)
+\]
+\[
+1 - 4k + 4k^2 = 2k^2 + 2
+\]
+\[
+2k^2 - 4k - 1 = 0
+\]
+Tražimo zbir koeficijenata pravca $k_1 + k_2$. Na osnovu Vijetovih formula za kvadratnu jednačinu $Ax^2 + Bx + C = 0$, zbir rešenja je $-\frac{B}{A}$.
+Ovde je $A=2, B=-4$, pa je:
+\[
+k_1 + k_2 = -\frac{-4}{2} = 2
+\]
+
+\subsection*{Odgovor}
+2 (opcija \textbf{A}).
+
+\end{document}

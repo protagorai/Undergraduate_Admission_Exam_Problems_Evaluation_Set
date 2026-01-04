@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Zbir prva tri člana rastuće aritmetičke progresije je 54. Ako od prvog člana te progresije oduzmemo 3, drugi član ostane nepromenjen, a trećem članu dodamo 12, dobijamo prva tri člana geometrijske progresije. Količnik te geometrijske progresije je:
+
+\subsection*{Solution}
+Neka je aritmetička progresija: $a$, $a + d$, $a + 2d$ gde je $d > 0$ (rastuća).
+
+Uslov: $a + (a + d) + (a + 2d) = 54$
+\[
+3a + 3d = 54 \Rightarrow a + d = 18 \Rightarrow a = 18 - d
+\]
+
+Nova progresija: $a - 3$, $a + d$, $a + 2d + 12$ je geometrijska.
+
+Za geometrijsku progresiju: $\frac{a + d}{a - 3} = \frac{a + 2d + 12}{a + d}$
+
+Krstno množenje:
+\[
+(a + d)^2 = (a - 3)(a + 2d + 12)
+\]
+
+Zamenimo $a = 18 - d$:
+\[
+((18 - d) + d)^2 = ((18 - d) - 3)((18 - d) + 2d + 12)
+\]
+\[
+18^2 = (15 - d)(30 + d)
+\]
+\[
+324 = 450 + 15d - 30d - d^2
+\]
+\[
+324 = 450 - 15d - d^2
+\]
+\[
+d^2 + 15d + 126 = 0
+\]
+
+Diskriminanta: $\Delta = 15^2 - 4 \cdot 126 = 225 - 504 = -279 < 0$
+
+Ovo znači da nema realnih rešenja, što ukazuje na grešku. Pokušajmo ponovo.
+
+Proveravamo računicu:
+\[
+(a + d)^2 = (a - 3)(a + 2d + 12)
+\]
+\[
+18^2 = (18 - d - 3)(18 - d + 2d + 12)
+\]
+\[
+324 = (15 - d)(30 + d)
+\]
+\[
+324 = 450 + 15d - 30d - d^2 = 450 - 15d - d^2
+\]
+\[
+d^2 + 15d - 126 = 0
+\]
+
+Koristeći kvadratnu formulu:
+\[
+d = \frac{-15 \pm \sqrt{225 + 504}}{2} = \frac{-15 \pm \sqrt{729}}{2} = \frac{-15 \pm 27}{2}
+\]
+
+$d = 6$ ili $d = -21$. Pošto je progresija rastuća, $d = 6$.
+
+Dakle, $a = 18 - 6 = 12$.
+
+Aritmetička progresija: $12, 18, 24$.
+Geometrijska progresija: $9, 18, 36$.
+
+Količnik: $q = \frac{18}{9} = 2$.
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}

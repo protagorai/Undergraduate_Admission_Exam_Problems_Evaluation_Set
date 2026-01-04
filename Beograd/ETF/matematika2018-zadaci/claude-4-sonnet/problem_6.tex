@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Given functions: $f_1(x) = \ln((x + 3)^5(x - 1)^2)$, $f_2(x) = 5\ln(x + 3) + \ln(x - 1)^2$,
+$f_3(x) = \ln(x + 3)^5 + 2\ln(x - 1)$ and $f_4(x) = 5\ln(x + 3) + 2\ln(x - 1)$. The correct statement is:
+
+\subsection*{Solution}
+Let's analyze each function using logarithm properties.
+
+For $f_1(x) = \ln((x + 3)^5(x - 1)^2)$:
+Using $\ln(ab) = \ln a + \ln b$:
+\[
+f_1(x) = \ln(x + 3)^5 + \ln(x - 1)^2 = 5\ln(x + 3) + 2\ln|x - 1|
+\]
+
+For $f_2(x) = 5\ln(x + 3) + \ln(x - 1)^2$:
+Using $\ln a^n = n\ln|a|$:
+\[
+f_2(x) = 5\ln(x + 3) + 2\ln|x - 1|
+\]
+
+For $f_3(x) = \ln(x + 3)^5 + 2\ln(x - 1)$:
+\[
+f_3(x) = 5\ln(x + 3) + 2\ln(x - 1)
+\]
+
+For $f_4(x) = 5\ln(x + 3) + 2\ln(x - 1)$:
+\[
+f_4(x) = 5\ln(x + 3) + 2\ln(x - 1)
+\]
+
+Now let's consider the domains:
+- $f_1(x)$: requires $(x + 3)^5(x - 1)^2 > 0$, which means $x > -3$ and $x \neq 1$
+- $f_2(x)$: requires $x + 3 > 0$ and $(x - 1)^2 > 0$, which means $x > -3$ and $x \neq 1$
+- $f_3(x)$ and $f_4(x)$: require $x + 3 > 0$ and $x - 1 > 0$, which means $x > 1$
+
+We see that $f_1(x) = f_2(x)$ for $x > -3, x \neq 1$, and $f_3(x) = f_4(x)$ for $x > 1$.
+
+However, $f_1 \neq f_3$ because their domains are different, and when $x \in (-3, 1)$, $f_1$ is defined but $f_3$ is not.
+
+\subsection*{Answer}
+$f_1 = f_2 \neq f_3 = f_4$ (option \textbf{D}).
+
+\end{document}

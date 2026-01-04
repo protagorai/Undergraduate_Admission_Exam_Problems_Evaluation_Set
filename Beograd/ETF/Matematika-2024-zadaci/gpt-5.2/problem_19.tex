@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Skup svih re\u{s}enja nejedna\u{c}ine
+\[
+\frac{(x^2-4)\left(5^{2x}-6\cdot 5^{x+1}+5^3\right)}{\sqrt{\,9-3^{x^2-3x+2}\,}}\le 0
+\]
+je oblika (za neke realne brojeve $a<b<c<d$):
+
+\subsection*{Solution}
+\noindent\textbf{1) Domena (imenilac).}
+Mora va\u{z}iti
+\[
+9-3^{x^2-3x+2}>0
+\quad\Longleftrightarrow\quad
+3^{x^2-3x+2}<3^2
+\quad\Longleftrightarrow\quad
+x^2-3x+2<2.
+\]
+Dakle,
+\[
+x^2-3x<0 \;\Longleftrightarrow\; x(x-3)<0 \;\Longleftrightarrow\; x\in(0,3).
+\]
+Na tom intervalu je imenilac pozitivan, pa znak razlomka zavisi samo od brojica.
+
+\medskip
+\noindent\textbf{2) Brojilac.}
+\[
+x^2-4=(x-2)(x+2).
+\]
+Za drugi faktor uvedimo $t=5^x>0$:
+\[
+5^{2x}-6\cdot 5^{x+1}+5^3=t^2-30t+125=(t-5)(t-25).
+\]
+Vra\u{c}anjem $t=5^x$:
+\[
+5^{2x}-6\cdot 5^{x+1}+5^3=(5^x-5)(5^x-25).
+\]
+Na domeni $(0,3)$ kriti\u{c}ne ta\u{c}ke su $x=1$ i $x=2$ (gde $5^x=5$ i $5^x=25$) i $x=2$ (gde je $x^2-4=0$).
+
+Na intervalima:
+\begin{itemize}
+\item Ako je $x\in(0,1)$, onda je $5^x<5<25$, pa je $(5^x-5)(5^x-25)>0$, a $(x-2)<0$, pa je brojilac $<0$.
+\item Ako je $x\in(1,2)$, tada je $(5^x-5)>0$, $(5^x-25)<0$, pa je proizvod $<0$, a $(x-2)<0$, pa je brojilac $>0$.
+\item Ako je $x\in(2,3)$, oba faktora su $>0$, pa je brojilac $>0$.
+\end{itemize}
+Nule brojica su u $x=1$ i $x=2$ (obe pripadaju domeni), pa su te ta\u{c}ke uklju\u{c}ene.
+
+Zato je nejedna\u{c}ina $\le 0$ ispunjena za
+\[
+x\in(0,1]\cup\{2\}.
+\]
+
+\subsection*{Answer}
+$(0,1]\cup\{2\}$ (option \textbf{E}).
+
+\end{document}
+
+
+
+

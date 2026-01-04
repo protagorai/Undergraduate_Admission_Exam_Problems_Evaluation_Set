@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 18}
+The domain of definition of the function $f(x) = \frac{\sqrt{\cos^2 x + \sin x \cos x - 1}}{\log_{1/7}(9-x^2)}$ is of the form:
+
+\subsection*{Solution}
+1. Denominator conditions:
+   $9-x^2 > 0 \implies x^2 < 9 \implies x \in (-3, 3)$.
+   $\log_{1/7}(9-x^2) \neq 0 \implies 9-x^2 \neq 1 \implies x^2 \neq 8 \implies x \neq \pm \sqrt{8} = \pm 2\sqrt{2}$.
+
+2. Numerator condition (under square root):
+   $\cos^2 x + \sin x \cos x - 1 \ge 0$
+   Using $1 = \sin^2 x + \cos^2 x$:
+   $\cos^2 x + \sin x \cos x - (\sin^2 x + \cos^2 x) \ge 0$
+   $\sin x \cos x - \sin^2 x \ge 0$
+   $\sin x (\cos x - \sin x) \ge 0$
+   
+   Analyze signs in $(-3, 3)$ (approx $(-0.95\pi, 0.95\pi)$):
+   Roots: $\sin x = 0 \implies x=0$.
+   $\cos x = \sin x \implies x = \pi/4, -3\pi/4$.
+   
+   Intervals in $(-3, 3)$:
+   - $(-3, -3\pi/4)$: $\sin x < 0$. $\cos x < \sin x$ is false ($\tan x > 1$). Wait.
+     At $x = -2.5$: $\sin(-2.5) \approx -0.6$, $\cos(-2.5) \approx -0.8$. $\cos < \sin$.
+     So $\cos - \sin < 0$. Product $(-)(-) = (+)$. Valid.
+     End at $-3\pi/4 \approx -2.356$.
+     Wait, $\tan x = 1$ at $-3\pi/4$. For $x \in (-3, -3\pi/4)$, $x$ is in 3rd quadrant (mostly). $\tan x > 1$ for $x \in (-3\pi/4-\pi, -3\pi/4)$? No.
+     $-3\pi/4 = -135^\circ$. $-3 \approx -171^\circ$.
+     In $(-171^\circ, -135^\circ)$: $\sin < 0, \cos < 0$. $\tan > 0$.
+     At $-150^\circ$: $\sin = -1/2, \cos = -\sqrt{3}/2 \approx -0.866$.
+     $\cos < \sin$ ($ -0.866 < -0.5$).
+     So $\cos - \sin < 0$.
+     Product $\sin (\cos - \sin) = (-) \cdot (-) > 0$. Valid.
+     So $[-3, -3\pi/4]$ is valid (excluding -3 from log domain).
+     
+   - $(-3\pi/4, 0)$:
+     At $-45^\circ$ ($-\pi/4$): $\sin < 0, \cos > 0$. $\cos - \sin > 0$.
+     Product $(-)(+) < 0$. Invalid.
+     
+   - $(0, \pi/4)$:
+     At $\pi/6$: $\sin > 0, \cos > 0$. $\cos > \sin$. $\cos - \sin > 0$.
+     Product $(+)(+) > 0$. Valid.
+     So $[0, \pi/4]$.
+     
+   - $(\pi/4, 3)$:
+     At $\pi/2$: $\sin = 1, \cos = 0$. $\cos - \sin = -1$.
+     Product $(+)(-) < 0$. Invalid.
+     
+   Valid regions for numerator: $[-3, -3\pi/4] \cup [0, \pi/4]$.
+   
+   Combine with denominator: $x \in (-3, 3)$ and $x \neq \pm \sqrt{8}$.
+   $\sqrt{8} \approx 2.828$. This is in $(\pi/4, 3)$, outside valid numerator range.
+   $-\sqrt{8} \approx -2.828$. Since $-3\pi/4 \approx -2.356$, $-\sqrt{8}$ is in $[-3, -3\pi/4]$.
+   So we must exclude $-\sqrt{8}$.
+   
+   Result: $(-3, -\sqrt{8}) \cup (-\sqrt{8}, -3\pi/4] \cup [0, \pi/4]$.
+   This matches form $[d, e] \cup (a, c) \setminus \{b\}$ where $d=0, e=\pi/4, a=-3, c=-3\pi/4, b=-\sqrt{8}$.
+   
+\subsection*{Answer}
+$[d, e] \cup (a, c) \setminus \{b\}$ (option \textbf{D}).
+
+\end{document}

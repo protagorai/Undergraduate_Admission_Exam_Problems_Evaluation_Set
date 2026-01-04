@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Let $x$ and $y$ be complex numbers different from zero. If $\frac{x}{y} + 4\frac{y}{x} = 2$, find $\frac{x^3}{y^3}$.
+
+(A) $-8$ \quad (B) $0$ \quad (C) $16$ \quad (D) $8$ \quad (E) $-16$
+
+\subsection*{Solution}
+Let $t = \frac{x}{y}$. Then the equation becomes:
+\[
+t + \frac{4}{t} = 2
+\]
+
+Multiplying by $t$:
+\[
+t^2 + 4 = 2t
+\]
+\[
+t^2 - 2t + 4 = 0
+\]
+
+Using the quadratic formula:
+\[
+t = \frac{2 \pm \sqrt{4 - 16}}{2} = \frac{2 \pm \sqrt{-12}}{2} = \frac{2 \pm 2i\sqrt{3}}{2} = 1 \pm i\sqrt{3}
+\]
+
+We need to find $t^3 = \frac{x^3}{y^3}$.
+
+\textbf{Method 1: Using polar form}
+
+For $t = 1 + i\sqrt{3}$:
+\[
+|t| = \sqrt{1 + 3} = 2, \quad \arg(t) = \arctan\left(\frac{\sqrt{3}}{1}\right) = \frac{\pi}{3}
+\]
+\[
+t = 2e^{i\pi/3}
+\]
+\[
+t^3 = 8e^{i\pi} = 8(\cos\pi + i\sin\pi) = 8(-1) = -8
+\]
+
+For $t = 1 - i\sqrt{3}$:
+\[
+t = 2e^{-i\pi/3}
+\]
+\[
+t^3 = 8e^{-i\pi} = 8(-1) = -8
+\]
+
+\textbf{Method 2: Direct calculation}
+
+From $t^2 - 2t + 4 = 0$, we get $t^2 = 2t - 4$.
+
+Then:
+\[
+t^3 = t \cdot t^2 = t(2t - 4) = 2t^2 - 4t = 2(2t - 4) - 4t = 4t - 8 - 4t = -8
+\]
+
+\subsection*{Answer}
+$-8$ (option \textbf{A}).
+
+\end{document}

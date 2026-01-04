@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Find the largest number of real solutions of the equation $|2 - |x - x^2|| = p$, where $p$ is a real parameter.
+
+(A) 1 \quad (B) 6 \quad (C) 2 \quad (D) 8 \quad (E) 4
+
+\subsection*{Solution}
+Let $f(x) = x - x^2 = -\left(x - \frac{1}{2}\right)^2 + \frac{1}{4}$.
+
+This is a downward parabola with maximum $\frac{1}{4}$ at $x = \frac{1}{2}$, and zeros at $x = 0$ and $x = 1$.
+
+\textbf{Analysis of $|f(x)| = |x - x^2|$:}
+
+\begin{itemize}
+\item For $0 \leq x \leq 1$: $f(x) \geq 0$, so $|f(x)| = x - x^2$
+\item For $x < 0$ or $x > 1$: $f(x) < 0$, so $|f(x)| = x^2 - x$
+\end{itemize}
+
+\textbf{Analysis of $g(x) = 2 - |x - x^2|$:}
+
+\begin{itemize}
+\item For $0 \leq x \leq 1$: $g(x) = 2 - (x - x^2) = 2 - x + x^2$, minimum at $x = \frac{1}{2}$: $g(\frac{1}{2}) = 2 - \frac{1}{4} = \frac{7}{4}$
+\item For $x < 0$ or $x > 1$: $g(x) = 2 - (x^2 - x) = 2 + x - x^2$, maximum at $x = \frac{1}{2}$ (but this is outside the region)
+\end{itemize}
+
+As $x \to \pm\infty$, $|x - x^2| \to \infty$, so $g(x) \to -\infty$.
+
+\textbf{Analysis of $|g(x)| = |2 - |x - x^2||$:}
+
+The equation $|g(x)| = p$ means $g(x) = p$ or $g(x) = -p$.
+
+For each horizontal line $y = c$, we count intersections with the graph of $g(x)$.
+
+The function $g(x)$ has:
+\begin{itemize}
+\item A local minimum of $\frac{7}{4}$ at $x = \frac{1}{2}$
+\item Value 2 at $x = 0$ and $x = 1$
+\item Decreases to $-\infty$ as $x \to \pm\infty$
+\end{itemize}
+
+For the equation $|g(x)| = p$:
+\begin{itemize}
+\item If $p = 2$: $g(x) = 2$ (at $x = 0, 1$) or $g(x) = -2$ (2 solutions outside $[0,1]$) $\to$ 4 solutions
+\item For appropriate $p > 2$: $g(x) = p$ has 0 solutions, $g(x) = -p$ has 2 solutions $\to$ 2 solutions
+\item For $\frac{7}{4} < p < 2$: $g(x) = p$ has 2 solutions, $g(x) = -p$ has 2 solutions $\to$ 4 solutions
+\item For $0 < p < \frac{7}{4}$: $g(x) = p$ has 4 solutions (2 in $[0,1]$, 2 outside), $g(x) = -p$ has 2 solutions $\to$ 6 solutions
+\end{itemize}
+
+\textbf{Maximum number of solutions: 6}
+
+\subsection*{Answer}
+$6$ (option \textbf{B}).
+
+\end{document}

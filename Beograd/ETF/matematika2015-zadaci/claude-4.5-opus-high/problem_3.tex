@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako su $x_1$ i $x_2$ rešenja kvadratne jednačine $x^2 + x + 1 = 0$, tada su $y_1 = ax_1 + x_2$ i $y_2 = x_1 + ax_2$, ($a \in \mathbf{R}$), rešenja kvadratne jednačine:
+
+\subsection*{Solution}
+By Vieta's formulas for $x^2 + x + 1 = 0$:
+\[
+x_1 + x_2 = -1, \quad x_1 x_2 = 1
+\]
+
+Now we find $y_1 + y_2$ and $y_1 y_2$:
+\[
+y_1 + y_2 = ax_1 + x_2 + x_1 + ax_2 = (a+1)(x_1 + x_2) = (a+1)(-1) = -(a+1)
+\]
+
+\[
+y_1 y_2 = (ax_1 + x_2)(x_1 + ax_2) = ax_1^2 + a^2x_1x_2 + x_1x_2 + ax_2^2
+\]
+\[
+= a(x_1^2 + x_2^2) + (a^2 + 1)x_1x_2
+\]
+
+We know that $x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = 1 - 2 = -1$.
+
+So:
+\[
+y_1 y_2 = a(-1) + (a^2 + 1)(1) = -a + a^2 + 1 = a^2 - a + 1
+\]
+
+The quadratic equation with roots $y_1, y_2$ is:
+\[
+y^2 - (y_1 + y_2)y + y_1 y_2 = 0
+\]
+\[
+y^2 + (a+1)y + a^2 - a + 1 = 0
+\]
+
+Comparing with the options:
+- (A) $y^2 + (a+1)y - a^2 + a + 1 = 0$ — coefficient of $y$ matches, but constant term is $-a^2 + a + 1 \neq a^2 - a + 1$
+- (B) $y^2 + (a^2+1)y + 1 = 0$ — doesn't match
+- (C) $y^2 + (a+1)y + a^2 - a + 1 = 0$ — matches!
+- (D) $y^2 + (a^2+1)y + a^2 - a + 1 = 0$ — coefficient of $y$ doesn't match
+
+\subsection*{Answer}
+$y^2 + (a+1)y + a^2 - a + 1 = 0$ (option \textbf{C}).
+
+\end{document}

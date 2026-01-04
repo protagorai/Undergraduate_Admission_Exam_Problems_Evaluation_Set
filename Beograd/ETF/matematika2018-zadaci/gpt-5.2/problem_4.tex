@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Uprostiti izraz
+\[
+\left(\frac{x\sqrt{x}-y\sqrt{y}}{\sqrt{x}-\sqrt{y}}+\sqrt{xy}\right)
+:\left(\frac{\sqrt{x}-\sqrt{y}}{x-y}\right)^{-2},
+\]
+za sve realne $x,y$ za koje je definisan.
+
+\subsection*{Solution}
+Postavimo $u=\sqrt{x}$ i $v=\sqrt{y}$ (tada je $x=u^2$, $y=v^2$). Tada
+\[
+\frac{x\sqrt{x}-y\sqrt{y}}{\sqrt{x}-\sqrt{y}}
+\;=\;\frac{u^3-v^3}{u-v}=u^2+uv+v^2=x+\sqrt{xy}+y.
+\]
+Zato je prvi zagradjeni deo
+\[
+x+\sqrt{xy}+y+\sqrt{xy}=x+y+2\sqrt{xy}=(\sqrt{x}+\sqrt{y})^2=(u+v)^2.
+\]
+Dalje, pošto je $x-y=(u-v)(u+v)$,
+\[
+\frac{\sqrt{x}-\sqrt{y}}{x-y}=\frac{u-v}{(u-v)(u+v)}=\frac1{u+v},
+\]
+pa
+\[
+\left(\frac{\sqrt{x}-\sqrt{y}}{x-y}\right)^{-2}=\left(\frac1{u+v}\right)^{-2}=(u+v)^2.
+\]
+Dakle ceo izraz je
+\[
+\frac{(u+v)^2}{(u+v)^2}=1
+\]
+(za dozvoljene $x,y$ gde su imenitelji nenula).
+
+\subsection*{Answer}
+$1$ (option \textbf{A}).
+
+\end{document}
+

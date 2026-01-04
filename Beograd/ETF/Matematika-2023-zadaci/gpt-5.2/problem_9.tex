@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Broj četvorocifrenih brojeva deljivih sa 5 čije su sve cifre različite jednak je:
+
+(A) 1008 \quad (B) 952 \quad (C) 1200 \quad (D) 896 \quad (E) 840
+
+\subsection*{Solution}
+Četvorocifren broj je deljiv sa 5 ako se završava na 0 ili 5.
+Cifre moraju biti različite. Skup cifara je $\{0, 1, \dots, 9\}$.
+
+Slučaj 1: Broj se završava na 0.
+Poslednja cifra je fiksirana (0).
+Prva cifra ne može biti 0 (što je već ispunjeno) i može biti bilo koja od preostalih 9 cifara. Dakle 9 mogućnosti.
+Druga cifra može biti bilo koja od preostalih 8.
+Treća cifra može biti bilo koja od preostalih 7.
+Ukupno za ovaj slučaj: $1 \cdot 9 \cdot 8 \cdot 7 = 504$.
+
+Slučaj 2: Broj se završava na 5.
+Poslednja cifra je fiksirana (5).
+Prva cifra ne može biti 0 i ne može biti 5. Dakle imamo 8 mogućnosti (sve osim 0 i 5).
+Druga cifra ne može biti prva i ne može biti 5, ali može biti 0. Dakle imamo 8 mogućnosti (od 10 cifara oduzmemo 5 i prvu cifru).
+Treća cifra ne može biti 5, prva, druga. Dakle 7 mogućnosti.
+Ukupno za ovaj slučaj: $1 \cdot 8 \cdot 8 \cdot 7 = 448$.
+
+Ukupan broj takvih brojeva je $504 + 448 = 952$.
+
+\subsection*{Answer}
+$952$ (opcija \textbf{(B)}).
+
+\end{document}

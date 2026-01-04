@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 7}
+Broj rešenja jednačine $9^{|3x-1|} = 3^{8x-2}$ je:
+
+A) 0; B) 1; C) 2; D) 3; E) 4; N) Ne znam.
+
+\subsection*{Solution}
+Jednačina glasi:
+\[ 9^{|3x-1|} = 3^{8x-2} \]
+Znamo da je $9 = 3^2$, pa je:
+\[ (3^2)^{|3x-1|} = 3^{8x-2} \]
+\[ 3^{2|3x-1|} = 3^{8x-2} \]
+Izjednačavamo eksponente:
+\[ 2|3x-1| = 8x-2 \]
+Podelimo sa 2:
+\[ |3x-1| = 4x-1 \]
+Razmatramo dva slučaja u zavisnosti od znaka izraza pod apsolutnom vrednošću.
+
+1. Slučaj: $3x-1 \ge 0 \Rightarrow x \ge 1/3$.
+Tada je $|3x-1| = 3x-1$, pa imamo:
+\[ 3x-1 = 4x-1 \]
+\[ x = 0 \]
+Proveravamo uslov $x \ge 1/3$. Kako $0 < 1/3$, ovo rešenje se odbacuje.
+
+2. Slučaj: $3x-1 < 0 \Rightarrow x < 1/3$.
+Tada je $|3x-1| = -(3x-1) = -3x+1$, pa imamo:
+\[ -3x+1 = 4x-1 \]
+\[ 2 = 7x \Rightarrow x = 2/7 \]
+Proveravamo uslov $x < 1/3$.
+$2/7 \approx 0.285$, $1/3 \approx 0.333$. Uslov je zadovoljen.
+Takođe moramo proveriti da li je desna strana jednačine $|3x-1| = 4x-1$ nenegativna (jer apsolutna vrednost mora biti $\ge 0$).
+$4(2/7) - 1 = 8/7 - 7/7 = 1/7 \ge 0$. Ovo je u redu.
+
+Dakle, jedino rešenje je $x = 2/7$. Ukupan broj rešenja je 1.
+
+\subsection*{Answer}
+1 (option \textbf{B}).
+\end{document}

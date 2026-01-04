@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+In an arithmetic progression, the terms $a_{54} = \alpha$ and $a_{70} = \beta$ are known ($\alpha, \beta \in \mathbf{R}, \alpha \neq \beta$). Find the sum of the first 160 terms.
+
+(A) $85\alpha + 75\beta$ \quad (B) $5(-19\alpha + 51\beta + 32)$ \quad (C) $\frac{3(37\alpha - 62\beta)}{5}$ \quad (D) $5(-21\alpha + 53\beta)$ \quad (E) $\frac{75(-11\alpha + 43\beta)}{16}$
+
+\subsection*{Solution}
+In an arithmetic progression, $a_n = a_1 + (n-1)d$, where $d$ is the common difference.
+
+From the given information:
+\[
+a_{54} = a_1 + 53d = \alpha
+\]
+\[
+a_{70} = a_1 + 69d = \beta
+\]
+
+Subtracting: $16d = \beta - \alpha$, so $d = \frac{\beta - \alpha}{16}$.
+
+From the first equation:
+\[
+a_1 = \alpha - 53d = \alpha - 53 \cdot \frac{\beta - \alpha}{16} = \alpha - \frac{53\beta - 53\alpha}{16} = \frac{16\alpha - 53\beta + 53\alpha}{16} = \frac{69\alpha - 53\beta}{16}
+\]
+
+The sum of the first $n$ terms: $S_n = \frac{n}{2}(2a_1 + (n-1)d)$
+
+For $n = 160$:
+\[
+S_{160} = \frac{160}{2}\left(2a_1 + 159d\right) = 80\left(2a_1 + 159d\right)
+\]
+
+\[
+2a_1 + 159d = 2 \cdot \frac{69\alpha - 53\beta}{16} + 159 \cdot \frac{\beta - \alpha}{16} = \frac{138\alpha - 106\beta + 159\beta - 159\alpha}{16}
+\]
+\[
+= \frac{-21\alpha + 53\beta}{16}
+\]
+
+Therefore:
+\[
+S_{160} = 80 \cdot \frac{-21\alpha + 53\beta}{16} = 5(-21\alpha + 53\beta)
+\]
+
+\subsection*{Answer}
+(D) $5(-21\alpha + 53\beta)$
+
+\end{document}

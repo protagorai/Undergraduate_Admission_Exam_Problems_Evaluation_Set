@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 7}
+Jednačina kruga čiji centar je tačka preseka pravih $x - 2y + 4 = 0$ i $3x + y - 9 = 0$ a koji dodiruje pravu $3x + 4y + 2 = 0$ glasi:
+
+\subsection*{Solution}
+First, find the center of the circle $(p, q)$ by solving the system of equations:
+1) $x - 2y = -4$
+2) $3x + y = 9$
+
+Multiply (2) by 2:
+3) $6x + 2y = 18$
+Add (1) and (3):
+$7x = 14 \implies x = 2$.
+Substitute $x=2$ into (2):
+$3(2) + y = 9 \implies 6 + y = 9 \implies y = 3$.
+So the center is $C(2, 3)$.
+
+The radius $r$ is the distance from the center $C(2, 3)$ to the tangent line $3x + 4y + 2 = 0$.
+\[
+r = \frac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}} = \frac{|3(2) + 4(3) + 2|}{\sqrt{3^2 + 4^2}} = \frac{|6 + 12 + 2|}{\sqrt{25}} = \frac{20}{5} = 4
+\]
+The equation of the circle is $(x-p)^2 + (y-q)^2 = r^2$:
+\[
+(x-2)^2 + (y-3)^2 = 4^2
+\]
+\[
+x^2 - 4x + 4 + y^2 - 6y + 9 = 16
+\]
+\[
+x^2 + y^2 - 4x - 6y + 13 - 16 = 0
+\]
+\[
+x^2 + y^2 - 4x - 6y - 3 = 0
+\]
+
+\subsection*{Answer}
+(C) $x^2 + y^2 - 4x - 6y - 3 = 0$
+
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Find the number of real solutions to the equation:
+\[
+||1 - |x|| - 1| - 2 = 0
+\]
+
+\subsection*{Solution}
+We solve this step by step, working from the inside out.
+
+First, rewrite the equation as:
+\[
+||1 - |x|| - 1| = 2
+\]
+
+This means:
+\[
+|1 - |x|| - 1 = 2 \quad \text{or} \quad |1 - |x|| - 1 = -2
+\]
+
+From the first case: $|1 - |x|| = 3$
+From the second case: $|1 - |x|| = -1$ (impossible since absolute value is non-negative)
+
+So we only need to solve $|1 - |x|| = 3$, which gives us:
+\[
+1 - |x| = 3 \quad \text{or} \quad 1 - |x| = -3
+\]
+
+From $1 - |x| = 3$: $|x| = -2$ (impossible since $|x| \geq 0$)
+
+From $1 - |x| = -3$: $|x| = 4$
+
+This gives us $x = 4$ or $x = -4$.
+
+Let's verify:
+- For $x = 4$: $|x| = 4$, $|1-4| = 3$, $|3-1| = 2$, $|2| - 2 = 0$ ✓
+- For $x = -4$: $|x| = 4$, $|1-4| = 3$, $|3-1| = 2$, $|2| - 2 = 0$ ✓
+
+\subsection*{Answer}
+There are 2 real solutions (option \textbf{C}).
+
+\end{document}

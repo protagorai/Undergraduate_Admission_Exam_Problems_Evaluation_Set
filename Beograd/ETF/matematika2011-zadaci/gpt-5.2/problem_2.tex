@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Vrednost izraza
+\[
+\left(\frac{i^{2011}+i^{2012}}{i^{2013}-i^{2014}}\right)^{2015},
+\qquad (i^2=-1),
+\]
+jednaka je:
+\[
+\text{(A)}~-1\quad
+\text{(B)}~0\quad
+\text{(C)}~1\quad
+\text{(D)}~i\quad
+\text{(E)}~-i.
+\]
+
+\subsection*{Solution}
+Koristimo periodičnost $i^n$ modulo $4$:
+\[
+i^{2011}=i^3=-i,\quad i^{2012}=i^0=1,\quad i^{2013}=i,\quad i^{2014}=i^2=-1.
+\]
+Zato je
+\[
+\frac{i^{2011}+i^{2012}}{i^{2013}-i^{2014}}
+=\frac{-i+1}{i-(-1)}=\frac{1-i}{1+i}.
+\]
+Racionalisanjem:
+\[
+\frac{1-i}{1+i}\cdot\frac{1-i}{1-i}=\frac{(1-i)^2}{1+1}
+=\frac{1-2i+i^2}{2}=\frac{-2i}{2}=-i.
+\]
+Dakle ceo izraz je $(-i)^{2015}$. Pošto je $(-i)^2=-1$, imamo
+\[
+(-i)^{2015}=(-i)\cdot\left((-i)^2\right)^{1007}=(-i)\cdot(-1)^{1007}=(-i)\cdot(-1)=i.
+\]
+
+\subsection*{Answer}
+$i$ (option \textbf{D}).
+
+\end{document}
+

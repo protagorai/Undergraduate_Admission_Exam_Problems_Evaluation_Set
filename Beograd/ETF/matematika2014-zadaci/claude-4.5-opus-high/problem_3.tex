@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako realni brojevi $x$ i $y$ zadovoljavaju jednakost $\displaystyle\frac{2x+i}{y+i} = \frac{1+i\sin\alpha}{1-i\sin 3\alpha}$, 
+$\left(\alpha \neq k\pi, \alpha \neq \frac{\pi}{2} + k\pi, k \in \mathbf{Z}, i^2 = -1\right)$,
+tada je količnik $\displaystyle\frac{y}{x}$ jednak:
+
+(A) $-4 + 2\cos 2\alpha$ \quad (B) $4 + 2\cos 2\alpha$ \quad (C) $2 - 4\cos 2\alpha$ \quad (D) $-2 - 4\cos 2\alpha$ \quad (E) $2 - 2\sin 2\alpha$ \quad (N) Ne znam
+
+\subsection*{Solution}
+For the equation $\displaystyle\frac{2x+i}{y+i} = \frac{1+i\sin\alpha}{1-i\sin 3\alpha}$ to hold with real $x$ and $y$, we cross-multiply:
+\[
+(2x+i)(1-i\sin 3\alpha) = (y+i)(1+i\sin\alpha)
+\]
+
+Expanding the left side:
+\[
+2x - 2xi\sin 3\alpha + i - i^2\sin 3\alpha = 2x + \sin 3\alpha + i(1 - 2x\sin 3\alpha)
+\]
+
+Expanding the right side:
+\[
+y + yi\sin\alpha + i + i^2\sin\alpha = y - \sin\alpha + i(1 + y\sin\alpha)
+\]
+
+Comparing real parts:
+\[
+2x + \sin 3\alpha = y - \sin\alpha
+\]
+
+Comparing imaginary parts:
+\[
+1 - 2x\sin 3\alpha = 1 + y\sin\alpha
+\]
+
+From the imaginary part equation:
+\[
+-2x\sin 3\alpha = y\sin\alpha \implies y = \frac{-2x\sin 3\alpha}{\sin\alpha}
+\]
+
+Using $\sin 3\alpha = 3\sin\alpha - 4\sin^3\alpha = \sin\alpha(3 - 4\sin^2\alpha)$:
+\[
+y = \frac{-2x \cdot \sin\alpha(3 - 4\sin^2\alpha)}{\sin\alpha} = -2x(3 - 4\sin^2\alpha)
+\]
+
+Since $\sin^2\alpha = \frac{1 - \cos 2\alpha}{2}$:
+\[
+y = -2x\left(3 - 4 \cdot \frac{1-\cos 2\alpha}{2}\right) = -2x(3 - 2 + 2\cos 2\alpha) = -2x(1 + 2\cos 2\alpha)
+\]
+
+Therefore:
+\[
+\frac{y}{x} = -2(1 + 2\cos 2\alpha) = -2 - 4\cos 2\alpha
+\]
+
+\subsection*{Answer}
+$-2 - 4\cos 2\alpha$ (option \textbf{D}).
+
+\end{document}

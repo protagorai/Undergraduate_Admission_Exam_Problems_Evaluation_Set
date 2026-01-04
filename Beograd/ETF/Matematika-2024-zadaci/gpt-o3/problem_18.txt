@@ -1,0 +1,8 @@
+Problem 18
+Maksimalna zapremina V pravilne šestostrane piramide upisane u loptu poluprečnika R iznosi:
+(A) 16\sqrt{3} R^3 / 27
+(B) 45\sqrt{3} R^3 / 128
+(C) 40\sqrt{3} R^3 / 27
+(D) 32\sqrt{3} R^3 / 81
+(E) 32\sqrt{3} R^3 / 9
+(N) Ne znam

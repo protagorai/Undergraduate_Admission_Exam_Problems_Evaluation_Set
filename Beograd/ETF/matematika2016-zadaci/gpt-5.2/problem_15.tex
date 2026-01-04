@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the total number of real solutions of the system
+\[
+\sqrt{x-1}+\sqrt[3]{y}=1,\qquad x-y=2.
+\]
+
+\subsection*{Solution}
+From $x-y=2$ we have $x=y+2$. Substitute into the first equation:
+\[
+\sqrt{(y+2)-1}+\sqrt[3]{y}=1
+\quad\Rightarrow\quad
+\sqrt{y+1}+\sqrt[3]{y}=1.
+\]
+Domain requires $y\ge -1$.
+Let $t=\sqrt[3]{y}$, so $y=t^3$ and $t\ge -1$. Then
+\[
+\sqrt{t^3+1}+t=1 \quad\Rightarrow\quad \sqrt{t^3+1}=1-t.
+\]
+Hence we also need $1-t\ge 0$, i.e. $t\le 1$.
+Squaring:
+\[
+t^3+1=(1-t)^2=1-2t+t^2
+\quad\Rightarrow\quad
+t^3-t^2+2t=0
+\quad\Rightarrow\quad
+t(t^2-t+2)=0.
+\]
+The quadratic $t^2-t+2$ has discriminant $1-8=-7<0$, so the only real solution is $t=0$.
+Then $y=t^3=0$ and $x=y+2=2$.
+Thus there is exactly one real solution.
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}
+

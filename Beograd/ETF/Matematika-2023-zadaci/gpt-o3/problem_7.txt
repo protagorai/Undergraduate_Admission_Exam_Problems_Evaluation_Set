@@ -1,0 +1,8 @@
+Problem 7 (Matematika 2023)
+U kocku K1 ivice 1 cm upisana je lopta L1, zatim u loptu L1 kocka K2, pa u nju lopta L2 i tako dalje. Zbir površina svih kocki Kn iznosi:
+a) 2
+b) 8
+c) 18
+d) 4
+e) 9
+n) Ne znam

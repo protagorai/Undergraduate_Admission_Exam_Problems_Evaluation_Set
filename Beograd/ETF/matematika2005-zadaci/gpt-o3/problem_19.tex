@@ -1,0 +1,16 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Broj načina da se poređaju $n$ nula i $k$ jedinica ($k\le n+1$) tako da dve jedinice nikada ne budu susedne.
+
+\subsection*{Rešenje}
+Zamislimo da najpre rasporedimo $n$ nula, čime dobijamo $n+1$ "rupa" (pre i posle svake nule, kao i na krajevima). U te rupe sme se odabrati mesta za $k$ jedinica, pod uslovom da u svaku rupu ide najviše jedna jedinica. Broj takvih izbora je upravo binomni koeficijent
+\[\binom{n+1}{k}.\]
+
+\subsection*{Odgovor}
+$\displaystyle\binom{n+1}{k}$ (опција \textbf{A}).
+
+\end{document}

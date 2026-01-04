@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Skup rešenja nejednačine $-\frac{3}{5} \leq x + x^2 + x^3 + \ldots + x^n + \ldots < 1$, $x \in \mathbb{R}$, je oblika (za neke realne brojeve $a, b$ takve da je $-\infty < a < b < +\infty$):
+
+\subsection*{Solution}
+Imamo geometrijski red:
+\[x + x^2 + x^3 + \ldots = \sum_{n=1}^{\infty} x^n\]
+
+Za $|x| < 1$, suma ovog reda je:
+\[\sum_{n=1}^{\infty} x^n = \frac{x}{1-x}\]
+
+Dakle, nejednačina postaje:
+\[-\frac{3}{5} \leq \frac{x}{1-x} < 1\]
+
+Rešavamo deo po deo.
+
+Za $\frac{x}{1-x} < 1$:
+\[\frac{x}{1-x} - 1 < 0\]
+\[\frac{x - (1-x)}{1-x} < 0\]
+\[\frac{2x - 1}{1-x} < 0\]
+
+Ova nejednakost je zadovoljena kada je:
+- $2x - 1 > 0$ i $1 - x < 0$, tj. $x > \frac{1}{2}$ i $x > 1$ (nema rešenja)
+- $2x - 1 < 0$ i $1 - x > 0$, tj. $x < \frac{1}{2}$ i $x < 1$
+
+Dakle: $x < \frac{1}{2}$.
+
+Za $\frac{x}{1-x} \geq -\frac{3}{5}$:
+\[\frac{x}{1-x} + \frac{3}{5} \geq 0\]
+\[\frac{5x + 3(1-x)}{5(1-x)} \geq 0\]
+\[\frac{5x + 3 - 3x}{5(1-x)} \geq 0\]
+\[\frac{2x + 3}{5(1-x)} \geq 0\]
+
+Ova nejednakost je zadovoljena kada je:
+- $2x + 3 \geq 0$ i $1 - x > 0$, tj. $x \geq -\frac{3}{2}$ i $x < 1$
+- $2x + 3 \leq 0$ i $1 - x < 0$, tj. $x \leq -\frac{3}{2}$ i $x > 1$ (nema rešenja)
+
+Dakle: $x \geq -\frac{3}{2}$ i $x < 1$.
+
+Kombinujući uslove i $|x| < 1$:
+\[-\frac{3}{2} \leq x < \frac{1}{2}\]
+
+Međutim, treba proveriti i granične slučajeve.
+
+\subsection*{Answer}
+$[a, b)$ (opcija \textbf{C}).
+
+\end{document}

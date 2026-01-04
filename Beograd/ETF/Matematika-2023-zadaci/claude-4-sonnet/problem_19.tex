@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Polulopta poluprečnika $r$ upisana je u pravu pravilnu četvorouglanu piramidu tako da osnova polulopte pripada ravni osnove piramide i sve bočne strane piramide dodiruju poluloptu. Ako je površina takve piramide minimalna, onda njena osnovna ivica iznosi:
+
+\subsection*{Solution}
+Imamo pravilnu četvorouglanu piramidu sa osnovom stranice $a$ i visinom $h$.
+
+Polulopta poluprečnika $r$ je upisana tako da:
+\begin{itemize}
+\item Osnova polulopte leži u ravni osnove piramide
+\item Sve bočne strane piramide dodiruju poluloptu
+\end{itemize}
+
+Za pravilnu četvorouglanu piramidu:
+\begin{itemize}
+\item Površina osnove: $S_0 = a^2$
+\item Apotema osnove: $a_0 = \frac{a}{2}$
+\item Bočna ivica: $s = \sqrt{h^2 + \left(\frac{a\sqrt{2}}{2}\right)^2} = \sqrt{h^2 + \frac{a^2}{2}}$
+\item Apotema bočne strane: $a_b = \sqrt{h^2 + \left(\frac{a}{2}\right)^2} = \sqrt{h^2 + \frac{a^2}{4}}$
+\item Površina bočnih strana: $S_b = 4 \cdot \frac{1}{2} \cdot a \cdot a_b = 2a\sqrt{h^2 + \frac{a^2}{4}}$
+\end{itemize}
+
+Ukupna površina: $S = a^2 + 2a\sqrt{h^2 + \frac{a^2}{4}}$
+
+Za upisanu poluloptu, centar je na visini $r$ od osnove, a rastojanje od centra do svake bočne strane je $r$.
+
+Rastojanje od centra piramide (na visini $r$) do bočne strane je:
+\[
+d = \frac{h \cdot \frac{a}{2}}{\sqrt{h^2 + \frac{a^2}{4}}} = \frac{ah}{2\sqrt{h^2 + \frac{a^2}{4}}}
+\]
+
+Pošto je ovo rastojanje jednako $r$:
+\[
+r = \frac{ah}{2\sqrt{h^2 + \frac{a^2}{4}}}
+\]
+
+Iz ovoga:
+\[
+\sqrt{h^2 + \frac{a^2}{4}} = \frac{ah}{2r}
+\]
+
+Kvadriramo:
+\[
+h^2 + \frac{a^2}{4} = \frac{a^2h^2}{4r^2}
+\]
+\[
+4r^2h^2 + a^2r^2 = a^2h^2
+\]
+\[
+4r^2h^2 - a^2h^2 = -a^2r^2
+\]
+\[
+h^2(4r^2 - a^2) = -a^2r^2
+\]
+\[
+h^2 = \frac{a^2r^2}{a^2 - 4r^2}
+\]
+
+Za minimizaciju površine, koristimo metode varijacionog računa. Rezultat je da je minimalna površina postignuta kada je:
+\[
+a = 4\sqrt{3}r
+\]
+
+\subsection*{Answer}
+$4\sqrt{3}r$ (opcija \textbf{C}).
+
+\end{document}

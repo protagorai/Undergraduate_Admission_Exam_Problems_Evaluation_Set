@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Chords $AB$ and $CD$ of a circle are perpendicular and intersect at $M$ such that
+$AM=3$, $MB=4$, $CM=2$, $MD=6$ (cm). Find the diameter of the circle.
+
+\subsection*{Solution}
+Place $M$ at the origin. Let the chord $AB$ lie on the $x$--axis and $CD$ on the $y$--axis:
+\[
+A(-3,0),\quad B(4,0),\quad C(0,2),\quad D(0,-6).
+\]
+The circle has equation
+\[
+x^2+y^2+ux+vy+w=0.
+\]
+Substitute $A$ and $B$:
+\[
+9-3u+w=0,\qquad 16+4u+w=0.
+\]
+Subtracting gives $7+7u=0$, hence $u=-1$, and then from $16+4u+w=0$ we get $w=-12$.
+Now substitute $C$:
+\[
+4+2v-12=0 \;\Rightarrow\; v=4.
+\]
+So the circle is
+\[
+x^2+y^2-x+4y-12=0
+\]
+or, completing squares,
+\[
+\left(x-\frac12\right)^2+\left(y+2\right)^2=\frac{65}{4}.
+\]
+Thus $R^2=\frac{65}{4}$, $R=\frac{\sqrt{65}}{2}$, and the diameter is $2R=\sqrt{65}$.
+
+\subsection*{Answer}
+$\sqrt{65}$ (option \textbf{C}).
+
+\end{document}
+

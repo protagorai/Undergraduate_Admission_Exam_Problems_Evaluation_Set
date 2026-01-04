@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Na koliko načina se mogu izabrati tri broja iz skupa prirodnih brojeva $\{1, 2, 3, \ldots, 40\}$ tako da im zbir bude neparan broj?
+
+\subsection*{Solution}
+Zbir tri broja je neparan ako i samo ako je:
+\begin{itemize}
+\item Jedan broj neparan, dva parna, ili
+\item Tri broja neparna
+\end{itemize}
+
+U skupu $\{1, 2, 3, \ldots, 40\}$ imamo:
+\begin{itemize}
+\item Neparni brojevi: $\{1, 3, 5, \ldots, 39\}$ - ukupno 20 brojeva
+\item Parni brojevi: $\{2, 4, 6, \ldots, 40\}$ - ukupno 20 brojeva
+\end{itemize}
+
+\textbf{Slučaj 1:} Jedan neparan, dva parna
+\[
+\binom{20}{1} \cdot \binom{20}{2} = 20 \cdot \frac{20 \cdot 19}{2} = 20 \cdot 190 = 3800
+\]
+
+\textbf{Slučaj 2:} Tri neparna
+\[
+\binom{20}{3} = \frac{20 \cdot 19 \cdot 18}{3 \cdot 2 \cdot 1} = \frac{6840}{6} = 1140
+\]
+
+Ukupan broj načina:
+\[
+3800 + 1140 = 4940
+\]
+
+\subsection*{Answer}
+$4940$ (option \textbf{D}).
+
+\end{document}

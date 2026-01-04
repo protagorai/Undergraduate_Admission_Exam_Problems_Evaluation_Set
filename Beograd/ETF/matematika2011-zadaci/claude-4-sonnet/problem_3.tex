@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako je $|x| > 2, x \in \mathbb{R}$ tada je izraz $\frac{x + 2 + \sqrt{x^2 - 4}}{x + 2 - \sqrt{x^2 - 4}} + \frac{x + 2 - \sqrt{x^2 - 4}}{x + 2 + \sqrt{x^2 - 4}}$ identički jednak:
+
+(A) $4$ \quad (B) $-4$ \quad (C) $x$ \quad (D) $2x$ \quad (E) $4x$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $a = x + 2$ and $b = \sqrt{x^2 - 4}$. Then our expression becomes:
+$$\frac{a + b}{a - b} + \frac{a - b}{a + b}$$
+
+To add these fractions, we find a common denominator:
+\begin{align}
+\frac{a + b}{a - b} + \frac{a - b}{a + b} &= \frac{(a + b)^2 + (a - b)^2}{(a - b)(a + b)}\\
+&= \frac{(a + b)^2 + (a - b)^2}{a^2 - b^2}
+\end{align}
+
+Expanding the numerator:
+\begin{align}
+(a + b)^2 + (a - b)^2 &= a^2 + 2ab + b^2 + a^2 - 2ab + b^2\\
+&= 2a^2 + 2b^2\\
+&= 2(a^2 + b^2)
+\end{align}
+
+So our expression becomes:
+$$\frac{2(a^2 + b^2)}{a^2 - b^2}$$
+
+Substituting back $a = x + 2$ and $b = \sqrt{x^2 - 4}$:
+\begin{align}
+a^2 + b^2 &= (x + 2)^2 + (\sqrt{x^2 - 4})^2\\
+&= x^2 + 4x + 4 + x^2 - 4\\
+&= 2x^2 + 4x
+\end{align}
+
+\begin{align}
+a^2 - b^2 &= (x + 2)^2 - (\sqrt{x^2 - 4})^2\\
+&= x^2 + 4x + 4 - (x^2 - 4)\\
+&= x^2 + 4x + 4 - x^2 + 4\\
+&= 4x + 8\\
+&= 4(x + 2)
+\end{align}
+
+Therefore:
+\begin{align}
+\frac{2(a^2 + b^2)}{a^2 - b^2} &= \frac{2(2x^2 + 4x)}{4(x + 2)}\\
+&= \frac{4x(x + 2)}{4(x + 2)}\\
+&= \frac{4x(x + 2)}{4(x + 2)}\\
+&= x
+\end{align}
+
+\subsection*{Answer}
+(C) $x$
+
+\end{document}

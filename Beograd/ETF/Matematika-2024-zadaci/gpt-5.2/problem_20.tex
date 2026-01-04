@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Broj na\u{c}ina na koji se mogu izabrati \v{c}etiri razli\u{c}ita broja iz skupa $\{1,2,\dots,9\}$ tako da je bar jedan od njih deljiv sa $4$ i bar jedan od njih strogo ve\u{c}i od $5$ iznosi:
+
+\subsection*{Solution}
+Biramо $4$ razli\u{c}ita broja iz $9$: ukupno je
+\[
+\binom{9}{4}=126.
+\]
+Neka je
+\[
+A=\{\text{izbor sadr\u{z}i bar jedan broj deljiv sa }4\},\quad \{4,8\},
+\]
+\[
+B=\{\text{izbor sadr\u{z}i bar jedan broj } >5\},\quad \{6,7,8,9\}.
+\]
+Tra\u{z}imo $|A\cap B|$.
+Po principu uklju\u{c}ivanja-isklju\u{c}ivanja:
+\[
+|A\cap B|=|U|-|A^c|-|B^c|+|A^c\cap B^c|.
+\]
+Ra\u{c}unamo:
+\[
+|A^c|=\binom{7}{4}\quad(\text{izbacimo }4,8),
+\qquad
+|B^c|=\binom{5}{4}\quad(\text{biramo iz }\{1,2,3,4,5\}),
+\]
+\[
+|A^c\cap B^c|=\binom{4}{4}\quad(\text{iz }\{1,2,3,5\}).
+\]
+Zato je
+\[
+|A\cap B|=126-\binom{7}{4}-\binom{5}{4}+\binom{4}{4}
+=126-35-5+1=87.
+\]
+
+\subsection*{Answer}
+$87$ (option \textbf{B}).
+
+\end{document}
+
+
+
+

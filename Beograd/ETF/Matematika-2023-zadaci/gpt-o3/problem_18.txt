@@ -1,0 +1,10 @@
+Problem 18 (Matematika 2023)
+Broj različitih vrednosti parametra p za koje jednačina
+p²/(x+1) − x(p+2)/(x²−1) = 2p/(1−x²)
+nema rešenja iznosi:
+a) 1
+b) 2
+c) 0
+d) više od 3
+e) 3
+n) Ne znam

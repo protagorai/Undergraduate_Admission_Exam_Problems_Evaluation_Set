@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Ako je zbir svih binomnih koeficijenata u razvoju binoma $\left(\sqrt[5]{3} + \sqrt[3]{5}\right)^n$ za neko $n \in \mathbb{N}$ jednak $4^{52}$, tada je broj racionalnih članova u razvoju ovog binoma jednak:
+
+\subsection*{Solution}
+The sum of all binomial coefficients in the expansion of $(a + b)^n$ is obtained by setting $a = b = 1$:
+\[
+\sum_{k=0}^{n} \binom{n}{k} = 2^n
+\]
+
+Given that this sum equals $4^{52} = (2^2)^{52} = 2^{104}$:
+\[
+2^n = 2^{104} \Rightarrow n = 104
+\]
+
+Now we need to find the number of rational terms in $\left(\sqrt[5]{3} + \sqrt[3]{5}\right)^{104} = \left(3^{1/5} + 5^{1/3}\right)^{104}$.
+
+The general term is:
+\[
+T_{k+1} = \binom{104}{k} \left(3^{1/5}\right)^{104-k} \left(5^{1/3}\right)^k = \binom{104}{k} \cdot 3^{(104-k)/5} \cdot 5^{k/3}
+\]
+
+For this term to be rational, both exponents must be integers:
+\begin{align*}
+\frac{104 - k}{5} &\in \mathbb{Z} \Rightarrow 104 - k \equiv 0 \pmod{5} \Rightarrow k \equiv 4 \pmod{5} \\
+\frac{k}{3} &\in \mathbb{Z} \Rightarrow k \equiv 0 \pmod{3}
+\end{align*}
+
+We need $k \equiv 4 \pmod{5}$ and $k \equiv 0 \pmod{3}$, with $0 \leq k \leq 104$.
+
+By CRT, since $\gcd(5, 3) = 1$, there's a unique solution mod 15.
+
+$k \equiv 0 \pmod{3}$: $k = 3m$
+$3m \equiv 4 \pmod{5}$
+$3m \equiv 4 \pmod{5}$
+$m \equiv 3 \cdot 4 \equiv 12 \equiv 2 \pmod{5}$ (since $3 \cdot 2 = 6 \equiv 1 \pmod 5$)
+
+So $m = 5t + 2$, giving $k = 3(5t + 2) = 15t + 6$.
+
+Thus $k \equiv 6 \pmod{15}$.
+
+Values of $k$ in $[0, 104]$: $k = 6, 21, 36, 51, 66, 81, 96$
+
+Count: $\lfloor\frac{104 - 6}{15}\rfloor + 1 = \lfloor\frac{98}{15}\rfloor + 1 = 6 + 1 = 7$
+
+\subsection*{Answer}
+$7$ (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Neka je $S$ skup svih realnih brojeva $x$ za koje važi $2\log_{\cos x} \sin x \leq \log_{\sin x} \cot x$ $(0 < x < \pi)$. Tada je za neke brojeve $a, b, c, d, e, f$ $(a < b < c < d < e < f)$, skup $S$ oblika:
+
+A) $(a, b)$; \quad B) $[a, b] \cup [c, d]$; \quad C) $(a, b) \cup (c, d)$; \quad D) $[a, b]$; \quad E) $(a, b) \cup (c, d) \cup (e, f)$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Da bi logaritmi bili definisani, potrebno je:
+\begin{itemize}
+\item $\cos x > 0$, $\cos x \neq 1$
+\item $\sin x > 0$, $\sin x \neq 1$
+\item $\cot x > 0$
+\end{itemize}
+
+Ovo znači: $\sin x > 0$, $\cos x > 0$, tj. $x \in (0, \frac{\pi}{2})$.
+
+Koristimo formulu za promenu osnove. Neka je $t = \log_{\cos x} \sin x$. Tada:
+\[
+\log_{\sin x} \cos x = \frac{1}{t}
+\]
+
+Takođe:
+\[
+\log_{\sin x} \cot x = \log_{\sin x} \frac{\cos x}{\sin x} = \log_{\sin x} \cos x - \log_{\sin x} \sin x = \frac{1}{t} - 1
+\]
+
+Nejednačina postaje:
+\[
+2t \leq \frac{1}{t} - 1
+\]
+\[
+2t + 1 \leq \frac{1}{t}
+\]
+
+Za $t > 0$ (što je kad $\sin x < 1$ i $\cos x < 1$, tj. $x \in (0, \frac{\pi}{2}) \setminus \{\frac{\pi}{4}\}$ gde je $\sin x < \cos x$ ili obrnuto):
+
+Ako je $0 < x < \frac{\pi}{4}$: $\sin x < \cos x < 1$, pa $\log_{\cos x} \sin x > 1$, tj. $t > 1$.
+
+Ako je $\frac{\pi}{4} < x < \frac{\pi}{2}$: $\cos x < \sin x < 1$, pa $0 < t < 1$.
+
+Za $t > 0$: $2t + 1 \leq \frac{1}{t}$ daje $2t^2 + t - 1 \leq 0$, tj. $(2t-1)(t+1) \leq 0$.
+
+Pošto je $t > 0$: $t + 1 > 0$, pa treba $2t - 1 \leq 0$, tj. $t \leq \frac{1}{2}$.
+
+Dakle $0 < t \leq \frac{1}{2}$.
+
+Iz $t = \log_{\cos x} \sin x \leq \frac{1}{2}$:
+\[
+\sin x \leq (\cos x)^{1/2} = \sqrt{\cos x}
+\]
+
+Ovo važi za $x$ blizu $\frac{\pi}{2}$ (gde je $\sin x \approx 1$, $\cos x \approx 0$) - ne važi.
+
+Za $x$ blizu $0$: $\sin x \approx x$, $\cos x \approx 1$, pa $\sin x < \sqrt{\cos x}$ - važi.
+
+Skup rešenja je interval oblika $(a, b)$ gde je $a$ blizu 0 i $b < \frac{\pi}{4}$.
+
+\subsection*{Odgovor}
+$(a, b)$ (opcija \textbf{A}).
+
+\end{document}

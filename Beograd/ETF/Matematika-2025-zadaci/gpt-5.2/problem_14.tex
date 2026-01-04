@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 14}
+Ugao između elipse
+\[
+\frac{x^2}{9}+\frac{y^2}{4}=1
+\]
+i hiperbole
+\[
+\frac{x^2}{4}-y^2=1
+\]
+u njihovoj presečnoj tački u prvom kvadrantu iznosi.
+
+\subsection*{Solution}
+Nađimo presečnu tačku. Iz elipse je $y^2=4-\frac{4x^2}{9}$, a iz hiperbole $y^2=\frac{x^2}{4}-1$.
+Izjednačavanjem:
+\[
+4-\frac{4x^2}{9}=\frac{x^2}{4}-1
+\Rightarrow 5=x^2\left(\frac14+\frac49\right)=x^2\cdot\frac{25}{36}
+\Rightarrow x^2=\frac{36}{5}.
+\]
+U prvom kvadrantu je $x=\frac{6}{\sqrt5}$, a zatim
+\[
+y^2=\frac{x^2}{4}-1=\frac{36/5}{4}-1=\frac{9}{5}-1=\frac45
+\Rightarrow y=\frac{2}{\sqrt5}.
+\]
+Nagib tangente elipse dobijamo implicitno:
+\[
+\frac{2x}{9}+\frac{2y}{4}y'=0 \Rightarrow y'=-\frac{4x}{9y}.
+\]
+U tački je
+\[
+m_1=-\frac{4\cdot (6/\sqrt5)}{9\cdot (2/\sqrt5)}=-\frac{24}{18}=-\frac43.
+\]
+Za hiperbolu:
+\[
+\frac{x}{2}-2yy'=0 \Rightarrow y'=\frac{x}{4y},
+\]
+pa je
+\[
+m_2=\frac{6/\sqrt5}{4\cdot (2/\sqrt5)}=\frac{6}{8}=\frac34.
+\]
+Pošto je $m_1m_2=-1$, tangente su međusobno normalne, pa je ugao $90^\circ$.
+
+\subsection*{Answer}
+$90^\circ$ (option \textbf{D}).
+
+\end{document}
+
+

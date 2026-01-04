@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Ako su $a$, $b$ i $c$ istovremeno peti, sedamnaesti i trideset sedmi član i aritmetičke i geometrijske progresije, tada je $a^{b-c} \cdot b^{c-a} \cdot c^{a-b}$ jednako:
+
+A) $\frac{1}{3}$; \quad B) $1$; \quad C) $\frac{1}{2}$; \quad D) $\frac{1}{4}$; \quad E) $2$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Neka je aritmetička progresija sa prvim članom $\alpha$ i razlikom $d$, a geometrijska progresija sa prvim članom $g$ i količnikom $q$.
+
+Za aritmetičku progresiju:
+\begin{align*}
+a &= \alpha + 4d\\
+b &= \alpha + 16d\\
+c &= \alpha + 36d
+\end{align*}
+
+Za geometrijsku progresiju:
+\begin{align*}
+a &= g \cdot q^4\\
+b &= g \cdot q^{16}\\
+c &= g \cdot q^{36}
+\end{align*}
+
+Iz aritmetičke progresije:
+\begin{align*}
+b - c &= (\alpha + 16d) - (\alpha + 36d) = -20d\\
+c - a &= (\alpha + 36d) - (\alpha + 4d) = 32d\\
+a - b &= (\alpha + 4d) - (\alpha + 16d) = -12d
+\end{align*}
+
+Primetimo: $(b-c) + (c-a) + (a-b) = 0$ ✓
+
+Iz geometrijske progresije:
+\[
+a^{b-c} \cdot b^{c-a} \cdot c^{a-b} = (gq^4)^{-20d} \cdot (gq^{16})^{32d} \cdot (gq^{36})^{-12d}
+\]
+
+\[
+= g^{-20d} \cdot q^{-80d} \cdot g^{32d} \cdot q^{512d} \cdot g^{-12d} \cdot q^{-432d}
+\]
+
+\[
+= g^{-20d + 32d - 12d} \cdot q^{-80d + 512d - 432d}
+\]
+
+\[
+= g^{0} \cdot q^{0} = 1
+\]
+
+\subsection*{Odgovor}
+$1$ (opcija \textbf{B}).
+
+\end{document}

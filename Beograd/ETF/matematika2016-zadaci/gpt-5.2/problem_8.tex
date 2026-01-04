@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Given
+\[
+f(x)=\frac{x-2016}{x+2016},\qquad g(x)=\frac{1-f(x)}{1+f(x)},
+\]
+compute $f(g(x))$.
+
+\subsection*{Solution}
+Compute $1-f(x)$ and $1+f(x)$:
+\[
+1-f(x)=1-\frac{x-2016}{x+2016}=\frac{x+2016-(x-2016)}{x+2016}=\frac{4032}{x+2016},
+\]
+\[
+1+f(x)=1+\frac{x-2016}{x+2016}=\frac{x+2016+(x-2016)}{x+2016}=\frac{2x}{x+2016}.
+\]
+Therefore
+\[
+g(x)=\frac{\frac{4032}{x+2016}}{\frac{2x}{x+2016}}=\frac{4032}{2x}=\frac{2016}{x}.
+\]
+Now
+\[
+f(g(x))=f\!\left(\frac{2016}{x}\right)
+=\frac{\frac{2016}{x}-2016}{\frac{2016}{x}+2016}
+=\frac{\frac{1}{x}-1}{\frac{1}{x}+1}
+=\frac{1-x}{1+x}.
+\]
+
+\subsection*{Answer}
+$\dfrac{1-x}{1+x}$ (option \textbf{C}).
+
+\end{document}
+

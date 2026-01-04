@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Skup rešenja nejednačine $12\,\text{arctg}^2 x + \pi\,\text{arctg} x - \pi^2 \le 0$ je oblika (za neke realne brojeve $a$ i $b$ takve da je $-\infty < a < b < \infty$):
+\[
+(A)\ (-\infty, a] \cup [b, +\infty)\quad (B)\ [a, b]\quad (C)\ \bigcup_{k \in \mathbb{Z}} [a+2k\pi, b+2k\pi]\quad (D)\ \bigcup_{k \in \mathbb{Z}} [a+k\pi, b+k\pi]\quad (E)\ (-\frac{\pi}{2}, a] \cup [b, \frac{\pi}{2})\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Uvedimo smenu $t = \text{arctg} x$. Kako je kodomen arkus tangensa $(-\frac{\pi}{2}, \frac{\pi}{2})$, imamo uslov $t \in (-\frac{\pi}{2}, \frac{\pi}{2})$.
+Nejednačina postaje:
+\[
+12t^2 + \pi t - \pi^2 \le 0
+\]
+Rešimo odgovarajuću kvadratnu jednačinu $12t^2 + \pi t - \pi^2 = 0$:
+\[
+t_{1,2} = \frac{-\pi \pm \sqrt{\pi^2 - 4(12)(-\pi^2)}}{24} = \frac{-\pi \pm \sqrt{\pi^2 + 48\pi^2}}{24} = \frac{-\pi \pm \sqrt{49\pi^2}}{24} = \frac{-\pi \pm 7\pi}{24}
+\]
+\[
+t_1 = \frac{6\pi}{24} = \frac{\pi}{4}, \quad t_2 = \frac{-8\pi}{24} = -\frac{\pi}{3}
+\]
+Rešenje kvadratne nejednačine (parabola okrenuta nagore, manje od nule) je interval između nula:
+\[
+-\frac{\pi}{3} \le t \le \frac{\pi}{4}
+\]
+Oba kraja su unutar intervala $(-\frac{\pi}{2}, \frac{\pi}{2})$, pa je ovo validno rešenje za $t$.
+Vratimo smenu:
+\[
+-\frac{\pi}{3} \le \text{arctg} x \le \frac{\pi}{4}
+\]
+Kako je funkcija $\text{tg} x$ strogo rastuća na ovom intervalu, možemo delovati tangensom:
+\[
+\text{tg}\left(-\frac{\pi}{3}\right) \le x \le \text{tg}\left(\frac{\pi}{4}\right)
+\]
+\[
+-\sqrt{3} \le x \le 1
+\]
+Rešenje je interval $[-\sqrt{3}, 1]$.
+Ovo je oblika $[a, b]$, gde je $a=-\sqrt{3}$ i $b=1$.
+
+\subsection*{Answer}
+$[a, b]$ (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 12}
+На интервалу $[0,\tfrac{\pi}{2}]$ решити
+\[
+(\cos x)\sin^{2}x - x\sin x +1 =1.
+\]
+
+\subsection*{Solution}
+Једначина се своди на
+\[
+ \sin x\,(\cos x\sin x - x)=0.
+\]
+\paragraph{1.} $\sin x=0\;\Longrightarrow\;x=0$ (дозвољено).
+
+\paragraph{2.} $\cos x\sin x = x$.  На задатом интервалу функција
+\[
+ f(x)=\sin x\cos x - x
+\]
+има $f(0)=0$ и $f'(x)=\cos^{2}x-\sin^{2}x-1=\cos2x-1\le0$, па је строго опадајућа за $x>0$.  Зато је $f(x)<0$ за сваки $x\in(0,\tfrac{\pi}{2}]$ и других корена нема.
+
+\subsection*{Answer}
+Тачно једно решење (опција \textbf{B}).
+
+\end{document}

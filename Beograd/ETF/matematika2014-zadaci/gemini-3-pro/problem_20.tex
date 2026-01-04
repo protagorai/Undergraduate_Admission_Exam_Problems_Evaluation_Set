@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Iz skupa od 10 studenata, među kojima su samo jedan student elektrotehnike i samo jedan student matematike, biramo komisiju od 6 članova, ali tako da ako je u komisiji student elektrotehnike mora u toj komisiji biti i student matematike. Koliko se takvih komisija može obrazovati?
+\begin{enumerate}
+    \item[(A)] $210$
+    \item[(B)] $98$
+    \item[(C)] $126$
+    \item[(D)] $154$
+    \item[(E)] $165$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let $E$ be the student of electrotechnics and $M$ be the student of mathematics.
+There are 8 other students ($O_1, \dots, O_8$). Total 10 students.
+We need to choose 6 members.
+The condition is: If $E$ is chosen, then $M$ must be chosen.
+This means we cannot have a committee with $E$ but without $M$.
+The possible valid compositions are:
+1. Neither $E$ nor $M$ is in the committee. (Impossible, we need 6 from 8, ok)
+   Wait, "if E then M" implies:
+   - E is NOT in (M can be in or not).
+   - E IS in (M must be in).
+   So invalid case is: E is in AND M is NOT in.
+   
+Let's count by cases:
+Case 1: $E$ is not in the committee.
+We choose 6 members from the remaining 9 students ($M$ + 8 others).
+\[
+\binom{9}{6} = \binom{9}{3} = \frac{9 \cdot 8 \cdot 7}{3 \cdot 2 \cdot 1} = 3 \cdot 4 \cdot 7 = 84
+\]
+
+Case 2: $E$ is in the committee.
+Then $M$ must also be in the committee.
+We have chosen $E$ and $M$ (2 members). We need to choose $6-2=4$ more members from the remaining 8 students ($O_1, \dots, O_8$).
+\[
+\binom{8}{4} = \frac{8 \cdot 7 \cdot 6 \cdot 5}{4 \cdot 3 \cdot 2 \cdot 1} = 70
+\]
+
+Total valid ways = $84 + 70 = 154$.
+
+Alternatively, Total ways to choose 6 from 10 is $\binom{10}{6} = \binom{10}{4} = \frac{10 \cdot 9 \cdot 8 \cdot 7}{24} = 210$.
+Subtract invalid cases: E is in, M is not.
+If E is in and M is out, we need to choose 5 more from the 8 others.
+\[
+\binom{8}{5} = \binom{8}{3} = \frac{8 \cdot 7 \cdot 6}{6} = 56
+\]
+Valid ways = $210 - 56 = 154$.
+
+\subsection*{Answer}
+$154$ (option \textbf{(D)}).
+
+\end{document}

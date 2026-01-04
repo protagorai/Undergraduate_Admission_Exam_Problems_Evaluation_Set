@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Data je kvadratna funkcija $f(x)=x^2+bx+c$ $(b,c\in\mathbb R)$ takva da je $f(f(1))=f(f(2))=0$, pri čemu je $f(1)\neq f(2)$. Vrednost $f(0)$ jednaka je:
+\[
+\text{(A) }-6\quad
+\text{(B) }-\frac{2}{3}\quad
+\text{(C) }-\frac{3}{2}\quad
+\text{(D) }\frac{1}{4}\quad
+\text{(E) }-2.
+\]
+
+\subsection*{Solution}
+Označimo $u=f(1)$ i $v=f(2)$. Uslovi $f(u)=0$ i $f(v)=0$ i činjenica $u\neq v$ znače da su $u$ i $v$ dva različita nultočka funkcije $f$, pa
+\[
+f(x)=(x-u)(x-v)=x^2-(u+v)x+uv.
+\]
+Dakle $b=-(u+v)$ i $c=uv$.
+
+S druge strane,
+\[
+u=f(1)=1+b+c=1-(u+v)+uv,
+\]
+\[
+v=f(2)=4+2b+c=4-2(u+v)+uv.
+\]
+Preuređivanjem dobijamo
+\[
+2u+v=1+uv,\qquad 2u+3v=4+uv.
+\]
+Oduzimanjem sledi $2v=3$, tj.\ $v=\frac{3}{2}$, a zatim iz prve jednačine
+\[
+2u+\frac{3}{2}=1+\frac{3}{2}u \ \Rightarrow\ \frac12 u=-\frac12 \ \Rightarrow\ u=-1.
+\]
+Zato je
+\[
+f(0)=c=uv=-1\cdot\frac32=-\frac32.
+\]
+
+\subsection*{Answer}
+$-\dfrac{3}{2}$ (option \textbf{C}).
+
+\end{document}
+

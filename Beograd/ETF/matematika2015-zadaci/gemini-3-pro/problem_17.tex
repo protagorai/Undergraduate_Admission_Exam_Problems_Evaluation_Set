@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+U jednakokrakom trouglu $ABC$ je $AB = BC = b, AC = a$ i $\angle ABC = 20^\circ$. Tada je izraz $\frac{a^2}{b^2} + \frac{b}{a}$ jednak:
+
+\subsection*{Solution}
+Uglovi na osnovici su $(180-20)/2 = 80^\circ$.
+Sinusna teorema: $\frac{a}{\sin 20^\circ} = \frac{b}{\sin 80^\circ} \Rightarrow \frac{a}{b} = \frac{\sin 20^\circ}{\sin 80^\circ} = \frac{\sin 20^\circ}{\cos 10^\circ}$.
+$\frac{a}{b} = \frac{2\sin 10^\circ \cos 10^\circ}{\cos 10^\circ} = 2\sin 10^\circ$.
+Tražimo $E = (\frac{a}{b})^2 + \frac{1}{a/b} = (2\sin 10^\circ)^2 + \frac{1}{2\sin 10^\circ}$.
+$E = 4\sin^2 10^\circ + \frac{1}{2\sin 10^\circ} = \frac{8\sin^3 10^\circ + 1}{2\sin 10^\circ}$.
+Znamo da je $\sin 30^\circ = 3\sin 10^\circ - 4\sin^3 10^\circ = 1/2$.
+$8\sin^3 10^\circ = 6\sin 10^\circ - 1$.
+$E = \frac{6\sin 10^\circ - 1 + 1}{2\sin 10^\circ} = \frac{6\sin 10^\circ}{2\sin 10^\circ} = 3$.
+
+\subsection*{Answer}
+$3$ (option \textbf{C}).
+
+\end{document}

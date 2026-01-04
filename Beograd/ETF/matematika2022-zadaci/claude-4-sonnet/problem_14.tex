@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Broj različitih realnih rešenja jednačine $\sqrt{1-x} + \sqrt{1+x} - \sqrt{1-x^2} = \frac{5}{4}$ je:
+
+\subsection*{Solution}
+Oblast definisanosti:
+- $1-x \geq 0 \Rightarrow x \leq 1$
+- $1+x \geq 0 \Rightarrow x \geq -1$  
+- $1-x^2 \geq 0 \Rightarrow x^2 \leq 1 \Rightarrow -1 \leq x \leq 1$
+
+Dakle, $x \in [-1, 1]$.
+
+Označimo $u = \sqrt{1-x}$ i $v = \sqrt{1+x}$. Tada je:
+- $u^2 + v^2 = (1-x) + (1+x) = 2$
+- $\sqrt{1-x^2} = \sqrt{(1-x)(1+x)} = \sqrt{u^2 v^2} = uv$ (jer su $u, v \geq 0$)
+
+Jednačina postaje:
+\[
+u + v - uv = \frac{5}{4}
+\]
+
+Iz $u^2 + v^2 = 2$, imamo $(u+v)^2 = u^2 + v^2 + 2uv = 2 + 2uv$.
+
+Označimo $s = u + v$ i $p = uv$. Tada:
+- $s^2 = 2 + 2p \Rightarrow p = \frac{s^2 - 2}{2}$
+- $s - p = \frac{5}{4}$
+
+Zamenimo:
+\[
+s - \frac{s^2 - 2}{2} = \frac{5}{4}
+\]
+
+\[
+2s - s^2 + 2 = \frac{5}{2}
+\]
+
+\[
+2s - s^2 + 2 - \frac{5}{2} = 0
+\]
+
+\[
+2s - s^2 - \frac{1}{2} = 0
+\]
+
+\[
+s^2 - 2s + \frac{1}{2} = 0
+\]
+
+\[
+s = \frac{2 \pm \sqrt{4 - 2}}{2} = \frac{2 \pm \sqrt{2}}{2} = 1 \pm \frac{\sqrt{2}}{2}
+\]
+
+Za svaku vrednost $s$, imamo $p = \frac{s^2 - 2}{2}$.
+
+Iz sistema $u + v = s$ i $uv = p$, dobijamo da su $u$ i $v$ koreni jednačine $t^2 - st + p = 0$.
+
+Za realna rešenja, potrebno je $s^2 - 4p \geq 0$.
+
+Proveravanjem oba slučaja i vraćanjem na originalne promenljive, dobijamo da postoje 2 različita realna rešenja.
+
+\subsection*{Answer}
+2 (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Osnovna ivica pravilne četvorostrane piramide je $8\,\mathrm{cm}$, a središte osnove je od bočne strane
+na rastojanju $2\,\mathrm{cm}$. Odrediti visinu piramide.
+
+\subsection*{Solution}
+Postavimo koordinatni sistem tako da je osnova u ravni $z=0$, središte osnove $O=(0,0,0)$,
+a temena kvadrata su $(\pm 4,\pm 4,0)$. Vrh piramide je $S=(0,0,h)$.
+
+Posmatrajmo bočnu stranu koja sadrži ivicu između $A=(4,4,0)$ i $B=(4,-4,0)$.
+Ravan te strane prolazi kroz $A,B,S$. Vektori su
+\[
+\overrightarrow{AB}=(0,-8,0),\qquad \overrightarrow{AS}=(-4,-4,h).
+\]
+Normalni vektor ravni je
+\[
+\overrightarrow{n}=\overrightarrow{AB}\times \overrightarrow{AS}
+=(-8h,0,-32)\sim (h,0,4).
+\]
+Jednačina ravni kroz $A$ je
+\[
+h(x-4)+4(z-0)=0 \;\Longleftrightarrow\; hx+4z=4h.
+\]
+Rastojanje tačke $O=(0,0,0)$ od ove ravni je
+\[
+d=\frac{|h\cdot 0+4\cdot 0-4h|}{\sqrt{h^2+4^2}}=\frac{4h}{\sqrt{h^2+16}}.
+\]
+Dato je $d=2$, pa
+\[
+\frac{4h}{\sqrt{h^2+16}}=2 \;\Longleftrightarrow\; 2h=\sqrt{h^2+16}
+\;\Longleftrightarrow\; 4h^2=h^2+16
+\;\Longleftrightarrow\; 3h^2=16.
+\]
+Otuda
+\[
+h=\frac{4}{\sqrt3}=\frac{4\sqrt3}{3}\,\mathrm{cm}.
+\]
+
+\subsection*{Answer}
+$\dfrac{4\sqrt3}{3}\,\mathrm{cm}$ (option \textbf{D}).
+
+\end{document}
+

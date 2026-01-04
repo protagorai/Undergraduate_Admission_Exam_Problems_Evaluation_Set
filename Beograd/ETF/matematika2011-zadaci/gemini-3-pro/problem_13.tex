@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 13}
+Ostatak pri deljenju polinoma $x^{243} + x^{81} + x^{27} + x^9 + x^3 + x$ polinomom $x^2-1$ iznosi:
+\[
+(A)\; 0 \quad (B)\; 1 \quad (C)\; 2x \quad (D)\; 4x \quad (E)\; 6x
+\]
+
+\subsection*{Solution}
+Neka je $P(x) = x^{243} + x^{81} + x^{27} + x^9 + x^3 + x$.
+Delimo polinomom $Q(x) = x^2-1 = (x-1)(x+1)$.
+Ostatak $R(x)$ je polinom stepena manjeg od 2, dakle oblika $R(x) = ax+b$.
+Važi $P(x) = Q(x)S(x) + R(x)$.
+Za $x=1$:
+\[
+P(1) = 1^{243} + 1^{81} + 1^{27} + 1^9 + 1^3 + 1 = 6
+\]
+\[
+R(1) = a(1) + b = 6
+\]
+Za $x=-1$:
+\[
+P(-1) = (-1)^{243} + (-1)^{81} + (-1)^{27} + (-1)^9 + (-1)^3 + (-1) = -1-1-1-1-1-1 = -6
+\]
+(svi stepeni su neparni).
+\[
+R(-1) = a(-1) + b = -6 \Rightarrow -a+b = -6
+\]
+Rešavamo sistem:
+\[
+a+b=6
+\]
+\[
+-a+b=-6
+\]
+Sabiranjem jednačina: $2b=0 \Rightarrow b=0$.
+Oduzimanjem: $2a=12 \Rightarrow a=6$.
+Ostatak je $R(x) = 6x$.
+
+\subsection*{Answer}
+$6x$ (option \textbf{E}).
+
+\end{document}

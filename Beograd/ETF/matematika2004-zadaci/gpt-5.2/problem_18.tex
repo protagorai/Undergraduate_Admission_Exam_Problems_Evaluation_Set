@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Date su dve paralelne prave. Na jednoj od njih je 10 a na drugoj 12 različitih tačaka.
+Koliko trouglova određuju ove tačke?
+
+\subsection*{Solution}
+Trougao se dobija izborom 3 nekolinearne tačke.
+Pošto su tačke raspoređene na dve prave, ne možemo izabrati sve tri tačke sa iste prave (bile bi kolinearne).
+Dakle, trougao mora imati:
+\begin{itemize}
+\item 2 tačke sa prve prave i 1 tačku sa druge, ili
+\item 2 tačke sa druge prave i 1 tačku sa prve.
+\end{itemize}
+
+Broj takvih trouglova je
+\[
+\binom{10}{2}\binom{12}{1}+\binom{12}{2}\binom{10}{1}.
+\]
+
+\subsection*{Answer}
+$\binom{10}{2}\binom{12}{1}+\binom{10}{1}\binom{12}{2}$ (option \textbf{A}).
+
+\end{document}
+

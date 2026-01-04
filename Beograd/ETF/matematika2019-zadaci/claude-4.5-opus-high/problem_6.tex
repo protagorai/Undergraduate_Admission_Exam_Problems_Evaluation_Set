@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Let $x_1, x_2, x_3$ be solutions of the equation $x^3 + px + q = 0$, where $p, q \in \mathbb{R}$, $p \neq 0$, $q \neq 0$.
+Then the value of $\frac{x_1 + x_2 + x_3}{x_1^2 + x_2^2 + x_3^2} - x_1x_2(1 + x_3) - (x_1 + x_2)x_3$ is:
+
+\subsection*{Solution}
+For the cubic equation $x^3 + px + q = 0$, by Vieta's formulas:
+\begin{align}
+x_1 + x_2 + x_3 &= 0 \quad \text{(coefficient of } x^2 \text{ is 0)}\\
+x_1x_2 + x_2x_3 + x_3x_1 &= p\\
+x_1x_2x_3 &= -q
+\end{align}
+
+First, let's find $x_1^2 + x_2^2 + x_3^2$:
+\[
+x_1^2 + x_2^2 + x_3^2 = (x_1 + x_2 + x_3)^2 - 2(x_1x_2 + x_2x_3 + x_3x_1) = 0^2 - 2p = -2p
+\]
+
+Now let's evaluate the given expression:
+\[
+\frac{x_1 + x_2 + x_3}{x_1^2 + x_2^2 + x_3^2} - x_1x_2(1 + x_3) - (x_1 + x_2)x_3
+\]
+
+Substituting what we know:
+\[
+\frac{0}{-2p} - x_1x_2(1 + x_3) - (x_1 + x_2)x_3
+\]
+\[
+= 0 - x_1x_2 - x_1x_2x_3 - x_1x_3 - x_2x_3
+\]
+\[
+= -x_1x_2 - x_1x_2x_3 - x_1x_3 - x_2x_3
+\]
+\[
+= -x_1x_2 - x_1x_3 - x_2x_3 - x_1x_2x_3
+\]
+\[
+= -(x_1x_2 + x_2x_3 + x_3x_1) - x_1x_2x_3
+\]
+\[
+= -p - (-q) = -p + q = q - p
+\]
+
+\subsection*{Answer}
+$q - p$ (option \textbf{D}).
+
+\end{document}

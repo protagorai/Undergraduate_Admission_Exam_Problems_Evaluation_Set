@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 5}
+If $\sin\frac{\alpha}{2} = \frac{1}{\sqrt{5}}$ for $\alpha \in (\pi, 2\pi)$, find $\tan\alpha$.
+
+\subsection*{Solution}
+Given: $\sin\frac{\alpha}{2} = \frac{1}{\sqrt{5}}$ and $\alpha \in (\pi, 2\pi)$.
+
+Since $\alpha \in (\pi, 2\pi)$, we have $\frac{\alpha}{2} \in \left(\frac{\pi}{2}, \pi\right)$.
+
+In this interval, sine is positive and cosine is negative.
+
+Using the Pythagorean identity:
+\[
+\cos^2\frac{\alpha}{2} + \sin^2\frac{\alpha}{2} = 1
+\]
+\[
+\cos^2\frac{\alpha}{2} = 1 - \sin^2\frac{\alpha}{2} = 1 - \left(\frac{1}{\sqrt{5}}\right)^2 = 1 - \frac{1}{5} = \frac{4}{5}
+\]
+
+Since $\frac{\alpha}{2} \in \left(\frac{\pi}{2}, \pi\right)$, we have $\cos\frac{\alpha}{2} < 0$:
+\[
+\cos\frac{\alpha}{2} = -\sqrt{\frac{4}{5}} = -\frac{2}{\sqrt{5}}
+\]
+
+Now we can find $\tan\alpha$ using the double angle formula:
+\[
+\tan\alpha = \frac{\sin\alpha}{\cos\alpha}
+\]
+
+Using double angle formulas:
+\[
+\sin\alpha = 2\sin\frac{\alpha}{2}\cos\frac{\alpha}{2} = 2 \cdot \frac{1}{\sqrt{5}} \cdot \left(-\frac{2}{\sqrt{5}}\right) = -\frac{4}{5}
+\]
+
+\[
+\cos\alpha = \cos^2\frac{\alpha}{2} - \sin^2\frac{\alpha}{2} = \frac{4}{5} - \frac{1}{5} = \frac{3}{5}
+\]
+
+Therefore:
+\[
+\tan\alpha = \frac{\sin\alpha}{\cos\alpha} = \frac{-\frac{4}{5}}{\frac{3}{5}} = -\frac{4}{3}
+\]
+
+Let's verify this makes sense: Since $\alpha \in (\pi, 2\pi)$, we're in the third or fourth quadrant. In the third quadrant, both sine and cosine are negative, so tangent is positive. In the fourth quadrant, sine is negative and cosine is positive, so tangent is negative. Since we got $\tan\alpha = -\frac{4}{3} < 0$, we must be in the fourth quadrant, which is consistent with $\sin\alpha < 0$ and $\cos\alpha > 0$.
+
+\subsection*{Answer}
+$-\frac{4}{3}$ (option \textbf{B}).
+
+\end{document}
+

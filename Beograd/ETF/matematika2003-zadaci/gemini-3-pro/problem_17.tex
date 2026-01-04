@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 17}
+Kompleksan broj $(1+i\sqrt{3})^9 + (\sqrt{3}-i)^9$ ($i=\sqrt{-1}$) jednak je:
+
+A) $2^9(1+i)$; B) $2^9(-1+i)$; C) $2^9(1-i)$; D) $2^9$; E) $-2^9i$; N) Ne znam.
+
+\subsection*{Solution}
+Predstavimo kompleksne brojeve u trigonometrijskom obliku.
+Neka je $z_1 = 1+i\sqrt{3}$. Modul je $|z_1| = \sqrt{1^2+(\sqrt{3})^2} = \sqrt{4} = 2$.
+Argument: $\tan \phi_1 = \sqrt{3}$, prvi kvadrant $\Rightarrow \phi_1 = \pi/3$.
+$z_1 = 2(\cos \frac{\pi}{3} + i \sin \frac{\pi}{3})$.
+$z_1^9 = 2^9 (\cos \frac{9\pi}{3} + i \sin \frac{9\pi}{3}) = 2^9 (\cos 3\pi + i \sin 3\pi) = 2^9 (-1 + 0) = -2^9$.
+
+Neka je $z_2 = \sqrt{3}-i$. Modul je $|z_2| = \sqrt{(\sqrt{3})^2+(-1)^2} = \sqrt{4} = 2$.
+Argument: $\tan \phi_2 = -1/\sqrt{3}$, četvrti kvadrant $\Rightarrow \phi_2 = -\pi/6$.
+$z_2 = 2(\cos (-\frac{\pi}{6}) + i \sin (-\frac{\pi}{6}))$.
+$z_2^9 = 2^9 (\cos (-\frac{9\pi}{6}) + i \sin (-\frac{9\pi}{6})) = 2^9 (\cos (-\frac{3\pi}{2}) + i \sin (-\frac{3\pi}{2}))$.
+$-\frac{3\pi}{2}$ je isto što i $\frac{\pi}{2}$.
+$z_2^9 = 2^9 (\cos \frac{\pi}{2} + i \sin \frac{\pi}{2}) = 2^9 (0 + i) = 2^9 i$.
+
+Zbir je:
+$z_1^9 + z_2^9 = -2^9 + 2^9 i = 2^9(-1+i)$.
+
+\subsection*{Answer}
+$2^9(-1+i)$ (option \textbf{B}).
+\end{document}

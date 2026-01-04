@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Odrediti domen funkcije
+\[
+y=\sqrt{\log_{3}(3x^{2}-2x)}.
+\]
+Skup treba zapisati u obliku sa две отворене компоненте, као што је наведено у понуђеним опцијама.
+
+\subsection*{Rešenje}
+Da bi izraz bio definisan, potrebno je:
+\begin{enumerate}
+  \item $3x^{2}-2x>0$  (argument logaritma mora biti pozitivan),
+  \item $\log_{3}(3x^{2}-2x)\ge0$ (jer se nalazimo pod kvadratnim korenom).
+\end{enumerate}
+\textbf{1.}  Prvi uslov:
+\[
+3x^{2}-2x>0\;\Longrightarrow\;x(3x-2)>0\;\Longrightarrow\;x<0\;\text{ili}\;x>\frac23.
+\]
+
+\textbf{2.}  Drugi uslov.  Pošto je osnova $3>1$, nejednakost $\log_{3}(A)\ge0$ ekvivalentna je $A\ge1$.
+Тимe добијамо
+\[
+3x^{2}-2x\ge1\;\Longrightarrow\;3x^{2}-2x-1\ge0\;\Longrightarrow\;(3x+1)(x-1)\ge0.
+\]
+Grafičком методом (или tabelom znakova) dobijamo
+\[
+x\le-\frac13\quad\text{ili}\quad x\ge1.
+\]
+
+\textbf{3.}  Konačni domen је presek rezultata iz koraka 1 i 2:
+\[
+(-\infty,-\tfrac13]\;\cup\;[1,\infty).
+\]
+
+\subsection*{Odgovor}
+Oblik sa dve beskonačne grane odgovara опцији
+\[
+(-\infty,a)\cup(b,+\infty)\quad\text{sa}\;a=-\tfrac13,\;b=1,
+\]
+odносно \textbf{opcija B}.
+
+\end{document}

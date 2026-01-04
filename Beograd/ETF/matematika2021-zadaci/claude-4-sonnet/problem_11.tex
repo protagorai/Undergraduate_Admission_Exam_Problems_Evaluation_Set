@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Points $A(-2,2)$ and $B(2,-2)$ are vertices of triangle $ABC$, and $N(1,2)$ is the intersection of the heights (orthocenter). Find the sum of coordinates of vertex $C$.
+
+\subsection*{Solution}
+Let $C(x,y)$ be the unknown vertex.
+
+The orthocenter is the intersection of the altitudes. The altitude from $C$ to side $AB$ passes through $N(1,2)$ and is perpendicular to $AB$.
+
+First, find the slope of $AB$:
+\[
+m_{AB} = \frac{-2-2}{2-(-2)} = \frac{-4}{4} = -1
+\]
+
+The altitude from $C$ has slope $m_1 = 1$ (negative reciprocal of $-1$) and passes through $N(1,2)$:
+\[
+y - 2 = 1(x - 1) \Rightarrow y = x + 1
+\]
+
+Since this altitude also passes through $C(x,y)$:
+\[
+y = x + 1 \quad \text{...(1)}
+\]
+
+The altitude from $A$ to side $BC$ passes through $N(1,2)$ and is perpendicular to $BC$.
+
+The slope of $BC$ is:
+\[
+m_{BC} = \frac{y-(-2)}{x-2} = \frac{y+2}{x-2}
+\]
+
+The altitude from $A$ has slope $m_2 = -\frac{x-2}{y+2}$ and passes through both $A(-2,2)$ and $N(1,2)$.
+
+Since $A$ and $N$ have the same $y$-coordinate, the altitude from $A$ is horizontal, so $m_2 = 0$.
+
+This means $BC$ is vertical, so $x - 2 = 0$, which gives us $x = 2$.
+
+From equation (1): $y = 2 + 1 = 3$.
+
+Therefore, $C(2,3)$ and the sum of coordinates is $2 + 3 = 5$.
+
+Let's verify: If $C(2,3)$, then $BC$ is indeed vertical (from $(2,-2)$ to $(2,3)$), and the altitude from $A(-2,2)$ is horizontal through $y = 2$, which passes through $N(1,2)$. ✓
+
+\subsection*{Answer}
+5 (option \textbf{B}).
+
+\end{document}

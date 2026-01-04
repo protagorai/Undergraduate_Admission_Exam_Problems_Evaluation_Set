@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Data su tri razli\v{c}ita proizvoda fabrike $A$, \v{c}etiri razli\v{c}ita proizvoda fabrike $B$ i pet razli\v{c}itih proizvoda fabrike $C$.
+Na koliko razli\v{c}itih na\v{c}ina se svi proizvodi mogu pore\dj ati u niz uz uslove:
+proizvodi fabrike $B$ su jedan pored drugog, proizvodi fabrike $C$ su jedan pored drugog, a nijedna dva proizvoda fabrike $A$ nisu jedan pored drugog?
+
+\subsection*{Solution}
+Uslovi ``$B$ jedan pored drugog'' i ``$C$ jedan pored drugog'' zna\v{c}e da se proizvodi $B$ mogu posmatrati kao jedan blok, a proizvodi $C$ kao drugi blok.
+Unutar blokova postoji
+\[
+4!\quad\text{i}\quad 5!
+\]
+na\v{c}ina rasporeda (jer su proizvodi razli\v{c}iti).
+
+Spolja, imamo ukupno $5$ ``objekata'': blok $B$, blok $C$ i tri razli\v{c}ita proizvoda fabrike $A$.
+Najpre pore\dj amo dva bloka $B$ i $C$: to je $2!$ na\v{c}ina.
+Ta dva bloka formiraju ta\v{c}no $3$ mesta (``rupe'') u koja mo\v{z}emo da smestimo proizvode $A$ tako da se ne dodiruju:
+pre prvog bloka, izme\dj u blokova, i posle drugog bloka.
+
+Po\v{s}to imamo ta\v{c}no $3$ proizvoda fabrike $A$, moramo staviti po jedan u svaku rupu, \v{s}to se mo\v{z}e uraditi na $3!$ na\v{c}ina.
+
+Ukupan broj rasporeda je
+\[
+2!\cdot 3!\cdot 4!\cdot 5!.
+\]
+
+\subsection*{Answer}
+$2!\cdot 3!\cdot 4!\cdot 5!$ (option \textbf{D}).
+
+\end{document}
+

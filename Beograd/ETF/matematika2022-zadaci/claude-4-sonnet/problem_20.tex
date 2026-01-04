@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Minimalna dužina odsečka između koordinatnih osa koji formira tangenta, koja dodiruje elipsu $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ $(a \geq b > 0)$ u tački koja je u prvom kvadrantu, iznosi:
+
+\subsection*{Solution}
+Elipsa je $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$.
+
+Tačka dodira u prvom kvadrantu je $P(a\cos\theta, b\sin\theta)$ gde je $\theta \in (0, \pi/2)$.
+
+Jednačina tangente u tački $P$ je:
+\[
+\frac{x \cos\theta}{a} + \frac{y \sin\theta}{b} = 1
+\]
+
+Preseci sa osama:
+- Sa $x$-osom ($y = 0$): $x = \frac{a}{\cos\theta}$
+- Sa $y$-osom ($x = 0$): $y = \frac{b}{\sin\theta}$
+
+Dužina odsečka između osa je:
+\[
+L = \sqrt{\left(\frac{a}{\cos\theta}\right)^2 + \left(\frac{b}{\sin\theta}\right)^2} = \sqrt{\frac{a^2}{\cos^2\theta} + \frac{b^2}{\sin^2\theta}}
+\]
+
+Da bismo našli minimum, deriviramo po $\theta$:
+\[
+\frac{dL}{d\theta} = \frac{1}{2\sqrt{\frac{a^2}{\cos^2\theta} + \frac{b^2}{\sin^2\theta}}} \cdot \left(\frac{2a^2\sin\theta}{\cos^3\theta} - \frac{2b^2\cos\theta}{\sin^3\theta}\right)
+\]
+
+Postavimo $\frac{dL}{d\theta} = 0$:
+\[
+\frac{a^2\sin\theta}{\cos^3\theta} = \frac{b^2\cos\theta}{\sin^3\theta}
+\]
+
+\[
+a^2\sin^4\theta = b^2\cos^4\theta
+\]
+
+\[
+\frac{\sin^4\theta}{\cos^4\theta} = \frac{b^2}{a^2}
+\]
+
+\[
+\tan^4\theta = \frac{b^2}{a^2} \Rightarrow \tan^2\theta = \frac{b}{a}
+\]
+
+Dakle $\tan\theta = \sqrt{\frac{b}{a}}$.
+
+Iz ovoga:
+\[
+\sin\theta = \frac{\sqrt{b/a}}{\sqrt{1 + b/a}} = \sqrt{\frac{b}{a+b}}
+\]
+\[
+\cos\theta = \frac{1}{\sqrt{1 + b/a}} = \sqrt{\frac{a}{a+b}}
+\]
+
+Minimalna dužina je:
+\[
+L_{\min} = \sqrt{\frac{a^2 \cdot (a+b)}{a} + \frac{b^2 \cdot (a+b)}{b}} = \sqrt{a(a+b) + b(a+b)} = \sqrt{(a+b)^2} = a+b
+\]
+
+\subsection*{Answer}
+$a + b$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Ugao između elipse $\frac{x^2}{9} + \frac{y^2}{4} = 1$ i hiperbole $\frac{x^2}{4} - y^2 = 1$ u njihovoj presečnoj tački u prvom kvadrantu iznosi:
+
+\subsection*{Solution}
+
+Ellipse: $4x^2 + 9y^2 = 36$.
+Hyperbola: $x^2 - 4y^2 = 4 \implies x^2 = 4+4y^2$.
+Intersection:
+$4(4+4y^2) + 9y^2 = 36 \implies 16 + 25y^2 = 36 \implies 25y^2 = 20 \implies y^2 = 4/5$.
+$x^2 = 4 + 16/5 = 36/5$.
+Derivatives (Slopes):
+Ellipse: $\frac{2x}{9} + \frac{y}{2}y' = 0 \implies y'_E = -\frac{4x}{9y}$.
+Hyperbola: $\frac{x}{2} - 2yy' = 0 \implies y'_H = \frac{x}{4y}$.
+Product of slopes at intersection:
+$y'_E \cdot y'_H = -\frac{4x}{9y} \cdot \frac{x}{4y} = -\frac{x^2}{9y^2}$.
+Substitute $x^2/y^2 = (36/5)/(4/5) = 9$:
+$y'_E \cdot y'_H = -\frac{9}{9} = -1$.
+Since the product of slopes is -1, the curves are orthogonal. The angle is $90^\circ$.
+
+
+\subsection*{Answer}
+90^\circ (option \textbf{D}).
+
+\end{document}

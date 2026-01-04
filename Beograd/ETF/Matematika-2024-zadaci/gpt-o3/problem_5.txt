@@ -1,0 +1,8 @@
+Problem 5
+U razvoju binoma (2x - 3/(4x))^9, x \in \mathbb{R}\setminus\{0\}, član koji ne sadrži x je jednak:
+(A) -9828
+(B) 2268
+(C) 84
+(D) -756
+(E) -2268
+(N) Ne znam

@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 16}
+Dat je skup $S = \left\{ \left(\frac{-1+i\sqrt{3}}{2}\right)^{2019}, \text{Im}\left(\left(\frac{1+i}{\sqrt{2}}\right)^{2019}\right), 0.3333333, \frac{\pi}{3}, \sin\frac{\pi}{3}, \frac{22}{7} \right\}$ i skup racionalnih brojeva $\mathbb{Q} = \left\{ \frac{p}{q} \mid p\in\mathbb{Z}, q\in\mathbb{N} \right\}, i^2=-1$. Broj elemenata skupa $S \cap \mathbb{Q}$ jeste:
+
+\subsection*{Solution}
+Analizirajmo elemente skupa $S$:
+1. $z_1 = \frac{-1+i\sqrt{3}}{2} = e^{i\frac{2\pi}{3}}$.
+$z_1^{2019} = e^{i\frac{2\pi}{3} \cdot 2019} = e^{i 2\pi \cdot 673} = 1 \in \mathbb{Q}$.
+2. $z_2 = \frac{1+i}{\sqrt{2}} = e^{i\frac{\pi}{4}}$.
+$z_2^{2019} = e^{i\frac{2019\pi}{4}}$.
+$2019 = 4 \cdot 504 + 3$, pa je $2019\pi/4 \equiv 3\pi/4 \pmod{2\pi}$.
+$\text{Im}(z_2^{2019}) = \sin(3\pi/4) = \frac{\sqrt{2}}{2} \notin \mathbb{Q}$.
+3. $0.3333333 = \frac{3333333}{10000000} \in \mathbb{Q}$.
+4. $\frac{\pi}{3} \notin \mathbb{Q}$.
+5. $\sin\frac{\pi}{3} = \frac{\sqrt{3}}{2} \notin \mathbb{Q}$.
+6. $\frac{22}{7} \in \mathbb{Q}$.
+
+Racionalni elementi su: $1$, $0.3333333$, $\frac{22}{7}$.
+Ukupno ih je 3.
+
+\subsection*{Answer}
+$3$ (Opcija \textbf{B})
+
+\end{document}

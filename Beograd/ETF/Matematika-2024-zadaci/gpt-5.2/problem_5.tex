@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+U razvoju binoma
+\[
+\left(2^x-\frac{3}{4^x}\right)^9,\qquad x\in\mathbb{R}\setminus\{0\},
+\]
+\v{c}lan koji ne sadr\v{z}i $x$ je jednak:
+
+\subsection*{Solution}
+Neka je $t=2^x$. Tada je $4^x=(2^2)^x=2^{2x}=t^2$, pa je
+\[
+\left(2^x-\frac{3}{4^x}\right)^9=\left(t-\frac{3}{t^2}\right)^9.
+\]
+Op\u{s}ti \v{c}lan binomnog razvoja je
+\[
+\binom{9}{k}t^{9-k}\left(-\frac{3}{t^2}\right)^k
+=\binom{9}{k}(-3)^k\,t^{9-k-2k}
+=\binom{9}{k}(-3)^k\,t^{9-3k}.
+\]
+Da \v{c}lan ne zavisi od $x$, potrebno je da je stepen $t$ jednak nuli:
+\[
+9-3k=0 \;\Longrightarrow\; k=3.
+\]
+Koeficijent tada iznosi
+\[
+\binom{9}{3}(-3)^3=84\cdot(-27)=-2268.
+\]
+
+\subsection*{Answer}
+$-2268$ (option \textbf{E}).
+
+\end{document}
+
+

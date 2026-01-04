@@ -1,0 +1,2 @@
+8. Zbir svih realnih rešenja jednačine 8^x = \frac{21}{4}·4^x + \frac{21}{4}x^2 − 1 = 0 iznosi:
+(A) \frac{21}{4}   (B) 0   (C) \log_4 21   (D) 4   (E) \frac{17}{4}   (N) Ne znam

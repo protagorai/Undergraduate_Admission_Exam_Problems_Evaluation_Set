@@ -1,0 +1,61 @@
+\section*{Zadatak 4}
+
+Odrediti vrednost izraza
+\[
+\frac{(1+i)^{2008}-(1-i)^{2009}}{(1+i)^{2006}+(1-i)^{2007}},\qquad (i^2=-1).
+\]
+
+\subsection*{Rešenje}
+Neka su \(a=1+i=\sqrt{2}\,e^{i\pi/4}\) i \(b=1-i=\sqrt{2}\,e^{-i\pi/4}\).
+
+\paragraph{Brojilac.}
+\[
+a^{2008}=(\sqrt{2})^{2008}e^{i\cdot 2008\pi/4}=2^{1004}e^{i\cdot 502\pi}=2^{1004}.
+\]
+Dalje,
+\[
+b^{2009}=(\sqrt{2})^{2009}e^{-i\cdot 2009\pi/4}
+ =2^{1004}\sqrt{2}\,e^{-i(502\pi+\pi/4)}
+ =2^{1004}\sqrt{2}\,e^{-i\pi/4}.
+\]
+Pošto je \(e^{-i\pi/4}=\frac{1-i}{\sqrt{2}}\), dobijamo
+\[
+b^{2009}=2^{1004}(1-i).
+\]
+Zato je brojilac
+\[
+2^{1004}-2^{1004}(1-i)=2^{1004}\,i.
+\]
+
+\paragraph{Imenilac.}
+\[
+a^{2006}=(\sqrt{2})^{2006}e^{i\cdot 2006\pi/4}
+ =2^{1003}e^{i(501\pi+\pi/2)}
+ =2^{1003}\cdot(-1)\cdot i
+ =-i\,2^{1003}.
+\]
+Takođe,
+\[
+b^{2007}=(\sqrt{2})^{2007}e^{-i\cdot 2007\pi/4}
+ =2^{1003}\sqrt{2}\,e^{-i(501\pi+3\pi/4)}
+ =2^{1003}\sqrt{2}\cdot(-1)\cdot e^{-i3\pi/4}.
+\]
+A kako je \(e^{-i3\pi/4}=-(1+i)/\sqrt{2}\), sledi
+\[
+b^{2007}=2^{1003}(1+i).
+\]
+Dakle imenilac je
+\[
+-i\,2^{1003}+2^{1003}(1+i)=2^{1003}.
+\]
+
+\paragraph{Konačno.}
+\[
+\frac{2^{1004}i}{2^{1003}}=2i.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(E)\;2i}
+\]
+

@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Izraz $\left(\dfrac{x\sqrt{x} - y\sqrt{y}}{\sqrt{x} - \sqrt{y}} + \sqrt{xy}\right) : \left(\dfrac{\sqrt{x} - \sqrt{y}}{x - y}\right)^{-2}$, za sve vrednosti $x, y \in \mathbb{R}$ za koje je definisan, identički je jednak izrazu:
+
+\subsection*{Solution}
+Let's simplify step by step. Let $a = \sqrt{x}$ and $b = \sqrt{y}$, so $x = a^2$ and $y = b^2$.
+
+\textbf{First part:} $\dfrac{x\sqrt{x} - y\sqrt{y}}{\sqrt{x} - \sqrt{y}} = \dfrac{a^3 - b^3}{a - b}$
+
+Using the factorization $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$:
+\[
+\dfrac{a^3 - b^3}{a - b} = a^2 + ab + b^2 = x + \sqrt{xy} + y
+\]
+
+So the expression in the first parenthesis becomes:
+\[
+x + \sqrt{xy} + y + \sqrt{xy} = x + 2\sqrt{xy} + y = (\sqrt{x} + \sqrt{y})^2
+\]
+
+\textbf{Second part:} $\left(\dfrac{\sqrt{x} - \sqrt{y}}{x - y}\right)^{-2}$
+
+Note that $x - y = (\sqrt{x} - \sqrt{y})(\sqrt{x} + \sqrt{y})$, so:
+\[
+\dfrac{\sqrt{x} - \sqrt{y}}{x - y} = \dfrac{\sqrt{x} - \sqrt{y}}{(\sqrt{x} - \sqrt{y})(\sqrt{x} + \sqrt{y})} = \dfrac{1}{\sqrt{x} + \sqrt{y}}
+\]
+
+Therefore:
+\[
+\left(\dfrac{1}{\sqrt{x} + \sqrt{y}}\right)^{-2} = (\sqrt{x} + \sqrt{y})^2
+\]
+
+\textbf{Final calculation:}
+\[
+(\sqrt{x} + \sqrt{y})^2 : (\sqrt{x} + \sqrt{y})^2 = 1
+\]
+
+\subsection*{Answer}
+$1$ (option \textbf{A}).
+
+\end{document}

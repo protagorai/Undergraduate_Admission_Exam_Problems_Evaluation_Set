@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Maksimalna zapremina pravilne trostrane prizme, čiji je obim jedne bočne strane $S$, jednaka je:
+(A) $\frac{S^3 \cdot \sqrt{3}}{216}$
+(B) $\frac{S^3 \cdot \sqrt{3}}{196}$
+(C) $S^3 \cdot \sqrt{3}$
+(D) $\frac{S^3 \cdot \sqrt{3}}{21}$
+(E) nijedan od prethodno ponuđenih odgovora
+(N) Ne znam
+
+\subsection*{Solution}
+Let $a$ be the side length of the base (equilateral triangle) and $H$ be the height of the prism.
+A lateral face is a rectangle with sides $a$ and $H$.
+Its perimeter is $2a + 2H = S \implies a + H = S/2 \implies H = S/2 - a$.
+The volume of the prism is $V = B \cdot H$, where $B$ is the area of the base.
+\[ B = \frac{a^2\sqrt{3}}{4}. \]
+\[ V(a) = \frac{a^2\sqrt{3}}{4} \left( \frac{S}{2} - a \right) = \frac{\sqrt{3}}{4} \left( \frac{S}{2}a^2 - a^3 \right). \]
+To maximize $V$, we find the derivative with respect to $a$:
+\[ V'(a) = \frac{\sqrt{3}}{4} (S a - 3a^2) = \frac{a\sqrt{3}}{4} (S - 3a). \]
+Setting $V'(a) = 0$ gives $a = 0$ (min) or $S - 3a = 0 \implies a = S/3$.
+For $a = S/3$:
+\[ H = \frac{S}{2} - \frac{S}{3} = \frac{3S - 2S}{6} = \frac{S}{6}. \]
+The maximum volume is:
+\[ V_{max} = \frac{(S/3)^2\sqrt{3}}{4} \cdot \frac{S}{6} = \frac{S^2}{9} \cdot \frac{\sqrt{3}}{4} \cdot \frac{S}{6} = \frac{S^3\sqrt{3}}{216}. \]
+
+\subsection*{Answer}
+$\frac{S^3 \cdot \sqrt{3}}{216}$ (option \textbf{A}).
+
+\end{document}

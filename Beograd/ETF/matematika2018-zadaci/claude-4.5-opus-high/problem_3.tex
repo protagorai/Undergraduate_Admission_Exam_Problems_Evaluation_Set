@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako za kompleksan broj $z$ važi $2z + 3\bar{z} = 10 + 3i$, gde je $\bar{z}$ kompleksan broj konjugovan broju $z$, tada je moduo kompleksnog broja $z$ jednak:
+
+\subsection*{Solution}
+Let $z = x + yi$ where $x, y \in \mathbb{R}$.
+
+Then $\bar{z} = x - yi$.
+
+Substituting into the equation:
+\[
+2(x + yi) + 3(x - yi) = 10 + 3i
+\]
+\[
+2x + 2yi + 3x - 3yi = 10 + 3i
+\]
+\[
+5x + (2y - 3y)i = 10 + 3i
+\]
+\[
+5x - yi = 10 + 3i
+\]
+
+Comparing real and imaginary parts:
+\begin{align*}
+5x &= 10 \Rightarrow x = 2 \\
+-y &= 3 \Rightarrow y = -3
+\end{align*}
+
+So $z = 2 - 3i$.
+
+The modulus of $z$:
+\[
+|z| = \sqrt{x^2 + y^2} = \sqrt{2^2 + (-3)^2} = \sqrt{4 + 9} = \sqrt{13}
+\]
+
+\subsection*{Answer}
+$\sqrt{13}$ (option \textbf{C}).
+
+\end{document}

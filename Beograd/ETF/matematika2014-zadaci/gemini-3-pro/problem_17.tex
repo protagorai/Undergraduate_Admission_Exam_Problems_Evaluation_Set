@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako je uređen par $(x, y)$ ($x, y \in \mathbf{R}, x,y > 0, x \neq 1$), rešenje sistema jednačina $x^y = y^x, x^p = y^q$ ($p, q \in \mathbf{R} \setminus \{0\}, p \neq q$), tada je proizvod $x \cdot y$ jednak:
+\begin{enumerate}
+    \item[(A)] $\frac{p-q}{2}$
+    \item[(B)] $\frac{2}{p-q}$
+    \item[(C)] $1$
+    \item[(D)] $\left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}$
+    \item[(E)] $\left(\frac{q}{p}\right)^{\frac{p+q}{p-q}}$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+From the second equation, $x^p = y^q \implies x = y^{q/p}$.
+Substitute this into the first equation $x^y = y^x$:
+\[
+(y^{q/p})^y = y^{(y^{q/p})}
+\]
+\[
+y^{\frac{q}{p}y} = y^{y^{q/p}}
+\]
+Equating exponents (assuming $y \neq 1$):
+\[
+\frac{q}{p}y = y^{q/p}
+\]
+Divide by $y$:
+\[
+\frac{q}{p} = y^{q/p - 1} = y^{\frac{q-p}{p}}
+\]
+Solve for $y$:
+\[
+y = \left(\frac{q}{p}\right)^{\frac{p}{q-p}}
+\]
+Now find $x$:
+\[
+x = y^{q/p} = \left(\left(\frac{q}{p}\right)^{\frac{p}{q-p}}\right)^{q/p} = \left(\frac{q}{p}\right)^{\frac{q}{q-p}}
+\]
+Calculate the product $xy$:
+\[
+xy = \left(\frac{q}{p}\right)^{\frac{q}{q-p}} \cdot \left(\frac{q}{p}\right)^{\frac{p}{q-p}} = \left(\frac{q}{p}\right)^{\frac{q+p}{q-p}}
+\]
+Note that $\frac{q+p}{q-p} = -\frac{p+q}{p-q}$. So:
+\[
+xy = \left(\frac{q}{p}\right)^{-\frac{p+q}{p-q}} = \left(\left(\frac{q}{p}\right)^{-1}\right)^{\frac{p+q}{p-q}} = \left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}
+\]
+
+\subsection*{Answer}
+$\left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}$ (option \textbf{(D)}).
+
+\end{document}

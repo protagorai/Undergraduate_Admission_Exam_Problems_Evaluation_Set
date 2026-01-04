@@ -1,0 +1,50 @@
+% Problem 16 – Matematički prijemni 2023
+\begin{solution}
+Систем је
+\[
+\begin{cases}
+ x^{2}+3xy+2y^{2}=0,\\[2pt]
+ \cos^{2}x+\cos^{2}y=1,\\[4pt]
+ x\in[-\pi,0],\;y\in[0,\pi].
+\end{cases}
+\]
+
+\paragraph{1.  Факторизација прве једначине.}
+$\;x^{2}+3xy+2y^{2}=(x+y)(x+2y)=0\;$ па постоје два случаја
+\[
+\text{I)}\;x=-y\quad\text{или}\quad\text{II)}\;x=-2y.
+\]
+
+\paragraph{2.  Случај I: $x=-y$.}
+Тада $\cos^{2}x+\cos^{2}y=2\cos^{2}x=1\;\Rightarrow\;\cos^{2}x=\tfrac12$.
+У интервалу $x\in[-\pi,0]$ то се дешава у
+\[
+x=-\tfrac\pi4,\;x=-\tfrac{3\pi}4.
+\]
+(Додаци $\pm2\pi$ су ван интервала.)  Вредности $y=-x$ су $\pi/4$ и $3\pi/4$, које су у [0,\pi].  Дакле овде добијамо \textbf{2} решења.
+
+\paragraph{3.  Случај II: $x=-2y$.}
+Домена даје $y\in[0,\pi/2]$.  Замена у тригонометријску једначину
+\[
+\cos^{2}(-2y)+\cos^{2}y=\cos^{2}2y+\cos^{2}y=1.
+\]
+Пошто $\cos^{2}2y=\sin^{2}y$ (јер $\cos^{2}\theta=1-\sin^{2}\theta$), услов постаје
+\[
+\sin^{2}y=1-\cos^{2}y\;\Longrightarrow\;\sin^{2}y-\sin^{2}y=0,
+\]
+али је прецизније решити
+\[(\cos2y)^{2}=\sin^{2}y.\]
+Стављајући $\sin y=s$ $(0\le s\le1)$ и $\cos2y=1-2s^{2}$ добија се квадратна
+\[
+(1-2s^{2})^{2}=s^{2}\;\Longrightarrow\;4s^{4}-5s^{2}+1=0.
+\]
+За $t=s^{2}$: $4t^{2}-5t+1=0$\;даје $t\in\{1,\tfrac14\}$.  Тако
+\[
+\boxed{y=\tfrac\pi2}\quad\text{или}\quad\boxed{y=\tfrac\pi6}.
+\]
+Припадајући $x=-2y$ су $x=-\pi$ и $x=-\tfrac\pi3$, оба у [-\pi,0].  Дакле овде такође имамо \textbf{2} решења.
+
+\paragraph{4.  Укупно.}
+Укупно реалних различитих решења је $2+2=\boxed{4}$, што одговара опцији \textbf{D}.
+\end{solution}
+

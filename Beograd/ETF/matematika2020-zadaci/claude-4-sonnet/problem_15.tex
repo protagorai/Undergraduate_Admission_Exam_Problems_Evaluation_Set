@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the number of real solutions of the equation $\sin^2 x + \frac{1}{\sin^2 x} = \sin x$.
+
+\subsection*{Solution}
+First, note that we need $\sin x \neq 0$, so $x \neq k\pi$ for any integer $k$.
+
+Let $u = \sin^2 x$, where $u > 0$. The equation becomes:
+\[
+u + \frac{1}{u} = \sqrt{u}
+\]
+
+Multiplying by $u > 0$:
+\[
+u^2 + 1 = u\sqrt{u} = u^{3/2}
+\]
+
+Let $v = \sqrt{u}$, so $v > 0$ and $u = v^2$. The equation becomes:
+\[
+v^4 + 1 = v^2 \cdot v = v^3
+\]
+
+\[
+v^4 - v^3 + 1 = 0
+\]
+
+\[
+v^3(v - 1) + 1 = 0
+\]
+
+\[
+v^3(v - 1) = -1
+\]
+
+This is equivalent to:
+\[
+v^4 - v^3 + 1 = 0
+\]
+
+Let's analyze this equation. We can rewrite it as:
+\[
+v^3(v - 1) = -1
+\]
+
+Since the right side is negative, we need $v^3(v - 1) < 0$.
+
+For $v > 0$, we have $v^3 > 0$, so we need $v - 1 < 0$, which means $0 < v < 1$.
+
+Let $f(v) = v^4 - v^3 + 1$. We need to find the roots of this function for $v \in (0, 1)$.
+
+$f'(v) = 4v^3 - 3v^2 = v^2(4v - 3)$
+
+$f'(v) = 0$ when $v = 0$ or $v = \frac{3}{4}$.
+
+For $v \in (0, 1)$:
+- $f'(v) < 0$ when $0 < v < \frac{3}{4}$
+- $f'(v) > 0$ when $\frac{3}{4} < v < 1$
+
+So $f(v)$ has a minimum at $v = \frac{3}{4}$.
+
+$f(0) = 1 > 0$
+$f(1) = 1 - 1 + 1 = 1 > 0$
+$f(\frac{3}{4}) = (\frac{3}{4})^4 - (\frac{3}{4})^3 + 1 = \frac{81}{256} - \frac{27}{64} + 1 = \frac{81 - 108 + 256}{256} = \frac{229}{256} > 0$
+
+Since $f(v) > 0$ for all $v \in [0, 1]$ and $f$ is continuous, there are no real solutions to $f(v) = 0$ in $(0, 1)$.
+
+Therefore, there are no values of $v > 0$ such that $v^4 - v^3 + 1 = 0$.
+
+This means there are no values of $u = \sin^2 x$ that satisfy our equation.
+
+\subsection*{Answer}
+$0$ (option \textbf{A}).
+
+\end{document}

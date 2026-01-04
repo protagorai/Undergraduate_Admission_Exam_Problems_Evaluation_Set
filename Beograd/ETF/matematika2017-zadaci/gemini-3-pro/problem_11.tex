@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+U aritmetičkoj progresiji poznati su članovi $a_{54} = \alpha$ i $a_{70} = \beta$, $(\alpha, \beta \in \mathbf{R}, \alpha \neq \beta)$. Tada je zbir prvih 160 članova te progresije jednak:
+(A) $85\alpha + 75\beta$
+(B) $5(-19\alpha + 51\beta + 32)$
+(C) $\frac{3(37\alpha-62\beta)}{5}$
+(D) $5(-21\alpha + 53\beta)$
+(E) $\frac{75(-11\alpha+43\beta)}{16}$
+(N) Ne znam
+
+\subsection*{Solution}
+Let the first term be $a_1$ and the common difference be $d$.
+The formula for the $n$-th term is $a_n = a_1 + (n-1)d$.
+We are given:
+1. $a_{54} = a_1 + 53d = \alpha$
+2. $a_{70} = a_1 + 69d = \beta$
+
+Subtracting equation (1) from (2):
+\[ (a_1 + 69d) - (a_1 + 53d) = \beta - \alpha \]
+\[ 16d = \beta - \alpha \implies d = \frac{\beta - \alpha}{16}. \]
+
+Now express $a_1$ in terms of $\alpha$ and $\beta$:
+\[ a_1 = \alpha - 53d = \alpha - 53\left(\frac{\beta - \alpha}{16}\right) = \frac{16\alpha - 53\beta + 53\alpha}{16} = \frac{69\alpha - 53\beta}{16}. \]
+
+We need the sum of the first 160 members, $S_{160}$. The formula is $S_n = \frac{n}{2}(2a_1 + (n-1)d)$.
+\[ S_{160} = \frac{160}{2}(2a_1 + 159d) = 80(2a_1 + 159d). \]
+Substitute $a_1$ and $d$:
+\[ S_{160} = 80 \left( 2 \cdot \frac{69\alpha - 53\beta}{16} + 159 \cdot \frac{\beta - \alpha}{16} \right) \]
+\[ = 80 \cdot \frac{1}{16} \left( 2(69\alpha - 53\beta) + 159(\beta - \alpha) \right) \]
+\[ = 5 \left( 138\alpha - 106\beta + 159\beta - 159\alpha \right) \]
+\[ = 5 \left( -21\alpha + 53\beta \right). \]
+
+\subsection*{Answer}
+$5(-21\alpha + 53\beta)$ (option \textbf{D}).
+
+\end{document}

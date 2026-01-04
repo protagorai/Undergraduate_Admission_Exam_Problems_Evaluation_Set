@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako su $x_1$ i $x_2$ resenja kvadratne jednacine $x^2+x+1=0$, a
+\[
+y_1=ax_1+x_2,\qquad y_2=x_1+ax_2\qquad (a\in\mathbb R),
+\]
+odrediti kvadratnu jednacinu cija su resenja $y_1,y_2$.
+
+\subsection*{Solution}
+Za korene $x_1,x_2$ vazi
+\[
+x_1+x_2=-1,\qquad x_1x_2=1.
+\]
+Zbir novih korena:
+\[
+y_1+y_2=(ax_1+x_2)+(x_1+ax_2)=(a+1)(x_1+x_2)=-(a+1).
+\]
+Proizvod:
+\begin{align*}
+y_1y_2&=(ax_1+x_2)(x_1+ax_2)\\
+&=a(x_1^2+x_2^2)+(a^2+1)x_1x_2.
+\end{align*}
+Dalje,
+\[
+x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=1-2=-1,
+\]
+pa
+\[
+y_1y_2=a(-1)+(a^2+1)\cdot 1=a^2-a+1.
+\]
+Trazena jednacina je
+\[
+y^2-(y_1+y_2)y+y_1y_2=0
+\quad\Longrightarrow\quad
+y^2+(a+1)y+(a^2-a+1)=0.
+\]
+
+\subsection*{Answer}
+$y^2+(a+1)y+a^2-a+1=0$ (opcija \textbf{C}).
+
+\end{document}
+

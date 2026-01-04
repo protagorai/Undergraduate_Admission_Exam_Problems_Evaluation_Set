@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Skup vrednosti realnog parametra $p$ za koje jednačina $|x - p| + |x - 1| = 1$ ima tačno dva realna i različita rešenja je oblika (za neke $a, b, c, d \in \mathbb{R}$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+Analiziramo jednačinu $|x - p| + |x - 1| = 1$.
+
+Geometrijski, $|x - p| + |x - 1|$ predstavlja zbir rastojanja tačke $x$ od tačaka $p$ i $1$ na brojevnoj pravoj.
+
+\textbf{Slučaj 1:} $p < 1$
+
+Za $x \leq p$: $|x - p| + |x - 1| = (p - x) + (1 - x) = p + 1 - 2x$
+Jednačina: $p + 1 - 2x = 1 \Rightarrow x = \frac{p}{2}$
+Uslov $x \leq p$: $\frac{p}{2} \leq p \Rightarrow p \geq 0$
+
+Za $p \leq x \leq 1$: $|x - p| + |x - 1| = (x - p) + (1 - x) = 1 - p$
+Jednačina: $1 - p = 1 \Rightarrow p = 0$
+Ako $p = 0$, svi $x \in [0, 1]$ su rešenja (beskonačno mnogo).
+
+Za $x \geq 1$: $|x - p| + |x - 1| = (x - p) + (x - 1) = 2x - p - 1$
+Jednačina: $2x - p - 1 = 1 \Rightarrow x = \frac{p + 2}{2} = 1 + \frac{p}{2}$
+Uslov $x \geq 1$: $1 + \frac{p}{2} \geq 1 \Rightarrow p \geq 0$
+
+\textbf{Slučaj 2:} $p > 1$
+
+Za $x \leq 1$: $|x - p| + |x - 1| = (p - x) + (1 - x) = p + 1 - 2x$
+Jednačina: $x = \frac{p}{2}$
+Uslov $x \leq 1$: $\frac{p}{2} \leq 1 \Rightarrow p \leq 2$
+
+Za $1 \leq x \leq p$: $|x - p| + |x - 1| = (p - x) + (x - 1) = p - 1$
+Jednačina: $p - 1 = 1 \Rightarrow p = 2$
+Ako $p = 2$, svi $x \in [1, 2]$ su rešenja.
+
+Za $x \geq p$: $|x - p| + |x - 1| = (x - p) + (x - 1) = 2x - p - 1$
+Jednačina: $x = 1 + \frac{p}{2}$
+Uslov $x \geq p$: $1 + \frac{p}{2} \geq p \Rightarrow 1 \geq \frac{p}{2} \Rightarrow p \leq 2$
+
+\textbf{Slučaj 3:} $p = 1$
+
+$|x - 1| + |x - 1| = 2|x - 1| = 1 \Rightarrow |x - 1| = \frac{1}{2}$
+$x = \frac{1}{2}$ ili $x = \frac{3}{2}$ — dva rešenja.
+
+\textbf{Analiza:}
+
+Za $0 < p < 2$ i $p \neq 1$:
+- Ako $p < 1$: rešenja su $x = \frac{p}{2}$ i $x = 1 + \frac{p}{2}$ — dva različita rešenja.
+- Ako $p > 1$: rešenja su $x = \frac{p}{2}$ i $x = 1 + \frac{p}{2}$ — dva različita rešenja.
+
+Za $p = 0$ ili $p = 2$: beskonačno mnogo rešenja.
+
+Za $p < 0$:
+- $x = \frac{p}{2} < 0$ nije u intervalu $x \leq p$ (jer $\frac{p}{2} > p$ za $p < 0$).
+- Proverimo: za $p < 0$, uslov $\frac{p}{2} \leq p$ daje $p \geq 0$, što nije zadovoljeno.
+- Dakle, nema rešenja iz prvog podslučaja.
+- Za $x \geq 1$: $x = 1 + \frac{p}{2}$. Uslov $x \geq 1$ daje $p \geq 0$, nije zadovoljeno.
+- Za $p \leq x \leq 1$ (pošto je $p < 0 < 1$): $1 - p = 1$ daje $p = 0$, nije zadovoljeno.
+
+Dakle, za $p < 0$, nema rešenja.
+
+Za $p > 2$:
+- $x = \frac{p}{2}$: uslov $x \leq 1$ daje $p \leq 2$, nije zadovoljeno.
+- $x = 1 + \frac{p}{2}$: uslov $x \geq p$ daje $p \leq 2$, nije zadovoljeno.
+- Za $1 \leq x \leq p$: $p - 1 = 1$ daje $p = 2$, nije zadovoljeno.
+
+Dakle, za $p > 2$, nema rešenja.
+
+\textbf{Zaključak:}
+Tačno dva različita rešenja postoje za $p \in (0, 2) \setminus \{1\}$... Ali za $p = 1$ takođe imamo dva rešenja!
+
+Dakle, za $p \in (0, 2)$, imamo tačno dva rešenja (osim za $p = 0$ i $p = 2$ gde imamo beskonačno).
+
+Skup je $(0, 2) = (a, b)$ gde je $a = 0$, $b = 2$.
+
+\subsection*{Answer}
+$(a, b)$ gde je $a = 0$, $b = 2$ (opcija \textbf{B}).
+
+\end{document}

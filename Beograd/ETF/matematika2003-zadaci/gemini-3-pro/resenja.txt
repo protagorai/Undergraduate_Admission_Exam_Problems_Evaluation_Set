@@ -1,0 +1,20 @@
+1. A, \sqrt{5}
+2. B, nema rešenja
+3. C, -3
+4. B, \cos x \cos y
+5. B, 1
+6. A, 2R^2 \sin \alpha \sin \beta \sin \gamma
+7. B, 1
+8. A, Među datim funkcijama nema međusobno jednakih
+9. E, 14
+10. E, 3
+11. B, 2
+12. C, 2
+13. C, \{-1\} \cup [2, +\infty)
+14. D, 4/3
+15. D, 2!3!4!5!
+16. A, 2
+17. B, 2^9(-1+i)
+18. A, \frac{1}{81}(10^{n+1} - 10 - 9n)
+19. D, 5-3\sqrt{3}
+20. C, geometrijske progresije

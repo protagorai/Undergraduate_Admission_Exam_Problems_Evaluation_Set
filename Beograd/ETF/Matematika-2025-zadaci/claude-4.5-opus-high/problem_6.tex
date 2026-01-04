@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je duži krak pravouglog trapeza jednak 10, a poluprečnik kružnice upisane u taj trapez jednak 4, onda je površina tog trapeza jednaka:
+
+\subsection*{Solution}
+Neka je pravougli trapez sa osnovicama $a$ (donja) i $b$ (gornja), visinom $h$, i dužim krakom (kosim) dužine 10.
+
+Za upisanu kružnicu poluprečnika $r = 4$, važi formula:
+\[
+r = \frac{P}{s}
+\]
+gde je $P$ površina trapeza, a $s$ poluobim.
+
+Za pravougli trapez, visina je jednaka kraćem kraku. Pošto je kružnica upisana, poluprečnik je jednak visini podeljeno sa 2? Ne, to nije tačno.
+
+Za trapez sa upisanom kružnicom važi:
+\[
+a + b = c + d
+\]
+gde su $c$ i $d$ kraci trapeza.
+
+Za pravougli trapez, jedan krak je jednak visini $h$, a drugi (kosi) krak je 10.
+
+Dakle: $a + b = h + 10$
+
+Takođe, za upisanu kružnicu u trapez:
+\[
+r = \frac{h}{2} \cdot \frac{2}{1} = h \cdot \frac{a - b}{a + b - c - d}
+\]
+
+Zapravo, za trapez sa upisanom kružnicom, poluprečnik je:
+\[
+r = \frac{h}{2}
+\]
+ako i samo ako je trapez tangencijalni (što jeste, jer ima upisanu kružnicu).
+
+Dakle:
+\[
+4 = \frac{h}{2} \Rightarrow h = 8
+\]
+
+Sada, za pravougli trapez, kosi krak zadovoljava:
+\[
+\text{kosi krak}^2 = h^2 + (a - b)^2
+\]
+\[
+10^2 = 8^2 + (a - b)^2
+\]
+\[
+100 = 64 + (a - b)^2
+\]
+\[
+(a - b)^2 = 36
+\]
+\[
+a - b = 6
+\]
+
+Iz uslova za tangencijalni trapez:
+\[
+a + b = h + 10 = 8 + 10 = 18
+\]
+
+Rešavamo sistem:
+\[
+a + b = 18
+\]
+\[
+a - b = 6
+\]
+
+Sabiranjem: $2a = 24 \Rightarrow a = 12$
+
+Oduzimanjem: $2b = 12 \Rightarrow b = 6$
+
+Površina trapeza:
+\[
+P = \frac{(a + b) \cdot h}{2} = \frac{18 \cdot 8}{2} = \frac{144}{2} = 72
+\]
+
+\subsection*{Answer}
+$72$ (opcija \textbf{E}).
+
+\end{document}

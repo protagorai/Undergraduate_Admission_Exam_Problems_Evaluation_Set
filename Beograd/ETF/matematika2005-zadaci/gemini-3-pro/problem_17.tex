@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 17}
+Ako je rešenje jednačine $4^{x + \sqrt{x^2-2}} - 5 \cdot 2^{x-1+\sqrt{x^2-2}} = 6$ oblika $\frac{p}{q}$, tada je $p+q$ jednako:
+(A) -3 (B) 4 (C) 5 (D) -5 (E) -4 (N) Ne znam
+
+\subsection*{Rešenje}
+Uvedimo smenu $u = x + \sqrt{x^2-2}$.
+Jednačina se može zapisati kao:
+\[
+(2^2)^u - 5 \cdot 2^{u-1} = 6
+\]
+\[
+(2^u)^2 - \frac{5}{2} 2^u - 6 = 0
+\]
+Neka je $t = 2^u > 0$.
+\[
+t^2 - \frac{5}{2}t - 6 = 0 \quad / \cdot 2
+\]
+\[
+2t^2 - 5t - 12 = 0
+\]
+Rešavamo kvadratnu jednačinu po $t$:
+\[
+t_{1,2} = \frac{5 \pm \sqrt{25 - 4(2)(-12)}}{4} = \frac{5 \pm \sqrt{25 + 96}}{4} = \frac{5 \pm 11}{4}
+\]
+$t_1 = 4$, $t_2 = -6/4$ (nemoguće jer $t>0$).
+Dakle $2^u = 4 \implies u = 2$.
+Vraćamo smenu:
+\[
+x + \sqrt{x^2-2} = 2
+\]
+\[
+\sqrt{x^2-2} = 2 - x
+\]
+Kvadriramo (uz uslov $2-x \geq 0 \implies x \leq 2$):
+\[
+x^2 - 2 = (2-x)^2 = 4 - 4x + x^2
+\]
+\[
+-2 = 4 - 4x \implies 4x = 6 \implies x = \frac{6}{4} = \frac{3}{2}
+\]
+Proverimo uslov: $3/2 \leq 2$ (tačno).
+Proverimo potkorenu veličinu: $(3/2)^2 - 2 = 9/4 - 8/4 = 1/4 \geq 0$ (tačno).
+Rešenje je $x = \frac{3}{2}$.
+Ovde je $p=3, q=2$.
+Zbir $p+q = 3+2 = 5$.
+
+\subsection*{Odgovor}
+5 (opcija \textbf{C}).
+
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 12 - Solution}
+
+\textbf{Problem:} If $f(x) - 2f\left(\frac{1}{x}\right) = x^2$, $x \neq 0$, find $f(2)$.
+
+\textbf{Solution:}
+
+We have the functional equation:
+\[
+f(x) - 2f\left(\frac{1}{x}\right) = x^2
+\]
+
+\textbf{Step 1:} Substitute $x = 2$:
+\[
+f(2) - 2f\left(\frac{1}{2}\right) = 4 \quad \text{...(1)}
+\]
+
+\textbf{Step 2:} Substitute $x = \frac{1}{2}$:
+\[
+f\left(\frac{1}{2}\right) - 2f(2) = \frac{1}{4} \quad \text{...(2)}
+\]
+
+\textbf{Step 3:} Solve the system
+
+From equation (2):
+\[
+f\left(\frac{1}{2}\right) = \frac{1}{4} + 2f(2)
+\]
+
+Substitute into equation (1):
+\[
+f(2) - 2\left(\frac{1}{4} + 2f(2)\right) = 4
+\]
+\[
+f(2) - \frac{1}{2} - 4f(2) = 4
+\]
+\[
+-3f(2) = 4 + \frac{1}{2} = \frac{9}{2}
+\]
+\[
+f(2) = -\frac{3}{2}
+\]
+
+\textbf{Answer: Д) $-\frac{3}{2}$}
+
+\end{document}
+

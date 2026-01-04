@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Ako su tačke $M, N, P$ i $Q$ središta ivica $DA, AB, BC$ i $CD$ pravilnog tetraedra $ABCD$ ivice dužine $a$, onda je površina četvorougla $MNPQ$ jednaka:
+\[
+(A)\ \frac{a^2}{4}\quad (B)\ \frac{a^2\sqrt{3}}{4}\quad (C)\ \frac{a^2\sqrt{2}}{2}\quad (D)\ \frac{a^2}{2}\quad (E)\ \frac{a^2\sqrt{3}}{3}\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Posmatrajmo trougao $ABD$. Tačke $M$ i $N$ su središta stranica $DA$ i $AB$. Duž $MN$ je srednja linija trougla $ABD$, pa je $MN = \frac{1}{2}BD = \frac{a}{2}$ i $MN \parallel BD$.
+Slično, u trouglu $CBD$, tačke $P$ i $Q$ su središta stranica $BC$ i $CD$. Duž $PQ$ je srednja linija trougla $CBD$, pa je $PQ = \frac{1}{2}BD = \frac{a}{2}$ i $PQ \parallel BD$.
+Dakle, $MN \parallel PQ$ i $MN = PQ$.
+Takođe, u trouglu $ABC$, $N$ i $P$ su središta stranica $AB$ i $BC$. Duž $NP$ je srednja linija trougla $ABC$, pa je $NP = \frac{1}{2}AC = \frac{a}{2}$ i $NP \parallel AC$.
+U trouglu $ADC$, $M$ i $Q$ su središta stranica $DA$ i $CD$. Duž $MQ$ je srednja linija, $MQ = \frac{1}{2}AC = \frac{a}{2}$ i $MQ \parallel AC$.
+Četvorougao $MNPQ$ je romb sa stranicom $\frac{a}{2}$.
+Da bismo našli površinu, treba nam ugao između stranica ili dijagonale.
+Stranice romba su paralelne sa ivicama $BD$ i $AC$ tetraedra.
+Kod pravilnog tetraedra, naspramne ivice su međusobno normalne ($AC \perp BD$).
+To znači da su i stranice romba međusobno normalne ($MN \perp NP$).
+Dakle, $MNPQ$ je kvadrat stranice $\frac{a}{2}$.
+Površina kvadrata je:
+\[
+P_{MNPQ} = \left(\frac{a}{2}\right)^2 = \frac{a^2}{4}
+\]
+
+\subsection*{Answer}
+$\frac{a^2}{4}$ (option \textbf{A}).
+
+\end{document}

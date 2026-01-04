@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako je uređen par $(x, y)$ $(x, y \in \mathbf{R}, x, y > 0, x \neq 1)$, rešenje sistema jednačina $x^y = y^x$, $x^p = y^q$ $(p, q \in \mathbf{R} \setminus \{0\}, p \neq q)$, tada je proizvod $x \cdot y$ jednak:
+
+(A) $\displaystyle\frac{p-q}{2}$ \quad (B) $\displaystyle\frac{2}{p-q}$ \quad (C) $1$ \quad (D) $\displaystyle\left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}$ \quad (E) $\displaystyle\left(\frac{q}{p}\right)^{\frac{p+q}{p-q}}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+From $x^y = y^x$, taking logarithm:
+\[
+y \ln x = x \ln y \implies \frac{\ln x}{x} = \frac{\ln y}{y}
+\]
+
+From $x^p = y^q$, taking logarithm:
+\[
+p \ln x = q \ln y \implies \frac{\ln x}{\ln y} = \frac{q}{p}
+\]
+
+Let $\ln x = u$ and $\ln y = v$. Then:
+\[
+\frac{u}{e^u} = \frac{v}{e^v} \quad \text{and} \quad \frac{u}{v} = \frac{q}{p}
+\]
+
+From the second equation: $u = \frac{qv}{p}$.
+
+Substituting into the first:
+\[
+\frac{qv/p}{e^{qv/p}} = \frac{v}{e^v}
+\]
+\[
+\frac{q}{p} \cdot e^{-qv/p} = e^{-v}
+\]
+\[
+\frac{q}{p} = e^{-v + qv/p} = e^{v(q/p - 1)} = e^{v(q-p)/p}
+\]
+
+Taking logarithm:
+\[
+\ln\frac{q}{p} = \frac{v(q-p)}{p}
+\]
+\[
+v = \frac{p \ln(q/p)}{q-p} = \frac{p(\ln q - \ln p)}{q-p}
+\]
+
+And $u = \frac{qv}{p} = \frac{q(\ln q - \ln p)}{q-p}$.
+
+Now $x \cdot y = e^{u+v} = e^{u+v}$.
+
+\[
+u + v = \frac{q(\ln q - \ln p)}{q-p} + \frac{p(\ln q - \ln p)}{q-p} = \frac{(p+q)(\ln q - \ln p)}{q-p}
+\]
+
+\[
+= \frac{(p+q)\ln(q/p)}{q-p} = -\frac{(p+q)\ln(q/p)}{p-q} = \frac{(p+q)\ln(p/q)}{p-q}
+\]
+
+Wait, let me recalculate:
+\[
+u + v = \frac{(p+q)(\ln q - \ln p)}{q-p} = \frac{(p+q)\ln(q/p)}{q-p}
+\]
+
+Therefore:
+\[
+xy = e^{u+v} = e^{\frac{(p+q)\ln(q/p)}{q-p}} = \left(\frac{q}{p}\right)^{\frac{p+q}{q-p}} = \left(\frac{q}{p}\right)^{-\frac{p+q}{p-q}} = \left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}
+\]
+
+\subsection*{Answer}
+$\displaystyle\left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}$ (option \textbf{D}).
+
+\end{document}

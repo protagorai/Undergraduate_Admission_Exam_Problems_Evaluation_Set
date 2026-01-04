@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 6}
+Broj različitih polinoma oblika $x^2 + px + q$, za $p, q \in \mathbb{R}$, koji dele polinom $x^4 - 3x^2 + 2$ iznosi:
+
+\subsection*{Solution}
+Polinom $P(x) = x^4 - 3x^2 + 2$ je bikvadratni. Uvedimo smenu $t = x^2$.
+$t^2 - 3t + 2 = 0$.
+Rešenja su $t_1 = 1, t_2 = 2$.
+Dakle, $x^4 - 3x^2 + 2 = (x^2 - 1)(x^2 - 2)$.
+Dalje rastavljanje na linearne faktore:
+$(x-1)(x+1)(x-\sqrt{2})(x+\sqrt{2})$.
+
+Polinom drugog stepena $Q(x) = x^2 + px + q$ deli $P(x)$ ako su njegove nule takođe nule polinoma $P(x)$.
+Polinom $Q(x)$ ima dve nule (računajući višestrukost), recimo $x_1, x_2$.
+Pošto je koeficijent uz $x^2$ jednak 1, $Q(x) = (x-x_1)(x-x_2)$.
+Moguće nule su iz skupa $S = \{1, -1, \sqrt{2}, -\sqrt{2}\}$.
+Treba izabrati 2 nule iz ovog skupa od 4 elementa.
+Broj kombinacija bez ponavljanja (jer su nule polinoma $P(x)$ sve različite) je $\binom{4}{2} = \frac{4 \cdot 3}{2} = 6$.
+
+Mogući polinomi su:
+1. $(x-1)(x+1) = x^2 - 1$
+2. $(x-\sqrt{2})(x+\sqrt{2}) = x^2 - 2$
+3. $(x-1)(x-\sqrt{2}) = x^2 - (1+\sqrt{2})x + \sqrt{2}$
+4. $(x-1)(x+\sqrt{2}) = x^2 - (1-\sqrt{2})x - \sqrt{2}$
+5. $(x+1)(x-\sqrt{2}) = x^2 + (1-\sqrt{2})x - \sqrt{2}$
+6. $(x+1)(x+\sqrt{2}) = x^2 + (1+\sqrt{2})x + \sqrt{2}$
+
+Svi koeficijenti $p, q$ su realni brojevi.
+
+\subsection*{Answer}
+$6$ (option \textbf{B}).
+
+\end{document}
+

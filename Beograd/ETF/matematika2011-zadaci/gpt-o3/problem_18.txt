@@ -1,0 +1,5 @@
+Problem 18
+
+Osnova prave četvorostrane piramide je pravougaonik dijagonale d i ugla \alpha među dijagonalama. Ako bočne ivice obrazuju sa osnovom piramide ugao \beta, tada je zapremina ove piramide jednaka:
+
+(A) \frac{d^{3}}{12} \sin \alpha \cot \beta    (B) \frac{d^{3}}{12} \sin \alpha \tan \beta    (C) \frac{d^{3}}{4} \sin \alpha \tan \beta    (D) \frac{d^{3}}{12} \sin \frac{\alpha}{2} \tan \beta    (E) \frac{d^{3}}{12} \cos \alpha \tan \beta    (N) Ne znam

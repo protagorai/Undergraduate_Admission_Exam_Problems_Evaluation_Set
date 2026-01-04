@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Za koje realne $a$ sistem
+\[
+\begin{cases}
+ x^{2}+y^{2}+2x\le1,\\
+ x-y+a=0
+\end{cases}
+\]
+ima tačno jedno rešenje?  Izračunati proizvod svih takvih parametara $a$.
+
+\subsection*{Rešenje}
+Prva nejednačina opisuje disk centriran u $(-1,0)$ poluprečnika 1.
+Druga je prava $x-y=-a$ nagiba 1.
+Sistem ima jedinstveno rešenje kad prava tangira kružnicu.
+
+\textbf{1.}  Rastojanje od centra $C(-1,0)$ do prave $x-y=-a$ treba da bude jednako poluprečniku.
+Opšta formula: za pravu $Ax+By+C=0$ rastojanje $d=\dfrac{|Ax_0+By_0+C|}{\sqrt{A^{2}+B^{2}}}$.
+Prebacimo u taj oblik:
+\[
+ x-y+a=0\;\Longrightarrow\;A=1,\,B=-1,\,C=a.
+\]
+Dakle
+\[
+d=\frac{|(-1)-0+a|}{\sqrt2}=\frac{|a-1|}{\sqrt2}=1\quad\Longrightarrow\quad|a-1|=\sqrt2.
+\]
+Rešenja:
+\[
+a=1\pm\sqrt2.
+\]
+
+\textbf{2.}  Traženi proizvod:
+\[
+(1+\sqrt2)(1-\sqrt2)=1-2=-1.
+\]
+
+\subsection*{Odgovor}
+\[-1\qquad(\text{opcija A})\]
+
+\end{document}

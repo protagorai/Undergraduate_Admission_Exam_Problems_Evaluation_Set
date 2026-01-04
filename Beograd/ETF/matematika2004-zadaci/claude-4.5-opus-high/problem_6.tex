@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Neka su $\alpha$, $\beta$ i $\gamma$ uglovi a $a$, $b$, $c$ stranice trougla. Tada je $a\sin(\beta-\gamma) + b\sin(\gamma-\alpha) + c\sin(\alpha-\beta)$ jednako:
+
+A) $2\cos(\alpha+\beta-\gamma)$; \quad B) $\cos(\alpha-\beta-\gamma)$; \quad C) $1$; \quad D) $0$; \quad E) $-1$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Koristimo sinusnu teoremu: $\frac{a}{\sin\alpha} = \frac{b}{\sin\beta} = \frac{c}{\sin\gamma} = 2R$, gde je $R$ poluprečnik opisanog kruga.
+
+Dakle: $a = 2R\sin\alpha$, $b = 2R\sin\beta$, $c = 2R\sin\gamma$.
+
+Zamenom:
+\begin{align*}
+&a\sin(\beta-\gamma) + b\sin(\gamma-\alpha) + c\sin(\alpha-\beta)\\
+&= 2R[\sin\alpha\sin(\beta-\gamma) + \sin\beta\sin(\gamma-\alpha) + \sin\gamma\sin(\alpha-\beta)]
+\end{align*}
+
+Koristimo formulu: $\sin A \sin B = \frac{1}{2}[\cos(A-B) - \cos(A+B)]$
+
+\begin{align*}
+\sin\alpha\sin(\beta-\gamma) &= \frac{1}{2}[\cos(\alpha-\beta+\gamma) - \cos(\alpha+\beta-\gamma)]\\
+\sin\beta\sin(\gamma-\alpha) &= \frac{1}{2}[\cos(\beta-\gamma+\alpha) - \cos(\beta+\gamma-\alpha)]\\
+\sin\gamma\sin(\alpha-\beta) &= \frac{1}{2}[\cos(\gamma-\alpha+\beta) - \cos(\gamma+\alpha-\beta)]
+\end{align*}
+
+Pošto je $\alpha + \beta + \gamma = \pi$:
+\begin{align*}
+\alpha+\beta-\gamma &= \pi - 2\gamma\\
+\beta+\gamma-\alpha &= \pi - 2\alpha\\
+\gamma+\alpha-\beta &= \pi - 2\beta
+\end{align*}
+
+Zbir postaje:
+\begin{align*}
+&\frac{1}{2}[\cos(\alpha-\beta+\gamma) + \cos(\beta-\gamma+\alpha) + \cos(\gamma-\alpha+\beta)]\\
+&- \frac{1}{2}[\cos(\pi-2\gamma) + \cos(\pi-2\alpha) + \cos(\pi-2\beta)]
+\end{align*}
+
+Primetimo da su $\alpha-\beta+\gamma = \pi - 2\beta$, $\beta-\gamma+\alpha = \pi - 2\gamma$, $\gamma-\alpha+\beta = \pi - 2\alpha$.
+
+Tako da se oba dela poništavaju, i dobijamo:
+\[
+2R \cdot 0 = 0
+\]
+
+\subsection*{Odgovor}
+$0$ (opcija \textbf{D}).
+
+\end{document}

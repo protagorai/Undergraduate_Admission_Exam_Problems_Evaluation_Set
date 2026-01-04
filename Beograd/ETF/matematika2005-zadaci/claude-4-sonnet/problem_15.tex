@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Skup rešenja sistema nejednačina $x^2 - 4 \leq 0$, $1 - 2x + x^2 > 0$, $x^2 - (3 + \sqrt{3})x + 2 + \sqrt{3} > 0$ je oblika:
+
+\subsection*{Solution}
+Rešavamo svaku nejednačinu:
+
+1) $x^2 - 4 \leq 0$
+   $(x - 2)(x + 2) \leq 0$
+   Rešenje: $x \in [-2, 2]$
+
+2) $1 - 2x + x^2 > 0$
+   $(x - 1)^2 > 0$
+   Ovo je tačno za sve $x \neq 1$
+   Rešenje: $x \in (-\infty, 1) \cup (1, +\infty)$
+
+3) $x^2 - (3 + \sqrt{3})x + 2 + \sqrt{3} > 0$
+   Tražimo korene: $x = \frac{(3 + \sqrt{3}) \pm \sqrt{(3 + \sqrt{3})^2 - 4(2 + \sqrt{3})}}{2}$
+   
+   $(3 + \sqrt{3})^2 = 9 + 6\sqrt{3} + 3 = 12 + 6\sqrt{3}$
+   $4(2 + \sqrt{3}) = 8 + 4\sqrt{3}$
+   
+   Diskriminanta: $12 + 6\sqrt{3} - 8 - 4\sqrt{3} = 4 + 2\sqrt{3} = 2(2 + \sqrt{3})$
+   
+   $\sqrt{4 + 2\sqrt{3}} = \sqrt{2}\sqrt{2 + \sqrt{3}}$
+   
+   Možemo proveriti da je $2 + \sqrt{3} = (\frac{\sqrt{6} + \sqrt{2}}{2})^2$
+   
+   Dakle $\sqrt{2 + \sqrt{3}} = \frac{\sqrt{6} + \sqrt{2}}{2}$
+   
+   Koreni su:
+   $x_1 = \frac{3 + \sqrt{3} - \sqrt{2}(\sqrt{6} + \sqrt{2})}{2} = \frac{3 + \sqrt{3} - \sqrt{12} - 2}{2} = \frac{1 + \sqrt{3} - 2\sqrt{3}}{2} = \frac{1 - \sqrt{3}}{2}$
+   
+   $x_2 = \frac{3 + \sqrt{3} + \sqrt{12} + 2}{2} = \frac{5 + \sqrt{3} + 2\sqrt{3}}{2} = \frac{5 + 3\sqrt{3}}{2}$
+   
+   Međutim, lakše je primetiti da je $x^2 - (3 + \sqrt{3})x + 2 + \sqrt{3} = (x - 1)(x - 2 - \sqrt{3})$
+   
+   Dakle rešenje je $x \in (-\infty, 1) \cup (2 + \sqrt{3}, +\infty)$
+
+Presek svih rešenja:
+$[-2, 2] \cap ((-\infty, 1) \cup (1, +\infty)) \cap ((-\infty, 1) \cup (2 + \sqrt{3}, +\infty))$
+$= [-2, 2] \cap ((-\infty, 1) \cup (1, +\infty)) \cap ((-\infty, 1) \cup (2 + \sqrt{3}, +\infty))$
+
+Pošto je $2 + \sqrt{3} > 2$, imamo:
+$= [-2, 1) \cup (1, 2]$
+
+\subsection*{Answer}
+$[a, b) \cup (b, c]$ (opcija \textbf{C}).
+
+\end{document}

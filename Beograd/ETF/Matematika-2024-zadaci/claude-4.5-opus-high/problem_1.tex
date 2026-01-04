@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+For $a \in \mathbb{R}$, $a \neq 3$, simplify the expression:
+\[
+\frac{a^3 - 27}{(a-3)^2} \cdot \frac{a^2 - 2a - 3}{(a+3)^2 - 3a}
+\]
+
+\subsection*{Solution}
+First, let's factor each part:
+
+\textbf{Numerator of first fraction:}
+\[
+a^3 - 27 = (a-3)(a^2 + 3a + 9)
+\]
+
+\textbf{Denominator of second fraction:}
+\[
+(a+3)^2 - 3a = a^2 + 6a + 9 - 3a = a^2 + 3a + 9
+\]
+
+\textbf{Numerator of second fraction:}
+\[
+a^2 - 2a - 3 = (a-3)(a+1)
+\]
+
+Substituting these factorizations:
+\[
+\frac{(a-3)(a^2 + 3a + 9)}{(a-3)^2} \cdot \frac{(a-3)(a+1)}{a^2 + 3a + 9}
+\]
+
+Simplifying:
+\[
+= \frac{a^2 + 3a + 9}{a-3} \cdot \frac{(a-3)(a+1)}{a^2 + 3a + 9} = a + 1
+\]
+
+\subsection*{Answer}
+$a + 1$ (option \textbf{C}).
+
+\end{document}
+

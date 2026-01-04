@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+If the polynomial $x^{2016} + x^{2015} - x^{2014} + ax^{2013} - bx^2 + c$ (where $a,b,c \in \mathbb{R}$) is divisible by polynomial $x^3 - x$, find $4a^2 + 3b^2 + 8c^2$.
+
+\subsection*{Solution}
+Since the polynomial is divisible by $x^3 - x = x(x^2 - 1) = x(x-1)(x+1)$, it must have roots at $x = 0, 1, -1$.
+
+Let $P(x) = x^{2016} + x^{2015} - x^{2014} + ax^{2013} - bx^2 + c$.
+
+From $P(0) = 0$:
+\[
+0^{2016} + 0^{2015} - 0^{2014} + a \cdot 0^{2013} - b \cdot 0^2 + c = 0
+\]
+\[
+c = 0
+\]
+
+From $P(1) = 0$:
+\[
+1^{2016} + 1^{2015} - 1^{2014} + a \cdot 1^{2013} - b \cdot 1^2 + c = 0
+\]
+\[
+1 + 1 - 1 + a - b + 0 = 0
+\]
+\[
+1 + a - b = 0 \Rightarrow a - b = -1
+\]
+
+From $P(-1) = 0$:
+\[
+(-1)^{2016} + (-1)^{2015} - (-1)^{2014} + a(-1)^{2013} - b(-1)^2 + c = 0
+\]
+
+Since 2016, 2014 are even and 2015, 2013 are odd:
+\[
+1 + (-1) - 1 + a(-1) - b \cdot 1 + 0 = 0
+\]
+\[
+1 - 1 - 1 - a - b = 0
+\]
+\[
+-1 - a - b = 0 \Rightarrow a + b = -1
+\]
+
+Now we have the system:
+\begin{align}
+a - b &= -1\\
+a + b &= -1
+\end{align}
+
+Adding the equations: $2a = -2 \Rightarrow a = -1$
+
+Subtracting the first from the second: $2b = 0 \Rightarrow b = 0$
+
+Therefore: $a = -1$, $b = 0$, $c = 0$.
+
+Finally:
+\[
+4a^2 + 3b^2 + 8c^2 = 4(-1)^2 + 3(0)^2 + 8(0)^2 = 4 + 0 + 0 = 4
+\]
+
+\subsection*{Answer}
+4 (option \textbf{A}).
+
+\end{document}

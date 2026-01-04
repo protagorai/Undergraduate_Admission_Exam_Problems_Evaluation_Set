@@ -1,0 +1,5 @@
+Problem 9
+
+Ako je f(x) = \left( \frac{x - 1}{x + 1} \right)^2 (x \neq \pm 1) tada je f\left( \frac{x + 1}{x - 1} \right) - f\left( \frac{x - 1}{x + 1} \right) jednako:
+
+(A) \left( \frac{x - 1}{x + 1} \right)^2    (B) \left( \frac{x - 1}{x + 1} \right)^2    (C) 0    (D) \frac{x^2 - 1}{x^2 + 1}    (E) -\left( \frac{x - 1}{x + 1} \right)^2    (N) Ne znam

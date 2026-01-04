@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 16}
+If the sum of all binomial coefficients in the expansion of $(\sqrt[5]{3} + \sqrt[3]{5})^n$ for some $n \in \mathbb{N}$ is $4^{52}$, then the number of rational terms in the expansion is equal to:
+
+\subsection*{Solution}
+The sum of all binomial coefficients in the expansion of $(a+b)^n$ is $2^n$.
+Given sum is $4^{52} = (2^2)^{52} = 2^{104}$.
+Thus $n=104$.
+The general term in the expansion is:
+\[ T_{k+1} = \binom{n}{k} (\sqrt[5]{3})^{n-k} (\sqrt[3]{5})^k = \binom{104}{k} 3^{\frac{104-k}{5}} 5^{\frac{k}{3}} \]
+For the term to be rational, the exponents must be integers:
+1. $\frac{k}{3}$ is an integer $\implies k \in \{0, 3, 6, ..., 102\}$.
+2. $\frac{104-k}{5}$ is an integer $\implies 104-k$ is divisible by 5.
+   $104 \equiv 4 \pmod 5$, so $k \equiv 4 \pmod 5$.
+
+We look for $k$ such that $0 \le k \le 104$, $k$ is a multiple of 3, and $k \equiv 4 \pmod 5$.
+Multiples of 3: $0, 3, 6, 9, 12, 15, 18, 21, 24, \dots$
+Check modulo 5:
+0 (0), 3 (3), 6 (1), 9 (4) - Match!
+12 (2), 15 (0), 18 (3), 21 (1), 24 (4) - Match!
+The pattern repeats every $\text{LCM}(3,5)=15$.
+Solutions are of the form $9 + 15m$.
+Find range for $m$:
+$0 \le 9 + 15m \le 104$
+$-9 \le 15m \le 95$
+$0 \le m \le \frac{95}{15} = 6.33$.
+So $m \in \{0, 1, 2, 3, 4, 5, 6\}$.
+There are $6 - 0 + 1 = 7$ values.
+
+\subsection*{Answer}
+7 (option \textbf{A}).
+
+\end{document}

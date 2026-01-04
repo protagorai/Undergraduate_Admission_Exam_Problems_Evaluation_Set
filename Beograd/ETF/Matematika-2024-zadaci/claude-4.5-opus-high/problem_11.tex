@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Given the functions:
+\[
+f_1(x) = \sqrt{(x-1)^2}, \quad f_2(x) = \frac{x^2-1}{x+1}, \quad f_3(x) = x^2 - \frac{x^3+1}{x+1}, \quad f_4(x) = 2^{\log_2(x-1)}
+\]
+Determine which statement is true.
+
+\subsection*{Solution}
+Let's simplify each function:
+
+\textbf{$f_1(x)$:}
+\[
+f_1(x) = \sqrt{(x-1)^2} = |x-1|
+\]
+Domain: all real numbers.
+
+\textbf{$f_2(x)$:}
+\[
+f_2(x) = \frac{x^2-1}{x+1} = \frac{(x-1)(x+1)}{x+1} = x - 1 \quad (x \neq -1)
+\]
+Domain: $x \neq -1$.
+
+\textbf{$f_3(x)$:}
+\[
+f_3(x) = x^2 - \frac{x^3+1}{x+1} = x^2 - \frac{(x+1)(x^2-x+1)}{x+1} = x^2 - (x^2 - x + 1) = x - 1 \quad (x \neq -1)
+\]
+Domain: $x \neq -1$.
+
+\textbf{$f_4(x)$:}
+\[
+f_4(x) = 2^{\log_2(x-1)} = x - 1 \quad (x > 1)
+\]
+Domain: $x > 1$.
+
+\textbf{Comparison:}
+\begin{itemize}
+\item $f_2$ and $f_3$ have the same formula ($x-1$) and same domain ($x \neq -1$), so $f_2 = f_3$.
+\item $f_1 \neq f_2$ because $f_1(0) = |0-1| = 1$ but $f_2(0) = 0 - 1 = -1$.
+\item $f_4 \neq f_2$ because they have different domains.
+\item $f_4 \neq f_1$ because they have different domains.
+\end{itemize}
+
+The correct statement is: $f_1 \neq f_2 = f_3 \neq f_4 \neq f_1$
+
+\subsection*{Answer}
+$f_1 \neq f_2 = f_3 \neq f_4 \neq f_1$ (option \textbf{C}).
+
+\end{document}
+

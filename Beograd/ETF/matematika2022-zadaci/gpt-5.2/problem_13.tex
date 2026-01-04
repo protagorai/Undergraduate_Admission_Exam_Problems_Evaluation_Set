@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+An infinite decreasing geometric series with positive terms has sum $\dfrac{9}{2}$. If the sum of square roots of its terms equals $3$, find the common ratio.
+
+\subsection*{Solution}
+Let the first term be $a>0$ and common ratio $q$ with $0<q<1$.
+Then
+\[
+\frac{a}{1-q}=\frac{9}{2}.
+\]
+The square roots form a geometric series with first term $\sqrt{a}$ and ratio $\sqrt{q}$:
+\[
+\sqrt{a}+\sqrt{aq}+\sqrt{aq^2}+\cdots=\frac{\sqrt{a}}{1-\sqrt{q}}=3.
+\]
+Let $r=\sqrt{q}\in(0,1)$. Then $\sqrt{a}=3(1-r)$, so
+\[
+a=9(1-r)^2.
+\]
+Substitute into the first sum, using $q=r^2$:
+\[
+\frac{9(1-r)^2}{1-r^2}
+=\frac{9(1-r)^2}{(1-r)(1+r)}
+=\frac{9(1-r)}{1+r}
+=\frac{9}{2}.
+\]
+Cancel $9$:
+\[
+\frac{1-r}{1+r}=\frac{1}{2}
+\quad\Longrightarrow\quad
+2(1-r)=1+r
+\quad\Longrightarrow\quad
+r=\frac{1}{3}.
+\]
+Therefore
+\[
+q=r^2=\left(\frac{1}{3}\right)^2=\frac{1}{9}.
+\]
+
+\subsection*{Answer}
+$\dfrac{1}{9}$ (option \textbf{A}).
+
+\end{document}
+

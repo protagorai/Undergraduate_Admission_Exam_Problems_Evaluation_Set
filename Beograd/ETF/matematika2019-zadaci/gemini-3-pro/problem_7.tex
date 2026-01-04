@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 7}
+Neka su $x$ i $y$, $x\neq 0, y\neq 0$, realni brojevi koji zadovoljavaju nejednakost $|x|<|y|$.
+Koja od sledećih tvrđenja su uvek tačna?
+(i) $\frac{x}{y} < 1$ \quad (ii) $x^2 < y^2$ \quad (iii) $\frac{1}{x} > \frac{1}{y}$ \quad (iv) $\frac{1}{x^2} < \frac{1}{y^2}$ \quad (v) $x < y$
+
+\subsection*{Solution}
+Analizirajmo svako tvrđenje:
+(i) Iz $|x|<|y|$ sledi $|\frac{x}{y}| < 1$, što znači $-1 < \frac{x}{y} < 1$. Dakle, $\frac{x}{y} < 1$ je uvek tačno.
+(ii) Kvadriranjem $|x|<|y|$ (obe strane pozitivne) dobijamo $x^2 < y^2$. Uvek tačno.
+(iii) Kontraprimer: $x=-2, y=3$. $|-2|<3$ važi. $\frac{1}{-2} = -0.5$, $\frac{1}{3} \approx 0.33$. $-0.5 > 0.33$ je netačno.
+(iv) Iz $x^2 < y^2$ sledi $\frac{1}{x^2} > \frac{1}{y^2}$ (jer su $x^2, y^2 > 0$). Dakle, tvrđenje je netačno.
+(v) Kontraprimer: $x=2, y=-3$. $2 < 3$ (apsolutne vrednosti), ali $2 < -3$ nije tačno.
+
+Tačna su tvrđenja (i) i (ii).
+
+\subsection*{Answer}
+(i) i (ii) (Opcija \textbf{B})
+
+\end{document}

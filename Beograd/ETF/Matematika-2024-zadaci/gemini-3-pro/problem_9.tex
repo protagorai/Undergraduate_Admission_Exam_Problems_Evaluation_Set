@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 9}
+Skup rešenja nejednačine $-\frac{3}{5} \le x + x^2 + x^3 + \dots + x^n + \dots < 1$, $x \in \mathbb{R}$, je oblika (za neke realne brojeve $a, b$ takve da je $-\infty < a < b < +\infty$):
+
+\subsection*{Solution}
+Izraz $x + x^2 + x^3 + \dots$ predstavlja zbir geometrijskog reda sa prvim članom $x$ i količnikom $q=x$.
+Da bi red konvergirao (i imao konačnu sumu o kojoj možemo da govorimo u kontekstu nejednačine), mora važiti $|x| < 1$, tj. $-1 < x < 1$.
+Suma reda je $S = \frac{x}{1-x}$.
+
+Nejednačina postaje:
+$-\frac{3}{5} \le \frac{x}{1-x} < 1$.
+
+Rešavamo levi deo:
+$\frac{x}{1-x} \ge -\frac{3}{5}$
+$\frac{x}{1-x} + \frac{3}{5} \ge 0$
+$\frac{5x + 3(1-x)}{5(1-x)} \ge 0$
+$\frac{2x+3}{5(1-x)} \ge 0$.
+Kako je $|x| < 1$, imamo $1-x > 0$, pa imenilac je pozitivan.
+Dakle, brojilac mora biti nenegativan:
+$2x + 3 \ge 0 \implies x \ge -1.5$.
+Uz uslov $-1 < x < 1$, ovaj uslov ($x \ge -1.5$) je uvek zadovoljen za sve $x$ iz domena konvergencije.
+
+Rešavamo desni deo:
+$\frac{x}{1-x} < 1$
+$\frac{x}{1-x} - 1 < 0$
+$\frac{x - (1-x)}{1-x} < 0$
+$\frac{2x - 1}{1-x} < 0$.
+Opet, $1-x > 0$, pa mora biti $2x - 1 < 0$.
+$2x < 1 \implies x < 1/2$.
+
+Kombinujemo sa uslovom konvergencije $|x| < 1$:
+$x \in (-1, 1/2)$.
+
+Ovaj skup je oblika $(a, b)$ gde je $a=-1, b=1/2$.
+
+\subsection*{Answer}
+$(a, b)$ (option \textbf{E}).
+
+\end{document}
+

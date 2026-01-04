@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+The base of a right square pyramid is a rectangle with diagonal $d$, and the angle $\alpha$ is between the diagonals. The lateral edges form angle $\beta$ with the base. Find the volume of the pyramid.
+
+\subsection*{Solution}
+Let the rectangular base have sides $a$ and $b$. The diagonal is $d$, so:
+\[
+a^2 + b^2 = d^2
+\]
+
+The angle between the diagonals is $\alpha$. In a rectangle, the diagonals bisect each other. If we place the center at the origin, the diagonals make angles with each other. The angle $\alpha$ between diagonals satisfies:
+\[
+\cos\alpha = \frac{a^2 - b^2}{d^2} \quad \text{or} \quad \sin\alpha = \frac{2ab}{d^2}
+\]
+
+Actually, using the formula for the angle between diagonals in a rectangle:
+The diagonals have length $d$ and bisect each other. The angle between them satisfies:
+\[
+\sin\alpha = \frac{2ab}{d^2}
+\]
+
+The area of the base is:
+\[
+S = ab = \frac{d^2 \sin\alpha}{2}
+\]
+
+The apex of the pyramid is directly above the center of the rectangle. The distance from the center to a vertex (where the lateral edge meets the base) is $\frac{d}{2}$.
+
+If $h$ is the height of the pyramid and the lateral edge makes angle $\beta$ with the base:
+\[
+\tan\beta = \frac{h}{d/2} = \frac{2h}{d}
+\]
+
+So $h = \frac{d\tan\beta}{2}$.
+
+The volume is:
+\[
+V = \frac{1}{3} \cdot S \cdot h = \frac{1}{3} \cdot \frac{d^2\sin\alpha}{2} \cdot \frac{d\tan\beta}{2} = \frac{d^3 \sin\alpha \tan\beta}{12}
+\]
+
+Since $\tan\beta = \frac{\sin\beta}{\cos\beta}$:
+\[
+V = \frac{d^3}{12} \sin\alpha \cdot \frac{\sin\beta}{\cos\beta} = \frac{d^3}{12} \sin\alpha \tan\beta
+\]
+
+Looking at the options, they use $\text{ctg}\beta = \cot\beta$ and $\text{tg}\beta = \tan\beta$. Option (B) is $\frac{d^3}{12}\sin\alpha\tan\beta$.
+
+\subsection*{Answer}
+\textbf{(B)} $\displaystyle\frac{d^3}{12}\sin\alpha\,\text{tg}\,\beta$
+
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Broj svih realnih resenja jednacine
+\[
+x=\sqrt{x-\frac1x}+\sqrt{1-\frac1x}
+\]
+jeste: (A) 0 \ (B) 1 \ (C) 2 \ (D) 3 \ (E) 4.
+
+\subsection*{Solution}
+Da bi izrazi pod korenom bili definisani, mora biti
+\[
+1-\frac1x\ge 0,\qquad x-\frac1x\ge 0,
+\]
+sto za realno $x$ daje $x\ge 1$.
+
+Uvedimo oznaku
+\[
+u=\sqrt{1-\frac1x}\quad (u\ge 0).
+\]
+Tada je $1-\frac1x=u^2$, pa je
+\[
+\frac1x=1-u^2,\qquad x=\frac{1}{1-u^2},
+\]
+gde je $0\le u<1$.
+Dalje,
+\[
+x-\frac1x=x-(1-u^2)=x-1+u^2
+ =\frac{1}{1-u^2}-1+u^2=\frac{u^2(2-u^2)}{1-u^2},
+\]
+pa je
+\[
+\sqrt{x-\frac1x}=u\sqrt{\frac{2-u^2}{1-u^2}}.
+\]
+Jednacina postaje
+\[
+\frac{1}{1-u^2}=u\sqrt{\frac{2-u^2}{1-u^2}}+u.
+\]
+Prebacimo $u$ ulevo i kvadrirajmo (dozvoljeno jer su obe strane nenegativne):
+\[
+\frac{1-u+u^3}{1-u^2}=u\sqrt{\frac{2-u^2}{1-u^2}}
+\quad\Longrightarrow\quad
+u^2(2-u^2)(1-u^2)=(1-u+u^3)^2.
+\]
+Sredjivanjem se dobija
+\[
+u^4+2u^3-u^2-2u+1=0\quad\Longrightarrow\quad (u^2+u-1)^2=0,
+\]
+pa je
+\[
+u^2+u-1=0\ \Longrightarrow\ u=\frac{\sqrt5-1}{2}.
+\]
+Tada je
+\[
+1-u^2=\frac{\sqrt5-1}{2}=u,\qquad x=\frac1u=\frac{\sqrt5+1}{2}.
+\]
+Dakle postoji tacno jedno realno resenje.
+
+\subsection*{Answer}
+$1$ resenje, $x=\dfrac{1+\sqrt5}{2}$ (option \textbf{B}).
+
+\end{document}
+

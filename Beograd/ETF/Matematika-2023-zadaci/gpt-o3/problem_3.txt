@@ -1,0 +1,8 @@
+Problem 3 (Matematika 2023)
+Trapez je opisan oko kruga poluprečnika r. Ako je poznato da je površina trapeza pet puta veća od obima trapeza, tada dužina poluprečnika r iznosi:
+a) 5
+b) 30
+c) 10
+d) 20
+e) 40
+n) Ne znam

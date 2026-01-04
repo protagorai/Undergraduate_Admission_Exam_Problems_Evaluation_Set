@@ -1,0 +1,50 @@
+\section*{Zadatak 18}
+
+Date su funkcije:
+\[
+f_1(x)=2^{\log_2 x},\qquad
+f_2(x)=\log_2 2^x,\qquad
+f_3(x)=x,\qquad
+f_4(x)=\left(x\cdot 2^{-\log_2\sqrt{x}}\right)^2.
+\]
+Tačan je iskaz:
+
+\subsection*{Rešenje}
+Posmatramo svaku funkciju (sa prirodnim domenom).
+
+\paragraph{\(f_1\).}
+Definisana je za \(x>0\). Važi
+\[
+f_1(x)=2^{\log_2 x}=x,\qquad (x>0).
+\]
+
+\paragraph{\(f_2\).}
+Definisana je za svaki realan \(x\). Važi
+\[
+f_2(x)=\log_2(2^x)=x,\qquad (x\in\mathbb R).
+\]
+
+\paragraph{\(f_3\).}
+Definisana je za svaki realan \(x\) i \(f_3(x)=x\).
+
+\paragraph{\(f_4\).}
+Zbog \(\log_2\sqrt{x}\) mora biti \(x>0\).
+Dalje,
+\[
+2^{-\log_2\sqrt{x}}=\left(2^{\log_2\sqrt{x}}\right)^{-1}=(\sqrt{x})^{-1}=\frac{1}{\sqrt{x}}.
+\]
+Zato je
+\[
+f_4(x)=\left(x\cdot\frac{1}{\sqrt{x}}\right)^2=(\sqrt{x})^2=x,\qquad (x>0).
+\]
+
+\paragraph{Zaključak.}
+Kao funkcije sa domenima: \(f_2=f_3\) (obe su \(x\) na \(\mathbb R\)),
+dok je \(f_1=f_4\) (obe su \(x\) na \((0,\infty)\)).
+Zbog različitih domena, \(f_2=f_3\ne f_1=f_4\).
+
+\subsection*{Odgovor}
+\[
+\boxed{(E)\;f_2=f_3\ne f_1=f_4}
+\]
+

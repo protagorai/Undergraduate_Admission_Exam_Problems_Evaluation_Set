@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+U jednakokrakom trouglu $ABC$ je $AB = BC = b$, $AC = a$ i $\angle ABC = 20°$. Tada je izraz $\dfrac{a^2}{b^2} + \dfrac{b}{a}$ jednak:
+
+\subsection*{Solution}
+In isosceles triangle $ABC$ with $AB = BC = b$, $AC = a$, and $\angle ABC = 20°$.
+
+The base angles are equal: $\angle BAC = \angle BCA = \dfrac{180° - 20°}{2} = 80°$.
+
+Using the Law of Cosines:
+\[
+a^2 = b^2 + b^2 - 2b^2\cos(20°) = 2b^2(1 - \cos 20°)
+\]
+
+So:
+\[
+\frac{a^2}{b^2} = 2(1 - \cos 20°) = 4\sin^2(10°)
+\]
+
+Using the Law of Sines:
+\[
+\frac{a}{\sin 20°} = \frac{b}{\sin 80°}
+\]
+\[
+\frac{a}{b} = \frac{\sin 20°}{\sin 80°} = \frac{\sin 20°}{\cos 10°}
+\]
+
+Therefore:
+\[
+\frac{b}{a} = \frac{\cos 10°}{\sin 20°} = \frac{\cos 10°}{2\sin 10° \cos 10°} = \frac{1}{2\sin 10°}
+\]
+
+Now compute:
+\[
+\frac{a^2}{b^2} + \frac{b}{a} = 4\sin^2(10°) + \frac{1}{2\sin 10°}
+\]
+
+Let $s = \sin 10°$. Then:
+\[
+4s^2 + \frac{1}{2s} = \frac{8s^3 + 1}{2s}
+\]
+
+Using the identity $8s^3 = 6s - 2\sin 30° = 6s - 1$ (from $\sin 30° = 3\sin 10° - 4\sin^3 10°$):
+
+Actually, $\sin 3\theta = 3\sin\theta - 4\sin^3\theta$. For $\theta = 10°$:
+\[
+\sin 30° = 3\sin 10° - 4\sin^3 10°
+\]
+\[
+\frac{1}{2} = 3s - 4s^3
+\]
+\[
+4s^3 = 3s - \frac{1}{2}
+\]
+\[
+8s^3 = 6s - 1
+\]
+
+So:
+\[
+8s^3 + 1 = 6s - 1 + 1 = 6s
+\]
+
+Therefore:
+\[
+\frac{8s^3 + 1}{2s} = \frac{6s}{2s} = 3
+\]
+
+\subsection*{Answer}
+$3$ (option \textbf{C}).
+
+\end{document}

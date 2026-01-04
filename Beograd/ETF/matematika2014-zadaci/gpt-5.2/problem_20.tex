@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Iz skupa od $10$ studenata, među kojima su samo jedan student elektrotehnike i samo jedan student matematike,
+biramo komisiju od $6$ članova tako da ako je u komisiji student elektrotehnike mora u toj komisiji biti i student matematike.
+Koliko se takvih komisija može obrazovati?
+\[
+\text{(A) }210\quad
+\text{(B) }98\quad
+\text{(C) }126\quad
+\text{(D) }154\quad
+\text{(E) }165.
+\]
+
+\subsection*{Solution}
+Ukupan broj komisija od $6$ članova iz $10$ studenata je
+\[
+\binom{10}{6}=210.
+\]
+Neispravne komisije su one koje sadrže studenta elektrotehnike, ali ne sadrže studenta matematike.
+Tada je student elektrotehnike fiksiran u komisiji, student matematike izbačen, a preostalih $5$ članova biramo od preostalih $8$ studenata:
+\[
+\binom{8}{5}=56.
+\]
+Zato je broj ispravnih komisija
+\[
+210-56=154.
+\]
+
+\subsection*{Answer}
+$154$ (option \textbf{D}).
+
+\end{document}
+

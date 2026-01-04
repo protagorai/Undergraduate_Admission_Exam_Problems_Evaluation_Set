@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 13}
+Razmotriti sistem
+\[
+ 3^{x}-2^{y^{2}}=77,\qquad 3^{\frac{x}{2}}-2^{\frac{y^{2}}{2}}=7.
+\]
+Koliko realnih rešenja ima?
+A) 1\; B) 2\; C) 4\; D) 3\; E) 0\; N) Ne znam.
+
+\subsection*{Solution}
+Neka $u=3^{\frac{x}{2}}$ i $v=2^{\frac{y^{2}}{2}}$ ($u,v>0$). Tada sistem postaje
+\[
+ u^{2}-v^{2}=77,\qquad u-v=7.
+\]
+Druga jednačina daje $u=v+7$. Uvrstimo u prvu:
+\[(v+7)^{2}-v^{2}=77\;\Longrightarrow\;v^{2}+14v+49-v^{2}=77\;\Longrightarrow\;14v=28\;\Longrightarrow\;v=2,\;u=9.
+\]
+Oba su pozitivna pa daju jedinstveno rešenje.
+
+\subsection*{Answer}
+Jedno realno rešenje (opcija \textbf{A}).
+
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Broj realnih rešenja jednačine $||1-|x||-1|-2=0$ jednak je:
+
+\subsection*{Solution}
+Let the given equation be:
+\[ ||1-|x||-1| = 2 \]
+This splits into two cases:
+1) $1-|x|-1 = 2 \implies -|x| = 2 \implies |x| = -2$, which is impossible.
+2) $1-|x|-1 = -2 \implies -|x| = -2 \implies |x| = 2$. (Wait, recalculating based on analysis)
+Re-evaluating the absolute value layers:
+Outer equation: $|1-|x|| - 1 = 2$ or $|1-|x|| - 1 = -2$.
+Case A: $|1-|x|| = 3$.
+   This implies $1-|x| = 3$ or $1-|x| = -3$.
+   A1: $-|x| = 2 \implies |x| = -2$ (No solution).
+   A2: $-|x| = -4 \implies |x| = 4 \implies x = \pm 4$. (2 solutions).
+Case B: $|1-|x|| = -1$.
+   This is impossible as absolute value is non-negative.
+Total real solutions: 2 ($x=4, x=-4$).
+
+\subsection*{Answer}
+2 (option \textbf{C})
+
+\end{document}

@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 4}
+Razlika $\cos^2 \frac{x+y}{2} - \sin^2 \frac{x-y}{2}$ jednaka je:
+
+A) $\sin(x-y)$; B) $\cos x \cos y$; C) $\sin x \cos y$; D) $\sin x \sin y$; E) $\sin(x+y)$; N) Ne znam.
+
+\subsection*{Solution}
+Koristimo formulu za razliku kvadrata kosinusa i sinusa:
+$\cos^2 A - \sin^2 B = \cos(A+B)\cos(A-B)$.
+Ovde je $A = \frac{x+y}{2}$ i $B = \frac{x-y}{2}$.
+\[ A+B = \frac{x+y+x-y}{2} = \frac{2x}{2} = x \]
+\[ A-B = \frac{x+y-(x-y)}{2} = \frac{2y}{2} = y \]
+Tada je:
+\[ \cos^2 \frac{x+y}{2} - \sin^2 \frac{x-y}{2} = \cos(x)\cos(y) \]
+
+Alternativno, koristeći formule za polovinu ugla:
+$\cos^2 \frac{x+y}{2} = \frac{1+\cos(x+y)}{2}$
+$\sin^2 \frac{x-y}{2} = \frac{1-\cos(x-y)}{2}$
+Razlika je:
+\[ \frac{1+\cos(x+y) - (1-\cos(x-y))}{2} = \frac{\cos(x+y) + \cos(x-y)}{2} \]
+Koristeći adicionu formulu za zbir kosinusa (ili pretvaranje zbira u proizvod, ili samo raspisivanje):
+$\cos(x+y) = \cos x \cos y - \sin x \sin y$
+$\cos(x-y) = \cos x \cos y + \sin x \sin y$
+Zbir je $2 \cos x \cos y$.
+\[ \frac{2 \cos x \cos y}{2} = \cos x \cos y \]
+
+\subsection*{Answer}
+$\cos x \cos y$ (option \textbf{B}).
+\end{document}

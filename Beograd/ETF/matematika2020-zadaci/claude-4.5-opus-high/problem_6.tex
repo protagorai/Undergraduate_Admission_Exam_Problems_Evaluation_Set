@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Find the product of the smallest and largest roots of the polynomial $P(x) = x^4 - 9x^2 + 18$.
+
+\subsection*{Solution}
+Let $y = x^2$. Then the equation becomes:
+\[
+y^2 - 9y + 18 = 0
+\]
+
+Using the quadratic formula:
+\[
+y = \frac{9 \pm \sqrt{81 - 72}}{2} = \frac{9 \pm \sqrt{9}}{2} = \frac{9 \pm 3}{2}
+\]
+
+So $y_1 = \frac{9 + 3}{2} = 6$ and $y_2 = \frac{9 - 3}{2} = 3$.
+
+Since $y = x^2$:
+\begin{itemize}
+    \item From $x^2 = 6$: $x = \pm\sqrt{6}$
+    \item From $x^2 = 3$: $x = \pm\sqrt{3}$
+\end{itemize}
+
+The four roots are: $-\sqrt{6}, -\sqrt{3}, \sqrt{3}, \sqrt{6}$.
+
+The smallest root is $-\sqrt{6}$ and the largest root is $\sqrt{6}$.
+
+Their product is:
+\[
+(-\sqrt{6}) \cdot \sqrt{6} = -6
+\]
+
+\subsection*{Answer}
+$-6$ (option \textbf{D}).
+
+\end{document}

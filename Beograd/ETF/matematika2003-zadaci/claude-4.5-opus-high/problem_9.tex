@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Ako je prava $y = kx + n$ zajednička tangenta kruga $x^2 + y^2 = 4$ i elipse $2x^2 + 5y^2 = 10$, tada je $k^2 + n^2$ jednako:
+
+\textbf{A)} 4; \quad \textbf{B)} 7; \quad \textbf{C)} 6; \quad \textbf{D)} 5; \quad \textbf{E)} 14
+
+\subsection*{Solution}
+\textbf{Uslov tangentnosti za krug $x^2 + y^2 = 4$:}
+
+Rastojanje centra $(0,0)$ od prave $kx - y + n = 0$ mora biti jednako poluprečniku $r = 2$:
+\[
+\frac{|n|}{\sqrt{k^2 + 1}} = 2 \Rightarrow n^2 = 4(k^2 + 1) = 4k^2 + 4
+\]
+
+\textbf{Uslov tangentnosti za elipsu $\frac{x^2}{5} + \frac{y^2}{2} = 1$:}
+
+Za elipsu $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$, tangenta oblika $y = kx + n$ mora zadovoljavati:
+\[
+n^2 = a^2k^2 + b^2
+\]
+
+Ovde je $a^2 = 5$ i $b^2 = 2$, pa:
+\[
+n^2 = 5k^2 + 2
+\]
+
+\textbf{Rešavanje sistema:}
+
+Iz dva uslova:
+\[
+4k^2 + 4 = 5k^2 + 2
+\]
+\[
+4 - 2 = 5k^2 - 4k^2
+\]
+\[
+k^2 = 2
+\]
+
+Zamenom u $n^2 = 5k^2 + 2$:
+\[
+n^2 = 5 \cdot 2 + 2 = 12
+\]
+
+Dakle:
+\[
+k^2 + n^2 = 2 + 12 = 14
+\]
+
+\subsection*{Answer}
+$14$ (option \textbf{E}).
+
+\end{document}

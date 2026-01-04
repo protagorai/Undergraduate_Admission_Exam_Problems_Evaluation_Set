@@ -1,0 +1,28 @@
+RESENJA - Prijemni ispit iz matematike za upis na Elektrotehnicki i Fizicki fakultet
+Univerzitet u Beogradu, 27. jun 2007.
+Sifra zadatka: 12963
+
+================================================================================
+
+1.  (A) 0
+2.  (E) sqrt[8]{x^7}
+3.  (E) sqrt(5)
+4.  (E) 2i
+5.  (B) a
+6.  (A) Nema resenja
+7.  (B) pi/6
+8.  (D) [0, 1) ∪ (2, +∞)
+9.  (C) 0
+10. (A) 909/952
+11. (B) 6
+12. (C) Ima dva resenja
+13. (D) 1/sqrt(3)
+14. (C) 32
+15. (A) 1287a^3
+16. (D) n = 10
+17. (A) 314
+18. (E) f_2 = f_3 ≠ f_1 = f_4
+19. (C) c < a < b
+20. (B) 196
+
+================================================================================

@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+A circle whose center is on the $x$-axis and which has the parabola $y^2 = 12x$ as a tangent at point $A(3,6)$ has the equation:
+
+\subsection*{Solution}
+Let the center of the circle be at $(h, 0)$ since it's on the $x$-axis.
+
+First, let's verify that $A(3,6)$ is on the parabola $y^2 = 12x$:
+$6^2 = 36$ and $12 \cdot 3 = 36$ ✓
+
+For the parabola $y^2 = 12x$, we can find the slope of the tangent by implicit differentiation:
+$2y \frac{dy}{dx} = 12$
+$\frac{dy}{dx} = \frac{6}{y}$
+
+At point $A(3,6)$: $\frac{dy}{dx} = \frac{6}{6} = 1$
+
+So the tangent line at $A(3,6)$ has slope $m = 1$.
+
+For the circle to be tangent to the parabola at point $A$, the line from the center $(h,0)$ to point $A(3,6)$ must be perpendicular to the tangent line.
+
+The slope of the line from $(h,0)$ to $(3,6)$ is $\frac{6-0}{3-h} = \frac{6}{3-h}$.
+
+Since this line is perpendicular to the tangent (which has slope 1), we have:
+$\frac{6}{3-h} \cdot 1 = -1$
+
+$\frac{6}{3-h} = -1$
+
+$6 = -(3-h) = -3 + h$
+
+$h = 9$
+
+So the center is at $(9,0)$.
+
+The radius is the distance from $(9,0)$ to $(3,6)$:
+$r = \sqrt{(9-3)^2 + (0-6)^2} = \sqrt{36 + 36} = \sqrt{72} = 6\sqrt{2}$
+
+The equation of the circle is:
+$(x-9)^2 + y^2 = (6\sqrt{2})^2 = 72$
+
+$(x-9)^2 + y^2 = 72$
+
+Expanding: $x^2 - 18x + 81 + y^2 = 72$
+
+$x^2 + y^2 - 18x + 9 = 0$
+
+Wait, let me double-check: $81 - 72 = 9$ ✓
+
+Looking at the options:
+(A) $(x-3)^2 + y^2 = 9$
+(B) $(x-6)^2 + y^2 = 36$  
+(C) $(x-9)^2 + y^2 = 81$
+(D) $(x-9)^2 + y^2 = 72$
+(E) $(x-6)^2 + y^2 = 72$
+
+My calculation gives $(x-9)^2 + y^2 = 72$, which is option (D).
+
+\subsection*{Answer}
+$(x-9)^2 + y^2 = 72$ (option \textbf{D}).
+
+\end{document}

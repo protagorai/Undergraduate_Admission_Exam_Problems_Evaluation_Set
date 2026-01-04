@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Skup svih realnih resenja nejednacine
+\[
+\frac{\arccos(x^2-3x+1)}{8x^2-10x+3}>0
+\]
+je oblika (za neke realne brojeve $a<b<c<d<e<f$):
+\[
+\text{(A) }(a,b)\cup[c,d)\cup(d,e)\quad
+\text{(B) }(a,b]\quad
+\text{(C) }(a,b)\quad
+\text{(D) }(a,b)\cup[c,d]\quad
+\text{(E) }(a,b)\cup(c,d]\cup[e,f).
+\]
+
+\subsection*{Solution}
+Posmatrajmo uslove da razlomak bude pozitivan.
+
+\medskip
+\textbf{1) Domen i znak brojioca.}
+Brojilac je $\arccos(t)$ gde je $t=x^2-3x+1$.
+Da bi bio definisan treba $t\in[-1,1]$. Dodatno, $\arccos(t)\ge 0$ i jednak je $0$ samo kada je
+$t=1$, pa za strogu nejednacinu treba $t\in[-1,1]$ i $t\neq 1$.
+
+Resavamo:
+\[
+-1\le x^2-3x+1\le 1,\qquad x^2-3x+1\neq 1.
+\]
+Desna nejednacina:
+\[
+x^2-3x+1\le 1 \iff x^2-3x\le 0 \iff x\in[0,3].
+\]
+Leva nejednacina:
+\[
+x^2-3x+1\ge -1 \iff x^2-3x+2\ge 0 \iff (x-1)(x-2)\ge 0,
+\]
+pa je $x\in(-\infty,1]\cup[2,\infty)$.
+Presek daje
+\[
+x\in[0,1]\cup[2,3].
+\]
+Uslov $x^2-3x+1\neq 1$ daje $x(x-3)\neq 0$, tj.\ $x\neq 0$ i $x\neq 3$.
+Zato je brojioc $>0$ za
+\[
+x\in(0,1]\cup[2,3).
+\]
+
+\medskip
+\textbf{2) Znak imenioca.}
+\[
+8x^2-10x+3=0 \iff x=\frac12 \ \text{ ili }\ x=\frac34.
+\]
+Kako je koeficijent uz $x^2$ pozitivan, imenioc je $>0$ za
+\[
+x\in(-\infty,\tfrac12)\cup(\tfrac34,\infty).
+\]
+
+\medskip
+\textbf{3) Presek uslova.}
+Trazeni skup je presek:
+\[
+\bigl((0,1]\cup[2,3)\bigr)\cap\bigl((-\infty,\tfrac12)\cup(\tfrac34,\infty)\bigr)
+=(0,\tfrac12)\cup(\tfrac34,1]\cup[2,3).
+\]
+
+\subsection*{Answer}
+$(0,\tfrac12)\cup(\tfrac34,1]\cup[2,3)$ (option \textbf{E}).
+
+\end{document}
+

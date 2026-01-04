@@ -1,0 +1,104 @@
+\section*{Zadatak 19}
+Odrediti skup svih vrednosti realnog parametra $m$ za koje koreni $x_1$ i $x_2$ kvadratne jedna\v{c}ine
+\[
+x^2+(2+m)x-6m^2+11m=3
+\]
+zadovoljavaju nejedna\v{c}inu
+\[
+\frac{2x_1}{x_2}+\frac{x_2}{2x_1}\le 2.
+\]
+
+\subsection*{Re\v{s}enje}
+Prepi\v{s}imo jedna\v{c}inu u standardnom obliku:
+\[
+x^2+(m+2)x+\bigl(-6m^2+11m-3\bigr)=0.
+\]
+Po Vijeti:
+\[
+x_1+x_2=-(m+2),\qquad x_1x_2=-6m^2+11m-3.
+\]
+Diskriminanta je
+\[
+\Delta=(m+2)^2-4(-6m^2+11m-3)=(5m-4)^2\ge 0,
+\]
+pa su koreni realni za sve $m$.
+Da bi nejedna\v{c}ina imala smisla, mora biti $x_1x_2\neq 0$, tj.
+\[
+-6m^2+11m-3\neq 0
+\;\Longleftrightarrow\;
+6m^2-11m+3\neq 0
+\;\Longleftrightarrow\;
+m\neq \frac13,\ \frac32.
+\]
+
+\paragraph{1) Analiza nejedna\v{c}ine}
+Neka je $r=\dfrac{x_1}{x_2}$ ($r\neq 0$). Tada je uslov
+\[
+2r+\frac{1}{2r}\le 2.
+\]
+\begin{itemize}
+\item Ako je $r>0$, onda je po AM-GM:
+\[
+2r+\frac{1}{2r}\ge 2,
+\]
+sa jednako\v{s}\'cu samo kada je $2r=\frac{1}{2r}$, tj. $r=\frac12$.
+Zato za $r>0$ uslov va\v{z}i samo za $r=\frac12$.
+\item Ako je $r<0$, onda su oba sabirka negativna, pa je izraz $<2$ uvek, tj. uslov va\v{z}i automatski.
+\end{itemize}
+Dakle, nejedna\v{c}ina va\v{z}i ako va\v{z}i ili:
+\[
+\text{(i) } \frac{x_1}{x_2}<0 \;\Longleftrightarrow\; x_1x_2<0,
+\quad\text{ili}\quad
+\text{(ii) } \frac{x_1}{x_2}=\frac12.
+\]
+
+\paragraph{2) Slu\v{c}aj (i): $x_1x_2<0$}
+\[
+-6m^2+11m-3<0
+\;\Longleftrightarrow\;
+6m^2-11m+3>0
+\;\Longleftrightarrow\;
+(3m-1)(2m-3)>0.
+\]
+Otuda
+\[
+m<\frac13 \quad \text{ili}\quad m>\frac32.
+\]
+
+\paragraph{3) Slu\v{c}aj (ii): $\frac{x_1}{x_2}=\frac12$}
+Neka je $x_2=t$, $x_1=\frac{t}{2}$. Tada
+\[
+x_1+x_2=\frac{3t}{2}=-(m+2)\ \Longrightarrow\ t=-\frac{2(m+2)}{3},
+\]
+a
+\[
+x_1x_2=\frac{t^2}{2}=-6m^2+11m-3.
+\]
+Uvr\v{s}tavanjem $t$:
+\[
+\frac{1}{2}\left(\frac{2(m+2)}{3}\right)^2=-6m^2+11m-3
+\;\Longrightarrow\;
+\frac{2(m+2)^2}{9}=-6m^2+11m-3.
+\]
+Mno\v{z}enjem sa $9$:
+\[
+2(m+2)^2=-54m^2+99m-27
+\;\Longrightarrow\;
+56m^2-91m+35=0.
+\]
+Re\v{s}enja su
+\[
+m=\frac{91\pm 21}{112}\in\left\{1,\frac{5}{8}\right\}.
+\]
+
+\paragraph{Kona\v{c}no}
+Skup svih $m$ je
+\[
+(-\infty,\tfrac13)\ \cup\ \left\{\tfrac58,1\right\}\ \cup\ (\tfrac32,+\infty).
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(B)\;\; (-\infty,\tfrac13)\cup\left\{\tfrac58,1\right\}\cup(\tfrac32,+\infty)}
+\]
+

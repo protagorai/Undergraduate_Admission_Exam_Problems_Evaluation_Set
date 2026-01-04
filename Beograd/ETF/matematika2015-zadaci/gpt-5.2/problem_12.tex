@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+U razvoju binoma
+\[
+\left(\sqrt[3]{x}+\frac{1}{\sqrt{x}}\right)^n\qquad (n\in\mathbb N,\ x>0)
+\]
+brojevi $\frac{14}{9}$ puta binomni koeficijent treceg clana, binomni koeficijent cetvrtog clana i binomni koeficijent petog clana cine geometrijsku progresiju.
+Odrediti binomni koeficijent uz $\sqrt{x}$.
+
+\subsection*{Solution}
+Treci, cetvrti i peti clan razvoja imaju binomne koeficijente
+\[
+\binom{n}{2},\ \binom{n}{3},\ \binom{n}{4}.
+\]
+Uslov geometrijske progresije je
+\[
+\binom{n}{3}^2=\left(\frac{14}{9}\binom{n}{2}\right)\binom{n}{4}.
+\]
+Koristimo formule:
+\[
+\binom{n}{2}=\frac{n(n-1)}{2},\quad
+\binom{n}{3}=\frac{n(n-1)(n-2)}{6},\quad
+\binom{n}{4}=\frac{n(n-1)(n-2)(n-3)}{24}.
+\]
+Posle skracivanja $n^2(n-1)^2$ dobijamo
+\[
+\frac{(n-2)^2}{36}=\frac{14}{9}\cdot\frac{(n-2)(n-3)}{48}
+\quad\Longrightarrow\quad
+12(n-2)=14(n-3),
+\]
+odakle je $n=9$.
+
+Opsti clan je
+\[
+\binom{n}{k}\left(x^{1/3}\right)^{n-k}\left(x^{-1/2}\right)^k
+=\binom{n}{k}\,x^{\frac{n-k}{3}-\frac{k}{2}}
+=\binom{n}{k}\,x^{\frac{n}{3}-\frac{5k}{6}}.
+\]
+Za $n=9$ trazimo $\frac{9}{3}-\frac{5k}{6}=\frac12$, tj.
+\[
+3-\frac{5k}{6}=\frac12 \quad\Longrightarrow\quad 18-5k=3 \quad\Longrightarrow\quad k=3.
+\]
+Koeficijent uz $\sqrt{x}$ je zato $\binom{9}{3}=84$.
+
+\subsection*{Answer}
+$84$ (opcija \textbf{C}).
+
+\end{document}
+

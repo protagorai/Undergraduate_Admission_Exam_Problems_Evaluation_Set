@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 17}
+Ako polinom $P_n(x)$ $(n\ge 3)$ pri deljenju sa $x$ daje ostatak $3$, a pri deljenju sa $x^2+1$ daje ostatak $-x+2$,
+onda polinom $(P_n(x))^2+P_n(x)+1$ pri deljenju sa $x^3+x$ daje ostatak.
+
+\subsection*{Solution}
+Po uslovu deljenja sa $x$ važi $P_n(0)=3$.
+Zato za $Q(x)=P_n(x)^2+P_n(x)+1$ dobijamo
+\[
+Q(0)=3^2+3+1=13,
+\]
+odnosno
+\[
+Q(x)\equiv 13 \pmod{x}.
+\]
+
+Dalje, iz uslova $P_n(x)\equiv -x+2\pmod{x^2+1}$ sledi
+\[
+Q(x)\equiv (-x+2)^2+(-x+2)+1=x^2-5x+7\pmod{x^2+1}.
+\]
+Pošto je $x^2\equiv -1\pmod{x^2+1}$, dobijamo
+\[
+Q(x)\equiv (-1)-5x+7=6-5x\pmod{x^2+1}.
+\]
+
+Tražimo ostatak $R(x)=ax^2+bx+c$ pri deljenju sa $x(x^2+1)=x^3+x$ (stepen $<3$) takav da:
+\[
+R(x)\equiv 13 \pmod{x}\Rightarrow c=13,
+\]
+i
+\[
+R(x)\equiv 6-5x\pmod{x^2+1}.
+\]
+Sa $c=13$ pišemo
+\[
+R(x)-(6-5x)=ax^2+(b+5)x+7.
+\]
+Da bi ovo bilo deljivo sa $x^2+1$ (stepen $\le 2$), mora biti jednako $k(x^2+1)$ za neki konstantan $k$.
+Otuda $a=k$, $b+5=0\Rightarrow b=-5$, i $7=k\Rightarrow a=7$.
+
+Dakle
+\[
+R(x)=7x^2-5x+13.
+\]
+
+\subsection*{Answer}
+$7x^2-5x+13$ (option \textbf{A}).
+
+\end{document}
+
+

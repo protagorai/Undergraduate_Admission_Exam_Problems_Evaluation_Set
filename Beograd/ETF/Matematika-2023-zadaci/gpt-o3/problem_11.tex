@@ -1,0 +1,50 @@
+% Problem 11 – Matematički prijemni 2023
+\begin{solution}
+Разматрамо једначину
+\[
+\cos 7x-\sin 5x=\sqrt3\,(\cos 5x-\sin 7x),\qquad x\in\bigl[0,\tfrac\pi2\bigr].
+\]
+\medskip\paragraph{1.  Сведемо на облик \(\cos A=\cos B\).}
+Применимо формулу \(a\cos t+b\sin t=R\cos(t-\varphi)\) са
+\(R=\sqrt{a^{2}+b^{2}}\):
+\[
+\begin{aligned}
+\cos 7x+\sqrt3\sin 7x&=2\cos\bigl(7x-\tfrac\pi3\bigr),\\[2pt]
+\sin 5x+\sqrt3\cos 5x&=2\sin\bigl(5x+\tfrac\pi3\bigr)
+                 =2\cos\Bigl(\tfrac\pi2-\bigl(5x+\tfrac\pi3\bigr)\Bigr)
+                 =2\cos\bigl(\tfrac\pi6-5x\bigr).
+\end{aligned}
+\]
+Дакле једначина је еквивалентна
+\[
+\cos\bigl(7x-\tfrac\pi3\bigr)=\cos\bigl(\tfrac\pi6-5x\bigr).
+\]
+
+\paragraph{2.  Решимо \(\cos A=\cos B\).}
+За косинус важи \(\cos A=\cos B\iff A=\pm B+2k\pi\;(k\in\mathbb Z)\).
+Поставимо
+\[A=7x-\tfrac\pi3,\qquad B=\tfrac\pi6-5x.\]
+\textit{Први случај}  $A=B+2k\pi$:
+\[
+7x-\tfrac\pi3 = \tfrac\pi6-5x+2k\pi \;\Longrightarrow\;12x = \tfrac\pi2+2k\pi\;\Longrightarrow\;x=\tfrac\pi{24}+\tfrac{k\pi}6.
+\]
+\textit{Други случај}  $A=-B+2k\pi$:
+\[
+7x-\tfrac\pi3 = -\,\bigl(\tfrac\pi6-5x\bigr)+2k\pi \;\Longrightarrow\; 2x = \tfrac\pi6+2k\pi\;\Longrightarrow\;x=\tfrac\pi{12}+k\pi.
+\]
+
+\paragraph{3.  Избор решења у интервалу $[0,\pi/2]$.}
+\vspace{-0.7\baselineskip}
+\begin{itemize}
+\item $x=\pi/24+\tfrac{k\pi}6$:  за $k=0,1,2$ добијамо $\pi/24,\,5\pi/24,\,9\pi/24=3\pi/8$ (све $<\pi/2$).  Следећи $k$ даје $13\pi/24>\pi/2$.
+\item $x=\pi/12+k\pi$:  само $k=0$ даје $x=\pi/12<\pi/2$; $k=\pm1$ излази из интервала.
+\end{itemize}
+\medskip
+Укупно су \textbf{четири} различита решења.
+
+\paragraph{4.  Одговор.}  Број реалних и различитих решења је
+\[
+\boxed{4}\quad(\text{опција\;C}).
+\]
+\end{solution}
+

@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Najveći broj realnih rešenja jednačine $|2 - |x - x^2|| = p$, gde je $p$ realni parametar, je:
+
+\subsection*{Solution}
+Analizirajmo funkciju $f(x) = |2 - |x - x^2||$ po koracima.
+
+Prvo, $g(x) = x - x^2 = x(1-x)$.
+- $g(x) \geq 0$ za $x \in [0, 1]$
+- $g(x) < 0$ za $x \in (-\infty, 0) \cup (1, \infty)$
+
+Dakle:
+\[
+|x - x^2| = \begin{cases}
+x - x^2 & \text{za } x \in [0, 1] \\
+x^2 - x & \text{za } x \in (-\infty, 0) \cup (1, \infty)
+\end{cases}
+\]
+
+Sada analiziramo $h(x) = 2 - |x - x^2|$:
+
+Za $x \in [0, 1]$: $h(x) = 2 - (x - x^2) = 2 - x + x^2$
+Za $x \in (-\infty, 0) \cup (1, \infty)$: $h(x) = 2 - (x^2 - x) = 2 - x^2 + x$
+
+Tražimo gde je $h(x) = 0$:
+- Za $x \in [0, 1]$: $2 - x + x^2 = 0 \Rightarrow x^2 - x + 2 = 0$ (nema realnih rešenja)
+- Za $x \in (-\infty, 0) \cup (1, \infty)$: $2 - x^2 + x = 0 \Rightarrow x^2 - x - 2 = 0 \Rightarrow (x-2)(x+1) = 0$
+
+Dakle $h(x) = 0$ za $x = -1$ i $x = 2$.
+
+Analizirajmo ponašanje $h(x)$:
+- $h(x) > 0$ za $x \in (-1, 2)$
+- $h(x) < 0$ za $x \in (-\infty, -1) \cup (2, \infty)$
+
+Konačno:
+\[
+f(x) = |h(x)| = \begin{cases}
+h(x) & \text{za } x \in (-1, 2) \\
+-h(x) & \text{za } x \in (-\infty, -1) \cup (2, \infty)
+\end{cases}
+\]
+
+Analizirajući grafik funkcije $f(x)$, vidimo da:
+- Za $p = 0$: 2 rešenja ($x = -1, 2$)
+- Za male pozitivne $p$: 6 rešenja
+- Za veće $p$: manje rešenja
+
+Maksimalni broj rešenja je 6.
+
+\subsection*{Answer}
+6 (option \textbf{B}).
+
+\end{document}

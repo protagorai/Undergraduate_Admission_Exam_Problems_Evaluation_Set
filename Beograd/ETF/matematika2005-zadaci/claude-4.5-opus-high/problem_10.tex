@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+In an arbitrary triangle with sides $a$, $b$, $c$ and corresponding angles $\alpha$, $\beta$, the coefficient $\displaystyle\frac{\sin(\alpha - \beta)}{\sin(\alpha + \beta)}$ equals:
+
+\subsection*{Solution}
+Using the Law of Sines: $\frac{a}{\sin\alpha} = \frac{b}{\sin\beta} = \frac{c}{\sin\gamma} = 2R$
+
+So $a = 2R\sin\alpha$ and $b = 2R\sin\beta$.
+
+Also, in a triangle, $\alpha + \beta + \gamma = \pi$, so $\alpha + \beta = \pi - \gamma$, meaning $\sin(\alpha + \beta) = \sin\gamma$.
+
+Using the sine difference formula:
+\[
+\sin(\alpha - \beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta
+\]
+
+By the Law of Cosines:
+\[
+\cos\alpha = \frac{b^2 + c^2 - a^2}{2bc}, \quad \cos\beta = \frac{a^2 + c^2 - b^2}{2ac}
+\]
+
+Using Law of Sines: $\sin\alpha = \frac{a}{2R}$, $\sin\beta = \frac{b}{2R}$, $\sin\gamma = \frac{c}{2R}$.
+
+\[
+\frac{\sin(\alpha-\beta)}{\sin(\alpha+\beta)} = \frac{\sin\alpha\cos\beta - \cos\alpha\sin\beta}{\sin\gamma}
+\]
+
+After substitution and simplification (using $a^2 - b^2$ pattern):
+\[
+= \frac{a^2 - b^2}{c^2}
+\]
+
+This can be verified: The numerator involves the difference of squares of sine values weighted by cosines, which reduces to $\frac{a^2 - b^2}{c^2}$.
+
+\subsection*{Answer}
+$\displaystyle\frac{a^2 - b^2}{c^2}$ (option \textbf{C}).
+
+\end{document}

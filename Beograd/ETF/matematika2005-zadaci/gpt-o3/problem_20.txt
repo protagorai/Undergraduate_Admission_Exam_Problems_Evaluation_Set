@@ -1,0 +1,7 @@
+Problem 20: Maksimalna površina pravougaonika upisanog u parabolicki odsečak ograničen parabolom
+
+    y = 1 - x^2
+
+i pravom y = 0, tako da mu jedna stranica pripada x-osi, jeste:
+
+(A) (1/9) √3   (B) (4/9) √3   (C) (8/9) √3   (D) √3   (E) 2√3   (N) Ne znam

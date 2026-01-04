@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako se zna da je polinom $x^3 + ax^2 + bx - 4$ $(a, b \in \mathbb{R})$ deljiv polinomom $x^2 - 1$, tada zbir $a^2 + b^2$ iznosi:
+
+\subsection*{Solution}
+Polinom $x^2 - 1 = (x-1)(x+1)$, tako da ako je polinom $P(x) = x^3 + ax^2 + bx - 4$ deljiv sa $x^2 - 1$, tada mora biti deljiv i sa $(x-1)$ i sa $(x+1)$.
+
+To znači da su $x = 1$ i $x = -1$ nule polinoma $P(x)$.
+
+Iz uslova $P(1) = 0$:
+\[
+1^3 + a \cdot 1^2 + b \cdot 1 - 4 = 0
+\]
+\[
+1 + a + b - 4 = 0
+\]
+\[
+a + b = 3 \quad \text{...(1)}
+\]
+
+Iz uslova $P(-1) = 0$:
+\[
+(-1)^3 + a \cdot (-1)^2 + b \cdot (-1) - 4 = 0
+\]
+\[
+-1 + a - b - 4 = 0
+\]
+\[
+a - b = 5 \quad \text{...(2)}
+\]
+
+Rešavamo sistem jednačina (1) i (2):
+Sabiranje: $(a + b) + (a - b) = 3 + 5$
+\[
+2a = 8 \Rightarrow a = 4
+\]
+
+Iz jednačine (1): $4 + b = 3 \Rightarrow b = -1$
+
+Proveravamo: $a - b = 4 - (-1) = 5$ ✓
+
+Dakle, $a = 4$ i $b = -1$.
+
+\[
+a^2 + b^2 = 4^2 + (-1)^2 = 16 + 1 = 17
+\]
+
+\subsection*{Answer}
+17 (opcija \textbf{B}).
+
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Jednačina kruga čiji centar je tačka preseka pravih $x - 2y + 4 = 0$ i $3x + y - 9 = 0$ a koji dodiruje pravu $3x + 4y + 2 = 0$ glasi:
+
+(A) $x^2 + y^2 - 4x - 6y - 2 = 0$ \quad (B) $x^2 + y^2 - 4x - 6y = 0$
+
+(C) $x^2 + y^2 - 4x - 6y - 3 = 0$ \quad (D) $x^2 + y^2 - 4x - 6y + 1 = 0$
+
+(E) $x^2 + y^2 - 4x - 6y - 1 = 0$ \quad (N) Ne znam
+
+\subsection*{Solution}
+First, find the center by solving the system of equations:
+\[
+x - 2y + 4 = 0
+\]
+\[
+3x + y - 9 = 0
+\]
+
+From the first equation: $x = 2y - 4$
+
+Substituting into the second:
+\[
+3(2y - 4) + y - 9 = 0
+\]
+\[
+6y - 12 + y - 9 = 0
+\]
+\[
+7y = 21 \implies y = 3
+\]
+\[
+x = 2(3) - 4 = 2
+\]
+
+So the center is $(2, 3)$.
+
+The radius equals the distance from the center to the tangent line $3x + 4y + 2 = 0$:
+\[
+r = \frac{|3(2) + 4(3) + 2|}{\sqrt{3^2 + 4^2}} = \frac{|6 + 12 + 2|}{\sqrt{9 + 16}} = \frac{20}{5} = 4
+\]
+
+The equation of the circle with center $(2, 3)$ and radius $4$:
+\[
+(x - 2)^2 + (y - 3)^2 = 16
+\]
+
+Expanding:
+\[
+x^2 - 4x + 4 + y^2 - 6y + 9 = 16
+\]
+\[
+x^2 + y^2 - 4x - 6y + 13 = 16
+\]
+\[
+x^2 + y^2 - 4x - 6y - 3 = 0
+\]
+
+\subsection*{Answer}
+$x^2 + y^2 - 4x - 6y - 3 = 0$ (option \textbf{C}).
+
+\end{document}

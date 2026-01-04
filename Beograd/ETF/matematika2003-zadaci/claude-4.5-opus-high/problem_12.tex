@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Broj rešenja jednačine $(\cos x)^{\sin^2 x - \frac{3}{2}\sin x + \frac{1}{2}} = 1$ na intervalu $[0, \frac{\pi}{2})$ je:
+
+\textbf{A)} 0; \quad \textbf{B)} 1; \quad \textbf{C)} 2; \quad \textbf{D)} 3; \quad \textbf{E)} 4
+
+\subsection*{Solution}
+Jednačina $a^b = 1$ ima rešenje u sledećim slučajevima:
+\begin{enumerate}
+\item $a = 1$ (bilo koje $b$)
+\item $b = 0$ (za $a \neq 0$)
+\item $a = -1$ i $b$ je paran broj
+\end{enumerate}
+
+Na intervalu $[0, \frac{\pi}{2})$, $\cos x \in (0, 1]$ (pozitivan), pa slučaj 3 ne važi.
+
+\textbf{Slučaj 1:} $\cos x = 1$
+
+$\cos x = 1 \Rightarrow x = 0$
+
+Za $x = 0$: proverimo da je eksponent definisan. $\sin 0 = 0$, pa je eksponent $0 - 0 + \frac{1}{2} = \frac{1}{2}$.
+$1^{1/2} = 1$ \checkmark
+
+\textbf{Slučaj 2:} Eksponent $= 0$
+
+\[
+\sin^2 x - \frac{3}{2}\sin x + \frac{1}{2} = 0
+\]
+
+Neka je $t = \sin x$:
+\[
+t^2 - \frac{3}{2}t + \frac{1}{2} = 0
+\]
+\[
+2t^2 - 3t + 1 = 0
+\]
+\[
+(2t - 1)(t - 1) = 0
+\]
+\[
+t = \frac{1}{2} \text{ ili } t = 1
+\]
+
+Za $\sin x = \frac{1}{2}$ na $[0, \frac{\pi}{2})$: $x = \frac{\pi}{6}$
+
+Za $\sin x = 1$ na $[0, \frac{\pi}{2})$: $x = \frac{\pi}{2}$, ali $\frac{\pi}{2} \notin [0, \frac{\pi}{2})$
+
+Za $x = \frac{\pi}{6}$: $\cos\frac{\pi}{6} = \frac{\sqrt{3}}{2} \neq 0$, pa je rešenje validno.
+
+Ukupno imamo 2 rešenja: $x = 0$ i $x = \frac{\pi}{6}$.
+
+\subsection*{Answer}
+$2$ (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 11}
+Neka su \(x_1\) i \(x_2\) koreni jednačine \(x^2+bx+c=0\) (\(b,c\in\mathbb{R}\setminus\{0\}\)). Izračunati \(x_1^4+x_2^4\).
+
+\subsection*{Rešenje}
+Po Vijetovim formulama:
+\[
+x_1+x_2=-b,\qquad x_1x_2=c.
+\]
+Računamo:
+\[
+x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=b^2-2c.
+\]
+Zatim
+\[
+x_1^4+x_2^4=(x_1^2+x_2^2)^2-2(x_1x_2)^2=(b^2-2c)^2-2c^2.
+\]
+\[
+=(b^4-4b^2c+4c^2)-2c^2=b^4-4b^2c+2c^2.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(A)\ b^4-4b^2c+2c^2}
+\]
+\end{document}
+

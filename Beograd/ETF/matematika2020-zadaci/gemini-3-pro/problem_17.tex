@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Skup rešenja jednačine $(\log_{\sin x} 2)(\log_{\sin^2 x} \frac{4}{3}) = 2 \log_{\frac{4}{3}} 2$ ima tačno tri zajednička elementa sa skupom $S$, ako je:
+\[
+(A)\ S=\{\frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}, \frac{11\pi}{4}, \frac{15\pi}{4}\}
+\]
+\[
+(B)\ S=\{\frac{\pi}{6}, \frac{5\pi}{6}, \frac{\pi}{3}, \frac{2\pi}{3}, \frac{7\pi}{6}, \frac{11\pi}{6}\}
+\]
+\[
+(C)\ S=\{\frac{\pi}{3}, \frac{2\pi}{3}, -\frac{\pi}{3}, -\frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}\}
+\]
+\[
+(D)\ S=\{\frac{\pi}{3}, \frac{7\pi}{3}, \frac{13\pi}{3}, \frac{19\pi}{3}, \frac{25\pi}{3}, \frac{31\pi}{3}\}
+\]
+\[
+(E)\ S=\{\frac{2\pi}{3}, -\frac{4\pi}{3}, -\frac{5\pi}{3}, -\frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}\}
+\]
+
+\subsection*{Solution}
+Uslov definisanosti logaritma: $\sin x > 0$ i $\sin x \ne 1$.
+Transformišimo jednačinu. Koristimo $\log_{a^2} b = \frac{1}{2} \log_a b$.
+Leva strana:
+\[
+L = \log_{\sin x} 2 \cdot \frac{1}{2} \log_{\sin x} \frac{4}{3} = \frac{1}{2} \log_{\sin x} 2 \cdot \log_{\sin x} \frac{4}{3}
+\]
+Desna strana:
+\[
+D = 2 \log_{\frac{4}{3}} 2 = \frac{2}{\log_2 \frac{4}{3}}
+\]
+Neka je $A = \log_{\sin x} 2$ i $B = \log_{\sin x} \frac{4}{3}$.
+Veza između $A$ i $B$: $A/B = \log_{4/3} 2 = k$. Desna strana je $2k$.
+Jednačina je $\frac{1}{2} A B = 2k$.
+Zamenimo $A = kB$:
+\[
+\frac{1}{2} k B^2 = 2k \implies B^2 = 4 \implies B = \pm 2
+\]
+Slučaj 1: $\log_{\sin x} \frac{4}{3} = 2 \implies \sin^2 x = \frac{4}{3}$. Ovo nije moguće jer je $\sin^2 x \le 1$.
+Slučaj 2: $\log_{\sin x} \frac{4}{3} = -2 \implies \sin^{-2} x = \frac{4}{3} \implies \sin^2 x = \frac{3}{4}$.
+Rešenja su $\sin x = \frac{\sqrt{3}}{2}$ ili $\sin x = -\frac{\sqrt{3}}{2}$.
+Zbog uslova $\sin x > 0$, imamo samo $\sin x = \frac{\sqrt{3}}{2}$.
+Rešenja su oblika $x \in \{\frac{\pi}{3} + 2k\pi, \frac{2\pi}{3} + 2k\pi\}$.
+Skup svih rešenja je $R = \{ \frac{\pi}{3}, \frac{2\pi}{3}, \frac{7\pi}{3}, \frac{8\pi}{3}, \dots, -\frac{4\pi}{3}, -\frac{5\pi}{3}, \dots \}$.
+Proverimo presek sa ponuđenim skupovima $S$:
+Skup (E) sadrži:
+$\frac{2\pi}{3}$ (rešenje)
+$-\frac{4\pi}{3} = \frac{2\pi}{3} - 2\pi$ (rešenje)
+$-\frac{5\pi}{3} = \frac{\pi}{3} - 2\pi$ (rešenje)
+$-\frac{2\pi}{3}$ (nije rešenje, sinus je negativan)
+$\frac{4\pi}{3}$ (nije rešenje, sinus je negativan)
+$\frac{5\pi}{3}$ (nije rešenje, sinus je negativan)
+Presek sadrži tačno 3 elementa: $\frac{2\pi}{3}, -\frac{4\pi}{3}, -\frac{5\pi}{3}$.
+
+\subsection*{Answer}
+$S=\{\frac{2\pi}{3}, -\frac{4\pi}{3}, -\frac{5\pi}{3}, -\frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}\}$ (option \textbf{E}).
+
+\end{document}

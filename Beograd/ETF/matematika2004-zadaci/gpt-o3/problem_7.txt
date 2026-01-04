@@ -1,0 +1,7 @@
+Ako su $x_1$ i $x_2$ rešenja jednačine $ax^2+bx+c=0$, tada su $x_1^3$ i $x_2^3$ rešenja jednačine:
+A) $a^3 x^2 - b^3 x + a^3 + c^3 = 0$;
+B) $a^3 x^2 + b^3 x + c^3 + 1 = 0$;
+C) $a^3 x^2 + b(b^2-3ac)x + c^3 = 0$;
+D) $a^3 x^2 + (b^3-4abc)x + c^3 = 0$;
+E) $x^2 + (a^3+b^3)x + a^3+b^3+c^3 = 0$;
+N) Ne znam.

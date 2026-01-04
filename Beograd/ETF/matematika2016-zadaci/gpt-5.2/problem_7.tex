@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Let
+\[
+f(x)=\ln\!\left(\frac{x^2-1+\sqrt{x^4+1}}{x}\right).
+\]
+Find $f'(1)$.
+
+\subsection*{Solution}
+Set
+\[
+g(x)=\frac{x^2-1+\sqrt{x^4+1}}{x},
+\]
+so $f(x)=\ln g(x)$ and $f'(x)=\dfrac{g'(x)}{g(x)}$.
+
+First,
+\[
+g(1)=\frac{1-1+\sqrt2}{1}=\sqrt2.
+\]
+Let $N(x)=x^2-1+\sqrt{x^4+1}$, so $g(x)=\dfrac{N(x)}{x}$.
+Then
+\[
+g'(x)=\frac{N'(x)\,x-N(x)}{x^2}.
+\]
+Compute
+\[
+N'(x)=2x+\frac{1}{2\sqrt{x^4+1}}\cdot 4x^3
+=2x+\frac{2x^3}{\sqrt{x^4+1}}.
+\]
+Hence
+\[
+N'(1)=2+\frac{2}{\sqrt2}=2+\sqrt2,\qquad N(1)=\sqrt2,
+\]
+so
+\[
+g'(1)=N'(1)-N(1)=(2+\sqrt2)-\sqrt2=2.
+\]
+Therefore
+\[
+f'(1)=\frac{g'(1)}{g(1)}=\frac{2}{\sqrt2}=\sqrt2.
+\]
+
+\subsection*{Answer}
+$\sqrt2$ (option \textbf{D}).
+
+\end{document}
+

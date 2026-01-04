@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 1 - Solution}
+
+\textbf{Problem:} For $x = \sqrt{(-2)^2} - \sqrt{2^2} + \sqrt{|-2|}$ and $y = \sqrt[3]{-1} - \sqrt{2}$, find the value of:
+\[
+\frac{x^3 - y^3}{x^2 - 2xy + y^2} : \frac{x^2 + xy + y^2}{x^2 - y^2}
+\]
+
+\textbf{Solution:}
+
+First, let's calculate $x$ and $y$:
+\begin{align*}
+x &= \sqrt{(-2)^2} - \sqrt{2^2} + \sqrt{|-2|} \\
+&= \sqrt{4} - \sqrt{4} + \sqrt{2} \\
+&= 2 - 2 + \sqrt{2} = \sqrt{2}
+\end{align*}
+
+\begin{align*}
+y &= \sqrt[3]{-1} - \sqrt{2} = -1 - \sqrt{2}
+\end{align*}
+
+Now let's simplify the expression using algebraic identities:
+\begin{itemize}
+\item $x^3 - y^3 = (x-y)(x^2 + xy + y^2)$
+\item $x^2 - 2xy + y^2 = (x-y)^2$
+\item $x^2 - y^2 = (x-y)(x+y)$
+\end{itemize}
+
+The expression becomes:
+\[
+\frac{(x-y)(x^2 + xy + y^2)}{(x-y)^2} \cdot \frac{(x-y)(x+y)}{x^2 + xy + y^2} = \frac{(x-y)(x+y)}{(x-y)} = x + y
+\]
+
+Therefore:
+\[
+x + y = \sqrt{2} + (-1 - \sqrt{2}) = -1
+\]
+
+\textbf{Answer: Г) $-1$}
+
+\end{document}
+

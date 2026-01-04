@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 16}
+Granična vrednost $\lim_{x \to 0} \frac{e^{\sin^2 x} - \cos x}{\sqrt{x^2+1}-1}$ iznosi:
+
+\subsection*{Solution}
+Koristimo Tejlorove razvoje funkcija u okolini nule:
+$\sin x \approx x - \frac{x^3}{6}$, pa $\sin^2 x \approx x^2$.
+$e^t \approx 1 + t$, pa $e^{\sin^2 x} \approx 1 + x^2$.
+$\cos x \approx 1 - \frac{x^2}{2}$.
+$\sqrt{1+t} \approx 1 + \frac{t}{2}$, pa $\sqrt{1+x^2} \approx 1 + \frac{x^2}{2}$.
+
+Zamenimo u limes:
+Brojilac:
+$e^{\sin^2 x} - \cos x \approx (1 + x^2) - (1 - \frac{x^2}{2}) = x^2 + \frac{x^2}{2} = \frac{3}{2}x^2$.
+
+Imenilac:
+$\sqrt{x^2+1} - 1 \approx (1 + \frac{x^2}{2}) - 1 = \frac{x^2}{2}$.
+
+Limes postaje:
+$\lim_{x \to 0} \frac{\frac{3}{2}x^2}{\frac{1}{2}x^2} = \frac{3/2}{1/2} = 3$.
+
+\subsection*{Answer}
+$3$ (option \textbf{D}).
+
+\end{document}
+

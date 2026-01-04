@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Jednačina kružnice čiji je centar na $x$-osi i koja sa parabolom $y^2=12x$ u tački $A(3,6)$ ima zajedničku tangentu je:
+
+\subsection*{Solution}
+Najpre nađimo tangentu parabole $y^2=12x$ u tački $A(3,6)$.
+Diferenciranjem:
+\[
+2y\,y'=12 \;\Rightarrow\; y'=\frac{6}{y}.
+\]
+U tački $A(3,6)$ je nagib $y'=\frac{6}{6}=1$, pa je tangenta
+\[
+y-6=1(x-3)\quad\Rightarrow\quad y=x+3.
+\]
+
+Neka je centar kružnice $C(h,0)$ (na $x$-osi). Pošto kružnica prolazi kroz $A$, važi $(3-h)^2+6^2=r^2$.
+Za zajedničku tangentu u $A$ potrebno je da poluprečnik $CA$ bude normalan na tangentu, tj.\ da je nagib prave $CA$ jednak $-1$.
+Nagib $CA$ je
+\[
+\frac{6-0}{3-h}=\frac{6}{3-h},
+\]
+pa uslov $\frac{6}{3-h}=-1$ daje $3-h=-6$, odnosno $h=9$.
+
+Tada je
+\[
+r^2=(3-9)^2+6^2=36+36=72,
+\]
+pa je jednačina kružnice
+\[
+(x-9)^2+y^2=72.
+\]
+
+\subsection*{Answer}
+$(x-9)^2+y^2=72$ (option \textbf{D}).
+
+\end{document}
+

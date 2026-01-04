@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 8}
+Domen funkcije $y = \sqrt{\log_{\frac{1}{2}} (3x^2 - 2x)}$ je skup oblika (za neke realne brojeve $a, b, c, d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+Da bi funkcija bila definisana, moraju važiti sledeći uslovi:
+1. Potkorena veličina mora biti nenegativna: $\log_{\frac{1}{2}} (3x^2 - 2x) \ge 0$.
+2. Argument logaritma mora biti pozitivan: $3x^2 - 2x > 0$.
+
+Rešavamo nejednačinu 1:
+$\log_{\frac{1}{2}} (3x^2 - 2x) \ge 0$.
+Kako je osnova logaritma $\frac{1}{2} < 1$, znak nejednakosti se menja pri oslobađanju od logaritma:
+$3x^2 - 2x \le (\frac{1}{2})^0$
+$3x^2 - 2x \le 1$
+$3x^2 - 2x - 1 \le 0$.
+Nule kvadratnog trinoma $3x^2 - 2x - 1 = 0$:
+$x_{1,2} = \frac{2 \pm \sqrt{4 + 12}}{6} = \frac{2 \pm 4}{6}$.
+$x_1 = 1$, $x_2 = -1/3$.
+Rešenje ove nejednačine je $x \in [-1/3, 1]$.
+
+Rešavamo nejednačinu 2:
+$3x^2 - 2x > 0$
+$x(3x - 2) > 0$.
+Nule su $0$ i $2/3$.
+Parabola je okrenuta nagore, pa je pozitivna van intervala nula:
+$x \in (-\infty, 0) \cup (2/3, +\infty)$.
+
+Presek uslova:
+Tražimo presek $[-1/3, 1]$ i $(-\infty, 0) \cup (2/3, +\infty)$.
+Deo $[-1/3, 1]$ koji je manji od 0 je $[-1/3, 0)$.
+Deo $[-1/3, 1]$ koji je veći od $2/3$ je $(2/3, 1]$.
+
+Dakle, domen je $[-1/3, 0) \cup (2/3, 1]$.
+Ovo odgovara obliku $[a, b) \cup (c, d]$ gde je $a=-1/3, b=0, c=2/3, d=1$.
+Uslov $-\infty < a < b < c < d < +\infty$ je zadovoljen.
+
+\subsection*{Answer}
+$[a, b) \cup (c, d]$ (option \textbf{A}).
+
+\end{document}
+

@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the minimum length of the segment between the coordinate axes cut off by a tangent line to the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ that touches the ellipse in the first quadrant ($a \geq b > 0$).
+
+(A) $\sqrt{2(a^2 + b^2)}$ \quad (B) $\frac{ab}{a+b}$ \quad (C) $\sqrt{a^2 + b^2}$ \quad (D) $\frac{b(a+b)}{a}$ \quad (E) $a + b$
+
+\subsection*{Solution}
+A point on the ellipse in the first quadrant can be parameterized as $(a\cos\theta, b\sin\theta)$ where $0 < \theta < \frac{\pi}{2}$.
+
+\textbf{Tangent line equation:}
+
+The tangent to the ellipse at $(a\cos\theta, b\sin\theta)$ is:
+\[
+\frac{x \cos\theta}{a} + \frac{y \sin\theta}{b} = 1
+\]
+
+\textbf{Find intercepts:}
+
+$x$-intercept (set $y = 0$): $x = \frac{a}{\cos\theta}$
+
+$y$-intercept (set $x = 0$): $y = \frac{b}{\sin\theta}$
+
+\textbf{Length of segment:}
+
+\[
+L = \sqrt{\left(\frac{a}{\cos\theta}\right)^2 + \left(\frac{b}{\sin\theta}\right)^2} = \sqrt{\frac{a^2}{\cos^2\theta} + \frac{b^2}{\sin^2\theta}}
+\]
+
+\textbf{Minimize $L^2$:}
+
+Let $L^2 = f(\theta) = \frac{a^2}{\cos^2\theta} + \frac{b^2}{\sin^2\theta}$
+
+Take derivative and set to zero:
+\[
+f'(\theta) = \frac{2a^2 \sin\theta}{\cos^3\theta} - \frac{2b^2 \cos\theta}{\sin^3\theta} = 0
+\]
+\[
+\frac{a^2 \sin\theta}{\cos^3\theta} = \frac{b^2 \cos\theta}{\sin^3\theta}
+\]
+\[
+a^2 \sin^4\theta = b^2 \cos^4\theta
+\]
+\[
+\tan^4\theta = \frac{b^2}{a^2} \implies \tan^2\theta = \frac{b}{a}
+\]
+
+Let $\tan\theta = \sqrt{\frac{b}{a}}$. Then:
+\[
+\sin^2\theta = \frac{b/a}{1 + b/a} = \frac{b}{a+b}, \quad \cos^2\theta = \frac{a}{a+b}
+\]
+
+\textbf{Calculate minimum $L^2$:}
+\[
+L^2 = \frac{a^2(a+b)}{a} + \frac{b^2(a+b)}{b} = a(a+b) + b(a+b) = (a+b)^2
+\]
+
+Therefore:
+\[
+L_{\min} = a + b
+\]
+
+\subsection*{Answer}
+$a + b$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 12}
+U razvoju binoma
+\[
+\left(x-\frac{1}{\sqrt[5]{x}}\right)^{12}\qquad (x\in\mathbb{R}\setminus\{0\}),
+\]
+naći član koji ne sadrži \(x\) (konstantan član).
+
+\subsection*{Rešenje}
+Opšti član binomnog razvoja je
+\[
+\binom{12}{k}x^{12-k}\left(-x^{-1/5}\right)^k
+=\binom{12}{k}(-1)^k x^{12-k-k/5}
+=\binom{12}{k}(-1)^k x^{12-\frac{6k}{5}}.
+\]
+Konstantan član dobijamo kada je eksponent jednak nuli:
+\[
+12-\frac{6k}{5}=0 \;\Rightarrow\; \frac{6k}{5}=12 \;\Rightarrow\; k=10.
+\]
+Zato je konstantan član
+\[
+\binom{12}{10}(-1)^{10}=\binom{12}{2}=66.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(B)\ 66}
+\]
+\end{document}
+

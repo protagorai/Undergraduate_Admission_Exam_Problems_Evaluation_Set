@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 4}
+The expression $\left( \frac{x\sqrt{x} - y\sqrt{y}}{\sqrt{x} - \sqrt{y}} + \sqrt{xy} \right) : \left( \frac{\sqrt{x} - \sqrt{y}}{x - y} \right)^{-2}$, for all defined values $x, y \in \mathbb{R}$, is identically equal to:
+
+\subsection*{Solution}
+Let $a = \sqrt{x}$ and $b = \sqrt{y}$. Then $x = a^2$ and $y = b^2$. The expression can be rewritten in terms of $a$ and $b$.
+First part:
+\[ \frac{x\sqrt{x} - y\sqrt{y}}{\sqrt{x} - \sqrt{y}} + \sqrt{xy} = \frac{a^3 - b^3}{a - b} + ab \]
+Using the difference of cubes formula $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$:
+\[ \frac{(a - b)(a^2 + ab + b^2)}{a - b} + ab = a^2 + ab + b^2 + ab = a^2 + 2ab + b^2 = (a + b)^2 \]
+Second part:
+\[ \left( \frac{\sqrt{x} - \sqrt{y}}{x - y} \right)^{-2} = \left( \frac{a - b}{a^2 - b^2} \right)^{-2} \]
+Simplify the fraction inside:
+\[ \frac{a - b}{(a - b)(a + b)} = \frac{1}{a + b} \]
+So the term is:
+\[ \left( \frac{1}{a + b} \right)^{-2} = (a + b)^2 \]
+Now divide the first part by the second part:
+\[ (a + b)^2 : (a + b)^2 = 1 \]
+
+\subsection*{Answer}
+1 (option \textbf{A}).
+
+\end{document}

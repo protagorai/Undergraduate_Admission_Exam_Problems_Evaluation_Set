@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 18}
+Maksimalna zapremina $V$ pravilne šestostrane piramide upisane u loptu poluprečnika $R$ iznosi:
+
+\subsection*{Solution}
+Neka je $a$ osnovna ivica, a $H$ visina piramide.
+Poluprečnik kruga opisanog oko baze (šestougla) je $r_b = a$.
+Veza između elemenata piramide upisane u sferu:
+$r_b^2 + (H-R)^2 = R^2$ (gde je centar sfere na visini, a vrh piramide je na sferi).
+$a^2 + H^2 - 2HR + R^2 = R^2$
+$a^2 = 2HR - H^2$.
+
+Zapremina piramide:
+$V = \frac{1}{3} B H$.
+Baza je pravilan šestougao površine $B = 6 \cdot \frac{a^2\sqrt{3}}{4} = \frac{3\sqrt{3}}{2} a^2$.
+$V(H) = \frac{1}{3} \cdot \frac{3\sqrt{3}}{2} (2HR - H^2) H = \frac{\sqrt{3}}{2} (2RH^2 - H^3)$.
+
+Tražimo maksimum funkcije $V(H)$ po $H$.
+Izvod po $H$:
+$V'(H) = \frac{\sqrt{3}}{2} (4RH - 3H^2)$.
+Izjednačimo sa nulom:
+$H(4R - 3H) = 0$.
+Rešenja su $H=0$ (minimum) i $H = \frac{4R}{3}$ (maksimum).
+
+Maksimalna zapremina:
+$V_{max} = V(4R/3) = \frac{\sqrt{3}}{2} \left[ 2R \left(\frac{4R}{3}\right)^2 - \left(\frac{4R}{3}\right)^3 \right]$
+$V_{max} = \frac{\sqrt{3}}{2} \left[ 2R \cdot \frac{16R^2}{9} - \frac{64R^3}{27} \right]$
+$V_{max} = \frac{\sqrt{3}}{2} \left[ \frac{32R^3}{9} - \frac{64R^3}{27} \right]$
+$V_{max} = \frac{\sqrt{3}}{2} \left[ \frac{96R^3 - 64R^3}{27} \right]$
+$V_{max} = \frac{\sqrt{3}}{2} \cdot \frac{32R^3}{27} = \frac{16\sqrt{3}R^3}{27}$.
+
+\subsection*{Answer}
+$\frac{16\sqrt{3}R^3}{27}$ (option \textbf{A}).
+
+\end{document}
+

@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Let
+\[
+z=\frac{\sqrt{2016}+i^{2019}}{\sqrt{2016}+i^{2017}},\qquad (i^2=-1).
+\]
+Compute
+\[
+\frac{z+\overline z}{2}.
+\]
+
+\subsection*{Solution}
+Since $i^4=1$, we have
+\[
+i^{2019}=i^{4\cdot 504+3}=i^3=-i,\qquad i^{2017}=i^{4\cdot 504+1}=i.
+\]
+Let $a=\sqrt{2016}$. Then
+\[
+z=\frac{a-i}{a+i}.
+\]
+Multiply numerator and denominator by the conjugate $(a-i)$:
+\[
+z=\frac{(a-i)^2}{a^2+1}=\frac{a^2-2ai-1}{a^2+1}.
+\]
+Hence the real part is
+\[
+\Re(z)=\frac{a^2-1}{a^2+1}=\frac{2016-1}{2016+1}=\frac{2015}{2017}.
+\]
+But $\dfrac{z+\overline z}{2}=\Re(z)$, so the value is $\dfrac{2015}{2017}$.
+
+\subsection*{Answer}
+$\dfrac{2015}{2017}$ (option \textbf{C}).
+
+\end{document}
+

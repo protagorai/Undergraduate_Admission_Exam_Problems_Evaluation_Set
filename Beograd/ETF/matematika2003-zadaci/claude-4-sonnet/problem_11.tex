@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+The maximum height of the inscribed cylinder in a ball of radius $\sqrt{3}$ equals:
+
+A) $1$; B) $2$; C) $2\sqrt{2}$; D) $\sqrt{3}$; E) $\frac{3}{2}$; N) Ne znam.
+
+\subsection*{Solution}
+Consider a sphere of radius $R = \sqrt{3}$ centered at the origin. An inscribed cylinder has its axis along a diameter of the sphere.
+
+Let the cylinder have radius $r$ and height $h$. The cylinder fits inside the sphere, so if we place the cylinder with its axis along the z-axis, the top and bottom circular faces are at $z = \pm\frac{h}{2}$.
+
+The constraint is that the circular edge of the cylinder at height $\frac{h}{2}$ must lie within the sphere:
+\[
+r^2 + \left(\frac{h}{2}\right)^2 = R^2 = 3
+\]
+
+So: $r^2 = 3 - \frac{h^2}{4}$
+
+The volume of the cylinder is:
+\[
+V = \pi r^2 h = \pi\left(3 - \frac{h^2}{4}\right)h = \pi\left(3h - \frac{h^3}{4}\right)
+\]
+
+To maximize volume, we take the derivative and set it to zero:
+\[
+\frac{dV}{dh} = \pi\left(3 - \frac{3h^2}{4}\right) = 0
+\]
+
+\[
+3 = \frac{3h^2}{4}
+\]
+
+\[
+h^2 = 4
+\]
+
+\[
+h = 2
+\]
+
+We can verify this is a maximum by checking the second derivative or noting that $V(0) = V(2\sqrt{3}) = 0$ and $V(2) > 0$.
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}

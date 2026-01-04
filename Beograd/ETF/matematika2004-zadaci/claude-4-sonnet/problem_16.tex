@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+U razvoju stepena binoma $(\sqrt{x} - \frac{1}{\sqrt{x}})^8$ jedan član je $a \cdot x^{-\frac{1}{2}}$. Tada je $a$ jednako:
+
+\subsection*{Solution}
+Opšti član u razvoju $(\sqrt{x} - \frac{1}{\sqrt{x}})^8$ je:
+\[
+\binom{8}{k} (\sqrt{x})^{8-k} \left(-\frac{1}{\sqrt{x}}\right)^k = \binom{8}{k} (-1)^k x^{\frac{8-k}{2}} x^{-\frac{k}{2}}
+\]
+\[
+= \binom{8}{k} (-1)^k x^{\frac{8-k-k}{2}} = \binom{8}{k} (-1)^k x^{\frac{8-2k}{2}} = \binom{8}{k} (-1)^k x^{4-k}
+\]
+
+Želimo da eksponent od $x$ bude $-\frac{1}{2}$:
+\[
+4 - k = -\frac{1}{2}
+\]
+\[
+k = 4 + \frac{1}{2} = \frac{9}{2}
+\]
+
+Pošto $k$ mora biti ceo broj, nema člana sa $x^{-\frac{1}{2}}$.
+
+Međutim, možda je greška u interpretaciji. Proveravamo ponovo:
+
+Opšti član je:
+\[
+\binom{8}{k} (\sqrt{x})^{8-k} \left(-\frac{1}{\sqrt{x}}\right)^k = \binom{8}{k} (-1)^k x^{\frac{8-k}{2}} x^{-\frac{k}{2}} = \binom{8}{k} (-1)^k x^{\frac{8-2k}{2}}
+\]
+
+Za eksponent $-\frac{1}{2}$:
+\[
+\frac{8-2k}{2} = -\frac{1}{2}
+\]
+\[
+8-2k = -1
+\]
+\[
+2k = 9
+\]
+\[
+k = \frac{9}{2}
+\]
+
+Ovo nije ceo broj, pa nema takvog člana. Možda je pitanje pogrešno postavljeno.
+
+Ako pretpostavimo da je pitanje o članu sa $x^{-1}$, tada je $k = \frac{10}{2} = 5$:
+\[
+\binom{8}{5} (-1)^5 = -56
+\]
+
+\subsection*{Answer}
+$-56$ (option \textbf{C}).
+
+\end{document}

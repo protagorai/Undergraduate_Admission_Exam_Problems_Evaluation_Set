@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 20}
+Granična vrednost $\lim_{x\to 0} \frac{1 - \cos x \cos(2x) \cos(3x)}{1 - \cos x}$ jednaka je:
+
+\subsection*{Rešenje}
+Koristimo Taylorov razvoj $\cos u \approx 1 - u^2/2$.
+Imenilac: $1 - (1 - x^2/2) = x^2/2$.
+Brojilac: $1 - (1-x^2/2)(1-4x^2/2)(1-9x^2/2) \approx 1 - (1 - \frac{1}{2}x^2 - 2x^2 - \frac{9}{2}x^2) = \frac{1+4+9}{2}x^2 = \frac{14}{2}x^2 = 7x^2$.
+Limes je $\frac{7x^2}{x^2/2} = 14$.
+
+\subsection*{Odgovor}
+14 (opcija \textbf{B}).
+
+\end{document}

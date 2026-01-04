@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Vrednost izraza $49^{1-\log_7 2} + 5^{-\log_5 4}$ iznosi:
+
+\subsection*{Solution}
+Koristićemo svojstva logaritma i eksponencijalnih funkcija.
+
+Za prvi deo:
+\[49^{1-\log_7 2} = 49^1 \cdot 49^{-\log_7 2}\]
+
+Pošto je $49 = 7^2$:
+\[49^{-\log_7 2} = (7^2)^{-\log_7 2} = 7^{-2\log_7 2}\]
+
+Koristeći svojstvo $a^{\log_a x} = x$:
+\[7^{-2\log_7 2} = 7^{\log_7 2^{-2}} = 2^{-2} = \frac{1}{4}\]
+
+Dakle:
+\[49^{1-\log_7 2} = 49 \cdot \frac{1}{4} = \frac{49}{4}\]
+
+Za drugi deo:
+\[5^{-\log_5 4} = 5^{\log_5 4^{-1}} = 4^{-1} = \frac{1}{4}\]
+
+Ukupno:
+\[49^{1-\log_7 2} + 5^{-\log_5 4} = \frac{49}{4} + \frac{1}{4} = \frac{50}{4} = \frac{25}{2}\]
+
+\subsection*{Answer}
+$\frac{25}{2}$ (opcija \textbf{B}).
+
+\end{document}

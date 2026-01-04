@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Evaluate
+\[
+8\sin^2 80^\circ-2\sqrt3\sin40^\circ-2\cos40^\circ.
+\]
+Options: (A) $2$ \quad (B) $2\sqrt3$ \quad (C) $4\sqrt3$ \quad (D) $4$ \quad (E) $1$.
+
+\subsection*{Solution}
+First,
+\[
+8\sin^2 80^\circ=8\cdot\frac{1-\cos160^\circ}{2}=4(1-\cos160^\circ).
+\]
+Since $\cos160^\circ=\cos(180^\circ-20^\circ)=-\cos20^\circ$, we get
+\[
+8\sin^2 80^\circ=4(1+\cos20^\circ)=4+4\cos20^\circ.
+\]
+Now use $\cos20^\circ=\cos(60^\circ-40^\circ)=\cos60^\circ\cos40^\circ+\sin60^\circ\sin40^\circ$:
+\[
+\cos20^\circ=\frac12\cos40^\circ+\frac{\sqrt3}{2}\sin40^\circ,
+\]
+so
+\[
+4\cos20^\circ=2\cos40^\circ+2\sqrt3\sin40^\circ.
+\]
+Therefore the whole expression equals
+\[
+4+\bigl(2\cos40^\circ+2\sqrt3\sin40^\circ\bigr)-2\sqrt3\sin40^\circ-2\cos40^\circ=4.
+\]
+
+\subsection*{Answer}
+$4$ (option \textbf{D}).
+
+\end{document}
+

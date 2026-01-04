@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+If the line $y = kx + n$ is the common tangent to the circle $x^2 + y^2 = 4$ and ellipse $2x^2 + 5y^2 = 10$, then $k^2 + n^2$ equals:
+
+A) $4$; B) $7$; C) $6$; D) $5$; E) $14$; N) Ne znam.
+
+\subsection*{Solution}
+The circle has equation $x^2 + y^2 = 4$ (radius $r = 2$).
+The ellipse has equation $2x^2 + 5y^2 = 10$, or $\frac{x^2}{5} + \frac{y^2}{2} = 1$.
+
+For the line $y = kx + n$ to be tangent to the circle $x^2 + y^2 = 4$:
+The distance from the center $(0,0)$ to the line $kx - y + n = 0$ must equal the radius:
+\[
+\frac{|n|}{\sqrt{k^2 + 1}} = 2
+\]
+\[
+|n| = 2\sqrt{k^2 + 1}
+\]
+\[
+n^2 = 4(k^2 + 1) = 4k^2 + 4
+\]
+
+For the line to be tangent to the ellipse $\frac{x^2}{5} + \frac{y^2}{2} = 1$:
+Substituting $y = kx + n$ into the ellipse equation:
+\[
+\frac{x^2}{5} + \frac{(kx + n)^2}{2} = 1
+\]
+\[
+\frac{x^2}{5} + \frac{k^2x^2 + 2knx + n^2}{2} = 1
+\]
+\[
+\frac{2x^2 + 5k^2x^2 + 10knx + 5n^2}{10} = 1
+\]
+\[
+(2 + 5k^2)x^2 + 10knx + (5n^2 - 10) = 0
+\]
+
+For tangency, the discriminant must be zero:
+\[
+(10kn)^2 - 4(2 + 5k^2)(5n^2 - 10) = 0
+\]
+\[
+100k^2n^2 - 4(2 + 5k^2)(5n^2 - 10) = 0
+\]
+\[
+100k^2n^2 - 4(10n^2 - 20 + 25k^2n^2 - 50k^2) = 0
+\]
+\[
+100k^2n^2 - 40n^2 + 80 - 100k^2n^2 + 200k^2 = 0
+\]
+\[
+-40n^2 + 80 + 200k^2 = 0
+\]
+\[
+40n^2 = 80 + 200k^2
+\]
+\[
+n^2 = 2 + 5k^2
+\]
+
+From the circle condition: $n^2 = 4k^2 + 4$
+From the ellipse condition: $n^2 = 5k^2 + 2$
+
+Setting them equal:
+\[
+4k^2 + 4 = 5k^2 + 2
+\]
+\[
+2 = k^2
+\]
+
+Therefore: $k^2 = 2$ and $n^2 = 4(2) + 4 = 12$
+
+So: $k^2 + n^2 = 2 + 12 = 14$
+
+\subsection*{Answer}
+$14$ (option \textbf{E}).
+
+\end{document}

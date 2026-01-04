@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+The total number of integer pairs $(x,y)$ such that $|x^2 - 2x| - y < \frac{1}{2}$ and $y + |x - 1| < 2$ is:
+
+\subsection*{Solution}
+We have the system of inequalities:
+\begin{align}
+|x^2 - 2x| - y &< \frac{1}{2}\\
+y + |x - 1| &< 2
+\end{align}
+
+From the second inequality: $y < 2 - |x - 1|$
+
+Substituting into the first inequality:
+\[|x^2 - 2x| - (2 - |x - 1|) < \frac{1}{2}\]
+\[|x^2 - 2x| + |x - 1| < \frac{5}{2}\]
+
+Let's analyze $x^2 - 2x = x(x-2)$:
+- For $x \leq 0$ or $x \geq 2$: $x^2 - 2x \geq 0$, so $|x^2 - 2x| = x^2 - 2x$
+- For $0 < x < 2$: $x^2 - 2x < 0$, so $|x^2 - 2x| = -(x^2 - 2x) = 2x - x^2$
+
+Also, $|x - 1| = \begin{cases} 1-x & \text{if } x \leq 1 \\ x-1 & \text{if } x > 1 \end{cases}$
+
+Case 1: $x \leq 0$
+$|x^2 - 2x| = x^2 - 2x$ and $|x - 1| = 1 - x$
+Inequality becomes: $(x^2 - 2x) + (1 - x) < \frac{5}{2}$
+$x^2 - 3x + 1 < \frac{5}{2}$
+$x^2 - 3x - \frac{3}{2} < 0$
+
+The roots are $x = \frac{3 \pm \sqrt{9 + 6}}{2} = \frac{3 \pm \sqrt{15}}{2}$
+
+Since $\sqrt{15} \approx 3.87$, the roots are approximately $x \approx 3.44$ and $x \approx -0.44$.
+
+For $x \leq 0$, we need $x > -0.44$, so $x \in (-0.44, 0]$.
+Integer values: none (since $-0.44 < x \leq 0$ has no integers).
+
+Case 2: $0 < x \leq 1$
+$|x^2 - 2x| = 2x - x^2$ and $|x - 1| = 1 - x$
+Inequality becomes: $(2x - x^2) + (1 - x) < \frac{5}{2}$
+$x + 1 - x^2 < \frac{5}{2}$
+$-x^2 + x - \frac{3}{2} < 0$
+$x^2 - x + \frac{3}{2} > 0$
+
+The discriminant is $1 - 6 = -5 < 0$, so this is always positive.
+Thus all $x \in (0,1]$ satisfy this. Integer value: $x = 1$.
+
+Case 3: $1 < x < 2$
+$|x^2 - 2x| = 2x - x^2$ and $|x - 1| = x - 1$
+Inequality becomes: $(2x - x^2) + (x - 1) < \frac{5}{2}$
+$3x - x^2 - 1 < \frac{5}{2}$
+$-x^2 + 3x - \frac{7}{2} < 0$
+$x^2 - 3x + \frac{7}{2} > 0$
+
+The discriminant is $9 - 14 = -5 < 0$, so this is always positive.
+Thus all $x \in (1,2)$ satisfy this. No integer values in this interval.
+
+Case 4: $x \geq 2$
+$|x^2 - 2x| = x^2 - 2x$ and $|x - 1| = x - 1$
+Inequality becomes: $(x^2 - 2x) + (x - 1) < \frac{5}{2}$
+$x^2 - x - 1 < \frac{5}{2}$
+$x^2 - x - \frac{7}{2} < 0$
+
+The roots are $x = \frac{1 \pm \sqrt{1 + 14}}{2} = \frac{1 \pm \sqrt{15}}{2}$
+
+Since $\sqrt{15} \approx 3.87$, we get $x \approx 2.44$ and $x \approx -1.44$.
+
+For $x \geq 2$, we need $x < 2.44$, so $x \in [2, 2.44)$.
+Integer value: $x = 2$.
+
+So the possible integer values for $x$ are: $x \in \{1, 2\}$.
+
+For each valid $x$, we need $y < 2 - |x - 1|$ and $y > |x^2 - 2x| - \frac{1}{2}$.
+
+For $x = 1$: $y < 2 - 0 = 2$ and $y > |1 - 2| - \frac{1}{2} = 1 - \frac{1}{2} = \frac{1}{2}$
+So $\frac{1}{2} < y < 2$. Integer values: $y \in \{1\}$.
+
+For $x = 2$: $y < 2 - 1 = 1$ and $y > |4 - 4| - \frac{1}{2} = -\frac{1}{2}$
+So $-\frac{1}{2} < y < 1$. Integer values: $y \in \{0\}$.
+
+Total integer pairs: $(1,1)$ and $(2,0)$.
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}

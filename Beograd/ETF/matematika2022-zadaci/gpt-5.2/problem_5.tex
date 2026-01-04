@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Let
+\[
+P(x)=x^{2022}-2x^{2021}+x^{2019}-x^2+2x+1,\qquad Q(x)=x^2+1.
+\]
+Find the remainder when $P(x)$ is divided by $Q(x)$.
+
+\subsection*{Solution}
+Modulo $x^2+1$ we have $x^2\equiv -1$. Hence
+\[
+x^{2k}\equiv (-1)^k,\qquad x^{2k+1}\equiv (-1)^k x.
+\]
+Compute each term:
+\[
+x^{2022}=x^{2\cdot 1011}\equiv (-1)^{1011}=-1,
+\]
+\[
+-2x^{2021}=-2x^{2\cdot 1010+1}\equiv -2(-1)^{1010}x=-2x,
+\]
+\[
+x^{2019}=x^{2\cdot 1009+1}\equiv (-1)^{1009}x=-x.
+\]
+Also,
+\[
+-x^2+2x+1\equiv -(-1)+2x+1=2+2x.
+\]
+Summing:
+\[
+(-1)+(-2x)+(-x)+(2+2x)=1-x.
+\]
+So the remainder is $1-x=-x+1$.
+
+\subsection*{Answer}
+$-x+1$ (option \textbf{E}).
+
+\end{document}
+

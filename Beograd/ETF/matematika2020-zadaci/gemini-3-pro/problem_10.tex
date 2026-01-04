@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Broj svih realnih rešenja jednačine $2x^2-6x+\sqrt{x^2-3x+6}+2=0$ jeste:
+\[
+(A)\ 2\quad (B)\ 1\quad (C)\ 3\quad (D)\ 4\quad (E)\ \text{Veći od 4}\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Uvedimo smenu $t = \sqrt{x^2-3x+6}$.
+Primetimo da je potkorena veličina uvek pozitivna jer je diskriminanta $D = (-3)^2 - 4(1)(6) = 9 - 24 = -15 < 0$, a koeficijent uz $x^2$ pozitivan.
+Takođe, minimalna vrednost potkorene veličine je $f(3/2) = 9/4 - 9/2 + 6 = 15/4$, pa je $t \ge \frac{\sqrt{15}}{2}$.
+Izraz $x^2-3x$ možemo izraziti preko $t$: $t^2 = x^2-3x+6 \implies x^2-3x = t^2-6$.
+Jednačina postaje:
+\[
+2(x^2-3x) + \sqrt{x^2-3x+6} + 2 = 0
+\]
+\[
+2(t^2-6) + t + 2 = 0
+\]
+\[
+2t^2 - 12 + t + 2 = 0
+\]
+\[
+2t^2 + t - 10 = 0
+\]
+Rešavamo kvadratnu jednačinu po $t$:
+\[
+t_{1,2} = \frac{-1 \pm \sqrt{1 - 4(2)(-10)}}{4} = \frac{-1 \pm \sqrt{81}}{4} = \frac{-1 \pm 9}{4}
+\]
+$t_1 = 2$, $t_2 = -2.5$.
+Zbog uslova $t > 0$, jedino prihvatljivo rešenje je $t=2$.
+Vraćamo smenu:
+\[
+\sqrt{x^2-3x+6} = 2
+\]
+Kvadriranjem:
+\[
+x^2-3x+6 = 4
+\]
+\[
+x^2-3x+2 = 0
+\]
+\[
+(x-1)(x-2) = 0
+\]
+Rešenja su $x_1=1$ i $x_2=2$.
+Oba rešenja su realna. Dakle, broj rešenja je 2.
+
+\subsection*{Answer}
+$2$ (option \textbf{A}).
+
+\end{document}

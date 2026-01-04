@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Data je funkcija $f(x) = x - \sin \pi x \cdot \cos \pi x + \frac{\ln 2x}{x} + e^{\text{tg} 2\pi x}$. Tada je vrednost $f'(\frac{1}{2})$ jednaka:
+(A) 0
+(B) $5 + 3\pi$
+(C) $3\pi$
+(D) 5
+(E) $e$
+(N) Ne znam
+
+\subsection*{Solution}
+First, simplify the function expression. Using the double angle identity $\sin(2\theta) = 2\sin\theta\cos\theta$:
+\[
+\sin \pi x \cdot \cos \pi x = \frac{1}{2} \sin 2\pi x.
+\]
+So,
+\[
+f(x) = x - \frac{1}{2} \sin 2\pi x + \frac{\ln 2x}{x} + e^{\tan 2\pi x}.
+\]
+Now find the derivative $f'(x)$.
+1. Derivative of $x$ is $1$.
+2. Derivative of $-\frac{1}{2} \sin 2\pi x$ is $-\frac{1}{2} \cdot \cos(2\pi x) \cdot 2\pi = -\pi \cos 2\pi x$.
+3. Derivative of $\frac{\ln 2x}{x}$: Use the quotient rule. Note $\ln 2x = \ln 2 + \ln x$, so $(\ln 2x)' = 1/x$.
+   \[
+   \left(\frac{\ln 2x}{x}\right)' = \frac{(\frac{1}{x}) \cdot x - (\ln 2x) \cdot 1}{x^2} = \frac{1 - \ln 2x}{x^2}.
+   \]
+4. Derivative of $e^{\tan 2\pi x}$: Use the chain rule. $(\tan u)' = \frac{1}{\cos^2 u} \cdot u'$.
+   \[
+   (e^{\tan 2\pi x})' = e^{\tan 2\pi x} \cdot \frac{1}{\cos^2 2\pi x} \cdot 2\pi.
+   \]
+
+Combine these parts:
+\[
+f'(x) = 1 - \pi \cos 2\pi x + \frac{1 - \ln 2x}{x^2} + \frac{2\pi e^{\tan 2\pi x}}{\cos^2 2\pi x}.
+\]
+Evaluate at $x = \frac{1}{2}$.
+- $2\pi x = \pi$.
+- $\cos \pi = -1$.
+- $\tan \pi = 0$.
+- $\ln (2 \cdot \frac{1}{2}) = \ln 1 = 0$.
+
+Substitute these values:
+\[
+f'(\frac{1}{2}) = 1 - \pi (-1) + \frac{1 - 0}{(\frac{1}{2})^2} + \frac{2\pi e^0}{(-1)^2}
+\]
+\[
+= 1 + \pi + \frac{1}{1/4} + \frac{2\pi}{1}
+\]
+\[
+= 1 + \pi + 4 + 2\pi = 5 + 3\pi.
+\]
+
+\subsection*{Answer}
+$5 + 3\pi$ (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Find the difference between the largest and smallest solutions of the inequality:
+\[
+\sqrt[4]{(\sqrt{2}+1)^x} + \sqrt[4]{(\sqrt{2}-1)^x} \leq 2\sqrt{2}
+\]
+
+(A) 2 \quad (B) 8 \quad (C) 4 \quad (D) 6 \quad (E) 10
+
+\subsection*{Solution}
+Let $u = \sqrt[4]{(\sqrt{2}+1)^x} = (\sqrt{2}+1)^{x/4}$.
+
+Note that $(\sqrt{2}+1)(\sqrt{2}-1) = 2 - 1 = 1$, so $\sqrt{2}-1 = \frac{1}{\sqrt{2}+1}$.
+
+Therefore:
+\[
+\sqrt[4]{(\sqrt{2}-1)^x} = \left(\frac{1}{\sqrt{2}+1}\right)^{x/4} = (\sqrt{2}+1)^{-x/4} = \frac{1}{u}
+\]
+
+The inequality becomes:
+\[
+u + \frac{1}{u} \leq 2\sqrt{2}
+\]
+
+\textbf{Analyze $f(u) = u + \frac{1}{u}$:}
+
+For $u > 0$, $f(u) \geq 2$ with minimum at $u = 1$.
+
+Setting $f(u) = 2\sqrt{2}$:
+\[
+u + \frac{1}{u} = 2\sqrt{2}
+\]
+\[
+u^2 - 2\sqrt{2}u + 1 = 0
+\]
+\[
+u = \frac{2\sqrt{2} \pm \sqrt{8 - 4}}{2} = \frac{2\sqrt{2} \pm 2}{2} = \sqrt{2} \pm 1
+\]
+
+So the inequality $u + \frac{1}{u} \leq 2\sqrt{2}$ holds when:
+\[
+\sqrt{2} - 1 \leq u \leq \sqrt{2} + 1
+\]
+
+\textbf{Convert back to $x$:}
+
+$u = (\sqrt{2}+1)^{x/4}$
+
+For $u = \sqrt{2} + 1$:
+\[
+(\sqrt{2}+1)^{x/4} = \sqrt{2}+1 \implies \frac{x}{4} = 1 \implies x = 4
+\]
+
+For $u = \sqrt{2} - 1 = \frac{1}{\sqrt{2}+1} = (\sqrt{2}+1)^{-1}$:
+\[
+(\sqrt{2}+1)^{x/4} = (\sqrt{2}+1)^{-1} \implies \frac{x}{4} = -1 \implies x = -4
+\]
+
+\textbf{Difference:}
+\[
+x_{\max} - x_{\min} = 4 - (-4) = 8
+\]
+
+\subsection*{Answer}
+$8$ (option \textbf{B}).
+
+\end{document}

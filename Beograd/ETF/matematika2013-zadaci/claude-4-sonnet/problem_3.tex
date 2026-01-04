@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Vrednost izraza $\frac{x^{0.5} + 1}{x + x^{0.5} + 1} : \frac{1}{x^{1.5} - 1}$, za $x \geq 0, x \neq 1$ je:
+
+\subsection*{Solution}
+Prvo prepisujemo izraz:
+\[
+\frac{x^{0.5} + 1}{x + x^{0.5} + 1} \cdot \frac{x^{1.5} - 1}{1}
+\]
+
+Označimo $t = x^{0.5} = \sqrt{x}$. Tada je $x = t^2$ i $x^{1.5} = t^3$.
+
+Izraz postaje:
+\[
+\frac{t + 1}{t^2 + t + 1} \cdot (t^3 - 1)
+\]
+
+Koristimo faktorizaciju $t^3 - 1 = (t - 1)(t^2 + t + 1)$:
+\[
+\frac{t + 1}{t^2 + t + 1} \cdot (t - 1)(t^2 + t + 1) = (t + 1)(t - 1) = t^2 - 1
+\]
+
+Vraćajući se na $x$:
+\[
+t^2 - 1 = x - 1
+\]
+
+\subsection*{Answer}
+$x - 1$ (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Solve the inequality
+\[
+\frac{\left|\log_3|2x+3|\right|-3}{\log_3 x}>0,
+\]
+and express the solution as an interval union.
+
+\subsection*{Solution}
+Domain: $\log_3 x$ requires $x>0$, and $\log_3|2x+3|$ requires $|2x+3|>0$, which holds for all $x>0$.
+So $x>0$ and $x\ne 1$ (since $\log_3 1=0$ would make the fraction undefined).
+
+For $x>0$ we have $2x+3>0$, hence $|2x+3|=2x+3$ and also $\log_3(2x+3)>0$.
+Therefore $\left|\log_3|2x+3|\right|=\log_3(2x+3)$, and the inequality becomes
+\[
+\frac{\log_3(2x+3)-3}{\log_3 x}>0.
+\]
+Now
+\[
+\log_3(2x+3)-3=\log_3\!\left(\frac{2x+3}{27}\right),
+\]
+so the numerator is $>0$ exactly when $2x+3>27$, i.e. $x>12$, and $<0$ when $0<x<12$.
+
+The denominator $\log_3 x$ is $<0$ for $0<x<1$ and $>0$ for $x>1$.
+For the fraction to be $>0$, numerator and denominator must have the same sign:
+\[
+0<x<1 \quad(\text{both negative}),\qquad \text{or}\qquad x>12 \quad(\text{both positive}).
+\]
+Thus the solution set is
+\[
+(0,1)\cup(12,+\infty).
+\]
+
+\subsection*{Answer}
+$(0,1)\cup(12,+\infty)$ (option \textbf{D}).
+
+\end{document}
+

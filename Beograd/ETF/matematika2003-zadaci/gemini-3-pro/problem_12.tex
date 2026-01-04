@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 12}
+Broj rešenja jednačine $(\cos x)^{\sin^2 x - \frac{3}{2} \sin x + \frac{1}{2}} = 1$ na intervalu $[0, \frac{\pi}{2})$ je:
+
+A) 0; B) 1; C) 2; D) 3; E) 4; N) Ne znam.
+
+\subsection*{Solution}
+Jednačina oblika $f(x)^{g(x)} = 1$ ima rešenja u sledećim slučajevima:
+
+1. $f(x) = 1$.
+$\cos x = 1 \Rightarrow x = 2k\pi$.
+U intervalu $[0, \pi/2)$, jedino rešenje je $x=0$.
+Provera eksponenta: $\sin^2 0 - \frac{3}{2} \sin 0 + \frac{1}{2} = 0.5$.
+$1^{0.5} = 1$. Rešenje $x=0$ je validno.
+
+2. $f(x) = -1$ i $g(x)$ je paran celobroj.
+$\cos x = -1$. Nema rešenja u intervalu $[0, \pi/2)$.
+
+3. $g(x) = 0$ i $f(x) \neq 0$.
+$\sin^2 x - \frac{3}{2} \sin x + \frac{1}{2} = 0$.
+Smena $t = \sin x$. $2t^2 - 3t + 1 = 0$.
+Rešenja kvadratne jednačine:
+$t_{1,2} = \frac{3 \pm \sqrt{9-8}}{4} = \frac{3 \pm 1}{4}$.
+$t_1 = 1$, $t_2 = 1/2$.
+a) $\sin x = 1 \Rightarrow x = \pi/2 + 2k\pi$. Nije u $[0, \pi/2)$ jer je interval otvoren sa desne strane.
+b) $\sin x = 1/2 \Rightarrow x = \pi/6$ ili $x = 5\pi/6$.
+U intervalu $[0, \pi/2)$ se nalazi samo $x = \pi/6$.
+Provera baze: $\cos(\pi/6) = \sqrt{3}/2 \neq 0$. Validno.
+
+Ukupno rešenja: $x \in \{0, \pi/6\}$. Broj rešenja je 2.
+
+\subsection*{Answer}
+2 (option \textbf{C}).
+\end{document}

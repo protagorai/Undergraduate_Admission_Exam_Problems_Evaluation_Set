@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Neka je oko trougla čije su stranice $a$, $b$ i $c$ i površina $P = 15\sqrt{3}\text{cm}^2$, opisana kružnica poluprečnika $R = \frac{14\sqrt{3}}{3}\text{cm}$. Ako je $a$ stranica dužine 10cm, koja se nalazi naspram jednog oštrog ugla, zbir dužina stranica $b$ i $c$ iznosi (u cm):
+
+\subsection*{Solution}
+Koristimo formulu za površinu trougla preko poluprečnika opisane kružnice:
+\[P = \frac{abc}{4R}\]
+
+Odatle:
+\[abc = 4PR = 4 \cdot 15\sqrt{3} \cdot \frac{14\sqrt{3}}{3} = 4 \cdot 15\sqrt{3} \cdot \frac{14\sqrt{3}}{3} = 4 \cdot 15 \cdot 14 \cdot \frac{3}{3} = 840\]
+
+Pošto je $a = 10$:
+\[10bc = 840 \Rightarrow bc = 84\]
+
+Takođe, koristimo formulu za površinu preko Heronovog obrasca. Neka je $s = \frac{a+b+c}{2}$ poluobim.
+
+\[P = \sqrt{s(s-a)(s-b)(s-c)}\]
+\[15\sqrt{3} = \sqrt{s(s-10)(s-b)(s-c)}\]
+
+Takođe, iz sinusne teoreme:
+\[\frac{a}{\sin A} = 2R \Rightarrow \sin A = \frac{a}{2R} = \frac{10}{2 \cdot \frac{14\sqrt{3}}{3}} = \frac{10 \cdot 3}{28\sqrt{3}} = \frac{30}{28\sqrt{3}} = \frac{15}{14\sqrt{3}} = \frac{15\sqrt{3}}{42} = \frac{5\sqrt{3}}{14}\]
+
+Pošto je ugao $A$ oštar, $\cos A = \sqrt{1 - \sin^2 A} = \sqrt{1 - \frac{75}{196}} = \sqrt{\frac{121}{196}} = \frac{11}{14}$.
+
+Iz kosinusne teoreme:
+\[a^2 = b^2 + c^2 - 2bc\cos A\]
+\[100 = b^2 + c^2 - 2 \cdot 84 \cdot \frac{11}{14}\]
+\[100 = b^2 + c^2 - 132\]
+\[b^2 + c^2 = 232\]
+
+Imamo sistem:
+\[bc = 84\]
+\[b^2 + c^2 = 232\]
+
+Iz $(b+c)^2 = b^2 + 2bc + c^2 = 232 + 2 \cdot 84 = 232 + 168 = 400$.
+
+Dakle $b + c = 20$.
+
+\subsection*{Answer}
+$20$ (opcija \textbf{D}).
+
+\end{document}

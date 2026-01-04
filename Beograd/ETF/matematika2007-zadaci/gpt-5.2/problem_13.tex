@@ -1,0 +1,66 @@
+\section*{Zadatak 13}
+
+Izračunati vrednost izraza
+\[
+\frac{\sin 86^\circ+\sin 76^\circ-\sin 26^\circ-\sin 16^\circ}{\cos 86^\circ+\cos 76^\circ+\cos 26^\circ+\cos 16^\circ}.
+\]
+
+\subsection*{Rešenje}
+Grupišemo:
+\[
+\sin 86^\circ-\sin 16^\circ + \sin 76^\circ-\sin 26^\circ.
+\]
+Koristimo formulu \(\sin A-\sin B=2\cos\frac{A+B}{2}\sin\frac{A-B}{2}\):
+\[
+\sin 86^\circ-\sin 16^\circ
+=2\cos 51^\circ \sin 35^\circ,
+\]
+\[
+\sin 76^\circ-\sin 26^\circ
+=2\cos 51^\circ \sin 25^\circ.
+\]
+Zato je brojilac
+\[
+2\cos 51^\circ(\sin 35^\circ+\sin 25^\circ).
+\]
+A \(\sin u+\sin v=2\sin\frac{u+v}{2}\cos\frac{u-v}{2}\), pa
+\[
+\sin 35^\circ+\sin 25^\circ
+=2\sin 30^\circ\cos 5^\circ
+=\cos 5^\circ.
+\]
+Dakle, brojilac je \(2\cos 51^\circ\cos 5^\circ\).
+
+Za imenilac grupišemo
+\[
+(\cos 86^\circ+\cos 16^\circ)+(\cos 76^\circ+\cos 26^\circ),
+\]
+i koristimo \(\cos A+\cos B=2\cos\frac{A+B}{2}\cos\frac{A-B}{2}\):
+\[
+\cos 86^\circ+\cos 16^\circ=2\cos 51^\circ\cos 35^\circ,
+\]
+\[
+\cos 76^\circ+\cos 26^\circ=2\cos 51^\circ\cos 25^\circ.
+\]
+Zato je imenilac
+\[
+2\cos 51^\circ(\cos 35^\circ+\cos 25^\circ).
+\]
+A \(\cos u+\cos v=2\cos\frac{u+v}{2}\cos\frac{u-v}{2}\), pa
+\[
+\cos 35^\circ+\cos 25^\circ
+=2\cos 30^\circ\cos 5^\circ
+=\sqrt{3}\,\cos 5^\circ.
+\]
+Dakle, imenilac je \(2\sqrt{3}\cos 51^\circ\cos 5^\circ\).
+
+Konačno,
+\[
+\frac{2\cos 51^\circ\cos 5^\circ}{2\sqrt{3}\cos 51^\circ\cos 5^\circ}=\frac{1}{\sqrt{3}}.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\;\frac{1}{\sqrt{3}}}
+\]
+

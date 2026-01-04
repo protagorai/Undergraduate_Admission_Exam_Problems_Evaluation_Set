@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+The complex number $(1 + i\sqrt{3})^9 + (\sqrt{3} - i)^9$ $(i = \sqrt{-1})$ equals:
+
+A) $2^9(1 + i)$; B) $2^9(-1 + i)$; C) $2^9(1 - i)$; D) $2^9$; E) $-2^9 i$; N) Ne znam.
+
+\subsection*{Solution}
+Let's convert to polar form.
+
+For $z_1 = 1 + i\sqrt{3}$:
+$|z_1| = \sqrt{1^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2$
+$\arg(z_1) = \arctan\left(\frac{\sqrt{3}}{1}\right) = \frac{\pi}{3}$
+
+So $z_1 = 2\left(\cos\frac{\pi}{3} + i\sin\frac{\pi}{3}\right) = 2e^{i\pi/3}$
+
+For $z_2 = \sqrt{3} - i$:
+$|z_2| = \sqrt{(\sqrt{3})^2 + (-1)^2} = \sqrt{3 + 1} = 2$
+$\arg(z_2) = \arctan\left(\frac{-1}{\sqrt{3}}\right) = -\frac{\pi}{6}$
+
+So $z_2 = 2\left(\cos\left(-\frac{\pi}{6}\right) + i\sin\left(-\frac{\pi}{6}\right)\right) = 2e^{-i\pi/6}$
+
+Using De Moivre's theorem:
+\[
+z_1^9 = 2^9 e^{i \cdot 9\pi/3} = 2^9 e^{3\pi i} = 2^9 e^{\pi i} = 2^9(-1) = -2^9
+\]
+
+\[
+z_2^9 = 2^9 e^{-i \cdot 9\pi/6} = 2^9 e^{-3\pi i/2} = 2^9 e^{-3\pi i/2}
+\]
+
+Since $e^{-3\pi i/2} = e^{-3\pi i/2 + 2\pi i} = e^{\pi i/2} = i$:
+\[
+z_2^9 = 2^9 i
+\]
+
+Therefore:
+\[
+z_1^9 + z_2^9 = -2^9 + 2^9 i = 2^9(-1 + i)
+\]
+
+\subsection*{Answer}
+$2^9(-1 + i)$ (option \textbf{B}).
+
+\end{document}

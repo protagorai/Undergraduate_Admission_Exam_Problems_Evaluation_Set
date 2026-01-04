@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 12}
+Dat je konveksan četvorougao $ABCD$ u kojem je $\angle ABD = 50^\circ$, $\angle ADB = 80^\circ$, $\angle ACB = 40^\circ$ i $\angle DBC = \angle BDC + 30^\circ$. Tada je $\angle DBC$ jednak:
+
+\subsection*{Rešenje}
+U trouglu $ABD$, uglovi su $50^\circ, 80^\circ$ i $180^\circ - 130^\circ = 50^\circ$.
+Dakle, $\triangle ABD$ je jednakokraki sa $DA = DB$.
+Neka je $\angle DBC = x$. Tada je $\angle BDC = x - 30^\circ$.
+U $\triangle BCD$: $\angle BCD = 180^\circ - x - (x-30^\circ) = 210^\circ - 2x$.
+Takođe, $\angle ACD = \angle BCD - \angle ACB = 210^\circ - 2x - 40^\circ = 170^\circ - 2x$.
+Primenimo trigonometrijsku formu Čevine teoreme ili sinusnu teoremu.
+Posmatrajmo slučaj $x = 70^\circ$.
+Tada $\angle DBC = 70^\circ$, $\angle BDC = 40^\circ$.
+$\angle BCD = 180 - 70 - 40 = 70^\circ$.
+$\triangle BCD$ je jednakokraki sa $DB = DC$.
+Kako je $DA = DB$, sledi $DA = DC$.
+U $\triangle ADC$, $DA = DC$, pa je $\angle DAC = \angle DCA$.
+Ugao pri vrhu $D$ je $\angle ADC = \angle ADB + \angle BDC = 80^\circ + 40^\circ = 120^\circ$.
+Tada $\angle DCA = (180^\circ - 120^\circ)/2 = 30^\circ$.
+Proverimo da li se slaže sa uslovom $\angle ACB = 40^\circ$.
+$\angle BCD = \angle BCA + \angle ACD = 40^\circ + 30^\circ = 70^\circ$.
+Ovo se slaže sa izračunatim $\angle BCD = 70^\circ$.
+Dakle, pretpostavka $x = 70^\circ$ dovodi do konzistentnog rešenja.
+
+\subsection*{Odgovor}
+$70^\circ$ (opcija \textbf{E}).
+
+\end{document}

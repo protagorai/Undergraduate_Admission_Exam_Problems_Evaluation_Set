@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 10 - Solution}
+
+\textbf{Problem:} The base of a quadrilateral pyramid is a rectangle with diagonal length $4\,\text{cm}$ and angle $60°$ between diagonals. Each lateral edge makes an angle of $30°$ with the base. Find the volume of the pyramid.
+
+\textbf{Solution:}
+
+\textbf{Step 1: Find the dimensions of the rectangular base}
+
+In a rectangle, diagonals are equal and bisect each other. Each diagonal = $4\,\text{cm}$, so each half-diagonal from center = $2\,\text{cm}$.
+
+The angle between diagonals is $60°$. Using the law of cosines for the triangle formed by two half-diagonals and one side of the rectangle:
+
+For side $p$ (with angle $60°$):
+\[
+p^2 = 2^2 + 2^2 - 2(2)(2)\cos 60° = 4 + 4 - 8 \cdot \frac{1}{2} = 4
+\]
+\[
+p = 2\,\text{cm}
+\]
+
+For side $q$ (with angle $120°$):
+\[
+q^2 = 2^2 + 2^2 - 2(2)(2)\cos 120° = 4 + 4 - 8 \cdot \left(-\frac{1}{2}\right) = 8 + 4 = 12
+\]
+\[
+q = 2\sqrt{3}\,\text{cm}
+\]
+
+\textbf{Step 2: Find the area of the base}
+\[
+A_{\text{base}} = p \cdot q = 2 \cdot 2\sqrt{3} = 4\sqrt{3}\,\text{cm}^2
+\]
+
+\textbf{Step 3: Find the height of the pyramid}
+
+The apex is directly above the center of the rectangle (since all lateral edges make equal angles with the base). The distance from center to each vertex is $2\,\text{cm}$ (half-diagonal).
+
+If the lateral edge makes $30°$ with the base, then:
+\[
+\tan 30° = \frac{h}{2}
+\]
+\[
+h = 2\tan 30° = 2 \cdot \frac{1}{\sqrt{3}} = \frac{2\sqrt{3}}{3}\,\text{cm}
+\]
+
+\textbf{Step 4: Calculate the volume}
+\[
+V = \frac{1}{3} \cdot A_{\text{base}} \cdot h = \frac{1}{3} \cdot 4\sqrt{3} \cdot \frac{2\sqrt{3}}{3} = \frac{1}{3} \cdot \frac{8 \cdot 3}{3} = \frac{8}{3}\,\text{cm}^3
+\]
+
+\textbf{Answer: А) $\frac{8}{3}\,\text{cm}^3$}
+
+\end{document}
+

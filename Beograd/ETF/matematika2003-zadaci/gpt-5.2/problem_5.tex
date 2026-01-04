@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Na\'ci proizvod re\v{s}enja jedna\v{c}ine
+\[
+\sqrt{x^{\log \sqrt{x}}}=10,
+\]
+gde je $\log$ dekadni logaritam.
+
+\subsection*{Solution}
+Po\v{s}to je pod logaritmom $\sqrt{x}$, mora biti $x>0$.
+Prepi\v{s}imo levu stranu:
+\[
+\sqrt{x^{\log \sqrt{x}}}=x^{\frac{1}{2}\log\sqrt{x}}.
+\]
+Dalje,
+\[
+\log\sqrt{x}=\log(x^{1/2})=\frac12\log x,
+\]
+pa dobijamo
+\[
+x^{\frac12\cdot\frac12\log x}=x^{\frac14\log x}=10.
+\]
+Neka je $t=\log x$ (dakle $x=10^t$). Tada
+\[
+x^{\frac14\log x}=(10^t)^{\frac14 t}=10^{t^2/4}=10^1,
+\]
+odakle sledi $t^2/4=1$, tj.\ $t=\pm 2$. Zato su re\v{s}enja
+\[
+x_1=10^2=100,\qquad x_2=10^{-2}=\frac{1}{100}.
+\]
+Njihov proizvod je $x_1x_2=1$.
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}
+

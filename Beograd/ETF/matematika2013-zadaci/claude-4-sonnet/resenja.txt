@@ -1,0 +1,45 @@
+REŠENJA ZADATAKA - MATEMATIKA 2013
+
+1. D) -2,40
+2. A) x - y + 2 = 0  
+3. D) x - 1
+4. A) 6710
+5. A) 64/11
+6. B) 1/2
+7. C) S₁ ⊂ S₂
+8. A) -i · ctg(α/2)
+9. A) 0
+10. D) x
+11. C) b⁴ - 4b²c + 2c²
+12. B) 66
+13. E) 3
+14. C) 810√3
+15. C) (-2, 0]
+16. B) √3/3
+17. B) 2
+18. D) 4940
+19. C) 2
+20. B) [a, b) ∪ (b, c]
+
+OBJAŠNJENJA:
+
+Problem 1: Zamenom x = 0.7 u izraz 2x² - 2.4x - 1.7 dobijamo -2.40
+Problem 2: Prava kroz tačke M₁(-1,1) i M₂(2,4) ima jednačinu x - y + 2 = 0
+Problem 3: Simplifikacijom izraza sa supstitucijom t = √x dobijamo x - 1
+Problem 4: Iz 30% od 2n = 2013 nalazimo n = 3355, pa je 40% od 5n = 6710
+Problem 5: Kvadrat upisan u trougao ima stranicu 64/11 cm
+Problem 6: Iz formule za kosinus zbira/razlike dobijamo tgα·tgβ = 1/2
+Problem 7: Analiza domena pokazuje da je S₁ ⊂ S₂
+Problem 8: Kompleksan broj se svodi na -i·ctg(α/2)
+Problem 9: Iz uslova deljivosti P(-1) = 0 dobijamo p + q = 0
+Problem 10: Kompozitna funkcija f(g(x)) = x
+Problem 11: Iz Viète-ovih formula dobijamo x₁⁴ + x₂⁴ = b⁴ - 4b²c + 2c²
+Problem 12: Član bez x u binomnom razvoju je 66
+Problem 13: Sistem ima 3 realna rešenja
+Problem 14: Zapremina prizme je 810√3 cm³
+Problem 15: Rešenje eksponencijalne jednačine je u intervalu (-2, 0]
+Problem 16: Minimalno rastojanje je √3/3
+Problem 17: Količnik geometrijske progresije je 2
+Problem 18: Broj načina izbora tri broja sa neparnim zbirom je 4940
+Problem 19: Trigonometrijska jednačina ima 2 rešenja na (0, 2π)
+Problem 20: Složena logaritamska nejednačina ima rešenje oblika [a,b) ∪ (b,c]

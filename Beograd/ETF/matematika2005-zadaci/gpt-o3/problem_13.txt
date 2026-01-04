@@ -1,0 +1,7 @@
+Problem 13: Broj realnih rešenja sistema jednačina
+
+    log_{|x - y|} (xy / 2) = 2,    x + y = xy + 1
+
+je:
+
+(A) 1   (B) 2   (C) 4   (D) 3   (E) 0   (N) Ne znam

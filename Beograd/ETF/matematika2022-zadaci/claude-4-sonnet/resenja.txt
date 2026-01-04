@@ -1,0 +1,45 @@
+REŠENJA MATEMATIKA 2022 - PRIJEMNI ISPIT ZA UPIS NA ELEKTROTEHNIČKI FAKULTET
+
+Problem 1: E - 100000
+Problem 2: C - y = -3x + 4  
+Problem 3: E - 216/5
+Problem 4: E - (a,∞)
+Problem 5: E - -x + 1
+Problem 6: A - -8
+Problem 7: B - -3/4
+Problem 8: A - 325
+Problem 9: B - više od 3
+Problem 10: A - 2
+Problem 11: B - 1
+Problem 12: E - 9√3/25
+Problem 13: A - 1/9
+Problem 14: D - 2
+Problem 15: E - 3π/2
+Problem 16: C - 4
+Problem 17: E - više od 4
+Problem 18: B - 5·4π
+Problem 19: B - 6
+Problem 20: E - a + b
+
+OBJAŠNJENJE ODGOVORA:
+
+1. Računar: 100000 → +25% = 125000 → -20% = 100000
+2. Simetrala duži MN(4,2) i N(-2,0): središte (1,1), nagib simetrale -3, y = -3x + 4
+3. Logaritamski izraz se svodi na 216/5
+4. Kvadratna jednačina ima dva različita rešenja kada m ≠ 0 i m ≠ 1, što je (a,∞)
+5. Ostatak pri deljenju polinoma je -x + 1
+6. Kompleksni brojevi: iz t + 4/t = 2 dobijamo t³ = -8
+7. Granična vrednost kotangensa se svodi na -3/4
+8. Kombinatorika: 5 + 20 + 60 + 120 + 120 = 325 brojeva
+9. Sistem ima više od 3 rešenja (tačno 4)
+10. Minimum funkcije na segmentu je 2
+11. Logaritamska jednačina ima 1 rešenje (x = 2)
+12. Geometrija trougla: površina CDE = 9√3/25
+13. Geometrijska progresija: količnik q = 1/9
+14. Jednačina sa korenima ima 2 rešenja
+15. Trigonometrijska jednačina: zbir rešenja = 3π/2
+16. Nejednačina sa korenima: razlika = 4
+17. Binom: više od 4 racionalnih članova (tačno 9)
+18. Zarubljena piramida: odnos zapremina = 5·4π
+19. Apsolutne vrednosti: maksimalno 6 rešenja
+20. Elipsa: minimalna dužina tangente = a + b

@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the total number of real solutions to the system of equations:
+\[
+y \cdot (|x| - 2)^{\log_y(|x|-2)} = (|x| - 2)^{\frac{5}{2}}, \quad \log_4 y \cdot \log_y(y - 3x + 6) = 1
+\]
+
+(A) $0$ \quad (B) $2$ \quad (C) $1$ \quad (D) $4$ \quad (E) $3$
+
+\subsection*{Solution}
+\textbf{First equation:} $y \cdot (|x| - 2)^{\log_y(|x|-2)} = (|x| - 2)^{\frac{5}{2}}$
+
+Let $t = |x| - 2$ (need $t > 0$, $t \neq 1$) and let $u = \log_y t$, so $y^u = t$.
+
+The equation becomes:
+\[
+y \cdot t^u = t^{5/2}
+\]
+
+Since $t = y^u$:
+\[
+y \cdot (y^u)^u = (y^u)^{5/2}
+\]
+\[
+y^{1+u^2} = y^{5u/2}
+\]
+
+So $1 + u^2 = \frac{5u}{2}$, giving $2u^2 - 5u + 2 = 0$.
+
+$(2u - 1)(u - 2) = 0$, so $u = \frac{1}{2}$ or $u = 2$.
+
+\textbf{Second equation:} $\log_4 y \cdot \log_y(y - 3x + 6) = 1$
+
+Using change of base: $\log_4 y \cdot \log_y(y - 3x + 6) = \log_4(y - 3x + 6) = 1$
+
+So $y - 3x + 6 = 4$, giving $y = 3x - 2$.
+
+\textbf{Combining:} With $u = \log_y(|x| - 2)$:
+
+If $u = \frac{1}{2}$: $y^{1/2} = |x| - 2$, so $|x| = \sqrt{y} + 2$
+
+With $y = 3x - 2$: For $x > 0$: $x = \sqrt{3x-2} + 2$
+
+Let $v = \sqrt{3x-2}$, then $x = v + 2$ and $v^2 = 3(v+2) - 2 = 3v + 4$
+
+$v^2 - 3v - 4 = 0$, $(v-4)(v+1) = 0$, so $v = 4$ (since $v \geq 0$).
+
+Thus $x = 6$, $y = 16$. Check: $|x| - 2 = 4 = \sqrt{16}$ ✓
+
+By symmetry, $x = -6$ gives $y = 3(-6) - 2 = -20 < 0$ (invalid).
+
+If $u = 2$: $y^2 = |x| - 2$
+
+With $y = 3x - 2$: $(3x-2)^2 = |x| - 2$
+
+For $x > 0$: $9x^2 - 12x + 4 = x - 2$, giving $9x^2 - 13x + 6 = 0$
+
+Discriminant: $169 - 216 < 0$, no real solutions.
+
+Total: 1 solution $(x, y) = (6, 16)$.
+
+\subsection*{Answer}
+(C) $1$
+
+\end{document}

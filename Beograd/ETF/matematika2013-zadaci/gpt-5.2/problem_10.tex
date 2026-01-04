@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 10}
+Ako je \(f(x)=2x+|x|\) i \(g(x)=\frac{2}{3}x-\frac{1}{3}|x|\), odrediti \(f(g(x))\).
+
+\subsection*{Rešenje}
+Razmatramo slučajeve.
+
+\medskip
+\noindent\textbf{1) Ako je \(x\ge 0\):} tada je \(|x|=x\), pa
+\[
+g(x)=\frac{2}{3}x-\frac{1}{3}x=\frac{1}{3}x\ge 0.
+\]
+Zato je \(|g(x)|=g(x)\) i
+\[
+f(g(x))=2g(x)+|g(x)|=2\cdot\frac{x}{3}+\frac{x}{3}=x.
+\]
+
+\medskip
+\noindent\textbf{2) Ako je \(x<0\):} tada je \(|x|=-x\), pa
+\[
+g(x)=\frac{2}{3}x-\frac{1}{3}(-x)=x<0.
+\]
+Zato je \(|g(x)|=-g(x)\) i
+\[
+f(g(x))=2g(x)+|g(x)|=2x+(-x)=x.
+\]
+
+U oba slučaja važi \(f(g(x))=x\).
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\ x}
+\]
+\end{document}
+

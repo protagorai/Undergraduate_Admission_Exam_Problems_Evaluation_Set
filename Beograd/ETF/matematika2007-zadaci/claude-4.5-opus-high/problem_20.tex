@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Broj načina na koji se može formirati petočlana komisija od 2 matematičara i 8 fizičara, tako da u njoj bude bar jedan matematičar iznosi:
+
+(A) 132 \quad (B) 196 \quad (C) 212 \quad (D) 314 \quad (E) 422 \quad (N) Ne znam
+
+\subsection*{Solution}
+We have 2 mathematicians and 8 physicists, and need to form a 5-member committee with at least 1 mathematician.
+
+Total people: $2 + 8 = 10$
+
+\textbf{Method: Total committees minus committees with no mathematicians}
+
+Total ways to choose 5 people from 10:
+\[
+\binom{10}{5} = \frac{10!}{5! \cdot 5!} = 252
+\]
+
+Ways to choose 5 people with no mathematicians (all from 8 physicists):
+\[
+\binom{8}{5} = \frac{8!}{5! \cdot 3!} = \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = 56
+\]
+
+Committees with at least 1 mathematician:
+\[
+252 - 56 = 196
+\]
+
+\textbf{Alternative verification:}
+\begin{itemize}
+\item Exactly 1 mathematician: $\binom{2}{1} \cdot \binom{8}{4} = 2 \cdot 70 = 140$
+\item Exactly 2 mathematicians: $\binom{2}{2} \cdot \binom{8}{3} = 1 \cdot 56 = 56$
+\end{itemize}
+
+Total: $140 + 56 = 196$ ✓
+
+\subsection*{Answer}
+$196$ (option \textbf{B}).
+
+\end{document}

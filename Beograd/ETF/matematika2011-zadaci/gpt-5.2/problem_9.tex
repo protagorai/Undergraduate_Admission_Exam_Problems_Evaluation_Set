@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Ako je
+\[
+f(x)=\left(\frac{x+1}{x-1}\right)^2,\qquad (x\neq \pm 1),
+\]
+tada je
+\[
+f\!\left(\frac{x+1}{x-1}\right)-f\!\left(\frac{x-1}{x+1}\right)
+\]
+jednako:
+\[
+\text{(A)}~\left(\frac{x+1}{x-1}\right)^2\quad
+\text{(B)}~\left(\frac{x-1}{x+1}\right)^2\quad
+\text{(C)}~0\quad
+\text{(D)}~\frac{x^2-1}{x^2+1}\quad
+\text{(E)}~-\left(\frac{x-1}{x+1}\right)^2.
+\]
+
+\subsection*{Solution}
+Označimo
+\[
+u=\frac{x+1}{x-1},\qquad v=\frac{x-1}{x+1}.
+\]
+Tada je
+\[
+f(u)=\left(\frac{u+1}{u-1}\right)^2.
+\]
+Računamo:
+\[
+u+1=\frac{x+1}{x-1}+1=\frac{2x}{x-1},\qquad
+u-1=\frac{x+1}{x-1}-1=\frac{2}{x-1},
+\]
+pa je
+\[
+\frac{u+1}{u-1}=\frac{2x}{2}=x \;\Rightarrow\; f(u)=x^2.
+\]
+Slično,
+\[
+f(v)=\left(\frac{v+1}{v-1}\right)^2,\quad
+v+1=\frac{2x}{x+1},\quad v-1=\frac{-2}{x+1}
+\Rightarrow \frac{v+1}{v-1}=-x,
+\]
+pa je $f(v)=(-x)^2=x^2$. Dakle razlika je $0$.
+
+\subsection*{Answer}
+$0$ (option \textbf{C}).
+
+\end{document}
+

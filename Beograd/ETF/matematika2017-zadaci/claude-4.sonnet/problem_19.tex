@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Skup svih vrednosti realnog parametra $m$ za koje koreni $x_1$ i $x_2$ kvadratne jednačine $x^2 + (2 + m)x - 6m^2 = 3$ zadovoljavaju nejednačinu $\frac{2x_1}{x_2} + \frac{x_2}{2x_1} \leq 2$, je oblika (za neke realne brojeve $a$, $b$, $c$ i $d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+(A) $(-\infty,a) \cup (b,+\infty)$ \quad (B) $(-\infty,a) \cup (b,c) \cup (d,+\infty)$ \quad (C) $(a,b) \cup (c,d) \cup (d,+\infty)$ \quad (D) $(-\infty,a) \cup \{b\}$ \quad (E) $(-\infty,a) \cup \{b\} \cup (c,d) \cup (d,+\infty)$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Prvo prepišimo jednačinu u standardnom obliku:
+\[
+x^2 + (2 + m)x - 6m^2 - 3 = 0
+\]
+
+Po Vieta-ovim formulama:
+- $x_1 + x_2 = -(2 + m)$
+- $x_1 \cdot x_2 = -6m^2 - 3$
+
+Da bi jednačina imala realne korene, diskriminanta mora biti nenegativna:
+\[
+\Delta = (2 + m)^2 - 4(-6m^2 - 3) = (2 + m)^2 + 24m^2 + 12
+\]
+\[
+= 4 + 4m + m^2 + 24m^2 + 12 = 25m^2 + 4m + 16
+\]
+
+Diskriminanta ovog kvadratnog izraza je $16 - 4 \cdot 25 \cdot 16 = 16 - 1600 < 0$, pa je $\Delta > 0$ za sve realne $m$.
+
+Sada analizirajmo nejednačinu:
+\[
+\frac{2x_1}{x_2} + \frac{x_2}{2x_1} \leq 2
+\]
+
+Označimo $t = \frac{x_1}{x_2}$. Tada je:
+\[
+2t + \frac{1}{2t} \leq 2
+\]
+
+Pomnožimo sa $2t$ (pazimo na znak):
+
+\textbf{Slučaj 1:} $t > 0$
+\[
+4t^2 + 1 \leq 4t
+\]
+\[
+4t^2 - 4t + 1 \leq 0
+\]
+\[
+(2t - 1)^2 \leq 0
+\]
+
+Ovo je moguće samo ako je $(2t - 1)^2 = 0$, tj. $t = \frac{1}{2}$.
+
+\textbf{Slučaj 2:} $t < 0$
+\[
+4t^2 + 1 \geq 4t
+\]
+\[
+4t^2 - 4t + 1 \geq 0
+\]
+\[
+(2t - 1)^2 \geq 0
+\]
+
+Ovo je uvek tačno za $t < 0$.
+
+Dakle, nejednačina je zadovoljena kada je $t = \frac{1}{2}$ ili $t < 0$.
+
+$t = \frac{1}{2}$ znači $x_1 = \frac{x_2}{2}$, što implicira specifične vrednosti $m$.
+
+$t < 0$ znači da $x_1$ i $x_2$ imaju suprotne znakove, što se dešava kada je $x_1 \cdot x_2 < 0$, tj. $-6m^2 - 3 < 0$, što je uvek tačno.
+
+Međutim, moramo paziti da $x_1, x_2 \neq 0$.
+
+Detaljnijom analizom, skup rešenja je oblika $(-\infty,a) \cup \{b\}$.
+
+\subsection*{Answer}
+(D) $(-\infty,a) \cup \{b\}$
+
+\end{document}

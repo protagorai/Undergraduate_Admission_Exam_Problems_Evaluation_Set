@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Granična vrednost $\displaystyle\lim_{x \to 2} \dfrac{\tan\frac{3\pi x}{8} \cdot (\log(5x-9)+1) \cdot (\sqrt[3]{x} - \sqrt[3]{2})}{(x-2) \cdot (\sqrt{2x^3 - x - 5} - \sqrt{2x})}$ jednaka je:
+
+\subsection*{Solution}
+As $x \to 2$, this is a $\frac{0}{0}$ indeterminate form. Let's analyze each factor.
+
+\textbf{Numerator analysis:}
+
+$\tan\frac{3\pi x}{8}$ at $x = 2$: $\tan\frac{6\pi}{8} = \tan\frac{3\pi}{4} = -1$
+
+$\log(5x-9) + 1$ at $x = 2$: $\log(10-9) + 1 = \log 1 + 1 = 0 + 1 = 1$
+
+$\sqrt[3]{x} - \sqrt[3]{2} \to 0$ as $x \to 2$
+
+\textbf{Denominator analysis:}
+
+$(x-2) \to 0$
+
+$\sqrt{2x^3 - x - 5}$ at $x = 2$: $\sqrt{16 - 2 - 5} = \sqrt{9} = 3$
+
+$\sqrt{2x}$ at $x = 2$: $\sqrt{4} = 2$
+
+So $\sqrt{2x^3 - x - 5} - \sqrt{2x} \to 3 - 2 = 1 \neq 0$
+
+The limit becomes:
+\[
+\lim_{x \to 2} \frac{(-1) \cdot 1 \cdot (\sqrt[3]{x} - \sqrt[3]{2})}{(x-2) \cdot 1} = -\lim_{x \to 2} \frac{\sqrt[3]{x} - \sqrt[3]{2}}{x - 2}
+\]
+
+This is the derivative of $\sqrt[3]{x}$ at $x = 2$:
+\[
+\frac{d}{dx}\sqrt[3]{x}\bigg|_{x=2} = \frac{1}{3}x^{-2/3}\bigg|_{x=2} = \frac{1}{3 \cdot 2^{2/3}} = \frac{1}{3 \cdot \sqrt[3]{4}}
+\]
+
+Therefore:
+\[
+\text{Limit} = -\frac{1}{3 \cdot \sqrt[3]{4}} = -\frac{1}{3 \cdot 2^{2/3}} = -\frac{1}{3 \cdot 2^{2/3}}
+\]
+
+We can write $2^{2/3} = \sqrt[3]{4}$, and rationalizing:
+\[
+-\frac{1}{3\sqrt[3]{4}} = -\frac{\sqrt[3]{2}}{3\sqrt[3]{4}\cdot\sqrt[3]{2}} = -\frac{\sqrt[3]{2}}{3 \cdot 2} = -\frac{\sqrt[3]{2}}{6}
+\]
+
+Or equivalently: $-\frac{1}{3 \cdot 2^{2/3}} = -\frac{2^{1/3}}{3 \cdot 2} = -\frac{1}{3 \cdot 2^{2/3}}$
+
+This equals $-\frac{1}{3 \cdot 2^{2/3}}$. Note that $2^{2/3} = \sqrt[3]{4} \approx 1.587$, so the answer $\approx -0.21$.
+
+Checking option (B): $-\frac{1}{3 \cdot 2^{2/3}}$
+
+\subsection*{Answer}
+$-\dfrac{1}{3 \cdot 2^{2/3}}$ (option \textbf{B}).
+
+\end{document}

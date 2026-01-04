@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 13}
+Skup svih realnih rešenja nejednačine $4^x \le 3 \cdot 2^{\sqrt{x}+x} + 4^{1+\sqrt{x}}$ je oblika:
+
+\subsection*{Rešenje}
+Nejednačina se može zapisati kao:
+$(2^x)^2 \le 3 \cdot 2^x \cdot 2^{\sqrt{x}} + 4 \cdot (2^{\sqrt{x}})^2$.
+Deljenjem sa $(2^{\sqrt{x}})^2$ (što je pozitivno):
+\[
+\left(\frac{2^x}{2^{\sqrt{x}}}\right)^2 - 3 \left(\frac{2^x}{2^{\sqrt{x}}}\right) - 4 \le 0.
+\]
+Smena $t = 2^{x-\sqrt{x}}$. $t > 0$.
+$t^2 - 3t - 4 \le 0 \implies (t-4)(t+1) \le 0$.
+Pošto je $t > 0$, uslov je $t \le 4$.
+$2^{x-\sqrt{x}} \le 2^2 \implies x-\sqrt{x} \le 2$.
+$x - \sqrt{x} - 2 \le 0$.
+Smena $u = \sqrt{x} \ge 0$.
+$u^2 - u - 2 \le 0 \implies (u-2)(u+1) \le 0$.
+Zbog $u \ge 0$, rešenje je $0 \le u \le 2$.
+$0 \le \sqrt{x} \le 2 \implies 0 \le x \le 4$.
+Skup rešenja je $[0, 4]$.
+
+\subsection*{Odgovor}
+$[a, b]$ (opcija \textbf{C}).
+
+\end{document}

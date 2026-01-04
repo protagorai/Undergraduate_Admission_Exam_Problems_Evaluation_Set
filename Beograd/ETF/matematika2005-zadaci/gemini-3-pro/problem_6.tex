@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 6}
+Ako je $\text{tg}\alpha = -7$, $\alpha \in (\pi/2, \pi)$, tada $\frac{3 \sin \alpha + \cos \alpha}{\cos \alpha - 3 \sin \alpha}$ iznosi:
+(A) $\frac{10}{11}$ (B) $-\frac{10}{11}$ (C) $\frac{11}{20}$ (D) $-\frac{11}{10}$ (E) $\frac{11}{10}$ (N) Ne znam
+
+\subsection*{Rešenje}
+Izraz čiju vrednost tražimo podelimo i brojilac i imenilac sa $\cos \alpha$ (pošto je $\text{tg}\alpha$ definisan, $\cos \alpha \neq 0$):
+\[
+\frac{3 \sin \alpha + \cos \alpha}{\cos \alpha - 3 \sin \alpha} = \frac{\frac{3 \sin \alpha}{\cos \alpha} + \frac{\cos \alpha}{\cos \alpha}}{\frac{\cos \alpha}{\cos \alpha} - \frac{3 \sin \alpha}{\cos \alpha}} = \frac{3 \text{tg}\alpha + 1}{1 - 3 \text{tg}\alpha}
+\]
+Zamenimo datu vrednost $\text{tg}\alpha = -7$:
+\[
+\frac{3(-7) + 1}{1 - 3(-7)} = \frac{-21 + 1}{1 + 21} = \frac{-20}{22} = -\frac{10}{11}
+\]
+Napomena: Podatak $\alpha \in (\pi/2, \pi)$ nam samo potvrđuje da je tangens negativan (što je već dato) i osigurava da je kosinus različit od nule.
+
+\subsection*{Odgovor}
+$-\frac{10}{11}$ (opcija \textbf{B}).
+
+\end{document}

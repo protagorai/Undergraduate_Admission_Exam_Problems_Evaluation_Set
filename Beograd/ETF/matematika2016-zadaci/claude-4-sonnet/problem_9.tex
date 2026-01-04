@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Find all values of parameter $a$ (where $a \in \mathbb{R} \setminus \{0\}$) such that the roots $x_1$ and $x_2$ of the quadratic equation $ax^2 + ax + 1 = 0$ satisfy:
+\[
+\frac{(x_1 + 1)^2 + (x_2 + 1)^2}{(x_1 - 1)^2 + (x_2 - 1)^2} \leq 1
+\]
+
+\subsection*{Solution}
+For the quadratic equation $ax^2 + ax + 1 = 0$, by Vieta's formulas:
+\[
+x_1 + x_2 = -1, \quad x_1 x_2 = \frac{1}{a}
+\]
+
+For real roots to exist, the discriminant must be non-negative:
+\[
+\Delta = a^2 - 4a \geq 0 \Rightarrow a(a - 4) \geq 0
+\]
+This gives us $a \leq 0$ or $a \geq 4$.
+
+Now let's work with the given inequality. We need:
+\[
+(x_1 + 1)^2 + (x_2 + 1)^2 = x_1^2 + 2x_1 + 1 + x_2^2 + 2x_2 + 1 = x_1^2 + x_2^2 + 2(x_1 + x_2) + 2
+\]
+
+Using the identity $x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2$:
+\[
+x_1^2 + x_2^2 = (-1)^2 - 2 \cdot \frac{1}{a} = 1 - \frac{2}{a}
+\]
+
+So:
+\[
+(x_1 + 1)^2 + (x_2 + 1)^2 = 1 - \frac{2}{a} + 2(-1) + 2 = 1 - \frac{2}{a}
+\]
+
+Similarly:
+\[
+(x_1 - 1)^2 + (x_2 - 1)^2 = x_1^2 + x_2^2 - 2(x_1 + x_2) + 2 = 1 - \frac{2}{a} - 2(-1) + 2 = 5 - \frac{2}{a}
+\]
+
+The inequality becomes:
+\[
+\frac{1 - \frac{2}{a}}{5 - \frac{2}{a}} \leq 1
+\]
+
+This is equivalent to:
+\[
+1 - \frac{2}{a} \leq 5 - \frac{2}{a}
+\]
+\[
+1 \leq 5
+\]
+
+This is always true! However, we need to ensure the denominator is positive:
+\[
+5 - \frac{2}{a} > 0 \Rightarrow \frac{2}{a} < 5 \Rightarrow \frac{2}{5} < a \text{ (if } a > 0\text{) or } a < 0 \text{ (if } a < 0\text{)}
+\]
+
+Combining with the discriminant condition ($a \leq 0$ or $a \geq 4$):
+- If $a \leq 0$: we need $a < 0$, so $a < 0$
+- If $a \geq 4$: we need $a > \frac{2}{5}$, which is satisfied since $4 > \frac{2}{5}$
+
+Therefore: $a \in (-\infty, 0) \cup [4, +\infty)$.
+
+\subsection*{Answer}
+$(-\infty, 0) \cup [4, +\infty)$ (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Granična vrednost $\displaystyle\lim_{x \to 2} \frac{x\sqrt{x} - \sqrt{2}x - 2\sqrt{x} + 2\sqrt{2}}{x^3 - 4x^2 + 4x}$ iznosi:
+
+\subsection*{Solution}
+Prvo proverimo da li je ovo neodređeni oblik $\frac{0}{0}$.
+
+Za $x = 2$:
+\begin{itemize}
+    \item Brojilac: $2\sqrt{2} - \sqrt{2} \cdot 2 - 2\sqrt{2} + 2\sqrt{2} = 2\sqrt{2} - 2\sqrt{2} - 2\sqrt{2} + 2\sqrt{2} = 0$
+    \item Imenilac: $8 - 16 + 8 = 0$
+\end{itemize}
+
+Da, imamo neodređeni oblik $\frac{0}{0}$.
+
+Faktorizujemo imenilac:
+\[
+x^3 - 4x^2 + 4x = x(x^2 - 4x + 4) = x(x - 2)^2
+\]
+
+Za brojilac, grupišemo:
+\[
+x\sqrt{x} - \sqrt{2}x - 2\sqrt{x} + 2\sqrt{2} = x(\sqrt{x} - \sqrt{2}) - 2(\sqrt{x} - \sqrt{2}) = (\sqrt{x} - \sqrt{2})(x - 2)
+\]
+
+Proverimo: $(\sqrt{x} - \sqrt{2})(x - 2) = x\sqrt{x} - 2\sqrt{x} - \sqrt{2}x + 2\sqrt{2}$ ✓
+
+Sada:
+\[
+\lim_{x \to 2} \frac{(\sqrt{x} - \sqrt{2})(x - 2)}{x(x - 2)^2} = \lim_{x \to 2} \frac{\sqrt{x} - \sqrt{2}}{x(x - 2)}
+\]
+
+Koristimo $\sqrt{x} - \sqrt{2} = \frac{x - 2}{\sqrt{x} + \sqrt{2}}$:
+\[
+\lim_{x \to 2} \frac{\frac{x - 2}{\sqrt{x} + \sqrt{2}}}{x(x - 2)} = \lim_{x \to 2} \frac{1}{x(\sqrt{x} + \sqrt{2})}
+\]
+
+Zamenjujemo $x = 2$:
+\[
+\frac{1}{2(\sqrt{2} + \sqrt{2})} = \frac{1}{2 \cdot 2\sqrt{2}} = \frac{1}{4\sqrt{2}} = \frac{\sqrt{2}}{8}
+\]
+
+Racionalizujemo:
+\[
+\frac{1}{4\sqrt{2}} = \frac{1}{4\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}} = \frac{\sqrt{2}}{8}
+\]
+
+Hmm, ovo nije među ponuđenim odgovorima. Proverimo ponovo.
+
+Pogledajmo ponuđene odgovore: (A) $\frac{1}{4\sqrt{2}}$, (B) $\frac{1}{2\sqrt{2}}$, (C) 0, (D) $\sqrt{2}$, (E) $\frac{1}{5\sqrt{2}}$
+
+Naš rezultat $\frac{1}{4\sqrt{2}}$ je opcija (A).
+
+\subsection*{Answer}
+$\frac{1}{4\sqrt{2}}$ (opcija \textbf{A}).
+
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Ukupan broj realnih rešenja sistema jednačina
+\[ y \cdot (|x|-2)^{\log_y (|x|-2)} = (|x|-2)^{\frac{5}{2}} \]
+\[ \log_4 y \cdot \log_y (y-3x+6) = 1 \]
+jednak je:
+(A) 0
+(B) 2
+(C) 1
+(D) 4
+(E) 3
+(N) Ne znam
+
+\subsection*{Solution}
+Analyze the second equation:
+\[ \log_4 y \cdot \log_y (y-3x+6) = 1 \]
+Using the base change formula $\log_y A = \frac{\log_4 A}{\log_4 y}$, we get:
+\[ \log_4 y \cdot \frac{\log_4 (y-3x+6)}{\log_4 y} = 1 \]
+\[ \log_4 (y-3x+6) = 1 \implies y-3x+6 = 4 \implies y = 3x-2. \]
+Constraints:
+1. $y > 0, y \neq 1$.
+2. $y-3x+6 > 0 \implies 4 > 0$ (satisfied).
+From $y > 0 \implies 3x-2 > 0 \implies x > 2/3$.
+From $y \neq 1 \implies 3x-2 \neq 1 \implies x \neq 1$.
+
+Now substitute into the first equation. Let $u = |x|-2$.
+Since $x > 2/3$, $|x| = x$. So $u = x-2$.
+For the log base and power base to be valid, we need $u > 0 \implies x > 2$.
+Equation 1 becomes:
+\[ y \cdot u^{\log_y u} = u^{5/2}. \]
+Take $\log_y$ of both sides:
+\[ \log_y y + \log_y (u^{\log_y u}) = \log_y (u^{5/2}) \]
+\[ 1 + (\log_y u)(\log_y u) = \frac{5}{2} \log_y u. \]
+Let $z = \log_y u$.
+\[ z^2 - \frac{5}{2}z + 1 = 0 \implies 2z^2 - 5z + 2 = 0 \implies (2z-1)(z-2)=0. \]
+Solutions are $z = 1/2$ and $z = 2$.
+
+Case 1: $\log_y u = 1/2 \implies u = y^{1/2} = \sqrt{y}$.
+Substitute $u=x-2$ and $y=3x-2$:
+\[ x-2 = \sqrt{3x-2}. \]
+Square both sides:
+\[ (x-2)^2 = 3x-2 \implies x^2 - 4x + 4 = 3x - 2 \implies x^2 - 7x + 6 = 0. \]
+$(x-1)(x-6) = 0$.
+$x=1$ or $x=6$.
+Since $x > 2$, $x=1$ is rejected.
+$x=6 \implies y = 3(6)-2 = 16$.
+Check condition $x>2$: $6>2$. Valid.
+
+Case 2: $\log_y u = 2 \implies u = y^2$.
+Substitute:
+\[ x-2 = (3x-2)^2 = 9x^2 - 12x + 4. \]
+\[ 9x^2 - 13x + 6 = 0. \]
+Discriminant $D = (-13)^2 - 4(9)(6) = 169 - 216 = -47 < 0$.
+No real solutions.
+
+Thus, there is only 1 solution $(x, y) = (6, 16)$.
+
+\subsection*{Answer}
+1 (option \textbf{C}).
+
+\end{document}

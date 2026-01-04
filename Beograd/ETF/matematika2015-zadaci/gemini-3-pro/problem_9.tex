@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Broj realnih rešenja jednačine $f(x) + f(f(x)) = x$, gde je $f(x) = |x| + a$, $a > 0$, jednak je:
+
+\subsection*{Solution}
+Izračunajmo $f(f(x))$:
+$f(x) = |x| + a$. Kako je $a > 0$ i $|x| \ge 0$, sledi $f(x) \ge a > 0$.
+$f(f(x)) = f(|x|+a) = ||x|+a| + a$.
+Pošto je $|x|+a > 0$, imamo $||x|+a| = |x|+a$.
+Dakle, $f(f(x)) = |x| + a + a = |x| + 2a$.
+
+Jednačina postaje:
+$(|x| + a) + (|x| + 2a) = x$
+$2|x| + 3a = x$.
+
+Razmotrimo slučajeve za znak $x$:
+1. Ako je $x \ge 0$:
+$2x + 3a = x \Rightarrow x = -3a$.
+Kako je $a > 0$, sledi $x < 0$, što je u kontradikciji sa uslovom $x \ge 0$. Nema rešenja.
+
+2. Ako je $x < 0$:
+$-2x + 3a = x \Rightarrow 3a = 3x \Rightarrow x = a$.
+Kako je $a > 0$, sledi $x > 0$, što je u kontradikciji sa uslovom $x < 0$. Nema rešenja.
+
+Dakle, jednačina nema realnih rešenja.
+
+\subsection*{Answer}
+$0$ (option \textbf{B}).
+
+\end{document}

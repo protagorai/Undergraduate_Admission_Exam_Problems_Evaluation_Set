@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Sva realna rešenja jednačine
+\[
+\frac{1}{\sqrt{x}+\sqrt{x-2}}+\frac{1}{\sqrt{x+2}+\sqrt{x}}=\frac{1}{4}
+\]
+pripadaju skupu:
+\[
+\text{(A) }[2,6)\quad
+\text{(B) }[6,10)\quad
+\text{(C) }[10,14)\quad
+\text{(D) }[14,18)\quad
+\text{(E) }[18,+\infty).
+\]
+
+\subsection*{Solution}
+Domen je $x\ge 2$.
+Racionalisanjem dobijamo:
+\[
+\frac{1}{\sqrt{x}+\sqrt{x-2}}=\frac{\sqrt{x}-\sqrt{x-2}}{x-(x-2)}=\frac{\sqrt{x}-\sqrt{x-2}}{2},
+\]
+\[
+\frac{1}{\sqrt{x+2}+\sqrt{x}}=\frac{\sqrt{x+2}-\sqrt{x}}{(x+2)-x}=\frac{\sqrt{x+2}-\sqrt{x}}{2}.
+\]
+Zbir je
+\[
+\frac{\sqrt{x}-\sqrt{x-2}+\sqrt{x+2}-\sqrt{x}}{2}
+=\frac{\sqrt{x+2}-\sqrt{x-2}}{2}.
+\]
+Jednačina postaje
+\[
+\frac{\sqrt{x+2}-\sqrt{x-2}}{2}=\frac{1}{4}
+\ \Longleftrightarrow\
+\sqrt{x+2}-\sqrt{x-2}=\frac{1}{2}.
+\]
+Neka su $a=\sqrt{x+2}$ i $b=\sqrt{x-2}$. Tada je $a-b=\frac12$ i
+\[
+a^2-b^2=4=(a-b)(a+b)=\frac12(a+b),
+\]
+pa $a+b=8$. Rešavanjem sistema dobijamo
+\[
+a=\frac{8+\frac12}{2}=\frac{17}{4},\qquad b=\frac{8-\frac12}{2}=\frac{15}{4}.
+\]
+Otuda je
+\[
+x+2=a^2=\frac{289}{16}\ \Longrightarrow\ x=\frac{289}{16}-2=\frac{257}{16}\approx 16.06.
+\]
+Dakle rešenje pripada intervalu $[14,18)$.
+
+\subsection*{Answer}
+$[14,18)$ (option \textbf{D}), jer je $x=\dfrac{257}{16}$.
+
+\end{document}
+

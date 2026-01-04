@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Skup svih realnih rešenja nejednačine $\frac{|1-x|}{1-|x|} < \frac{1+|x|}{|1+x|}$ je oblika (za neke realne brojeve $a$ i $b$ takve da je $0 < a < b < +\infty$):
+
+(A) $(-\infty, -a)$ \quad (B) $(a, +\infty)$ \quad (C) $(-\infty, -a) \cup (a, +\infty)$
+
+(D) $(-b, -a) \cup (a, b)$ \quad (E) $(-\infty, -a) \cup (-a, a) \cup (a, +\infty)$ \quad (N) Ne znam
+
+\subsection*{Solution}
+The inequality is:
+\[
+\frac{|1-x|}{1-|x|} < \frac{1+|x|}{|1+x|}
+\]
+
+First, note the domain restrictions:
+\begin{itemize}
+    \item $1 - |x| \neq 0 \Rightarrow |x| \neq 1 \Rightarrow x \neq \pm 1$
+    \item $|1+x| \neq 0 \Rightarrow x \neq -1$
+    \item For the left side to be positive (which is needed since right side is always positive), we need $1 - |x| > 0$, so $|x| < 1$.
+\end{itemize}
+
+So we need $|x| < 1$, i.e., $x \in (-1, 1)$.
+
+For $x \in (-1, 1)$:
+\begin{itemize}
+    \item $|1-x| = 1-x$ (since $x < 1$)
+    \item $1 - |x| > 0$
+    \item $|1+x| = 1+x$ (since $x > -1$)
+\end{itemize}
+
+The inequality becomes:
+\[
+\frac{1-x}{1-|x|} < \frac{1+|x|}{1+x}
+\]
+
+Cross-multiplying (both denominators positive for $|x| < 1$):
+\[
+(1-x)(1+x) < (1+|x|)(1-|x|)
+\]
+\[
+1 - x^2 < 1 - |x|^2 = 1 - x^2
+\]
+
+This gives $1 - x^2 < 1 - x^2$, which is never true!
+
+Let me reconsider. For $|x| > 1$, the left side has $1 - |x| < 0$, making the left fraction negative, while the right side is always positive. So the inequality holds for all $|x| > 1$ where defined.
+
+For $|x| > 1$, we need $x \neq -1$ (already satisfied since $|x| > 1$).
+
+So the solution is $x \in (-\infty, -1) \cup (1, +\infty)$.
+
+This is of the form $(-\infty, -a) \cup (a, +\infty)$ with $a = 1$.
+
+\subsection*{Answer}
+$(-\infty, -a) \cup (a, +\infty)$ (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Data su tri različita proizvoda fabrike A, četiri različita proizvoda fabrike B i pet različitih proizvoda fabrike C. Na koliko različitih načina se svi proizvodi mogu poređati u niz uz sledeće uslove: proizvodi fabrike B su jedan pored drugog, proizvodi fabrike C su jedan pored drugog, nikoja dva proizvoda fabrike A nisu jedan pored drugog?
+
+\textbf{A)} $5!$; \quad \textbf{B)} $4!5!$; \quad \textbf{C)} $3!4!5!$; \quad \textbf{D)} $2!3!4!5!$; \quad \textbf{E)} $12 \cdot 3!$
+
+\subsection*{Solution}
+Pošto proizvodi fabrike B moraju biti zajedno i proizvodi fabrike C moraju biti zajedno, tretiramo ih kao blokove.
+
+Imamo:
+\begin{itemize}
+\item Blok B (4 proizvoda zajedno)
+\item Blok C (5 proizvoda zajedno)
+\item 3 pojedinačna proizvoda A
+\end{itemize}
+
+Proizvodi A ne smeju biti jedan pored drugog. To znači da moraju biti raspoređeni u "praznine" između i oko blokova B i C.
+
+Ako poređamo blokove B i C, imamo 2! načina (BC ili CB).
+
+Između i oko dva bloka imamo 3 mesta: \_B\_C\_ ili \_C\_B\_
+
+Treba rasporediti 3 proizvoda A u ova 3 mesta (svaki u različito mesto da ne bi bili susedni). To može na $3!$ načina.
+
+Unutar bloka B, 4 proizvoda se mogu poređati na $4!$ načina.
+
+Unutar bloka C, 5 proizvoda se mogu poređati na $5!$ načina.
+
+Ukupan broj načina:
+\[
+2! \cdot 3! \cdot 4! \cdot 5! = 2 \cdot 6 \cdot 24 \cdot 120 = 34560
+\]
+
+Ovo odgovara opciji \textbf{D)}: $2! \cdot 3! \cdot 4! \cdot 5!$
+
+\subsection*{Answer}
+$2!3!4!5!$ (option \textbf{D}).
+
+\end{document}

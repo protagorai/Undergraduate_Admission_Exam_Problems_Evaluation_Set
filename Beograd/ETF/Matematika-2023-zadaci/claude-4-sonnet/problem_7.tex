@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+U kocku $K_1$ ivice 1 cm upisana je lopta $L_1$, zatim je u loptu $L_1$ upisana kocka $K_2$, zatim u nju lopta $L_2$ i zatim se postupak nastavlja na isti način. Zbir površina (u $\text{cm}^2$) svih kocki $K_n$, $n \in \mathbb{N}$, iznosi:
+
+\subsection*{Solution}
+Analizirajmo postupak korak po korak.
+
+\textbf{Korak 1:} Kocka $K_1$ ima ivicu $a_1 = 1$ cm.
+
+Upisana lopta $L_1$ ima poluprečnik $r_1 = \frac{a_1}{2} = \frac{1}{2}$ cm.
+
+\textbf{Korak 2:} U loptu $L_1$ upisujemo kocku $K_2$.
+
+Dijagonala kocke $K_2$ jednaka je prečniku lopte $L_1$:
+\[
+a_2\sqrt{3} = 2r_1 = 2 \cdot \frac{1}{2} = 1
+\]
+\[
+a_2 = \frac{1}{\sqrt{3}}
+\]
+
+\textbf{Korak 3:} U kocku $K_2$ upisujemo loptu $L_2$:
+\[
+r_2 = \frac{a_2}{2} = \frac{1}{2\sqrt{3}}
+\]
+
+\textbf{Opšti obrazac:}
+Vidimo da je:
+\[
+a_{n+1} = \frac{2r_n}{\sqrt{3}} = \frac{2 \cdot \frac{a_n}{2}}{\sqrt{3}} = \frac{a_n}{\sqrt{3}}
+\]
+
+Dakle: $a_n = \frac{1}{(\sqrt{3})^{n-1}}$.
+
+Površina kocke $K_n$ je:
+\[
+P_n = 6a_n^2 = 6 \cdot \frac{1}{(\sqrt{3})^{2(n-1)}} = 6 \cdot \frac{1}{3^{n-1}} = \frac{6}{3^{n-1}} = 2 \cdot 3^{-(n-1)} = 2 \cdot 3^{1-n}
+\]
+
+Zbir svih površina:
+\[
+\sum_{n=1}^{\infty} P_n = \sum_{n=1}^{\infty} 2 \cdot 3^{1-n} = 2 \cdot 3 \sum_{n=1}^{\infty} 3^{-n} = 6 \sum_{n=1}^{\infty} \left(\frac{1}{3}\right)^n
+\]
+
+Ovo je geometrijski red sa prvim članom $\frac{1}{3}$ i količnikom $\frac{1}{3}$:
+\[
+\sum_{n=1}^{\infty} \left(\frac{1}{3}\right)^n = \frac{\frac{1}{3}}{1 - \frac{1}{3}} = \frac{\frac{1}{3}}{\frac{2}{3}} = \frac{1}{2}
+\]
+
+Dakle:
+\[
+\sum_{n=1}^{\infty} P_n = 6 \cdot \frac{1}{2} = 3
+\]
+
+\subsection*{Answer}
+$3$ (opcija \textbf{E}).
+
+\end{document}

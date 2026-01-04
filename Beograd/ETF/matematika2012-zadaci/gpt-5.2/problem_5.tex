@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+If the polynomial $P(x)=x^3+ax^2+bx-4$ $(a,b\in\mathbb{R})$ is divisible by $x^2-1$, find $a^2+b^2$.
+
+Options: (A) $1$ \quad (B) $17$ \quad (C) $5$ \quad (D) $3$ \quad (E) $14$.
+
+\subsection*{Solution}
+Since $x^2-1=(x-1)(x+1)$ divides $P(x)$, we have
+\[
+P(1)=0,\qquad P(-1)=0.
+\]
+Compute:
+\[
+P(1)=1+a+b-4=a+b-3=0 \ \Rightarrow\ a+b=3,
+\]
+\[
+P(-1)=-1+a-b-4=a-b-5=0 \ \Rightarrow\ a-b=5.
+\]
+Solving the system gives $a=4$ and $b=-1$. Hence
+\[
+a^2+b^2=4^2+(-1)^2=16+1=17.
+\]
+
+\subsection*{Answer}
+$17$ (option \textbf{B}).
+
+\end{document}
+

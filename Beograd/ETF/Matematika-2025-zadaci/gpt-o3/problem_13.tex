@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 13}
+Odrediti graničnu vrednost
+\[
+\lim_{x\to 2}\frac{x\sqrt{x}-\sqrt{2}\,x-2\sqrt{x}+2\sqrt{2}}{x^{3}-4x^{2}+4x}.
+\]
+
+\subsection*{Solution}
+Primetite da se u brojiocu pojavljuju parovi koji sadrže faktor $(x-2)$.
+\[
+x\sqrt{x}-2\sqrt{x}=\sqrt{x}(x-2), \qquad -\sqrt{2}\,x+2\sqrt{2}=-\sqrt{2}(x-2).
+\]
+Zbir je
+\[
+(x-2)(\sqrt{x}-\sqrt{2}).
+\]
+Imenilac se faktoriše
+\[
+x^{3}-4x^{2}+4x= x(x^{2}-4x+4)=x(x-2)^{2}.
+\]
+Dakle
+\[
+\frac{(x-2)(\sqrt{x}-\sqrt{2})}{x(x-2)^{2}}=\frac{\sqrt{x}-\sqrt{2}}{x(x-2)}.
+\]
+Racionalizujmo brojilac: \(\sqrt{x}-\sqrt{2}=\dfrac{x-2}{\sqrt{x}+\sqrt{2}}\), pa izraz postaje
+\[
+\frac{1}{x\,(\sqrt{x}+\sqrt{2})}.
+\]
+Sada je prelaz na graničnu vrednost neposredan:
+\[
+\lim_{x\to 2}\frac{1}{x(\sqrt{x}+\sqrt{2})}=\frac{1}{2\,(\sqrt{2}+\sqrt{2})}=\frac{1}{4\sqrt{2}}.
+\]
+
+\subsection*{Answer}
+$\displaystyle \frac{1}{4\sqrt{2}}$ (option \textbf{A}).
+
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 10}
+Zbir prva tri člana rastućeg aritmetičkog niza iznosi $15$, njihov proizvod $105$, a zbir prvih $n$ članova jednak je $1023$. Odrediti $n$.
+
+\subsection*{Solution}
+Neka su članovi $a,\;a+d,\;a+2d$ ($d>0$). Uslov zbira:
+\[
+3a+3d=15\Rightarrow a+d=5.
+\]
+Članovi su $5-d,\;5,\;5+d$. Uslov proizvoda:
+\[
+5(25-d^2)=105\Rightarrow d^2=4\Rightarrow d=2.
+\]
+Prvi član $a=3$, pa je niz $3,5,7,\dots$ ($a_1=3$, $d=2$).
+Zbir prvih $n$ članova:
+\[
+S_n=\frac{n}{2}\bigl(2a_1+(n-1)d\bigr)=\frac{n}{2}(6+2n-2)=n(n+2).
+\]
+Jednačina $n(n+2)=1023$ daje
+\[
+ n^2+2n-1023=0\Longrightarrow n=31\;(\text{pošto }n>0).
+\]
+
+\subsection*{Answer}
+$31$ (option \textbf{C}).
+
+\end{document}

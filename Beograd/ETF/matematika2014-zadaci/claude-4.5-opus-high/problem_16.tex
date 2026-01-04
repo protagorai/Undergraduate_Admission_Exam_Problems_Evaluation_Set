@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Bočne strane trostrane piramide su pravougli trouglovi sa temenom pravog ugla u vrhu piramide. Površine tih bočnih strana su 6 cm$^2$, 8 cm$^2$ i 12 cm$^2$. Zapremina piramide je:
+
+(A) $6$ cm$^3$ \quad (B) $8\sqrt{2}$ cm$^3$ \quad (C) $8$ cm$^3$ \quad (D) $6\sqrt{2}$ cm$^3$ \quad (E) $12$ cm$^3$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let the apex of the pyramid be $V$ and the three edges from $V$ be $a$, $b$, $c$ (perpendicular to each other).
+
+The three lateral faces are right triangles with legs being pairs of these edges:
+\begin{itemize}
+    \item Face with legs $a, b$: Area $= \frac{1}{2}ab$
+    \item Face with legs $b, c$: Area $= \frac{1}{2}bc$
+    \item Face with legs $a, c$: Area $= \frac{1}{2}ac$
+\end{itemize}
+
+So we have:
+\[
+\frac{1}{2}ab = 6 \implies ab = 12
+\]
+\[
+\frac{1}{2}bc = 8 \implies bc = 16
+\]
+\[
+\frac{1}{2}ac = 12 \implies ac = 24
+\]
+
+Multiplying all three:
+\[
+(ab)(bc)(ac) = 12 \cdot 16 \cdot 24 = a^2b^2c^2
+\]
+\[
+a^2b^2c^2 = 4608
+\]
+\[
+abc = \sqrt{4608} = \sqrt{4608} = \sqrt{1024 \cdot 4.5} = 48\sqrt{2}
+\]
+
+Let me verify: $4608 = 2^9 \cdot 9 = 512 \cdot 9$. Actually $12 \cdot 16 \cdot 24 = 192 \cdot 24 = 4608$.
+$4608 = 2^9 \cdot 3^2$, so $\sqrt{4608} = 2^{4.5} \cdot 3 = 16\sqrt{2} \cdot 3 = 48\sqrt{2}$.
+
+The volume of a pyramid with three mutually perpendicular edges $a, b, c$ from the apex is:
+\[
+V = \frac{1}{6}abc = \frac{1}{6} \cdot 48\sqrt{2} = 8\sqrt{2} \text{ cm}^3
+\]
+
+\subsection*{Answer}
+$8\sqrt{2}$ cm$^3$ (option \textbf{B}).
+
+\end{document}

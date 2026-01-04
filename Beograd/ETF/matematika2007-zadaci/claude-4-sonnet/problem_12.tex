@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Jednačina $9^{\sqrt{x-1}} - 4 \cdot 3^{2\sqrt{x-1}} + 3 = 0$:
+\begin{enumerate}
+\item[(A)] Nema rešenja
+\item[(B)] Ima jedno rešenje
+\item[(C)] Ima dva rešenja
+\item[(D)] Ima tri rešenja
+\item[(E)] Ima četiri rešenja
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Prvo primetimo da je $9^{\sqrt{x-1}} = (3^2)^{\sqrt{x-1}} = 3^{2\sqrt{x-1}}$.
+
+Dakle, jednačina postaje:
+\[
+3^{2\sqrt{x-1}} - 4 \cdot 3^{2\sqrt{x-1}} + 3 = 0
+\]
+\[
+-3 \cdot 3^{2\sqrt{x-1}} + 3 = 0
+\]
+\[
+3(1 - 3^{2\sqrt{x-1}}) = 0
+\]
+\[
+1 - 3^{2\sqrt{x-1}} = 0
+\]
+\[
+3^{2\sqrt{x-1}} = 1
+\]
+
+Pošto je $3^0 = 1$, imamo:
+\[
+2\sqrt{x-1} = 0
+\]
+\[
+\sqrt{x-1} = 0
+\]
+\[
+x - 1 = 0
+\]
+\[
+x = 1
+\]
+
+Proveravamo da li je $x = 1$ u domenu:
+Za $\sqrt{x-1}$ da bude definisan, potrebno je $x - 1 \geq 0$, tj. $x \geq 1$.
+
+Pošto je $x = 1 \geq 1$, rešenje je validno.
+
+Proveravamo rešenje:
+\[
+9^{\sqrt{1-1}} - 4 \cdot 3^{2\sqrt{1-1}} + 3 = 9^0 - 4 \cdot 3^0 + 3 = 1 - 4 \cdot 1 + 3 = 1 - 4 + 3 = 0 \checkmark
+\]
+
+\subsection*{Answer}
+Jednačina \textbf{(B) ima jedno rešenje} $x = 1$.
+
+\end{document}

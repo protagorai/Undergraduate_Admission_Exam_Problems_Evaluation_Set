@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Na koliko načina dve osobe, $A$ i $B$, mogu da podele 8 različitih knjiga, ukoliko ne moraju sve knjige biti podeljene, osoba $A$ mora da dobije bar jednu knjigu, dok osoba $B$ ne mora da dobije nijednu knjigu?
+
+\subsection*{Solution}
+Svaka od 8 knjiga može da:
+\begin{itemize}
+\item Ode osobi $A$
+\item Ode osobi $B$
+\item Ne bude podeljena (ostane)
+\end{itemize}
+
+Dakle, za svaku knjigu imamo 3 izbora, što daje ukupno $3^8$ načina.
+
+Međutim, moramo isključiti slučajeve kada osoba $A$ ne dobije nijednu knjigu.
+
+Ako $A$ ne dobije nijednu knjigu, svaka knjiga može ili otići $B$ ili ostati nepodeljena -- 2 izbora po knjizi, dakle $2^8$ načina.
+
+Broj validnih podela:
+\[
+3^8 - 2^8 = 6561 - 256 = 6305
+\]
+
+\subsection*{Answer}
+$6305$ (option \textbf{A}).
+
+\end{document}

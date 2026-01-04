@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Find the number of different polynomial forms $x^2 + px + q$, for $p, q \in \mathbb{R}$, 
+that divide the polynomial $x^4 - 3x^2 + 2$.
+
+\subsection*{Solution}
+First, factor $x^4 - 3x^2 + 2$:
+\[
+x^4 - 3x^2 + 2 = (x^2 - 1)(x^2 - 2) = (x-1)(x+1)(x^2 - 2)
+\]
+
+The roots are: $x = 1, -1, \sqrt{2}, -\sqrt{2}$.
+
+Any quadratic divisor $x^2 + px + q$ must have two of these roots. The possible combinations are:
+
+\begin{enumerate}
+\item $(x-1)(x+1) = x^2 - 1$ \quad ($p = 0$, $q = -1$)
+\item $(x-\sqrt{2})(x+\sqrt{2}) = x^2 - 2$ \quad ($p = 0$, $q = -2$)
+\item $(x-1)(x-\sqrt{2}) = x^2 - (1+\sqrt{2})x + \sqrt{2}$
+\item $(x-1)(x+\sqrt{2}) = x^2 - (1-\sqrt{2})x - \sqrt{2}$
+\item $(x+1)(x-\sqrt{2}) = x^2 + (1-\sqrt{2})x - \sqrt{2}$
+\item $(x+1)(x+\sqrt{2}) = x^2 + (1+\sqrt{2})x + \sqrt{2}$
+\end{enumerate}
+
+All six polynomials have real coefficients and are distinct.
+
+\subsection*{Answer}
+$6$ (option \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 13}
+Suma beskonačne opadajuće geometrijske progresije sa pozitivnim članovima iznosi 9/2. Ako je suma kvadratnih korena članova progresije jednaka 3, tada količnik progresije iznosi:
+\begin{itemize}
+    \item[(A)] 1/9
+    \item[(B)] 1/3
+    \item[(C)] 2/9
+    \item[(D)] 2/3
+    \item[(E)] 4/9
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Neka je progresija $a, aq, aq^2, \dots$ gde je $0 < q < 1$ i $a > 0$.
+Suma je $S = \frac{a}{1-q} = \frac{9}{2} \implies a = \frac{9}{2}(1-q)$.
+Niz korena je $\sqrt{a}, \sqrt{aq}, \sqrt{aq^2}, \dots$ tj. $\sqrt{a}, \sqrt{a}\sqrt{q}, \sqrt{a}(\sqrt{q})^2, \dots$.
+Ovo je geometrijska progresija sa prvim članom $\sqrt{a}$ i količnikom $\sqrt{q}$.
+Suma je $S' = \frac{\sqrt{a}}{1-\sqrt{q}} = 3 \implies \sqrt{a} = 3(1-\sqrt{q}) \implies a = 9(1-\sqrt{q})^2$.
+Izjednačimo izraze za $a$:
+\[ \frac{9}{2}(1-q) = 9(1-\sqrt{q})^2 \]
+\[ \frac{1}{2}(1-\sqrt{q})(1+\sqrt{q}) = (1-\sqrt{q})^2 \]
+Delimo sa $1-\sqrt{q}$ (jer $q \neq 1$):
+\[ \frac{1}{2}(1+\sqrt{q}) = 1-\sqrt{q} \]
+\[ 1+\sqrt{q} = 2 - 2\sqrt{q} \]
+\[ 3\sqrt{q} = 1 \implies \sqrt{q} = \frac{1}{3} \]
+\[ q = \frac{1}{9} \]
+
+\subsection*{Answer}
+1/9 (option \textbf{A}).
+
+\end{document}

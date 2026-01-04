@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+In an isosceles triangle ABC (AB = AC = 3cm, BC = 2cm), a circle is inscribed that touches sides AB and AC at points D and E. The length DE equals (in cm):
+
+A) $\frac{13}{10}$; B) $\frac{6}{5}$; C) $\frac{135}{100}$; D) $\frac{4}{3}$; E) $\frac{7}{5}$; N) Ne znam.
+
+\subsection*{Solution}
+In an isosceles triangle with AB = AC = 3 and BC = 2, let's find the inradius first.
+
+The semiperimeter is $s = \frac{3 + 3 + 2}{2} = 4$.
+
+Using Heron's formula for the area:
+\[
+\text{Area} = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{4 \cdot 1 \cdot 1 \cdot 2} = \sqrt{8} = 2\sqrt{2}
+\]
+
+The inradius is $r = \frac{\text{Area}}{s} = \frac{2\sqrt{2}}{4} = \frac{\sqrt{2}}{2}$.
+
+Now, let's set up coordinates. Place the triangle with B at $(-1, 0)$, C at $(1, 0)$, and A at $(0, h)$ where $h$ is the height.
+
+Since AB = 3, we have $\sqrt{1 + h^2} = 3$, so $h^2 = 8$ and $h = 2\sqrt{2}$.
+
+The incenter is at $(0, r) = (0, \frac{\sqrt{2}}{2})$.
+
+The incircle touches AB at point D. Since AB has the equation $y = 2\sqrt{2} - 2\sqrt{2}x$ (line from $(0, 2\sqrt{2})$ to $(-1, 0)$), we can find D by finding the point on AB that is distance $r$ from the incenter.
+
+By symmetry, D and E are equidistant from the y-axis. If D has coordinates $(x_D, y_D)$, then E has coordinates $(-x_D, y_D)$.
+
+The distance from the incenter $(0, \frac{\sqrt{2}}{2})$ to the line AB is $r = \frac{\sqrt{2}}{2}$.
+
+Using the property that the incircle touches the sides, and by symmetry, we can find that:
+$AD = AE = s - a = 4 - 2 = 2$
+
+Since A is at $(0, 2\sqrt{2})$ and AB = 3, we have D at distance 2 from A along AB.
+The unit vector along AB is $\frac{(-1, -2\sqrt{2})}{\sqrt{1 + 8}} = \frac{(-1, -2\sqrt{2})}{3}$.
+
+So D is at $(0, 2\sqrt{2}) + 2 \cdot \frac{(-1, -2\sqrt{2})}{3} = (0, 2\sqrt{2}) + (-\frac{2}{3}, -\frac{4\sqrt{2}}{3}) = (-\frac{2}{3}, \frac{2\sqrt{2}}{3})$.
+
+By symmetry, E is at $(\frac{2}{3}, \frac{2\sqrt{2}}{3})$.
+
+Therefore:
+\[
+DE = \sqrt{(\frac{2}{3} - (-\frac{2}{3}))^2 + 0^2} = \sqrt{(\frac{4}{3})^2} = \frac{4}{3}
+\]
+
+\subsection*{Answer}
+$\frac{4}{3}$ (option \textbf{D}).
+
+\end{document}

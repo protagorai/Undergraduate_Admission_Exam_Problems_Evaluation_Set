@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Ukupan broj parova celih brojeva $(x, y)$ takvih da važi $|x^2 - 2x| - y < \dfrac{1}{2}$ i $y + |x - 1| < 2$ je:
+
+\subsection*{Solution}
+We have two inequalities:
+\begin{enumerate}
+\item $|x^2 - 2x| - y < \dfrac{1}{2}$, i.e., $y > |x^2 - 2x| - \dfrac{1}{2}$
+\item $y + |x - 1| < 2$, i.e., $y < 2 - |x - 1|$
+\end{enumerate}
+
+For integer solutions, we need $y > |x^2 - 2x| - \dfrac{1}{2}$ and $y < 2 - |x - 1|$.
+
+Note that $|x^2 - 2x| = |x(x-2)| = |x||x-2|$.
+
+For integer $y$ to exist, we need:
+\[
+|x^2 - 2x| - \frac{1}{2} < y < 2 - |x - 1|
+\]
+
+Let's check integer values of $x$:
+
+\textbf{$x = 0$:} $|0 - 0| = 0$, $|0 - 1| = 1$
+\[
+-\frac{1}{2} < y < 1 \implies y = 0
+\]
+One solution: $(0, 0)$
+
+\textbf{$x = 1$:} $|1 - 2| = 1$, $|1 - 1| = 0$
+\[
+\frac{1}{2} < y < 2 \implies y = 1
+\]
+One solution: $(1, 1)$
+
+\textbf{$x = 2$:} $|4 - 4| = 0$, $|2 - 1| = 1$
+\[
+-\frac{1}{2} < y < 1 \implies y = 0
+\]
+One solution: $(2, 0)$
+
+\textbf{$x = -1$:} $|1 + 2| = 3$, $|-1 - 1| = 2$
+\[
+\frac{5}{2} < y < 0
+\]
+No solution (empty interval).
+
+\textbf{$x = 3$:} $|9 - 6| = 3$, $|3 - 1| = 2$
+\[
+\frac{5}{2} < y < 0
+\]
+No solution (empty interval).
+
+For $|x| \geq 2$ and $x \neq 2$, $|x^2 - 2x|$ grows quickly while $2 - |x-1|$ decreases, so no more solutions.
+
+Total: \textbf{3} pairs.
+
+\subsection*{Answer}
+$3$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Odrediti skup svih realnih $x$ za koje vazi nejednakost
+\[
+\bigl|4^{3x}-2^{4x+2}\cdot 3^{x+1}+20\cdot 12^x\cdot 3^x\bigr|
+> 8\cdot 6^x\bigl(8^{x-1}+6^x\bigr),
+\]
+i izabrati odgovarajuci oblik resenja.
+
+\subsection*{Solution}
+Sve zapisemo preko $2$ i $3$. Neka su
+\[
+A=2^{2x},\qquad B=3^x \quad (A>0,\ B>0).
+\]
+Tada je
+\[
+4^{3x}=2^{6x}=A^3,\qquad
+2^{4x+2}\cdot 3^{x+1}=4\cdot 2^{4x}\cdot 3^{x+1}=12A^2B,
+\]
+\[
+20\cdot 12^x\cdot 3^x=20\cdot (4^x3^x)\cdot 3^x=20\cdot AB^2.
+\]
+Leva strana je zato
+\[
+|A^3-12A^2B+20AB^2|
+=A\,|A^2-12AB+20B^2|
+=A\,B^2\,|t^2-12t+20|,
+\]
+gde je $t=\dfrac{A}{B}=\left(\dfrac{4}{3}\right)^x$.
+Faktorisanjem dobijamo
+\[
+t^2-12t+20=(t-2)(t-10),
+\]
+pa je leva strana $AB^2|(t-2)(t-10)|$.
+
+Desna strana:
+\[
+8\cdot 6^x(8^{x-1}+6^x)
+=8\cdot (2^x3^x)\left(2^{3x-3}+2^x3^x\right)
+=A\,B^2\,(t+8).
+\]
+Posle deljenja sa $AB^2>0$ dobijamo ekvivalentnu nejednakost u $t$:
+\[
+|(t-2)(t-10)|>t+8,\qquad t>0.
+\]
+Razmatramo intervale:
+
+\medskip
+\noindent\textbf{1) $t\le 2$.}
+Tada je $(t-2)(t-10)\ge 0$, pa
+\[
+t^2-12t+20>t+8 \iff t^2-13t+12>0 \iff (t-1)(t-12)>0.
+\]
+Na $t\le 2$ sledi $t\in(0,1)$.
+
+\medskip
+\noindent\textbf{2) $2\le t\le 10$.}
+Tada je proizvod $\le 0$, pa
+\[
+-(t^2-12t+20)>t+8 \iff -t^2+11t-28>0 \iff (t-4)(t-7)<0,
+\]
+odakle $t\in(4,7)$.
+
+\medskip
+\noindent\textbf{3) $t\ge 10$.}
+Ponovo je proizvod $\ge 0$ i dobijamo isti uslov kao u (1), pa $t>12$.
+
+\medskip
+Dakle,
+\[
+t\in(0,1)\cup(4,7)\cup(12,\infty).
+\]
+Kako je $t=\left(\frac{4}{3}\right)^x$ rastuca funkcija, resenje u $x$ je
+\[
+x\in(-\infty,0)\ \cup\ \left(\log_{4/3}4,\ \log_{4/3}7\right)\ \cup\ \left(\log_{4/3}12,\ \infty\right).
+\]
+Ovo je unija tri intervala, sto odgovara opciji (A) u zadatku.
+
+\subsection*{Answer}
+Resenje je unija tri intervala (opcija \textbf{A}), konkretno
+\[
+(-\infty,0)\ \cup\ \left(\log_{4/3}4,\ \log_{4/3}7\right)\ \cup\ \left(\log_{4/3}12,\ \infty\right).
+\]
+
+\end{document}
+

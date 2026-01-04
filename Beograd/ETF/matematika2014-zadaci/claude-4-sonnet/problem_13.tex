@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Sva realna rešenja iracionalne jednačine $\frac{1}{\sqrt{x} + \sqrt{x-2}} + \frac{1}{\sqrt{x+2} + \sqrt{x}} = \frac{1}{4}$ pripadaju skupu:
+
+(A) $[2,6)$ \quad (B) $[6,10)$ \quad (C) $[10,14)$ \quad (D) $[14,18)$ \quad (E) $[18,+\infty)$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Prvo određujemo oblast definisanosti: $x \geq 2$.
+
+Racionalizujemo svaki razlomak:
+\[
+\frac{1}{\sqrt{x} + \sqrt{x-2}} = \frac{\sqrt{x} - \sqrt{x-2}}{(\sqrt{x} + \sqrt{x-2})(\sqrt{x} - \sqrt{x-2})} = \frac{\sqrt{x} - \sqrt{x-2}}{x - (x-2)} = \frac{\sqrt{x} - \sqrt{x-2}}{2}
+\]
+
+\[
+\frac{1}{\sqrt{x+2} + \sqrt{x}} = \frac{\sqrt{x+2} - \sqrt{x}}{(\sqrt{x+2} + \sqrt{x})(\sqrt{x+2} - \sqrt{x})} = \frac{\sqrt{x+2} - \sqrt{x}}{(x+2) - x} = \frac{\sqrt{x+2} - \sqrt{x}}{2}
+\]
+
+Jednačina postaje:
+\[
+\frac{\sqrt{x} - \sqrt{x-2}}{2} + \frac{\sqrt{x+2} - \sqrt{x}}{2} = \frac{1}{4}
+\]
+
+\[
+\frac{\sqrt{x} - \sqrt{x-2} + \sqrt{x+2} - \sqrt{x}}{2} = \frac{1}{4}
+\]
+
+\[
+\frac{\sqrt{x+2} - \sqrt{x-2}}{2} = \frac{1}{4}
+\]
+
+\[
+\sqrt{x+2} - \sqrt{x-2} = \frac{1}{2}
+\]
+
+Neka je $u = \sqrt{x+2}$ i $v = \sqrt{x-2}$. Tada je $u^2 - v^2 = 4$ i $u - v = \frac{1}{2}$.
+
+Iz $u^2 - v^2 = (u-v)(u+v) = 4$ i $u - v = \frac{1}{2}$:
+\[
+\frac{1}{2}(u + v) = 4 \Rightarrow u + v = 8
+\]
+
+Rešavamo sistem:
+\[
+u - v = \frac{1}{2}, \quad u + v = 8
+\]
+
+Dobijamo: $u = \frac{17}{4}$ i $v = \frac{15}{4}$.
+
+Dakle:
+\[
+\sqrt{x+2} = \frac{17}{4} \Rightarrow x + 2 = \frac{289}{16} \Rightarrow x = \frac{289}{16} - 2 = \frac{289 - 32}{16} = \frac{257}{16}
+\]
+
+Pošto je $\frac{257}{16} = 16,0625$, rešenje pripada skupu $[14,18)$.
+
+\subsection*{Answer}
+$[14,18)$ (option \textbf{D}).
+
+\end{document}

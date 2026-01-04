@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Data je funkcija $f(x) = \begin{cases} x^2, & x \text{ je paran broj} \\ \frac{1}{2}(x-3), & x \text{ je neparan broj} \end{cases}$. Vrednost izraza $f(f(f(17) + 1) + 1)$ jednaka je:
+
+(A) $17$ \quad (B) $23$ \quad (C) $31$ \quad (D) $42$ \quad (E) $101$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Izračunajmo korak po korak.
+
+\textbf{Korak 1:} $f(17)$
+Pošto je $17$ neparan broj:
+\[
+f(17) = \frac{1}{2}(17-3) = \frac{1}{2} \cdot 14 = 7
+\]
+
+\textbf{Korak 2:} $f(17) + 1 = 7 + 1 = 8$
+
+\textbf{Korak 3:} $f(8)$
+Pošto je $8$ paran broj:
+\[
+f(8) = 8^2 = 64
+\]
+
+\textbf{Korak 4:} $f(f(f(17) + 1) + 1) = f(64 + 1) = f(65)$
+
+\textbf{Korak 5:} $f(65)$
+Pošto je $65$ neparan broj:
+\[
+f(65) = \frac{1}{2}(65-3) = \frac{1}{2} \cdot 62 = 31
+\]
+
+Dakle, $f(f(f(17) + 1) + 1) = 31$.
+
+\subsection*{Answer}
+(C) $31$
+
+\end{document}

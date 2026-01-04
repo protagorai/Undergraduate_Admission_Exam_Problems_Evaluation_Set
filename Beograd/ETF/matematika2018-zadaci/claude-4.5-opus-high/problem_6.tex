@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Date su funkcije: $f_1(x) = \ln((x+3)^5 \cdot (x-1)^2)$, $f_2(x) = 5\ln(x+3) + \ln(x-1)^2$, $f_3(x) = \ln(x+3)^5 + 2\ln(x-1)$ i $f_4(x) = 5\ln(x+3) + 2\ln(x-1)$. Tačan iskaz je:
+
+\subsection*{Solution}
+Let's analyze the domains and expressions of each function.
+
+\textbf{$f_1(x) = \ln((x+3)^5 \cdot (x-1)^2)$}
+
+For this to be defined, we need $(x+3)^5 \cdot (x-1)^2 > 0$.
+- $(x-1)^2 \geq 0$ always, and $= 0$ when $x = 1$
+- $(x+3)^5 > 0$ when $x > -3$, and $< 0$ when $x < -3$
+
+So we need $x > -3$ and $x \neq 1$. Domain: $(-3, 1) \cup (1, +\infty)$
+
+\textbf{$f_2(x) = 5\ln(x+3) + \ln(x-1)^2$}
+
+We need $x + 3 > 0$ and $(x-1)^2 > 0$.
+This gives $x > -3$ and $x \neq 1$. Domain: $(-3, 1) \cup (1, +\infty)$
+
+Note: $\ln(x-1)^2 = 2\ln|x-1|$
+
+\textbf{$f_3(x) = \ln(x+3)^5 + 2\ln(x-1)$}
+
+We need $x + 3 > 0$ and $x - 1 > 0$.
+This gives $x > 1$. Domain: $(1, +\infty)$
+
+\textbf{$f_4(x) = 5\ln(x+3) + 2\ln(x-1)$}
+
+We need $x + 3 > 0$ and $x - 1 > 0$.
+This gives $x > 1$. Domain: $(1, +\infty)$
+
+For $x > 1$, all functions are defined. Let's check if they're equal there:
+- $f_1(x) = \ln((x+3)^5) + \ln((x-1)^2) = 5\ln(x+3) + 2\ln(x-1)$
+- $f_2(x) = 5\ln(x+3) + 2\ln|x-1| = 5\ln(x+3) + 2\ln(x-1)$ for $x > 1$
+- $f_3(x) = 5\ln(x+3) + 2\ln(x-1)$
+- $f_4(x) = 5\ln(x+3) + 2\ln(x-1)$
+
+On $(1, +\infty)$: $f_1 = f_2 = f_3 = f_4$
+
+But $f_3$ and $f_4$ have domain $(1, +\infty)$, while $f_1$ and $f_2$ have domain $(-3, 1) \cup (1, +\infty)$.
+
+So $f_1 = f_2$ (same domain and same values), but $f_1 \neq f_3$ and $f_1 \neq f_4$ (different domains).
+
+Also $f_3 = f_4$ on their common domain.
+
+Therefore: $f_1 = f_2 \neq f_3 = f_4$
+
+\subsection*{Answer}
+$f_1 = f_2 \neq f_3 = f_4$ (option \textbf{D}).
+
+\end{document}

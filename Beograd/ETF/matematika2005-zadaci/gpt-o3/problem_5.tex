@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Neka su $x_1$ i $x_2$ koreni jednačine
+\[
+x^{2}+x-2005=0.
+\]
+Izračunati
+\[
+2x_{1}^{2}+x_{1}x_{2}+x_{2}^{2}+x_{1}-2005.
+\]
+
+\subsection*{Rešenje}
+Za kvadratnu jednačinu $x^{2}+x-2005=0$ važe simetrične sume
+\[
+S=x_{1}+x_{2}=-1,\qquad P=x_{1}x_{2}=-2005.
+\]
+Dalje je
+\[
+x_{1}^{2}+x_{2}^{2}=S^{2}-2P=1+4010=4011.
+\]
+Posmatrani izraz razlažemo:
+\begin{align*}
+E&=2x_{1}^{2}+x_{1}x_{2}+x_{2}^{2}+x_{1}-2005\\
+ &= (x_{1}^{2}+x_{2}^{2}) + \bigl(x_{1}^{2}+x_{1}x_{2}+x_{1}\bigr)-2005.
+\end{align*}
+Pošto je $x_{1}$ koren jednačine, $x_{1}^{2}=-x_{1}+2005$, pa
+\[
+x_{1}^{2}+x_{1}x_{2}+x_{1}=(-x_{1}+2005)+Px_{1}+x_{1}=2005+P.
+\]
+Dakle $x_{1}^{2}+x_{1}x_{2}+x_{1}=2005-2005=0$ i
+\[
+E=4011-2005=2006.
+\]
+
+\subsection*{Odgovor}
+$2006$ (opcija \textbf{B}).
+
+\end{document}

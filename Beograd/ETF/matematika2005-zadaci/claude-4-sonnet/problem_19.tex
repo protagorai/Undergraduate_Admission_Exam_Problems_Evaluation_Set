@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Broj načina na koji se mogu poredati u niz $n$ nula i $k$ jedinica, tako da nikoje dve jedinice nisu susedne, ako je $k \leq n + 1$ je:
+
+\subsection*{Solution}
+Imamo $n$ nula i $k$ jedinica, gde je $k \leq n + 1$.
+
+Da bi nikoje dve jedinice nisu susedne, možemo razmisliti ovako:
+- Prvo postavimo $n$ nula u niz: $0\ 0\ 0\ \ldots\ 0$
+- Ovo stvara $n + 1$ poziciju gde možemo staviti jedinice (pre prve nule, između nula, i posle poslednje nule)
+- Trebamo da izaberemo $k$ od ovih $n + 1$ pozicija za jedinice
+
+Broj načina da izaberemo $k$ pozicija od $n + 1$ dostupnih pozicija je $\binom{n+1}{k}$.
+
+\subsection*{Answer}
+$\binom{n+1}{k}$ (opcija \textbf{A}).
+
+\end{document}

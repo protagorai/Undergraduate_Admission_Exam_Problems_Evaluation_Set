@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Skup svih realnih rešenja nejednačine $\sqrt{(2x+1)^4 - (2x+1)^2 + (2x+1)^2} \geq 0$ je oblika (za neke $a, b, c \in R$, za koje važi $a < b < c$):
+
+(A) $(-\infty, a] \cup \{b\} \cup [c, +\infty)$ \quad (B) $[a, b) \cup (b, c]$ \quad (C) $[a, b] \cup [c, +\infty)$ \quad (D) $(-\infty, a] \cup [b, c]$ \quad (E) $\{a, b, c\}$
+
+\subsection*{Solution}
+Posmatrajmo izraz pod korenom:
+\[
+I = (2x+1)^4 - (2x+1)^2 + (2x+1)^2
+\]
+Vidimo da se $-(2x+1)^2$ i $+(2x+1)^2$ poništavaju (ako sam dobro pročitao zadatak).
+Međutim, zadatak verovatno glasi: $\sqrt{(2x+1)^4 - (2x+1)^3 + (2x+1)^2} \geq 0$ ili slično, jer se u suprotnom članovi poništavaju.
+Hajde da pažljivije pogledamo sliku.
+Izraz je: $\sqrt{(2x+1)^4 - (2x+1)^2 + (2x+1)^2}$... čekaj, na slici piše:
+$\sqrt{(2x+1)^4 - (2x+1)^3 + (2x+1)^2} \geq 0$? Ne, izgleda kao $(2x+1)^2$.
+Ali ako se poništavaju, ostaje $\sqrt{(2x+1)^4} = (2x+1)^2 \geq 0$, što je tačno za svako $x \in R$. To bi bilo $(-\infty, +\infty)$, što nije među ponuđenim odgovorima u tom obliku.
+
+Pogledajmo ponuđene odgovore. Oni sugerišu neku "rupu" ili intervale.
+Možda sam pogrešno pročitao eksponente.
+Hajde da zumiram ili pretpostavim da je srednji član možda $-(2x+1)^3$?
+Ako je $\sqrt{(2x+1)^4 - (2x+1)^3 + (2x+1)^2} \geq 0$.
+Neka je $t = 2x+1$.
+$\sqrt{t^4 - t^3 + t^2} \geq 0$.
+Izraz pod korenom mora biti $\geq 0$.
+$t^2(t^2 - t + 1) \geq 0$.
+$t^2 \geq 0$ uvek.
+$t^2 - t + 1$: diskriminanta $D = 1 - 4 = -3 < 0$, koeficijent uz $t^2$ je $1 > 0$, dakle $t^2 - t + 1 > 0$ za svako $t$.
+Proizvod je $\geq 0$ za svako $t$. Opet rešenje $R$.
+
+Možda je nejednačina $\leq 0$?
+Ako je $\leq 0$, onda mora biti $= 0$, pa $t=0$, tj. $x=-1/2$. To je jedna tačka.
+
+Hajde da pogledam sliku ponovo.
+Zadatak 4.
+Izraz je $\sqrt{(2x+1)^4 - (2x+1)^2} + (2x+1)^2 \geq 0$? Ne, koren je preko svega ili ne?
+Koren se završava posle $(2x+1)^2$?
+Ne, izgleda kao $\sqrt{(2x+1)^4 - \dots} \dots$.
+Čekaj, možda je $\sqrt{(2x+1)^4} - (2x+1)^2 + (2x+1)^2 \geq 0$? Ne, to nema smisla.
+
+Aha, možda je $\sqrt{(2x+1)^4} - \sqrt{(2x+1)^2} + (2x+1)^2 \geq 0$?
+$(2x+1)^2 - |2x+1| + (2x+1)^2 \geq 0$?
+$2(2x+1)^2 - |2x+1| \geq 0$.
+Neka je $u = |2x+1| \geq 0$.
+$2u^2 - u \geq 0 \Rightarrow u(2u - 1) \geq 0$.
+$u \in [0, \infty)$ pa treba $u=0$ ili $2u-1 \geq 0 \Rightarrow u \geq 1/2$.
+$|2x+1| = 0 \Rightarrow x = -1/2$.
+$|2x+1| \geq 1/2 \Rightarrow 2x+1 \geq 1/2$ ili $2x+1 \leq -1/2$.
+$2x \geq -1/2 \Rightarrow x \geq -1/4$.
+$2x \leq -3/2 \Rightarrow x \leq -3/4$.
+Rešenje: $(-\infty, -3/4] \cup \{-1/2\} \cup [-1/4, +\infty)$.
+Ovo odgovara formi $(-\infty, a] \cup \{b\} \cup [c, +\infty)$.
+Gde je $a = -3/4, b = -1/2, c = -1/4$.
+Ovo se poklapa sa odgovorom (A).
+
+Proverimo tekst zadatka ponovo.
+$\sqrt{(2x+1)^4} - (2x+1)^2 + (2x+1)^2 \dots$ ne.
+Izgleda kao: $\sqrt{(2x+1)^4} - (2x+1)^2 \dots$?
+Ako je tekst: $\sqrt{(2x+1)^4} - \sqrt{(2x+1)^2} + (2x+1)^2 \geq 0$ nije, jer vidim samo jedan koren na početku.
+Možda $\sqrt{(2x+1)^4} - \dots$? Ne.
+Ako pažljivo pogledam sliku:
+$\sqrt{(2x+1)^4} - (2x+1)^2 + (2x+1)^2$ je čudno.
+
+Pogledajmo opet opciju (A). Ona odgovara mom izvođenju za $2|2x+1|^2 - |2x+1| \geq 0$ ako je zadatak bio npr. $(2x+1)^2 - \sqrt{(2x+1)^2} + (2x+1)^2 \geq 0$ ili slično.
+Ali na slici piše: $\sqrt{(2x+1)^4} - (2x+1) + (2x+1)^2 \ge 0$?
+Ne, srednji član je $(2x+1)^2$.
+Čekaj, ako je zadatak: $\sqrt{(2x+1)^4} - \sqrt{(2x+1)^2} \dots$?
+Ne, prvi koren je sigurno $\sqrt{(2x+1)^4}$. To je $(2x+1)^2$.
+Onda minus nešto.
+Ako je minus $\sqrt{(2x+1)^2}$, to je $-|2x+1|$.
+Onda plus $(2x+1)^2$.
+To daje $(2x+1)^2 - |2x+1| + (2x+1)^2 \geq 0 \Rightarrow 2(2x+1)^2 - |2x+1| \geq 0$.
+To vodi do rešenja A.
+Da li je to tekst?
+Slika: `\sqrt{(2x+1)^4} - (2x+1)^2 + (2x+1)^2`? Ne, to bi se skratilo.
+Možda je srednji član samo $(2x+1)$?
+`\sqrt{(2x+1)^4} - (2x+1) + ...`?
+Ali zagrade sugerišu kvadrat.
+
+Aha! Pogledajmo bolje.
+Zadatak 4: `\sqrt{(2x+1)^4} - (2x+1)^2 + (2x+1)^2 \ge 0`.
+Ako je prvi član pod korenom?
+`\sqrt{(2x+1)^4 - (2x+1)^2} + (2x+1)^2 \ge 0`?
+Ako je koren samo nad prva dva člana?
+$\sqrt{(2x+1)^2((2x+1)^2 - 1)} + (2x+1)^2 \geq 0$.
+Definisanost korena: $(2x+1)^2((2x+1)^2 - 1) \geq 0$.
+$t^2(t^2-1) \geq 0$ gde $t=2x+1$.
+$t=0$ ili $t^2 \geq 1 \Rightarrow |t| \geq 1$.
+$|2x+1| \geq 1 \Rightarrow 2x+1 \geq 1$ ili $2x+1 \leq -1$.
+$x \geq 0$ ili $x \leq -1$.
+I $t=0 \Rightarrow x = -1/2$.
+Domen: $(-\infty, -1] \cup \{-1/2\} \cup [0, \infty)$.
+Za te vrednosti koren je $\geq 0$, i $(2x+1)^2 \geq 0$, pa je zbir $\geq 0$.
+Dakle rešenje je sam domen.
+$(-\infty, -1] \cup \{-1/2\} \cup [0, \infty)$.
+To je oblika $(-\infty, a] \cup \{b\} \cup [c, \infty)$.
+$a=-1, b=-1/2, c=0$.
+Ovo se savršeno uklapa u formu rešenja (A).
+
+Zaključak: Tekst je verovatno $\sqrt{(2x+1)^4 - (2x+1)^2} + (2x+1)^2 \geq 0$.
+Međutim, na slici se vidi jedan dugačak koren.
+Ali ako je dugačak koren: $\sqrt{(2x+1)^4 - (2x+1)^2 + (2x+1)^2}$ onda se skrati na $\sqrt{(2x+1)^4} = (2x+1)^2 \ge 0$ što je uvek tačno, $x \in R$. Nema rupa.
+
+Mora biti da se koren završava posle drugog člana.
+Probaću da tumačim tako jer daje smisleno rešenje koje odgovara ponuđenim opcijama.
+
+Ili možda: $\sqrt{(2x+1)^4 - (2x+1)^2} + \sqrt{(2x+1)^2} \ge 0$?
+Ako piše `(2x+1)^2` na kraju bez korena, onda je prethodna interpretacija dobra.
+
+Hajde da pretpostavim da je zadatak:
+$\sqrt{(2x+1)^4 - (2x+1)^2} + (2x+1)^2 \geq 0$.
+Rešenje je domen korena, jer su oba sabirka nenegativna.
+Domen: $(2x+1)^4 - (2x+1)^2 \geq 0$.
+Neka je $A = (2x+1)^2$. $A^2 - A \geq 0 \Rightarrow A(A-1) \geq 0$.
+$A \leq 0$ ili $A \geq 1$.
+Pošto je $A = (2x+1)^2 \geq 0$, onda $A=0$ ili $A \geq 1$.
+$A=0 \Rightarrow 2x+1=0 \Rightarrow x=-1/2$.
+$A \geq 1 \Rightarrow (2x+1)^2 \geq 1 \Rightarrow |2x+1| \geq 1$.
+$2x+1 \geq 1 \Rightarrow x \geq 0$.
+$2x+1 \leq -1 \Rightarrow x \leq -1$.
+Rešenje: $(-\infty, -1] \cup \{-1/2\} \cup [0, \infty)$.
+
+\subsection*{Answer}
+$(-\infty, a] \cup \{b\} \cup [c, +\infty)$ (opcija \textbf{(A)}).
+
+\end{document}

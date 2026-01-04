@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 9}
+
+Kre\'cemo od jednakostrani\v cnog trougla povr\v sine \(P\). Iz njega se izbacuje trougao \v cija su temena sredi\v sta stranica (medijalni trougao), pa se dobija figura \(F_1\).
+
+\subsection*{Korak 1: povr\v sina \(F_1\)}
+Medijalni trougao ima stranice duplo manje, pa je njegova povr\v sina \(\frac14 P\).
+Zato je
+\[
+\operatorname{Pov}(F_1)=P-\frac14P=\frac34P.
+\]
+
+\subsection*{Op\v sti korak}
+Svaki put se u svakom preostalom trouglu izbacuje njegov medijalni trougao, tj. u svakom trouglu se zadr\v zi \(\frac34\) povr\v sine.
+Zato va\v zi rekurzija
+\[
+\operatorname{Pov}(F_{n})=\left(\frac34\right)^n P,\qquad n\in\mathbb{N}.
+\]
+
+\subsection*{Zbir povr\v sina}
+Tra\v zi se
+\[
+\sum_{n=1}^{\infty}\operatorname{Pov}(F_n)=\sum_{n=1}^{\infty}P\left(\frac34\right)^n
+=P\cdot\frac{\frac34}{1-\frac34}
+=P\cdot 3
+=3P.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{3P}\qquad\text{(D)}
+\]
+
+\end{document}
+

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Neka je $S$ skup svih realnih brojeva $x$ za koje važi $2 \log_{\cos x} \sin x \leq \log_{\sin x} \cot g x$ $(0 < x < \pi)$. Tada je za neke brojeve $a, b, c, d, e, f$ $(a < b < c < d < e < f)$, skup $S$ oblika:
+
+\subsection*{Solution}
+Nejednačina je $2 \log_{\cos x} \sin x \leq \log_{\sin x} \cot x$.
+
+Prvo, da bi logaritmi bili definisani, potrebno je:
+- $\cos x > 0$ i $\cos x \neq 1$
+- $\sin x > 0$ i $\sin x \neq 1$  
+- $\cot x > 0$
+
+Pošto je $0 < x < \pi$, imamo $\sin x > 0$.
+
+Za $\cos x > 0$: $0 < x < \frac{\pi}{2}$.
+
+Za $\cot x > 0$: $\cot x = \frac{\cos x}{\sin x} > 0$, što je tačno kada su $\cos x$ i $\sin x$ istog znaka. Pošto je $\sin x > 0$, potrebno je $\cos x > 0$, tj. $0 < x < \frac{\pi}{2}$.
+
+Dakle, domen je $0 < x < \frac{\pi}{2}$.
+
+Koristimo zamenu baze:
+\[
+\log_{\cos x} \sin x = \frac{\ln \sin x}{\ln \cos x}, \quad \log_{\sin x} \cot x = \frac{\ln \cot x}{\ln \sin x}
+\]
+
+Nejednačina postaje:
+\[
+2 \frac{\ln \sin x}{\ln \cos x} \leq \frac{\ln \cot x}{\ln \sin x}
+\]
+
+Pošto je $\cot x = \frac{\cos x}{\sin x}$:
+\[
+\ln \cot x = \ln \cos x - \ln \sin x
+\]
+
+Nejednačina postaje:
+\[
+2 \frac{\ln \sin x}{\ln \cos x} \leq \frac{\ln \cos x - \ln \sin x}{\ln \sin x}
+\]
+
+Ovo je složena nejednačina koja zahteva detaljnu analizu slučajeva na osnovu znakova $\ln \sin x$ i $\ln \cos x$.
+
+Na osnovu opcija, rešenje je verovatno unija intervala.
+
+\subsection*{Answer}
+$(a, b) \cup (c, d) \cup (e, f)$ (option \textbf{E}).
+
+\end{document}

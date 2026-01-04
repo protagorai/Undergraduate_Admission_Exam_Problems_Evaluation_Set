@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Ostatak pri deljenju polinoma
+\[
+P(x)=x^{2024}+x^{2023}+x^{2022}+x^{2021}+x^{20}+1
+\]
+polinomom
+\[
+Q(x)=x^3+x^2+x+1
+\]
+jeste:
+(A) $x^2+1$ \ (B) $2$ \ (C) $0$ \ (D) $1$ \ (E) $x^2-1$.
+
+\subsection*{Solution}
+Primecujemo
+\[
+Q(x)=x^3+x^2+x+1=(x+1)(x^2+1).
+\]
+Dalje,
+\[
+x^4-1=(x^2-1)(x^2+1)=(x-1)(x+1)(x^2+1),
+\]
+pa $Q(x)\mid (x^4-1)$, odnosno u aritmetici po modulu $Q$ vazi
+\[
+x^4\equiv 1 \pmod{Q(x)}.
+\]
+Zato redukujemo stepene po modulu $4$:
+\[
+x^{2024}\equiv x^0=1,\quad
+x^{2023}\equiv x^3,\quad
+x^{2022}\equiv x^2,\quad
+x^{2021}\equiv x,\quad
+x^{20}\equiv x^0=1.
+\]
+Otuda
+\[
+P(x)\equiv 1+x^3+x^2+x+1+1 = x^3+x^2+x+3.
+\]
+Ali $x^3+x^2+x+1\equiv 0$, pa je $x^3+x^2+x\equiv -1$, te
+\[
+P(x)\equiv (-1)+3=2.
+\]
+Dakle, ostatak je konstanta $2$.
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}
+

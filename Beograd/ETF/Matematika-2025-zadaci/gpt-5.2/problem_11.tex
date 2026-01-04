@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 11}
+Skup svih vrednosti realnog parametra $m$ za koje realna rešenja $x_1$ i $x_2$ jednačine
+\[
+(m-1)x^2+2mx+m+2=0
+\]
+zadovoljavaju uslov
+\[
+\frac{x_1}{x_2}+\frac{x_2}{x_1}\le 2
+\]
+je oblika (za $-\infty<a<b<c<+\infty$).
+
+\subsection*{Solution}
+Najpre tražimo kada su koreni realni. Diskriminanta je
+\[
+\Delta=(2m)^2-4(m-1)(m+2)=4m^2-4(m^2+m-2)=4(2-m),
+\]
+pa su koreni realni ako i samo ako $m\le 2$. Takođe mora biti $m\ne 1$ da bi jednačina bila kvadratna.
+
+Neka su $x_1,x_2$ realni i različiti (ili jednaki) i neka $x_1x_2\ne 0$ (inače izraz nije definisan).
+Posmatrajmo
+\[
+\frac{x_1}{x_2}+\frac{x_2}{x_1}=\frac{x_1^2+x_2^2}{x_1x_2}.
+\]
+\begin{itemize}
+\item Ako je $x_1x_2<0$, onda je izraz negativan, pa automatski $\le 2$.
+\item Ako je $x_1x_2>0$, tada uslov
+\[
+\frac{x_1^2+x_2^2}{x_1x_2}\le 2
+\]
+posle množenja pozitivnim $x_1x_2$ daje $x_1^2+x_2^2\le 2x_1x_2$, tj. $(x_1-x_2)^2\le 0$, pa mora važiti $x_1=x_2$.
+\end{itemize}
+
+Po Vijetinim formulama
+\[
+x_1x_2=\frac{m+2}{m-1}.
+\]
+Dakle $x_1x_2<0 \iff \frac{m+2}{m-1}<0 \iff -2<m<1$ (ovde je $m\ne -2$ da ne bi bilo $x_1x_2=0$).
+To je ujedno u domeni $m\le 2$, pa svi $m\in(-2,1)$ rade.
+
+Za slučaj $x_1x_2>0$ potreban je dvostruki koren, tj. $\Delta=0\Rightarrow m=2$.
+Za $m=2$ dobijamo $(x+2)^2=0$, pa je uslov ispunjen.
+
+Zato je skup rešenja
+\[
+(-2,1)\cup\{2\}.
+\]
+
+\subsection*{Answer}
+$(-2,1)\cup\{2\}$ (option \textbf{D}, sa $a=-2,\ b=1,\ c=2$).
+
+\end{document}
+
+

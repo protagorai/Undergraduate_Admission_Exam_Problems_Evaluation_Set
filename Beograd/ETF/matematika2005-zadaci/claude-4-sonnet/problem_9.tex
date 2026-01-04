@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Zbir koeficijenata pravca tangenti kružnice $x^2 + y^2 = 2$ koje sadrže presečnu tačku pravih $x - y - 1 = 0$ i $x + y - 3 = 0$ je:
+
+\subsection*{Solution}
+Prvo pronalazimo presečnu tačku pravih $x - y - 1 = 0$ i $x + y - 3 = 0$.
+
+Iz prve jednačine: $x = y + 1$
+Zamenjujemo u drugu: $(y + 1) + y - 3 = 0$
+$2y - 2 = 0$
+$y = 1$
+
+Dakle $x = 1 + 1 = 2$, pa je presečna tačka $(2, 1)$.
+
+Sada tražimo tangente kružnice $x^2 + y^2 = 2$ koje prolaze kroz tačku $(2, 1)$.
+
+Jednačina tangente kružnice $x^2 + y^2 = r^2$ u tački $(x_0, y_0)$ na kružnici je:
+$x \cdot x_0 + y \cdot y_0 = r^2$
+
+Međutim, tačka $(2, 1)$ nije na kružnici jer $2^2 + 1^2 = 5 \neq 2$.
+
+Za tangente iz spoljašnje tačke, koristimo činjenicu da tangenta ima oblik $y - 1 = k(x - 2)$, tj. $y = kx - 2k + 1$.
+
+Zamenjujemo u jednačinu kružnice:
+$x^2 + (kx - 2k + 1)^2 = 2$
+$x^2 + k^2x^2 - 4k^2x + 2kx + 4k^2 - 4k + 1 = 2$
+$(1 + k^2)x^2 + (2k - 4k^2)x + (4k^2 - 4k + 1 - 2) = 0$
+$(1 + k^2)x^2 + (2k - 4k^2)x + (4k^2 - 4k - 1) = 0$
+
+Za tangente, diskriminanta mora biti nula:
+$\Delta = (2k - 4k^2)^2 - 4(1 + k^2)(4k^2 - 4k - 1) = 0$
+
+$= 4k^2 - 16k^3 + 16k^4 - 4(1 + k^2)(4k^2 - 4k - 1)$
+$= 4k^2 - 16k^3 + 16k^4 - 4(4k^2 - 4k - 1 + 4k^4 - 4k^3 - k^2)$
+$= 4k^2 - 16k^3 + 16k^4 - 4(4k^4 - 4k^3 + 3k^2 - 4k - 1)$
+$= 4k^2 - 16k^3 + 16k^4 - 16k^4 + 16k^3 - 12k^2 + 16k + 4$
+$= -8k^2 + 16k + 4 = 0$
+$-2k^2 + 4k + 1 = 0$
+$2k^2 - 4k - 1 = 0$
+
+Koristeći kvadratnu formulu:
+$k = \frac{4 \pm \sqrt{16 + 8}}{4} = \frac{4 \pm \sqrt{24}}{4} = \frac{4 \pm 2\sqrt{6}}{4} = \frac{2 \pm \sqrt{6}}{2}$
+
+Zbir koeficijenata je:
+$k_1 + k_2 = \frac{2 + \sqrt{6}}{2} + \frac{2 - \sqrt{6}}{2} = \frac{4}{2} = 2$
+
+\subsection*{Answer}
+$2$ (opcija \textbf{A}).
+
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Skup svih vrednosti realnog parametra $m$ za koje realna rešenja $x_1$ i $x_2$ jednačine $(m-1)x^2+2mx+m+2=0$ zadovoljavaju uslov $\frac{x_1}{x_2} + \frac{x_2}{x_1} \le 2$ je oblika (za $-\infty < a < b < c < \infty$):
+
+\subsection*{Solution}
+
+For real solutions, $D \ge 0$:
+\[
+D = (2m)^2 - 4(m-1)(m+2) = 4m^2 - 4(m^2+m-2) = -4m + 8 \ge 0 \implies m \le 2.
+\]
+Also $m \ne 1$ (quadratic).
+Condition:
+\[
+\frac{x_1^2+x_2^2}{x_1x_2} \le 2 \implies \frac{(x_1+x_2)^2 - 2x_1x_2}{x_1x_2} \le 2 \implies \frac{(x_1+x_2)^2}{x_1x_2} \le 4.
+\]
+Using Vieta's formulas: $x_1+x_2 = -\frac{2m}{m-1}$, $x_1x_2 = \frac{m+2}{m-1}$.
+\[
+\frac{\frac{4m^2}{(m-1)^2}}{\frac{m+2}{m-1}} \le 4 \implies \frac{4m^2}{(m-1)(m+2)} \le 4 \implies \frac{m^2}{(m-1)(m+2)} \le 1.
+\]
+\[
+\frac{m^2 - (m^2+m-2)}{(m-1)(m+2)} \le 0 \implies \frac{2-m}{(m-1)(m+2)} \le 0.
+\]
+Since $m \le 2$, $2-m \ge 0$. For the fraction to be $\le 0$, the denominator must be negative (or numerator 0).
+1) $2-m = 0 \implies m=2$.
+2) $(m-1)(m+2) < 0 \implies -2 < m < 1$.
+So $m \in (-2, 1) \cup \{2\}$.
+This matches the form $(a, b) \cup \{c\}$ with $a=-2, b=1, c=2$.
+
+
+\subsection*{Answer}
+(a, b) \cup \{c\} (option \textbf{D}).
+
+\end{document}

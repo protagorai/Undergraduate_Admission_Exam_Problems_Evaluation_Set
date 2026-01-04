@@ -1,0 +1,12 @@
+Please review @zadaci/matematika2022-zadaci/matematika2022-zadaci1.png and @zadaci/matematika2022-zadaci/matematika2022-zadaci2.png  (only those two files, nothing more) and for eachproblem in these lists of problem produce latex output of the solution, similar to the one i have here: @Kragujevac/PMF_Matematika/2024/gemini-3/problem_1.tex 
+then create file resenja.txt and in there list each ordinal of the problem (1, 2, 3, ... ) and the correct answer (include letter and value, letters can be latin or cyrilic script) and the value can be numerical or some other type of solution, but there needs to be, for each problem, clearly stated solution.
+
+each problem on one of the images should have separate latex file as a solution. each latex file should be named problem_<ordinal>.tex, where <ordinal> is the ordinal from the problem list on the input image (1 through 20 most commonly, but other if there are more).
+
+for this particular folder, there are two input images, each image has number o problems, you have to read each problem individually, and produce latex output for each individual problem that shows how to solve the assignment.
+
+there should be one resenja.txt with listed all problems (their ordinal numbers from the images) and correct answer (answer option, usually  letter or also an ordinal and and value).
+
+create folder gpt-5.2 (or use one that exists if there is one) inside this target folder to place all latext files inther eand resenja.txt. resenja.txt should list all the problems, chosen answers and result values.
+
+Do not search for the solutions or these same problems, solve the problems to the best of your ability on your own.

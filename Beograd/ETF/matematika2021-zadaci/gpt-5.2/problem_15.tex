@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Neka je dat pravougli trougao cije su katete duzina $a$ i $b$.
+Neka je nad svakom od stranica ovog pravouglog trougla konstruisan kvadrat.
+Ako spojimo temena ova tri kvadrata koja ne pripadaju trouglu dobijamo sestougao.
+Povrsina ovog sestougla jednaka je:
+\[
+\text{(A) }ab+\frac52(a^2+b^2)\quad
+\text{(B) }2ab+\frac32(a^2+b^2)\quad
+\text{(C) }\frac52ab+(a^2+b^2)\quad
+\text{(D) }\frac32ab+2(a^2+b^2)\quad
+\text{(E) }2(a^2+ab+b^2).
+\]
+
+\subsection*{Solution}
+Postavimo pravougli trougao sa temenima
+\[
+O=(0,0),\quad A=(a,0),\quad B=(0,b),
+\]
+pa je $\angle AOB=90^\circ$.
+
+\medskip
+\textbf{Kvadrat na $OA$.} Spoljasnji kvadrat (ispod $x$-ose) ima dodatna temena
+\[
+O_1=(0,-a),\qquad A_1=(a,-a).
+\]
+
+\medskip
+\textbf{Kvadrat na $OB$.} Spoljasnji kvadrat (levo od $y$-ose) ima dodatna temena
+\[
+O_2=(-b,0),\qquad B_1=(-b,b).
+\]
+
+\medskip
+\textbf{Kvadrat na $AB$.} Vektor $B-A=(-a,b)$.
+Spoljasnja normala (od trougla) dobija se rotacijom za $-90^\circ$, tj.\ $(b,a)$.
+Zato dodatna temena kvadrata na $AB$ mozemo uzeti kao
+\[
+A_2=A+(b,a)=(a+b,a),\qquad B_2=B+(b,a)=(b,a+b).
+\]
+
+Sestougao dobijamo spajanjem tacaka redom:
+\[
+O_1(0,-a),\ A_1(a,-a),\ A_2(a+b,a),\ B_2(b,a+b),\ B_1(-b,b),\ O_2(-b,0).
+\]
+Povrsinu racunamo formulom ``pertla'' (shoelace). Neka su to tacke $V_1,\dots,V_6$ u tom redosledu.
+Tada je
+\[
+\mathcal{P}=\frac12\left|\sum_{i=1}^6 x_i y_{i+1}-\sum_{i=1}^6 y_i x_{i+1}\right|,
+\quad (V_7=V_1).
+\]
+Direktnim racunom se dobija
+\[
+\sum x_i y_{i+1}=a^2+(a+b)^2+b^2+ab,\qquad
+\sum y_i x_{i+1}=-2a^2-ab-2b^2,
+\]
+pa je
+\[
+\mathcal{P}=\frac12\Bigl(4a^2+4ab+4b^2\Bigr)=2(a^2+ab+b^2).
+\]
+
+\subsection*{Answer}
+$2(a^2+ab+b^2)$ (option \textbf{E}).
+
+\end{document}
+

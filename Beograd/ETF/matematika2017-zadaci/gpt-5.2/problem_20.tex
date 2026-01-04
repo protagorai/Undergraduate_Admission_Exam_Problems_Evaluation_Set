@@ -1,0 +1,39 @@
+\section*{Zadatak 20}
+Dat je skup $A=\{1,2,3,4,5,6,7\}$.
+Odrediti ukupan broj preslikavanja $f:A\to A$ takvih da va\v{z}i
+\[
+(\forall k\in A)\ \bigl(f(k)\neq \min\{k,3\}\ \wedge\ (k>3\Rightarrow f(k)<k-2)\bigr),
+\]
+gde je $\min\{a,b\}=a$ ako je $a\le b$, a $\min\{a,b\}=b$ ako je $a>b$.
+
+\subsection*{Re\v{s}enje}
+Uslovi se odnose nezavisno na svaku vrednost $k$, pa je broj funkcija proizvod broja dozvoljenih izbora po $k$.
+
+\paragraph{Za $k=1,2,3$}
+Va\v{z}i $\min\{k,3\}=k$, pa je uslov samo $f(k)\neq k$.
+Zato:
+\[
+\#\{f(1)\}=6,\quad \#\{f(2)\}=6,\quad \#\{f(3)\}=6.
+\]
+
+\paragraph{Za $k=4,5,6,7$}
+Va\v{z}i $\min\{k,3\}=3$, pa je $f(k)\neq 3$ i jo\v{s} $f(k)<k-2$.
+\begin{itemize}
+\item $k=4$: $f(4)<2\Rightarrow f(4)=1$ (1 izbor).
+\item $k=5$: $f(5)<3\Rightarrow f(5)\in\{1,2\}$ (2 izbora).
+\item $k=6$: $f(6)<4\Rightarrow f(6)\in\{1,2,3\}$, ali $f(6)\neq 3$, pa $\{1,2\}$ (2 izbora).
+\item $k=7$: $f(7)<5\Rightarrow f(7)\in\{1,2,3,4\}$, ali $f(7)\neq 3$, pa $\{1,2,4\}$ (3 izbora).
+\end{itemize}
+
+\paragraph{Ukupan broj}
+\[
+N=6\cdot 6\cdot 6\cdot 1\cdot 2\cdot 2\cdot 3
+=216\cdot 12
+=2592.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(A)\;\; 2592}
+\]
+

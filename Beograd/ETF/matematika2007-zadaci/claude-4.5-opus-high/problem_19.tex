@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Dati su brojevi $a = \frac{\sin 1}{\sin 2}$, $b = \frac{\sin 2}{\sin 3}$ i $c = \frac{\sin 3}{\sin 4}$. Tada je:
+
+(A) $a < b < c$ \quad (B) $c < b < a$ \quad (C) $c < a < b$ \quad (D) $b < a < c$ \quad (E) $a < c < b$ \quad (N) Ne znam
+
+\subsection*{Solution}
+The angles are in radians. Let's compute approximate values:
+
+\begin{itemize}
+\item $\sin 1 \approx 0.8415$
+\item $\sin 2 \approx 0.9093$
+\item $\sin 3 \approx 0.1411$
+\item $\sin 4 \approx -0.7568$
+\end{itemize}
+
+Computing the ratios:
+\[
+a = \frac{\sin 1}{\sin 2} \approx \frac{0.8415}{0.9093} \approx 0.925
+\]
+\[
+b = \frac{\sin 2}{\sin 3} \approx \frac{0.9093}{0.1411} \approx 6.44
+\]
+\[
+c = \frac{\sin 3}{\sin 4} \approx \frac{0.1411}{-0.7568} \approx -0.186
+\]
+
+Ordering: $c < a < b$ (since $c$ is negative, $a$ is positive but less than 1, and $b$ is much larger than 1).
+
+\subsection*{Answer}
+$c < a < b$ (option \textbf{C}).
+
+\end{document}

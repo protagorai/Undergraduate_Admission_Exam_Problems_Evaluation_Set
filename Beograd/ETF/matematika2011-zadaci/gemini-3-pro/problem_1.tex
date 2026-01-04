@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 1}
+Koji od pet datih izraza ima različitu vrednost od ostala četiri izraza?
+\[
+(A)\; 2^8 \quad (B)\; 4^4 \quad (C)\; 8^{8/3} \quad (D)\; 16^2 \quad (E)\; 32^{6/5}
+\]
+
+\subsection*{Solution}
+Izračunajmo vrednost svakog izraza stepenovanjem osnove 2:
+\begin{itemize}
+    \item (A) $2^8 = 256$
+    \item (B) $4^4 = (2^2)^4 = 2^8 = 256$
+    \item (C) $8^{8/3} = (2^3)^{8/3} = 2^{3 \cdot \frac{8}{3}} = 2^8 = 256$
+    \item (D) $16^2 = (2^4)^2 = 2^8 = 256$
+    \item (E) $32^{6/5} = (2^5)^{6/5} = 2^{5 \cdot \frac{6}{5}} = 2^6 = 64$
+\end{itemize}
+Vidimo da izraz pod (E) ima vrednost 64, dok svi ostali imaju vrednost 256.
+
+\subsection*{Answer}
+$32^{6/5}$ (option \textbf{E}).
+
+\end{document}

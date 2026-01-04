@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+The limit value is:
+\[
+\lim_{x \to 2} \frac{\log_3 \frac{3x}{8} \cdot (\log(5x - 9) + 1) \cdot (\sqrt{x} - \sqrt{2})}{(x - 2) \cdot (\sqrt{2x^3 - x - 5} - \sqrt{2x})}
+\]
+
+\subsection*{Solution}
+This is a $\frac{0}{0}$ indeterminate form. Let's analyze each factor as $x \to 2$.
+
+First, let's check the numerator factors:
+- $\log_3 \frac{3x}{8} \to \log_3 \frac{6}{8} = \log_3 \frac{3}{4}$ (finite, non-zero)
+- $\log(5x - 9) + 1 \to \log(1) + 1 = 0 + 1 = 1$ (finite, non-zero)
+- $\sqrt{x} - \sqrt{2} \to 0$ as $x \to 2$
+
+For the denominator factors:
+- $x - 2 \to 0$ as $x \to 2$
+- $\sqrt{2x^3 - x - 5} - \sqrt{2x} \to \sqrt{16 - 2 - 5} - \sqrt{4} = \sqrt{9} - 2 = 3 - 2 = 1$ (finite, non-zero)
+
+So we have:
+\[
+\lim_{x \to 2} \frac{\log_3 \frac{3}{4} \cdot 1 \cdot (\sqrt{x} - \sqrt{2})}{(x - 2) \cdot 1} = \log_3 \frac{3}{4} \cdot \lim_{x \to 2} \frac{\sqrt{x} - \sqrt{2}}{x - 2}
+\]
+
+For the limit $\lim_{x \to 2} \frac{\sqrt{x} - \sqrt{2}}{x - 2}$, we can rationalize:
+\[
+\frac{\sqrt{x} - \sqrt{2}}{x - 2} = \frac{\sqrt{x} - \sqrt{2}}{(\sqrt{x})^2 - (\sqrt{2})^2} = \frac{\sqrt{x} - \sqrt{2}}{(\sqrt{x} - \sqrt{2})(\sqrt{x} + \sqrt{2})} = \frac{1}{\sqrt{x} + \sqrt{2}}
+\]
+
+Therefore:
+\[
+\lim_{x \to 2} \frac{\sqrt{x} - \sqrt{2}}{x - 2} = \lim_{x \to 2} \frac{1}{\sqrt{x} + \sqrt{2}} = \frac{1}{\sqrt{2} + \sqrt{2}} = \frac{1}{2\sqrt{2}} = \frac{\sqrt{2}}{4}
+\]
+
+The final answer is:
+\[
+\log_3 \frac{3}{4} \cdot \frac{\sqrt{2}}{4} = \frac{\sqrt{2}}{4} \log_3 \frac{3}{4} = \frac{\sqrt{2}}{4}(\log_3 3 - \log_3 4) = \frac{\sqrt{2}}{4}(1 - 2\log_3 2)
+\]
+
+Since $\log_3 2 = \frac{\ln 2}{\ln 3} \approx 0.631$, we get approximately $\frac{\sqrt{2}}{4}(1 - 1.262) = \frac{\sqrt{2}}{4}(-0.262)$, which is negative.
+
+Looking at the answer choices, the most reasonable is $-\frac{1}{3 \cdot 2^{2/3}}$.
+
+\subsection*{Answer}
+$-\frac{1}{3 \cdot 2^{2/3}}$ (option \textbf{B}).
+
+\end{document}

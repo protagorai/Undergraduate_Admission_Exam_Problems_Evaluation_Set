@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 14}
+Find the angle between the ellipse $\frac{x^2}{9} + \frac{y^2}{4} = 1$ and the hyperbola $\frac{x^2}{4} - y^2 = 1$ at their intersection point in the first quadrant.
+
+\subsection*{Solution}
+First, let's find the intersection points by solving the system:
+\begin{align}
+\frac{x^2}{9} + \frac{y^2}{4} &= 1 \\
+\frac{x^2}{4} - y^2 &= 1
+\end{align}
+
+From equation (2): $y^2 = \frac{x^2}{4} - 1$
+
+Substituting into equation (1):
+\[
+\frac{x^2}{9} + \frac{\frac{x^2}{4} - 1}{4} = 1
+\]
+\[
+\frac{x^2}{9} + \frac{x^2}{16} - \frac{1}{4} = 1
+\]
+\[
+\frac{x^2}{9} + \frac{x^2}{16} = \frac{5}{4}
+\]
+
+Finding a common denominator:
+\[
+\frac{16x^2 + 9x^2}{144} = \frac{5}{4}
+\]
+\[
+\frac{25x^2}{144} = \frac{5}{4}
+\]
+\[
+25x^2 = \frac{5 \cdot 144}{4} = 180
+\]
+\[
+x^2 = \frac{180}{25} = \frac{36}{5}
+\]
+\[
+x = \frac{6}{\sqrt{5}} = \frac{6\sqrt{5}}{5}
+\]
+
+From $y^2 = \frac{x^2}{4} - 1$:
+\[
+y^2 = \frac{36/5}{4} - 1 = \frac{9}{5} - 1 = \frac{4}{5}
+\]
+\[
+y = \frac{2}{\sqrt{5}} = \frac{2\sqrt{5}}{5}
+\]
+
+So the intersection point in the first quadrant is $\left(\frac{6\sqrt{5}}{5}, \frac{2\sqrt{5}}{5}\right)$.
+
+Now we need to find the slopes of the tangent lines to both curves at this point.
+
+For the ellipse $\frac{x^2}{9} + \frac{y^2}{4} = 1$, implicit differentiation gives:
+\[
+\frac{2x}{9} + \frac{2y}{4}\frac{dy}{dx} = 0
+\]
+\[
+\frac{dy}{dx} = -\frac{4x}{9y}
+\]
+
+At the intersection point:
+\[
+m_1 = -\frac{4 \cdot \frac{6\sqrt{5}}{5}}{9 \cdot \frac{2\sqrt{5}}{5}} = -\frac{\frac{24\sqrt{5}}{5}}{\frac{18\sqrt{5}}{5}} = -\frac{24}{18} = -\frac{4}{3}
+\]
+
+For the hyperbola $\frac{x^2}{4} - y^2 = 1$, implicit differentiation gives:
+\[
+\frac{2x}{4} - 2y\frac{dy}{dx} = 0
+\]
+\[
+\frac{dy}{dx} = \frac{x}{4y}
+\]
+
+At the intersection point:
+\[
+m_2 = \frac{\frac{6\sqrt{5}}{5}}{4 \cdot \frac{2\sqrt{5}}{5}} = \frac{\frac{6\sqrt{5}}{5}}{\frac{8\sqrt{5}}{5}} = \frac{6}{8} = \frac{3}{4}
+\]
+
+The angle $\theta$ between two lines with slopes $m_1$ and $m_2$ is given by:
+\[
+\tan \theta = \left|\frac{m_1 - m_2}{1 + m_1 m_2}\right|
+\]
+
+\[
+\tan \theta = \left|\frac{-\frac{4}{3} - \frac{3}{4}}{1 + \left(-\frac{4}{3}\right)\left(\frac{3}{4}\right)}\right| = \left|\frac{-\frac{16 + 9}{12}}{1 - 1}\right| = \left|\frac{-\frac{25}{12}}{0}\right|
+\]
+
+Since the denominator is 0, this means the curves are perpendicular, so $\theta = 90°$.
+
+\subsection*{Answer}
+$90°$ (option \textbf{D}).
+
+\end{document}
+

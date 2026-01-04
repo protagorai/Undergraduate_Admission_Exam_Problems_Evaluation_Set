@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+The set of all real numbers $x$ for which $(x - 1)\sqrt{x^2 - x - 2} \geq 0$ is:
+
+A) $(0,1)$; B) $(-\infty, -2)$; C) $\{-1\} \cup [2, +\infty)$; D) $(1,2)$; E) $(\frac{1}{2}, 1)$; N) Ne znam.
+
+\subsection*{Solution}
+First, we need the expression under the square root to be non-negative:
+\[
+x^2 - x - 2 \geq 0
+\]
+
+Factoring: $x^2 - x - 2 = (x-2)(x+1)$
+
+So we need $(x-2)(x+1) \geq 0$.
+
+This occurs when both factors have the same sign:
+- Both positive: $x \geq 2$ and $x \geq -1$, so $x \geq 2$
+- Both negative: $x \leq 2$ and $x \leq -1$, so $x \leq -1$
+
+Therefore, the domain is $x \in (-\infty, -1] \cup [2, +\infty)$.
+
+Now we need $(x - 1)\sqrt{x^2 - x - 2} \geq 0$.
+
+Since $\sqrt{x^2 - x - 2} \geq 0$ always (when defined), we need:
+- $(x - 1) \geq 0$, i.e., $x \geq 1$, or
+- $\sqrt{x^2 - x - 2} = 0$
+
+$\sqrt{x^2 - x - 2} = 0$ when $x^2 - x - 2 = 0$, i.e., when $x = 2$ or $x = -1$.
+
+For $x \geq 1$: We need $x$ in the domain $(-\infty, -1] \cup [2, +\infty)$ and $x \geq 1$.
+This gives us $x \in [2, +\infty)$.
+
+For the zeros: $x = -1$ and $x = 2$ both make the product zero, so they satisfy the inequality.
+
+Therefore, the solution set is $\{-1\} \cup [2, +\infty)$.
+
+\subsection*{Answer}
+$\{-1\} \cup [2, +\infty)$ (option \textbf{C}).
+
+\end{document}

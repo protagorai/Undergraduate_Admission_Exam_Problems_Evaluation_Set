@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Dat je skup $A = \{1,2,3,4,5,6,7\}$. Ukupan broj preslikavanja $f: A \to A$ takvih da važi
+\[
+(\forall k \in A)\left(f(k) \neq \min\{k,3\} \wedge (k > 3 \Rightarrow f(k) < k - 2)\right),
+\]
+gde je $\min\{a,b\} = \begin{cases} a, & a \leq b \\ b, & a > b \end{cases}$, jednak je:
+
+(A) $2592$ \quad (B) $1722$ \quad (C) $3421$ \quad (D) $1628$ \quad (E) nijedan od prethodno pomenutih odgovora \quad (N) Ne znam
+
+\subsection*{Solution}
+Analizirajmo uslove za svaki element skupa $A$.
+
+Za $k = 1$: $\min\{1,3\} = 1$, pa $f(1) \neq 1$. Pošto $1 \not> 3$, nema dodatnih ograničenja.
+Mogućnosti: $f(1) \in \{2,3,4,5,6,7\}$ (6 mogućnosti)
+
+Za $k = 2$: $\min\{2,3\} = 2$, pa $f(2) \neq 2$. Pošto $2 \not> 3$, nema dodatnih ograničenja.
+Mogućnosti: $f(2) \in \{1,3,4,5,6,7\}$ (6 mogućnosti)
+
+Za $k = 3$: $\min\{3,3\} = 3$, pa $f(3) \neq 3$. Pošto $3 \not> 3$, nema dodatnih ograničenja.
+Mogućnosti: $f(3) \in \{1,2,4,5,6,7\}$ (6 mogućnosti)
+
+Za $k = 4$: $\min\{4,3\} = 3$, pa $f(4) \neq 3$. Takođe, $4 > 3$, pa $f(4) < 4 - 2 = 2$.
+Dakle, $f(4) < 2$ i $f(4) \neq 3$.
+Mogućnosti: $f(4) \in \{1\}$ (1 mogućnost)
+
+Za $k = 5$: $\min\{5,3\} = 3$, pa $f(5) \neq 3$. Takođe, $5 > 3$, pa $f(5) < 5 - 2 = 3$.
+Dakle, $f(5) < 3$ i $f(5) \neq 3$.
+Mogućnosti: $f(5) \in \{1,2\}$ (2 mogućnosti)
+
+Za $k = 6$: $\min\{6,3\} = 3$, pa $f(6) \neq 3$. Takođe, $6 > 3$, pa $f(6) < 6 - 2 = 4$.
+Dakle, $f(6) < 4$ i $f(6) \neq 3$.
+Mogućnosti: $f(6) \in \{1,2\}$ (2 mogućnosti)
+
+Za $k = 7$: $\min\{7,3\} = 3$, pa $f(7) \neq 3$. Takođe, $7 > 3$, pa $f(7) < 7 - 2 = 5$.
+Dakle, $f(7) < 5$ i $f(7) \neq 3$.
+Mogućnosti: $f(7) \in \{1,2,4\}$ (3 mogućnosti)
+
+Ukupan broj preslikavanja je proizvod broja mogućnosti za svaki element:
+\[
+6 \times 6 \times 6 \times 1 \times 2 \times 2 \times 3 = 216 \times 1 \times 2 \times 2 \times 3 = 216 \times 12 = 2592
+\]
+
+\subsection*{Answer}
+(A) $2592$
+
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Na koliko načina se u red mogu poređati 5 učenika i 2 učenice, tako da učenice ne stoje jedna pored druge?
+
+(A) 240 \quad (B) 3600 \quad (C) 7680 \quad (D) 2400 \quad (E) 250 \quad (N) Ne znam
+
+\subsection*{Solution}
+We need to arrange 5 students (boys) and 2 students (girls) such that the 2 girls are not adjacent.
+
+\textbf{Method: Total arrangements minus arrangements where girls are together.}
+
+Total arrangements of 7 people: $7! = 5040$
+
+Arrangements where the 2 girls are together: Treat the 2 girls as one unit. We have 6 units to arrange: $6!$ ways. The 2 girls can be arranged within their unit in $2!$ ways.
+
+So arrangements with girls together: $6! \cdot 2! = 720 \cdot 2 = 1440$
+
+Arrangements where girls are NOT together: $5040 - 1440 = 3600$
+
+\textbf{Alternative method: Direct counting.}
+
+First, arrange the 5 boys: $5! = 120$ ways.
+
+This creates 6 gaps (including the ends): $\_B\_B\_B\_B\_B\_$
+
+We need to place 2 girls in these 6 gaps, choosing 2 different gaps:
+\[
+P(6,2) = 6 \cdot 5 = 30
+\]
+
+Total: $120 \cdot 30 = 3600$
+
+\subsection*{Answer}
+$3600$ (option \textbf{B}).
+
+\end{document}

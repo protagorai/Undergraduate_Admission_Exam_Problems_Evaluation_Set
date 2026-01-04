@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Ako je polinom $x^{2016}+x^{2015}-x^{2014}+ax^{2013}-bx^2+c$ ($a,b,c \in \mathbb{R}$) deljiv polinomom $x^3-x$, tada je zbir $4a^2+3b^2+8c^2$ jednak:
+
+\subsection*{Solution}
+$x^3-x = x(x-1)(x+1)$. Roots are $0, 1, -1$.
+$P(0)=0 \implies c=0$.
+$P(1)=0 \implies 1+1-1+a-b+0 = 0 \implies a-b=-1$.
+$P(-1)=0 \implies 1-1-1-a-b+0 = 0 \implies -a-b=1 \implies a+b=-1$.
+Solving $a-b=-1$ and $a+b=-1$:
+$2a = -2 \implies a=-1$.
+$b = 0$.
+Value: $4a^2+3b^2+8c^2 = 4(-1)^2 + 0 + 0 = 4$.
+
+
+\subsection*{Answer}
+4 (option \textbf{A})
+
+\end{document}

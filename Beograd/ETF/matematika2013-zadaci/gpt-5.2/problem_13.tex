@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 13}
+Odrediti ukupan broj realnih rešenja sistema:
+\[
+\begin{cases}
+x^2+xy-\sqrt{2}\,x=0,\\
+x^2+y^2=2.
+\end{cases}
+\]
+
+\subsection*{Rešenje}
+Prva jednačina se faktoriše:
+\[
+x^2+xy-\sqrt{2}\,x=x(x+y-\sqrt{2})=0.
+\]
+Dakle, ili je \(x=0\) ili je \(x+y=\sqrt{2}\).
+
+\medskip
+\noindent\textbf{1) \(x=0\):} iz \(x^2+y^2=2\) sledi \(y^2=2\), pa \(y=\pm\sqrt{2}\).
+To su \(2\) rešenja.
+
+\medskip
+\noindent\textbf{2) \(x+y=\sqrt{2}\):} \(y=\sqrt{2}-x\). U drugoj jednačini:
+\[
+x^2+(\sqrt{2}-x)^2=2 \Rightarrow x^2+(2-2\sqrt{2}x+x^2)=2
+\Rightarrow 2x^2-2\sqrt{2}x=0
+\Rightarrow 2x(x-\sqrt{2})=0.
+\]
+Dobijamo \(x=0\) (već uračunato) ili \(x=\sqrt{2}\), tada \(y=0\).
+To daje još \(1\) novo rešenje.
+
+Ukupno: \(2+1=3\) realna rešenja.
+
+\subsection*{Odgovor}
+\[
+\boxed{(E)\ 3}
+\]
+\end{document}
+

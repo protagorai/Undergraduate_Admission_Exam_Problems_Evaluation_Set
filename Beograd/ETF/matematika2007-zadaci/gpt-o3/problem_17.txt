@@ -1,0 +1,5 @@
+Problem 17
+
+Zbir najveće i najmanje vrednosti funkcije \(f(z) = z^{3} + 3z^{2} - 72z + 90\) na segmentu \([-5, 5]\) iznosi:
+
+(A) 314   (B) 330   (C) 400   (D) 412   (E) 321   (N) Ne znam

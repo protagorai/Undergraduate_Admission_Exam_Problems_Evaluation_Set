@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Ostatak pri deljenju polinoma
+\[
+x^{243}+x^{81}+x^{27}+x^9+x^3+x
+\]
+polinomom $x^2-1$ iznosi:
+\[
+\text{(A)}~0\quad
+\text{(B)}~1\quad
+\text{(C)}~2x\quad
+\text{(D)}~4x\quad
+\text{(E)}~6x.
+\]
+
+\subsection*{Solution}
+Pri deljenju sa $x^2-1$ važi kongruencija $x^2\equiv 1$, pa je za svaki neparan stepen
+\[
+x^{2k+1}=x(x^2)^k\equiv x\cdot 1^k=x\pmod{x^2-1}.
+\]
+Svi eksponenti $243,81,27,9,3,1$ su neparni, pa je svaki član kongruentan sa $x$. Zato je
+\[
+x^{243}+x^{81}+x^{27}+x^9+x^3+x \equiv x+x+x+x+x+x = 6x \pmod{x^2-1}.
+\]
+Dakle ostatak je $6x$.
+
+\subsection*{Answer}
+$6x$ (option \textbf{E}).
+
+\end{document}
+

@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Broj sabiraka u razvijenom obliku izraza $(a + b + c)^{10}$ jeste:
+
+\subsection*{Solution}
+Razvoj $(a + b + c)^{10}$ korišćenjem multinomijalne teoreme daje članove oblika:
+\[
+\frac{10!}{i! \cdot j! \cdot k!} a^i b^j c^k
+\]
+gde je $i + j + k = 10$ i $i, j, k \geq 0$.
+
+Broj različitih sabiraka jednak je broju načina da se izaberu nenegativni celi brojevi $i, j, k$ takvi da je $i + j + k = 10$.
+
+Ovo je klasičan kombinatorni problem -- broj načina da se $n$ identičnih objekata rasporedi u $r$ različitih kutija, što je dato formulom:
+\[
+\binom{n + r - 1}{r - 1} = \binom{10 + 3 - 1}{3 - 1} = \binom{12}{2}
+\]
+
+Izračunajmo:
+\[
+\binom{12}{2} = \frac{12 \cdot 11}{2} = 66
+\]
+
+\subsection*{Answer}
+$66$ (option \textbf{D}).
+
+\end{document}

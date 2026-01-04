@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Znajući da je $\cos(x - \frac{3\pi}{2}) = -\frac{4}{5}$ i $\frac{\pi}{2} < x < \pi$, tada je vrednost izraza $\sin \frac{x}{2} \cos \frac{5x}{2}$ jednaka:
+
+\subsection*{Solution}
+Koristimo formulu $\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$.
+$\cos(x - \frac{3\pi}{2}) = \cos x \cos \frac{3\pi}{2} + \sin x \sin \frac{3\pi}{2} = \cos x \cdot 0 + \sin x \cdot (-1) = -\sin x$.
+Dakle, $-\sin x = -\frac{4}{5} \Rightarrow \sin x = \frac{4}{5}$.
+Kako je $x \in (\frac{\pi}{2}, \pi)$, $\cos x$ je negativan.
+$\cos x = -\sqrt{1 - (\frac{4}{5})^2} = -\frac{3}{5}$.
+
+Traženi izraz transformišemo u zbir:
+$\sin \frac{x}{2} \cos \frac{5x}{2} = \frac{1}{2} [\sin(\frac{x}{2} + \frac{5x}{2}) + \sin(\frac{x}{2} - \frac{5x}{2})] = \frac{1}{2} [\sin(3x) + \sin(-2x)] = \frac{1}{2} [\sin 3x - \sin 2x]$.
+
+Računamo $\sin 2x$ i $\sin 3x$:
+$\sin 2x = 2\sin x \cos x = 2(\frac{4}{5})(-\frac{3}{5}) = -\frac{24}{25}$.
+$\sin 3x = 3\sin x - 4\sin^3 x = 3(\frac{4}{5}) - 4(\frac{64}{125}) = \frac{12}{5} - \frac{256}{125} = \frac{300 - 256}{125} = \frac{44}{125}$.
+
+Zamenom vrednosti:
+$\frac{1}{2} [\frac{44}{125} - (-\frac{24}{25})] = \frac{1}{2} [\frac{44}{125} + \frac{120}{125}] = \frac{1}{2} \cdot \frac{164}{125} = \frac{82}{125}$.
+
+\subsection*{Answer}
+$\frac{82}{125}$ (option \textbf{B}).
+
+\end{document}

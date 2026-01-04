@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Find the sum of the infinite geometric series:
+\[
+\frac{\sqrt{2}+1}{\sqrt{2}-1} + \frac{1}{2-\sqrt{2}} + \frac{1}{2} + \cdots
+\]
+
+\subsection*{Solution}
+First, let's simplify the first two terms.
+
+\textbf{First term:}
+\[
+\frac{\sqrt{2}+1}{\sqrt{2}-1} = \frac{(\sqrt{2}+1)(\sqrt{2}+1)}{(\sqrt{2}-1)(\sqrt{2}+1)} = \frac{(\sqrt{2}+1)^2}{2-1} = (\sqrt{2}+1)^2 = 2 + 2\sqrt{2} + 1 = 3 + 2\sqrt{2}
+\]
+
+\textbf{Second term:}
+\[
+\frac{1}{2-\sqrt{2}} = \frac{1}{2-\sqrt{2}} \cdot \frac{2+\sqrt{2}}{2+\sqrt{2}} = \frac{2+\sqrt{2}}{4-2} = \frac{2+\sqrt{2}}{2} = 1 + \frac{\sqrt{2}}{2}
+\]
+
+\textbf{Third term:} $\frac{1}{2}$
+
+Let's find the common ratio $r$:
+\[
+r = \frac{a_2}{a_1} = \frac{1 + \frac{\sqrt{2}}{2}}{3 + 2\sqrt{2}} = \frac{\frac{2+\sqrt{2}}{2}}{3 + 2\sqrt{2}} = \frac{2+\sqrt{2}}{2(3+2\sqrt{2})}
+\]
+
+Let's simplify: $2 + \sqrt{2} = \sqrt{2}(\sqrt{2} + 1)$ and $3 + 2\sqrt{2} = (\sqrt{2}+1)^2$:
+\[
+r = \frac{\sqrt{2}(\sqrt{2}+1)}{2(\sqrt{2}+1)^2} = \frac{\sqrt{2}}{2(\sqrt{2}+1)} = \frac{\sqrt{2}(\sqrt{2}-1)}{2(\sqrt{2}+1)(\sqrt{2}-1)} = \frac{2-\sqrt{2}}{2(2-1)} = \frac{2-\sqrt{2}}{2} = 1 - \frac{\sqrt{2}}{2}
+\]
+
+Let's verify: $r = 1 - \frac{\sqrt{2}}{2} = \frac{2-\sqrt{2}}{2}$
+
+Check $a_2 \cdot r = a_3$:
+\[
+\left(1 + \frac{\sqrt{2}}{2}\right) \cdot \frac{2-\sqrt{2}}{2} = \frac{(2+\sqrt{2})(2-\sqrt{2})}{4} = \frac{4-2}{4} = \frac{1}{2} \checkmark
+\]
+
+The sum of an infinite geometric series is $S = \frac{a_1}{1-r}$:
+\[
+S = \frac{3 + 2\sqrt{2}}{1 - (1 - \frac{\sqrt{2}}{2})} = \frac{3 + 2\sqrt{2}}{\frac{\sqrt{2}}{2}} = \frac{2(3 + 2\sqrt{2})}{\sqrt{2}} = \frac{6 + 4\sqrt{2}}{\sqrt{2}}
+\]
+\[
+= \frac{6}{\sqrt{2}} + 4 = \frac{6\sqrt{2}}{2} + 4 = 3\sqrt{2} + 4 = 4 + 3\sqrt{2}
+\]
+
+\subsection*{Answer}
+\textbf{(D)} $4 + 3\sqrt{2}$
+
+\end{document}

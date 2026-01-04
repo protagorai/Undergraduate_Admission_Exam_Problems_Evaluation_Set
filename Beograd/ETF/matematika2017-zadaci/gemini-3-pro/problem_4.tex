@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Dati su kompleksni brojevi $z_1 = 2017 + 2018i$, $z_2 = 2018 + 2019i$ i $w = (z_2 - z_1)^{-2020} \cdot \left(\frac{\overline{z_1}+1}{2018}\right)^{2021}$, (gde je $\overline{z_1}$ konjugovano kompleksni broj broja $z_1$ i $i^2 = -1$). Tada je $|w|$ jednak:
+(A) $\sqrt{5}$
+(B) $\sqrt{2017}$
+(C) $\sqrt{2020}$
+(D) $\sqrt{2}$
+(E) $\sqrt{10}$
+(N) Ne znam
+
+\subsection*{Solution}
+Calculate the terms involved:
+\[
+z_2 - z_1 = (2018 + 2019i) - (2017 + 2018i) = 1 + i.
+\]
+\[
+\overline{z_1} = 2017 - 2018i \implies \overline{z_1} + 1 = 2018 - 2018i = 2018(1 - i).
+\]
+Thus,
+\[
+\frac{\overline{z_1}+1}{2018} = 1 - i.
+\]
+We need to find the modulus of $w$:
+\[
+|w| = \left| (1+i)^{-2020} \cdot (1-i)^{2021} \right| = |1+i|^{-2020} \cdot |1-i|^{2021}.
+\]
+We know that $|1+i| = \sqrt{1^2+1^2} = \sqrt{2}$ and $|1-i| = \sqrt{1^2+(-1)^2} = \sqrt{2}$.
+Substituting these values:
+\[
+|w| = (\sqrt{2})^{-2020} \cdot (\sqrt{2})^{2021} = (\sqrt{2})^{2021 - 2020} = (\sqrt{2})^1 = \sqrt{2}.
+\]
+
+\subsection*{Answer}
+$\sqrt{2}$ (option \textbf{D}).
+
+\end{document}

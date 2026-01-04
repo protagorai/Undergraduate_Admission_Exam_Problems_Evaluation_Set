@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+How many equal terms do the arithmetic progressions 2, 7, 12, 17, ... and 2, 5, 8, 11, ... have, if each progression has 121 terms?
+
+\subsection*{Solution}
+First progression: $a_n = 2 + (n-1) \cdot 5 = 5n - 3$ for $n = 1, 2, ..., 121$
+Second progression: $b_m = 2 + (m-1) \cdot 3 = 3m - 1$ for $m = 1, 2, ..., 121$
+
+We need to find when $a_n = b_m$:
+\[
+5n - 3 = 3m - 1
+\]
+\[
+5n - 2 = 3m
+\]
+\[
+m = \frac{5n - 2}{3}
+\]
+
+For $m$ to be a positive integer, we need $5n - 2 \equiv 0 \pmod{3}$.
+Since $5 \equiv 2 \pmod{3}$, we have:
+\[
+2n - 2 \equiv 0 \pmod{3}
+\]
+\[
+2n \equiv 2 \pmod{3}
+\]
+\[
+n \equiv 1 \pmod{3}
+\]
+
+So $n = 1, 4, 7, 10, 13, ...$, i.e., $n = 3k + 1$ for $k = 0, 1, 2, ...$
+
+We need $1 \leq n \leq 121$ and $1 \leq m \leq 121$.
+
+From $n = 3k + 1 \leq 121$: $k \leq 40$
+From $m = \frac{5n - 2}{3} = \frac{5(3k + 1) - 2}{3} = \frac{15k + 3}{3} = 5k + 1 \leq 121$: $k \leq 24$
+
+Therefore, $k$ can take values $0, 1, 2, ..., 24$, giving us 25 equal terms.
+
+\subsection*{Answer}
+25 (option \textbf{D}).
+
+\end{document}

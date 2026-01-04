@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Ako su $x_1,x_2$ rešenja kvadratne jednačine $ax^2+bx+c=0$, odrediti kvadratnu jednačinu čija su rešenja $x_1^3$ i $x_2^3$.
+Dati odgovori:
+A) $a^3x^2-b^3x+a^3+c^3=0$\; B) $a^3x^2+b^3x+c^3+1=0$\; C) $a^3x^2+b(b^2-3ac)x+c^3=0$\; D) $a^3x^2+(b^3-4abc)x+c^3=0$\; E) $x^2+(a^3+b^3)x+a^3+b^3+c^3=0$\; N) Ne znam.
+
+\subsection*{Solution}
+Po Vijetovim formulama $x_1+x_2=-\tfrac{b}{a}$ i $x_1x_2=\tfrac{c}{a}$. Neka su $y_1=x_1^3$, $y_2=x_2^3$. Tada
+\[y_1+y_2=(x_1+x_2)\bigl((x_1+x_2)^2-3x_1x_2\bigr)=-\frac{b}{a}\cdot\frac{b^2-3ac}{a^2}=-\frac{b^3-3abc}{a^3}.
+\]
+\[y_1y_2=(x_1x_2)^3=\left(\frac{c}{a}\right)^3=\frac{c^3}{a^3}.
+\]
+Jednačina sa korenima $y_{1,2}$ je $y^2-(y_1+y_2)y+y_1y_2=0$, tj.
+\[y^2+\frac{b^3-3abc}{a^3}y+\frac{c^3}{a^3}=0\implies a^3y^2+(b^3-3abc)y+c^3=0.\]
+Poređenjem sa ponuđenim odgovorima dobijamo varijantu C.
+
+\subsection*{Answer}
+$a^3x^2+b(b^2-3ac)x+c^3=0$ (opcija \textbf{C}).
+
+\end{document}

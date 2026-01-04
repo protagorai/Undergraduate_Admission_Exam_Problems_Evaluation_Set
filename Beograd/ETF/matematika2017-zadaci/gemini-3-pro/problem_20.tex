@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Dat je skup $A = \{1, 2, 3, 4, 5, 6, 7\}$. Ukupan broj preslikavanja $f: A \to A$ takvih da važi
+\[ (\forall k \in A) \left( f(k) \neq \min\{k, 3\} \land (k > 3 \Rightarrow f(k) < k-2) \right), \]
+gde je $\min \{a, b\} = \begin{cases} a, & a \le b \\ b, & a > b \end{cases}$, jednak je:
+(A) 2592
+(B) 1722
+(C) 3421
+(D) 1628
+(E) nijedan od prethodno ponuđenih odgovora
+(N) Ne znam
+
+\subsection*{Solution}
+We determine the number of choices for each $k \in A$.
+The condition is a conjunction of two parts.
+1. $f(k) \neq \min\{k, 3\}$.
+2. If $k > 3$, then $f(k) < k-2$.
+
+Analyze for each $k$:
+- $k=1$: $\min\{1, 3\} = 1$. Condition: $f(1) \neq 1$.
+  Possibilities for $f(1) \in \{2, 3, 4, 5, 6, 7\}$. (6 choices).
+- $k=2$: $\min\{2, 3\} = 2$. Condition: $f(2) \neq 2$.
+  Possibilities for $f(2) \in \{1, 3, 4, 5, 6, 7\}$. (6 choices).
+- $k=3$: $\min\{3, 3\} = 3$. Condition: $f(3) \neq 3$.
+  Possibilities for $f(3) \in \{1, 2, 4, 5, 6, 7\}$. (6 choices).
+
+For $k > 3$, we have the additional condition $f(k) < k-2$, which implies $f(k) \in A$ must be small.
+- $k=4$: $f(4) < 2 \implies f(4) \in \{1\}$.
+  Condition 1: $\min\{4, 3\} = 3$. $f(4) \neq 3$.
+  Since $1 \neq 3$, the choice $f(4)=1$ is valid. (1 choice).
+- $k=5$: $f(5) < 3 \implies f(5) \in \{1, 2\}$.
+  Condition 1: $\min\{5, 3\} = 3$. $f(5) \neq 3$.
+  Both 1 and 2 are not 3. Valid choices: $\{1, 2\}$. (2 choices).
+- $k=6$: $f(6) < 4 \implies f(6) \in \{1, 2, 3\}$.
+  Condition 1: $\min\{6, 3\} = 3$. $f(6) \neq 3$.
+  Valid choices: $\{1, 2\}$. (2 choices).
+- $k=7$: $f(7) < 5 \implies f(7) \in \{1, 2, 3, 4\}$.
+  Condition 1: $\min\{7, 3\} = 3$. $f(7) \neq 3$.
+  Valid choices: $\{1, 2, 4\}$. (3 choices).
+
+Total number of mappings is the product of independent choices:
+\[ N = 6 \cdot 6 \cdot 6 \cdot 1 \cdot 2 \cdot 2 \cdot 3 = 216 \cdot 12 = 2592. \]
+
+\subsection*{Answer}
+2592 (option \textbf{A}).
+
+\end{document}

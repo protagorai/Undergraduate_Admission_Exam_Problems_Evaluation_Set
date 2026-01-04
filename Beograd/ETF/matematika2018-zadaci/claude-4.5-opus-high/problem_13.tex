@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Osnovna ivica pravilne četvorostrane piramide je 8 cm, a središte osnove je od bočne strane na rastojanju 2 cm. Tada je visina piramide jednaka:
+
+\subsection*{Solution}
+Let the regular square pyramid have:
+\begin{itemize}
+\item Base edge $a = 8$ cm
+\item Distance from center of base to lateral face $d = 2$ cm
+\end{itemize}
+
+For a regular square pyramid, the distance from the center of the base to the midpoint of a base edge is called the apothem of the base:
+\[
+r = \frac{a}{2} = \frac{8}{2} = 4 \text{ cm}
+\]
+
+The distance from the center of the base to a lateral face is the apothem of the pyramid (the perpendicular distance from the center to the slant face).
+
+Let $h$ be the height of the pyramid and $h_s$ be the slant height (height of the triangular face from base edge to apex).
+
+The apothem of the pyramid $a_p$ relates to these by:
+In the right triangle formed by the height $h$, the apothem of the base $r = 4$, and the slant height $h_s$:
+\[
+h_s = \sqrt{h^2 + r^2} = \sqrt{h^2 + 16}
+\]
+
+The distance from the center of the base to a lateral face can be found using the formula. Consider the triangle formed by the apex, the center of the base, and the midpoint of a base edge. The area of this triangle can be computed two ways.
+
+Actually, the perpendicular distance from the center of the base to the slant face is:
+\[
+d = \frac{h \cdot r}{\sqrt{h^2 + r^2}}
+\]
+
+Wait, let me reconsider. The distance from a point to a plane in 3D...
+
+The lateral face passes through a base edge and the apex. The perpendicular from the center of the base to this face has length 2 cm.
+
+Using the formula for the distance from center to slant face:
+\[
+d = \frac{h \cdot r}{h_s} = \frac{h \cdot r}{\sqrt{h^2 + r^2}}
+\]
+
+With $d = 2$ and $r = 4$:
+\[
+2 = \frac{4h}{\sqrt{h^2 + 16}}
+\]
+\[
+2\sqrt{h^2 + 16} = 4h
+\]
+\[
+\sqrt{h^2 + 16} = 2h
+\]
+\[
+h^2 + 16 = 4h^2
+\]
+\[
+16 = 3h^2
+\]
+\[
+h^2 = \frac{16}{3}
+\]
+\[
+h = \frac{4}{\sqrt{3}} = \frac{4\sqrt{3}}{3} \text{ cm}
+\]
+
+\subsection*{Answer}
+$\dfrac{4\sqrt{3}}{3}$ cm (option \textbf{D}).
+
+\end{document}

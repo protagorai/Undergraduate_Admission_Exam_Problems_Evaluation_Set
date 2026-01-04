@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Neka je oko trougla sa stranicama $a,b,c$ i povr\u{s}inom $P=15\sqrt3\ \text{cm}^2$
+opisana kru\u{z}nica polupre\u{c}nika $R=\dfrac{14\sqrt3}{3}\ \text{cm}$.
+Ako je $a=10\ \text{cm}$ (naspram jednog o\u{s}trog ugla), zbir du\u{z}ina stranica $b$ i $c$ iznosi (u cm):
+
+\subsection*{Solution}
+Va\u{z}i formula za povr\u{s}inu preko opisanog polupre\u{c}nika:
+\[
+P=\frac{abc}{4R}\quad\Longrightarrow\quad bc=\frac{4RP}{a}.
+\]
+Ra\u{c}unamo:
+\[
+bc=\frac{4\cdot \frac{14\sqrt3}{3}\cdot 15\sqrt3}{10}
+=\frac{4\cdot 14\cdot 15\cdot 3}{3\cdot 10}
+=\frac{4\cdot 14\cdot 15}{10}=84.
+\]
+Po sinusnom teoremu $a=2R\sin A$, pa
+\[
+\sin A=\frac{a}{2R}=\frac{10}{2\cdot \frac{14\sqrt3}{3}}=\frac{5\sqrt3}{14}.
+\]
+Kako je ugao $A$ o\u{s}tar, $\cos A>0$, pa
+\[
+\cos A=\sqrt{1-\sin^2 A}=\sqrt{1-\frac{75}{196}}=\sqrt{\frac{121}{196}}=\frac{11}{14}.
+\]
+Po kosinusnom teoremu:
+\[
+a^2=b^2+c^2-2bc\cos A
+\ \Longrightarrow\ 
+b^2+c^2=a^2+2bc\cos A
+=100+2\cdot 84\cdot \frac{11}{14}=100+132=232.
+\]
+Zato
+\[
+(b+c)^2=b^2+c^2+2bc=232+168=400\ \Longrightarrow\ b+c=20.
+\]
+
+\subsection*{Answer}
+$20$ (option \textbf{D}).
+
+\end{document}
+
+
+
+

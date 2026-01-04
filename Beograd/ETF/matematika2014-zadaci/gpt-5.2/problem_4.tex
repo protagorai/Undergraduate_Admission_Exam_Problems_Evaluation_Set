@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Izraz
+\[
+5^{\frac{3-\log_{10}5}{\log_{10}25}}
+\]
+je jednak izrazu:
+\[
+\text{(A) }10\sqrt2\quad
+\text{(B) }5\quad
+\text{(C) }\frac{5}{\sqrt2}\quad
+\text{(D) }\frac{10}{\sqrt2}\quad
+\text{(E) }5^{1/5}.
+\]
+
+\subsection*{Solution}
+Neka je $a=\log_{10}5$. Tada je $\log_{10}25=\log_{10}(5^2)=2a$, pa je eksponent
+\[
+\frac{3-a}{2a}=\frac{3}{2a}-\frac12.
+\]
+Zato
+\[
+5^{\frac{3-a}{2a}}=5^{\frac{3}{2a}}\cdot 5^{-1/2}.
+\]
+Pošto je $10^a=5$, sledi $5^{1/a}=10$, pa
+\[
+5^{\frac{3}{2a}}=(5^{1/a})^{3/2}=10^{3/2}=10\sqrt{10}.
+\]
+Otuda
+\[
+5^{\frac{3-\log_{10}5}{\log_{10}25}}
+=\frac{10\sqrt{10}}{\sqrt5}
+=10\sqrt2.
+\]
+
+\subsection*{Answer}
+$10\sqrt2$ (option \textbf{A}).
+
+\end{document}
+

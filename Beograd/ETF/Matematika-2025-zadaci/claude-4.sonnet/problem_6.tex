@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 6}
+If the long side of a right trapezoid is 10, and the radius of the inscribed circle is 4, find the area of the trapezoid.
+
+\subsection*{Solution}
+Let's denote the right trapezoid with parallel sides $a$ and $b$ (where $a > b$), height $h$, and the non-parallel side of length 10.
+
+For a trapezoid with an inscribed circle:
+1. The sum of opposite sides must be equal: $a + b = h + 10$
+2. The radius of the inscribed circle is $r = \frac{\text{Area}}{\text{semi-perimeter}} = \frac{A}{s}$
+
+Since it's a right trapezoid, the height $h$ is also the length of one of the non-parallel sides.
+
+The area of the trapezoid is:
+\[
+A = \frac{1}{2}(a + b) \cdot h
+\]
+
+The semi-perimeter is:
+\[
+s = \frac{a + b + h + 10}{2}
+\]
+
+Using the inscribed circle property:
+\[
+r = \frac{A}{s} \Rightarrow 4 = \frac{\frac{1}{2}(a + b) \cdot h}{\frac{a + b + h + 10}{2}}
+\]
+
+Simplifying:
+\[
+4 = \frac{(a + b) \cdot h}{a + b + h + 10}
+\]
+
+From the property of tangential quadrilaterals: $a + b = h + 10$.
+
+Substituting:
+\[
+4 = \frac{(h + 10) \cdot h}{(h + 10) + h + 10} = \frac{h(h + 10)}{2h + 20} = \frac{h(h + 10)}{2(h + 10)} = \frac{h}{2}
+\]
+
+Therefore: $h = 8$.
+
+Now we can find $a + b$:
+\[
+a + b = h + 10 = 8 + 10 = 18
+\]
+
+The area is:
+\[
+A = \frac{1}{2}(a + b) \cdot h = \frac{1}{2} \cdot 18 \cdot 8 = 72
+\]
+
+\subsection*{Answer}
+$72$ (option \textbf{E}).
+
+\end{document}
+

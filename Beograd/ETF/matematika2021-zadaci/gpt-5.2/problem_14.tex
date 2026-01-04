@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Na koliko nacina dve osobe, $A$ i $B$, mogu da podele $8$ razlicitih knjiga,
+ukoliko ne moraju sve knjige biti podeljene, osoba $A$ mora da dobije bar jednu knjigu,
+dok osoba $B$ ne mora da dobije nijednu knjigu?
+
+\subsection*{Solution}
+Svaka od $8$ razlicitih knjiga moze:
+\begin{itemize}
+\item pripasti osobi $A$,
+\item pripasti osobi $B$,
+\item ostati nepodeljena.
+\end{itemize}
+Dakle, bez ogranicenja ima $3^8$ raspodela.
+Oduzmimo one u kojima $A$ ne dobije nijednu knjigu: tada svaka knjiga ima $2$ izbora (kod $B$ ili nepodeljena),
+pa je takvih raspodela $2^8$.
+Zato je trazeni broj
+\[
+3^8-2^8=6561-256=6305.
+\]
+
+\subsection*{Answer}
+$6305$ (option \textbf{A}).
+
+\end{document}
+

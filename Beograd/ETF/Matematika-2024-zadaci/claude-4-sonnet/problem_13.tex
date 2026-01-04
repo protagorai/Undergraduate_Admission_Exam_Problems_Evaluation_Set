@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Proizvod svih parametara $a$ za koje sistem
+\begin{align}
+x^2 + y^2 + 2x &\leq 1\\
+x - y + a &= 0
+\end{align}
+ima jedinstveno rešenje iznosi:
+
+\subsection*{Solution}
+Prva nejednakost predstavlja unutrašnjost kruga:
+\[x^2 + y^2 + 2x \leq 1\]
+\[(x+1)^2 + y^2 \leq 2\]
+
+Ovo je krug sa centrom u $(-1, 0)$ i poluprečnikom $\sqrt{2}$.
+
+Druga jednačina predstavlja pravu:
+\[x - y + a = 0 \Rightarrow y = x + a\]
+
+Sistem ima jedinstveno rešenje kada prava tangira krug.
+
+Rastojanje od centra kruga $(-1, 0)$ do prave $x - y + a = 0$ je:
+\[d = \frac{|(-1) - 0 + a|}{\sqrt{1^2 + (-1)^2}} = \frac{|a - 1|}{\sqrt{2}}\]
+
+Za tangenciju, ovo rastojanje mora biti jednako poluprečniku:
+\[\frac{|a - 1|}{\sqrt{2}} = \sqrt{2}\]
+\[|a - 1| = 2\]
+
+Dakle:
+\[a - 1 = 2 \text{ ili } a - 1 = -2\]
+\[a = 3 \text{ ili } a = -1\]
+
+Proizvod svih parametara:
+\[3 \cdot (-1) = -3\]
+
+\subsection*{Answer}
+$-3$ (opcija \textbf{C}).
+
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 5}
+Ako su $x_1$ i $x_2$ rešenja jednačine $x^2 + x - 2005 = 0$, tada je $2x_1^2 + x_1 x_2 + x_2^2 + x_1 - 2005$ jednako:
+(A) 2005 (B) 2006 (C) 2007 (D) 2008 (E) 2009 (N) Ne znam
+
+\subsection*{Rešenje}
+Kako je $x_1$ rešenje jednačine $x^2 + x - 2005 = 0$, važi:
+\[
+x_1^2 + x_1 - 2005 = 0 \implies x_1^2 = 2005 - x_1
+\]
+Takođe, za drugo rešenje $x_2$ važi $x_2^2 = 2005 - x_2$.
+Iz Vijetovih formula imamo:
+\[
+x_1 + x_2 = -1
+\]
+\[
+x_1 \cdot x_2 = -2005
+\]
+Posmatrajmo izraz koji treba izračunati:
+\[
+2x_1^2 + x_1 x_2 + x_2^2 + x_1 - 2005
+\]
+Zamenimo $x_1^2$ sa $2005 - x_1$:
+\[
+2(2005 - x_1) + x_1 x_2 + x_2^2 + x_1 - 2005
+\]
+\[
+4010 - 2x_1 + x_1 x_2 + x_2^2 + x_1 - 2005
+\]
+\[
+2005 - x_1 + x_1 x_2 + x_2^2
+\]
+Zamenimo $x_2^2$ sa $2005 - x_2$:
+\[
+2005 - x_1 + x_1 x_2 + (2005 - x_2)
+\]
+\[
+4010 - (x_1 + x_2) + x_1 x_2
+\]
+Koristeći Vijetove formule $x_1 + x_2 = -1$ i $x_1 x_2 = -2005$:
+\[
+4010 - (-1) + (-2005) = 4010 + 1 - 2005 = 2006
+\]
+
+\subsection*{Odgovor}
+2006 (opcija \textbf{B}).
+
+\end{document}

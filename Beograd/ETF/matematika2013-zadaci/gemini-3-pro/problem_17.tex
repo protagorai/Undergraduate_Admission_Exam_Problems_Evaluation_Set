@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 17}
+Zbir prva tri člana rastuće aritmetičke progresije je 54. Ako od prvog člana te progresije oduzmemo 3, drugi član ostane nepromenjen, a trećem članu dodamo 12, dobijamo prva tri člana geometrijske progresije. Količnik te geometrijske progresije je:
+\[ (A)\ 6 \quad (B)\ 2 \quad (C)\ -3 \quad (D)\ \frac{1}{2} \quad (E)\ \frac{1}{6} \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Let the arithmetic progression (AP) terms be $a-d, a, a+d$.
+Sum: $(a-d) + a + (a+d) = 3a = 54 \implies a = 18$.
+The AP terms are $18-d, 18, 18+d$. Since it is increasing, $d > 0$.
+The geometric progression (GP) terms are obtained by:
+1st term: $(18-d) - 3 = 15-d$
+2nd term: $18$
+3rd term: $(18+d) + 12 = 30+d$
+For GP, $b^2 = ac$:
+\[ 18^2 = (15-d)(30+d) \]
+\[ 324 = 450 + 15d - 30d - d^2 \]
+\[ 324 = 450 - 15d - d^2 \]
+\[ d^2 + 15d - 126 = 0 \]
+Solve for $d$:
+\[ d = \frac{-15 \pm \sqrt{225 - 4(-126)}}{2} = \frac{-15 \pm \sqrt{225 + 504}}{2} = \frac{-15 \pm \sqrt{729}}{2} \]
+\[ d = \frac{-15 \pm 27}{2} \]
+Possible values: $d_1 = \frac{12}{2} = 6$ and $d_2 = \frac{-42}{2} = -21$.
+Since AP is increasing, $d > 0$, so $d=6$.
+The GP terms are:
+1st: $15-6 = 9$
+2nd: $18$
+3rd: $30+6 = 36$
+The common ratio $q = \frac{18}{9} = 2$ (also $\frac{36}{18} = 2$).
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}

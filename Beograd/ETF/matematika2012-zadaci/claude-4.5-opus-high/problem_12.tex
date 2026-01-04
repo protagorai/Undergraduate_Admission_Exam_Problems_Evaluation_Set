@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Vrednost izraza $8\sin^2 80° - 2\sqrt{3}\sin 40° - 2\cos 40°$ jednaka je:
+
+(A) 2 \quad (B) $2\sqrt{3}$ \quad (C) $4\sqrt{3}$ \quad (D) 4 \quad (E) 1 \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's denote $\alpha = 40°$. Then $80° = 2\alpha$, and we need to find:
+\[
+8\sin^2 2\alpha - 2\sqrt{3}\sin\alpha - 2\cos\alpha
+\]
+
+Using $\sin^2 2\alpha = \frac{1 - \cos 4\alpha}{2}$:
+\[
+8 \cdot \frac{1 - \cos 4\alpha}{2} = 4(1 - \cos 160°) = 4(1 - \cos 160°)
+\]
+
+Since $\cos 160° = -\cos 20°$:
+\[
+4(1 + \cos 20°)
+\]
+
+Also, we can write:
+\[
+2\sqrt{3}\sin 40° + 2\cos 40° = 4\left(\frac{\sqrt{3}}{2}\sin 40° + \frac{1}{2}\cos 40°\right) = 4\sin(40° + 30°) = 4\sin 70°
+\]
+
+Since $\sin 70° = \cos 20°$:
+\[
+2\sqrt{3}\sin 40° + 2\cos 40° = 4\cos 20°
+\]
+
+Now, $8\sin^2 80° = 8 \cdot \sin^2 80° = 4(1 - \cos 160°) = 4(1 + \cos 20°) = 4 + 4\cos 20°$
+
+So the expression becomes:
+\[
+4 + 4\cos 20° - 4\cos 20° = 4
+\]
+
+\subsection*{Answer}
+$4$ (option \textbf{D}).
+
+\end{document}

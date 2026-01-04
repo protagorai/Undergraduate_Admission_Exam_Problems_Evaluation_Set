@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Odnos binomnih koeficijenata uz stepen $x^{1007}$, $(x \in (0, +\infty))$ u razvojima binoma $(1+x)^{2014}$ i $(1+x)^{2013}$ redom, iznosi:
+\begin{enumerate}
+    \item[(A)] $\frac{1007}{1006}$
+    \item[(B)] $2$
+    \item[(C)] $\frac{3}{2}$
+    \item[(D)] $\frac{1}{2014}$
+    \item[(E)] $\frac{1}{2015}$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+The term with $x^k$ in $(1+x)^n$ has the coefficient $\binom{n}{k}$.
+We need the ratio of the coefficient of $x^{1007}$ in $(1+x)^{2014}$ to the coefficient of $x^{1007}$ in $(1+x)^{2013}$.
+Ratio = $\frac{\binom{2014}{1007}}{\binom{2013}{1007}}$.
+Using the property $\binom{n}{k} = \frac{n}{n-k}\binom{n-1}{k}$:
+\[
+\binom{2014}{1007} = \frac{2014}{2014-1007} \binom{2013}{1007} = \frac{2014}{1007} \binom{2013}{1007} = 2 \binom{2013}{1007}
+\]
+Thus, the ratio is:
+\[
+\frac{2 \binom{2013}{1007}}{\binom{2013}{1007}} = 2
+\]
+
+\subsection*{Answer}
+$2$ (option \textbf{(B)}).
+
+\end{document}

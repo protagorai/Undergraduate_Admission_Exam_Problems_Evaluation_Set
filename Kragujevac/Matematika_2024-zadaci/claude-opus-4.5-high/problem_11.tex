@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 11 - Solution}
+
+\textbf{Problem:} Lines $p: 2x + ay - 15 = 0$ and $q: x + 2y - b - 5 = 0$ intersect at the center of the circle $k: x^2 + y^2 - 10y + 21 = 0$. Which of the given lines contains point $M(a, b)$?
+
+\textbf{Solution:}
+
+\textbf{Step 1: Find the center of the circle}
+
+Rewrite the circle equation in standard form:
+\[
+x^2 + y^2 - 10y + 21 = 0
+\]
+\[
+x^2 + (y^2 - 10y + 25) - 25 + 21 = 0
+\]
+\[
+x^2 + (y - 5)^2 = 4
+\]
+
+Center: $(0, 5)$, Radius: $2$
+
+\textbf{Step 2: Find $a$ and $b$}
+
+Both lines pass through the center $(0, 5)$:
+
+For line $p$: $2(0) + a(5) - 15 = 0$
+\[
+5a = 15 \implies a = 3
+\]
+
+For line $q$: $0 + 2(5) - b - 5 = 0$
+\[
+10 - b - 5 = 0 \implies b = 5
+\]
+
+So $M(a, b) = M(3, 5)$.
+
+\textbf{Step 3: Check which line contains $M(3, 5)$}
+
+\begin{itemize}
+\item А) $x + 3y = 0$: $3 + 15 = 18 \neq 0$ ✗
+\item Б) $2x - 5y = 4$: $6 - 25 = -19 \neq 4$ ✗
+\item В) $2x + y - 2 = 0$: $6 + 5 - 2 = 9 \neq 0$ ✗
+\item Г) $3x + y = 2$: $9 + 5 = 14 \neq 2$ ✗
+\item Д) $2x + y - 11 = 0$: $6 + 5 - 11 = 0$ ✓
+\end{itemize}
+
+\textbf{Answer: Д) $2x + y - 11 = 0$}
+
+\end{document}
+

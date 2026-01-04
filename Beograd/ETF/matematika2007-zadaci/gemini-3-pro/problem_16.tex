@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+U geometrijskoj progresiji je $a_1 + a_5 = 51$, $a_2 + a_6 = 102$. Za koju vrednost $n$ je zbir $n$ prvih članova te progresije $S_n = 3069$ ?
+\[
+(A)\ n=4 \quad (B)\ n=6 \quad (C)\ n=8 \quad (D)\ n=10 \quad (E)\ n=12 \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Članovi geometrijske progresije su oblika $a_k = a_1 q^{k-1}$.
+Sistem jednačina je:
+\[
+a_1 + a_1 q^4 = 51 \Rightarrow a_1(1+q^4) = 51
+\]
+\[
+a_1 q + a_1 q^5 = 102 \Rightarrow a_1 q(1+q^4) = 102
+\]
+Deljenjem druge jednačine prvom:
+\[
+\frac{a_1 q(1+q^4)}{a_1(1+q^4)} = \frac{102}{51} \Rightarrow q = 2
+\]
+Zamenimo $q=2$ u prvu jednačinu:
+\[
+a_1(1 + 2^4) = 51 \Rightarrow a_1(1+16) = 51 \Rightarrow 17a_1 = 51 \Rightarrow a_1 = 3
+\]
+Formula za zbir prvih $n$ članova geometrijske progresije je:
+\[
+S_n = a_1 \frac{q^n - 1}{q-1}
+\]
+Zamenom poznatih vrednosti i $S_n = 3069$:
+\[
+3069 = 3 \frac{2^n - 1}{2-1}
+\]
+\[
+1023 = 2^n - 1
+\]
+\[
+2^n = 1024
+\]
+Kako je $2^{10} = 1024$, sledi $n = 10$.
+
+\subsection*{Answer}
+$n=10$ (option \textbf{D}).
+
+\end{document}

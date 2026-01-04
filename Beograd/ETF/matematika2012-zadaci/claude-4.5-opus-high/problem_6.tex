@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Koeficijent uz $x^{27}y^2$ u razvoju binoma $(x^3 + \sqrt{y})^{13}$ jednak je:
+
+(A) 12 \quad (B) 1516 \quad (C) 1312 \quad (D) 715 \quad (E) 78 \quad (N) Ne znam
+
+\subsection*{Solution}
+Using the binomial theorem:
+\[
+(x^3 + \sqrt{y})^{13} = \sum_{k=0}^{13} \binom{13}{k} (x^3)^{13-k} (\sqrt{y})^k
+\]
+
+The general term is:
+\[
+\binom{13}{k} x^{3(13-k)} y^{k/2}
+\]
+
+We need $x^{27}y^2$, so:
+\[
+3(13-k) = 27 \implies 13 - k = 9 \implies k = 4
+\]
+
+Check: $y^{k/2} = y^{4/2} = y^2$ ✓
+
+The coefficient is:
+\[
+\binom{13}{4} = \frac{13!}{4! \cdot 9!} = \frac{13 \cdot 12 \cdot 11 \cdot 10}{4 \cdot 3 \cdot 2 \cdot 1} = \frac{17160}{24} = 715
+\]
+
+\subsection*{Answer}
+$715$ (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+For real parameter $p$, consider
+\[
+\left|2-\left|x-x^2\right|\right|=p.
+\]
+What is the maximum possible number of real solutions (over all $p\in\mathbb{R}$)?
+
+\subsection*{Solution}
+Let $g(x)=|x-x^2|=|x(1-x)|\ge 0$. Then the equation is
+\[
+|2-g(x)|=p.
+\]
+Necessarily $p\ge 0$. Also
+\[
+|2-g|=p \quad\Longleftrightarrow\quad g=2+p \ \ \text{or}\ \ g=2-p.
+\]
+The second value $2-p$ is valid only if $2-p\ge 0$.
+
+\medskip
+Fix a constant $c>0$ and solve $g(x)=c$, i.e.
+\[
+|x-x^2|=c.
+\]
+This splits into two quadratics:
+\[
+x-x^2=c \quad\Longleftrightarrow\quad x^2-x+c=0,
+\]
+\[
+x-x^2=-c \quad\Longleftrightarrow\quad x^2-x-c=0.
+\]
+The second quadratic has discriminant $1+4c>0$ for all $c>0$, so it always contributes \emph{two} real roots.
+The first has discriminant $1-4c$, so it contributes:
+\[
+\begin{cases}
+2 \text{ roots}, & 0<c<\frac14,\\
+1 \text{ root}, & c=\frac14,\\
+0 \text{ roots}, & c>\frac14.
+\end{cases}
+\]
+Therefore
+\[
+\#\{x: g(x)=c\}=
+\begin{cases}
+4, & 0<c<\frac14,\\
+3, & c=\frac14,\\
+2, & c>\frac14.
+\end{cases}
+\]
+
+\medskip
+Now take $c_1=2+p$ (always $> \frac14$), so $g(x)=c_1$ gives exactly $2$ solutions.
+If $0\le p\le 2$, also $c_2=2-p\ge 0$.
+To maximize the total number of solutions of $|2-g|=p$, we want $c_2$ in $(0,\frac14)$ so that $g(x)=c_2$ contributes $4$ solutions.
+This happens when
+\[
+0<2-p<\frac14 \quad\Longleftrightarrow\quad \frac74<p<2.
+\]
+For such $p$, the two sets (levels $c_1$ and $c_2$) are disjoint because $c_1\ne c_2$, so the total number of solutions is
+\[
+2+4=6.
+\]
+No larger total is possible, since at most two level values are involved.
+
+\subsection*{Answer}
+The maximum possible number of real solutions is $6$ (option \textbf{B}).
+
+\end{document}
+

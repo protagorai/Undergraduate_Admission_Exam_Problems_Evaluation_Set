@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+The inverse function of $f: [3, +\infty) \to [3, +\infty)$ given by $f(x) = 3\sqrt{x-3} + 3$ is the function $g: [3, +\infty) \to [3, +\infty)$ which satisfies:
+
+\subsection*{Solution}
+To find the inverse function, we start with $y = f(x)$ and solve for $x$ in terms of $y$.
+
+Given: $y = 3\sqrt{x-3} + 3$
+
+Step 1: Isolate the square root term
+\[
+y - 3 = 3\sqrt{x-3}
+\]
+
+Step 2: Divide by 3
+\[
+\frac{y-3}{3} = \sqrt{x-3}
+\]
+
+Step 3: Square both sides
+\[
+\left(\frac{y-3}{3}\right)^2 = x-3
+\]
+
+\[
+\frac{(y-3)^2}{9} = x-3
+\]
+
+Step 4: Solve for $x$
+\[
+x = \frac{(y-3)^2}{9} + 3
+\]
+
+Step 5: Replace $y$ with $x$ to get $g(x)$
+\[
+g(x) = \frac{(x-3)^2}{9} + 3
+\]
+
+Let's expand this:
+\[
+g(x) = \frac{x^2 - 6x + 9}{9} + 3 = \frac{x^2 - 6x + 9 + 27}{9} = \frac{x^2 - 6x + 36}{9}
+\]
+
+\[
+g(x) = \frac{1}{9}x^2 - \frac{6}{9}x + \frac{36}{9} = \frac{1}{9}x^2 - \frac{2}{3}x + 4
+\]
+
+Comparing with the given options, this matches option (A): $g(x) = \frac{1}{9}x^2 - \frac{2}{3}x + 4$.
+
+\subsection*{Verification}
+Let's verify: $f(g(x)) = x$
+\[
+f(g(x)) = 3\sqrt{g(x) - 3} + 3 = 3\sqrt{\frac{(x-3)^2}{9}} + 3 = 3 \cdot \frac{|x-3|}{3} + 3
+\]
+
+Since $x \geq 3$, we have $|x-3| = x-3$, so:
+\[
+f(g(x)) = (x-3) + 3 = x \checkmark
+\]
+
+\subsection*{Answer}
+$g(x) = \frac{1}{9}x^2 - \frac{2}{3}x + 4$ (option \textbf{A}).
+
+\end{document}

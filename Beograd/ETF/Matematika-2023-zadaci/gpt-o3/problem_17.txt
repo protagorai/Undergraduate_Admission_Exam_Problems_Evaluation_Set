@@ -1,0 +1,10 @@
+Problem 17 (Matematika 2023)
+Skup svih realnih rešenja nejednačine
+1/(4√(x²−1)) − 5/(2√(x²−1)) + 1 ≥ 0
+je oblika (a<b):
+a) [a,∞)
+b) (−∞,a] ∪ {b}
+c) {a} ∪ [b,∞)
+d) [a,b)
+e) {a,b}
+n) Ne znam

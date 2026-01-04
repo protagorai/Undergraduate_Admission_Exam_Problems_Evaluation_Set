@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 16}
+
+U pravilnom tetraedru \(ABCD\) ivice su du\v zine \(a\).
+Ta\v cke \(M,N,P,Q\) su sredi\v sta ivica \(DA,AB,BC,CD\).
+Tra\v zi se povr\v sina \v cetvorougla \(MNPQ\).
+
+\subsection*{Koordinate}
+Postavimo pravilni tetraedar u prostoru standardno:
+\[
+A(0,0,0),\quad B(a,0,0),\quad
+C\!\left(\frac a2,\frac{\sqrt3}{2}a,0\right),\quad
+D\!\left(\frac a2,\frac{\sqrt3}{6}a,h\right),
+\]
+gde je visina tetraedra
+\[
+h=a\sqrt{\frac{2}{3}}.
+\]
+
+Sredi\v sta ivica su:
+\[
+N=\frac{A+B}{2}=\left(\frac a2,0,0\right),
+\]
+\[
+P=\frac{B+C}{2}=\left(\frac{3a}{4},\frac{\sqrt3}{4}a,0\right),
+\]
+\[
+M=\frac{D+A}{2}=\left(\frac a4,\frac{\sqrt3}{12}a,\frac h2\right),
+\]
+\[
+Q=\frac{C+D}{2}=\left(\frac a2,\frac{\sqrt3}{3}a,\frac h2\right).
+\]
+
+\subsection*{Paralelogram i povr\v sina}
+Vektori susednih stranica:
+\[
+\overrightarrow{MN}=N-M=\left(\frac a4,-\frac{\sqrt3}{12}a,-\frac h2\right),
+\qquad
+\overrightarrow{NP}=P-N=\left(\frac a4,\frac{\sqrt3}{4}a,0\right).
+\]
+Uo\v cava se i \(\overrightarrow{PQ}=-\overrightarrow{MN}\) i \(\overrightarrow{QM}=-\overrightarrow{NP}\),
+pa je \(MNPQ\) paralelogram. Njegova povr\v sina je
+\[
+S=\bigl\lVert \overrightarrow{MN}\times \overrightarrow{NP}\bigr\rVert.
+\]
+Ra\v cunamo vektorski proizvod:
+\[
+\overrightarrow{MN}\times \overrightarrow{NP}
+=\left(\frac{ha\sqrt3}{8},-\frac{ha}{8},\frac{a^2\sqrt3}{12}\right).
+\]
+Zato je
+\[
+S^2=\left(\frac{ha\sqrt3}{8}\right)^2+\left(\frac{ha}{8}\right)^2+\left(\frac{a^2\sqrt3}{12}\right)^2
+=\frac{h^2a^2}{16}+\frac{a^4}{48}.
+\]
+Po\v sto je \(h^2=a^2\cdot\frac{2}{3}\), sledi
+\[
+S^2=\frac{a^4}{16}\cdot\frac{2}{3}+\frac{a^4}{48}=\frac{a^4}{24}+\frac{a^4}{48}=\frac{a^4}{16},
+\]
+pa je
+\[
+S=\frac{a^2}{4}.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{\frac{a^2}{4}}\qquad\text{(A)}
+\]
+
+\end{document}
+

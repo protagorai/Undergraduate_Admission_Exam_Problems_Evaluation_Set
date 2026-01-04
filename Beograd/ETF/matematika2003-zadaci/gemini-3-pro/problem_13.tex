@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 13}
+Skup svih realnih brojeva $x$ za koje važi $(x-1)\sqrt{x^2-x-2} \ge 0$ je:
+
+A) $(0,1)$; B) $(-\infty, -2)$; C) $\{-1\} \cup [2, +\infty)$; D) $(1,2)$; E) $(\frac{1}{2}, 1)$; N) Ne znam.
+
+\subsection*{Solution}
+Nejednačina je $(x-1)\sqrt{x^2-x-2} \ge 0$.
+Prvo određujemo domen definisanosti kvadratnog korena:
+\[ x^2-x-2 \ge 0 \]
+Koreni kvadratne jednačine $x^2-x-2=0$ su $x_1 = 2$ i $x_2 = -1$.
+Parabola je okrenuta nagore, pa je izraz pozitivan van intervala korena.
+Domen: $D = (-\infty, -1] \cup [2, +\infty)$.
+
+Proizvod $A \cdot B \ge 0$ je zadovoljen ako:
+1. $B=0$ (uz uslov da je $A$ definisano).
+$\sqrt{x^2-x-2} = 0 \Rightarrow x=2 \lor x=-1$.
+Oba ova broja su u domenu i rešenja su nejednačine.
+
+2. $B > 0$ i $A \ge 0$.
+Koren je uvek pozitivan tamo gde je definisan i nije nula ($x \in (-\infty, -1) \cup (2, +\infty)$).
+Tada mora biti $x-1 \ge 0 \Rightarrow x \ge 1$.
+Presek uslova $x \ge 1$ i domena $(-\infty, -1) \cup (2, +\infty)$ daje $x \in (2, +\infty)$.
+
+Unija svih rešenja: $\{ -1, 2 \} \cup (2, +\infty) = \{-1\} \cup [2, +\infty)$.
+
+\subsection*{Answer}
+$\{-1\} \cup [2, +\infty)$ (option \textbf{C}).
+\end{document}

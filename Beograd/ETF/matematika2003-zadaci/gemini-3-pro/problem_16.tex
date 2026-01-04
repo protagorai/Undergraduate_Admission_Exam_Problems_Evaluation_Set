@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 16}
+Broj realnih rešenja sistema jednačina $2^x 4^y = 32$, $\log(x-y)^2 - 2\log 2 = 0$ jednak je:
+
+A) 2; B) 0; C) 1; D) 3; E) 4; N) Ne znam.
+
+\subsection*{Solution}
+Sistem jednačina je:
+1) $2^x 4^y = 32$
+2) $\log(x-y)^2 - 2\log 2 = 0$
+
+Rešavamo prvu jednačinu:
+$2^x (2^2)^y = 2^5$
+$2^{x+2y} = 2^5$
+$x+2y = 5$
+
+Rešavamo drugu jednačinu:
+$\log(x-y)^2 = 2\log 2$
+$\log(x-y)^2 = \log 2^2$
+$\log(x-y)^2 = \log 4$
+$(x-y)^2 = 4$
+Ovo implicira dva slučaja:
+$x-y = 2$ ili $x-y = -2$.
+Takođe, uslov definisanosti logaritma je $(x-y)^2 > 0$, tj. $x \neq y$, što je ispunjeno u oba slučaja jer je razlika $\pm 2$.
+
+Slučaj 1:
+$x+2y = 5$
+$x-y = 2 \Rightarrow x = y+2$
+Zamenom u prvu: $(y+2)+2y = 5 \Rightarrow 3y = 3 \Rightarrow y=1$.
+$x = 1+2 = 3$.
+Rešenje $(3, 1)$.
+
+Slučaj 2:
+$x+2y = 5$
+$x-y = -2 \Rightarrow x = y-2$
+Zamenom u prvu: $(y-2)+2y = 5 \Rightarrow 3y = 7 \Rightarrow y = 7/3$.
+$x = 7/3 - 2 = 1/3$.
+Rešenje $(1/3, 7/3)$.
+
+Imamo dva realna rešenja sistema.
+
+\subsection*{Answer}
+2 (option \textbf{A}).
+\end{document}

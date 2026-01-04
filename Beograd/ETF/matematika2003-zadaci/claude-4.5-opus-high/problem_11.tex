@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Visina valjka maksimalne zapremine upisanog u loptu poluprečnika $\sqrt{3}$ jednaka je:
+
+\textbf{A)} 1; \quad \textbf{B)} 2; \quad \textbf{C)} $2\sqrt{2}$; \quad \textbf{D)} $\sqrt{3}$; \quad \textbf{E)} $\frac{3}{2}$
+
+\subsection*{Solution}
+Neka je $R = \sqrt{3}$ poluprečnik lopte, $r$ poluprečnik osnove valjka i $h$ visina valjka.
+
+Iz geometrije upisanog valjka u loptu (centar lopte je u centru valjka):
+\[
+r^2 + \left(\frac{h}{2}\right)^2 = R^2 = 3
+\]
+\[
+r^2 = 3 - \frac{h^2}{4}
+\]
+
+Zapremina valjka:
+\[
+V = \pi r^2 h = \pi \left(3 - \frac{h^2}{4}\right) h = \pi \left(3h - \frac{h^3}{4}\right)
+\]
+
+Da bismo našli maksimum, izjednačavamo izvod sa nulom:
+\[
+\frac{dV}{dh} = \pi \left(3 - \frac{3h^2}{4}\right) = 0
+\]
+\[
+3 - \frac{3h^2}{4} = 0
+\]
+\[
+3 = \frac{3h^2}{4}
+\]
+\[
+h^2 = 4
+\]
+\[
+h = 2 \quad (h > 0)
+\]
+
+Proverimo da li je ovo maksimum:
+\[
+\frac{d^2V}{dh^2} = -\frac{6\pi h}{4} = -\frac{3\pi h}{2} < 0 \text{ za } h > 0
+\]
+
+Dakle, $h = 2$ daje maksimalnu zapreminu.
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}

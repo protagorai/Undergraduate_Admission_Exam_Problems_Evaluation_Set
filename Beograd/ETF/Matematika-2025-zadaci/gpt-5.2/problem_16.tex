@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 16}
+Skup svih realnih rešenja nejednačine
+\[
+\sqrt{7-\log_2 x^2}+\log_2 x^4>4
+\]
+je oblika (za neke $a,b,c,d\in\mathbb{R}$ takve da je $-\infty<a<b<c<d<+\infty$).
+
+\subsection*{Solution}
+Pošto je $\log_2 x^2$ definisan za $x\ne 0$, domen je $x\ne 0$ i $7-\log_2 x^2\ge 0$.
+Postavimo
+\[
+a=\log_2 x^2\quad (x\ne 0).
+\]
+Tada je $\log_2 x^4=\log_2 (x^2)^2=2\log_2 x^2=2a$, pa nejednačina postaje
+\[
+\sqrt{7-a}+2a>4,\qquad a\le 7.
+\]
+Neka je $t=\sqrt{7-a}\ (\ge 0)$, pa je $a=7-t^2$. Tada:
+\[
+t+2(7-t^2)>4 \iff -2t^2+t+10>0 \iff 2t^2-t-10<0.
+\]
+Jednačina $2t^2-t-10=0$ ima rešenja
+\[
+t=\frac{1\pm\sqrt{1+80}}{4}=\frac{1\pm 9}{4}\in\left\{-2,\frac52\right\}.
+\]
+Pošto je $t\ge 0$, dobijamo $0\le t<\frac52$.
+To znači $7-a=t^2<\frac{25}{4}$, tj.
+\[
+a>7-\frac{25}{4}=\frac34,
+\]
+uz već postojeći uslov $a\le 7$. Dakle
+\[
+\frac34<a\le 7.
+\]
+Vraćamo zamenu $a=\log_2 x^2$:
+\[
+\log_2 x^2>\frac34 \iff x^2>2^{3/4}\iff |x|>2^{3/8},
+\]
+i
+\[
+\log_2 x^2\le 7 \iff x^2\le 2^7=128 \iff |x|\le 8\sqrt2.
+\]
+Zato je skup rešenja
+\[
+[-8\sqrt2,\,-2^{3/8})\ \cup\ (2^{3/8},\,8\sqrt2].
+\]
+
+\subsection*{Answer}
+$[-8\sqrt2,\,-2^{3/8})\cup(2^{3/8},\,8\sqrt2]$ (option \textbf{B}, sa $a=-8\sqrt2,\ b=-2^{3/8},\ c=2^{3/8},\ d=8\sqrt2$).
+
+\end{document}
+
+

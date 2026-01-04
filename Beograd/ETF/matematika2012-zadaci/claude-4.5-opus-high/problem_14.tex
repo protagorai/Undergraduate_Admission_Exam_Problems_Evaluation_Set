@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Stranice trougla su 21 i $9\sqrt{2}$ a njima zahvaćeni ugao $45°$. Zbir poluprečnika upisanog i opisanog kruga tog trougla je:
+
+(A) $3(2 - \sqrt{3})$ \quad (B) $6(\sqrt{2} - 1)$ \quad (C) $6(\sqrt{2} + 1)$ \quad (D) $6(2 + \sqrt{3})$ \quad (E) $6(\sqrt{3} - \sqrt{2})$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $a = 21$, $b = 9\sqrt{2}$, and $C = 45°$ be the angle between them.
+
+First, find the third side $c$ using the law of cosines:
+\[
+c^2 = a^2 + b^2 - 2ab\cos C = 441 + 162 - 2 \cdot 21 \cdot 9\sqrt{2} \cdot \frac{\sqrt{2}}{2}
+\]
+\[
+c^2 = 603 - 21 \cdot 9 \cdot 2 = 603 - 378 = 225
+\]
+\[
+c = 15
+\]
+
+The area of the triangle:
+\[
+S = \frac{1}{2}ab\sin C = \frac{1}{2} \cdot 21 \cdot 9\sqrt{2} \cdot \frac{\sqrt{2}}{2} = \frac{21 \cdot 9 \cdot 2}{4} = \frac{378}{4} = \frac{189}{2}
+\]
+
+The semi-perimeter:
+\[
+s = \frac{a + b + c}{2} = \frac{21 + 9\sqrt{2} + 15}{2} = \frac{36 + 9\sqrt{2}}{2} = 18 + \frac{9\sqrt{2}}{2}
+\]
+
+The inradius:
+\[
+r = \frac{S}{s} = \frac{189/2}{18 + 9\sqrt{2}/2} = \frac{189/2}{\frac{36 + 9\sqrt{2}}{2}} = \frac{189}{36 + 9\sqrt{2}} = \frac{189}{9(4 + \sqrt{2})} = \frac{21}{4 + \sqrt{2}}
+\]
+
+Rationalizing:
+\[
+r = \frac{21(4 - \sqrt{2})}{(4 + \sqrt{2})(4 - \sqrt{2})} = \frac{21(4 - \sqrt{2})}{16 - 2} = \frac{21(4 - \sqrt{2})}{14} = \frac{3(4 - \sqrt{2})}{2}
+\]
+
+The circumradius using $R = \frac{c}{2\sin C}$:
+\[
+R = \frac{15}{2\sin 45°} = \frac{15}{2 \cdot \frac{\sqrt{2}}{2}} = \frac{15}{\sqrt{2}} = \frac{15\sqrt{2}}{2}
+\]
+
+The sum:
+\[
+r + R = \frac{3(4 - \sqrt{2})}{2} + \frac{15\sqrt{2}}{2} = \frac{12 - 3\sqrt{2} + 15\sqrt{2}}{2} = \frac{12 + 12\sqrt{2}}{2} = 6 + 6\sqrt{2} = 6(\sqrt{2} + 1)
+\]
+
+\subsection*{Answer}
+$6(\sqrt{2} + 1)$ (option \textbf{C}).
+
+\end{document}

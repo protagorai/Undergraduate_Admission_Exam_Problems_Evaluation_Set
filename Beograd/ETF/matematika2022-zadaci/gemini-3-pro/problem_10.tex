@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 10}
+Vrednost minimuma funkcije $f(x) = -\frac{8}{5}x^2 + 2x + 2 + \ln(1 + 4x^2) - \text{arctg}\, 2x$ na segmentu $[-3/8, 1]$ iznosi:
+\begin{itemize}
+    \item[(A)] 2
+    \item[(B)] -1
+    \item[(C)] 1
+    \item[(D)] 0
+    \item[(E)] 3
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Tražimo izvod funkcije:
+\[ f'(x) = -\frac{16}{5}x + 2 + \frac{1}{1+4x^2} \cdot 8x - \frac{1}{1+(2x)^2} \cdot 2 \]
+\[ f'(x) = -\frac{16}{5}x + 2 + \frac{8x - 2}{1+4x^2} \]
+Izjednačimo izvod sa nulom:
+\[ \frac{-16x + 10}{5} + \frac{2(4x - 1)}{1+4x^2} = 0 \]
+\[ \frac{-2(8x - 5)}{5} + \frac{2(4x - 1)}{1+4x^2} = 0 \quad /:2 \]
+\[ \frac{-(8x - 5)}{5} + \frac{4x - 1}{1+4x^2} = 0 \]
+\[ 5(4x - 1) - (8x - 5)(1+4x^2) = 0 \]
+\[ 20x - 5 - (8x + 32x^3 - 5 - 20x^2) = 0 \]
+\[ -32x^3 + 20x^2 + 12x = 0 \]
+\[ -4x(8x^2 - 5x - 3) = 0 \]
+Rešenja su $x_1 = 0$ i rešenja kvadratne jednačine $8x^2 - 5x - 3 = 0$.
+\[ x_{2,3} = \frac{5 \pm \sqrt{25 + 96}}{16} = \frac{5 \pm 11}{16} \]
+$x_2 = 1, x_3 = -6/16 = -3/8$.
+Kritične tačke su $0, 1, -3/8$. Sve tri pripadaju segmentu $[-3/8, 1]$.
+Proveravamo vrednosti funkcije u ovim tačkama:
+1. Za $x = 0$:
+\[ f(0) = 0 + 0 + 2 + \ln(1) - \text{arctg}(0) = 2 \]
+2. Za $x = 1$ (kraj intervala):
+\[ f(1) = -1.6 + 2 + 2 + \ln 5 - \text{arctg} 2 = 2.4 + \ln 5 - \text{arctg} 2 \]
+Kako je $\ln 5 > 1.6$ i $\text{arctg} 2 < \pi/2 \approx 1.57$, $f(1) > 2.4$.
+3. Za $x = -3/8$ (kraj intervala):
+Proverom monotonosti (izvod), za $x \in (-3/8, 0)$ izvod je negativan (funkcija opada), a za $x \in (0, 1)$ pozitivan (raste).
+\[ f'(x) = -4x(8x^2 - 5x - 3) \]
+Na $(-3/8, 0)$: $-4x > 0$, $8x^2 - 5x - 3 < 0$. Proizvod $< 0$.
+Na $(0, 1)$: $-4x < 0$, $8x^2 - 5x - 3 < 0$. Proizvod $> 0$.
+Minimum je u tački $x = 0$.
+Minimalna vrednost je $f(0) = 2$.
+
+\subsection*{Answer}
+2 (option \textbf{A}).
+
+\end{document}

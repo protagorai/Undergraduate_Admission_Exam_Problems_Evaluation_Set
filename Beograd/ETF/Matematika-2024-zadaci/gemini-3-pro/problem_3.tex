@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 3}
+Vrednost izraza $49^{1-\log_7 2} + 5^{-\log_5 4}$ iznosi:
+
+\subsection*{Solution}
+Računamo svaki sabirak posebno.
+
+Prvi sabirak:
+\[
+49^{1-\log_7 2} = \frac{49^1}{49^{\log_7 2}}
+\]
+Znamo da je $49 = 7^2$, pa je
+\[
+49^{\log_7 2} = (7^2)^{\log_7 2} = 7^{2\log_7 2} = 7^{\log_7 (2^2)} = 7^{\log_7 4} = 4.
+\]
+Dakle, prvi sabirak je $\frac{49}{4}$.
+
+Drugi sabirak:
+\[
+5^{-\log_5 4} = 5^{\log_5 (4^{-1})} = 4^{-1} = \frac{1}{4}.
+\]
+
+Zbir:
+\[
+\frac{49}{4} + \frac{1}{4} = \frac{50}{4} = \frac{25}{2}.
+\]
+
+\subsection*{Answer}
+$\frac{25}{2}$ (option \textbf{B}).
+
+\end{document}
+

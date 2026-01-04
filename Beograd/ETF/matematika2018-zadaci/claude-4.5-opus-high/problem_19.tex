@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Ukupan broj realnih rešenja sistema $50\left(\dfrac{2}{5}\right)^{2x+3y-10} + 20\left(\dfrac{5}{2}\right)^{2x+3y-10} = 133$, $(x+3)(y-1) = 6$ jednak je:
+
+\subsection*{Solution}
+Let $t = 2x + 3y - 10$ and let $u = \left(\frac{2}{5}\right)^t$.
+
+Then $\left(\frac{5}{2}\right)^t = \frac{1}{u}$.
+
+The first equation becomes:
+\[
+50u + \frac{20}{u} = 133
+\]
+\[
+50u^2 + 20 = 133u
+\]
+\[
+50u^2 - 133u + 20 = 0
+\]
+
+Using the quadratic formula:
+\[
+u = \frac{133 \pm \sqrt{133^2 - 4 \cdot 50 \cdot 20}}{100} = \frac{133 \pm \sqrt{17689 - 4000}}{100} = \frac{133 \pm \sqrt{13689}}{100} = \frac{133 \pm 117}{100}
+\]
+
+$u_1 = \frac{250}{100} = \frac{5}{2}$ and $u_2 = \frac{16}{100} = \frac{4}{25}$
+
+\textbf{For $u_1 = \frac{5}{2}$:}
+$\left(\frac{2}{5}\right)^t = \frac{5}{2} = \left(\frac{2}{5}\right)^{-1}$
+$t = -1$, so $2x + 3y = 9$
+
+\textbf{For $u_2 = \frac{4}{25} = \left(\frac{2}{5}\right)^2$:}
+$t = 2$, so $2x + 3y = 12$
+
+Now solve with the second equation $(x+3)(y-1) = 6$.
+
+\textbf{Case 1:} $2x + 3y = 9$ and $(x+3)(y-1) = 6$
+
+From first: $x = \frac{9 - 3y}{2}$
+
+Substituting: $\left(\frac{9 - 3y}{2} + 3\right)(y - 1) = 6$
+$\left(\frac{15 - 3y}{2}\right)(y - 1) = 6$
+$(15 - 3y)(y - 1) = 12$
+$15y - 15 - 3y^2 + 3y = 12$
+$-3y^2 + 18y - 27 = 0$
+$y^2 - 6y + 9 = 0$
+$(y - 3)^2 = 0$
+$y = 3$, $x = \frac{9 - 9}{2} = 0$
+
+One solution: $(0, 3)$
+
+\textbf{Case 2:} $2x + 3y = 12$ and $(x+3)(y-1) = 6$
+
+From first: $x = \frac{12 - 3y}{2}$
+
+Substituting: $\left(\frac{12 - 3y}{2} + 3\right)(y - 1) = 6$
+$\left(\frac{18 - 3y}{2}\right)(y - 1) = 6$
+$(18 - 3y)(y - 1) = 12$
+$18y - 18 - 3y^2 + 3y = 12$
+$-3y^2 + 21y - 30 = 0$
+$y^2 - 7y + 10 = 0$
+$(y - 2)(y - 5) = 0$
+$y = 2$ or $y = 5$
+
+$y = 2$: $x = \frac{12 - 6}{2} = 3$ → $(3, 2)$
+$y = 5$: $x = \frac{12 - 15}{2} = -\frac{3}{2}$ → $(-\frac{3}{2}, 5)$
+
+Two solutions.
+
+\textbf{Total:} $1 + 2 = 3$ solutions.
+
+\subsection*{Answer}
+$3$ (option \textbf{D}).
+
+\end{document}

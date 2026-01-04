@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Bočne strane trostrane piramide su pravougli trouglovi sa temenom pravog ugla u vrhu piramide. Površine tih bočnih strana su $6\text{ cm}^2$, $8\text{ cm}^2$ i $12\text{ cm}^2$. Zapremina piramide je:
+\begin{enumerate}
+    \item[(A)] $6\text{ cm}^3$
+    \item[(B)] $8\sqrt{2}\text{ cm}^3$
+    \item[(C)] $8\text{ cm}^3$
+    \item[(D)] $6\sqrt{2}\text{ cm}^3$
+    \item[(E)] $12\text{ cm}^3$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let the vertex of the pyramid be $V$, and the base be $ABC$. The lateral faces $VAB, VBC, VCA$ are right triangles at $V$.
+Let $VA=a, VB=b, VC=c$. The edges $a,b,c$ are mutually perpendicular.
+The areas of the lateral faces are given by:
+\[
+S_1 = \text{Area}(VAB) = \frac{1}{2}ab = 6 \implies ab = 12
+\]
+\[
+S_2 = \text{Area}(VBC) = \frac{1}{2}bc = 8 \implies bc = 16
+\]
+\[
+S_3 = \text{Area}(VCA) = \frac{1}{2}ca = 12 \implies ca = 24
+\]
+Multiplying these equations:
+\[
+(ab)(bc)(ca) = 12 \cdot 16 \cdot 24
+\]
+\[
+(abc)^2 = 12 \cdot 16 \cdot (2 \cdot 12) = 144 \cdot 32
+\]
+\[
+abc = \sqrt{144 \cdot 16 \cdot 2} = 12 \cdot 4 \sqrt{2} = 48\sqrt{2}
+\]
+The volume of a tetrahedron with three mutually perpendicular edges $a,b,c$ meeting at a vertex is:
+\[
+V = \frac{1}{6}abc
+\]
+\[
+V = \frac{1}{6} (48\sqrt{2}) = 8\sqrt{2}
+\]
+
+\subsection*{Answer}
+$8\sqrt{2}\text{ cm}^3$ (option \textbf{(B)}).
+
+\end{document}

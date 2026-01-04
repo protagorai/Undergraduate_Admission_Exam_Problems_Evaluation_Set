@@ -1,0 +1,5 @@
+Problem 2
+
+Ako je \(x>0\), onda je \(\sqrt{x\sqrt{x\sqrt{x}}}\) jednako:
+
+(A) \(x\sqrt{x}\)   (B) \(x\sqrt[4]{x}\)   (C) \(\sqrt{x}\)   (D) \(\sqrt[3]{x}\)   (E) \(\sqrt{\sqrt{x}}\)   (N) Ne znam

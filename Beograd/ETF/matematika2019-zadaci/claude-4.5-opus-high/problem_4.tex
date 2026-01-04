@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+If $f(x) = x(x + 1)(x + 2)(x + 3)(x + 4)$, then $f'(-2)$ is:
+
+\subsection*{Solution}
+We need to find the derivative of $f(x) = x(x + 1)(x + 2)(x + 3)(x + 4)$ and evaluate it at $x = -2$.
+
+Notice that $f(-2) = (-2)(-1)(0)(1)(2) = 0$ since one of the factors is zero.
+
+To find $f'(-2)$, we can use the product rule. However, since $f(-2) = 0$, we can use a more efficient approach.
+
+Let $g(x) = x(x + 1)(x + 3)(x + 4)$ and $h(x) = x + 2$.
+
+Then $f(x) = g(x) \cdot h(x)$.
+
+Using the product rule: $f'(x) = g'(x)h(x) + g(x)h'(x)$
+
+At $x = -2$: $h(-2) = 0$ and $h'(x) = 1$, so $h'(-2) = 1$.
+
+Therefore: $f'(-2) = g'(-2) \cdot 0 + g(-2) \cdot 1 = g(-2)$
+
+Now: $g(-2) = (-2)(-1)(1)(2) = 4$
+
+Therefore: $f'(-2) = 4$
+
+Alternatively, we can think of this as follows: since $f(x)$ has a factor $(x + 2)$, we can write:
+$f(x) = (x + 2) \cdot p(x)$ where $p(x) = x(x + 1)(x + 3)(x + 4)$
+
+Then $f'(x) = p(x) + (x + 2)p'(x)$
+
+At $x = -2$: $f'(-2) = p(-2) + 0 \cdot p'(-2) = p(-2)$
+
+$p(-2) = (-2)(-1)(1)(2) = 4$
+
+\subsection*{Answer}
+4 (option \textbf{D}).
+
+\end{document}

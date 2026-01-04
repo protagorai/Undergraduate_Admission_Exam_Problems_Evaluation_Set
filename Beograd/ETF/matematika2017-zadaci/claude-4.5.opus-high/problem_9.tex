@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Given the function 
+\[
+f(x) = \begin{cases} x^2, & x \text{ is even} \\ \frac{1}{2}(x-3), & x \text{ is odd} \end{cases}
+\]
+Find the value of $f(f(f(17)+1)+1)$.
+
+(A) $17$ \quad (B) $23$ \quad (C) $31$ \quad (D) $42$ \quad (E) $101$
+
+\subsection*{Solution}
+Let's compute step by step.
+
+\textbf{Step 1:} Find $f(17)$.
+
+Since $17$ is odd:
+\[
+f(17) = \frac{1}{2}(17 - 3) = \frac{14}{2} = 7
+\]
+
+\textbf{Step 2:} Find $f(17) + 1 = 7 + 1 = 8$.
+
+\textbf{Step 3:} Find $f(8)$.
+
+Since $8$ is even:
+\[
+f(8) = 8^2 = 64
+\]
+
+\textbf{Step 4:} Find $f(8) + 1 = 64 + 1 = 65$.
+
+\textbf{Step 5:} Find $f(65)$.
+
+Since $65$ is odd:
+\[
+f(65) = \frac{1}{2}(65 - 3) = \frac{62}{2} = 31
+\]
+
+Therefore:
+\[
+f(f(f(17)+1)+1) = f(f(8)+1) = f(65) = 31
+\]
+
+\subsection*{Answer}
+(C) $31$
+
+\end{document}

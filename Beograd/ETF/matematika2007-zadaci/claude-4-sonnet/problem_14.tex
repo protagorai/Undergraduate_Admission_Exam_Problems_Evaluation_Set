@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Ako je $x^2 + 4x + 6$ faktor od $x^4 + ax^2 + b$, tada je $a + b$ jednako:
+\begin{enumerate}
+\item[(A)] 12
+\item[(B)] 24
+\item[(C)] 32
+\item[(D)] 36
+\item[(E)] 40
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Ako je $x^2 + 4x + 6$ faktor od $x^4 + ax^2 + b$, tada postoji polinom $Q(x)$ takav da:
+\[
+x^4 + ax^2 + b = (x^2 + 4x + 6) \cdot Q(x)
+\]
+
+Pošto je levi polinom stepena 4, a prvi faktor stepena 2, mora biti $Q(x) = x^2 + px + q$ za neke konstante $p$ i $q$.
+
+Dakle:
+\[
+x^4 + ax^2 + b = (x^2 + 4x + 6)(x^2 + px + q)
+\]
+
+Množimo desnu stranu:
+\begin{align}
+&(x^2 + 4x + 6)(x^2 + px + q) \\
+&= x^4 + px^3 + qx^2 + 4x^3 + 4px^2 + 4qx + 6x^2 + 6px + 6q \\
+&= x^4 + (p + 4)x^3 + (q + 4p + 6)x^2 + (4q + 6p)x + 6q
+\end{align}
+
+Poređujemo sa $x^4 + 0 \cdot x^3 + ax^2 + 0 \cdot x + b$:
+
+Koeficijent uz $x^3$: $p + 4 = 0 \Rightarrow p = -4$
+
+Koeficijent uz $x$: $4q + 6p = 0 \Rightarrow 4q + 6(-4) = 0 \Rightarrow 4q - 24 = 0 \Rightarrow q = 6$
+
+Koeficijent uz $x^2$: $a = q + 4p + 6 = 6 + 4(-4) + 6 = 6 - 16 + 6 = -4$
+
+Konstantni član: $b = 6q = 6 \cdot 6 = 36$
+
+Dakle: $a = -4$ i $b = 36$
+
+Proveravamo:
+\[
+(x^2 + 4x + 6)(x^2 - 4x + 6) = x^4 - 4x^3 + 6x^2 + 4x^3 - 16x^2 + 24x + 6x^2 - 24x + 36
+\]
+\[
+= x^4 + (-4 + 6)x^2 + 36 = x^4 - 4x^2 + 36
+\]
+
+Dakle $a = -4$ i $b = 36$, pa je:
+\[
+a + b = -4 + 36 = 32
+\]
+
+\subsection*{Answer}
+$a + b = 32$, što odgovara opciji \textbf{(C)}.
+
+\end{document}

@@ -1,0 +1,2 @@
+Neka su $\alpha, \beta$ i $\gamma$ uglovi a $a, b, c$ stranice trougla. Tada je $a \sin(\beta-\gamma) + b \sin(\gamma-\alpha) + c \sin(\alpha-\beta)$ jednako:
+A) $2 \cos(\alpha+\beta-\gamma)$; B) $\cos(\alpha-\beta-\gamma)$; C) 1; D) 0; E) $-1$; N) Ne znam.

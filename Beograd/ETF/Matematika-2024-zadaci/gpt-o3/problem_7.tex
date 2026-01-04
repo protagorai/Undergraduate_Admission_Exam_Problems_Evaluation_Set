@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Baza piramide je pravougli trougao $ABC$ sa hipotenuzom $AB=c$ i uglom $\angle BAC = 30^{\circ}$.  Neka je $O$ središte hipotenuze $AB$ i ortogonalna projekcija vrha piramide $S$ na ravan baze, a neka je visina piramide $h=SO = AO$ (što se iščitava iz uslova zadatka).
+Izračunati zapreminu piramide.
+
+\subsection*{Rešenje}
+\textbf{1.}  Dimenzije osnove.
+U pravouglom trouglu sa hipotenuzom $c$ i uglom od $30^{\circ}$ kod temena $A$ važi poznati odnos $1:\sqrt3:2$.  Stoga
+\[
+BC = c\sin30^{\circ}=\frac{c}{2},\qquad AC = c\cos30^{\circ}=\frac{c\sqrt3}{2}.
+\]
+
+\textbf{2.}  Površina osnove.
+\[
+P_{\triangle ABC}=\frac12\,BC\,AC = \frac12\cdot\frac{c}{2}\cdot\frac{c\sqrt3}{2}=\frac{c^{2}\sqrt3}{8}.
+\]
+
+\textbf{3.}  Visina piramide.
+Tačka $O$ je polovina hipotenuze, pa je $AO = \tfrac{c}{2}$.  Uslov zadatka kaže $SO = AO$, dakle
+\[
+h = SO = \frac{c}{2}.
+\]
+
+\textbf{4.}  Zapremina.
+\[
+V = \frac13\,P_{\text{osnove}}\cdot h = \frac13\,\frac{c^{2}\sqrt3}{8}\cdot\frac{c}{2}=\frac{c^{3}\sqrt3}{48}=\frac{c^{3}}{16\sqrt3}.
+\]
+
+\subsection*{Odgovor}
+\[\displaystyle \frac{c^{3}}{16\sqrt3}\qquad(\text{opcija D})\]
+
+\end{document}

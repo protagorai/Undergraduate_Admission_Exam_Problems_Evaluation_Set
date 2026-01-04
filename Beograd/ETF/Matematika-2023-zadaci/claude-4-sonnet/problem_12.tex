@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Date su funkcije:
+\begin{align}
+f_1(x) &= \sqrt{x - 1} \cdot \log_3 3^{x-1}\\
+f_2(x) &= \sqrt{3^{3\log_3(x-1)}}\\
+f_3(x) &= \sqrt{(x-1)^3}\\
+f_4(x) &= 10^{\log x} \cdot x^{|x-1|^{-3/2}}
+\end{align}
+
+Tačan je iskaz:
+
+\subsection*{Solution}
+Analizirajmo svaku funkciju:
+
+\textbf{Funkcija $f_1(x)$:}
+\[
+f_1(x) = \sqrt{x - 1} \cdot \log_3 3^{x-1} = \sqrt{x - 1} \cdot (x-1) = (x-1)^{3/2}
+\]
+Definisana za $x \geq 1$.
+
+\textbf{Funkcija $f_2(x)$:}
+\[
+f_2(x) = \sqrt{3^{3\log_3(x-1)}} = \sqrt{(x-1)^3} = |x-1|^{3/2}
+\]
+Definisana za $x > 1$ (zbog $\log_3(x-1)$).
+
+\textbf{Funkcija $f_3(x)$:}
+\[
+f_3(x) = \sqrt{(x-1)^3} = |x-1|^{3/2}
+\]
+Definisana za sve $x \in \mathbb{R}$.
+
+\textbf{Funkcija $f_4(x)$:}
+\[
+f_4(x) = 10^{\log x} \cdot x^{|x-1|^{-3/2}} = x \cdot x^{|x-1|^{-3/2}} = x^{1 + |x-1|^{-3/2}}
+\]
+Definisana za $x > 0$ i $x \neq 1$.
+
+\textbf{Poređenje funkcija:}
+
+Za $x > 1$:
+- $f_1(x) = (x-1)^{3/2}$
+- $f_2(x) = (x-1)^{3/2}$ 
+- $f_3(x) = (x-1)^{3/2}$
+
+Dakle, $f_1 = f_2 = f_3$ na domenu $x > 1$.
+
+Međutim, domeni se razlikuju:
+- $f_1$: $x \geq 1$
+- $f_2$: $x > 1$  
+- $f_3$: $x \in \mathbb{R}$
+
+Za $x < 1$:
+- $f_3(x) = (1-x)^{3/2}$
+
+Analizirajući opcije, tačan iskaz je da među datim funkcijama nema jednakih, jer se njihovi domeni razlikuju.
+
+\subsection*{Answer}
+Među datim funkcijama nema jednakih (opcija \textbf{A}).
+
+\end{document}

@@ -1,0 +1,87 @@
+REŠENJA - Prijemni ispit iz matematike za upis na Elektrotehnički fakultet
+Univerzitet u Beogradu, 28. jun 2021.
+Šifra zadatka: 17369
+
+================================================================================
+
+1.  (E) 15
+    Učenik čita 20 dana × 45 min = 900 minuta ukupno.
+    Za 1 sat (60 min) dnevno: 900/60 = 15 dana.
+
+2.  (B) (ii) i (iii)
+    Tačne nejednakosti su:
+    (ii) ∛(3 + √3) < √(2 + √2)
+    (iii) 3√5 < 5√3
+
+3.  (B) (i), (ii) i (iv)
+    Tačna tvrđenja:
+    (i) f(0) = ln|(-1)/1| = ln 1 = 0 ✓
+    (ii) Funkcija je neparna: f(-x) = -f(x) ✓
+    (iv) f(2x+1) + f(2x-1) = f(x) ✓
+
+4.  (D) 66
+    Broj sabiraka u (a+b+c)^10 je C(12,2) = 66.
+
+5.  (A) 24 cm³
+    Iz ab=12, bc=8, ac=6 dobijamo (abc)² = 576, pa abc = 24.
+
+6.  (B) 1
+    Jednačina ima tačno 1 realno rešenje.
+
+7.  (E) Nijedan od prethodno ponuđenih odgovora
+    Nejednačina ln(x+1) > x² + 3x + 3 nema rešenja jer je
+    x² + 3x + 3 ≥ 3/4 za sve x, dok ln(x+1) ne može dostići
+    tako visoke vrednosti u domenu.
+
+8.  (D) 25
+    Zajednički članovi su oblika 5n-3 = 3m-1 za n=3k+1, m=5k+1.
+    Za k ∈ {0,1,...,24} dobijamo 25 zajedničkih članova.
+
+9.  (B) 1/2
+    cos(π/7) - cos(2π/7) + cos(3π/7) = 1/2
+    (korišćenjem Vijetovih formula za korene jednačine 8x³-4x²-4x+1=0)
+
+10. (E) (a,b) ∪ (c,d] ∪ [e,f)
+    Skup rešenja je (0, 1/2) ∪ (3/4, 1] ∪ [2, 3).
+
+11. (B) 5
+    Teme C ima koordinate (2, 3), pa je zbir 2 + 3 = 5.
+
+12. (D) 65°
+    Ugao ∠DBC = 65° (korišćenjem trigonometrijskih relacija u 
+    četvorouglu sa datim uglovima).
+
+13. (B) (a, b) = [0, 4]
+    Nejednačina se svodi na u(u-1) ≤ 2 za u = √x,
+    što daje 0 ≤ x ≤ 4.
+
+14. (A) 6305
+    Svaka knjiga ima 3 izbora (A, B, ili nepodeljena).
+    Ukupno 3⁸ - 2⁸ = 6561 - 256 = 6305 (isključujemo slučaj
+    kada A ne dobije ništa).
+
+15. (A) ab + (5/2)(a² + b²)
+    Površina šestougla formiranog od kvadrata nad stranicama
+    pravouglog trougla.
+
+16. (D) 4
+    Sistem ima 4 rešenja u datim intervalima:
+    (π/4, π/6), (5π/4, -5π/6), (π/6, π/4), (7π/6, -3π/4).
+
+17. (B) [31, 50]
+    Jedini dvocifreni broj koji zadovoljava uslov je 48,
+    jer 48 = (4+8) × |4-8| = 12 × 4 = 48.
+
+18. (B) 2
+    Ostatak pri deljenju polinoma P(x) sa Q(x) = x³+x²+x+1 je
+    konstanta 2.
+
+19. (C) √2
+    Minimum izraza x₁⁴ + x₂⁴ se dostiže za p = √2
+    (granična vrednost domena gde jednačina ima realne korene).
+
+20. (B) 14
+    lim[x→0] (1 - cos x cos 2x cos 3x)/(1 - cos x) = 14
+    (korišćenjem Tejlorovog razvoja: brojilac ≈ 7x², imenilac ≈ x²/2)
+
+================================================================================

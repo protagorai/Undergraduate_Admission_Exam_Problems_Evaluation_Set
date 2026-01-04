@@ -1,0 +1,8 @@
+Problem 20 (Matematika 2023)
+Skup svih vrednosti parametra n za koje prava y = x + n i kriva y = x³ − 2x² + x − 2 imaju najveći broj presečnih tačaka je oblika (a<b<c):
+a) (−∞,a] ∪ {b}
+b) {a} ∪ [b,∞)
+c) (−∞,a] ∪ [b,∞)
+d) (a,b)
+e) [a,b]
+n) Ne znam

@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Find the number of distinct real solutions of
+\[
+1+\log_x\frac{4-x}{10}=\left(\log_{10}x^2-1\right)\log_x 10.
+\]
+
+\subsection*{Solution}
+\textbf{Domain:} $x>0$, $x\neq 1$, and $\dfrac{4-x}{10}>0\Rightarrow x<4$.
+So $0<x<4$, $x\neq 1$.
+
+\medskip
+Let $a=\log_{10}x$ (so $a\neq 0$). Then $\log_x 10=\dfrac{1}{\log_{10}x}=\dfrac{1}{a}$ and
+\[
+\log_{10}x^2=2\log_{10}x=2a.
+\]
+Rewrite the equation:
+\[
+1+\frac{\log_{10}\left(\frac{4-x}{10}\right)}{a}=(2a-1)\cdot\frac{1}{a}
+=2-\frac{1}{a}.
+\]
+Multiply by $a$:
+\[
+a+\log_{10}\left(\frac{4-x}{10}\right)=2a-1
+\quad\Longrightarrow\quad
+\log_{10}\left(\frac{4-x}{10}\right)=a-1.
+\]
+But $a-1=\log_{10}x-1=\log_{10}\left(\frac{x}{10}\right)$, hence
+\[
+\frac{4-x}{10}=\frac{x}{10}\quad\Longrightarrow\quad 4-x=x\quad\Longrightarrow\quad x=2.
+\]
+This satisfies the domain, so there is exactly one real solution.
+
+\subsection*{Answer}
+$1$ solution (namely $x=2$), option \textbf{B}.
+
+\end{document}
+

@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Broj realnih i različitih rešenja jednačine $\text{tg}^2 x = \frac{1-\cos x}{1-\sin x}$ na segmentu $[0, 2\pi]$ je:
+
+\subsection*{Solution}
+
+$\frac{1-\cos^2 x}{\cos^2 x} = \frac{1-\cos x}{1-\sin x} \implies \frac{(1-\cos x)(1+\cos x)}{\cos^2 x} = \frac{1-\cos x}{1-\sin x}$.
+1) $1-\cos x = 0 \implies \cos x = 1 \implies x = 0, 2\pi$. (Valid since denominators $\ne 0$).
+2) Divide by $1-\cos x \ne 0$:
+$\frac{1+\cos x}{1-\sin^2 x} = \frac{1}{1-\sin x} \implies \frac{1+\cos x}{(1-\sin x)(1+\sin x)} = \frac{1}{1-\sin x}$.
+$\frac{1+\cos x}{1+\sin x} = 1 \implies 1+\cos x = 1+\sin x \implies \cos x = \sin x \implies \text{tg}\,x = 1$.
+$x = \pi/4, 5\pi/4$. (Valid).
+Total solutions: $0, 2\pi, \pi/4, 5\pi/4$. (4 solutions).
+
+
+\subsection*{Answer}
+4 (option \textbf{B}).
+
+\end{document}

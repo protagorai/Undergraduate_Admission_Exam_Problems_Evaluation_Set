@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 2 - Solution}
+
+\textbf{Problem:} Find the sum of integer solutions of the inequality $3|x-1| + x \leq 4$.
+
+\textbf{Solution:}
+
+We need to consider two cases based on the absolute value.
+
+\textbf{Case 1:} $x \geq 1$ (then $|x-1| = x-1$)
+\begin{align*}
+3(x-1) + x &\leq 4 \\
+3x - 3 + x &\leq 4 \\
+4x &\leq 7 \\
+x &\leq \frac{7}{4} = 1.75
+\end{align*}
+Combined with $x \geq 1$: $1 \leq x \leq 1.75$
+
+Integer solution in this interval: $x = 1$
+
+\textbf{Case 2:} $x < 1$ (then $|x-1| = 1-x$)
+\begin{align*}
+3(1-x) + x &\leq 4 \\
+3 - 3x + x &\leq 4 \\
+3 - 2x &\leq 4 \\
+-2x &\leq 1 \\
+x &\geq -\frac{1}{2}
+\end{align*}
+Combined with $x < 1$: $-0.5 \leq x < 1$
+
+Integer solution in this interval: $x = 0$
+
+\textbf{Sum of all integer solutions:} $0 + 1 = 1$
+
+\textbf{Answer: Б) 1}
+
+\end{document}
+

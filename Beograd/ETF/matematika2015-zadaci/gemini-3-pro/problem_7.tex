@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Ako je $a = 0,1^{0,1}$, $b = 0,2^{0,2}$ i $c = 0,3^{0,3}$, tada je:
+
+\subsection*{Solution}
+Posmatrajmo funkciju $f(x) = x^x$ za $x > 0$.
+Izvod funkcije je $f'(x) = x^x (\ln x + 1)$.
+Funkcija ima minimum za $\ln x = -1 \Rightarrow x = 1/e \approx 0,367$.
+U intervalu $(0, 1/e)$, $f'(x) < 0$, pa funkcija opada.
+Dati brojevi su vrednosti funkcije za $x_a = 0,1$, $x_b = 0,2$, $x_c = 0,3$.
+Kako je $0,1 < 0,2 < 0,3 < 1/e$, i funkcija opada na tom intervalu, važi:
+$f(0,1) > f(0,2) > f(0,3)$.
+Dakle, $a > b > c$, odnosno $c < b < a$.
+
+\subsection*{Answer}
+$c < b < a$ (option \textbf{D}).
+
+\end{document}

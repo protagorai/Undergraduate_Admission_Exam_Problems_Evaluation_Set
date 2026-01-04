@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 19}
+Najveći broj realnih rešenja jednačine $|2 - |x - x^2|| = p$, gde je $p$ realni parametar, je:
+\begin{itemize}
+    \item[(A)] 1
+    \item[(B)] 6
+    \item[(C)] 2
+    \item[(D)] 8
+    \item[(E)] 4
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Posmatrajmo funkciju $g(x) = |2 - |x - x^2||$.
+Analizirajmo $h(x) = |x - x^2| = |x(1-x)|$.
+Nule su 0 i 1. Maksimum na $[0, 1]$ je u $x=0.5$ i iznosi $0.25$.
+Grafik $h(x)$ izgleda kao "brdo" visine 0.25 između 0 i 1, a van toga raste kao parabola.
+Sada posmatrajmo $2 - h(x)$.
+Za $x \in (-\infty, 0) \cup (1, \infty)$, $h(x)$ raste. $h(-1)=2, h(2)=2$.
+U tačkama $x=-1$ i $x=2$, $h(x)=2 \implies 2-h(x)=0$.
+Između -1 i 2, $h(x) < 2$ (maksimum je $0.25$), pa je $2-h(x)$ pozitivno.
+Minimum $2-h(x)$ na $(0, 1)$ je $2-0.25 = 1.75$.
+Maksimum $2-h(x)$ je u nulama od $h(x)$, tj. $x=0, 1$, gde je vrednost 2.
+Dakle, grafik $g(x)$ ima sledeći oblik:
+- Za $|x|$ veliko, $|x-x^2|$ je veliko, pa je $|2 - \dots|$ veliko. Ide u beskonačnost.
+- U $x=-1$ i $x=2$, vrednost je 0 (nule funkcije $g$).
+- Između -1 i 2 funkcija je pozitivna.
+- Lokalni maksimumi su u $x=0$ i $x=1$ sa vrednošću $|2-0|=2$.
+- Lokalni minimum između 0 i 1 je u $x=0.5$ sa vrednošću $|2-0.25|=1.75$.
+Presek sa pravom $y=p$:
+- Ako je $p > 2$: 2 rešenja (spoljašnje grane).
+- Ako je $p = 2$: 4 rešenja (dodiruje u 0 i 1, plus 2 spoljašnja).
+- Ako je $1.75 < p < 2$: Prava seče "M" oblik između 0 i 1 u dve tačke, plus seče grane između -1 i 0 i između 1 i 2, plus dve spoljašnje.
+  - Seče $(0, 0.5)$ i $(0.5, 1)$ -> 2 tačke.
+  - Seče $(-1, 0)$ i $(1, 2)$ -> 2 tačke.
+  - Seče $(-\infty, -1)$ i $(2, \infty)$ -> 2 tačke.
+  Ukupno 6 rešenja.
+- Ako je $p = 1.75$: 5 rešenja (dodiruje u 0.5, seče ostalo).
+- Ako je $0 < p < 1.75$: 4 rešenja.
+- Ako je $p=0$: 2 rešenja.
+Najveći broj rešenja je 6.
+
+\subsection*{Answer}
+6 (option \textbf{B}).
+
+\end{document}

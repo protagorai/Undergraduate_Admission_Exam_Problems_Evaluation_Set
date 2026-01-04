@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je $\log_2(\sqrt{3}+1) + \log_2(\sqrt{6}-2) = A$, tada je izraz $\log_{\frac{1}{4}}(\sqrt{3}-1) + \log_{\frac{1}{4}}(\sqrt{6}+2)$ jednak:
+
+\subsection*{Solution}
+Let $X = \log_{\frac{1}{4}}(\sqrt{3}-1) + \log_{\frac{1}{4}}(\sqrt{6}+2)$.
+Using $\log_{1/4} y = \log_{2^{-2}} y = -\frac{1}{2} \log_2 y$:
+\[ X = -\frac{1}{2} [\log_2(\sqrt{3}-1) + \log_2(\sqrt{6}+2)] \]
+Note relations between conjugate pairs:
+$\log_2(\sqrt{3}-1) = \log_2 \frac{2}{\sqrt{3}+1} = 1 - \log_2(\sqrt{3}+1)$
+$\log_2(\sqrt{6}+2) = \log_2 \frac{2}{\sqrt{6}-2} = 1 - \log_2(\sqrt{6}-2)$
+Substitute into X:
+\[ X = -\frac{1}{2} [ (1 - \log_2(\sqrt{3}+1)) + (1 - \log_2(\sqrt{6}-2)) ] \]
+\[ X = -\frac{1}{2} [ 2 - (\log_2(\sqrt{3}+1) + \log_2(\sqrt{6}-2)) ] \]
+Using the given $A$:
+\[ X = -\frac{1}{2} (2 - A) = \frac{A}{2} - 1 \]
+
+\subsection*{Answer}
+$\frac{A}{2}-1$ (option \textbf{D})
+
+\end{document}

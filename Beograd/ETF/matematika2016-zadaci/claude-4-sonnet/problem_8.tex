@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Given functions:
+\[
+f(x) = \frac{x - 2016}{x + 2016} \quad \text{and} \quad g(x) = \frac{1 - f(x)}{1 + f(x)}
+\]
+Find $f(g(x))$.
+
+\subsection*{Solution}
+First, let's find $g(x)$ explicitly by substituting $f(x)$:
+\[
+g(x) = \frac{1 - f(x)}{1 + f(x)} = \frac{1 - \frac{x - 2016}{x + 2016}}{1 + \frac{x - 2016}{x + 2016}}
+\]
+
+Simplifying the numerator:
+\[
+1 - \frac{x - 2016}{x + 2016} = \frac{x + 2016 - (x - 2016)}{x + 2016} = \frac{x + 2016 - x + 2016}{x + 2016} = \frac{4032}{x + 2016}
+\]
+
+Simplifying the denominator:
+\[
+1 + \frac{x - 2016}{x + 2016} = \frac{x + 2016 + (x - 2016)}{x + 2016} = \frac{x + 2016 + x - 2016}{x + 2016} = \frac{2x}{x + 2016}
+\]
+
+Therefore:
+\[
+g(x) = \frac{\frac{4032}{x + 2016}}{\frac{2x}{x + 2016}} = \frac{4032}{2x} = \frac{2016}{x}
+\]
+
+Now we can find $f(g(x))$:
+\[
+f(g(x)) = f\left(\frac{2016}{x}\right) = \frac{\frac{2016}{x} - 2016}{\frac{2016}{x} + 2016}
+\]
+
+Simplifying:
+\[
+= \frac{\frac{2016 - 2016x}{x}}{\frac{2016 + 2016x}{x}} = \frac{2016 - 2016x}{2016 + 2016x} = \frac{2016(1 - x)}{2016(1 + x)} = \frac{1 - x}{1 + x}
+\]
+
+\subsection*{Answer}
+$\frac{1 - x}{1 + x}$ (option \textbf{C}).
+
+\end{document}

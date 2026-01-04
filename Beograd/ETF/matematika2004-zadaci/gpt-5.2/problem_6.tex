@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Neka su $\alpha,\beta,\gamma$ uglovi, a $a,b,c$ stranice trougla. Odrediti vrednost izraza
+\[
+a\sin(\beta-\gamma)+b\sin(\gamma-\alpha)+c\sin(\alpha-\beta).
+\]
+
+\subsection*{Solution}
+Po sinusnom teoremu važi $a=2R\sin\alpha$, $b=2R\sin\beta$, $c=2R\sin\gamma$ za opisani poluprečnik $R$.
+Zato je traženi izraz jednak
+\[
+2R\Big(\sin\alpha\sin(\beta-\gamma)+\sin\beta\sin(\gamma-\alpha)+\sin\gamma\sin(\alpha-\beta)\Big).
+\]
+Razvijemo razlike:
+\begin{align*}
+\sin\alpha\sin(\beta-\gamma)
+&=\sin\alpha(\sin\beta\cos\gamma-\cos\beta\sin\gamma)
+=\sin\alpha\sin\beta\cos\gamma-\sin\alpha\cos\beta\sin\gamma,\\
+\sin\beta\sin(\gamma-\alpha)
+&=\sin\beta(\sin\gamma\cos\alpha-\cos\gamma\sin\alpha)
+=\sin\beta\sin\gamma\cos\alpha-\sin\beta\cos\gamma\sin\alpha,\\
+\sin\gamma\sin(\alpha-\beta)
+&=\sin\gamma(\sin\alpha\cos\beta-\cos\alpha\sin\beta)
+=\sin\gamma\sin\alpha\cos\beta-\sin\gamma\cos\alpha\sin\beta.
+\end{align*}
+Sabiranjem, članovi se poništavaju parovima:
+\[
+\sin\alpha\sin\beta\cos\gamma-\sin\beta\cos\gamma\sin\alpha=0,\quad
+-\sin\alpha\cos\beta\sin\gamma+\sin\gamma\sin\alpha\cos\beta=0,\quad
+\sin\beta\sin\gamma\cos\alpha-\sin\gamma\cos\alpha\sin\beta=0.
+\]
+Dakle, ceo izraz je $2R\cdot 0=0$.
+
+\subsection*{Answer}
+$0$ (option \textbf{D}).
+
+\end{document}
+

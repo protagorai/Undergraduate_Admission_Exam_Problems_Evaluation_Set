@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Dat je polinom
+\[
+P(x)=a_0x^4+a_1x^3+a_2x^2+a_3x+a_4 \qquad (a_0,a_1,a_2,a_3,a_4\in\mathbb R,\ a_0\neq 0)
+\]
+takav da je $P(0)=P(1)=P(2)=P(-1)=0$ i $P(-2)=12$.
+Tada je $P(3)$ jednako:
+\[
+\text{(A) }\frac{1}{3}\quad
+\text{(B) }-\frac{1}{2}\quad
+\text{(C) }1\quad
+\text{(D) }2\quad
+\text{(E) }12.
+\]
+
+\subsection*{Solution}
+Pošto je $P$ stepena $4$ i ima nule $-1,0,1,2$, mora biti oblika
+\[
+P(x)=k\,x(x-1)(x-2)(x+1)
+\]
+za neki $k\neq 0$.
+Iz uslova $P(-2)=12$ dobijamo:
+\[
+12=P(-2)=k\cdot(-2)(-3)(-4)(-1)=k\cdot 24,
+\]
+pa je $k=\frac{1}{2}$.
+Zato
+\[
+P(3)=\frac12\cdot 3\cdot 2\cdot 1\cdot 4=\frac12\cdot 24=12.
+\]
+
+\subsection*{Answer}
+$12$ (option \textbf{E}).
+
+\end{document}
+

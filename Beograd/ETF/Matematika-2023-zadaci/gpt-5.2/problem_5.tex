@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Neka je $B$ tačka na kružnici poluprečnika $r$ i $BC$ tangenta duž dužine 8 cm. Ako je $A$ tačka na istoj kružnici takva da je duž $AC$ dužine 9 cm i da sadrži centar kružnice, onda obim kružnice (u cm) iznosi:
+
+(A) $\frac{36}{17}\pi$ \quad (B) $2\pi$ \quad (C) $\frac{11}{9}\pi$ \quad (D) $\frac{17}{9}\pi$ \quad (E) $\frac{289}{324}\pi$
+
+\subsection*{Solution}
+Neka je $O$ centar kružnice. Poluprečnik je $r$, dakle $OB = OA = r$.
+$BC$ je tangenta na kružnicu u tački $B$, pa je $\triangle OBC$ pravougli trougao sa pravim uglom kod $B$.
+Dužina tangente je $BC = 8$.
+Duž $AC$ prolazi kroz centar $O$.
+Tačke $A$ i $C$ su kolinearne sa $O$. Postoje dve mogućnosti za raspored tačaka na pravoj:
+1. $C - A - O$ (A je između C i O). Tada $OC = CA + AO = 9 + r$.
+2. $C - O - A$ (O je između C i A). Tada $OC = CA - AO = 9 - r$. Ali ovo bi značilo da sečica prolazi kroz centar, pa je $A$ jedna presečna tačka.
+Tekst kaže: "A tačka na istoj kružnici ... duž AC dužine 9 cm i da sadrži centar kružnice". To znači da centar pripada duži $AC$.
+Dakle raspored je $A - O - C$? Ne, $A$ je na kružnici. $O$ je centar.
+Ako duž $AC$ sadrži centar, onda $O$ leži između $A$ i $C$.
+Dakle $C - O - A$.
+Onda je $AC = AO + OC$.
+Znamo $AO = r$.
+Dakle $9 = r + OC \Rightarrow OC = 9 - r$.
+U pravouglom trouglu $OBC$:
+$OC^2 = OB^2 + BC^2$.
+$(9-r)^2 = r^2 + 8^2$.
+$81 - 18r + r^2 = r^2 + 64$.
+$81 - 64 = 18r$.
+$17 = 18r$.
+$r = \frac{17}{18}$.
+
+Obim kružnice je $2\pi r = 2\pi \cdot \frac{17}{18} = \frac{17\pi}{9}$.
+
+\subsection*{Answer}
+$\frac{17}{9}\pi$ cm (opcija \textbf{(D)}).
+
+\end{document}

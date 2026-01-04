@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+The equation $x^3 + x^2 + ax + b = 0$ $(a, b \in \mathbb{R})$ has solutions $1 - \sqrt{2}i$ and $1 + \sqrt{2}$. Find all solutions:
+
+A) $-2$; B) $-3$; C) $2$; D) $0$; E) $3$; N) Ne znam.
+
+\subsection*{Solution}
+Since the polynomial has real coefficients and $1 - \sqrt{2}i$ is a solution, its complex conjugate $1 + \sqrt{2}i$ must also be a solution.
+
+So the three solutions are:
+- $x_1 = 1 - \sqrt{2}i$
+- $x_2 = 1 + \sqrt{2}i$  
+- $x_3 = 1 + \sqrt{2}$ (given)
+
+Using Vieta's formulas for $x^3 + x^2 + ax + b = 0$:
+- Sum of roots: $x_1 + x_2 + x_3 = -1$
+- Sum of products taken two at a time: $x_1x_2 + x_1x_3 + x_2x_3 = a$
+- Product of all roots: $x_1x_2x_3 = -b$
+
+Let's calculate:
+$x_1 + x_2 + x_3 = (1 - \sqrt{2}i) + (1 + \sqrt{2}i) + (1 + \sqrt{2}) = 3 + \sqrt{2}$
+
+But this should equal $-1$, so:
+$3 + \sqrt{2} = -1$
+
+This is impossible since $3 + \sqrt{2} > 0$.
+
+Let me reconsider. The problem asks to "find all solutions" and gives options that are single numbers. This suggests we need to find the third root.
+
+We know two roots: $1 - \sqrt{2}i$ and $1 + \sqrt{2}$.
+Since complex roots come in conjugate pairs for real polynomials, if $1 - \sqrt{2}i$ is a root, then $1 + \sqrt{2}i$ must also be a root.
+
+Wait, let me re-read the problem. It says the solutions are $1 - \sqrt{2}i$ and $1 + \sqrt{2}$. 
+
+Actually, let me assume there's a typo and the given roots are $1 - \sqrt{2}i$ and $1 + \sqrt{2}i$ (complex conjugates), and we need to find the third root.
+
+Sum of roots = $-1$
+$(1 - \sqrt{2}i) + (1 + \sqrt{2}i) + x_3 = -1$
+$2 + x_3 = -1$
+$x_3 = -3$
+
+\subsection*{Answer}
+$-3$ (option \textbf{B}).
+
+\end{document}

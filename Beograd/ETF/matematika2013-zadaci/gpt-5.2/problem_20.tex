@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 20}
+Odrediti skup realnih rešenja nejednačine:
+\[
+\frac{\log_2\!\bigl((x+1)^2\bigr)-1\;\Bigl(\log_2\!\bigl(x^2+2x+3\bigr)\,(x^2-2x)\Bigr)}
+{\log_2\!\bigl((x+1)^2\bigr)-1\;\bigl(x^2+6x+10\bigr)}\ge 0.
+\]
+
+\subsection*{Rešenje}
+Najpre uočimo:
+\[
+x^2+6x+10=(x+3)^2+1>0\quad \text{za svaki }x\in\mathbb{R},
+\]
+i
+\[
+x^2+2x+3=(x+1)^2+2\ge 2>1 \Rightarrow \log_2(x^2+2x+3)>0.
+\]
+
+Razmatramo domen: \(\log_2((x+1)^2)\) je definisan za \(x\ne -1\).
+Takođe, faktor \(\log_2((x+1)^2)-1\) ne sme biti nula u imenitelju, pa mora važiti
+\[
+\log_2((x+1)^2)\ne 1 \;\Longleftrightarrow\; (x+1)^2\ne 2 \;\Longleftrightarrow\; x\ne -1\pm\sqrt{2}.
+\]
+
+Za sve \(x\) iz domena možemo skratiti zajednički faktor \(\log_2((x+1)^2)-1\), pa je nejednačina ekvivalentna:
+\[
+\frac{\log_2(x^2+2x+3)\,(x^2-2x)}{x^2+6x+10}\ge 0.
+\]
+Kako su \(\log_2(x^2+2x+3)>0\) i \(x^2+6x+10>0\), znak izraza određuje samo \(x^2-2x=x(x-2)\). Zato:
+\[
+x(x-2)\ge 0 \;\Longleftrightarrow\; x\le 0 \ \text{ili}\ x\ge 2.
+\]
+Uz napomenu o domenu, dobijamo skup rešenja:
+\[
+\bigl((-\infty,0]\cup[2,+\infty)\bigr)\setminus\{-1,\,-1-\sqrt{2}\}.
+\]
+(Broj \(-1+\sqrt{2}\) nije u \((-\infty,0]\cup[2,+\infty)\), pa se ionako ne pojavljuje u rešenjima.)
+
+Po obliku, skup rešenja odgovara varijanti \((a,b]\cup(c,+\infty)\) (sa \(a=-1\), \(b=0\), \(c=2\)), uz izdvajanje nedozvoljenih tačaka domena.
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)}
+\]
+\end{document}
+

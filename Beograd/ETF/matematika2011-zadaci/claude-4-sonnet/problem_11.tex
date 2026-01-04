@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Ukupan broj realnih rešenja sistema jednačina $\frac{x + y}{x - y} + \frac{x - y}{x + y} = \frac{5}{2}$, $x^2 + y^2 = 20$ jeste:
+
+(A) $0$ \quad (B) $2$ \quad (C) $4$ \quad (D) $6$ \quad (E) $8$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's start with the first equation. Let $u = x + y$ and $v = x - y$. Then:
+$$\frac{u}{v} + \frac{v}{u} = \frac{5}{2}$$
+
+Multiplying through by $uv$:
+$$u^2 + v^2 = \frac{5uv}{2}$$
+$$2u^2 + 2v^2 = 5uv$$
+$$2u^2 - 5uv + 2v^2 = 0$$
+
+Dividing by $v^2$ (assuming $v \neq 0$):
+$$2\left(\frac{u}{v}\right)^2 - 5\left(\frac{u}{v}\right) + 2 = 0$$
+
+Let $t = \frac{u}{v}$. Then:
+$$2t^2 - 5t + 2 = 0$$
+
+Using the quadratic formula:
+$$t = \frac{5 \pm \sqrt{25 - 16}}{4} = \frac{5 \pm 3}{4}$$
+
+So $t = 2$ or $t = \frac{1}{2}$.
+
+This means $\frac{u}{v} = 2$ or $\frac{u}{v} = \frac{1}{2}$.
+
+Case 1: $\frac{u}{v} = 2$, so $u = 2v$, which gives us $x + y = 2(x - y)$, so $x + y = 2x - 2y$, thus $3y = x$.
+
+Case 2: $\frac{u}{v} = \frac{1}{2}$, so $u = \frac{v}{2}$, which gives us $x + y = \frac{x - y}{2}$, so $2x + 2y = x - y$, thus $x = -3y$.
+
+Now we use the second equation $x^2 + y^2 = 20$:
+
+For Case 1 ($x = 3y$):
+$$(3y)^2 + y^2 = 20$$
+$$9y^2 + y^2 = 20$$
+$$10y^2 = 20$$
+$$y^2 = 2$$
+$$y = \pm\sqrt{2}$$
+
+This gives us solutions: $(3\sqrt{2}, \sqrt{2})$ and $(-3\sqrt{2}, -\sqrt{2})$.
+
+For Case 2 ($x = -3y$):
+$$(-3y)^2 + y^2 = 20$$
+$$9y^2 + y^2 = 20$$
+$$10y^2 = 20$$
+$$y^2 = 2$$
+$$y = \pm\sqrt{2}$$
+
+This gives us solutions: $(-3\sqrt{2}, \sqrt{2})$ and $(3\sqrt{2}, -\sqrt{2})$.
+
+Let's verify these solutions work in the original equation. We need to check that $x \neq \pm y$ for all solutions (so denominators are non-zero).
+
+All four solutions satisfy this condition, so we have 4 real solutions total.
+
+\subsection*{Answer}
+(C) $4$
+
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+The number of pairs $(p,q)$, where $p, q \in \mathbb{R}$, such that the polynomial $x^4 + px^2 + q$ divides the polynomial $x^2 + px + q$, is:
+
+\subsection*{Solution}
+If $x^4 + px^2 + q$ divides $x^2 + px + q$, then there exists a polynomial $R(x)$ such that:
+\[x^2 + px + q = (x^4 + px^2 + q) \cdot R(x)\]
+
+Since the left side has degree 2 and the right side has degree $4 + \deg(R(x))$, we need:
+\[2 = 4 + \deg(R(x))\]
+
+This gives $\deg(R(x)) = -2$, which is impossible for a non-zero polynomial.
+
+Therefore, we must have $x^2 + px + q = 0$ (the zero polynomial), which means $p = q = 0$.
+
+But let's check this: if $p = q = 0$, then we have $x^4$ divides $x^2$, which is also impossible unless both are zero.
+
+Let me reconsider the problem. Perhaps the question means that every root of $x^2 + px + q = 0$ is also a root of $x^4 + px^2 + q = 0$.
+
+Let $\alpha$ be a root of $x^2 + px + q = 0$. Then:
+\[\alpha^2 + p\alpha + q = 0 \quad \text{...(1)}\]
+
+For $\alpha$ to also be a root of $x^4 + px^2 + q = 0$:
+\[\alpha^4 + p\alpha^2 + q = 0 \quad \text{...(2)}\]
+
+From equation (1): $\alpha^2 = -p\alpha - q$
+
+Substituting into equation (2):
+\[(\alpha^2)^2 + p\alpha^2 + q = 0\]
+\[(-p\alpha - q)^2 + p(-p\alpha - q) + q = 0\]
+\[p^2\alpha^2 + 2pq\alpha + q^2 - p^2\alpha - pq + q = 0\]
+\[p^2\alpha^2 + 2pq\alpha - p^2\alpha + q^2 - pq + q = 0\]
+\[p^2\alpha^2 + (2pq - p^2)\alpha + (q^2 - pq + q) = 0\]
+
+Substituting $\alpha^2 = -p\alpha - q$:
+\[p^2(-p\alpha - q) + (2pq - p^2)\alpha + (q^2 - pq + q) = 0\]
+\[-p^3\alpha - p^2q + (2pq - p^2)\alpha + (q^2 - pq + q) = 0\]
+\[(-p^3 + 2pq - p^2)\alpha + (-p^2q + q^2 - pq + q) = 0\]
+\[p(-p^2 + 2q - p)\alpha + q(-p^2 + q - p + 1) = 0\]
+
+For this to hold for all roots $\alpha$, we need either:
+1. $p = 0$ and $q(-p^2 + q - p + 1) = 0$, or
+2. $-p^2 + 2q - p = 0$ and $-p^2 + q - p + 1 = 0$
+
+Case 1: $p = 0$
+Then $q(q + 1) = 0$, so $q = 0$ or $q = -1$.
+
+Case 2: $-p^2 + 2q - p = 0$ and $-p^2 + q - p + 1 = 0$
+From the first: $q = \frac{p^2 + p}{2}$
+From the second: $q = p^2 + p - 1$
+
+Setting equal: $\frac{p^2 + p}{2} = p^2 + p - 1$
+$p^2 + p = 2p^2 + 2p - 2$
+$0 = p^2 + p - 2 = (p+2)(p-1)$
+
+So $p = -2$ or $p = 1$.
+
+If $p = 1$: $q = \frac{1 + 1}{2} = 1$
+If $p = -2$: $q = \frac{4 - 2}{2} = 1$
+
+Let's verify: For $(p,q) = (1,1)$ and $(p,q) = (-2,1)$.
+
+The pairs are: $(0,0)$, $(0,-1)$, $(1,1)$, $(-2,1)$.
+
+That's 4 pairs.
+
+\subsection*{Answer}
+$4$ (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Find the number of distinct real solutions of the equation:
+\[
+\sqrt{1-x} + \sqrt{1+x} - \sqrt{1-x^2} = \frac{5}{4}
+\]
+
+(A) 0 \quad (B) 1 \quad (C) 4 \quad (D) 2 \quad (E) 3
+
+\subsection*{Solution}
+\textbf{Domain:} $-1 \leq x \leq 1$
+
+Let $u = \sqrt{1-x}$ and $v = \sqrt{1+x}$.
+
+Then:
+\begin{itemize}
+\item $u^2 = 1-x$ and $v^2 = 1+x$
+\item $u^2 + v^2 = 2$
+\item $uv = \sqrt{(1-x)(1+x)} = \sqrt{1-x^2}$
+\end{itemize}
+
+The equation becomes:
+\[
+u + v - uv = \frac{5}{4}
+\]
+
+Let $s = u + v$ and $p = uv$.
+
+We have:
+\begin{align}
+s - p &= \frac{5}{4} \\
+s^2 - 2p &= 2
+\end{align}
+
+From equation (1): $p = s - \frac{5}{4}$
+
+Substitute into equation (2):
+\[
+s^2 - 2\left(s - \frac{5}{4}\right) = 2
+\]
+\[
+s^2 - 2s + \frac{5}{2} = 2
+\]
+\[
+s^2 - 2s + \frac{1}{2} = 0
+\]
+\[
+s = \frac{2 \pm \sqrt{4 - 2}}{2} = \frac{2 \pm \sqrt{2}}{2} = 1 \pm \frac{\sqrt{2}}{2}
+\]
+
+\textbf{Check validity:}
+
+Since $u, v \geq 0$ and $u^2 + v^2 = 2$, by Cauchy-Schwarz: $s = u + v \leq \sqrt{2(u^2 + v^2)} = 2$.
+
+Also $s \geq \sqrt{u^2 + v^2} = \sqrt{2}$ (by QM-AM inequality reversed).
+
+$s_1 = 1 + \frac{\sqrt{2}}{2} \approx 1.707 \geq \sqrt{2} \approx 1.414$ \checkmark
+
+$s_2 = 1 - \frac{\sqrt{2}}{2} \approx 0.293 < \sqrt{2}$ \ding{55}
+
+So only $s = 1 + \frac{\sqrt{2}}{2}$ is valid.
+
+For this $s$: $p = s - \frac{5}{4} = 1 + \frac{\sqrt{2}}{2} - \frac{5}{4} = -\frac{1}{4} + \frac{\sqrt{2}}{2}$
+
+$u$ and $v$ are roots of $t^2 - st + p = 0$.
+
+Discriminant: $s^2 - 4p = \left(1 + \frac{\sqrt{2}}{2}\right)^2 - 4\left(-\frac{1}{4} + \frac{\sqrt{2}}{2}\right)$
+$= 1 + \sqrt{2} + \frac{1}{2} + 1 - 2\sqrt{2} = \frac{5}{2} - \sqrt{2} > 0$
+
+Two positive values of $(u, v)$ exist. From $x = \frac{v^2 - u^2}{2}$, each pair gives one value of $x$.
+
+Since $(u, v)$ and $(v, u)$ give the same $|x|$ but opposite signs, we get 2 distinct solutions.
+
+\subsection*{Answer}
+$2$ (option \textbf{D}).
+
+\end{document}

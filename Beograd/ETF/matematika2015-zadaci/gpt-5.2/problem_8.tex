@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Znajuci da je
+\[
+\cos\!\left(x-\frac{3\pi}{2}\right)=-\frac{4}{5},\qquad \frac{\pi}{2}<x<\pi,
+\]
+odrediti vrednost izraza $\sin\frac{x}{2}\cos\frac{5x}{2}$.
+
+\subsection*{Solution}
+Koristimo identitet $\cos(\alpha+\frac{\pi}{2})=-\sin\alpha$ i periodicnost kosinusa:
+\[
+\cos\!\left(x-\frac{3\pi}{2}\right)=\cos\!\left(x+\frac{\pi}{2}\right)=-\sin x.
+\]
+Dakle, $-\sin x=-\frac45$, pa je $\sin x=\frac45$.
+Kako je $x\in\left(\frac{\pi}{2},\pi\right)$, dobijamo $\cos x=-\frac35$.
+
+Sada:
+\[
+\sin\frac{x}{2}\cos\frac{5x}{2}
+=\frac12\left(\sin\left(3x\right)+\sin\left(-2x\right)\right)
+\;=\;\frac12\left(\sin 3x-\sin 2x\right).
+\]
+Racunamo
+\[
+\sin 2x=2\sin x\cos x=2\cdot\frac45\cdot\left(-\frac35\right)=-\frac{24}{25},
+\]
+a
+\[
+\sin 3x=3\sin x-4\sin^3 x
+=3\cdot\frac45-4\cdot\left(\frac45\right)^3
+=\frac{12}{5}-\frac{256}{125}
+=\frac{44}{125}.
+\]
+Zato je
+\[
+\sin\frac{x}{2}\cos\frac{5x}{2}
+=\frac12\left(\frac{44}{125}-\left(-\frac{24}{25}\right)\right)
+=\frac12\left(\frac{44}{125}+\frac{120}{125}\right)
+=\frac{82}{125}.
+\]
+
+\subsection*{Answer}
+$\dfrac{82}{125}$ (opcija \textbf{B}).
+
+\end{document}
+

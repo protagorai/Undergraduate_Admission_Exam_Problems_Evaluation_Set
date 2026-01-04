@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Given the function $f(x) = x - \sin\pi x \cdot \cos\pi x + \frac{\ln 2x}{x} + e^{\text{tg}2\pi x}$. Find the value of $f'\left(\frac{1}{2}\right)$.
+
+(A) $0$ \quad (B) $5 + 3\pi$ \quad (C) $3\pi$ \quad (D) $5$ \quad (E) $e$
+
+\subsection*{Solution}
+Let's compute the derivative of each term.
+
+First, note that $\sin\pi x \cdot \cos\pi x = \frac{1}{2}\sin 2\pi x$, so:
+\[
+f(x) = x - \frac{1}{2}\sin 2\pi x + \frac{\ln 2x}{x} + e^{\tan 2\pi x}
+\]
+
+Taking the derivative:
+\[
+f'(x) = 1 - \frac{1}{2} \cdot 2\pi \cos 2\pi x + \frac{d}{dx}\left(\frac{\ln 2x}{x}\right) + e^{\tan 2\pi x} \cdot \frac{2\pi}{\cos^2 2\pi x}
+\]
+
+For $\frac{\ln 2x}{x}$, using the quotient rule:
+\[
+\frac{d}{dx}\left(\frac{\ln 2x}{x}\right) = \frac{\frac{1}{x} \cdot x - \ln 2x \cdot 1}{x^2} = \frac{1 - \ln 2x}{x^2}
+\]
+
+So:
+\[
+f'(x) = 1 - \pi\cos 2\pi x + \frac{1 - \ln 2x}{x^2} + \frac{2\pi e^{\tan 2\pi x}}{\cos^2 2\pi x}
+\]
+
+At $x = \frac{1}{2}$:
+\begin{itemize}
+\item $2\pi \cdot \frac{1}{2} = \pi$
+\item $\cos \pi = -1$
+\item $\tan \pi = 0$
+\item $\cos^2 \pi = 1$
+\item $\ln(2 \cdot \frac{1}{2}) = \ln 1 = 0$
+\end{itemize}
+
+\[
+f'\left(\frac{1}{2}\right) = 1 - \pi(-1) + \frac{1 - 0}{(1/2)^2} + \frac{2\pi e^0}{1}
+\]
+\[
+= 1 + \pi + \frac{1}{1/4} + 2\pi = 1 + \pi + 4 + 2\pi = 5 + 3\pi
+\]
+
+\subsection*{Answer}
+(B) $5 + 3\pi$
+
+\end{document}

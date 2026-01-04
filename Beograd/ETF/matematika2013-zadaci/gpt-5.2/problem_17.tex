@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 17}
+Zbir prva tri člana rastuće aritmetičke progresije je \(54\). Ako od prvog člana oduzmemo \(3\), drugi ostane nepromenjen, a trećem dodamo \(12\), dobijamo prva tri člana geometrijske progresije. Naći količnik te geometrijske progresije.
+
+\subsection*{Rešenje}
+Neka su prva tri člana AP: \(a,\ a+d,\ a+2d\) sa \(d>0\). Tada
+\[
+a+(a+d)+(a+2d)=54 \Rightarrow 3a+3d=54 \Rightarrow a+d=18.
+\]
+Posle promene dobijamo tri broja:
+\[
+a-3,\quad a+d,\quad a+2d+12.
+\]
+Da bi to bila GP, mora važiti:
+\[
+(a+d)^2=(a-3)(a+2d+12).
+\]
+Pošto je \(a=18-d\), dobijamo
+\[
+18^2=(15-d)(30+d).
+\]
+\[
+324=450-15d-d^2 \Rightarrow d^2+15d-126=0.
+\]
+\[
+d=\frac{-15\pm 27}{2}\Rightarrow d=6\ (\text{jer }d>0).
+\]
+Tada je \(a=12\), pa je količnik GP:
+\[
+r=\frac{a+d}{a-3}=\frac{18}{9}=2.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(B)\ 2}
+\]
+\end{document}
+

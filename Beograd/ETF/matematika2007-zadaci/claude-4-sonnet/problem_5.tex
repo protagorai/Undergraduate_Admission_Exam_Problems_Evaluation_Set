@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako je $|x + a| = a$ $(a \geq 0)$, tada je $||x| - a|$ jednako:
+\begin{enumerate}
+\item[(A)] 0
+\item[(B)] $a$
+\item[(C)] $2a$
+\item[(D)] $3a$
+\item[(E)] $\frac{a}{2}$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Iz uslova $|x + a| = a$ gde je $a \geq 0$, imamo:
+\[
+|x + a| = a
+\]
+
+Ovo znači da je:
+\[
+-a \leq x + a \leq a
+\]
+
+Oduzimajući $a$ sa svih strana:
+\[
+-2a \leq x \leq 0
+\]
+
+Dakle, $x \in [-2a, 0]$.
+
+Sada analiziramo $|x|$:
+\begin{itemize}
+\item Pošto je $x \leq 0$, imamo $|x| = -x$
+\item Pošto je $x \geq -2a$, imamo $|x| = -x \leq -(-2a) = 2a$
+\item Pošto je $x \leq 0$, imamo $|x| = -x \geq 0$
+\end{itemize}
+
+Dakle, $|x| \in [0, 2a]$.
+
+Sada računamo $||x| - a|$:
+
+Pošto je $|x| \in [0, 2a]$ i $a \geq 0$, imamo:
+\begin{itemize}
+\item Ako je $|x| \geq a$, tada je $||x| - a| = |x| - a$
+\item Ako je $|x| < a$, tada je $||x| - a| = a - |x|$
+\end{itemize}
+
+Međutim, iz $x \in [-2a, 0]$ sledi da je $|x| = -x \in [0, 2a]$.
+
+Posebno, ako je $x = -a$, tada je $|x| = a$, pa je $||x| - a| = |a - a| = 0$.
+
+Ako je $x = -2a$, tada je $|x| = 2a$, pa je $||x| - a| = |2a - a| = a$.
+
+Ako je $x = 0$, tada je $|x| = 0$, pa je $||x| - a| = |0 - a| = a$.
+
+Proveravamo da li je $x = -a$ rešenje originalnog uslova:
+\[
+|(-a) + a| = |0| = 0
+\]
+
+Ali trebalo bi da bude jednako $a$. Ovo je tačno samo ako je $a = 0$.
+
+Proveravamo $x = -2a$:
+\[
+|(-2a) + a| = |-a| = a \checkmark
+\]
+
+Proveravamo $x = 0$:
+\[
+|0 + a| = |a| = a \checkmark
+\]
+
+Dakle, za bilo koje $x \in [-2a, 0]$ koje zadovoljava uslov $|x + a| = a$, imamo:
+\[
+||x| - a| = |(-x) - a| = |-(x + a)| = |x + a| = a
+\]
+
+\subsection*{Answer}
+$||x| - a| = a$, što odgovara opciji \textbf{(B)}.
+
+\end{document}

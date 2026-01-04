@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Find the number of real solutions of the equation:
+\[
+\sqrt[3]{x-3} + \sqrt[3]{x-1} = \sqrt[3]{2x-4}
+\]
+
+\subsection*{Solution}
+Let $a = \sqrt[3]{x-3}$ and $b = \sqrt[3]{x-1}$.
+
+Then:
+\begin{itemize}
+\item $a^3 = x - 3$
+\item $b^3 = x - 1$
+\item $a^3 + b^3 = (x-3) + (x-1) = 2x - 4$
+\end{itemize}
+
+So the equation becomes:
+\[
+a + b = \sqrt[3]{a^3 + b^3}
+\]
+
+Let $s = a + b$. Cubing both sides:
+\[
+s^3 = a^3 + b^3
+\]
+
+Using the identity $a^3 + b^3 = (a+b)(a^2 - ab + b^2) = s(s^2 - 3ab)$:
+\[
+s^3 = s(s^2 - 3ab) = s^3 - 3abs
+\]
+\[
+3abs = 0
+\]
+
+So either $s = 0$ or $ab = 0$.
+
+\textbf{Case 1: $s = 0$} (i.e., $a = -b$)
+\[
+\sqrt[3]{x-3} = -\sqrt[3]{x-1}
+\]
+Cubing: $x - 3 = -(x-1) = -x + 1$, so $2x = 4$, $x = 2$.
+
+Check: $\sqrt[3]{-1} + \sqrt[3]{1} = -1 + 1 = 0 = \sqrt[3]{0}$ \checkmark
+
+\textbf{Case 2: $ab = 0$}
+\begin{itemize}
+\item If $a = 0$: $x - 3 = 0$, so $x = 3$.\\
+Check: $0 + \sqrt[3]{2} = \sqrt[3]{2}$ \checkmark
+\item If $b = 0$: $x - 1 = 0$, so $x = 1$.\\
+Check: $\sqrt[3]{-2} + 0 = \sqrt[3]{-2}$ \checkmark
+\end{itemize}
+
+The solutions are $x = 1, 2, 3$, giving \textbf{3 solutions}.
+
+\subsection*{Answer}
+$3$ (option \textbf{C}).
+
+\end{document}
+

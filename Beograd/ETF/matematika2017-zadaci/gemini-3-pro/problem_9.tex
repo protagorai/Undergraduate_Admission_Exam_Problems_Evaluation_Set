@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Data je funkcija $f(x) = \begin{cases} x^2, & x \text{ je paran broj} \\ \frac{1}{2}(x-3), & x \text{ je neparan broj} \end{cases}$. Vrednost izraza $f(f(f(17)+1)+1)$ jednaka je:
+(A) 17
+(B) 23
+(C) 31
+(D) 42
+(E) 101
+(N) Ne znam
+
+\subsection*{Solution}
+We evaluate the expression step by step, starting from the innermost function call.
+1. Evaluate $f(17)$.
+   Since 17 is an odd number, we use the second case:
+   \[ f(17) = \frac{1}{2}(17-3) = \frac{14}{2} = 7. \]
+   
+2. Substitute this back into the expression:
+   \[ f(f(17)+1) = f(7+1) = f(8). \]
+   
+3. Evaluate $f(8)$.
+   Since 8 is an even number, we use the first case:
+   \[ f(8) = 8^2 = 64. \]
+   
+4. Substitute this back:
+   \[ f(f(f(17)+1)+1) = f(64+1) = f(65). \]
+   
+5. Evaluate $f(65)$.
+   Since 65 is an odd number, we use the second case:
+   \[ f(65) = \frac{1}{2}(65-3) = \frac{62}{2} = 31. \]
+
+\subsection*{Answer}
+31 (option \textbf{C}).
+
+\end{document}

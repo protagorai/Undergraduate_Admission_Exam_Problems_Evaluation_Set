@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the set of all real values of $x$ for which the inequality 
+\[
+\frac{3 \cdot 3^{2x} - 4 \cdot 4^{2x}}{|-1 + 5^{x+1}| - 4} < 0
+\]
+holds, given that $a, b$ are such that $-\infty < a < b < +\infty$.
+
+\subsection*{Solution}
+Let's simplify the inequality. Note that $3 \cdot 3^{2x} = 3^{2x+1}$ and $4 \cdot 4^{2x} = 4^{2x+1}$.
+
+Actually, let's write $3 \cdot 3^{2x} = 3 \cdot 9^x$ and $4 \cdot 4^{2x} = 4 \cdot 16^x$.
+
+The numerator is: $3 \cdot 9^x - 4 \cdot 16^x$
+
+For the denominator: $|-1 + 5^{x+1}| - 4 = |5 \cdot 5^x - 1| - 4$
+
+Let $t = 5^x > 0$. The denominator becomes $|5t - 1| - 4$.
+
+\textbf{Denominator analysis:}
+- If $5t \geq 1$ (i.e., $t \geq \frac{1}{5}$, or $x \geq -1$): $|5t-1| - 4 = 5t - 1 - 4 = 5t - 5 = 5(t-1)$
+  - This is positive when $t > 1$ (i.e., $x > 0$)
+  - This is negative when $\frac{1}{5} \leq t < 1$ (i.e., $-1 \leq x < 0$)
+  - This is zero when $t = 1$ (i.e., $x = 0$)
+
+- If $5t < 1$ (i.e., $t < \frac{1}{5}$, or $x < -1$): $|5t-1| - 4 = 1 - 5t - 4 = -3 - 5t < 0$ (always negative)
+
+\textbf{Numerator analysis:}
+$3 \cdot 9^x - 4 \cdot 16^x = 9^x(3 - 4 \cdot \left(\frac{16}{9}\right)^x)$
+
+Let $u = \left(\frac{16}{9}\right)^x$. The numerator is $9^x(3 - 4u)$.
+
+Since $9^x > 0$, the sign depends on $3 - 4u = 3 - 4\left(\frac{16}{9}\right)^x$.
+
+$3 - 4\left(\frac{16}{9}\right)^x > 0$ when $\left(\frac{16}{9}\right)^x < \frac{3}{4}$
+
+Taking logarithms: $x \ln\frac{16}{9} < \ln\frac{3}{4}$
+
+Since $\ln\frac{16}{9} > 0$ and $\ln\frac{3}{4} < 0$: $x < \frac{\ln(3/4)}{\ln(16/9)} = \frac{\ln 3 - \ln 4}{2\ln 4 - 2\ln 3} = \frac{\ln 3 - \ln 4}{2(\ln 4 - \ln 3)} = -\frac{1}{2}$
+
+So numerator $> 0$ when $x < -\frac{1}{2}$, and numerator $< 0$ when $x > -\frac{1}{2}$.
+
+\textbf{For the fraction to be negative:}
+
+Case 1: Numerator $> 0$ and Denominator $< 0$
+- $x < -\frac{1}{2}$ and ($x < 0$ and $x \neq 0$) 
+- This gives $x < -\frac{1}{2}$, but we also need denominator $< 0$
+- Denominator $< 0$ when $x < 0$ (excluding $x = 0$)
+- So: $x < -\frac{1}{2}$
+
+Case 2: Numerator $< 0$ and Denominator $> 0$
+- $x > -\frac{1}{2}$ and $x > 0$
+- So: $x > 0$
+
+The solution is $x \in (-\infty, -\frac{1}{2}) \cup (0, +\infty)$.
+
+With $a = -\frac{1}{2}$ and $b = 0$: The answer is $(-\infty, a) \cup (b, +\infty)$.
+
+\subsection*{Answer}
+\textbf{(B)} $(-\infty, a) \cup (b, +\infty)$
+
+\end{document}

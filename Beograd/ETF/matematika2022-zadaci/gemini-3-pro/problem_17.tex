@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 17}
+Ako je odnos binomnih koeficijenata četvrtog i trećeg člana u razvoju binoma $(\sqrt[5]{5} - \sqrt[5]{3})^n$ ($n \in N, n \ge 3$) jednak 10, onda je broj racionalnih članova u ovom razvoju jednak:
+\begin{itemize}
+    \item[(A)] 2
+    \item[(B)] 1
+    \item[(C)] 4
+    \item[(D)] 3
+    \item[(E)] veći od 4
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Odnos binomnih koeficijenata četvrtog ($\binom{n}{3}$) i trećeg ($\binom{n}{2}$) člana je 10:
+\[ \frac{\binom{n}{3}}{\binom{n}{2}} = 10 \]
+\[ \frac{\frac{n(n-1)(n-2)}{3!}}{\frac{n(n-1)}{2!}} = 10 \]
+\[ \frac{n-2}{3} = 10 \implies n - 2 = 30 \implies n = 32 \]
+Opšti član razvoja $(\sqrt[3]{5} - \sqrt[5]{3})^{32}$ (napomena: sa slike izgleda kao treći koren iz 5, a peti iz 3, ili obrnuto, ali proverom deljivosti pretpostavljamo da su koreni različitog reda da bi zadatak imao smisla sa ponuđenim rešenjima. Ako su oba $\sqrt[5]{}$, nema rešenja. Ako je prvi $\sqrt[3]{5}$ a drugi $\sqrt[5]{3}$):
+\[ T_{k+1} = \binom{32}{k} (\sqrt[3]{5})^{32-k} (-\sqrt[5]{3})^k \]
+Član je racionalan ako su eksponenti celih brojeva celi, tj. ako je $5^{\frac{32-k}{3}}$ racionalan i $3^{\frac{k}{5}}$ racionalan.
+Dakle:
+1. $k$ je deljivo sa 5 ($k \in \{0, 5, 10, 15, 20, 25, 30\}$).
+2. $32-k$ je deljivo sa 3.
+Proveravamo moguće vrednosti za $k$:
+- $k=0 \implies 32-0=32$ (nije deljivo sa 3)
+- $k=5 \implies 32-5=27$ (deljivo sa 3) -> REŠENJE
+- $k=10 \implies 32-10=22$ (ne)
+- $k=15 \implies 32-15=17$ (ne)
+- $k=20 \implies 32-20=12$ (deljivo sa 3) -> REŠENJE
+- $k=25 \implies 32-25=7$ (ne)
+- $k=30 \implies 32-30=2$ (ne)
+Imamo 2 racionalna člana (za $k=5$ i $k=20$).
+
+\subsection*{Answer}
+2 (option \textbf{A}).
+
+\end{document}

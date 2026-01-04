@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Data je funkcija $f(x) = x^2 - 2\alpha x + \alpha^2 + 2\alpha - 8$, gde je $\alpha \in \mathbb{R}$. Neka je $S$ skup svih vrednosti realnog parametra $\alpha$ takvih da funkcija $f$ ima bar jednu realnu nulu i za koje važi $f(x) \geq 0$ za svako $x \in [0, 3]$. Tada je skup $S$ jednak:
+
+\subsection*{Solution}
+$f(x) = x^2 - 2\alpha x + \alpha^2 + 2\alpha - 8 = (x - \alpha)^2 + 2\alpha - 8$
+
+This is a parabola opening upward with vertex at $(\alpha, 2\alpha - 8)$.
+
+\textbf{Condition 1:} $f$ has at least one real root.
+
+The minimum value is $2\alpha - 8$. For real roots: $2\alpha - 8 \leq 0 \Rightarrow \alpha \leq 4$.
+
+\textbf{Condition 2:} $f(x) \geq 0$ for all $x \in [0, 3]$.
+
+The minimum on $[0, 3]$ depends on where $\alpha$ is:
+
+\textbf{Case A:} $\alpha < 0$ (vertex left of interval)
+
+$f$ is increasing on $[0, 3]$, so minimum is at $x = 0$:
+$f(0) = \alpha^2 + 2\alpha - 8 \geq 0$
+$(\alpha + 4)(\alpha - 2) \geq 0$
+$\alpha \leq -4$ or $\alpha \geq 2$
+
+Since $\alpha < 0$: $\alpha \leq -4$
+
+\textbf{Case B:} $0 \leq \alpha \leq 3$ (vertex inside interval)
+
+Minimum is at vertex: $2\alpha - 8 \geq 0 \Rightarrow \alpha \geq 4$
+
+But we need $0 \leq \alpha \leq 3$, so no solution in this case.
+
+\textbf{Case C:} $\alpha > 3$ (vertex right of interval)
+
+$f$ is decreasing on $[0, 3]$, so minimum is at $x = 3$:
+$f(3) = 9 - 6\alpha + \alpha^2 + 2\alpha - 8 = \alpha^2 - 4\alpha + 1 \geq 0$
+
+Using quadratic formula: $\alpha = \frac{4 \pm \sqrt{12}}{2} = 2 \pm \sqrt{3}$
+
+So $\alpha \leq 2 - \sqrt{3}$ or $\alpha \geq 2 + \sqrt{3}$
+
+Since $\alpha > 3$ and $2 + \sqrt{3} \approx 3.73$: $\alpha \geq 2 + \sqrt{3}$
+
+\textbf{Combining with $\alpha \leq 4$:}
+
+From Case A: $\alpha \leq -4$ (satisfies $\alpha \leq 4$) ✓
+From Case C: $2 + \sqrt{3} \leq \alpha \leq 4$
+
+So $S = (-\infty, -4] \cup [2 + \sqrt{3}, 4]$
+
+\subsection*{Answer}
+$(-\infty, -4] \cup [2 + \sqrt{3}, 4]$ (option \textbf{B}).
+
+\end{document}

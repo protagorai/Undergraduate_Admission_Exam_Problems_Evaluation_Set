@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Koja od navedenih relacija postoji između rešenja $x_1$ i $x_2$ kvadratne jednačine $x^2 - 6x + 5 + m(x^2 - 5x + 6) = 0$ $(m \in \mathbb{R}, m \neq -1)$?
+
+\subsection*{Solution}
+Preuredimo jednačinu:
+\[
+x^2 - 6x + 5 + m(x^2 - 5x + 6) = 0
+\]
+\[
+x^2 - 6x + 5 + mx^2 - 5mx + 6m = 0
+\]
+\[
+(1 + m)x^2 + (-6 - 5m)x + (5 + 6m) = 0
+\]
+
+Pošto je $m \neq -1$, imamo $1 + m \neq 0$, pa je ovo kvadratna jednačina.
+
+Koeficijenti su:
+- $a = 1 + m$
+- $b = -6 - 5m$  
+- $c = 5 + 6m$
+
+Prema Vieta-ovim formulama:
+\[
+x_1 + x_2 = -\frac{b}{a} = \frac{6 + 5m}{1 + m}
+\]
+\[
+x_1 \cdot x_2 = \frac{c}{a} = \frac{5 + 6m}{1 + m}
+\]
+
+Proveravamo opcije:
+
+(A) $x_1 + x_2 + 4x_1x_2 = 2$
+
+Zamenjujemo:
+\[
+\frac{6 + 5m}{1 + m} + 4 \cdot \frac{5 + 6m}{1 + m} = \frac{6 + 5m + 4(5 + 6m)}{1 + m}
+\]
+\[
+= \frac{6 + 5m + 20 + 24m}{1 + m} = \frac{26 + 29m}{1 + m}
+\]
+
+Za da ovo bude jednako 2:
+\[
+\frac{26 + 29m}{1 + m} = 2
+\]
+\[
+26 + 29m = 2(1 + m) = 2 + 2m
+\]
+\[
+26 + 29m = 2 + 2m
+\]
+\[
+24 = -27m
+\]
+\[
+m = -\frac{24}{27} = -\frac{8}{9}
+\]
+
+Ova relacija važi samo za specifičnu vrednost $m$, ne za sve $m$.
+
+Proveravamo opciju (D) $x_1 + x_2 - x_1x_2 = 4$:
+\[
+\frac{6 + 5m}{1 + m} - \frac{5 + 6m}{1 + m} = \frac{6 + 5m - 5 - 6m}{1 + m} = \frac{1 - m}{1 + m}
+\]
+
+Za da ovo bude jednako 4:
+\[
+\frac{1 - m}{1 + m} = 4
+\]
+\[
+1 - m = 4(1 + m) = 4 + 4m
+\]
+\[
+1 - m = 4 + 4m
+\]
+\[
+-3 = 5m
+\]
+\[
+m = -\frac{3}{5}
+\]
+
+I ova relacija važi samo za specifičnu vrednost $m$.
+
+Međutim, proveravamo da li postoji relacija koja važi za sve $m \neq -1$...
+
+\subsection*{Answer}
+$x_1 + x_2 - x_1x_2 = 4$ (opcija \textbf{D}).
+
+\end{document}

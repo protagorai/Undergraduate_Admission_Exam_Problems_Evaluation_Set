@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 18}
+Osnova prave četvorostrane piramide je pravougaonik dijagonale $d$ i ugla $\alpha$ među dijagonalama. Ako bočne ivice obrazuju sa osnovom piramide ugao $\beta$, tada je zapremina ove piramide jednaka:
+\[
+(A)\; \frac{d^3}{12} \sin \alpha \text{ctg} \beta \quad (B)\; \frac{d^3}{12} \sin \alpha \text{tg} \beta \quad (C)\; \frac{d^3}{4} \sin \alpha \text{tg} \beta \quad (D)\; \frac{d^3}{12} \sin \frac{\alpha}{2} \text{tg} \beta \quad (E)\; \frac{d^3}{12} \cos \alpha \text{tg} \beta
+\]
+
+\subsection*{Solution}
+Površina osnove (pravougaonika) se može izraziti preko dijagonala i ugla između njih:
+\[
+B = \frac{1}{2} d_1 d_2 \sin \alpha = \frac{1}{2} d^2 \sin \alpha
+\]
+Visina piramide $H$ se može naći iz pravouglog trougla koji čine visina piramide, bočna ivica i polovina dijagonale osnove (jer je piramida prava, vrh se projektuje u presek dijagonala).
+Kateta na osnovi je $d/2$. Ugao naspram visine je $\beta$.
+\[
+\tan \beta = \frac{H}{d/2} \Rightarrow H = \frac{d}{2} \tan \beta
+\]
+Zapremina piramide je:
+\[
+V = \frac{1}{3} B H = \frac{1}{3} \left( \frac{1}{2} d^2 \sin \alpha \right) \left( \frac{d}{2} \tan \beta \right)
+\]
+\[
+V = \frac{1}{3 \cdot 2 \cdot 2} d^3 \sin \alpha \tan \beta = \frac{d^3}{12} \sin \alpha \text{tg} \beta
+\]
+
+\subsection*{Answer}
+$\frac{d^3}{12} \sin \alpha \text{tg} \beta$ (option \textbf{B}).
+
+\end{document}

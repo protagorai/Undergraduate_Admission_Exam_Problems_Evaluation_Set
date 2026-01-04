@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 11}
+Nejednačina $\sqrt{\frac{1}{x+1}} > \frac{1}{2x-1}$ je tačna ako i samo ako je:
+\begin{itemize}
+    \item[A)] $x \in (-1, 1/2) \cup (5/4, +\infty)$
+    \item[B)] $x \in (5/4, +\infty)$
+    \item[C)] $x \in (-1, 1/2)$
+    \item[D)] $x \in (4/5, +\infty)$
+    \item[E)] $x \in (0, 4/5)$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+First, determine the domain of the inequality.
+The term under the square root must be non-negative:
+\[ \frac{1}{x+1} \ge 0 \implies x + 1 > 0 \implies x > -1. \]
+The denominator on the right side must be non-zero:
+\[ 2x - 1 \ne 0 \implies x \ne 1/2. \]
+So the domain is $x \in (-1, 1/2) \cup (1/2, +\infty)$.
+
+Case 1: The RHS is negative, i.e., $2x - 1 < 0$.
+Since $x > -1$, this means $-1 < x < 1/2$.
+The LHS is $\sqrt{\frac{1}{x+1}}$, which is always non-negative.
+A non-negative number is always strictly greater than a negative number.
+Thus, all $x \in (-1, 1/2)$ are solutions.
+
+Case 2: The RHS is positive, i.e., $2x - 1 > 0 \implies x > 1/2$.
+Both sides are positive, so we can square the inequality:
+\[ \frac{1}{x+1} > \frac{1}{(2x-1)^2}. \]
+Since $x+1 > 0$ and $(2x-1)^2 > 0$, we can cross-multiply:
+\[ (2x-1)^2 > x+1. \]
+\[ 4x^2 - 4x + 1 > x + 1. \]
+\[ 4x^2 - 5x > 0. \]
+\[ x(4x - 5) > 0. \]
+The roots are $0$ and $5/4$. The inequality holds for $x < 0$ or $x > 5/4$.
+Intersecting with the condition $x > 1/2$:
+\[ x > 5/4. \]
+
+Combining both cases:
+\[ x \in (-1, 1/2) \cup (5/4, +\infty). \]
+
+\subsection*{Answer}
+The solution set is $(-1, 1/2) \cup (5/4, +\infty)$, which corresponds to option \textbf{A}.
+
+\end{document}

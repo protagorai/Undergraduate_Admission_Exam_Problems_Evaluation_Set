@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 7}
+U geometrijskoj progresiji količnik je 2, a zbir prvih sedam članova je jednak 635. Tada sedmi član iznosi:
+(A) 310 (B) 325 (C) 355 (D) 315 (E) 320 (N) Ne znam
+
+\subsection*{Rešenje}
+Za geometrijsku progresiju važi:
+\[
+S_n = a_1 \frac{q^n - 1}{q - 1}
+\]
+Dato je $q = 2$ i $S_7 = 635$. Zamenom u formulu:
+\[
+635 = a_1 \frac{2^7 - 1}{2 - 1}
+\]
+\[
+635 = a_1 (128 - 1)
+\]
+\[
+635 = 127 a_1 \implies a_1 = \frac{635}{127} = 5
+\]
+Tražimo sedmi član $a_7$:
+\[
+a_7 = a_1 \cdot q^{7-1} = a_1 \cdot q^6
+\]
+\[
+a_7 = 5 \cdot 2^6 = 5 \cdot 64 = 320
+\]
+
+\subsection*{Odgovor}
+320 (opcija \textbf{E}).
+
+\end{document}

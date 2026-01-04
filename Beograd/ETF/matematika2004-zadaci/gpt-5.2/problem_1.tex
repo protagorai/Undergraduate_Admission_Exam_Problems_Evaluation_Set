@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Ako je $i$ imaginarna jedinica, odrediti količnik
+\[
+\frac{i^{2004}+i^{2005}}{i^{2003}-i^{2002}}.
+\]
+
+\subsection*{Solution}
+Koristimo periodičnost stepena imaginarne jedinice: $i^4=1$, pa se stepeni računaju po modulu $4$:
+\[
+i^{2004}=i^{4\cdot 501}=1,\quad
+i^{2005}=i^{2004}\cdot i=i,\quad
+i^{2003}=i^{4\cdot 500+3}=i^3=-i,\quad
+i^{2002}=i^{4\cdot 500+2}=i^2=-1.
+\]
+Zato je
+\[
+\frac{i^{2004}+i^{2005}}{i^{2003}-i^{2002}}
+=\frac{1+i}{-i-(-1)}=\frac{1+i}{1-i}.
+\]
+Racionalisanjem:
+\[
+\frac{1+i}{1-i}\cdot\frac{1+i}{1+i}
+=\frac{(1+i)^2}{1-i^2}
+=\frac{1+2i+i^2}{2}
+=\frac{2i}{2}=i.
+\]
+
+\subsection*{Answer}
+$i$ (option \textbf{E}).
+
+\end{document}
+

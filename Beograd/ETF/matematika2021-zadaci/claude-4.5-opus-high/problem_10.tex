@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Skup svih realnih rešenja nejednačine $\frac{\arccos(x^2 - 3x + 1)}{8x^2 - 10x + 3} > 0$ je oblika (za neke realne brojeve $a, b, c, d, e, f$ takve da je $-\infty < a < b < c < d < e < f < +\infty$):
+
+\subsection*{Solution}
+Da bi razlomak bio pozitivan, brojilac i imenilac moraju imati isti znak.
+
+\textbf{Domen:} Za $\arccos$ funkciju, argument mora biti u $[-1, 1]$:
+\[
+-1 \leq x^2 - 3x + 1 \leq 1
+\]
+
+Iz $x^2 - 3x + 1 \geq -1$: $x^2 - 3x + 2 \geq 0$, tj. $(x-1)(x-2) \geq 0$, dakle $x \leq 1$ ili $x \geq 2$.
+
+Iz $x^2 - 3x + 1 \leq 1$: $x^2 - 3x \leq 0$, tj. $x(x-3) \leq 0$, dakle $0 \leq x \leq 3$.
+
+Presek: $x \in [0, 1] \cup [2, 3]$.
+
+\textbf{Imenilac:} $8x^2 - 10x + 3 = (2x-1)(4x-3)$
+
+Nule: $x = \frac{1}{2}$ i $x = \frac{3}{4}$.
+
+Imenilac je pozitivan za $x < \frac{1}{2}$ ili $x > \frac{3}{4}$.
+
+Imenilac je negativan za $\frac{1}{2} < x < \frac{3}{4}$.
+
+\textbf{Brojilac:} $\arccos(x^2 - 3x + 1)$
+
+$\arccos(t) > 0$ za $t < 1$ (tj. za $t \in [-1, 1)$), i $\arccos(1) = 0$.
+
+$x^2 - 3x + 1 = 1$ kada je $x^2 - 3x = 0$, tj. $x = 0$ ili $x = 3$.
+
+Dakle brojilac je 0 za $x = 0$ i $x = 3$, a pozitivan za ostale $x$ u domenu.
+
+\textbf{Analiza po intervalima u domenu:}
+
+Na $[0, 1]$:
+- $x = 0$: brojilac = 0, nije rešenje
+- $(0, \frac{1}{2})$: brojilac $> 0$, imenilac $> 0$ $\Rightarrow$ razlomak $> 0$ ✓
+- $x = \frac{1}{2}$: imenilac = 0, nije u domenu
+- $(\frac{1}{2}, \frac{3}{4})$: brojilac $> 0$, imenilac $< 0$ $\Rightarrow$ razlomak $< 0$
+- $x = \frac{3}{4}$: imenilac = 0, nije u domenu
+- $(\frac{3}{4}, 1]$: brojilac $> 0$, imenilac $> 0$ $\Rightarrow$ razlomak $> 0$ ✓
+
+Na $[2, 3]$:
+- $[2, 3)$: brojilac $> 0$, imenilac $> 0$ $\Rightarrow$ razlomak $> 0$ ✓
+- $x = 3$: brojilac = 0, nije rešenje
+
+Skup rešenja: $(0, \frac{1}{2}) \cup (\frac{3}{4}, 1] \cup [2, 3)$
+
+Ovo odgovara obliku $(a, b) \cup (c, d] \cup [e, f)$ sa $a=0, b=\frac{1}{2}, c=\frac{3}{4}, d=1, e=2, f=3$.
+
+Najbliži ponuđeni odgovor je \textbf{(E)} $(a,b) \cup (c,d] \cup [e,f)$.
+
+\subsection*{Answer}
+$(a,b) \cup (c,d] \cup [e,f)$ (option \textbf{E}).
+
+\end{document}

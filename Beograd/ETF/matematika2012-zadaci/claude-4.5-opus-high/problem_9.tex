@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Zbir prvih 2012 članova aritmetičke progresije $\frac{2011}{2012}, \frac{2010}{2012}, \frac{2009}{2012}, \ldots$ iznosi:
+
+(A) $\frac{2013}{2}$ \quad (B) $\frac{2013}{4}$ \quad (C) $\frac{2011}{4}$ \quad (D) $\frac{2011}{2}$ \quad (E) Nijedan od ponuđenih odgovora \quad (N) Ne znam
+
+\subsection*{Solution}
+The arithmetic progression has:
+\begin{itemize}
+    \item First term: $a_1 = \frac{2011}{2012}$
+    \item Common difference: $d = \frac{2010}{2012} - \frac{2011}{2012} = -\frac{1}{2012}$
+\end{itemize}
+
+The $n$-th term is:
+\[
+a_n = a_1 + (n-1)d = \frac{2011}{2012} + (n-1)\left(-\frac{1}{2012}\right) = \frac{2011 - (n-1)}{2012} = \frac{2012 - n}{2012}
+\]
+
+The 2012th term is:
+\[
+a_{2012} = \frac{2012 - 2012}{2012} = 0
+\]
+
+The sum of the first $n$ terms of an arithmetic progression:
+\[
+S_n = \frac{n(a_1 + a_n)}{2}
+\]
+
+For $n = 2012$:
+\[
+S_{2012} = \frac{2012 \cdot \left(\frac{2011}{2012} + 0\right)}{2} = \frac{2012 \cdot \frac{2011}{2012}}{2} = \frac{2011}{2}
+\]
+
+\subsection*{Answer}
+$\frac{2011}{2}$ (option \textbf{D}).
+
+\end{document}

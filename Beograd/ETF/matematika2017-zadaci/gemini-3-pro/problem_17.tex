@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Vrednost izraza $\frac{\sin 2^\circ + \sin 4^\circ + \sin 6^\circ - \sin 12^\circ}{\sin 3^\circ \sin 4^\circ \sin 5^\circ}$, jednaka je:
+(A) $-6$
+(B) $-1$
+(C) 6
+(D) 4
+(E) $-4$
+(N) Ne znam
+
+\subsection*{Solution}
+Let the expression be $E$.
+The numerator is $N = \sin 2^\circ + \sin 4^\circ + \sin 6^\circ - \sin 12^\circ$.
+We know that for an arithmetic progression of angles, the sum is given by:
+\[ \sum_{k=1}^n \sin(2kx) = \frac{\sin(nx)\sin((n+1)x)}{\sin x} \]
+Here $x=1^\circ$ and $n=3$:
+\[ \sin 2^\circ + \sin 4^\circ + \sin 6^\circ = \frac{\sin 3^\circ \sin 4^\circ}{\sin 1^\circ}. \]
+So $N = \frac{\sin 3^\circ \sin 4^\circ}{\sin 1^\circ} - \sin 12^\circ$.
+Now $E = \frac{\frac{\sin 3^\circ \sin 4^\circ}{\sin 1^\circ} - \sin 12^\circ}{\sin 3^\circ \sin 4^\circ \sin 5^\circ} = \frac{1}{\sin 1^\circ \sin 5^\circ} - \frac{\sin 12^\circ}{\sin 3^\circ \sin 4^\circ \sin 5^\circ}$.
+
+Let's simplify differently. Use $\sin 12^\circ = 2 \sin 6^\circ \cos 6^\circ = 4 \sin 3^\circ \cos 3^\circ \cos 6^\circ$.
+The second term is:
+\[ \frac{4 \sin 3^\circ \cos 3^\circ \cos 6^\circ}{\sin 3^\circ \sin 4^\circ \sin 5^\circ} = \frac{4 \cos 3^\circ \cos 6^\circ}{\sin 4^\circ \sin 5^\circ}. \]
+So $E = \frac{\sin 4^\circ - 4 \sin 1^\circ \cos 3^\circ \cos 6^\circ}{\sin 1^\circ \sin 4^\circ \sin 5^\circ}$.
+Numerator: $\sin 4^\circ - 2 \sin 1^\circ (\cos 9^\circ + \cos 3^\circ) = \sin 4^\circ - 2 \sin 1^\circ \cos 9^\circ - 2 \sin 1^\circ \cos 3^\circ$.
+Using $2\sin A \cos B = \sin(A+B) + \sin(A-B)$:
+$2 \sin 1^\circ \cos 9^\circ = \sin 10^\circ + \sin(-8^\circ) = \sin 10^\circ - \sin 8^\circ$.
+$2 \sin 1^\circ \cos 3^\circ = \sin 4^\circ + \sin(-2^\circ) = \sin 4^\circ - \sin 2^\circ$.
+Numerator $= \sin 4^\circ - (\sin 10^\circ - \sin 8^\circ) - (\sin 4^\circ - \sin 2^\circ)$
+$= \sin 4^\circ - \sin 10^\circ + \sin 8^\circ - \sin 4^\circ + \sin 2^\circ$
+$= \sin 8^\circ + \sin 2^\circ - \sin 10^\circ$.
+Using sum-to-product: $\sin 8^\circ + \sin 2^\circ = 2 \sin 5^\circ \cos 3^\circ$.
+$\sin 10^\circ = 2 \sin 5^\circ \cos 5^\circ$.
+Numerator $= 2 \sin 5^\circ (\cos 3^\circ - \cos 5^\circ)$.
+$\cos 3^\circ - \cos 5^\circ = -2 \sin \frac{3+5}{2} \sin \frac{3-5}{2} = -2 \sin 4^\circ \sin(-1^\circ) = 2 \sin 4^\circ \sin 1^\circ$.
+Numerator $= 2 \sin 5^\circ (2 \sin 4^\circ \sin 1^\circ) = 4 \sin 1^\circ \sin 4^\circ \sin 5^\circ$.
+Thus,
+\[ E = \frac{4 \sin 1^\circ \sin 4^\circ \sin 5^\circ}{\sin 1^\circ \sin 4^\circ \sin 5^\circ} = 4. \]
+
+\subsection*{Answer}
+4 (option \textbf{D}).
+
+\end{document}

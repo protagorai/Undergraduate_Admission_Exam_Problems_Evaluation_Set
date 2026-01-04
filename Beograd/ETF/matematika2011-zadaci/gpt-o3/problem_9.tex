@@ -1,0 +1,29 @@
+\begin{solution}
+\textbf{Zadatak 9.}
+
+Дато је
+\[
+f(x)=\left(\frac{x+1}{x-1}\right)^{2}, \qquad (x\neq \pm1).
+\]
+Потребно је израчунати
+\[
+\Delta = f\!\left(\frac{x+1}{x-1}\right)-f\!\left(\frac{x-1}{x+1}\right).
+\]
+Нека је
+\[
+u = \frac{x+1}{x-1} \Longrightarrow \frac{x-1}{x+1}=\frac1u.
+\]
+Тада је
+\[
+f(u)=\left(\frac{u+1}{u-1}\right)^{2}, \qquad f\!\left(\frac1u\right)=\left(\frac{\frac1u+1}{\frac1u-1}\right)^{2}.
+\]
+Али
+\[
+\frac{u+1}{u-1}=\frac{\dfrac{x+1}{x-1}+1}{\dfrac{x+1}{x-1}-1}=\frac{\dfrac{2x}{x-1}}{\dfrac{2}{x-1}}=x,\qquad\frac{\frac1u+1}{\frac1u-1}=\frac{\dfrac{x-1}{x+1}+1}{\dfrac{x-1}{x+1}-1}=\frac{\dfrac{2x}{x+1}}{-\dfrac{2}{x+1}}=-x.
+\]
+Стога
+\[
+f(u)=x^{2}, \qquad f\!\left(\frac1u\right)=(-x)^{2}=x^{2}, \quad \Longrightarrow \;\Delta=0.
+\]
+Одговор: \boxed{0} \;\Rightarrow\; (C).
+\end{solution}

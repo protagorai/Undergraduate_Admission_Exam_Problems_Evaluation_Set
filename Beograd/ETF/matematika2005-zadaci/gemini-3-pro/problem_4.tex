@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 4}
+Ako kompleksan broj $z$ zadovoljava jednakost $z + 2\bar{z} = 12 + 3i$, ($i^2 = -1$) tada je $|z|$ jednako:
+(A) 5 (B) 13 (C) 15 (D) 9 (E) 10 (N) Ne znam
+
+\subsection*{Rešenje}
+Neka je $z = x + iy$, gde su $x, y \in \mathbb{R}$. Tada je konjugovano kompleksni broj $\bar{z} = x - iy$.
+Zamenimo ovo u datu jednakost:
+\[
+(x + iy) + 2(x - iy) = 12 + 3i
+\]
+\[
+x + iy + 2x - 2iy = 12 + 3i
+\]
+\[
+3x - iy = 12 + 3i
+\]
+Izjednačavanjem realnih i imaginarnih delova dobijamo sistem jednačina:
+\begin{align*}
+3x &= 12 \implies x = 4 \\
+-y &= 3 \implies y = -3
+\end{align*}
+Dakle, $z = 4 - 3i$.
+Moduo kompleksnog broja $|z|$ računamo kao:
+\[
+|z| = \sqrt{x^2 + y^2} = \sqrt{4^2 + (-3)^2} = \sqrt{16 + 9} = \sqrt{25} = 5
+\]
+
+\subsection*{Odgovor}
+5 (opcija \textbf{A}).
+
+\end{document}

@@ -1,0 +1,12 @@
+Problem 10
+Zbir svih realnih rešenja jednačine
+
+    \sqrt{3 - x} + \sqrt{x - 1} = \sqrt{2x - 4}
+
+iznosi:
+(A) 0
+(B) 6
+(C) 3
+(D) 4
+(E) 7
+(N) Ne znam

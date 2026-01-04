@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 5 - Solution}
+
+\textbf{Problem:} Find the sum of all real solutions of the equation $(x+3)\sqrt{12-|x|} = 0$.
+
+\textbf{Solution:}
+
+For the product to equal zero, either factor must be zero:
+
+\textbf{Case 1:} $x + 3 = 0$
+\[
+x = -3
+\]
+Check domain: $12 - |-3| = 12 - 3 = 9 \geq 0$ \checkmark
+
+\textbf{Case 2:} $\sqrt{12-|x|} = 0$
+\[
+12 - |x| = 0 \implies |x| = 12 \implies x = 12 \text{ or } x = -12
+\]
+Both satisfy the domain requirement (equality case).
+
+All solutions: $x \in \{-12, -3, 12\}$
+
+\textbf{Sum of solutions:}
+\[
+(-12) + (-3) + 12 = -3
+\]
+
+\textbf{Answer: Б) $-3$}
+
+\end{document}
+

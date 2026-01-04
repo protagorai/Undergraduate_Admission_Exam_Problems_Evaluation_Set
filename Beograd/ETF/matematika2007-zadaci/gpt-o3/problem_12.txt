@@ -1,0 +1,5 @@
+Problem 12
+
+Jednačina \(9^{\sqrt{z}-1} - 4\cdot 3^{\sqrt{z}-1} + 3 = 0\):
+
+(A) Nema rešenja   (B) Ima jedno rešenje   (C) Ima dva rešenja   (D) Ima tri rešenja   (E) Ima četiri rešenja   (N) Ne znam

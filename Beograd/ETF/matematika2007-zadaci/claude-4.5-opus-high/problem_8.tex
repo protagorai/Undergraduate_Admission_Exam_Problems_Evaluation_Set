@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Skup svih rešenja nejednačine $\displaystyle\frac{(x+1)(x+2)}{(x-1)(x-2)} \geq 1$ je:
+
+(A) $(-\infty, +\infty)$ \quad (B) $[0, +\infty)$ \quad (C) $[0, 1]$ \quad (D) $[0, 1) \cup (2, +\infty)$ \quad (E) $(-\infty, 0] \cup (2, +\infty)$ \quad (N) Ne znam
+
+\subsection*{Solution}
+We solve $\displaystyle\frac{(x+1)(x+2)}{(x-1)(x-2)} \geq 1$.
+
+Rearranging:
+\[
+\frac{(x+1)(x+2)}{(x-1)(x-2)} - 1 \geq 0
+\]
+\[
+\frac{(x+1)(x+2) - (x-1)(x-2)}{(x-1)(x-2)} \geq 0
+\]
+
+Expanding the numerator:
+\begin{align*}
+(x+1)(x+2) &= x^2 + 3x + 2 \\
+(x-1)(x-2) &= x^2 - 3x + 2 \\
+(x+1)(x+2) - (x-1)(x-2) &= (x^2 + 3x + 2) - (x^2 - 3x + 2) = 6x
+\end{align*}
+
+So we need:
+\[
+\frac{6x}{(x-1)(x-2)} \geq 0
+\]
+
+The critical points are $x = 0$, $x = 1$, $x = 2$.
+
+Sign analysis:
+\begin{itemize}
+\item For $x < 0$: $6x < 0$, $(x-1) < 0$, $(x-2) < 0$ $\Rightarrow$ $\frac{(-)}{(-)(-))} = \frac{(-)}{(+)} < 0$
+\item For $0 < x < 1$: $6x > 0$, $(x-1) < 0$, $(x-2) < 0$ $\Rightarrow$ $\frac{(+)}{(-)(-))} = \frac{(+)}{(+)} > 0$
+\item For $1 < x < 2$: $6x > 0$, $(x-1) > 0$, $(x-2) < 0$ $\Rightarrow$ $\frac{(+)}{(+)(-))} = \frac{(+)}{(-)} < 0$
+\item For $x > 2$: $6x > 0$, $(x-1) > 0$, $(x-2) > 0$ $\Rightarrow$ $\frac{(+)}{(+)(+))} = \frac{(+)}{(+)} > 0$
+\end{itemize}
+
+At $x = 0$: the expression equals $0$, so it satisfies $\geq 0$.
+
+At $x = 1$ and $x = 2$: the expression is undefined.
+
+Solution set: $\{0\} \cup (0, 1) \cup (2, +\infty) = [0, 1) \cup (2, +\infty)$
+
+\subsection*{Answer}
+$[0, 1) \cup (2, +\infty)$ (option \textbf{D}).
+
+\end{document}

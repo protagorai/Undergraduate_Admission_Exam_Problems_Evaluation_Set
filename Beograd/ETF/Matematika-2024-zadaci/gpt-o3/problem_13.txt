@@ -1,0 +1,11 @@
+Problem 13
+Proizvod svih parametara a za koje sistem
+    x^2 + y^2 + 2x \le 1,
+    x - y + a = 0
+ima jedinstveno rešenje iznosi:
+(A) -6
+(B) 6
+(C) -3
+(D) 3
+(E) 1
+(N) Ne znam

@@ -1,0 +1,11 @@
+Problem 16 (Matematika 2023)
+Broj realnih rešenja sistema
+x² + 3xy + 2y² = 0,
+cos²x + cos²y = 1,
+za x ∈ [−π,0] i y ∈ [0,π] je:
+a) 2
+b) 5
+c) >5
+d) 4
+e) 3
+n) Ne znam

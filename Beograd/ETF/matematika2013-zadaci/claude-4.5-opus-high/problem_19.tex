@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Find the total number of real solutions of the equation $\sin 14x - \sin 12x + 8\sin x - \cos 13x = 4$ in the interval $(0, 2\pi)$.
+
+Options: (A) $0$ \quad (B) $1$ \quad (C) $2$ \quad (D) $3$ \quad (E) $4$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Use the sum-to-product formula:
+\[
+\sin 14x - \sin 12x = 2\cos\left(\frac{14x + 12x}{2}\right)\sin\left(\frac{14x - 12x}{2}\right) = 2\cos 13x \sin x
+\]
+
+The equation becomes:
+\[
+2\cos 13x \sin x + 8\sin x - \cos 13x = 4
+\]
+
+Let $u = \cos 13x$ and $v = \sin x$:
+\[
+2uv + 8v - u = 4
+\]
+\[
+u(2v - 1) + 8v = 4
+\]
+\[
+u(2v - 1) = 4 - 8v = 4(1 - 2v) = -4(2v - 1)
+\]
+
+If $2v - 1 \neq 0$ (i.e., $\sin x \neq \frac{1}{2}$):
+\[
+u = -4 \Rightarrow \cos 13x = -4
+\]
+
+But $|\cos 13x| \leq 1$, so this is impossible.
+
+If $2v - 1 = 0$ (i.e., $\sin x = \frac{1}{2}$):
+
+We need to check if the original equation is satisfied. With $\sin x = \frac{1}{2}$:
+\[
+2\cos 13x \cdot \frac{1}{2} + 8 \cdot \frac{1}{2} - \cos 13x = 4
+\]
+\[
+\cos 13x + 4 - \cos 13x = 4
+\]
+\[
+4 = 4 \checkmark
+\]
+
+So any $x$ with $\sin x = \frac{1}{2}$ in $(0, 2\pi)$ is a solution.
+
+In $(0, 2\pi)$, $\sin x = \frac{1}{2}$ when:
+\[
+x = \frac{\pi}{6} \quad \text{or} \quad x = \frac{5\pi}{6}
+\]
+
+Therefore, there are \textbf{2} solutions.
+
+\subsection*{Answer}
+$2$ (option \textbf{C}).
+
+\end{document}

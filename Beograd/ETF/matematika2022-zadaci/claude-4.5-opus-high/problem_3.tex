@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Find the value of $\left(3^{\frac{2 - \log_{3\sqrt{3}} 5 + 2\log_9 4}{4}}\right)^6$.
+
+(A) 1 \quad (B) 8/9 \quad (C) 2 \quad (D) 25/9 \quad (E) 216/5
+
+\subsection*{Solution}
+\textbf{Step 1:} Convert the logarithms to base 3.
+
+For $\log_{3\sqrt{3}} 5$:
+\[
+\log_{3\sqrt{3}} 5 = \frac{\log_3 5}{\log_3 (3\sqrt{3})} = \frac{\log_3 5}{\log_3 3 + \log_3 \sqrt{3}} = \frac{\log_3 5}{1 + \frac{1}{2}} = \frac{\log_3 5}{\frac{3}{2}} = \frac{2}{3}\log_3 5
+\]
+
+For $\log_9 4$:
+\[
+\log_9 4 = \frac{\log_3 4}{\log_3 9} = \frac{\log_3 4}{2} = \frac{1}{2}\log_3 4
+\]
+
+\textbf{Step 2:} Substitute into the exponent:
+\[
+\frac{2 - \frac{2}{3}\log_3 5 + 2 \cdot \frac{1}{2}\log_3 4}{4} = \frac{2 - \frac{2}{3}\log_3 5 + \log_3 4}{4}
+\]
+
+\textbf{Step 3:} Rewrite using properties of logarithms:
+\[
+= \frac{\log_3 9 + \log_3 4 - \log_3 5^{2/3}}{4} = \frac{\log_3 \frac{36}{5^{2/3}}}{4} = \frac{1}{4}\log_3 \frac{36}{\sqrt[3]{25}}
+\]
+
+\textbf{Step 4:} Calculate $3^{\frac{1}{4}\log_3 \frac{36}{\sqrt[3]{25}}}$:
+\[
+3^{\frac{1}{4}\log_3 \frac{36}{\sqrt[3]{25}}} = \left(\frac{36}{\sqrt[3]{25}}\right)^{1/4}
+\]
+
+\textbf{Step 5:} Raise to the 6th power:
+\[
+\left[\left(\frac{36}{\sqrt[3]{25}}\right)^{1/4}\right]^6 = \left(\frac{36}{\sqrt[3]{25}}\right)^{3/2}
+\]
+
+\textbf{Step 6:} Calculate:
+\[
+= \frac{36^{3/2}}{25^{1/2}} = \frac{(\sqrt{36})^3}{\sqrt{25}} = \frac{6^3}{5} = \frac{216}{5}
+\]
+
+\subsection*{Answer}
+$\frac{216}{5}$ (option \textbf{E}).
+
+\end{document}

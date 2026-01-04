@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Zbir beskonačne geometrijske progresije
+\[
+\frac{\sqrt2+1}{\sqrt2-1}+\frac{1}{2-\sqrt2}+\frac12+\cdots
+\]
+jednak je:
+\[
+\text{(A)}~2+\sqrt2\quad
+\text{(B)}~2-\sqrt2\quad
+\text{(C)}~1\quad
+\text{(D)}~4+3\sqrt2\quad
+\text{(E)}~4-3\sqrt2.
+\]
+
+\subsection*{Solution}
+Prvi član:
+\[
+a_1=\frac{\sqrt2+1}{\sqrt2-1}\cdot\frac{\sqrt2+1}{\sqrt2+1}
+ =(\sqrt2+1)^2=3+2\sqrt2.
+\]
+Drugi član:
+\[
+a_2=\frac{1}{2-\sqrt2}\cdot\frac{2+\sqrt2}{2+\sqrt2}
+=\frac{2+\sqrt2}{2}=1+\frac{\sqrt2}{2}.
+\]
+Odnos:
+\[
+r=\frac{a_2}{a_1}=\frac{\frac{2+\sqrt2}{2}}{3+2\sqrt2}
+=\frac{2+\sqrt2}{2(3+2\sqrt2)}\cdot\frac{3-2\sqrt2}{3-2\sqrt2}
+=\frac{2-\sqrt2}{2}.
+\]
+Provera: $a_3=a_2r=\dfrac{2+\sqrt2}{2}\cdot\dfrac{2-\sqrt2}{2}=\dfrac12$, što se slaže sa datim, pa je zaista geometrijska progresija.
+
+Zbir beskonačne geometrijske progresije je
+\[
+S=\frac{a_1}{1-r}
+=\frac{3+2\sqrt2}{1-\frac{2-\sqrt2}{2}}
+=\frac{3+2\sqrt2}{\frac{\sqrt2}{2}}
+=(3+2\sqrt2)\cdot\frac{2}{\sqrt2}=4+3\sqrt2.
+\]
+
+\subsection*{Answer}
+$4+3\sqrt2$ (option \textbf{D}).
+
+\end{document}
+

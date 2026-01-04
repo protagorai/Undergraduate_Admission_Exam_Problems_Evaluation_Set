@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Neka je data funkcija $f(x) = \ln\left|\frac{x-1}{x+1}\right|$.
+
+Koja od sledećih tvrđenja su tačna?
+\begin{itemize}
+\item[(i)] Važi da je $f(0) = 0$.
+\item[(ii)] Funkcija $f$ je neparna.
+\item[(iii)] Funkcija $f$ je definisana na skupu $\mathbb{R} \setminus \{-1\}$, gde je $\mathbb{R}$ skup realnih brojeva.
+\item[(iv)] Za svako $x \neq 0$ koje pripada domenu funkcije $f$ važi da je $f(2x+1) + f(2x-1) = f(x)$.
+\item[(v)] Za svako $x$ takvo da $x$, $2x$ i $3x$ pripadaju domenu funkcije $f$ važi da je $f(3x) - f(2x) = f(x)$.
+\end{itemize}
+
+\subsection*{Solution}
+
+\textbf{(i)} $f(0) = \ln\left|\frac{0-1}{0+1}\right| = \ln\left|\frac{-1}{1}\right| = \ln 1 = 0$. \textbf{Tačno}.
+
+\textbf{(ii)} Proverimo da li je $f(-x) = -f(x)$:
+\[
+f(-x) = \ln\left|\frac{-x-1}{-x+1}\right| = \ln\left|\frac{-(x+1)}{-(x-1)}\right| = \ln\left|\frac{x+1}{x-1}\right|
+\]
+\[
+-f(x) = -\ln\left|\frac{x-1}{x+1}\right| = \ln\left|\frac{x+1}{x-1}\right|
+\]
+Dakle $f(-x) = -f(x)$, funkcija je neparna. \textbf{Tačno}.
+
+\textbf{(iii)} Funkcija nije definisana kada je $x + 1 = 0$ (tj. $x = -1$) ili kada je $\frac{x-1}{x+1} = 0$ (tj. $x = 1$, ali tu je funkcija definisana jer je $\ln|0|$ nedefinisano).
+
+Zapravo, funkcija nije definisana za $x = -1$ (imenilac je 0) i za $x = 1$ (argument logaritma je 0).
+
+Domen je $\mathbb{R} \setminus \{-1, 1\}$, ne $\mathbb{R} \setminus \{-1\}$. \textbf{Netačno}.
+
+\textbf{(iv)} Proverimo $f(2x+1) + f(2x-1) = f(x)$:
+\[
+f(2x+1) = \ln\left|\frac{2x}{2x+2}\right| = \ln\left|\frac{x}{x+1}\right|
+\]
+\[
+f(2x-1) = \ln\left|\frac{2x-2}{2x}\right| = \ln\left|\frac{x-1}{x}\right|
+\]
+\[
+f(2x+1) + f(2x-1) = \ln\left|\frac{x}{x+1}\right| + \ln\left|\frac{x-1}{x}\right| = \ln\left|\frac{x-1}{x+1}\right| = f(x)
+\]
+\textbf{Tačno}.
+
+\textbf{(v)} Proverimo $f(3x) - f(2x) = f(x)$:
+\[
+f(3x) = \ln\left|\frac{3x-1}{3x+1}\right|, \quad f(2x) = \ln\left|\frac{2x-1}{2x+1}\right|
+\]
+\[
+f(3x) - f(2x) = \ln\left|\frac{3x-1}{3x+1}\right| - \ln\left|\frac{2x-1}{2x+1}\right| = \ln\left|\frac{(3x-1)(2x+1)}{(3x+1)(2x-1)}\right|
+\]
+\[
+= \ln\left|\frac{6x^2 + x - 1}{6x^2 - x - 1}\right|
+\]
+Ovo nije jednako $f(x) = \ln\left|\frac{x-1}{x+1}\right|$ u opštem slučaju. \textbf{Netačno}.
+
+Tačna su tvrđenja (i), (ii) i (iv).
+
+\subsection*{Answer}
+(i), (ii) i (iv) (option \textbf{B}).
+
+\end{document}

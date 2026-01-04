@@ -1,0 +1,5 @@
+Problem 18
+
+Date su funkcije: \(f_{1}(x) = 2^{\log_{2}x}\), \(f_{2}(x) = \log_{2} 2^{x}\), \(f_{3}(x) = x\), \(f_{4}(x) = (x\cdot 2^{-\log_{2}\sqrt{x}})^{2}\). Tačan iskaz je:
+
+(A) Među funkcijama nema međusobno jednakih   (B) \(f_{1}=f_{2}=f_{3}=f_{4}\)   (C) \(f_{1}\neq f_{2}=f_{3}\neq f_{4}\neq f_{1}\)   (D) \(f_{3}\neq f_{1}=f_{2}\neq f_{4}\)   (E) \(f_{2}=f_{3}\neq f_{1}=f_{4}\)   (N) Ne znam

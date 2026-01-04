@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Neka je $P(x)$ polinom najmaneg stepena čiji su koeficijenti realni brojevi, a koreni $-1$ i $2i$. Ako je $P(0) = -12$, tada je $P(-2)$ jednako:
+
+(A) $-12$ \quad (B) $24$ \quad (C) $-30$ \quad (D) $-36$ \quad (E) $72$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Pošto polinom ima realne koeficijente i $2i$ je koren, tada je i $-2i$ koren (kompleksni koreni se javljaju u konjugovanim parovima).
+
+Dakle, koreni su: $-1$, $2i$, $-2i$.
+
+Polinom najmaneg stepena je:
+\[
+P(x) = a(x + 1)(x - 2i)(x + 2i) = a(x + 1)(x^2 + 4)
+\]
+
+Razvijamo:
+\[
+P(x) = a(x + 1)(x^2 + 4) = a(x^3 + 4x + x^2 + 4) = a(x^3 + x^2 + 4x + 4)
+\]
+
+Iz uslova $P(0) = -12$:
+\[
+P(0) = a(0 + 0 + 0 + 4) = 4a = -12
+\]
+\[
+a = -3
+\]
+
+Dakle:
+\[
+P(x) = -3(x^3 + x^2 + 4x + 4)
+\]
+
+Izračunajmo $P(-2)$:
+\[
+P(-2) = -3((-2)^3 + (-2)^2 + 4(-2) + 4)
+\]
+\[
+P(-2) = -3(-8 + 4 - 8 + 4) = -3(-8) = 24
+\]
+
+\subsection*{Answer}
+(B) $24$
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 8 - Solution}
+
+\textbf{Problem:} Find the number of solutions of $(\sin 2x - \cos 2x)^2 = \sin 4x$ in the interval $\left[0, \frac{\pi}{2}\right]$.
+
+\textbf{Solution:}
+
+Expand the left side:
+\[
+(\sin 2x - \cos 2x)^2 = \sin^2 2x - 2\sin 2x \cos 2x + \cos^2 2x
+\]
+
+Using $\sin^2\theta + \cos^2\theta = 1$ and $2\sin\theta\cos\theta = \sin 2\theta$:
+\[
+= 1 - 2\sin 2x \cos 2x = 1 - \sin 4x
+\]
+
+So the equation becomes:
+\[
+1 - \sin 4x = \sin 4x
+\]
+\[
+1 = 2\sin 4x
+\]
+\[
+\sin 4x = \frac{1}{2}
+\]
+
+For $x \in \left[0, \frac{\pi}{2}\right]$, we have $4x \in [0, 2\pi]$.
+
+Solutions of $\sin\theta = \frac{1}{2}$ in $[0, 2\pi]$:
+\[
+\theta = \frac{\pi}{6} \quad \text{or} \quad \theta = \frac{5\pi}{6}
+\]
+
+Therefore:
+\[
+4x = \frac{\pi}{6} \implies x = \frac{\pi}{24}
+\]
+\[
+4x = \frac{5\pi}{6} \implies x = \frac{5\pi}{24}
+\]
+
+Both solutions are in $\left[0, \frac{\pi}{2}\right]$ since $\frac{5\pi}{24} < \frac{12\pi}{24} = \frac{\pi}{2}$.
+
+\textbf{Number of solutions: 2}
+
+\textbf{Answer: В) 2}
+
+\end{document}
+

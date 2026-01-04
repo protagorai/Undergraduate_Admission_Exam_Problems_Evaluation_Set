@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Obim trougla čije stranice obrazuju aritmetičku progresiju sa razlikom $4\,\text{cm}$ i koji ima jedan ugao $120^\circ$ jednak je:
+
+\subsection*{Solution}
+Neka su stranice u aritmetičkoj progresiji
+\[
+a-4,\quad a,\quad a+4,
+\]
+pa je najduža strana $a+4$. Kako je ugao $120^\circ$ najveći (obtuzan), on leži naspram najduže stranice, dakle ugao između stranica $a$ i $a-4$ je $120^\circ$.
+
+Primena kosinusne teoreme daje:
+\[
+(a+4)^2=a^2+(a-4)^2-2\cdot a(a-4)\cos 120^\circ.
+\]
+Kako je $\cos120^\circ=-\frac12$, dobijamo
+\[
+(a+4)^2=a^2+(a-4)^2+a(a-4).
+\]
+Računamo:
+\[
+a^2+(a-4)^2+a(a-4)=a^2+(a^2-8a+16)+(a^2-4a)=3a^2-12a+16.
+\]
+Leva strana je $(a+4)^2=a^2+8a+16$, pa
+\[
+a^2+8a+16=3a^2-12a+16 \;\Rightarrow\; 0=2a^2-20a=2a(a-10).
+\]
+Pošto je $a>0$, sledi $a=10$, pa su stranice $6,10,14$ i obim je
+\[
+6+10+14=30\ \text{cm}.
+\]
+
+\subsection*{Answer}
+$30\,\text{cm}$ (option \textbf{D}).
+
+\end{document}
+

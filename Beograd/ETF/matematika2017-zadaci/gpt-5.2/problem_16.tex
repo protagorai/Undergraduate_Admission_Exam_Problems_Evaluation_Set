@@ -1,0 +1,55 @@
+\section*{Zadatak 16}
+Na\'ci zbir svih realnih re\v{s}enja jedna\v{c}ine
+\[
+\sqrt{x^2-1}+\sqrt{x^2+x-2}=\sqrt[4]{x^2-2x+1},
+\]
+i odrediti u kom se ponu\dj enom intervalu taj zbir nalazi.
+
+\subsection*{Re\v{s}enje}
+Desna strana je
+\[
+\sqrt[4]{x^2-2x+1}=\sqrt[4]{(x-1)^2}=\sqrt{|x-1|}.
+\]
+Za definisanost leve strane treba
+\[
+x^2-1\ge 0 \;\Rightarrow\; |x|\ge 1,
+\]
+\[
+x^2+x-2=(x+2)(x-1)\ge 0 \;\Rightarrow\; x\le -2 \ \text{ili}\ x\ge 1.
+\]
+Dakle domen je $(-\infty,-2]\cup[1,+\infty)$.
+
+\paragraph{1) Slu\v{c}aj $x\ge 1$}
+Tada je $\sqrt{|x-1|}=\sqrt{x-1}$ i va\v{z}i
+\[
+\sqrt{x^2-1}=\sqrt{(x-1)(x+1)}=\sqrt{x-1}\,\sqrt{x+1}.
+\]
+Za $x>1$ je $\sqrt{x+1}>1$, pa je $\sqrt{x^2-1}>\sqrt{x-1}$, a drugi sabirak na levoj strani je $\ge 0$.
+Zato za $x>1$ imamo LHS $>$ RHS i nema re\v{s}enja.
+Za $x=1$ dobijamo $0+0=0$, pa je $x=1$ re\v{s}enje.
+
+\paragraph{2) Slu\v{c}aj $x\le -2$}
+Tada je $|x-1|=1-x$ i RHS je $\sqrt{1-x}$.
+Pi\v{s}emo
+\[
+\sqrt{x^2-1}=\sqrt{(1-x)(-1-x)}=\sqrt{1-x}\,\sqrt{-1-x}.
+\]
+Za $x<-2$ je $-1-x>1$, pa je $\sqrt{x^2-1}>\sqrt{1-x}$, a drugi koren na levoj strani je $\ge 0$,
+pa nema re\v{s}enja.
+Za $x=-2$ dobijamo
+\[
+\sqrt{3}+\sqrt{0}=\sqrt{3},
+\]
+pa je $x=-2$ re\v{s}enje.
+
+Dakle re\v{s}enja su $x\in\{-2,1\}$, pa je njihov zbir
+\[
+(-2)+1=-1.
+\]
+
+\subsection*{Odgovor}
+Zbir je $-1$, pa pripada intervalu $[-3,0)$.
+\[
+\boxed{(A)\;\; [-3,0)}
+\]
+

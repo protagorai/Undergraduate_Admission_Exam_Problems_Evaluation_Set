@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Solve the equation
+\[
+2^{16^x}=16^{2^x}.
+\]
+Options: (A) $\frac12$ \quad (B) $\frac23$ \quad (C) $\frac34$ \quad (D) $\frac45$ \quad (E) $\frac56$.
+
+\subsection*{Solution}
+Rewrite $16$ as a power of $2$:
+\[
+16=2^4.
+\]
+Then
+\[
+2^{16^x}=(2^4)^{2^x}=2^{4\cdot 2^x}.
+\]
+Since the bases are equal and positive,
+\[
+16^x=4\cdot 2^x.
+\]
+But $16^x=(2^4)^x=2^{4x}$ and $4\cdot 2^x=2^2\cdot 2^x=2^{x+2}$, hence
+\[
+2^{4x}=2^{x+2}\ \Rightarrow\ 4x=x+2\ \Rightarrow\ 3x=2\ \Rightarrow\ x=\frac23.
+\]
+
+\subsection*{Answer}
+$\frac23$ (option \textbf{B}).
+
+\end{document}
+

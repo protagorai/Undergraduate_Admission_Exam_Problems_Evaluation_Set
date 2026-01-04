@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 18}
+Ako je $\text{tg}\alpha = \frac{(1+\text{tg}1^\circ)(1+\text{tg}2^\circ)-2}{(1-\text{tg}1^\circ)(1-\text{tg}2^\circ)-2}$ i $\alpha \in (0, 90^\circ)$, tada je $\alpha$:
+(A) $40^\circ$ (B) $41^\circ$ (C) $42^\circ$ (D) $43^\circ$ (E) $44^\circ$ (N) Ne znam
+
+\subsection*{Rešenje}
+Označimo $x = 1^\circ$ i $y = 2^\circ$.
+Brojilac:
+\[
+(1+\text{tg}x)(1+\text{tg}y) - 2 = 1 + \text{tg}x + \text{tg}y + \text{tg}x\text{tg}y - 2 = \text{tg}x + \text{tg}y - (1 - \text{tg}x\text{tg}y)
+\]
+Imenilac:
+\[
+(1-\text{tg}x)(1-\text{tg}y) - 2 = 1 - \text{tg}x - \text{tg}y + \text{tg}x\text{tg}y - 2 = -(\text{tg}x + \text{tg}y) - (1 - \text{tg}x\text{tg}y)
+\]
+Znamo da je $\text{tg}(x+y) = \frac{\text{tg}x + \text{tg}y}{1 - \text{tg}x\text{tg}y}$, odakle je $\text{tg}x + \text{tg}y = \text{tg}(x+y)(1 - \text{tg}x\text{tg}y)$.
+Zamenimo ovo u brojilac i imenilac. Neka je $A = 1 - \text{tg}x\text{tg}y$.
+Brojilac: $A \cdot \text{tg}(x+y) - A = A(\text{tg}(x+y) - 1)$.
+Imenilac: $-A \cdot \text{tg}(x+y) - A = -A(\text{tg}(x+y) + 1)$.
+Tada je:
+\[
+\text{tg}\alpha = \frac{A(\text{tg}(x+y) - 1)}{-A(\text{tg}(x+y) + 1)} = \frac{1 - \text{tg}(x+y)}{1 + \text{tg}(x+y)}
+\]
+Kako je $x+y = 3^\circ$, imamo:
+\[
+\text{tg}\alpha = \frac{1 - \text{tg}3^\circ}{1 + \text{tg}3^\circ}
+\]
+Koristimo formulu za tangens razlike $\text{tg}(45^\circ - \beta) = \frac{1 - \text{tg}\beta}{1 + \text{tg}\beta}$.
+Dakle:
+\[
+\text{tg}\alpha = \text{tg}(45^\circ - 3^\circ) = \text{tg}42^\circ
+\]
+Sledi $\alpha = 42^\circ$.
+
+\subsection*{Odgovor}
+$42^\circ$ (opcija \textbf{C}).
+
+\end{document}

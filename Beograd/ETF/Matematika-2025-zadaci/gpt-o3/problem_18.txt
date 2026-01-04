@@ -1,0 +1,2 @@
+18. Skup svih realnih rešenja jednačine (2\sin x)^{\sin^2 x} = \sin 2x ≥ 1 na intervalu (0, π) je:
+(A) (0, π/3] ∪ (π/3, π)   (B) (0, π/3] ∪ [π/3, 5π/6)   (C) (π/6, 5π/6)   (D) (0, π/3] ∪ [π/3, 6π/5]   (E) [π/6, 5π/6]   (N) Ne znam

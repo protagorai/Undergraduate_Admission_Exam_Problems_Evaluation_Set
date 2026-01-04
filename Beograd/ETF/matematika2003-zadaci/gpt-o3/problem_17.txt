@@ -1,0 +1,2 @@
+17. Kompleksan broj (1 + i\sqrt{3})^9 + (\sqrt{3} - i)^9 (i = \sqrt{-1}) jednak je:
+A) 2^0(1 + i);   B) 2^0(-1 + i);   C) 2^0(1 - i);   D) 2^9;   E) -2^9 i;   N) Ne znam.

@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Prvi izvod funkcije $f(x) = \ln \frac{x^2-1+\sqrt{x^4+1}}{x}$ u tački $x_0=1$ jednak je:
+
+\subsection*{Solution}
+Rewrite $f(x)$:
+\[ f(x) = \ln(x^2 - 1 + \sqrt{x^4+1}) - \ln x \]
+Differentiate:
+\[ f'(x) = \frac{1}{x^2 - 1 + \sqrt{x^4+1}} \left( 2x + \frac{1}{2\sqrt{x^4+1}} \cdot 4x^3 \right) - \frac{1}{x} \]
+Evaluate at $x=1$:
+Term inside log: $1^2 - 1 + \sqrt{1+1} = \sqrt{2}$.
+Derivative part 1: $\frac{1}{\sqrt{2}} (2 + \frac{4}{2\sqrt{2}}) = \frac{1}{\sqrt{2}} (2 + \sqrt{2}) = \frac{2}{\sqrt{2}} + 1 = \sqrt{2} + 1$.
+Derivative part 2: $-1/1 = -1$.
+Total: $f'(1) = (\sqrt{2} + 1) - 1 = \sqrt{2}$.
+
+
+\subsection*{Answer}
+$\sqrt{2}$ (option \textbf{D})
+
+\end{document}

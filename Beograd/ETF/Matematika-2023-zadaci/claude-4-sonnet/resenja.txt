@@ -1,0 +1,22 @@
+REŠENJA ZADATAKA - MATEMATIKA 2023-1
+
+1. C - 3√2
+2. B - √65
+3. C - 10
+4. A - (-∞, a] ∪ {b} ∪ [c, +∞)
+5. D - 17π/9
+6. E - -p
+7. E - 3
+8. D - -i
+9. B - 952
+10. E - 872
+11. C - 4
+12. A - među datim funkcijama nema jednakih
+13. D - 2x + 1
+14. A - 9/4
+15. E - 13
+16. E - 3
+17. C - {a} ∪ [b, ∞)
+18. B - 2
+19. C - 4√3r/3
+20. D - (a, b)

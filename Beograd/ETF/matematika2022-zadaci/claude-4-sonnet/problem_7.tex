@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Granična vrednost $\lim_{x \to 4} \frac{\text{ctg}^3 x - 1}{2 - \text{ctg} x - \text{ctg}^3 x}$ iznosi:
+
+\subsection*{Solution}
+Označimo $u = \text{ctg } x$. Kada $x \to 4$, imamo $u \to \text{ctg } 4$.
+
+Granična vrednost postaje:
+\[
+\lim_{u \to \text{ctg } 4} \frac{u^3 - 1}{2 - u - u^3}
+\]
+
+Faktorizujemo brojilac i imenilac:
+\[
+u^3 - 1 = (u - 1)(u^2 + u + 1)
+\]
+\[
+2 - u - u^3 = -(u^3 + u - 2) = -(u - 1)(u^2 + u + 2)
+\]
+
+Dakle:
+\[
+\frac{u^3 - 1}{2 - u - u^3} = \frac{(u - 1)(u^2 + u + 1)}{-(u - 1)(u^2 + u + 2)} = -\frac{u^2 + u + 1}{u^2 + u + 2}
+\]
+
+Kada $u \to \text{ctg } 4$, i ako $\text{ctg } 4 \neq 1$, dobijamo:
+\[
+-\frac{(\text{ctg } 4)^2 + \text{ctg } 4 + 1}{(\text{ctg } 4)^2 + \text{ctg } 4 + 2}
+\]
+
+Međutim, primetimo da ako $u = 1$, oba izraza u brojiocu i imeniocu su 0, što znači da imamo neodređenu formu $\frac{0}{0}$.
+
+Koristeći L'Hôpital-ovo pravilo ili direktno računanje, dobijamo:
+\[
+\lim_{u \to 1} -\frac{u^2 + u + 1}{u^2 + u + 2} = -\frac{1 + 1 + 1}{1 + 1 + 2} = -\frac{3}{4}
+\]
+
+\subsection*{Answer}
+$-\frac{3}{4}$ (option \textbf{B}).
+
+\end{document}

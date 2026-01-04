@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Stranica romba čija je površina $80\,\text{cm}^2$, a odnos dijagonala $4:5$, iznosi (u cm):
+
+A) $\sqrt{84}$; \quad B) $\sqrt{81}$; \quad C) $\sqrt{72}$; \quad D) $\sqrt{80}$; \quad E) $\sqrt{82}$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Neka su dijagonale romba $d_1$ i $d_2$, sa odnosom $d_1 : d_2 = 4 : 5$.
+
+Možemo pisati $d_1 = 4k$ i $d_2 = 5k$ za neko $k > 0$.
+
+Površina romba je:
+\[
+P = \frac{d_1 \cdot d_2}{2} = \frac{4k \cdot 5k}{2} = \frac{20k^2}{2} = 10k^2
+\]
+
+Iz uslova $P = 80$:
+\[
+10k^2 = 80 \Rightarrow k^2 = 8 \Rightarrow k = 2\sqrt{2}
+\]
+
+Dakle:
+\[
+d_1 = 4k = 8\sqrt{2}, \quad d_2 = 5k = 10\sqrt{2}
+\]
+
+Dijagonale romba se seku pod pravim uglom i polove jedna drugu. Stranica romba je hipotenuza pravouglog trougla sa katetama $\frac{d_1}{2}$ i $\frac{d_2}{2}$:
+\[
+a = \sqrt{\left(\frac{d_1}{2}\right)^2 + \left(\frac{d_2}{2}\right)^2} = \sqrt{\left(\frac{8\sqrt{2}}{2}\right)^2 + \left(\frac{10\sqrt{2}}{2}\right)^2}
+\]
+\[
+= \sqrt{(4\sqrt{2})^2 + (5\sqrt{2})^2} = \sqrt{32 + 50} = \sqrt{82}
+\]
+
+\subsection*{Odgovor}
+$\sqrt{82}$ cm (opcija \textbf{E}).
+
+\end{document}

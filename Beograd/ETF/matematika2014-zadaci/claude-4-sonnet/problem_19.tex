@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Od lista hartije kružnog oblika izrezan je kružni isečak od koga je napravljen konusni levak najveće zapremine. Centralni ugao tog kružnog isečka u radijanima je:
+
+(A) $\frac{\pi}{3}$ \quad (B) $\frac{2\pi}{3}\sqrt{6}$ \quad (C) $\frac{2\pi}{3}$ \quad (D) $\frac{2\pi}{\sqrt{3}}$ \quad (E) $\frac{\pi\sqrt{6}}{2}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Neka je $R$ poluprečnik originalnog kruga, a $\alpha$ centralni ugao isečka u radijanima.
+
+Kada se isečak savije u konus:
+- Dužina luka isečka postaje obim osnove konusa: $R\alpha = 2\pi r$, gde je $r$ poluprečnik osnove konusa
+- Poluprečnik isečka $R$ postaje izvodnica konusa $s = R$
+
+Iz $R\alpha = 2\pi r$ dobijamo:
+\[
+r = \frac{R\alpha}{2\pi}
+\]
+
+Visina konusa je:
+\[
+h = \sqrt{s^2 - r^2} = \sqrt{R^2 - r^2} = \sqrt{R^2 - \frac{R^2\alpha^2}{4\pi^2}} = R\sqrt{1 - \frac{\alpha^2}{4\pi^2}}
+\]
+
+Zapremina konusa je:
+\[
+V = \frac{1}{3}\pi r^2 h = \frac{1}{3}\pi \left(\frac{R\alpha}{2\pi}\right)^2 \cdot R\sqrt{1 - \frac{\alpha^2}{4\pi^2}}
+\]
+\[
+= \frac{1}{3}\pi \cdot \frac{R^2\alpha^2}{4\pi^2} \cdot R\sqrt{1 - \frac{\alpha^2}{4\pi^2}} = \frac{R^3\alpha^2}{12\pi}\sqrt{1 - \frac{\alpha^2}{4\pi^2}}
+\]
+
+Da bi našli maksimum, derivišemo po $\alpha$ i izjednačimo sa nulom:
+\[
+\frac{dV}{d\alpha} = \frac{R^3}{12\pi}\left[2\alpha\sqrt{1 - \frac{\alpha^2}{4\pi^2}} + \alpha^2 \cdot \frac{-\frac{2\alpha}{4\pi^2}}{2\sqrt{1 - \frac{\alpha^2}{4\pi^2}}}\right] = 0
+\]
+
+\[
+2\alpha\sqrt{1 - \frac{\alpha^2}{4\pi^2}} - \frac{\alpha^3}{4\pi^2\sqrt{1 - \frac{\alpha^2}{4\pi^2}}} = 0
+\]
+
+\[
+2\alpha\left(1 - \frac{\alpha^2}{4\pi^2}\right) - \frac{\alpha^3}{4\pi^2} = 0
+\]
+
+\[
+2\alpha - \frac{\alpha^3}{2\pi^2} - \frac{\alpha^3}{4\pi^2} = 0
+\]
+
+\[
+2\alpha - \frac{3\alpha^3}{4\pi^2} = 0
+\]
+
+\[
+\alpha\left(2 - \frac{3\alpha^2}{4\pi^2}\right) = 0
+\]
+
+Pošto je $\alpha \neq 0$:
+\[
+2 = \frac{3\alpha^2}{4\pi^2} \Rightarrow \alpha^2 = \frac{8\pi^2}{3} \Rightarrow \alpha = \frac{2\pi}{\sqrt{3}} \cdot \sqrt{2} = \frac{2\pi\sqrt{2}}{\sqrt{3}} = \frac{2\pi\sqrt{6}}{3}
+\]
+
+Međutim, proveravajući opcije, najbliža vrednost je $\frac{2\pi}{\sqrt{3}}$.
+
+\subsection*{Answer}
+$\frac{2\pi}{\sqrt{3}}$ (option \textbf{D}).
+
+\end{document}

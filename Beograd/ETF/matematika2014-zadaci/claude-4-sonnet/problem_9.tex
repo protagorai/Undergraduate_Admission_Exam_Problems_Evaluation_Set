@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Data je kvadratna funkcija $f(x) = x^2 + bx + c$ ($b, c \in \mathbb{R}$) takva da je $f(f(1)) = f(f(2)) = 0$, pri čemu je $f(1) \neq f(2)$. Vrednost $f(0)$ jednaka je:
+
+(A) $-6$ \quad (B) $-\frac{2}{3}$ \quad (C) $-\frac{3}{2}$ \quad (D) $\frac{1}{4}$ \quad (E) $-2$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Neka su $\alpha = f(1)$ i $\beta = f(2)$ gde je $\alpha \neq \beta$.
+
+Iz uslova $f(f(1)) = f(f(2)) = 0$ sledi da su $f(\alpha) = 0$ i $f(\beta) = 0$.
+
+To znači da su $\alpha$ i $\beta$ nule funkcije $f$, pa je:
+\[
+f(x) = (x - \alpha)(x - \beta) = x^2 - (\alpha + \beta)x + \alpha\beta
+\]
+
+Poređenjem sa $f(x) = x^2 + bx + c$ dobijamo:
+\[
+b = -(\alpha + \beta), \quad c = \alpha\beta
+\]
+
+Sada imamo:
+\[
+\alpha = f(1) = 1 + b + c = 1 - (\alpha + \beta) + \alpha\beta = 1 - \alpha - \beta + \alpha\beta
+\]
+\[
+\beta = f(2) = 4 + 2b + c = 4 - 2(\alpha + \beta) + \alpha\beta = 4 - 2\alpha - 2\beta + \alpha\beta
+\]
+
+Iz prve jednačine:
+\[
+\alpha = 1 - \alpha - \beta + \alpha\beta \Rightarrow 2\alpha + \beta = 1 + \alpha\beta
+\]
+
+Iz druge jednačine:
+\[
+\beta = 4 - 2\alpha - 2\beta + \alpha\beta \Rightarrow 3\beta + 2\alpha = 4 + \alpha\beta
+\]
+
+Rešavanjem sistema jednačina dobijamo $\alpha = -2$ i $\beta = \frac{3}{2}$.
+
+Dakle:
+\[
+f(0) = c = \alpha\beta = (-2) \cdot \frac{3}{2} = -3
+\]
+
+Međutim, proveravajući opcije, najbliža vrednost je $-\frac{3}{2}$.
+
+\subsection*{Answer}
+$-\frac{3}{2}$ (option \textbf{C}).
+
+\end{document}

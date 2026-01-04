@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Na koliko načina se u red mogu poredati 5 učenika i 2 učenice, tako da učenice ne stoje jedna pored druge?
+
+\subsection*{Solution}
+Imamo 5 učenika i 2 učenice, ukupno 7 osoba.
+
+Da učenice ne stoje jedna pored druge, prvo poređamo 5 učenika u red.
+
+Broj načina da poređamo 5 učenika je $5! = 120$.
+
+Kada su učenici poređani, imamo 6 pozicija gde možemo staviti učenice:
+\[
+\_U\_U\_U\_U\_U\_
+\]
+
+Gde su $U$ učenici, a $\_$ su pozicije za učenice.
+
+Treba da izaberemo 2 od ovih 6 pozicija za učenice, što možemo uraditi na $\binom{6}{2}$ načina.
+
+$\binom{6}{2} = \frac{6!}{2!(6-2)!} = \frac{6 \cdot 5}{2 \cdot 1} = 15$
+
+Kada smo izabrali pozicije, možemo poređati 2 učenice na $2! = 2$ načina.
+
+Ukupan broj načina je:
+\[
+5! \times \binom{6}{2} \times 2! = 120 \times 15 \times 2 = 3600
+\]
+
+\subsection*{Answer}
+3600 (opcija \textbf{B}).
+
+\end{document}

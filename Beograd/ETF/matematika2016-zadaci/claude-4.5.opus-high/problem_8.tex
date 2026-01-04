@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Given the functions $f(x) = \dfrac{x - 2016}{x + 2016}$ and $g(x) = \dfrac{1 - f(x)}{1 + f(x)}$, find $f(g(x))$.
+
+\subsection*{Solution}
+First, let's find $g(x)$:
+\begin{align*}
+g(x) &= \frac{1 - f(x)}{1 + f(x)} = \frac{1 - \frac{x-2016}{x+2016}}{1 + \frac{x-2016}{x+2016}}\\[2mm]
+&= \frac{\frac{(x+2016) - (x-2016)}{x+2016}}{\frac{(x+2016) + (x-2016)}{x+2016}}\\[2mm]
+&= \frac{x + 2016 - x + 2016}{x + 2016 + x - 2016}\\[2mm]
+&= \frac{4032}{2x} = \frac{2016}{x}
+\end{align*}
+
+Now we compute $f(g(x))$:
+\begin{align*}
+f(g(x)) &= f\left(\frac{2016}{x}\right) = \frac{\frac{2016}{x} - 2016}{\frac{2016}{x} + 2016}\\[2mm]
+&= \frac{\frac{2016 - 2016x}{x}}{\frac{2016 + 2016x}{x}}\\[2mm]
+&= \frac{2016 - 2016x}{2016 + 2016x}\\[2mm]
+&= \frac{2016(1 - x)}{2016(1 + x)}\\[2mm]
+&= \frac{1 - x}{1 + x}
+\end{align*}
+
+\subsection*{Answer}
+$\dfrac{1 - x}{1 + x}$ (option \textbf{C}).
+
+\end{document}

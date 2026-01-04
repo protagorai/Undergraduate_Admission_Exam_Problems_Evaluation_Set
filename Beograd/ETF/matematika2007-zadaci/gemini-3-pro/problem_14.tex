@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Ako je $x^2 + 4x + 6$ faktor od $x^4 + ax^2 + b$, tada je $a+b$ jednako :
+\[
+(A)\ 12 \quad (B)\ 24 \quad (C)\ 32 \quad (D)\ 36 \quad (E)\ 40 \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Ako je $P(x) = x^2+4x+6$ faktor od $Q(x) = x^4+ax^2+b$, onda nule polinoma $P(x)$ moraju biti nule polinoma $Q(x)$.
+Nule $x^2+4x+6=0$:
+\[
+x = \frac{-4 \pm \sqrt{16-24}}{2} = -2 \pm i\sqrt{2}
+\]
+Neka je $z = -2 + i\sqrt{2}$. Tada je $z^2 = -4z-6$.
+Takođe,
+\[
+z^4 = (z^2)^2 = (-4z-6)^2 = 16z^2 + 48z + 36
+\]
+Zamenimo $z^2 = -4z-6$ u $z^4$:
+\[
+z^4 = 16(-4z-6) + 48z + 36 = -64z - 96 + 48z + 36 = -16z - 60
+\]
+Sada zamenimo $z^2$ i $z^4$ u $Q(z) = 0$:
+\[
+z^4 + az^2 + b = 0
+\]
+\[
+(-16z - 60) + a(-4z-6) + b = 0
+\]
+\[
+z(-16 - 4a) + (-60 - 6a + b) = 0
+\]
+Da bi kompleksan broj bio nula, realni i imaginarni deo moraju biti nula (odnosno koeficijenti uz $z$ i slobodni član, jer $z$ nije realan).
+\[
+-16 - 4a = 0 \Rightarrow 4a = -16 \Rightarrow a = -4
+\]
+\[
+-60 - 6a + b = 0 \Rightarrow -60 - 6(-4) + b = 0 \Rightarrow -60 + 24 + b = 0 \Rightarrow b = 36
+\]
+Tražena vrednost je $a+b$:
+\[
+a+b = -4 + 36 = 32
+\]
+
+\subsection*{Answer}
+32 (option \textbf{C}).
+
+\end{document}

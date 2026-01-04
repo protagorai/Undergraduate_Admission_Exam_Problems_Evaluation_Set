@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 4}
+Ukupan broj realnih rešenja jednačine $\frac{\sqrt{(x+1)^2}}{x+1} = |x+1|$ je:
+\[
+(A)\; 0 \quad (B)\; 1 \quad (C)\; 2 \quad (D)\; 3 \quad (E)\; 4
+\]
+
+\subsection*{Solution}
+Jednačina je definisana za $x+1 \ne 0$, tj. $x \ne -1$.
+Izraz $\sqrt{(x+1)^2}$ je jednak $|x+1|$. Jednačina postaje:
+\[
+\frac{|x+1|}{x+1} = |x+1|
+\]
+Razmotrimo dva slučaja u zavisnosti od znaka izraza $x+1$:
+
+1. Ako je $x+1 > 0$ (tj. $x > -1$):
+$|x+1| = x+1$.
+\[
+\frac{x+1}{x+1} = x+1 \Rightarrow 1 = x+1 \Rightarrow x = 0
+\]
+Rešenje $x=0$ zadovoljava uslov $x>-1$.
+
+2. Ako je $x+1 < 0$ (tj. $x < -1$):
+$|x+1| = -(x+1)$.
+\[
+\frac{-(x+1)}{x+1} = -(x+1) \Rightarrow -1 = -x-1 \Rightarrow x = 0
+\]
+Međutim, $x=0$ ne zadovoljava uslov $x < -1$. Dakle, u ovom slučaju nema rešenja.
+
+Jedino realno rešenje je $x=0$. Ukupan broj rešenja je 1.
+
+\subsection*{Answer}
+1 (option \textbf{B}).
+
+\end{document}

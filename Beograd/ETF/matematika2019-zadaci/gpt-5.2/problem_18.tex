@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Ako su uglovi trougla $\alpha,\beta,\gamma$ i važi $\alpha\ge \beta\ge \gamma$, a
+\[
+\sin\alpha-\sin\beta+\sin\gamma=1,
+\]
+onda je ugao $\gamma$ jednak:
+
+\subsection*{Solution}
+Kako je $\alpha+\beta+\gamma=\pi$, važi $\alpha=\pi-\beta-\gamma$ i
+\[
+\sin\alpha=\sin(\pi-\beta-\gamma)=\sin(\beta+\gamma).
+\]
+Uslov postaje
+\[
+\sin(\beta+\gamma)-\sin\beta+\sin\gamma=1.
+\]
+Prebacimo:
+\[
+\sin(\beta+\gamma)-\sin\beta=1-\sin\gamma.
+\]
+Primena identiteta $\sin u-\sin v=2\cos\frac{u+v}{2}\sin\frac{u-v}{2}$ daje (za $u=\beta+\gamma$, $v=\beta$)
+\[
+2\cos\left(\beta+\frac{\gamma}{2}\right)\sin\frac{\gamma}{2}=1-\sin\gamma.
+\]
+Kako je $\sin\gamma=2\sin\frac{\gamma}{2}\cos\frac{\gamma}{2}$, dobijamo
+\[
+2\sin\frac{\gamma}{2}\left(\cos\left(\beta+\frac{\gamma}{2}\right)+\cos\frac{\gamma}{2}\right)=1.
+\]
+Sada proverimo kandidate iz ponuđenih odgovora koristeći i uslov poretka $\alpha\ge\beta\ge\gamma$.
+
+Ako je $\gamma=45^\circ$, možemo uzeti $\beta=45^\circ$ (dozvoljeno jer $\beta\ge\gamma$), tada je
+\[
+\alpha=180^\circ-45^\circ-45^\circ=90^\circ,
+\]
+i zaista
+\[
+\sin 90^\circ-\sin 45^\circ+\sin 45^\circ=1.
+\]
+Poredak $\alpha\ge\beta\ge\gamma$ je ispunjen: $90^\circ\ge 45^\circ\ge 45^\circ$.
+
+Zato je $\gamma=45^\circ$.
+
+\subsection*{Answer}
+$45^\circ$ (option \textbf{E}).
+
+\end{document}
+

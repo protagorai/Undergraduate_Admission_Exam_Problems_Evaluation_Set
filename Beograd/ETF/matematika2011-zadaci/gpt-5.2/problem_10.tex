@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Prave $-ax+y-3=0$ i $x-by+2=0$ seku se u centru kruga
+\[
+x^2+y^2-2x+4y-10=0.
+\]
+Ugao između ovih pravih je:
+\[
+\text{(A)}~60^\circ\quad
+\text{(B)}~30^\circ\quad
+\text{(C)}~90^\circ\quad
+\text{(D)}~45^\circ\quad
+\text{(E)}~75^\circ.
+\]
+
+\subsection*{Solution}
+Iz jednačine kruga dobijamo centar kompletiranjem kvadrata:
+\[
+x^2-2x+y^2+4y-10=0
+\;\Rightarrow\;
+(x-1)^2+(y+2)^2=15,
+\]
+pa je centar $C(1,-2)$.
+
+Po uslovu, presečna tačka pravih je $C(1,-2)$, pa:
+\[
+-a\cdot 1+(-2)-3=0 \;\Rightarrow\; -a-5=0 \;\Rightarrow\; a=-5.
+\]
+Takođe,
+\[
+1-b(-2)+2=0 \;\Rightarrow\; 3+2b=0 \;\Rightarrow\; b=-\frac{3}{2}.
+\]
+Nagibi su:
+\[
+-ax+y-3=0 \Rightarrow y=ax+3 \Rightarrow m_1=a=-5,
+\]
+\[
+x-by+2=0 \Rightarrow y=\frac{x+2}{b} \Rightarrow m_2=\frac{1}{b}=-\frac{2}{3}.
+\]
+Ugao $\theta$ između pravih zadovoljava
+\[
+\tan\theta=\left|\frac{m_1-m_2}{1+m_1m_2}\right|
+=\left|\frac{-5-(-2/3)}{1+(-5)(-2/3)}\right|
+=\left|\frac{-13/3}{13/3}\right|=1,
+\]
+pa je $\theta=45^\circ$.
+
+\subsection*{Answer}
+$45^\circ$ (option \textbf{D}).
+
+\end{document}
+

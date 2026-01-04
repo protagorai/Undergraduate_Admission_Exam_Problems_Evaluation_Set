@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Ako je $\log_{b^2} x + \log_{x^2} b = 1$, $b > 0$, $b \neq 1$, $x \neq 1$, tada je $x$ jednako:
+
+A) $\frac{1}{b}$; \quad B) $\frac{1}{b^2}$; \quad C) $b$; \quad D) $b^2$; \quad E) $\sqrt{b}$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Koristimo formulu za promenu osnove: $\log_a c = \frac{\ln c}{\ln a}$
+
+\[
+\log_{b^2} x = \frac{\ln x}{\ln b^2} = \frac{\ln x}{2\ln b}
+\]
+
+\[
+\log_{x^2} b = \frac{\ln b}{\ln x^2} = \frac{\ln b}{2\ln x}
+\]
+
+Neka je $t = \frac{\ln x}{\ln b}$. Tada:
+\[
+\log_{b^2} x = \frac{t}{2}, \quad \log_{x^2} b = \frac{1}{2t}
+\]
+
+Jednačina postaje:
+\[
+\frac{t}{2} + \frac{1}{2t} = 1
+\]
+
+Množeći sa $2t$:
+\[
+t^2 + 1 = 2t
+\]
+\[
+t^2 - 2t + 1 = 0
+\]
+\[
+(t-1)^2 = 0
+\]
+\[
+t = 1
+\]
+
+Dakle $\frac{\ln x}{\ln b} = 1$, što znači $\ln x = \ln b$, odnosno $x = b$.
+
+\subsection*{Odgovor}
+$b$ (opcija \textbf{C}).
+
+\end{document}

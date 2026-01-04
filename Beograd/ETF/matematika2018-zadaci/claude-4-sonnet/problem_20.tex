@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Given the set $A = \{a_1, a_2, \ldots, a_{11}\}$. How many ordered pairs $(X, Y)$ are there such that $X \subset A$, $Y \subset A$, and the number of elements in the set $|X| = 8$, $|Y| = 7$ and $|X \cap Y| = 5$?
+
+\subsection*{Solution}
+We need to count ordered pairs $(X, Y)$ where:
+- $X \subset A$ with $|X| = 8$
+- $Y \subset A$ with $|Y| = 7$  
+- $|X \cap Y| = 5$
+
+Let's think about this systematically. We need to choose:
+1. The 5 elements that are in both $X$ and $Y$ (i.e., $X \cap Y$)
+2. The 3 additional elements that are in $X$ but not in $Y$
+3. The 2 additional elements that are in $Y$ but not in $X$
+
+Step 1: Choose 5 elements from the 11 elements of $A$ to be in $X \cap Y$.
+This can be done in $\binom{11}{5}$ ways.
+
+Step 2: From the remaining $11 - 5 = 6$ elements, choose 3 to be in $X$ but not in $Y$.
+This can be done in $\binom{6}{3}$ ways.
+
+Step 3: From the remaining $6 - 3 = 3$ elements, choose 2 to be in $Y$ but not in $X$.
+This can be done in $\binom{3}{2}$ ways.
+
+The remaining $3 - 2 = 1$ element will be in neither $X$ nor $Y$.
+
+Therefore, the total number of ordered pairs is:
+\[
+\binom{11}{5} \times \binom{6}{3} \times \binom{3}{2}
+\]
+
+Let's calculate:
+\[
+\binom{11}{5} = \frac{11!}{5! \cdot 6!} = \frac{11 \times 10 \times 9 \times 8 \times 7}{5 \times 4 \times 3 \times 2 \times 1} = \frac{55440}{120} = 462
+\]
+
+\[
+\binom{6}{3} = \frac{6!}{3! \cdot 3!} = \frac{6 \times 5 \times 4}{3 \times 2 \times 1} = \frac{120}{6} = 20
+\]
+
+\[
+\binom{3}{2} = \frac{3!}{2! \cdot 1!} = \frac{3 \times 2}{2 \times 1} = 3
+\]
+
+Therefore:
+\[
+462 \times 20 \times 3 = 27720
+\]
+
+\subsection*{Answer}
+27720 (option \textbf{C}).
+
+\end{document}

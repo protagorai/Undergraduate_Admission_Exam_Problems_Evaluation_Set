@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+If the polynomial $P(x) = x^{2014} + px^{2013} + qx - 1$ (where $p, q \in \mathbf{R}$) is divisible by $(x + 1)$, find the sum $p + q$.
+
+Options: (A) $0$ \quad (B) $1$ \quad (C) $2$ \quad (D) $-2$ \quad (E) $-1$ \quad (N) Ne znam
+
+\subsection*{Solution}
+If $P(x)$ is divisible by $(x + 1)$, then by the Factor Theorem, $P(-1) = 0$.
+
+Calculate $P(-1)$:
+\[
+P(-1) = (-1)^{2014} + p(-1)^{2013} + q(-1) - 1
+\]
+
+Since $2014$ is even: $(-1)^{2014} = 1$
+
+Since $2013$ is odd: $(-1)^{2013} = -1$
+
+Therefore:
+\[
+P(-1) = 1 + p(-1) + q(-1) - 1 = 1 - p - q - 1 = -p - q
+\]
+
+Setting $P(-1) = 0$:
+\[
+-p - q = 0
+\]
+\[
+p + q = 0
+\]
+
+\subsection*{Answer}
+$0$ (option \textbf{A}).
+
+\end{document}

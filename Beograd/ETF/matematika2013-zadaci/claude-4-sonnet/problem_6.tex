@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je $\frac{\cos(\alpha + \beta)}{\cos(\alpha - \beta)} = \frac{1}{3}$ ($\alpha, \beta \neq \frac{\pi}{2} + k\pi$, $\alpha - \beta \neq \frac{\pi}{2} + m\pi$, $k, m \in \mathbb{Z}$), tada je $\text{tg}\alpha \cdot \text{tg}\beta$ jednako:
+
+\subsection*{Solution}
+Koristimo formule za kosinus zbira i razlike:
+\[
+\cos(\alpha + \beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta
+\]
+\[
+\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta
+\]
+
+Iz datog uslova:
+\[
+\frac{\cos\alpha\cos\beta - \sin\alpha\sin\beta}{\cos\alpha\cos\beta + \sin\alpha\sin\beta} = \frac{1}{3}
+\]
+
+Krstno množenje:
+\[
+3(\cos\alpha\cos\beta - \sin\alpha\sin\beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta
+\]
+\[
+3\cos\alpha\cos\beta - 3\sin\alpha\sin\beta = \cos\alpha\cos\beta + \sin\alpha\sin\beta
+\]
+\[
+2\cos\alpha\cos\beta = 4\sin\alpha\sin\beta
+\]
+\[
+\frac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta} = \frac{2}{4} = \frac{1}{2}
+\]
+\[
+\text{tg}\alpha \cdot \text{tg}\beta = \frac{1}{2}
+\]
+
+\subsection*{Answer}
+$\frac{1}{2}$ (option \textbf{B}).
+
+\end{document}

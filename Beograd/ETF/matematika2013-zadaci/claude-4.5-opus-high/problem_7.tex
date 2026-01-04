@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Let $S_1$ be the solution set of the inequality $|\sqrt{x+1}| > 1$ and $S_2$ be the solution set of the inequality $\sqrt{|x+1|} > 1$. Then:
+
+Options: (A) $S_1 = S_2$ \quad (B) $S_1 \supset S_2$ \quad (C) $S_1 \subset S_2$ \quad (D) $S_1 = \mathbf{R}$, $S_2 \neq \varnothing$ \quad (E) None of the offered answers \quad (N) Ne znam
+
+\subsection*{Solution}
+
+\textbf{Finding $S_1$:} $|\sqrt{x+1}| > 1$
+
+Since $\sqrt{x+1} \geq 0$ for $x \geq -1$, we have $|\sqrt{x+1}| = \sqrt{x+1}$.
+
+Domain: $x \geq -1$
+
+The inequality becomes: $\sqrt{x+1} > 1$
+
+Squaring both sides: $x + 1 > 1$, so $x > 0$.
+
+Therefore: $S_1 = (0, +\infty)$
+
+\textbf{Finding $S_2$:} $\sqrt{|x+1|} > 1$
+
+Domain: all real numbers (since $|x+1| \geq 0$ always).
+
+Squaring: $|x+1| > 1$
+
+This means: $x + 1 > 1$ or $x + 1 < -1$
+
+So: $x > 0$ or $x < -2$
+
+Therefore: $S_2 = (-\infty, -2) \cup (0, +\infty)$
+
+\textbf{Comparing $S_1$ and $S_2$:}
+\begin{itemize}
+\item $S_1 = (0, +\infty)$
+\item $S_2 = (-\infty, -2) \cup (0, +\infty)$
+\end{itemize}
+
+We see that $S_1 \subset S_2$ (proper subset, since $S_2$ also contains $(-\infty, -2)$).
+
+\subsection*{Answer}
+$S_1 \subset S_2$ (option \textbf{C}).
+
+\end{document}

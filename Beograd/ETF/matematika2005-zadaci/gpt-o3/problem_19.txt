@@ -1,0 +1,3 @@
+Problem 19: Broj načina na koji se mogu poređati u niz n nula i k jedinica, tako da nijedve dve jedinice nisu susedne, ako je k ≤ n + 1, je:
+
+(A) C(n + 1, k)   (B) C(n, k)   (C) n! / k!   (D) (n + 1)! / k!   (E) C(n - 1, k)   (N) Ne znam

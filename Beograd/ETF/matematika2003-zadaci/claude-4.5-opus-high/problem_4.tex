@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Razlika $\cos^2\frac{x+y}{2} - \sin^2\frac{x-y}{2}$ jednaka je:
+
+\textbf{A)} $\sin(x-y)$; \quad \textbf{B)} $\cos x \cos y$; \quad \textbf{C)} $\sin x \cos y$; \quad \textbf{D)} $\sin x \sin y$; \quad \textbf{E)} $\sin(x+y)$
+
+\subsection*{Solution}
+Koristimo formule:
+\begin{itemize}
+\item $\cos^2\alpha = \frac{1 + \cos 2\alpha}{2}$
+\item $\sin^2\alpha = \frac{1 - \cos 2\alpha}{2}$
+\end{itemize}
+
+Za $\alpha = \frac{x+y}{2}$:
+\[
+\cos^2\frac{x+y}{2} = \frac{1 + \cos(x+y)}{2}
+\]
+
+Za $\alpha = \frac{x-y}{2}$:
+\[
+\sin^2\frac{x-y}{2} = \frac{1 - \cos(x-y)}{2}
+\]
+
+Razlika:
+\[
+\cos^2\frac{x+y}{2} - \sin^2\frac{x-y}{2} = \frac{1 + \cos(x+y)}{2} - \frac{1 - \cos(x-y)}{2}
+\]
+\[
+= \frac{1 + \cos(x+y) - 1 + \cos(x-y)}{2} = \frac{\cos(x+y) + \cos(x-y)}{2}
+\]
+
+Koristimo formulu za zbir kosinusa:
+\[
+\cos(x+y) + \cos(x-y) = 2\cos x \cos y
+\]
+
+Dakle:
+\[
+\frac{2\cos x \cos y}{2} = \cos x \cos y
+\]
+
+\subsection*{Answer}
+$\cos x \cos y$ (option \textbf{B}).
+
+\end{document}

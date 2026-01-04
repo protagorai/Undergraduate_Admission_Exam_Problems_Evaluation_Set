@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Skup svih vrednosti parametra $a$ ($a \in \mathbb{R} \setminus \{0\}$) tako da koreni $x_1$ i $x_2$ kvadratne jednačine $ax^2+ax+1=0$ zadovoljavaju nejednačinu $\frac{(x_1+1)^2+(x_2+1)^2}{(x_1-1)^2+(x_2-1)^2} \leq 1$, jeste:
+
+\subsection*{Solution}
+Vieta's formulas: $x_1+x_2 = -1$, $x_1x_2 = 1/a$.
+Numerator $N = (x_1+1)^2+(x_2+1)^2 = x_1^2+x_2^2+2(x_1+x_2)+2 = (x_1+x_2)^2-2x_1x_2+2(-1)+2 = (-1)^2 - 2/a = 1-2/a$.
+Denominator $D = (x_1-1)^2+(x_2-1)^2 = x_1^2+x_2^2-2(x_1+x_2)+2 = (1-2/a) - 2(-1) = 3 - 2/a + 2 = 5-2/a$.
+Inequality: $\frac{1-2/a}{5-2/a} \leq 1$.
+$\frac{1-2/a - (5-2/a)}{5-2/a} \leq 0 \implies \frac{-4}{5-2/a} \leq 0$.
+Since numerator is negative, denominator must be positive:
+$5 - 2/a > 0 \implies 2/a < 5$.
+If $a>0$, $2 < 5a \implies a > 2/5$.
+If $a<0$, $2/a < 0 < 5$ is always true.
+Solution for inequality: $(-\infty, 0) \cup (2/5, \infty)$.
+(Note: Assuming 'koreni' refers to possibly complex roots where the expression is real, which it is. If real roots were required, we'd intersect with discriminant condition, but option B matches the inequality solution exactly).
+
+\subsection*{Answer}
+$(-\infty, 0) \cup (\frac{2}{5}, +\infty)$ (option \textbf{B})
+
+\end{document}

@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Ugao između elipse $\frac{x^2}{9} + \frac{y^2}{4} = 1$ i hiperbole $\frac{x^2}{4} - y^2 = 1$ u njihovoj presečnoj tački u prvom kvadrantu iznosi:
+
+\subsection*{Solution}
+Prvo nalazimo presečnu tačku u prvom kvadrantu.
+
+Iz elipse: $\frac{x^2}{9} + \frac{y^2}{4} = 1$
+
+Iz hiperbole: $\frac{x^2}{4} - y^2 = 1 \Rightarrow y^2 = \frac{x^2}{4} - 1$
+
+Zamenjujemo u jednačinu elipse:
+\[
+\frac{x^2}{9} + \frac{\frac{x^2}{4} - 1}{4} = 1
+\]
+\[
+\frac{x^2}{9} + \frac{x^2}{16} - \frac{1}{4} = 1
+\]
+\[
+\frac{x^2}{9} + \frac{x^2}{16} = \frac{5}{4}
+\]
+
+Nalazimo zajednički imenilac (144):
+\[
+\frac{16x^2 + 9x^2}{144} = \frac{5}{4}
+\]
+\[
+\frac{25x^2}{144} = \frac{5}{4}
+\]
+\[
+x^2 = \frac{5 \cdot 144}{4 \cdot 25} = \frac{720}{100} = \frac{36}{5}
+\]
+\[
+x = \frac{6}{\sqrt{5}} \quad (\text{u prvom kvadrantu})
+\]
+
+Sada nalazimo $y$:
+\[
+y^2 = \frac{x^2}{4} - 1 = \frac{36/5}{4} - 1 = \frac{36}{20} - 1 = \frac{9}{5} - 1 = \frac{4}{5}
+\]
+\[
+y = \frac{2}{\sqrt{5}} \quad (\text{u prvom kvadrantu})
+\]
+
+Presečna tačka je $\left(\frac{6}{\sqrt{5}}, \frac{2}{\sqrt{5}}\right)$.
+
+Sada nalazimo nagibe tangenti u toj tački.
+
+\textbf{Tangenta na elipsu:}
+
+Implicitno diferenciranje $\frac{x^2}{9} + \frac{y^2}{4} = 1$:
+\[
+\frac{2x}{9} + \frac{2y}{4} \cdot y' = 0
+\]
+\[
+y' = -\frac{4x}{9y}
+\]
+
+U tački $\left(\frac{6}{\sqrt{5}}, \frac{2}{\sqrt{5}}\right)$:
+\[
+m_1 = -\frac{4 \cdot \frac{6}{\sqrt{5}}}{9 \cdot \frac{2}{\sqrt{5}}} = -\frac{24}{18} = -\frac{4}{3}
+\]
+
+\textbf{Tangenta na hiperbolu:}
+
+Implicitno diferenciranje $\frac{x^2}{4} - y^2 = 1$:
+\[
+\frac{2x}{4} - 2y \cdot y' = 0
+\]
+\[
+y' = \frac{x}{4y}
+\]
+
+U tački $\left(\frac{6}{\sqrt{5}}, \frac{2}{\sqrt{5}}\right)$:
+\[
+m_2 = \frac{\frac{6}{\sqrt{5}}}{4 \cdot \frac{2}{\sqrt{5}}} = \frac{6}{8} = \frac{3}{4}
+\]
+
+\textbf{Ugao između pravih:}
+\[
+\tan\theta = \left|\frac{m_1 - m_2}{1 + m_1 m_2}\right| = \left|\frac{-\frac{4}{3} - \frac{3}{4}}{1 + (-\frac{4}{3}) \cdot \frac{3}{4}}\right|
+\]
+
+\[
+= \left|\frac{-\frac{16}{12} - \frac{9}{12}}{1 - 1}\right| = \left|\frac{-\frac{25}{12}}{0}\right|
+\]
+
+Imenilac je 0, što znači da je $\tan\theta$ nedefinisan, tj. $\theta = 90°$.
+
+\subsection*{Answer}
+$90°$ (opcija \textbf{D}).
+
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Find the domain of the function $y = \sqrt{\log_{\frac{1}{2}}(3x^2 - 2x)}$ in the form specified 
+(for some real numbers $a, b, c, d$ such that $-\infty < a < b < c < d < +\infty$).
+
+\subsection*{Solution}
+For the function to be defined, we need:
+\begin{enumerate}
+\item $\log_{\frac{1}{2}}(3x^2 - 2x) \geq 0$
+\item $3x^2 - 2x > 0$
+\end{enumerate}
+
+\textbf{Condition 1:} Since the base $\frac{1}{2} < 1$, we have $\log_{\frac{1}{2}}(u) \geq 0$ when $0 < u \leq 1$:
+\[
+0 < 3x^2 - 2x \leq 1
+\]
+
+\textbf{Condition 2:} $3x^2 - 2x > 0$:
+\[
+x(3x - 2) > 0 \implies x < 0 \text{ or } x > \frac{2}{3}
+\]
+
+\textbf{Upper bound:} $3x^2 - 2x \leq 1$:
+\[
+3x^2 - 2x - 1 \leq 0
+\]
+\[
+(3x + 1)(x - 1) \leq 0 \implies -\frac{1}{3} \leq x \leq 1
+\]
+
+\textbf{Intersection:}
+\begin{itemize}
+\item For $x < 0$: intersection with $-\frac{1}{3} \leq x \leq 1$ gives $-\frac{1}{3} \leq x < 0$, i.e., $\left[-\frac{1}{3}, 0\right)$
+\item For $x > \frac{2}{3}$: intersection with $-\frac{1}{3} \leq x \leq 1$ gives $\frac{2}{3} < x \leq 1$, i.e., $\left(\frac{2}{3}, 1\right]$
+\end{itemize}
+
+Domain: $\left[-\frac{1}{3}, 0\right) \cup \left(\frac{2}{3}, 1\right]$
+
+With $a = -\frac{1}{3}$, $b = 0$, $c = \frac{2}{3}$, $d = 1$, this is $[a, b) \cup (c, d]$.
+
+\subsection*{Answer}
+$[a, b) \cup (c, d]$ (option \textbf{A}).
+
+\end{document}
+

@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Vrednost izraza $2^{0.5} - 2^0 - (2^{0.5} + 2^0)^{-1}$ jednaka je:
+
+(A) 0 \quad (B) 1 \quad (C) 2 \quad (D) $\sqrt{2}$ \quad (E) $-\sqrt{2}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let us compute step by step:
+\begin{align*}
+2^{0.5} &= \sqrt{2} \\
+2^0 &= 1 \\
+2^{0.5} + 2^0 &= \sqrt{2} + 1 \\
+(2^{0.5} + 2^0)^{-1} &= \frac{1}{\sqrt{2} + 1}
+\end{align*}
+
+To simplify $\frac{1}{\sqrt{2} + 1}$, we rationalize the denominator:
+\[
+\frac{1}{\sqrt{2} + 1} \cdot \frac{\sqrt{2} - 1}{\sqrt{2} - 1} = \frac{\sqrt{2} - 1}{2 - 1} = \sqrt{2} - 1
+\]
+
+Now we compute the full expression:
+\[
+2^{0.5} - 2^0 - (2^{0.5} + 2^0)^{-1} = \sqrt{2} - 1 - (\sqrt{2} - 1) = \sqrt{2} - 1 - \sqrt{2} + 1 = 0
+\]
+
+\subsection*{Answer}
+$0$ (option \textbf{A}).
+
+\end{document}

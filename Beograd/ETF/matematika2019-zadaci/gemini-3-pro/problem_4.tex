@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 4}
+Ako je $f(x)=x(x+1)(x+2)(x+3)(x+4)$, onda je $f'(-2)$ jednako:
+
+\subsection*{Solution}
+Funkciju možemo zapisati kao $f(x) = (x+2)g(x)$, gde je $g(x) = x(x+1)(x+3)(x+4)$.
+Primenom pravila za izvod proizvoda:
+\[
+f'(x) = (x+2)'g(x) + (x+2)g'(x) = 1 \cdot g(x) + (x+2)g'(x)
+\]
+Za $x=-2$:
+\[
+f'(-2) = g(-2) + (-2+2)g'(-2) = g(-2) + 0 = g(-2)
+\]
+Izračunajmo $g(-2)$:
+\[
+g(-2) = (-2)(-2+1)(-2+3)(-2+4) = (-2)(-1)(1)(2) = 4
+\]
+Dakle, $f'(-2) = 4$.
+
+\subsection*{Answer}
+$4$ (Opcija \textbf{D})
+
+\end{document}

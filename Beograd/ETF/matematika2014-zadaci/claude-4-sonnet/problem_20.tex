@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Iz skupa od 10 studenata, među kojima su samo jedan student elektrotehnike i samo jedan student matematike, biramo komisiju od 6 članova, ali tako da ako je u komisiji student elektrotehnike mora u toj komisiji biti i student matematike. Koliko se takvih komisija može obrazovati?
+
+(A) 210 \quad (B) 98 \quad (C) 126 \quad (D) 154 \quad (E) 165 \quad (N) Ne znam
+
+\subsection*{Solution}
+Imamo 10 studenata: 1 student elektrotehnike (E), 1 student matematike (M), i 8 ostalih studenata.
+
+Trebamo da biramo komisiju od 6 članova sa uslovom: ako je E u komisiji, tada mora biti i M.
+
+Ovo je ekvivalentno sa: E nije u komisiji ILI su i E i M u komisiji.
+
+\textbf{Slučaj 1:} E nije u komisiji
+Biramo 6 članova iz preostalih 9 studenata (M + 8 ostalih):
+\[
+\binom{9}{6} = \binom{9}{3} = \frac{9!}{3! \cdot 6!} = \frac{9 \cdot 8 \cdot 7}{3 \cdot 2 \cdot 1} = \frac{504}{6} = 84
+\]
+
+\textbf{Slučaj 2:} I E i M su u komisiji
+Biramo preostala 4 člana iz 8 ostalih studenata:
+\[
+\binom{8}{4} = \frac{8!}{4! \cdot 4!} = \frac{8 \cdot 7 \cdot 6 \cdot 5}{4 \cdot 3 \cdot 2 \cdot 1} = \frac{1680}{24} = 70
+\]
+
+Ukupan broj komisija je:
+\[
+84 + 70 = 154
+\]
+
+\subsection*{Answer}
+154 (option \textbf{D}).
+
+\end{document}

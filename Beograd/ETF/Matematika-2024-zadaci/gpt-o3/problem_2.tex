@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Odrediti vrednost izraza
+\[
+\frac{(1+i)^{2024}+(1-i)^{2025}i}{(1-i)^{2024}+(1+i)^{2025}i}.
+\]
+
+\subsection*{Rešenje}
+Osnovna ideja je iskoristiti trigonometrijsku (Eulersku) reprezentaciju broja $1\pm i$. Prvo zapišimo:
+\[
+1+i = \sqrt2\,e^{i\pi/4}, \qquad 1-i = \sqrt2\,e^{-i\pi/4}.
+\]
+\medskip
+\textbf{Korak 1.}  Računamo stepena.
+\begin{align*}
+(1+i)^{2024} &= (\sqrt2)^{2024}\,e^{i\,2024\,\pi/4}=2^{1012}\,e^{i\,506\pi}=2^{1012}(-1)^{506}=2^{1012},\\[4pt]
+(1+i)^{2025} &= (1+i)^{2024}(1+i)=2^{1012}\,(\sqrt2)\,e^{i\pi/4}=2^{1012}\,\sqrt2\,e^{i\pi/4},\\[6pt]
+(1-i)^{2024} &= (\sqrt2)^{2024}\,e^{-i\,2024\,\pi/4}=2^{1012}\,e^{-i\,506\pi}=2^{1012},\\[4pt]
+(1-i)^{2025} &= (1-i)^{2024}(1-i)=2^{1012}\,\sqrt2\,e^{-i\pi/4}.
+\end{align*}
+\textbf{Korak 2.}  Sada ubacimo u zadati razlomak i grupišimo $2^{1012}$ (koji će se skratiti).
+\begin{align*}
+\text{Imenilac} &= 2^{1012}\bigl[1+\sqrt2\,e^{i\pi/4}\,i\bigr],\\
+\text{Brojnik} &= 2^{1012}\bigl[1+\sqrt2\,e^{-i\pi/4}\,i\bigr].
+\end{align*}
+\textbf{Korak 3.}  Eliminišimo zajednički faktor $2^{1012}$ i pojednostavimo kompleksne zbirke.
+Koristimo $i e^{\pm i\pi/4}=e^{\pm i\pi/4} i$ (komutativno), a zatim prikažimo te brojeve u dekartovoj formi.
+\[
+ i e^{i\pi/4}=i(\cos\tfrac{\pi}{4}+i\sin\tfrac{\pi}{4})=i\,\tfrac{\sqrt2}{2}+i^{2}\,\tfrac{\sqrt2}{2}=\tfrac{\sqrt2}{2}\,i-\tfrac{\sqrt2}{2}.
+\]
+Analogno
+\[
+ i e^{-i\pi/4}=-\tfrac{\sqrt2}{2}\,i-\tfrac{\sqrt2}{2}.
+\]
+Dakle
+\begin{align*}
+\text{Imenilac} &= 1+\sqrt2\Bigl(\tfrac{\sqrt2}{2}\,i-\tfrac{\sqrt2}{2}\Bigr)=1+(i-1)=i,\\[4pt]
+\text{Brojnik} &= 1+\sqrt2\Bigl(-\tfrac{\sqrt2}{2}\,i-\tfrac{\sqrt2}{2}\Bigr)=1-(i+1)=2+i.
+\end{align*}
+\textbf{Korak 4.}  Konačna vrednost je
+\[
+\frac{2+i}{i}=\frac{(2+i)i^{-1}}{1}=1-2i.
+\]
+
+\subsection*{Odgovor}
+\[ 1-2i \quad (\text{opcija D}) \]
+
+\end{document}

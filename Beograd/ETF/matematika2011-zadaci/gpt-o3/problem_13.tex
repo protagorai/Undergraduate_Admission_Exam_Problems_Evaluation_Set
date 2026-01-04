@@ -1,0 +1,23 @@
+\begin{solution}
+\textbf{Zadatak 13.}
+
+Tražimo ostatak pri deljenju
+\[
+P(x)=x^{243}+x^{81}+x^{27}+x^{9}+x^{3}+x
+\]
+polinomom $x^{2}-1$.  Remainder $R(x)$ je stepena najviše $1$: $R(x)=ax+b$.
+
+Zapažanje: u faktorskom prstenu \(\mathbb R[x]/(x^{2}-1)\) važi identitet $x^{2}=1$.  Svaka parna stepena postaje $1$, svaka neparna ostaje $x$:
+\[
+x^{2k}=1,\qquad x^{2k+1}=x.
+\]
+Kako su svi izlošci u $P$ neparni, svaki se svodi na \emph{isti} element~$x$:
+\[
+P(x) \equiv x+x+x+x+x+x = 6x\pmod{x^{2}-1}.
+\]
+Dakle
+\[
+R(x)=6x.
+\]
+Odgovor: \boxed{6x}\;\Rightarrow\;(E).
+\end{solution}

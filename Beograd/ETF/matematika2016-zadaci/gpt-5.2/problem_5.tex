@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+In an increasing arithmetic progression of $11$ terms, the $1$st, $5$th, and $11$th terms form the first three terms of a geometric progression. If the first term is $24$, find the sum of all $11$ terms.
+
+\subsection*{Solution}
+Let the arithmetic progression be $a, a+d, \dots, a+10d$ with $a=24$ and $d>0$.
+Then
+\[
+T_1=a,\qquad T_5=a+4d,\qquad T_{11}=a+10d.
+\]
+These three numbers are in geometric progression, so the middle squared equals the product of the ends:
+\[
+(a+4d)^2=a(a+10d).
+\]
+Substitute $a=24$:
+\[
+(24+4d)^2=24(24+10d).
+\]
+Expand:
+\[
+576+192d+16d^2=576+240d \;\Rightarrow\; 16d^2-48d=0
+\;\Rightarrow\; 16d(d-3)=0.
+\]
+Since $d>0$, we get $d=3$.
+The sum of $11$ terms is
+\[
+S_{11}=\frac{11}{2}\bigl(2a+10d\bigr)
+=\frac{11}{2}\bigl(48+30\bigr)=\frac{11}{2}\cdot 78=429.
+\]
+
+\subsection*{Answer}
+$429$ (option \textbf{D}).
+
+\end{document}
+

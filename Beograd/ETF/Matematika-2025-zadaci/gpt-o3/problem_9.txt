@@ -1,0 +1,2 @@
+9. Skup svih realnih rešenja nejednačine √{x+3} − 4√{x−1} + √{x+3} + 4√{x−1} ≥ 4 je oblika (za −∞ < a < b < c < ∞):
+(A) [a,+∞)   (B) (−∞,a] ∪ (b,+∞)   (C) (a,b) ∪ {c}   (D) (−∞,a] ∪ [b,c]   (E) [a,b] ∪ [c,+∞)   (N) Ne znam

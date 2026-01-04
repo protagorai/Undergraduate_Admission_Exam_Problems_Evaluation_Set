@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Skup svih realnih resenja nejednacine
+\[
+\ln(x+1)>x^2+3x+3
+\]
+je oblika (za neke realne brojeve $a,b$ takve da $-1<a<b<+\infty$):
+\[
+\text{(A) }(-1,a)\cup(b,+\infty)\quad
+\text{(B) }(-1,a)\quad
+\text{(C) }(a,b)\quad
+\text{(D) }(a,+\infty)\quad
+\text{(E) nijedan od ponudjenih.}
+\]
+
+\subsection*{Solution}
+Definisimo funkciju na domenu $x>-1$:
+\[
+g(x)=\ln(x+1)-(x^2+3x+3).
+\]
+Trazimo gde je $g(x)>0$.
+Derivat je
+\[
+g'(x)=\frac{1}{x+1}-(2x+3).
+\]
+Jednacina $g'(x)=0$ daje
+\[
+\frac{1}{x+1}=2x+3\ \Longleftrightarrow\ 1=(2x+3)(x+1)=2x^2+5x+3,
+\]
+odnosno
+\[
+2x^2+5x+2=0 \ \Longrightarrow\ x=-2,\ -\frac12.
+\]
+Od toga je u domenu samo $x=-\frac12$.
+Dalje,
+\[
+g''(x)=-\frac{1}{(x+1)^2}-2<0,
+\]
+pa je $x=-\frac12$ globalni maksimum funkcije $g$ na $(-1,+\infty)$.
+Racunamo
+\[
+g\!\left(-\frac12\right)=\ln\!\left(\frac12\right)-\left(\frac14-\frac32+3\right)
+ =-\ln 2-\frac74<0.
+\]
+Dakle je i maksimum negativan, pa je $g(x)\le g(-\tfrac12)<0$ za sve $x>-1$.
+Zato nejednacina nema realnih resenja.
+
+\subsection*{Answer}
+Prazan skup (option \textbf{E}).
+
+\end{document}
+

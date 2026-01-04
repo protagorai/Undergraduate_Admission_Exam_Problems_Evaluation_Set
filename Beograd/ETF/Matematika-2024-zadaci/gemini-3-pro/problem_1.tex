@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 1}
+Za $a \in \mathbb{R}, a \neq 3$ izraz $\frac{a^3-27}{(a-3)^2} \cdot \frac{a^2-2a-3}{(a+3)^2-3a}$ je jednak:
+
+\subsection*{Solution}
+Počnimo sa uprošćavanjem pojedinačnih delova izraza.
+
+Prvi razlomak:
+Brojilac: $a^3 - 27$ je razlika kubova. Formula: $x^3 - y^3 = (x-y)(x^2+xy+y^2)$.
+\[ a^3 - 3^3 = (a-3)(a^2 + 3a + 9) \]
+Imenilac: $(a-3)^2$.
+
+Drugi razlomak:
+Brojilac: $a^2 - 2a - 3$. Ovo je kvadratni trinom. Nule su $a = \frac{2 \pm \sqrt{4+12}}{2} = \frac{2 \pm 4}{2}$, tj. $a=3$ i $a=-1$.
+Dakle, $a^2 - 2a - 3 = (a-3)(a+1)$.
+Imenilac: $(a+3)^2 - 3a = a^2 + 6a + 9 - 3a = a^2 + 3a + 9$.
+
+Sada zamenimo sve u polazni izraz:
+\[
+\frac{(a-3)(a^2+3a+9)}{(a-3)^2} \cdot \frac{(a-3)(a+1)}{a^2+3a+9}
+\]
+Skratimo $(a^2+3a+9)$ u brojiocu prvog i imeniocu drugog dela (pošto $a^2+3a+9 = (a+1.5)^2 + 6.75 > 0$, nije nula).
+\[
+\frac{a-3}{(a-3)^2} \cdot \frac{(a-3)(a+1)}{1}
+\]
+\[
+\frac{a-3}{a-3} \cdot \frac{a+1}{1} \cdot \frac{a-3}{a-3}
+\]
+Pažljivije:
+\[
+\frac{a^3-27}{(a-3)^2} = \frac{a^2+3a+9}{a-3}
+\]
+Množimo sa drugim delom:
+\[
+\frac{a^2+3a+9}{a-3} \cdot \frac{(a-3)(a+1)}{a^2+3a+9}
+\]
+Skratimo $a^2+3a+9$ i $a-3$:
+\[
+1 \cdot (a+1) = a+1
+\]
+Uslov $a \neq 3$ je dat.
+
+\subsection*{Answer}
+$a+1$ (option \textbf{C}).
+
+\end{document}
+

@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako su $x_1$ i $x_2$ rešenja kvadratne jednačine $x^2 + x + 1 = 0$, tada su $y_1 = ax_1 + x_2$ i $y_2 = x_1 + ax_2$, ($a \in \mathbf{R}$), rešenja kvadratne jednačine:
+
+\subsection*{Solution}
+Iz vijetovih formula za $x^2+x+1=0$ imamo:
+$x_1 + x_2 = -1$
+$x_1 x_2 = 1$
+
+Tražimo jednačinu $y^2 - Sy + P = 0$ gde je:
+$S = y_1 + y_2 = (ax_1 + x_2) + (x_1 + ax_2) = (a+1)(x_1+x_2) = (a+1)(-1) = -(a+1)$.
+$P = y_1 y_2 = (ax_1 + x_2)(x_1 + ax_2) = ax_1^2 + a^2x_1x_2 + x_1x_2 + ax_2^2 = a(x_1^2+x_2^2) + (a^2+1)x_1x_2$.
+
+Izračunajmo $x_1^2+x_2^2$:
+$x_1^2+x_2^2 = (x_1+x_2)^2 - 2x_1x_2 = (-1)^2 - 2(1) = 1-2 = -1$.
+
+Zamenimo u izraz za $P$:
+$P = a(-1) + (a^2+1)(1) = -a + a^2 + 1 = a^2 - a + 1$.
+
+Jednačina je:
+$y^2 - (-(a+1))y + (a^2 - a + 1) = 0$
+$y^2 + (a+1)y + a^2 - a + 1 = 0$.
+
+\subsection*{Answer}
+$y^2 + (a+1)y + a^2 - a + 1 = 0$ (option \textbf{C}).
+
+\end{document}

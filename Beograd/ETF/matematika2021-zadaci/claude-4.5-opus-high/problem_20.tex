@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Granična vrednost $\displaystyle\lim_{x \to 0} \frac{1 - \cos x \cos(2x) \cos(3x)}{1 - \cos x}$ jednaka je:
+
+\subsection*{Solution}
+Koristimo Tejlorov razvoj za $\cos u \approx 1 - \frac{u^2}{2} + O(u^4)$ za malo $u$.
+
+\[
+\cos x \approx 1 - \frac{x^2}{2}
+\]
+\[
+\cos(2x) \approx 1 - \frac{4x^2}{2} = 1 - 2x^2
+\]
+\[
+\cos(3x) \approx 1 - \frac{9x^2}{2}
+\]
+
+Proizvod:
+\[
+\cos x \cos(2x) \cos(3x) \approx \left(1 - \frac{x^2}{2}\right)\left(1 - 2x^2\right)\left(1 - \frac{9x^2}{2}\right)
+\]
+
+Zadržavamo samo članove do $x^2$:
+\[
+\approx 1 - \frac{x^2}{2} - 2x^2 - \frac{9x^2}{2} + O(x^4)
+\]
+\[
+= 1 - \left(\frac{1}{2} + 2 + \frac{9}{2}\right)x^2 = 1 - 7x^2
+\]
+
+Brojilac:
+\[
+1 - \cos x \cos(2x) \cos(3x) \approx 7x^2
+\]
+
+Imenilac:
+\[
+1 - \cos x \approx \frac{x^2}{2}
+\]
+
+Granična vrednost:
+\[
+\lim_{x \to 0} \frac{7x^2}{\frac{x^2}{2}} = \frac{7x^2 \cdot 2}{x^2} = 14
+\]
+
+\subsection*{Answer}
+$14$ (option \textbf{B}).
+
+\end{document}

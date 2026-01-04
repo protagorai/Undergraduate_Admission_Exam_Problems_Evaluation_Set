@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 16}
+Najmanja vrednost rastojanja tačke \(M(0,1)\) od tačaka \((x,y)\) takvih da je
+\[
+y=1+\frac{1}{4\sqrt{3}\,x^{3/2}},\qquad x>0,
+\]
+iznosi:
+
+\subsection*{Rešenje}
+Rastojanje do \(M(0,1)\) je
+\[
+d=\sqrt{x^2+(y-1)^2}.
+\]
+Ovde je \(y-1=\dfrac{1}{4\sqrt{3}\,x^{3/2}}\), pa minimizujemo
+\[
+d^2=f(x)=x^2+\left(\frac{1}{4\sqrt{3}\,x^{3/2}}\right)^2
+=x^2+\frac{1}{48x^3},\qquad x>0.
+\]
+Derivacija:
+\[
+f'(x)=2x-\frac{1}{16}x^{-4}.
+\]
+Uslov minimuma \(f'(x)=0\) daje
+\[
+2x=\frac{1}{16}x^{-4}\Rightarrow 2x^5=\frac{1}{16}\Rightarrow x^5=\frac{1}{32}\Rightarrow x=\frac12.
+\]
+Tada je
+\[
+f\!\left(\frac12\right)=\left(\frac12\right)^2+\frac{1}{48\left(\frac12\right)^3}
+=\frac14+\frac{1}{48\cdot \frac18}=\frac14+\frac{1}{6}=\frac{5}{12}.
+\]
+Zato je
+\[
+d_{\min}=\sqrt{\frac{5}{12}}=\frac12\sqrt{\frac{5}{3}}.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\ \frac12\sqrt{\frac{5}{3}}}
+\]
+\end{document}
+

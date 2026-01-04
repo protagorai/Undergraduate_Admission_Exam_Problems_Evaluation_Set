@@ -1,0 +1,2 @@
+Zbir svih celobrojnih vrednosti $x$ takvih da važi jednakost $|5-|x|| = 5-|x|$ je:
+A) 12; B) 10; C) 5; D) 2; E) 0; N) Ne znam.

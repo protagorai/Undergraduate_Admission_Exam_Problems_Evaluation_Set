@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Broj realnih rešenja sistema jednačina $x^2 + 3xy + 2y^2 = 0$, $\cos^2 x + \cos^2 y = 1$, za $x \in [-\pi, 0]$ i $y \in [0, \pi]$, je:
+
+(A) 2 \quad (B) 5 \quad (C) veći od 5 \quad (D) 4 \quad (E) 3
+
+\subsection*{Solution}
+Prva jednačina: $x^2 + 3xy + 2y^2 = 0$.
+Rastavljamo na činioce: $x^2 + xy + 2xy + 2y^2 = x(x+y) + 2y(x+y) = (x+2y)(x+y) = 0$.
+Slučaj 1: $x = -y$.
+Slučaj 2: $x = -2y$.
+
+Druga jednačina: $\cos^2 x + \cos^2 y = 1$.
+
+Analiza slučaja 1: $x = -y$.
+Zamenimo u drugu jednačinu: $\cos^2(-y) + \cos^2 y = 1 \Rightarrow 2\cos^2 y = 1 \Rightarrow \cos^2 y = 1/2$.
+$\cos y = \pm \frac{\sqrt{2}}{2}$.
+Uslov za $y$: $y \in [0, \pi]$.
+Rešenja za $y$: $y = \pi/4$ i $y = 3\pi/4$.
+Odgovarajuća $x$: $x = -\pi/4$ i $x = -3\pi/4$.
+Provera uslova za $x \in [-\pi, 0]$: oba su u intervalu.
+Dakle parovi: $(-\pi/4, \pi/4)$ i $(-3\pi/4, 3\pi/4)$.
+
+Analiza slučaja 2: $x = -2y$.
+Zamenimo u drugu jednačinu: $\cos^2(-2y) + \cos^2 y = 1 \Rightarrow \cos^2 2y + \cos^2 y = 1$.
+$\cos 2y = 2\cos^2 y - 1$.
+$(2\cos^2 y - 1)^2 + \cos^2 y = 1$.
+Neka je $t = \cos^2 y$.
+$(2t-1)^2 + t = 1$.
+$4t^2 - 4t + 1 + t = 1$.
+$4t^2 - 3t = 0 \Rightarrow t(4t-3) = 0$.
+$t_1 = 0, t_2 = 3/4$.
+
+Podslučaj 2a: $\cos^2 y = 0$.
+$y = \pi/2$ (u intervalu $[0, \pi]$).
+Tada $x = -2(\pi/2) = -\pi$. U intervalu $[-\pi, 0]$.
+Par: $(-\pi, \pi/2)$.
+
+Podslučaj 2b: $\cos^2 y = 3/4$.
+$\cos y = \pm \frac{\sqrt{3}}{2}$.
+Za $y \in [0, \pi]$:
+$y_1 = \pi/6$ ($\cos = \sqrt{3}/2$).
+$y_2 = 5\pi/6$ ($\cos = -\sqrt{3}/2$).
+
+Ako $y = \pi/6 \Rightarrow x = -2\pi/6 = -\pi/3$. U intervalu. Par: $(-\pi/3, \pi/6)$.
+Ako $y = 5\pi/6 \Rightarrow x = -10\pi/6 = -5\pi/3$.
+$-5\pi/3 = -1.66\pi$.
+Interval za $x$ je $[-\pi, 0]$.
+$-1.66\pi < -\pi$, pa ovo rešenje otpada.
+
+Ukupno rešenja:
+Iz slučaja 1: 2 rešenja.
+Iz slučaja 2: 2 rešenja.
+Ukupno 4 rešenja.
+
+\subsection*{Answer}
+$4$ (opcija \textbf{(D)}).
+
+\end{document}

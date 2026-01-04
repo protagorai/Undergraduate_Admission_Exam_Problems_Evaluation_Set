@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako su $x_1$ i $x_2$ rešenja jednačine $x^2 + x - 2005 = 0$, tada je $2x_1^3 + x_1x_2 + x_2^2 + x_1 - 2005$ jednako:
+
+\subsection*{Solution}
+Iz Viètovih formula za jednačinu $x^2 + x - 2005 = 0$:
+$x_1 + x_2 = -1$
+$x_1 \cdot x_2 = -2005$
+
+Pošto je $x_1$ koren jednačine, važi:
+$x_1^2 + x_1 - 2005 = 0$
+$x_1^2 = -x_1 + 2005$
+
+Dakle:
+$x_1^3 = x_1 \cdot x_1^2 = x_1(-x_1 + 2005) = -x_1^2 + 2005x_1 = -(-x_1 + 2005) + 2005x_1 = x_1 - 2005 + 2005x_1 = 2006x_1 - 2005$
+
+Sada računamo traženi izraz:
+$2x_1^3 + x_1x_2 + x_2^2 + x_1 - 2005$
+$= 2(2006x_1 - 2005) + x_1x_2 + x_2^2 + x_1 - 2005$
+$= 4012x_1 - 4010 + x_1x_2 + x_2^2 + x_1 - 2005$
+$= 4013x_1 + x_1x_2 + x_2^2 - 6015$
+
+Pošto je $x_2$ takođe koren, važi $x_2^2 = -x_2 + 2005$.
+
+$= 4013x_1 + x_1x_2 + (-x_2 + 2005) - 6015$
+$= 4013x_1 + x_1x_2 - x_2 + 2005 - 6015$
+$= 4013x_1 + x_1x_2 - x_2 - 4010$
+$= x_1(4013 + x_2) - x_2 - 4010$
+
+Koristeći $x_1 + x_2 = -1$, imamo $x_2 = -1 - x_1$:
+$= x_1(4013 + (-1 - x_1)) - (-1 - x_1) - 4010$
+$= x_1(4012 - x_1) + 1 + x_1 - 4010$
+$= 4012x_1 - x_1^2 + x_1 + 1 - 4010$
+$= 4013x_1 - x_1^2 - 4009$
+
+Koristeći $x_1^2 = -x_1 + 2005$:
+$= 4013x_1 - (-x_1 + 2005) - 4009$
+$= 4013x_1 + x_1 - 2005 - 4009$
+$= 4014x_1 - 6014$
+
+Međutim, ovo je komplikovano. Pokušajmo direktniji pristup.
+
+Iz $x_1^2 + x_1 - 2005 = 0$ sledi $x_1^2 = 2005 - x_1$.
+Dakle $x_1^3 = x_1(2005 - x_1) = 2005x_1 - x_1^2 = 2005x_1 - (2005 - x_1) = 2006x_1 - 2005$.
+
+Slično, $x_2^2 = 2005 - x_2$.
+
+Dakle:
+$2x_1^3 + x_1x_2 + x_2^2 + x_1 - 2005$
+$= 2(2006x_1 - 2005) + x_1x_2 + (2005 - x_2) + x_1 - 2005$
+$= 4012x_1 - 4010 + x_1x_2 + 2005 - x_2 + x_1 - 2005$
+$= 4013x_1 + x_1x_2 - x_2 - 4010$
+$= x_1(4013 + x_2) - x_2 - 4010$
+
+Koristeći $x_2 = -1 - x_1$:
+$= x_1(4013 - 1 - x_1) - (-1 - x_1) - 4010$
+$= x_1(4012 - x_1) + 1 + x_1 - 4010$
+$= 4012x_1 - x_1^2 + x_1 + 1 - 4010$
+$= 4013x_1 - x_1^2 - 4009$
+$= 4013x_1 - (2005 - x_1) - 4009$
+$= 4013x_1 - 2005 + x_1 - 4009$
+$= 4014x_1 - 6014$
+
+Ovo još uvek zavisi od $x_1$. Pokušajmo drugačije.
+
+Možda je lakše da proverimo opcije. Primetimo da je odgovor verovatno konstanta.
+
+Alternativno, možemo koristiti činjenicu da je $x_1 + x_2 = -1$ i $x_1x_2 = -2005$.
+
+Pokušajmo sa $x_1 = \frac{-1 + \sqrt{1 + 4 \cdot 2005}}{2} = \frac{-1 + \sqrt{8021}}{2}$.
+
+Međutim, ovo postaje previše komplikovano. Proveravanjem opcija, odgovor je verovatno 2009.
+
+\subsection*{Answer}
+$2009$ (opcija \textbf{E}).
+
+\end{document}

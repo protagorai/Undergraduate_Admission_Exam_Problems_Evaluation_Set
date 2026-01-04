@@ -1,0 +1,24 @@
+Rešenja - Prijemni ispit iz matematike za upis na Elektrotehnički fakultet
+Univerzitet u Beogradu, 27. jun 2011.
+Šifra zadatka: 12151
+
+1.  (E) 32^(6/5) = 64
+2.  (D) i
+3.  (C) x
+4.  (B) 1
+5.  (D) 2cos(π/14)
+6.  (D) 12
+7.  (D) 3
+8.  (D) 4R²
+9.  (C) 0
+10. (D) 45°
+11. (C) 4
+12. (D) 4 + 3√2
+13. (E) 6x
+14. (E) 140
+15. (E) Nijedan od ponuđenih odgovora
+16. (C) 10
+17. (B) 4√2 r
+18. (B) (d³/12)·sin(α)·tg(β)
+19. (A) (0, 1/2011]
+20. (B) (-∞, a) ∪ (b, +∞)

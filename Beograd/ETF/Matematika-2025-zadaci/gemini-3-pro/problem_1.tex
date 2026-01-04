@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Ako je $x = 2^{p/q}$ rešenje jednačine $\sqrt{x\sqrt{x\sqrt{x\sqrt{x\sqrt{x}}}}} = 2$, za neke uzajamno proste prirodne brojeve $p$ i $q$, tada je $p+q$ jednako:
+
+\subsection*{Solution}
+
+The given equation is
+\[
+\sqrt{x\sqrt{x\sqrt{x\sqrt{x\sqrt{x}}}}} = 2.
+\]
+The exponent of $x$ on the left hand side is
+\[
+\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \frac{1}{32} = \frac{16+8+4+2+1}{32} = \frac{31}{32}.
+\]
+Thus, $x^{31/32} = 2$.
+Substituting $x = 2^{p/q}$, we get
+\[
+(2^{p/q})^{31/32} = 2^1 \implies 2^{\frac{31p}{32q}} = 2^1.
+\]
+So $\frac{31p}{32q} = 1$, which means $\frac{p}{q} = \frac{32}{31}$.
+Since 32 and 31 are coprime natural numbers, we have $p=32$ and $q=31$.
+We need to find $p+q$:
+\[
+p+q = 32 + 31 = 63.
+\]
+
+
+\subsection*{Answer}
+63 (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Koliko rešenja ima jednačina $\cos^2 x - \sin^2 2x = 0$ na segmentu $[0, 2\pi]$ ?
+\[
+(A)\ 1 \quad (B)\ 6 \quad (C)\ 4 \quad (D)\ 2 \quad (E)\ 3 \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Koristimo formulu $\sin 2x = 2\sin x \cos x$:
+\[
+\cos^2 x - (2\sin x \cos x)^2 = 0
+\]
+\[
+\cos^2 x - 4\sin^2 x \cos^2 x = 0
+\]
+\[
+\cos^2 x (1 - 4\sin^2 x) = 0
+\]
+Ovo daje dva slučaja:
+1) $\cos^2 x = 0 \Rightarrow \cos x = 0$.
+Na intervalu $[0, 2\pi]$, rešenja su $x = \frac{\pi}{2}$ i $x = \frac{3\pi}{2}$. (2 rešenja)
+
+2) $1 - 4\sin^2 x = 0 \Rightarrow \sin^2 x = \frac{1}{4} \Rightarrow \sin x = \pm \frac{1}{2}$.
+Ako je $\sin x = \frac{1}{2}$, rešenja na $[0, 2\pi]$ su $x = \frac{\pi}{6}$ i $x = \frac{5\pi}{6}$.
+Ako je $\sin x = -\frac{1}{2}$, rešenja na $[0, 2\pi]$ su $x = \frac{7\pi}{6}$ i $x = \frac{11\pi}{6}$.
+(Ukupno 4 rešenja iz ovog slučaja).
+
+Ukupan broj rešenja je $2 + 4 = 6$.
+
+\subsection*{Answer}
+6 (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Find the number of integer solutions of
+\[
+3\cdot 16^x + 2\cdot 81^x \le 5\cdot 36^x.
+\]
+
+\subsection*{Solution}
+Divide by $36^x>0$:
+\[
+3\left(\frac{16}{36}\right)^x + 2\left(\frac{81}{36}\right)^x \le 5
+\;\Longleftrightarrow\;
+3\left(\frac49\right)^x + 2\left(\frac94\right)^x \le 5.
+\]
+Let $a=\left(\frac94\right)^x>0$. Then $\left(\frac49\right)^x=\frac1a$, so
+\[
+\frac{3}{a}+2a\le 5
+\;\Longleftrightarrow\;
+3+2a^2\le 5a
+\;\Longleftrightarrow\;
+2a^2-5a+3\le 0.
+\]
+The roots are
+\[
+a=\frac{5\pm 1}{4}\in\left\{1,\frac32\right\},
+\]
+so $a\in\left[1,\frac32\right]$.
+Since $\left(\frac94\right)^x$ is increasing, this gives $x\in\left[0,\log_{9/4}\frac32\right]$.
+Because $\left(\frac94\right)^1=\frac94> \frac32$, the only integer solution is $x=0$.
+
+Hence the number of integer solutions is $1$.
+
+\subsection*{Answer}
+$1$ (option \textbf{A}).
+
+\end{document}
+
+
+
+
+
+
+
+

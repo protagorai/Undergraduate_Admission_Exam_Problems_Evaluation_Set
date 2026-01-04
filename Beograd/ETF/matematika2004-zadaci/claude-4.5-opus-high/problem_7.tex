@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Ako su $x_1$ i $x_2$ rešenja jednačine $ax^2 + bx + c = 0$, tada su $x_1^3$ i $x_2^3$ rešenja jednačine:
+
+A) $a^3x^2 - b^3x + a^3 + c^3 = 0$; \quad B) $a^3x^2 + b^3x + c^3 + 1 = 0$; \quad C) $a^3x^2 + b(b^2-3ac)x + c^3 = 0$; 
+
+D) $a^3x^2 + (b^3 - 4abc)x + c^3 = 0$; \quad E) $x^2 + (a^3+b^3)x + a^3 + b^3 + c^3 = 0$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Po Vijetovim formulama za originalnu jednačinu:
+\[
+x_1 + x_2 = -\frac{b}{a}, \quad x_1 \cdot x_2 = \frac{c}{a}
+\]
+
+Za novu jednačinu sa korenima $x_1^3$ i $x_2^3$, treba nam:
+\[
+x_1^3 + x_2^3 \quad \text{i} \quad x_1^3 \cdot x_2^3
+\]
+
+Računamo:
+\[
+x_1^3 \cdot x_2^3 = (x_1 x_2)^3 = \left(\frac{c}{a}\right)^3 = \frac{c^3}{a^3}
+\]
+
+Za zbir kubova koristimo identitet:
+\[
+x_1^3 + x_2^3 = (x_1 + x_2)^3 - 3x_1x_2(x_1 + x_2)
+\]
+\[
+= \left(-\frac{b}{a}\right)^3 - 3 \cdot \frac{c}{a} \cdot \left(-\frac{b}{a}\right)
+\]
+\[
+= -\frac{b^3}{a^3} + \frac{3bc}{a^2} = \frac{-b^3 + 3abc}{a^3} = -\frac{b^3 - 3abc}{a^3} = -\frac{b(b^2-3ac)}{a^3}
+\]
+
+Jednačina sa korenima $x_1^3$ i $x_2^3$ je:
+\[
+x^2 - (x_1^3 + x_2^3)x + x_1^3 x_2^3 = 0
+\]
+\[
+x^2 + \frac{b(b^2-3ac)}{a^3}x + \frac{c^3}{a^3} = 0
+\]
+
+Množeći sa $a^3$:
+\[
+a^3x^2 + b(b^2-3ac)x + c^3 = 0
+\]
+
+\subsection*{Odgovor}
+$a^3x^2 + b(b^2-3ac)x + c^3 = 0$ (opcija \textbf{C}).
+
+\end{document}

@@ -1,0 +1,12 @@
+Problem 16
+Granična vrednost
+
+    \lim_{x \to 0} \frac{e^{\sin^2 x} - \cos x}{\sqrt{x^2 + 1} - 1}
+
+iznosi:
+(A) 1
+(B) 2
+(C) e
+(D) 3
+(E) e^2
+(N) Ne znam

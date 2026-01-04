@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Ako su $x_1$ i $x_2$ rešenja jednačine $3x^2 + 17x - 14 = 0$, tada je vrednost izraza $\frac{3x_1^2 + 5x_1x_2 + 3x_2^2}{4x_1x_2^2 + 4x_1^2x_2}$ jednaka :
+\[
+(A)\ \frac{909}{952} \quad (B)\ \frac{303}{238} \quad (C)\ \frac{101}{352} \quad (D)\ \frac{5}{9} \quad (E)\ \frac{13}{3} \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Na osnovu Vijetovih formula za jednačinu $3x^2 + 17x - 14 = 0$, imamo:
+\[
+x_1 + x_2 = -\frac{17}{3}
+\]
+\[
+x_1 x_2 = -\frac{14}{3}
+\]
+Transformišimo izraz koji treba izračunati:
+Brojilac:
+\[
+3x_1^2 + 5x_1x_2 + 3x_2^2 = 3(x_1^2 + x_2^2) + 5x_1x_2 = 3((x_1+x_2)^2 - 2x_1x_2) + 5x_1x_2
+\]
+\[
+= 3(x_1+x_2)^2 - 6x_1x_2 + 5x_1x_2 = 3(x_1+x_2)^2 - x_1x_2
+\]
+Zamenom vrednosti:
+\[
+3\left(-\frac{17}{3}\right)^2 - \left(-\frac{14}{3}\right) = 3 \cdot \frac{289}{9} + \frac{14}{3} = \frac{289}{3} + \frac{14}{3} = \frac{303}{3} = 101
+\]
+Imenilac:
+\[
+4x_1x_2^2 + 4x_1^2x_2 = 4x_1x_2(x_2 + x_1)
+\]
+Zamenom vrednosti:
+\[
+4\left(-\frac{14}{3}\right)\left(-\frac{17}{3}\right) = 4 \cdot \frac{238}{9} = \frac{952}{9}
+\]
+Vrednost celog izraza:
+\[
+\frac{101}{\frac{952}{9}} = \frac{909}{952}
+\]
+
+\subsection*{Answer}
+$\frac{909}{952}$ (option \textbf{A}).
+
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Izra\v{c}unati vrednost izraza
+\[
+\left(\frac{x-9}{x+3\sqrt{x}+9}:\frac{x^{0.5}+3}{x^{1.5}-27}\right)^{0.5}-x^{0.5},
+\qquad x\in(9,+\infty).
+\]
+
+\subsection*{Solution}
+Neka je $t=\sqrt{x}$, pa je $t>3$ i $x=t^2$.
+Tada va\v{z}i
+\[
+\frac{x-9}{x+3\sqrt{x}+9}=\frac{t^2-9}{t^2+3t+9}=\frac{(t-3)(t+3)}{t^2+3t+9},
+\]
+kao i
+\[
+\frac{x^{0.5}+3}{x^{1.5}-27}=\frac{t+3}{t^3-27}
+=\frac{t+3}{(t-3)(t^2+3t+9)}.
+\]
+Zato je koli\v{c}nik u zagradi
+\begin{align*}
+\frac{\frac{x-9}{x+3\sqrt{x}+9}}{\frac{x^{0.5}+3}{x^{1.5}-27}}
+&=
+\frac{(t-3)(t+3)}{t^2+3t+9}\cdot
+\frac{(t-3)(t^2+3t+9)}{t+3}
+=(t-3)^2.
+\end{align*}
+Sledi
+\[
+\left((t-3)^2\right)^{0.5} = |t-3| = t-3 \quad (t>3).
+\]
+Zato je ceo izraz jednak
+\[
+(t-3)-t=-3.
+\]
+
+\subsection*{Answer}
+$-3$ (option \textbf{C}).
+
+\end{document}
+

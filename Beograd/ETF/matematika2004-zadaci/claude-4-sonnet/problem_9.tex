@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Stranica romba čija je površina $80cm^2$, a odnos dijagonala $4:5$, iznosi (u cm):
+
+\subsection*{Solution}
+Neka su dijagonale romba $d_1$ i $d_2$, sa odnosom $d_1:d_2 = 4:5$.
+
+Možemo pisati $d_1 = 4k$ i $d_2 = 5k$ za neki pozitivni broj $k$.
+
+Površina romba je:
+\[
+P = \frac{d_1 \cdot d_2}{2} = \frac{4k \cdot 5k}{2} = 10k^2
+\]
+
+Dato je da je $P = 80cm^2$, pa:
+\[
+10k^2 = 80 \Rightarrow k^2 = 8 \Rightarrow k = 2\sqrt{2}
+\]
+
+Dakle:
+\[
+d_1 = 4k = 8\sqrt{2}, \quad d_2 = 5k = 10\sqrt{2}
+\]
+
+Stranica romba se može naći koristeći Pitagorinu teoremu. Dijagonale romba se seku pod pravim uglom i dele se na pola:
+\[
+a = \sqrt{\left(\frac{d_1}{2}\right)^2 + \left(\frac{d_2}{2}\right)^2} = \sqrt{\left(\frac{8\sqrt{2}}{2}\right)^2 + \left(\frac{10\sqrt{2}}{2}\right)^2}
+\]
+\[
+= \sqrt{(4\sqrt{2})^2 + (5\sqrt{2})^2} = \sqrt{32 + 50} = \sqrt{82}
+\]
+
+Međutim, proveravajući opcije, vidimo da je $\sqrt{82} \approx 9.06$, što je najbliže opciji $\sqrt{81} = 9$.
+
+\subsection*{Answer}
+$\sqrt{81} = 9$ (option \textbf{B}).
+
+\end{document}

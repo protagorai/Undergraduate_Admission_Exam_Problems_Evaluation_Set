@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Skup svih realnih rešenja nejednačine $\frac{1}{4^{\sqrt{x-1}-1}} - \frac{5}{2^{\sqrt{x-1}}} + 1 \geq 0$ je oblika (za neke $a, b \in R$, takve da je $a < b$):
+
+(A) $[a, \infty)$ \quad (B) $(-\infty, a] \cup \{b\}$ \quad (C) $\{a\} \cup [b, \infty)$ \quad (D) $[a, b)$ \quad (E) $\{a, b\}$
+
+\subsection*{Solution}
+Domen: $x - 1 \geq 0$, tj. $x \geq 1$.
+
+Označimo $t = 2^{\sqrt{x-1}}$. Pošto je $\sqrt{x-1} \geq 0$, imamo $t \geq 2^0 = 1$.
+
+Primetimo da je $4^{\sqrt{x-1}-1} = \frac{4^{\sqrt{x-1}}}{4} = \frac{(2^2)^{\sqrt{x-1}}}{4} = \frac{2^{2\sqrt{x-1}}}{4} = \frac{t^2}{4}$.
+
+Nejednačina postaje:
+\[
+\frac{1}{\frac{t^2}{4}} - \frac{5}{t} + 1 \geq 0
+\]
+\[
+\frac{4}{t^2} - \frac{5}{t} + 1 \geq 0
+\]
+
+Množimo sa $t^2 > 0$:
+\[
+4 - 5t + t^2 \geq 0
+\]
+\[
+t^2 - 5t + 4 \geq 0
+\]
+\[
+(t - 1)(t - 4) \geq 0
+\]
+
+Ovo važi za $t \leq 1$ ili $t \geq 4$.
+
+Pošto je $t \geq 1$, imamo $t = 1$ ili $t \geq 4$.
+
+\textbf{Slučaj 1:} $t = 1$, tj. $2^{\sqrt{x-1}} = 1 = 2^0 \Rightarrow \sqrt{x-1} = 0 \Rightarrow x = 1$
+
+\textbf{Slučaj 2:} $t \geq 4$, tj. $2^{\sqrt{x-1}} \geq 4 = 2^2 \Rightarrow \sqrt{x-1} \geq 2 \Rightarrow x - 1 \geq 4 \Rightarrow x \geq 5$
+
+Skup rešenja: $\{1\} \cup [5, +\infty)$
+
+Dakle $a = 1$ i $b = 5$.
+
+\subsection*{Answer}
+$\{a\} \cup [b, \infty)$ (opcija \textbf{(C)}).
+
+\end{document}
+

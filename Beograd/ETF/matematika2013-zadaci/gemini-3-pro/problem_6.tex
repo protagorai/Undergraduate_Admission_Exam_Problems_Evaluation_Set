@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 6}
+Ako je $\frac{\cos(\alpha+\beta)}{\cos(\alpha-\beta)} = \frac{1}{3}$ ($\alpha, \beta \ne \frac{\pi}{2} + k\pi, \alpha-\beta \ne \frac{\pi}{2} + m\pi, k,m \in \mathbf{Z}$), tada je $\text{tg}\alpha \cdot \text{tg}\beta$ jednako:
+\[ (A)\ \frac{1}{3} \quad (B)\ \frac{1}{2} \quad (C)\ 1 \quad (D)\ \frac{1}{4} \quad (E)\ \frac{2}{3} \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Expand the cosine terms:
+\[ \frac{\cos\alpha\cos\beta - \sin\alpha\sin\beta}{\cos\alpha\cos\beta + \sin\alpha\sin\beta} = \frac{1}{3} \]
+Cross-multiply:
+\[ 3(\cos\alpha\cos\beta - \sin\alpha\sin\beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta \]
+\[ 3\cos\alpha\cos\beta - 3\sin\alpha\sin\beta = \cos\alpha\cos\beta + \sin\alpha\sin\beta \]
+Group like terms:
+\[ 3\cos\alpha\cos\beta - \cos\alpha\cos\beta = \sin\alpha\sin\beta + 3\sin\alpha\sin\beta \]
+\[ 2\cos\alpha\cos\beta = 4\sin\alpha\sin\beta \]
+Divide by $2\cos\alpha\cos\beta$ (assuming $\cos\alpha \ne 0, \cos\beta \ne 0$):
+\[ 1 = 2 \frac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta} \]
+\[ 1 = 2 \text{tg}\alpha \text{tg}\beta \]
+\[ \text{tg}\alpha \text{tg}\beta = \frac{1}{2} \]
+
+\subsection*{Answer}
+$\frac{1}{2}$ (option \textbf{B}).
+
+\end{document}

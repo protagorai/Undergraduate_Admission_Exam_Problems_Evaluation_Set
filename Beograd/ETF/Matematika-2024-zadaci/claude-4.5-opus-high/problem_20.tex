@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the number of ways to choose four distinct numbers from the set $\{1, 2, \ldots, 9\}$ 
+such that at least one of them is divisible by 4 and at least one is strictly greater than 5.
+
+\subsection*{Solution}
+Let:
+\begin{itemize}
+\item $A$ = selections with at least one number divisible by 4
+\item $B$ = selections with at least one number $> 5$
+\end{itemize}
+
+Numbers divisible by 4 in $\{1, \ldots, 9\}$: $\{4, 8\}$
+
+Numbers $> 5$ in $\{1, \ldots, 9\}$: $\{6, 7, 8, 9\}$
+
+We want $|A \cap B|$.
+
+Using inclusion-exclusion:
+\[
+|A \cap B| = |U| - |A^c| - |B^c| + |A^c \cap B^c|
+\]
+
+where $U$ = all 4-selections from $\{1, \ldots, 9\}$.
+
+\textbf{Calculate each term:}
+
+$|U| = \binom{9}{4} = 126$
+
+$|A^c|$ = no number divisible by 4 = choose from $\{1, 2, 3, 5, 6, 7, 9\}$ (7 elements)
+\[
+|A^c| = \binom{7}{4} = 35
+\]
+
+$|B^c|$ = no number $> 5$ = choose from $\{1, 2, 3, 4, 5\}$ (5 elements)
+\[
+|B^c| = \binom{5}{4} = 5
+\]
+
+$|A^c \cap B^c|$ = no number divisible by 4 AND no number $> 5$ = choose from $\{1, 2, 3, 5\}$ (4 elements)
+\[
+|A^c \cap B^c| = \binom{4}{4} = 1
+\]
+
+\textbf{Result:}
+\[
+|A \cap B| = 126 - 35 - 5 + 1 = 87
+\]
+
+\subsection*{Answer}
+$87$ (option \textbf{B}).
+
+\end{document}
+

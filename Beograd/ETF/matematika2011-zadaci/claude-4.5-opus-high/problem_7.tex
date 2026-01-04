@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+If $x_1$ and $x_2$ are roots of the quadratic equation $\displaystyle\frac{1}{x-1} + \frac{1}{x-2} = 1$, then find the value of $\displaystyle\frac{x_1}{x_2} + \frac{x_2}{x_1}$.
+
+\subsection*{Solution}
+First, let's solve for the quadratic equation. Multiply both sides by $(x-1)(x-2)$:
+\[
+(x-2) + (x-1) = (x-1)(x-2)
+\]
+\[
+2x - 3 = x^2 - 3x + 2
+\]
+\[
+x^2 - 5x + 5 = 0
+\]
+
+By Vieta's formulas:
+\begin{align*}
+x_1 + x_2 &= 5 \\
+x_1 \cdot x_2 &= 5
+\end{align*}
+
+Now we calculate:
+\[
+\frac{x_1}{x_2} + \frac{x_2}{x_1} = \frac{x_1^2 + x_2^2}{x_1 x_2}
+\]
+
+We need $x_1^2 + x_2^2$:
+\[
+x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2 = 5^2 - 2(5) = 25 - 10 = 15
+\]
+
+Therefore:
+\[
+\frac{x_1}{x_2} + \frac{x_2}{x_1} = \frac{15}{5} = 3
+\]
+
+\subsection*{Answer}
+\textbf{(D)} 3
+
+\end{document}

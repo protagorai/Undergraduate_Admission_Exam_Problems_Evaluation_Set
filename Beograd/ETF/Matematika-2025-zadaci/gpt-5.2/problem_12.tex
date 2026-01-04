@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 12}
+Površina trougla $\triangle ABC$ je $30\,\text{cm}^2$. Neka je $D$ tačka na stranici $AB$ takva da deli duž $AB$ u razmeri $2:3$ i neka je $E$ tačka na stranici $BC$ takva da je duž $ED$ dužine $9\,\text{cm}$ i normalna na stranicu $BC$. Tada dužina duži $BC$ iznosi.
+
+\subsection*{Solution}
+Pošto je $D\in AB$, trouglovi $ABC$ i $DBC$ imaju zajedničku visinu iz temena $C$ na pravu $AB$, a baze su im $AB$ i $DB$.
+Zato važi odnos površina:
+\[
+\frac{P_{DBC}}{P_{ABC}}=\frac{DB}{AB}.
+\]
+Iz $AD:DB=2:3$ sledi $AB=5k$ i $DB=3k$, pa je $DB/AB=3/5$.
+Kako je $P_{ABC}=30$, dobijamo
+\[
+P_{DBC}=\frac{3}{5}\cdot 30=18.
+\]
+Sa druge strane, $ED\perp BC$ i $ED=9$, pa je $ED$ visina trougla $DBC$ na osnovicu $BC$:
+\[
+P_{DBC}=\frac12\cdot BC\cdot 9.
+\]
+Dakle
+\[
+\frac{1}{2}\cdot BC\cdot 9=18 \Rightarrow BC=\frac{36}{9}=4.
+\]
+
+\subsection*{Answer}
+$4\text{ cm}$ (option \textbf{B}).
+
+\end{document}
+
+

@@ -1,0 +1,10 @@
+Problem 4 (Matematika 2023)
+Skup svih realnih rešenja nejednačine
+√((2x+1)^4 − (2x+1)^2 + (2x+1)^2) ≥ 0
+je oblika (za neke a<b<c):
+a) (−∞,a] ∪ {b} ∪ [c,+∞)
+b) [a,b) ∪ (b,c]
+c) [a,b] ∪ [c,+∞)
+d) (−∞,a] ∪ [b,c]
+e) {a,b,c}
+n) Ne znam

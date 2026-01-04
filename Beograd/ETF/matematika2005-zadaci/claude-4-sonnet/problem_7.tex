@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+U geometrijskoj progresiji količnik je 2, a zbir prvih sedam članova je jednak 635. Tada sedmi član iznosi:
+
+\subsection*{Solution}
+U geometrijskoj progresiji sa prvim članom $a_1$ i količnikom $q = 2$, članovi su:
+$a_1, a_1 \cdot 2, a_1 \cdot 2^2, a_1 \cdot 2^3, a_1 \cdot 2^4, a_1 \cdot 2^5, a_1 \cdot 2^6$
+
+Zbir prvih sedam članova je:
+$S_7 = a_1(1 + 2 + 2^2 + 2^3 + 2^4 + 2^5 + 2^6)$
+
+Formula za zbir geometrijske progresije:
+$S_n = a_1 \cdot \frac{q^n - 1}{q - 1}$
+
+Za $n = 7$ i $q = 2$:
+$S_7 = a_1 \cdot \frac{2^7 - 1}{2 - 1} = a_1 \cdot \frac{128 - 1}{1} = a_1 \cdot 127$
+
+Pošto je $S_7 = 635$:
+$a_1 \cdot 127 = 635$
+$a_1 = \frac{635}{127} = 5$
+
+Sedmi član je:
+$a_7 = a_1 \cdot 2^6 = 5 \cdot 64 = 320$
+
+\subsection*{Answer}
+$320$ (opcija \textbf{E}).
+
+\end{document}

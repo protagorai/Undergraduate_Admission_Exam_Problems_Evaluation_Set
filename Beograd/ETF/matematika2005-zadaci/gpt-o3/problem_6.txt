@@ -1,0 +1,7 @@
+Problem 6: Ako je tan α = -7,  α ∈ (π/2 , π), tada izraz
+
+    (3 sin α + cos α)/(cos α - 3 sin α)
+
+iznosi:
+
+(A) 10/11   (B) -10/11   (C) 11/20   (D) -11/20   (E) 11/10   (N) Ne znam

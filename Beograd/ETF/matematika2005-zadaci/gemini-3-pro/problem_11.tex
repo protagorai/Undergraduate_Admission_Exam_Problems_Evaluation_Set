@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 11}
+Date su funkcije $f_1(x) = x$, $f_2(x) = \frac{x^2}{x}$, $f_3(x) = \sqrt{x^2}$, $f_4(x) = (\sqrt{x})^2$. Tačan je iskaz:
+(A) Sve funkcije su međusobno jednake (B) $f_1 = f_2 \neq f_3$ (C) Među datim funkcijama nema međusobno jednakih (D) $f_1 = f_3 \neq f_4$ (E) $f_1 \neq f_3 = f_4$ (N) Ne znam
+
+\subsection*{Rešenje}
+Da bi dve funkcije bile jednake, moraju imati isti domen i istu vrednost za svako $x$ iz domena.
+Analizirajmo svaku funkciju:
+1. $f_1(x) = x$. Domen je $\mathbb{R}$.
+2. $f_2(x) = \frac{x^2}{x}$. Ova funkcija nije definisana za $x=0$. Domen je $\mathbb{R} \setminus \{0\}$. Za $x \neq 0$, $f_2(x) = x$. Zbog različitog domena, $f_1 \neq f_2$.
+3. $f_3(x) = \sqrt{x^2} = |x|$. Domen je $\mathbb{R}$. Vrednosti su nenegativne. Na primer, za $x=-1$, $f_1(-1)=-1$, dok je $f_3(-1)=1$. Dakle $f_1 \neq f_3$.
+4. $f_4(x) = (\sqrt{x})^2 = x$. Ova funkcija je definisana samo za $x \geq 0$. Domen je $[0, +\infty)$. Zbog različitog domena, $f_4$ nije jednaka ni jednoj od prethodnih funkcija.
+
+Zaključak: Nijedan par funkcija nije međusobno jednak.
+
+\subsection*{Odgovor}
+Među datim funkcijama nema međusobno jednakih (opcija \textbf{C}).
+
+\end{document}

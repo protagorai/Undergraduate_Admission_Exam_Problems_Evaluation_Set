@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 12}
+Rotacijom pravouglog trougla, koji nije jednakokraki, oko hipotenuze formirano je obrtno telo $T_1$, a rotacijom oko duže katete obrtno telo $T_2$. Ako je $\alpha$ najmanji ugao datog trougla, onda je odnos zapremina tela $T_1$ i $T_2$ jednak:
+
+\subsection*{Solution}
+Neka su katete $a$ i $b$ ($a < b$) i hipotenuza $c$. Najmanji ugao $\alpha$ je naspram manje katete $a$.
+Dakle, $\sin\alpha = \frac{a}{c}$ i $\cos\alpha = \frac{b}{c}$.
+Telo $T_1$ (rotacija oko hipotenuze) sastoji se od dve kupe sa zajedničkom osnovom poluprečnika $h$ (visina na hipotenuzu) i visinama $p$ i $q$ ($p+q=c$).
+$h = \frac{ab}{c}$.
+$V_1 = \frac{1}{3}\pi h^2 p + \frac{1}{3}\pi h^2 q = \frac{1}{3}\pi h^2 c = \frac{1}{3}\pi \left(\frac{ab}{c}\right)^2 c = \frac{\pi a^2 b^2}{3c}$.
+
+Telo $T_2$ (rotacija oko duže katete $b$) je kupa poluprečnika osnove $a$ i visine $b$.
+$V_2 = \frac{1}{3}\pi a^2 b$.
+
+Odnos zapremina:
+\[
+\frac{V_1}{V_2} = \frac{\frac{\pi a^2 b^2}{3c}}{\frac{\pi a^2 b}{3}} = \frac{b}{c} = \cos\alpha
+\]
+
+\subsection*{Answer}
+$\cos\alpha$ (Opcija \textbf{B})
+
+\end{document}

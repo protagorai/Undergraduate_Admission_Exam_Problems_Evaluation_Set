@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 8}
+Ako je $\log_a b = \sqrt{2}$ tada je $\log_{\frac{b}{a}}(ab)$ jednako:
+(A) $\sqrt{2}+1$ (B) $\sqrt{2}-1$ (C) $3-2\sqrt{2}$ (D) $3+2\sqrt{2}$ (E) $1+2\sqrt{2}$ (N) Ne znam
+
+\subsection*{Rešenje}
+Pređimo na novu osnovu $a$ u logaritmu koji tražimo:
+\[
+\log_{\frac{b}{a}}(ab) = \frac{\log_a(ab)}{\log_a(\frac{b}{a})}
+\]
+Koristeći svojstva logaritama:
+\[
+\log_a(ab) = \log_a a + \log_a b = 1 + \log_a b
+\]
+\[
+\log_a(\frac{b}{a}) = \log_a b - \log_a a = \log_a b - 1
+\]
+Zamenom ovih izraza i date vrednosti $\log_a b = \sqrt{2}$:
+\[
+\frac{1 + \sqrt{2}}{\sqrt{2} - 1}
+\]
+Racionališemo imenilac:
+\[
+\frac{1 + \sqrt{2}}{\sqrt{2} - 1} \cdot \frac{\sqrt{2} + 1}{\sqrt{2} + 1} = \frac{(\sqrt{2} + 1)^2}{(\sqrt{2})^2 - 1^2} = \frac{2 + 2\sqrt{2} + 1}{2 - 1} = 3 + 2\sqrt{2}
+\]
+
+\subsection*{Odgovor}
+$3 + 2\sqrt{2}$ (opcija \textbf{D}).
+
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Zbir $1 + 11 + 111 + \cdots + \underbrace{11...1}_{n}$ je jednak:
+
+\textbf{A)} $\frac{1}{81}(10^{n+1} - 10 - 9n)$; \quad \textbf{B)} $\frac{1}{9}(10^n - 9n + 8)$; \quad \textbf{C)} $\frac{1}{81}(10^{n+1} - 19n)$; \quad \textbf{D)} $\frac{1}{9}(10^{2n} - 40n - 50)$; \quad \textbf{E)} $\frac{1}{11}(11^n - n + 1)$
+
+\subsection*{Solution}
+Primetimo da:
+\[
+\underbrace{11...1}_{k} = \frac{10^k - 1}{9}
+\]
+
+Dakle:
+\[
+S = \sum_{k=1}^{n} \frac{10^k - 1}{9} = \frac{1}{9}\left(\sum_{k=1}^{n} 10^k - \sum_{k=1}^{n} 1\right)
+\]
+
+\[
+\sum_{k=1}^{n} 10^k = 10 + 10^2 + \cdots + 10^n = 10 \cdot \frac{10^n - 1}{10 - 1} = \frac{10(10^n - 1)}{9} = \frac{10^{n+1} - 10}{9}
+\]
+
+\[
+\sum_{k=1}^{n} 1 = n
+\]
+
+Dakle:
+\[
+S = \frac{1}{9}\left(\frac{10^{n+1} - 10}{9} - n\right) = \frac{1}{81}(10^{n+1} - 10 - 9n)
+\]
+
+\subsection*{Answer}
+$\frac{1}{81}(10^{n+1} - 10 - 9n)$ (option \textbf{A}).
+
+\end{document}

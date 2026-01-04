@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Neka je $A=\{1,2,\dots,2019\}$ i
+\[
+B=\{(x,y)\in A\times A\mid |x-y|\ge 2\}.
+\]
+Broj elemenata skupa $B$ jednak je:
+
+\subsection*{Solution}
+Ukupan broj uređenih parova u $A\times A$ je
+\[
+|A\times A|=2019^2.
+\]
+Lakše je oduzeti parove koji \emph{ne} zadovoljavaju uslov $|x-y|\ge 2$, tj.\ one za koje je $|x-y|\le 1$.
+
+\medskip
+\noindent\textbf{1) }$|x-y|=0$ daje $x=y$, ukupno $2019$ parova.
+
+\medskip
+\noindent\textbf{2) }$|x-y|=1$ znači $y=x+1$ ili $y=x-1$.
+Za $y=x+1$ imamo $x=1,\dots,2018$ (ukupno $2018$ parova), i isto toliko za $y=x-1$.
+Dakle ukupno $2\cdot 2018$ parova.
+
+Zato je broj ``loših'' parova
+\[
+2019+2\cdot 2018,
+\]
+pa je
+\[
+|B|=2019^2-(2019+2\cdot 2018)=2019^2-6055.
+\]
+Računamo:
+\[
+2019^2-6055=4{,}076{,}361-6{,}055=4{,}070{,}306=2018\cdot 2017.
+\]
+
+\subsection*{Answer}
+$2018\cdot 2017$ (option \textbf{C}).
+
+\end{document}
+

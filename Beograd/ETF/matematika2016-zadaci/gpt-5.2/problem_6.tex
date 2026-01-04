@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+If
+\[
+\log_2(\sqrt3+1)+\log_2(\sqrt6-2)=A,
+\]
+compute
+\[
+\log_{1/4}(\sqrt3-1)+\log_{1/4}(\sqrt6+2).
+\]
+
+\subsection*{Solution}
+First,
+\[
+A=\log_2\bigl((\sqrt3+1)(\sqrt6-2)\bigr).
+\]
+Let
+\[
+P_1=(\sqrt3+1)(\sqrt6-2),\qquad P_2=(\sqrt3-1)(\sqrt6+2).
+\]
+Then
+\[
+P_1P_2=(\sqrt3+1)(\sqrt3-1)\cdot(\sqrt6-2)(\sqrt6+2)
+=(3-1)(6-4)=2\cdot 2=4.
+\]
+Taking $\log_2$ gives
+\[
+\log_2 P_1+\log_2 P_2=\log_2 4=2
+\;\Rightarrow\;
+\log_2 P_2=2-A.
+\]
+Now use $\log_{1/4} x=\dfrac{\log_2 x}{\log_2(1/4)}=\dfrac{\log_2 x}{-2}=-\frac12\log_2 x$:
+\[
+\log_{1/4}(\sqrt3-1)+\log_{1/4}(\sqrt6+2)
+\;=\;-\frac12\log_2\bigl((\sqrt3-1)(\sqrt6+2)\bigr)
+\;=\;-\frac12(2-A)=\frac{A}{2}-1.
+\]
+
+\subsection*{Answer}
+$\dfrac{A}{2}-1$ (option \textbf{D}).
+
+\end{document}
+

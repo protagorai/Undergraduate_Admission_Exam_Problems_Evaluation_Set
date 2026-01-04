@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako su $x_1$, $x_2$, $x_3$ koreni jednačine $px^3 + qx^2 + px + 1 = 0$, $(p, q \in \mathbb{R}$ i $p \neq 0)$, tada vrednost izraza $\frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3}$ iznosi:
+
+\subsection*{Solution}
+Imamo polinom $P(x) = px^3 + qx^2 + px + 1 = 0$ sa korenima $x_1$, $x_2$, $x_3$.
+
+Prema Vieta-ovim formulama za polinom $ax^3 + bx^2 + cx + d = 0$:
+\begin{align}
+x_1 + x_2 + x_3 &= -\frac{b}{a}\\
+x_1x_2 + x_1x_3 + x_2x_3 &= \frac{c}{a}\\
+x_1x_2x_3 &= -\frac{d}{a}
+\end{align}
+
+Za naš polinom $px^3 + qx^2 + px + 1 = 0$:
+\begin{align}
+x_1 + x_2 + x_3 &= -\frac{q}{p}\\
+x_1x_2 + x_1x_3 + x_2x_3 &= \frac{p}{p} = 1\\
+x_1x_2x_3 &= -\frac{1}{p}
+\end{align}
+
+Tražimo:
+\[
+\frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} = \frac{x_2x_3 + x_1x_3 + x_1x_2}{x_1x_2x_3}
+\]
+
+Iz Vieta-ovih formula:
+\[
+\frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} = \frac{x_1x_2 + x_1x_3 + x_2x_3}{x_1x_2x_3} = \frac{1}{-\frac{1}{p}} = \frac{1 \cdot p}{-1} = -p
+\]
+
+\subsection*{Answer}
+$-p$ (opcija \textbf{E}).
+
+\end{document}

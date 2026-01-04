@@ -1,0 +1,8 @@
+Problem 5 (Matematika 2023)
+Na kružnici poluprečnika r data je tačka B i BC je tangenta dužine 8 cm. Tačka A na istoj kružnici je takva da duž AC = 9 cm i prolazi kroz centar. Obim kružnice iznosi:
+a) (36/17)π
+b) 2π
+c) (11/9)π
+d) (17/9)π
+e) (289/324)π
+n) Ne znam

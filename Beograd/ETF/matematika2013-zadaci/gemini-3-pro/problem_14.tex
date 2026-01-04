@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 14}
+U valjak prečnika osnove $14\sqrt{3}$ cm i visine $20$ cm upisana je prava trostrana prizma čija osnova je trougao $ABC$ čija je stranica $BC=9$ cm, a ugao naspram stranice $AC$ je $120^\circ$. Zapremina prizme (u cm$^3$) je:
+\[ (A)\ 1890\sqrt{3} \quad (B)\ 3780\sqrt{3} \quad (C)\ 810\sqrt{3} \quad (D)\ 675\sqrt{3} \quad (E)\ 825\sqrt{3} \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Cylinder diameter $D = 2R = 14\sqrt{3} \implies R = 7\sqrt{3}$.
+Height $H = 20$.
+The prism is inscribed, so the base triangle $ABC$ is inscribed in the base circle of radius $R$.
+Given: side $a = BC = 9$.
+Angle opposite to side $b=AC$ is $\beta = \angle ABC = 120^\circ$.
+Let sides be $a, b, c$ and angles $\alpha, \beta, \gamma$.
+Using the extended Sine Law:
+\[ \frac{b}{\sin\beta} = 2R \]
+\[ \frac{b}{\sin 120^\circ} = 14\sqrt{3} \]
+\[ b = 14\sqrt{3} \cdot \frac{\sqrt{3}}{2} = 7 \cdot 3 = 21 \]
+So $AC = 21$.
+Now we have sides $a=9$, $b=21$ and angle $\beta=120^\circ$ between $c$ and $a$. Wait, $\beta$ is opposite to $b$.
+Using Law of Cosines on side $b$:
+\[ b^2 = a^2 + c^2 - 2ac \cos\beta \]
+\[ 21^2 = 9^2 + c^2 - 2(9)c \cos 120^\circ \]
+\[ 441 = 81 + c^2 - 18c (-1/2) \]
+\[ 441 = 81 + c^2 + 9c \]
+\[ c^2 + 9c + 81 - 441 = 0 \]
+\[ c^2 + 9c - 360 = 0 \]
+Solving for $c$:
+\[ c = \frac{-9 \pm \sqrt{81 - 4(1)(-360)}}{2} = \frac{-9 \pm \sqrt{81 + 1440}}{2} = \frac{-9 \pm \sqrt{1521}}{2} \]
+\[ \sqrt{1521} = 39 \]
+\[ c = \frac{-9 + 39}{2} = 15 \quad (\text{since } c>0) \]
+So the sides are $a=9, b=21, c=15$.
+Area of base triangle $ABC$:
+\[ B = \frac{1}{2} ac \sin\beta = \frac{1}{2} \cdot 9 \cdot 15 \cdot \sin 120^\circ = \frac{135}{2} \cdot \frac{\sqrt{3}}{2} = \frac{135\sqrt{3}}{4} \]
+Volume of prism $V = B \cdot H$:
+\[ V = \frac{135\sqrt{3}}{4} \cdot 20 = 135\sqrt{3} \cdot 5 = 675\sqrt{3} \]
+
+\subsection*{Answer}
+$675\sqrt{3}$ (option \textbf{D}).
+
+\end{document}

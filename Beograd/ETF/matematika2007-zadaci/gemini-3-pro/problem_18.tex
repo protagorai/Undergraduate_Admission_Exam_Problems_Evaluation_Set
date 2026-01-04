@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Date su funkcije : $f_1(x) = 2^{\log_2 x}, f_2(x) = \log_2 2^x, f_3(x) = x, f_4(x) = (x \cdot 2^{-\log_2 \sqrt{x}})^2$. Tačan je iskaz :
+\[
+(A)\ \text{Među funkcijama nema međusobno jednakih} \quad (B)\ f_1 = f_2 = f_3 \neq f_4
+\]
+\[
+(C)\ f_1 \neq f_2 = f_3 \neq f_4 \neq f_1 \quad (D)\ f_3 \neq f_1 = f_2 \neq f_4 \quad (E)\ f_2 = f_3 \neq f_1 = f_4 \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Analizirajmo svaku funkciju i njen domen:
+1) $f_1(x) = 2^{\log_2 x}$.
+Domen: $x > 0$ (zbog logaritma).
+Na domenu, $f_1(x) = x$.
+
+2) $f_2(x) = \log_2 2^x$.
+Domen: $x \in \mathbb{R}$ (eksponencijalna funkcija je uvek pozitivna).
+Na domenu, $f_2(x) = x$.
+
+3) $f_3(x) = x$.
+Domen: $x \in \mathbb{R}$.
+
+4) $f_4(x) = (x \cdot 2^{-\log_2 \sqrt{x}})^2$.
+Domen: $x > 0$ (zbog $\sqrt{x}$ i logaritma).
+Uprostimo izraz:
+\[
+2^{-\log_2 \sqrt{x}} = \frac{1}{2^{\log_2 \sqrt{x}}} = \frac{1}{\sqrt{x}}
+\]
+\[
+f_4(x) = \left(x \cdot \frac{1}{\sqrt{x}}\right)^2 = (\sqrt{x})^2 = x
+\]
+Dakle, $f_4(x) = x$ za $x > 0$.
+
+Poređenje:
+- $f_2$ i $f_3$ imaju isti domen ($\mathbb{R}$) i isti zakon dodele ($x$), pa je $f_2 = f_3$.
+- $f_1$ i $f_4$ imaju isti domen ($(0, \infty)$) i isti zakon dodele ($x$), pa je $f_1 = f_4$.
+- $f_1$ nije jednako $f_2$ (različiti domeni).
+
+Dakle: $f_2 = f_3 \neq f_1 = f_4$.
+
+\subsection*{Answer}
+$f_2 = f_3 \neq f_1 = f_4$ (option \textbf{E}).
+
+\end{document}

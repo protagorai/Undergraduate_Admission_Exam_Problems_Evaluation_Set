@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+If $\log_2 3=a$ and $\log_5 2=b$, compute $\log_{24}50$.
+
+Options:
+(A) $\dfrac{b+2}{b(a+3)}$ \quad
+(B) $\dfrac{b+1}{b(a+4)}$ \quad
+(C) $\dfrac{b-2}{b(a-4)}$ \quad
+(D) $\dfrac{b+1}{b(a+3)}$ \quad
+(E) $\dfrac{b-2}{(b+1)(a+3)}$.
+
+\subsection*{Solution}
+Write everything with natural logarithms. From $\log_2 3=a$ we get
+\[
+\ln 3=a\ln 2.
+\]
+From $\log_5 2=b$ we get
+\[
+b=\frac{\ln 2}{\ln 5}\ \Rightarrow\ \ln 5=\frac{\ln 2}{b}.
+\]
+Now
+\[
+\ln 24=\ln(3\cdot 2^3)=\ln 3+3\ln 2=(a+3)\ln 2,
+\]
+and
+\[
+\ln 50=\ln(2\cdot 5^2)=\ln 2+2\ln 5=\ln 2+2\cdot\frac{\ln 2}{b}
+=\ln 2\cdot\frac{b+2}{b}.
+\]
+Therefore
+\[
+\log_{24}50=\frac{\ln 50}{\ln 24}
+\;=\;\frac{\ln 2\cdot\frac{b+2}{b}}{(a+3)\ln 2}
+\;=\;\frac{b+2}{b(a+3)}.
+\]
+
+\subsection*{Answer}
+$\dfrac{b+2}{b(a+3)}$ (option \textbf{A}).
+
+\end{document}
+

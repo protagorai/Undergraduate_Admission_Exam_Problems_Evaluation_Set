@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako je uređen par $(x,y)$ ($x,y \in \mathbb{R}, x,y > 0, x \neq 1$), rešenje sistema jednačina $x^y = y^x$, $x^p = y^q$ ($p,q \in \mathbb{R} \setminus \{0\}, p \neq q$), tada je proizvod $x \cdot y$ jednak:
+
+(A) $\frac{p-q}{2}$ \quad (B) $\frac{2}{p-q}$ \quad (C) $1$ \quad (D) $\left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}$ \quad (E) $\left(\frac{q}{p}\right)^{\frac{p+q}{p-q}}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Imamo sistem:
+\[
+x^y = y^x \quad (1)
+\]
+\[
+x^p = y^q \quad (2)
+\]
+
+Iz jednačine (1), logaritmujemo:
+\[
+y \ln x = x \ln y \Rightarrow \frac{\ln x}{x} = \frac{\ln y}{y}
+\]
+
+Ova jednačina ima rešenja oblika $x = y$ ili $x = a^{1/a}$, $y = b^{1/b}$ gde je $\frac{\ln a}{a} = \frac{\ln b}{b}$.
+
+Iz jednačine (2):
+\[
+x^p = y^q \Rightarrow p \ln x = q \ln y \Rightarrow \frac{\ln x}{\ln y} = \frac{q}{p}
+\]
+
+Kombinujući sa (1):
+Iz $\frac{\ln x}{x} = \frac{\ln y}{y}$ i $\frac{\ln x}{\ln y} = \frac{q}{p}$:
+
+Neka je $\frac{\ln x}{x} = \frac{\ln y}{y} = k$.
+
+Tada je $\ln x = kx$ i $\ln y = ky$.
+
+Iz $\frac{\ln x}{\ln y} = \frac{q}{p}$:
+\[
+\frac{kx}{ky} = \frac{x}{y} = \frac{q}{p}
+\]
+
+Dakle, $y = \frac{px}{q}$.
+
+Zamenjujući u $x^p = y^q$:
+\[
+x^p = \left(\frac{px}{q}\right)^q = \frac{p^q x^q}{q^q}
+\]
+\[
+x^p q^q = p^q x^q
+\]
+\[
+x^{p-q} = \frac{p^q}{q^q} = \left(\frac{p}{q}\right)^q
+\]
+\[
+x = \left(\frac{p}{q}\right)^{\frac{q}{p-q}}
+\]
+
+Slično:
+\[
+y = \frac{px}{q} = \frac{p}{q} \cdot \left(\frac{p}{q}\right)^{\frac{q}{p-q}} = \left(\frac{p}{q}\right)^{\frac{q}{p-q} + 1} = \left(\frac{p}{q}\right)^{\frac{q + p - q}{p-q}} = \left(\frac{p}{q}\right)^{\frac{p}{p-q}}
+\]
+
+Proizvod:
+\[
+xy = \left(\frac{p}{q}\right)^{\frac{q}{p-q}} \cdot \left(\frac{p}{q}\right)^{\frac{p}{p-q}} = \left(\frac{p}{q}\right)^{\frac{q+p}{p-q}} = \left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}
+\]
+
+\subsection*{Answer}
+$\left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}$ (option \textbf{D}).
+
+\end{document}

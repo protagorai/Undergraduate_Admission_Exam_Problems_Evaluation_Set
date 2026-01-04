@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 2}
+Vrednost izraza $\frac{(1+i)^{2024} + (1-i)^{2025}i}{(1-i)^{2024} + (1+i)^{2025}i}$ iznosi:
+
+\subsection*{Solution}
+Koristimo poznate identitete za kompleksne brojeve:
+$(1+i)^2 = 1 + 2i + i^2 = 2i$
+$(1-i)^2 = 1 - 2i + i^2 = -2i$
+
+Možemo pisati stepene kao stepene kvadrata:
+$(1+i)^{2024} = ((1+i)^2)^{1012} = (2i)^{1012} = 2^{1012} \cdot i^{1012}$.
+Kako je $1012$ deljivo sa 4 ($1012 = 4 \cdot 253$), $i^{1012} = (i^4)^{253} = 1^{253} = 1$.
+Dakle, $(1+i)^{2024} = 2^{1012}$.
+
+Slično, $(1-i)^{2024} = ((-2i)^2)^{1012} = (-2i)^{1012} = (-2)^{1012} i^{1012} = 2^{1012} \cdot 1 = 2^{1012}$.
+
+Sada izračunajmo ostale članove:
+$(1-i)^{2025} = (1-i)^{2024} \cdot (1-i) = 2^{1012}(1-i)$.
+$(1+i)^{2025} = (1+i)^{2024} \cdot (1+i) = 2^{1012}(1+i)$.
+
+Zamenimo u izraz:
+Brojilac:
+$2^{1012} + 2^{1012}(1-i)i = 2^{1012} [1 + (1-i)i] = 2^{1012} [1 + i - i^2] = 2^{1012} [1 + i - (-1)] = 2^{1012} (2+i)$.
+
+Imenilac:
+$2^{1012} + 2^{1012}(1+i)i = 2^{1012} [1 + (1+i)i] = 2^{1012} [1 + i + i^2] = 2^{1012} [1 + i - 1] = 2^{1012} i$.
+
+Celokupan izraz:
+\[
+\frac{2^{1012}(2+i)}{2^{1012}i} = \frac{2+i}{i} = \frac{2}{i} + 1 = \frac{2(-i)}{-i^2} + 1 = -2i + 1 = 1-2i.
+\]
+
+\subsection*{Answer}
+$1-2i$ (option \textbf{D}).
+
+\end{document}
+

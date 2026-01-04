@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the minimal length of the segment between the coordinate axes formed by the tangent line to the ellipse
+\[
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1 \qquad (a\ge b>0)
+\]
+at a point in the first quadrant.
+
+\subsection*{Solution}
+Let $(x_0,y_0)$ be the tangency point with $x_0>0$, $y_0>0$ and
+\[
+\frac{x_0^2}{a^2}+\frac{y_0^2}{b^2}=1.
+\]
+The tangent line at $(x_0,y_0)$ has equation
+\[
+\frac{x x_0}{a^2}+\frac{y y_0}{b^2}=1.
+\]
+Its intercepts are:
+\[
+\text{$x$-intercept: } y=0 \Rightarrow x=\frac{a^2}{x_0},
+\qquad
+\text{$y$-intercept: } x=0 \Rightarrow y=\frac{b^2}{y_0}.
+\]
+So the segment length is
+\[
+L=\sqrt{\left(\frac{a^2}{x_0}\right)^2+\left(\frac{b^2}{y_0}\right)^2}.
+\]
+Minimizing $L$ is equivalent to minimizing $L^2$.
+Let
+\[
+u=\frac{a^2}{x_0},\qquad v=\frac{b^2}{y_0},
+\]
+so $u,v>0$ and $L^2=u^2+v^2$.
+The ellipse constraint becomes
+\[
+\frac{x_0^2}{a^2}+\frac{y_0^2}{b^2}=1
+\quad\Longleftrightarrow\quad
+\frac{a^2}{u^2}+\frac{b^2}{v^2}=1.
+\]
+Use Lagrange multipliers for minimizing $u^2+v^2$ subject to $\frac{a^2}{u^2}+\frac{b^2}{v^2}=1$.
+Set
+\[
+F(u,v)=u^2+v^2+\lambda\left(\frac{a^2}{u^2}+\frac{b^2}{v^2}-1\right).
+\]
+Then
+\[
+\frac{\partial F}{\partial u}=2u-\lambda\frac{2a^2}{u^3}=0 \Rightarrow u^4=\lambda a^2,
+\qquad
+\frac{\partial F}{\partial v}=2v-\lambda\frac{2b^2}{v^3}=0 \Rightarrow v^4=\lambda b^2.
+\]
+Hence
+\[
+\left(\frac{u}{v}\right)^4=\frac{a^2}{b^2}\Rightarrow \frac{u}{v}=\sqrt{\frac{a}{b}},
+\quad\text{so}\quad u=v\sqrt{\frac{a}{b}}.
+\]
+Plug into the constraint:
+\[
+\frac{a^2}{u^2}+\frac{b^2}{v^2}
+=\frac{a^2}{v^2\cdot a/b}+\frac{b^2}{v^2}
+=\frac{ab}{v^2}+\frac{b^2}{v^2}
+=\frac{b(a+b)}{v^2}=1,
+\]
+so $v^2=b(a+b)$ and therefore $u^2=a(a+b)$.
+Thus the minimum is
+\[
+L_{\min}^2=u^2+v^2=a(a+b)+b(a+b)=(a+b)^2,
+\]
+so
+\[
+L_{\min}=a+b.
+\]
+
+\subsection*{Answer}
+$a+b$ (option \textbf{E}).
+
+\end{document}
+

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+If $\log_a b = \sqrt{2}$, find $\log_{\sqrt{a}}(ab)$.
+
+\subsection*{Solution}
+Let $\log_a b = \sqrt{2}$, which means $b = a^{\sqrt{2}}$.
+
+We need to find $\log_{\sqrt{a}}(ab)$.
+
+First, note that $\sqrt{a} = a^{1/2}$.
+
+Using the change of base formula:
+\[
+\log_{\sqrt{a}}(ab) = \frac{\log_a(ab)}{\log_a(\sqrt{a})} = \frac{\log_a(ab)}{1/2} = 2\log_a(ab)
+\]
+
+Now compute $\log_a(ab)$:
+\[
+\log_a(ab) = \log_a a + \log_a b = 1 + \sqrt{2}
+\]
+
+Therefore:
+\[
+\log_{\sqrt{a}}(ab) = 2(1 + \sqrt{2}) = 2 + 2\sqrt{2}
+\]
+
+\subsection*{Answer}
+$2 + 2\sqrt{2}$ (option \textbf{D}, written as $3 + 2\sqrt{2}$ appears incorrect; checking: $2 + 2\sqrt{2}$).
+
+Actually, let me verify: The answer $2 + 2\sqrt{2}$ doesn't match any option exactly. Looking at options again:
+(A) $\sqrt{2}+1$, (B) $\sqrt{2}-1$, (C) $3-2\sqrt{2}$, (D) $3+2\sqrt{2}$, (E) $1+2\sqrt{2}$
+
+Let me recalculate. We have $\log_{\sqrt{a}}(ab)$.
+
+Using $\log_{a^{1/2}}(ab) = \frac{\ln(ab)}{\ln(a^{1/2})} = \frac{\ln a + \ln b}{\frac{1}{2}\ln a} = 2\cdot\frac{\ln a + \ln b}{\ln a} = 2\left(1 + \frac{\ln b}{\ln a}\right) = 2(1 + \log_a b) = 2(1 + \sqrt{2}) = 2 + 2\sqrt{2}$
+
+Since $2 + 2\sqrt{2} \approx 4.83$ and $3 + 2\sqrt{2} \approx 5.83$, and $1 + 2\sqrt{2} \approx 3.83$...
+
+The closest match is (E) $1 + 2\sqrt{2}$. Let me recheck the problem statement interpretation.
+
+If the base is $\sqrt{a}$ and we're computing $\log_{\sqrt{a}}(ab)$, my calculation gives $2 + 2\sqrt{2}$.
+
+\subsection*{Answer}
+$2 + 2\sqrt{2}$ which corresponds most closely to option \textbf{D} if there's a typo, or the calculation should be verified. Based on my work: $2 + 2\sqrt{2}$.
+
+\end{document}

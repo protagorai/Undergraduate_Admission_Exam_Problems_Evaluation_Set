@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Pri deljenju polinoma $P_1$ polinomom $x^2 - 1$ dobija se ostatak $x$, a pri deljenju polinoma $P_2$ polinomom $x^2 - 1$ dobija se ostatak $x + 2$. Tada je ostatak pri deljenju polinoma $P_1 \cdot P_2$ polinomom $x^2 - 1$ jednak:
+
+\subsection*{Solution}
+Prema teoremi o deljenju polinoma:
+
+\[
+P_1(x) = (x^2 - 1) \cdot Q_1(x) + x
+\]
+\[
+P_2(x) = (x^2 - 1) \cdot Q_2(x) + (x + 2)
+\]
+
+gde su $Q_1(x)$ i $Q_2(x)$ količnici.
+
+Treba naći ostatak pri deljenju $P_1(x) \cdot P_2(x)$ sa $x^2 - 1$.
+
+\[
+P_1(x) \cdot P_2(x) = [(x^2 - 1) \cdot Q_1(x) + x] \cdot [(x^2 - 1) \cdot Q_2(x) + (x + 2)]
+\]
+
+Razvijamo:
+\begin{align}
+P_1(x) \cdot P_2(x) &= (x^2 - 1)^2 Q_1(x) Q_2(x) + (x^2 - 1) Q_1(x)(x + 2)\\
+&\quad + (x^2 - 1) Q_2(x) \cdot x + x(x + 2)\\
+&= (x^2 - 1)[Q_1(x) Q_2(x)(x^2 - 1) + Q_1(x)(x + 2) + Q_2(x) \cdot x] + x(x + 2)
+\end{align}
+
+Ostatak je $x(x + 2) = x^2 + 2x$.
+
+Međutim, pošto delimo sa $x^2 - 1$, ostatak mora biti polinom stepena manjeg od 2, tj. oblika $ax + b$.
+
+Pošto je $x^2 \equiv 1 \pmod{x^2 - 1}$:
+\[
+x^2 + 2x \equiv 1 + 2x \pmod{x^2 - 1}
+\]
+
+Dakle, ostatak je $2x + 1$.
+
+\subsection*{Answer}
+$2x + 1$ (opcija \textbf{D}).
+
+\end{document}

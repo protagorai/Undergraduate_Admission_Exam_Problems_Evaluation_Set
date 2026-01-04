@@ -1,0 +1,2 @@
+12. Površina trougla ΔABC je 30 cm^2. Neka je D tačka na strani AB takva da deli duž AB u razmeri 2:3 i neka je E tačka na strani BC takva da je duž ED dužine 9 cm i normalna na stranicu BC. Tada dužina duži BC iznosi:
+(A) 2 cm   (B) 4 cm   (C) 6 cm   (D) 8 cm   (E) 10 cm   (N) Ne znam

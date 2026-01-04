@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 17}
+Dvocifreni broj koji je jednak proizvodu zbira svojih cifara i apsolutne vrednosti razlike pripada intervalu:
+
+\subsection*{Rešenje}
+Broj je $\overline{xy} = 10x+y$.
+Jednačina: $10x+y = (x+y)|x-y|$.
+Slučaj $x > y$: $10x+y = (x+y)(x-y) = x^2-y^2$. Nema rešenja u skupu cifara.
+Slučaj $x < y$: $10x+y = (x+y)(y-x) = y^2-x^2$.
+$y^2 - y - (x^2+10x) = 0$.
+Diskriminanta $D = 1 + 4(x^2+10x) = (2x+10)^2 - 99$.
+Da bi $D$ bio kvadrat $k^2$, mora biti $(2x+10)^2 - k^2 = 99$.
+Rešavanjem u skupu celih brojeva dobija se $x=4$.
+Za $x=4$, $y^2-y-56=0 \implies (y-8)(y+7)=0 \implies y=8$.
+Broj je 48.
+Provera: $(4+8)|4-8| = 12 \cdot 4 = 48$. Tačno.
+Broj 48 pripada intervalu $[31, 50]$.
+
+\subsection*{Odgovor}
+$[31, 50]$ (opcija \textbf{B}).
+
+\end{document}

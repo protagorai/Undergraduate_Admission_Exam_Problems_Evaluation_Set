@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 18}
+
+U tetivnom (cikli\v cnom) \v cetvorouglu \(ABCD\) va\v zi:
+\[
+BD\perp BC,\qquad \angle ABC=120^\circ,\qquad \angle BAD=120^\circ,\qquad AD=1\text{ cm}.
+\]
+Tra\v zi se proizvod \(BD\cdot CD\).
+
+\subsection*{1) Trougao \(ABD\)}
+Po\v sto je \(BD\perp BC\), ugao izme\dj u \(BA\) i \(BD\) je
+\[
+\angle ABD = |\angle ABC-90^\circ|=|120^\circ-90^\circ|=30^\circ.
+\]
+U trouglu \(ABD\) va\v zi \(\angle BAD=120^\circ\), pa su uglovi:
+\[
+\angle A=120^\circ,\quad \angle B=30^\circ,\quad \angle D=30^\circ.
+\]
+Dakle, trougao \(ABD\) je jednakokrak sa \(AB=AD\). Po\v sto je \(AD=1\), sledi \(AB=1\).
+
+Sada po kosinusnom teoremu:
+\[
+BD^2=AB^2+AD^2-2\cdot AB\cdot AD\cos 120^\circ
+=1+1-2\cdot 1\cdot 1\cdot\left(-\frac12\right)=3,
+\]
+pa je
+\[
+BD=\sqrt3.
+\]
+
+\subsection*{2) Trougao \(BCD\)}
+Po\v sto je \v cetvorougao cikli\v can, suprotni uglovi su suplementarni:
+\[
+\angle BAD+\angle BCD=180^\circ \Rightarrow \angle BCD=60^\circ.
+\]
+Imamo i \(\angle CBD=90^\circ\) (jer \(BD\perp BC\)), pa je trougao \(BCD\) pravougli sa uglovima
+\[
+\angle B=90^\circ,\quad \angle C=60^\circ,\quad \angle D=30^\circ.
+\]
+U trouglu \(30^\circ\!-\!60^\circ\!-\!90^\circ\), stranica naspram \(60^\circ\) je \(\frac{\sqrt3}{2}\) puta hipotenuza.
+Ovde je \(BD\) naspram \(60^\circ\), a \(CD\) je hipotenuza, pa va\v zi
+\[
+BD=\frac{\sqrt3}{2}CD.
+\]
+Po\v sto je \(BD=\sqrt3\), dobijamo
+\[
+\sqrt3=\frac{\sqrt3}{2}CD \Rightarrow CD=2.
+\]
+
+\subsection*{Proizvod}
+\[
+BD\cdot CD=\sqrt3\cdot 2=2\sqrt3\ \text{cm}^2.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{2\sqrt3\ \text{cm}^2}\qquad\text{(C)}
+\]
+
+\end{document}
+

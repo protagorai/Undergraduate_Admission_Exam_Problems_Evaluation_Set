@@ -1,0 +1,2 @@
+14. Ugao između elipse x^2/9 + y^2/4 = 1 i hiperbole x^2/4 − y^2 = 1 u njihovoj presečnoj tački u prvom kvadrantu iznosi:
+(A) 45°   (B) 15°   (C) 60°   (D) 90°   (E) 0°   (N) Ne znam

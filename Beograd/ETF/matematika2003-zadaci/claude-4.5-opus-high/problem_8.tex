@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Date su funkcije $f_1(x) = 1$, $f_2(x) = \frac{|\sin x|}{\sqrt{1-\cos^2 x}}$, $f_3(x) = \frac{|\cos x|}{\sqrt{1-\sin^2 x}}$, $f_4(x) = \tan x \cdot \cot x$. Tačan je iskaz:
+
+\textbf{A)} Među datim funkcijama nema međusobno jednakih; \quad \textbf{B)} Sve funkcije su međusobno jednake; \quad \textbf{C)} $f_1 \neq f_2 = f_3$; \quad \textbf{D)} $f_1 = f_4 \neq f_3$; \quad \textbf{E)} $f_2 \neq f_3 = f_4 \neq f_1$
+
+\subsection*{Solution}
+Analizirajmo svaku funkciju:
+
+\textbf{$f_1(x) = 1$} je definisana za sve $x \in \mathbb{R}$.
+
+\textbf{$f_2(x) = \frac{|\sin x|}{\sqrt{1-\cos^2 x}}$}
+
+Pošto je $1 - \cos^2 x = \sin^2 x$, imamo $\sqrt{1-\cos^2 x} = |\sin x|$.
+
+Dakle $f_2(x) = \frac{|\sin x|}{|\sin x|} = 1$, ali samo kada je $\sin x \neq 0$, tj. $x \neq k\pi$.
+
+\textbf{$f_3(x) = \frac{|\cos x|}{\sqrt{1-\sin^2 x}}$}
+
+Pošto je $1 - \sin^2 x = \cos^2 x$, imamo $\sqrt{1-\sin^2 x} = |\cos x|$.
+
+Dakle $f_3(x) = \frac{|\cos x|}{|\cos x|} = 1$, ali samo kada je $\cos x \neq 0$, tj. $x \neq \frac{\pi}{2} + k\pi$.
+
+\textbf{$f_4(x) = \tan x \cdot \cot x = \frac{\sin x}{\cos x} \cdot \frac{\cos x}{\sin x} = 1$}
+
+Ali samo kada su i $\sin x \neq 0$ i $\cos x \neq 0$, tj. $x \neq \frac{k\pi}{2}$.
+
+Funkcije $f_2$, $f_3$, $f_4$ daju vrednost 1 na svojim domenima, ali imaju različite domene od $f_1$. 
+
+Funkcija $f_1$ je definisana svuda, dok $f_2$, $f_3$, $f_4$ imaju ograničene domene.
+
+Primetimo da $f_1 = f_4$ ne važi jer imaju različite domene.
+Ali $f_1 = f_4 \neq f_3$ sugeriše da se porede vrednosti, ne domeni.
+
+Ako gledamo samo vrednosti na preseku domena: $f_2 \neq f_3$ jer imaju različite domene, ali na preseku domena $f_3 = f_4$.
+
+\subsection*{Answer}
+$f_2 \neq f_3 = f_4 \neq f_1$ (option \textbf{E}).
+
+\end{document}

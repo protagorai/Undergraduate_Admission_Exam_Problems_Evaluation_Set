@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+U jednakokraki trougao ABC (AB = AC = 3cm, BC = 2cm) upisan je krug koji dodiruje krake AB i AC redom u tačkama D i E. Dužina duži DE jednaka je (u cm):
+
+\textbf{A)} $\frac{13}{10}$; \quad \textbf{B)} $\frac{6}{5}$; \quad \textbf{C)} $\frac{135}{100}$; \quad \textbf{D)} $\frac{4}{3}$; \quad \textbf{E)} $\frac{7}{5}$
+
+\subsection*{Solution}
+Neka je $r$ poluprečnik upisanog kruga i $s$ poluobim trougla.
+
+\[
+s = \frac{AB + AC + BC}{2} = \frac{3 + 3 + 2}{2} = 4
+\]
+
+Površina trougla (Heronova formula):
+\[
+P = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{4 \cdot 2 \cdot 1 \cdot 1} = \sqrt{8} = 2\sqrt{2}
+\]
+
+Poluprečnik upisanog kruga:
+\[
+r = \frac{P}{s} = \frac{2\sqrt{2}}{4} = \frac{\sqrt{2}}{2}
+\]
+
+Tačke D i E su tačke dodira na kracima AB i AC. Za upisani krug važi:
+\[
+AD = AE = s - a = 4 - 2 = 2
+\]
+
+gde je $a = BC = 2$.
+
+Trougao ADE je jednakokraki sa $AD = AE = 2$.
+
+Ugao $\angle DAE = \angle BAC$. Izračunajmo $\cos\angle BAC$ pomoću kosinusne teoreme u trouglu ABC:
+\[
+BC^2 = AB^2 + AC^2 - 2 \cdot AB \cdot AC \cdot \cos\angle BAC
+\]
+\[
+4 = 9 + 9 - 18\cos\angle BAC
+\]
+\[
+\cos\angle BAC = \frac{14}{18} = \frac{7}{9}
+\]
+
+Sada koristimo kosinusnu teoremu u trouglu ADE:
+\[
+DE^2 = AD^2 + AE^2 - 2 \cdot AD \cdot AE \cdot \cos\angle DAE
+\]
+\[
+DE^2 = 4 + 4 - 2 \cdot 2 \cdot 2 \cdot \frac{7}{9} = 8 - \frac{56}{9} = \frac{72 - 56}{9} = \frac{16}{9}
+\]
+\[
+DE = \frac{4}{3}
+\]
+
+\subsection*{Answer}
+$\frac{4}{3}$ (option \textbf{D}).
+
+\end{document}

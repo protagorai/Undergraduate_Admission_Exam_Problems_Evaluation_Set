@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 15}
+Ako je $i^2 = -1$ i $\varepsilon$ kompleksan broj koji zadovoljava uslov $\varepsilon^2 + \varepsilon + 1 = 0$, tada je rešenje jednačine $\frac{x-1}{x+1} = \varepsilon \frac{1+i}{1-i}$ po $x$, jednako:
+
+\subsection*{Solution}
+Simplify $\frac{1+i}{1-i}$:
+\[
+\frac{1+i}{1-i} \cdot \frac{1+i}{1+i} = \frac{1+2i+i^2}{1-i^2} = \frac{2i}{2} = i
+\]
+So the equation is $\frac{x-1}{x+1} = \varepsilon i$.
+Solve for $x$:
+\[
+x-1 = \varepsilon i (x+1) \implies x - \varepsilon i x = 1 + \varepsilon i \implies x(1-\varepsilon i) = 1 + \varepsilon i
+\]
+\[
+x = \frac{1+\varepsilon i}{1-\varepsilon i}
+\]
+Multiply numerator and denominator by $1+\varepsilon i$:
+\[
+x = \frac{(1+\varepsilon i)^2}{1 - (\varepsilon i)^2} = \frac{1 + 2\varepsilon i + \varepsilon^2 i^2}{1 - \varepsilon^2 (-1)} = \frac{1 + 2\varepsilon i - \varepsilon^2}{1 + \varepsilon^2}
+\]
+Since $\varepsilon^2 + \varepsilon + 1 = 0$, we have $1+\varepsilon^2 = -\varepsilon$ and $1 = -\varepsilon - \varepsilon^2$.
+Numerator: $1 - \varepsilon^2 + 2\varepsilon i = (-\varepsilon - \varepsilon^2) - \varepsilon^2 + 2\varepsilon i = -\varepsilon - 2\varepsilon^2 + 2\varepsilon i$.
+Denominator: $-\varepsilon$.
+\[
+x = \frac{-\varepsilon - 2\varepsilon^2 + 2\varepsilon i}{-\varepsilon} = 1 + 2\varepsilon - 2i = 2\varepsilon + 1 - 2i
+\]
+
+\subsection*{Answer}
+(D) $2\varepsilon + 1 - 2i$
+
+\end{document}

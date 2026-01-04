@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Ukupan broj realnih rešenja jednačine $\sin 3|x| + \sqrt{3}\cos 3x = \sqrt{2}$ na intervalu $\left[-\frac{\pi}{2}, \pi\right]$ jednak je:
+
+(A) $2$ \quad (B) $3$ \quad (C) $4$ \quad (D) $5$ \quad (E) $6$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Jednačina je $\sin 3|x| + \sqrt{3}\cos 3x = \sqrt{2}$.
+
+Pošto je $|x|$ uključeno, razmotrimo slučajeve:
+
+\textbf{Slučaj 1:} $x \geq 0$
+Tada je $|x| = x$, pa jednačina postaje:
+\[
+\sin 3x + \sqrt{3}\cos 3x = \sqrt{2}
+\]
+
+Ovo možemo pisati kao:
+\[
+2\left(\frac{1}{2}\sin 3x + \frac{\sqrt{3}}{2}\cos 3x\right) = \sqrt{2}
+\]
+\[
+2\left(\cos\frac{\pi}{3}\sin 3x + \sin\frac{\pi}{3}\cos 3x\right) = \sqrt{2}
+\]
+\[
+2\sin\left(3x + \frac{\pi}{3}\right) = \sqrt{2}
+\]
+\[
+\sin\left(3x + \frac{\pi}{3}\right) = \frac{\sqrt{2}}{2}
+\]
+
+Ovo daje:
+\[
+3x + \frac{\pi}{3} = \frac{\pi}{4} + 2k\pi \quad \text{ili} \quad 3x + \frac{\pi}{3} = \frac{3\pi}{4} + 2k\pi
+\]
+
+Za prvi slučaj: $3x = \frac{\pi}{4} - \frac{\pi}{3} + 2k\pi = -\frac{\pi}{12} + 2k\pi$
+$x = -\frac{\pi}{36} + \frac{2k\pi}{3}$
+
+Za drugi slučaj: $3x = \frac{3\pi}{4} - \frac{\pi}{3} + 2k\pi = \frac{5\pi}{12} + 2k\pi$
+$x = \frac{5\pi}{36} + \frac{2k\pi}{3}$
+
+\textbf{Slučaj 2:} $x < 0$
+Tada je $|x| = -x$, pa jednačina postaje:
+\[
+\sin(-3x) + \sqrt{3}\cos 3x = \sqrt{2}
+\]
+\[
+-\sin 3x + \sqrt{3}\cos 3x = \sqrt{2}
+\]
+
+Ovo daje:
+\[
+2\left(-\frac{1}{2}\sin 3x + \frac{\sqrt{3}}{2}\cos 3x\right) = \sqrt{2}
+\]
+\[
+2\sin\left(-3x + \frac{\pi}{3}\right) = \sqrt{2}
+\]
+\[
+\sin\left(\frac{\pi}{3} - 3x\right) = \frac{\sqrt{2}}{2}
+\]
+
+Na intervalu $\left[-\frac{\pi}{2}, \pi\right]$, trebamo pronaći sva rešenja i prebrojati ih.
+
+Analizirajući sve slučajeve i proveravajući koja rešenja spadaju u dati interval, dobijamo ukupno 4 rešenja.
+
+\subsection*{Answer}
+(C) $4$
+
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Skup svih realnih rešenja nejednačine $\sqrt{7-\log_2 x^2} + \log_2 x^4 > 4$ je oblika (za neke $a,b,c,d \in R$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+
+Let $t = \log_2 |x|$. Then $\log_2 x^2 = 2t$ and $\log_2 x^4 = 4t$.
+Inequality: $\sqrt{7-2t} + 4t > 4 \implies \sqrt{7-2t} > 4 - 4t$.
+Domain: $7-2t \ge 0 \implies t \le 3.5$. Also $x \ne 0$.
+If $4-4t < 0 \implies t > 1$, always true (LHS $\ge 0 >$ RHS).
+So $(1, 3.5]$ is solution.
+If $4-4t \ge 0 \implies t \le 1$:
+Square: $7-2t > 16 - 32t + 16t^2 \implies 16t^2 - 30t + 9 < 0$.
+Roots: $t = 3/8, 1.5$.
+Solution between roots: $(3/8, 1.5)$.
+Intersect with $t \le 1$: $(3/8, 1]$.
+Union: $(3/8, 3.5]$.
+$3/8 < \log_2 |x| \le 3.5 \implies 2^{3/8} < |x| \le 2^{3.5}$.
+$x \in [-2^{3.5}, -2^{3/8}) \cup (2^{3/8}, 2^{3.5}]$.
+$x \in [-8\sqrt{2}, -2^{3/8}) \cup (2^{3/8}, 8\sqrt{2}]$.
+Matches form $[a, b) \cup (c, d]$.
+
+
+\subsection*{Answer}
+[a, b) \cup (c, d] (option \textbf{B}).
+
+\end{document}

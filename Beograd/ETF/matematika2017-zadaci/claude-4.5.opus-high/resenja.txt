@@ -1,0 +1,78 @@
+RESENJA - Prijemni ispit iz matematike za upis na Elektrotehnicki fakultet
+Univerzitet u Beogradu, 26. jun 2017.
+Sifra zadatka: 17101
+
+================================================================================
+
+1.  (C) -5 i -4
+    Vrednost izraza ∛(-89) nalazi se između brojeva -5 i -4.
+
+2.  (A) ∛(36πV²)
+    Ako je V zapremina lopte, tada je njena površina jednaka ∛(36πV²).
+
+3.  (A) √(2+√5)
+    Ako je x + 1/x = 3 (x ∈ R⁺), tada je ⁴√x + 1/⁴√x jednako √(2+√5).
+
+4.  (D) √2
+    Za date kompleksne brojeve z₁ = 2017 + 2018i, z₂ = 2018 + 2019i,
+    |w| = √2.
+
+5.  (B) 24
+    Za polinom P(x) minimalnog stepena sa realnim koeficijentima i korenima 
+    -1 i 2i, ako je P(0) = -12, tada je P(-2) = 24.
+
+6.  (B) 5 + 3π
+    Za funkciju f(x) = x - sin(πx)·cos(πx) + (ln 2x)/x + e^(tg 2πx),
+    vrednost f'(1/2) = 5 + 3π.
+
+7.  (B) 0
+    Granična vrednost datog izraza kada x → 5π jednaka je 0.
+
+8.  (A) -3994
+    Koeficijent A uz x⁴ u razvoju datog izraza jednak je -3994.
+
+9.  (C) 31
+    Za datu funkciju f(x), vrednost izraza f(f(f(17)+1)+1) = 31.
+
+10. (C) 3/√7
+    U trouglu ABC gde je |BC| = 3·|AB| i ∠ABC = 60°,
+    cos∠BAC + cos∠ACB = 3/√7.
+
+11. (D) 5(-21α + 53β)
+    Zbir prvih 160 članova aritmetičke progresije gde je a₅₄ = α i a₇₀ = β
+    jednak je 5(-21α + 53β).
+
+12. (C) 4
+    Ukupan broj realnih rešenja jednačine sin 3|x| + √3·cos 3x = √2 
+    na intervalu [-π/2, π] jednak je 4.
+
+13. (C) arctg(2/3)
+    Oštar ugao pod kojim se seku tangenta krive 2x² + 3y² = 5 u tački (1,1)
+    i tangenta krive x² - 4x + y² + 6y = 3 u tački (2,1) jednak je arctg(2/3).
+
+14. (B) [a, b) ∪ (b, +∞)
+    Skup svih realnih rešenja nejednačine je oblika [a, b) ∪ (b, +∞),
+    gde je a = 1, b = 2.
+
+15. (C) 1
+    Ukupan broj realnih rešenja sistema jednačina jednak je 1.
+
+16. (B) [0, 3)
+    Zbir svih realnih rešenja jednačine nalazi se u intervalu [0, 3).
+
+17. (D) 4
+    Vrednost izraza (sin 2° + sin 4° + sin 6° - sin 12°)/(sin 3°·sin 4°·sin 5°)
+    jednaka je 4.
+
+18. (A) S³·√3/216
+    Maksimalna zapremina pravilne trostrane prizme čiji je obim jedne bočne 
+    strane S jednaka je S³·√3/216.
+
+19. (A) (-∞, a) ∪ (b, +∞)
+    Skup svih vrednosti realnog parametra m je oblika (-∞, a) ∪ (b, +∞).
+
+20. (A) 2592
+    Ukupan broj preslikavanja f: A → A koja zadovoljavaju date uslove 
+    jednak je 2592.
+
+================================================================================

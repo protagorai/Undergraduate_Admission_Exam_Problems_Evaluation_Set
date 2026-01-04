@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 12}
+If $f(x) - 2f\left(\frac{1}{x}\right) = x^2$, $x \neq 0$, find $f(2)$.
+
+\subsection*{Solution}
+We have the equation
+\[
+f(x) - 2f\left(\frac{1}{x}\right) = x^2. \quad (*).
+\]
+Substitute $\frac{1}{x}$ for $x$ in $(*)$:
+\[
+f\left(\frac{1}{x}\right) - 2f(x) = \left(\frac{1}{x}\right)^2 = \frac{1}{x^2}. \quad (**).
+\]
+We want to find $f(2)$, so let's set $x=2$.
+From $(*)$:
+\[
+f(2) - 2f(1/2) = 4. \quad (1)
+\]
+From $(**)$ with $x=2$ (or substituting $x=1/2$ into original):
+\[
+f(1/2) - 2f(2) = (1/2)^2 = \frac{1}{4}. \quad (2)
+\]
+From $(2)$, $f(1/2) = \frac{1}{4} + 2f(2)$. Substitute this into $(1)$:
+\[
+f(2) - 2\left(\frac{1}{4} + 2f(2)\right) = 4
+\]
+\[
+f(2) - \frac{1}{2} - 4f(2) = 4
+\]
+\[
+-3f(2) = 4 + \frac{1}{2} = \frac{9}{2}
+\]
+\[
+f(2) = \frac{9/2}{-3} = -\frac{3}{2}.
+\]
+
+\subsection*{Answer}
+$-\frac{3}{2}$ (option \textbf{Д}).
+
+\end{document}
+
+
+
+
+
+

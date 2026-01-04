@@ -1,0 +1,2 @@
+Ako je $a>b>0$ i $a^2+b^2=6ab$, tada je $\frac{a+b}{a-b}$ jednako:
+A) $-\sqrt{2}$; B) $\sqrt{2}$; C) $\sqrt{6}$; D) 1; E) $\frac{1}{\sqrt{2}}$; N) Ne znam.

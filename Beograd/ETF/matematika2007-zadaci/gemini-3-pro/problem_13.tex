@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Vrednost izraza $\frac{\sin 86^\circ + \sin 76^\circ - \sin 26^\circ - \sin 16^\circ}{\cos 86^\circ + \cos 76^\circ + \cos 26^\circ + \cos 16^\circ}$ iznosi :
+\[
+(A)\ \sqrt{3} \quad (B)\ \frac{\sqrt{3}}{2} \quad (C)\ \frac{2}{\sqrt{3}} \quad (D)\ \frac{1}{\sqrt{3}} \quad (E)\ 0 \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Grupišimo članove u brojiocu i imeniocu:
+Brojilac: $(\sin 86^\circ - \sin 16^\circ) + (\sin 76^\circ - \sin 26^\circ)$
+Koristimo formulu $\sin A - \sin B = 2\sin\frac{A-B}{2}\cos\frac{A+B}{2}$:
+\[
+\sin 86^\circ - \sin 16^\circ = 2\sin 35^\circ \cos 51^\circ
+\]
+\[
+\sin 76^\circ - \sin 26^\circ = 2\sin 25^\circ \cos 51^\circ
+\]
+Brojilac postaje:
+\[
+2\cos 51^\circ (\sin 35^\circ + \sin 25^\circ) = 2\cos 51^\circ (2\sin 30^\circ \cos 5^\circ) = 2\cos 51^\circ \cos 5^\circ
+\]
+(jer je $\sin 30^\circ = 1/2$).
+
+Imenilac: $(\cos 86^\circ + \cos 16^\circ) + (\cos 76^\circ + \cos 26^\circ)$
+Koristimo formulu $\cos A + \cos B = 2\cos\frac{A+B}{2}\cos\frac{A-B}{2}$:
+\[
+\cos 86^\circ + \cos 16^\circ = 2\cos 51^\circ \cos 35^\circ
+\]
+\[
+\cos 76^\circ + \cos 26^\circ = 2\cos 51^\circ \cos 25^\circ
+\]
+Imenilac postaje:
+\[
+2\cos 51^\circ (\cos 35^\circ + \cos 25^\circ) = 2\cos 51^\circ (2\cos 30^\circ \cos 5^\circ) = 2\cos 51^\circ (\sqrt{3} \cos 5^\circ)
+\]
+(jer je $\cos 30^\circ = \sqrt{3}/2$).
+
+Odnos brojioca i imenioca:
+\[
+\frac{2\cos 51^\circ \cos 5^\circ}{2\sqrt{3}\cos 51^\circ \cos 5^\circ} = \frac{1}{\sqrt{3}}
+\]
+
+\subsection*{Answer}
+$\frac{1}{\sqrt{3}}$ (option \textbf{D}).
+
+\end{document}

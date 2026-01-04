@@ -1,0 +1,5 @@
+Problem 14
+
+Ako je \(x^{2} + 4x + 6\) faktor od \(x^{4} + ax^{2} + b\), tada je \(a + b\) jednako:
+
+(A) 12   (B) 24   (C) 32   (D) 36   (E) 40   (N) Ne znam

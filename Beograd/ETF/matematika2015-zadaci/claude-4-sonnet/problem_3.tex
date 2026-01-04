@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+If $x_1$ and $x_2$ are solutions of the quadratic equation $x^2 + x + 1 = 0$, and $y_1 = ax_1 + x_2$ and $y_2 = x_1 + ax_2$ (where $a \in \mathbb{R}$), then the solutions of the quadratic equation are:
+
+\subsection*{Solution}
+From the original equation $x^2 + x + 1 = 0$, by Vieta's formulas:
+\begin{align}
+x_1 + x_2 &= -1\\
+x_1 \cdot x_2 &= 1
+\end{align}
+
+We have:
+\begin{align}
+y_1 &= ax_1 + x_2\\
+y_2 &= x_1 + ax_2
+\end{align}
+
+Let's find the sum and product of $y_1$ and $y_2$:
+
+Sum:
+\begin{align}
+y_1 + y_2 &= (ax_1 + x_2) + (x_1 + ax_2)\\
+&= (a+1)x_1 + (a+1)x_2\\
+&= (a+1)(x_1 + x_2)\\
+&= (a+1)(-1) = -(a+1)
+\end{align}
+
+Product:
+\begin{align}
+y_1 \cdot y_2 &= (ax_1 + x_2)(x_1 + ax_2)\\
+&= ax_1^2 + a^2x_1x_2 + x_1x_2 + ax_2^2\\
+&= a(x_1^2 + x_2^2) + (a^2 + 1)x_1x_2
+\end{align}
+
+We need to find $x_1^2 + x_2^2$:
+\[x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = (-1)^2 - 2(1) = 1 - 2 = -1\]
+
+Therefore:
+\[y_1 \cdot y_2 = a(-1) + (a^2 + 1)(1) = -a + a^2 + 1 = a^2 - a + 1\]
+
+The quadratic equation with roots $y_1$ and $y_2$ is:
+\[y^2 - (y_1 + y_2)y + y_1y_2 = 0\]
+\[y^2 - (-(a+1))y + (a^2 - a + 1) = 0\]
+\[y^2 + (a+1)y + a^2 - a + 1 = 0\]
+
+\subsection*{Answer}
+$y^2 + (a+1)y + a^2 - a + 1 = 0$ (option \textbf{B}).
+
+\end{document}

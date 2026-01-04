@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Broj realnih rešenja sistema jednačina $\log_{|x-y|} \frac{xy}{2} = 2$, $x + y = xy + 1$ je:
+
+\subsection*{Solution}
+Iz druge jednačine:
+$x + y = xy + 1$
+$x + y - 1 = xy$
+$xy = x + y - 1$
+
+Zamenjujemo u prvu jednačinu:
+$\log_{|x-y|} \frac{x + y - 1}{2} = 2$
+
+Ovo znači:
+$|x - y|^2 = \frac{x + y - 1}{2}$
+
+Neka je $s = x + y$ i $d = x - y$. Tada:
+$xy = \frac{s^2 - d^2}{4}$
+
+Iz druge jednačine:
+$\frac{s^2 - d^2}{4} = s - 1$
+$s^2 - d^2 = 4s - 4$
+$s^2 - 4s + 4 = d^2$
+$(s - 2)^2 = d^2$
+
+Dakle $|s - 2| = |d|$, što znači $s - 2 = \pm d$.
+
+Slučaj 1: $s - 2 = d$, tj. $s = d + 2$
+Slučaj 2: $s - 2 = -d$, tj. $s = 2 - d$
+
+Iz prve jednačine:
+$d^2 = \frac{s - 1}{2}$
+
+Slučaj 1: $d^2 = \frac{(d + 2) - 1}{2} = \frac{d + 1}{2}$
+$2d^2 = d + 1$
+$2d^2 - d - 1 = 0$
+$(2d + 1)(d - 1) = 0$
+$d = -\frac{1}{2}$ ili $d = 1$
+
+Slučaj 2: $d^2 = \frac{(2 - d) - 1}{2} = \frac{1 - d}{2}$
+$2d^2 = 1 - d$
+$2d^2 + d - 1 = 0$
+$(2d - 1)(d + 1) = 0$
+$d = \frac{1}{2}$ ili $d = -1$
+
+Proveravamo da li su rešenja validna (osnova logaritma mora biti pozitivna i različita od 1, argument mora biti pozitivan).
+
+Za svaki slučaj dobijamo po dva para $(x, y)$, što daje ukupno 4 rešenja.
+
+\subsection*{Answer}
+$4$ (opcija \textbf{C}).
+
+\end{document}

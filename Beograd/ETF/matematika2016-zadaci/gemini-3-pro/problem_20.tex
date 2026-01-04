@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Ukupan broj realnih rešenja jednačine $\cos x + \cos 2x + 2\cos^2 \frac{3x}{2} + \cos 4x = \frac{1}{2}$ na segmentu $[0, 2\pi]$ jednak je:
+
+\subsection*{Solution}
+Using $2\cos^2 \frac{3x}{2} = 1 + \cos 3x$.
+Eq: $\cos x + \cos 2x + 1 + \cos 3x + \cos 4x = 1/2$.
+$\cos x + \cos 2x + \cos 3x + \cos 4x = -1/2$.
+Sum is $\frac{\sin(4x/2)}{\sin(x/2)} \cos(5x/2) = \frac{\sin 2x}{\sin(x/2)} \cos \frac{5x}{2}$.
+Eq: $2 \sin 2x \cos \frac{5x}{2} = -\sin \frac{x}{2}$.
+Use $2 \sin A \cos B = \sin(A+B) + \sin(A-B)$.
+$\sin(4.5x) + \sin(-0.5x) = -\sin(0.5x)$.
+$\sin(4.5x) - \sin(0.5x) = -\sin(0.5x)$.
+$\sin(9x/2) = 0$.
+$9x/2 = k\pi \implies x = \frac{2k\pi}{9}$.
+In $[0, 2\pi]$, $k \in \{0, ..., 9\}$.
+Excluded points: $\sin(x/2)=0 \implies x=0, x=2\pi$.
+Exclude $k=0$ and $k=9$.
+Remaining $k \in \{1, ..., 8\}$.
+Total 8 solutions.
+
+
+\subsection*{Answer}
+8 (option \textbf{E})
+
+\end{document}

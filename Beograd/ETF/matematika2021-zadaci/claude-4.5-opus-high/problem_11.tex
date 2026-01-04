@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Tačke $A(-2, 2)$ i $B(2, -2)$ su temena trougla $ABC$, a $N(1, 2)$ je presek visina tog trougla. Zbir koordinata temena $C$ jednak je:
+
+\subsection*{Solution}
+Neka je $C(x_C, y_C)$.
+
+Ortocentar (presek visina) trougla je tačka $N(1, 2)$.
+
+Visina iz $A$ je normalna na stranicu $BC$. Vektor $\overrightarrow{BC} = (x_C - 2, y_C + 2)$.
+
+Visina iz $A$ prolazi kroz $A(-2, 2)$ i $N(1, 2)$. Vektor $\overrightarrow{AN} = (3, 0)$.
+
+Pošto je $\overrightarrow{AN} \perp \overrightarrow{BC}$:
+\[
+\overrightarrow{AN} \cdot \overrightarrow{BC} = 0
+\]
+\[
+3(x_C - 2) + 0 \cdot (y_C + 2) = 0
+\]
+\[
+x_C = 2
+\]
+
+Visina iz $B$ je normalna na stranicu $AC$. Vektor $\overrightarrow{AC} = (x_C + 2, y_C - 2) = (4, y_C - 2)$.
+
+Visina iz $B$ prolazi kroz $B(2, -2)$ i $N(1, 2)$. Vektor $\overrightarrow{BN} = (-1, 4)$.
+
+Pošto je $\overrightarrow{BN} \perp \overrightarrow{AC}$:
+\[
+\overrightarrow{BN} \cdot \overrightarrow{AC} = 0
+\]
+\[
+(-1) \cdot 4 + 4 \cdot (y_C - 2) = 0
+\]
+\[
+-4 + 4y_C - 8 = 0
+\]
+\[
+4y_C = 12
+\]
+\[
+y_C = 3
+\]
+
+Dakle $C(2, 3)$ i zbir koordinata je $2 + 3 = 5$.
+
+\subsection*{Answer}
+$5$ (option \textbf{B}).
+
+\end{document}

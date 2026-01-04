@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Zbir svih rešenja jednačine $z^2 + z\bar{z} + i\bar{z} = 0$, $z \in C$, iznosi:
+
+(A) $-1$ \quad (B) $0$ \quad (C) $-\frac{1}{2} - \frac{1}{2}i$ \quad (D) $-i$ \quad (E) $\frac{1}{2} - \frac{1}{2}i$
+
+\subsection*{Solution}
+Neka je $z = x + iy$. Tada je $\bar{z} = x - iy$.
+Jednačina glasi:
+\[
+(x+iy)^2 + (x+iy)(x-iy) + i(x-iy) = 0
+\]
+\[
+x^2 + 2ixy - y^2 + x^2 + y^2 + ix + y = 0
+\]
+\[
+2x^2 + y + i(2xy + x) = 0
+\]
+Izjednačavamo realni i imaginarni deo sa nulom:
+1) $2x^2 + y = 0 \Rightarrow y = -2x^2$
+2) $2xy + x = 0 \Rightarrow x(2y + 1) = 0$
+
+Iz druge jednačine imamo dva slučaja:
+Slučaj A: $x = 0$.
+Zamenimo u prvu jednačinu: $y = -2(0)^2 = 0$.
+Dakle $z_1 = 0$.
+
+Slučaj B: $2y + 1 = 0 \Rightarrow y = -1/2$.
+Zamenimo u prvu jednačinu: $2x^2 - 1/2 = 0 \Rightarrow 2x^2 = 1/2 \Rightarrow x^2 = 1/4 \Rightarrow x = \pm 1/2$.
+Dakle $z_2 = 1/2 - 1/2i$ i $z_3 = -1/2 - 1/2i$.
+
+Zbir svih rešenja:
+\[
+S = z_1 + z_2 + z_3 = 0 + (1/2 - 1/2i) + (-1/2 - 1/2i) = -i
+\]
+
+\subsection*{Answer}
+$-i$ (opcija \textbf{(D)}).
+
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Find the value of the expression $\log_4 3 \cdot \log_5 4 \cdot \log_6 5 \cdot \log_7 6 \cdot \log_8 7 \cdot \log_9 8$.
+
+\subsection*{Solution}
+Using the change of base formula, we have $\log_a b = \frac{\ln b}{\ln a}$.
+
+Therefore:
+\[
+\log_4 3 \cdot \log_5 4 \cdot \log_6 5 \cdot \log_7 6 \cdot \log_8 7 \cdot \log_9 8
+\]
+\[
+= \frac{\ln 3}{\ln 4} \cdot \frac{\ln 4}{\ln 5} \cdot \frac{\ln 5}{\ln 6} \cdot \frac{\ln 6}{\ln 7} \cdot \frac{\ln 7}{\ln 8} \cdot \frac{\ln 8}{\ln 9}
+\]
+
+This is a telescoping product where consecutive terms cancel:
+\[
+= \frac{\ln 3}{\ln 9} = \frac{\ln 3}{\ln 3^2} = \frac{\ln 3}{2\ln 3} = \frac{1}{2}
+\]
+
+\subsection*{Answer}
+$\frac{1}{2}$ (option \textbf{A}).
+
+\end{document}

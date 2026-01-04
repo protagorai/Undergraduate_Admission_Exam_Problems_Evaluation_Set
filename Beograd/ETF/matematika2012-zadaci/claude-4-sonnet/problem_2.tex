@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Ukupan broj dijagonala pravilnog desetougla je:
+
+\subsection*{Solution}
+Pravilni desetougao ima 10 temena.
+
+Broj dijagonala u n-touglu se računa po formuli:
+\[
+\text{Broj dijagonala} = \frac{n(n-3)}{2}
+\]
+
+Ova formula se izvodi na sledeći način:
+- Iz svakog temena možemo povući $n-1$ duži do ostalih temena
+- Od tih $n-1$ duži, 2 su stranice (do susednih temena)
+- Dakle, iz svakog temena možemo povući $n-3$ dijagonale
+- Ukupno imamo $n(n-3)$ dijagonala, ali svaku smo brojali dva puta
+- Zato delimo sa 2: $\frac{n(n-3)}{2}$
+
+Za $n = 10$:
+\[
+\text{Broj dijagonala} = \frac{10(10-3)}{2} = \frac{10 \cdot 7}{2} = \frac{70}{2} = 35
+\]
+
+\subsection*{Answer}
+35 (opcija \textbf{E}).
+
+\end{document}

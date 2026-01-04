@@ -1,0 +1,5 @@
+Problem 16
+
+U geometrijskoj progresiji je \(a_{1} + a_{5} = 51\), \(a_{2} + a_{6} = 102\). Za koju vrednost \(n\) je zbir prvih \(n\) članova te progresije \(S_{n} = 3069\)?
+
+(A) \(n = 4\)   (B) \(n = 6\)   (C) \(n = 8\)   (D) \(n = 10\)   (E) \(n = 12\)   (N) Ne znam

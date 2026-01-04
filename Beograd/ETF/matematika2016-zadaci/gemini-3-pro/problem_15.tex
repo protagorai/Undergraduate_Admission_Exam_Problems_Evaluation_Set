@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Ukupan broj realnih rešenja sistema jednačina $\sqrt{x-1}+\sqrt[3]{y}=1$, $x-y=2$, jednak je:
+
+\subsection*{Solution}
+$y = x-2$. Substitute into first eq:
+$\sqrt{x-1} + \sqrt[3]{x-2} = 1$.
+Let $u = \sqrt{x-1} \ge 0$. Then $x-1 = u^2, x-2 = u^2-1$.
+$u + \sqrt[3]{u^2-1} = 1 \implies \sqrt[3]{u^2-1} = 1-u$.
+Cube: $u^2-1 = (1-u)^3 = 1 - 3u + 3u^2 - u^3$.
+$u^3 - 2u^2 + 3u - 2 = 0$.
+$(u-1)(u^2-u+2) = 0$.
+$u=1$ is the only real root ($D < 0$ for quadratic).
+$x = u^2+1 = 2$. $y=0$.
+One solution.
+
+
+\subsection*{Answer}
+1 (option \textbf{B})
+
+\end{document}

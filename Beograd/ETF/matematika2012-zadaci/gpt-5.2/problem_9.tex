@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Find the sum of the first $2012$ terms of the arithmetic progression
+\[
+\frac{2011}{2012},\ \frac{2010}{2012},\ \frac{2009}{2012},\ \ldots
+\]
+Options: (A) $\frac{2013}{2}$ \quad (B) $\frac{2013}{4}$ \quad (C) $\frac{2011}{4}$ \quad (D) $\frac{2011}{2}$ \quad (E) none of the above.
+
+\subsection*{Solution}
+The first term is $a_1=\frac{2011}{2012}$ and the common difference is
+\[
+d=\frac{2010}{2012}-\frac{2011}{2012}=-\frac{1}{2012}.
+\]
+For $n=2012$, the sum is
+\[
+S_n=\frac{n}{2}\bigl(2a_1+(n-1)d\bigr)
+=\frac{2012}{2}\left(2\cdot\frac{2011}{2012}+2011\cdot\left(-\frac{1}{2012}\right)\right).
+\]
+Inside the parentheses:
+\[
+2\cdot\frac{2011}{2012}-\frac{2011}{2012}=\frac{2011}{2012}.
+\]
+Hence
+\[
+S_{2012}=\frac{2012}{2}\cdot\frac{2011}{2012}=\frac{2011}{2}.
+\]
+
+\subsection*{Answer}
+$\frac{2011}{2}$ (option \textbf{D}).
+
+\end{document}
+

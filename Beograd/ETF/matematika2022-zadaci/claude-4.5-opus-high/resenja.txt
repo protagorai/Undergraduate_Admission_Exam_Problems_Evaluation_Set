@@ -1,0 +1,68 @@
+RESENJA - Prijemni ispit iz matematike za upis na Elektrotehnicki fakultet
+Univerzitet u Beogradu, 27. jun 2022.
+================================================================================
+
+1.  (E) 100000
+    Cena racunara posle povecanja od 25% i smanjenja od 20%: 100000 * 1.25 * 0.80 = 100000
+
+2.  (C) y = -3x + 4
+    Jednacina simetrale duzi MN, gde je M(4,2) i N(-2,0)
+
+3.  (E) 216/5
+    Vrednost izraza (3^((2 - log_{3√3}5 + 2log_9 4)/4))^6
+
+4.  (D) R\{a,b} gde je a=0, b=1
+    Skup vrednosti parametra m za koje jednacina (1-m)x² + (m-2)x + 1 = 0 ima dva razlicita realna resenja
+
+5.  (E) -x + 1
+    Ostatak pri deljenju polinoma P(x) = x^2022 - 2x^2021 + x^2019 - x² + 2x + 1 polinomom Q(x) = x² + 1
+
+6.  (A) -8
+    Ako je x/y + 4y/x = 2, tada x³/y³ = -8
+
+7.  (B) -3/4
+    Granicna vrednost lim_{x→π/4} (ctg³x - 1)/(2 - ctgx - ctg³x)
+
+8.  (A) 325
+    Broj razlicitih prirodnih brojeva napisanih pomocu cifara 1, 2, 3, 4, 5 tako da se svaka cifra koristi najvise jednom
+
+9.  (B) veci od 3
+    Broj razlicitih realnih resenja sistema jednacina 4x² - 5xy + y² = 0, 2x² + y² - 4x - 5y + 6 = 0 je 4
+
+10. (A) 2
+    Vrednost minimuma funkcije f(x) = -8x²/5 + 2x + 2 + ln(1+4x²) - arctg(2x) na segmentu [-3/8, 1]
+
+11. (B) 1
+    Broj razlicitih realnih resenja jednacine 1 + log_x((4-x)/10) = (log₁₀x² - 1)log_x 10
+
+12. (E) 9√3/25
+    Povrsina trougla CDE u cm² (trougao ABC sa AC=3cm, BC=2cm, ugao C=60°, D simetricna tacka C u odnosu na AB, E na BC tako da DE∥AC)
+
+13. (D) 2/3
+    Suma kvadratnih korena clanova opadajuce geometrijske progresije sa pozitivnim clanovima cija je suma 9/2, a zbir kvadrata prvog i treceg clana jednak 3
+
+14. (D) 2
+    Broj razlicitih realnih resenja jednacine √(1-x) + √(1+x) - √(1-x²) = 5/4
+
+15. (E) 3π/2
+    Zbir realnih resenja jednacine tg(x - π/12)ctg(x + π/12) = 1/3 na segmentu [0, 2π]
+
+16. (B) 8
+    Razlika najveceg i najmanjeg resenja nejednacine ⁴√(√2+1)^x + ⁴√(√2-1)^x ≤ 2√2
+
+17. (A) 2
+    Broj racionalnih clanova u razvoju binoma (³√5 - ⁵√3)^n gde je odnos binomnih koeficijenata cetvrtog i treceg clana jednak 10
+
+18. (D) 10 : π
+    Odnos zapremine pravilne cetvorostrane zarubljene piramide i upisane lopte (bocna ivica √3 cm, ugao sa osnovom 60°)
+
+19. (B) 6
+    Najveci broj realnih resenja jednacine |2 - |x - x²|| = p, gde je p realni parametar
+
+20. (E) a + b
+    Minimalna duzina odsecka izmedju koordinatnih osa koji formira tangenta koja dodiruje elipsu x²/a² + y²/b² = 1 u prvom kvadrantu (a ≥ b > 0)
+
+================================================================================
+SUMARNO:
+1-E, 2-C, 3-E, 4-D, 5-E, 6-A, 7-B, 8-A, 9-B, 10-A
+11-B, 12-E, 13-D, 14-D, 15-E, 16-B, 17-A, 18-D, 19-B, 20-E

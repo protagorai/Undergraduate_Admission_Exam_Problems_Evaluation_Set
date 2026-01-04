@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 12}
+Ugao pod kojim se vidi kružnica $x^2 + (y-25)^2 = 225$ iz koordinatnog početka iznosi:
+
+\subsection*{Solution}
+Jednačina kružnice je $x^2 + (y-25)^2 = 15^2$.
+Centar kružnice je $C(0, 25)$, a poluprečnik $r=15$.
+Posmatramo ugao pod kojim se kružnica vidi iz tačke $O(0,0)$.
+Tangente povučene iz $O$ na kružnicu formiraju taj ugao.
+Neka je $\phi$ traženi ugao. Neka je $\alpha = \phi/2$.
+Uočimo pravougli trougao koji čine koordinatni početak $O$, centar kružnice $C$ i tačka dodira $T$ jedne tangente.
+Ugao kod temena $O$ u tom trouglu je $\alpha$.
+Hipotenuza je $d = OC = 25$ (rastojanje od koordinatnog početka do centra $(0, 25)$).
+Kateta naspram ugla $\alpha$ je poluprečnik $r=15$.
+Iz definicije sinusa:
+$\sin \alpha = \frac{r}{d} = \frac{15}{25} = \frac{3}{5}$.
+
+Treba nam ugao $\phi = 2\alpha$.
+Možemo izračunati $\tan \phi$ ili izraziti preko $\arctan$.
+Iz $\sin \alpha = 3/5$, sledi $\cos \alpha = 4/5$ i $\tan \alpha = 3/4$.
+Koristimo formulu za tangens dvostrukog ugla:
+$\tan \phi = \frac{2 \tan \alpha}{1 - \tan^2 \alpha} = \frac{2 \cdot \frac{3}{4}}{1 - (\frac{3}{4})^2} = \frac{\frac{3}{2}}{1 - \frac{9}{16}} = \frac{\frac{3}{2}}{\frac{7}{16}} = \frac{3}{2} \cdot \frac{16}{7} = \frac{24}{7}$.
+Dakle, $\phi = \arctan \frac{24}{7}$.
+
+\subsection*{Answer}
+$\mathrm{arctg}\, \frac{24}{7}$ (option \textbf{A}).
+
+\end{document}
+

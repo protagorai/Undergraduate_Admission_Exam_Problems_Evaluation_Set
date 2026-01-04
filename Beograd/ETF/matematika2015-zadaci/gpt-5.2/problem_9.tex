@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Broj realnih resenja jednacine
+\[
+f(x)+f(f(x))=x,
+\qquad\text{gde je}\qquad
+f(x)=|x|+a,\ a>0,
+\]
+jednak je:
+
+\subsection*{Solution}
+Za svako $x$ vazi $f(x)=|x|+a\ge a>0$, pa je $f(x)>0$ i otuda
+\[
+f(f(x))=|f(x)|+a=f(x)+a=|x|+2a.
+\]
+Zato leva strana postaje
+\[
+f(x)+f(f(x))=(|x|+a)+(|x|+2a)=2|x|+3a.
+\]
+Jednacina je ekvivalentna sa
+\[
+2|x|+3a=x.
+\]
+Ako je $x\ge 0$, tada $|x|=x$ i dobijamo $2x+3a=x$, tj. $x=-3a<0$, kontradikcija.
+Ako je $x<0$, tada $|x|=-x$ i dobijamo $-2x+3a=x$, tj. $x=a>0$, kontradikcija.
+
+Dakle, resenja nema.
+
+\subsection*{Answer}
+$0$ (opcija \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako je $\sin \frac{\alpha}{2} = \frac{1}{\sqrt{5}}$, za $\alpha \in (\pi, 2\pi)$, onda je $\text{tg}\,\alpha$ jednako:
+
+\subsection*{Solution}
+
+We have $\sin \frac{\alpha}{2} = \frac{1}{\sqrt{5}}$.
+Calculate $\cos \alpha$:
+\[
+\cos \alpha = 1 - 2\sin^2 \frac{\alpha}{2} = 1 - 2\left(\frac{1}{5}\right) = 1 - \frac{2}{5} = \frac{3}{5}.
+\]
+Since $\alpha \in (\pi, 2\pi)$ and $\cos \alpha > 0$, $\alpha$ must be in the 4th quadrant ($\frac{3\pi}{2} < \alpha < 2\pi$).
+In the 4th quadrant, $\sin \alpha$ is negative.
+\[
+\sin \alpha = -\sqrt{1 - \cos^2 \alpha} = -\sqrt{1 - \left(\frac{3}{5}\right)^2} = -\sqrt{1 - \frac{9}{25}} = -\sqrt{\frac{16}{25}} = -\frac{4}{5}.
+\]
+Then $\text{tg}\,\alpha$ is:
+\[
+\text{tg}\,\alpha = \frac{\sin \alpha}{\cos \alpha} = \frac{-4/5}{3/5} = -\frac{4}{3}.
+\]
+
+
+\subsection*{Answer}
+-\frac{4}{3} (option \textbf{B}).
+
+\end{document}

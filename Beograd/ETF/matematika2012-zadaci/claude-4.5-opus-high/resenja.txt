@@ -1,0 +1,28 @@
+RESENJA - Prijemni ispit iz matematike za upis na Elektrotehnicki fakultet
+Univerzitet u Beogradu, 25. jun 2012.
+Sifra zadatka: 12151
+================================================================================
+
+1.  (A) 7/2
+2.  (E) 35
+3.  (D) -11/8
+4.  (B) 2/3
+5.  (B) 17
+6.  (D) 715
+7.  (C) x^2 + y^2 - 4x - 6y - 3 = 0
+8.  (B) 30°
+9.  (D) 2011/2
+10. (A) sqrt(5)
+11. (B) x_1 + x_2 + x_1*x_2 - 11 = 0
+12. (D) 4
+13. (A) (b+2)/(b(a+3))
+14. (C) 6(sqrt(2) + 1)
+15. (D) 2*epsilon + 1 - 2i
+16. (B) 1
+17. (C) 4
+18. (C) (-inf, -a) U (a, +inf)
+19. (B) 3600
+20. (C) 12*pi - 1
+
+================================================================================
+Napomena: Resenja su dobijena samostalnim resavanjem zadataka.

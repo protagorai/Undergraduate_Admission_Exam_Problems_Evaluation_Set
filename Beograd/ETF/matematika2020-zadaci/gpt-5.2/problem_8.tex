@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 8}
+
+Definisan je niz funkcija \(f_n:\mathbb{R}\to\mathbb{R}\) tako da je
+\[
+f_1(x)=2x+2020,\qquad f_{n+1}(x)=f_1(f_n(x)).
+\]
+Dakle, \(f_n\) je \(n\)-ta iteracija afine funkcije \(T(x)=2x+2020\).
+
+Najpre na\v dimo op\v stu formulu. Lako se proverava indukcijom:
+\[
+f_n(x)=2^n x + 2020(2^n-1).
+\]
+(Za \(n=1\) va\v zi. Ako va\v zi za \(n\), onda \(f_{n+1}(x)=2(2^n x+2020(2^n-1))+2020=2^{n+1}x+2020(2^{n+1}-1)\).)
+
+Sada ra\v cunamo
+\[
+f_{2020}(-2020)=2^{2020}(-2020)+2020(2^{2020}-1)
+=-2020\cdot 2^{2020}+2020\cdot 2^{2020}-2020
+=-2020.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{-2020}\qquad\text{(D)}
+\]
+
+\end{document}
+

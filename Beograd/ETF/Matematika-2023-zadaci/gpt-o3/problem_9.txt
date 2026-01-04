@@ -1,0 +1,8 @@
+Problem 9 (Matematika 2023)
+Broj četvorocifrenih brojeva deljivih sa 5 čije su sve cifre različite jednako je:
+a) 1008
+b) 952
+c) 1200
+d) 896
+e) 840
+n) Ne znam

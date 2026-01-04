@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 9}
+Ako je $f(x) = \left(\frac{x+1}{x-1}\right)^2$ ($x \ne \pm 1$) tada je $f\left(\frac{x+1}{x-1}\right) - f\left(\frac{x-1}{x+1}\right)$ jednako:
+\[
+(A)\; \left(\frac{x+1}{x-1}\right)^2 \quad (B)\; \left(\frac{x-1}{x+1}\right)^2 \quad (C)\; 0 \quad (D)\; \frac{x^2-1}{x^2+1} \quad (E)\; -\left(\frac{x-1}{x+1}\right)^2
+\]
+
+\subsection*{Solution}
+Neka je $g(x) = \frac{x+1}{x-1}$. Tada je $f(x) = (g(x))^2$.
+Prvi član izraza je $f(g(x)) = f\left(\frac{x+1}{x-1}\right)$.
+Drugi član izraza je $f\left(\frac{1}{g(x)}\right) = f\left(\frac{x-1}{x+1}\right)$.
+Izračunajmo $f(1/t)$ za $t = g(x)$:
+\[
+f(1/t) = \left(\frac{1/t + 1}{1/t - 1}\right)^2 = \left(\frac{\frac{1+t}{t}}{\frac{1-t}{t}}\right)^2 = \left(\frac{1+t}{1-t}\right)^2 = \left(\frac{t+1}{-(t-1)}\right)^2 = \left(\frac{t+1}{t-1}\right)^2 = f(t)
+\]
+Dakle, $f\left(\frac{x-1}{x+1}\right) = f\left(\frac{x+1}{x-1}\right)$.
+Razlika ova dva člana je:
+\[
+f\left(\frac{x+1}{x-1}\right) - f\left(\frac{x-1}{x+1}\right) = 0
+\]
+
+\subsection*{Answer}
+$0$ (option \textbf{C}).
+
+\end{document}

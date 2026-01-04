@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Koeficijent uz $x^{27} y^2$ u razvoju binoma $(x^3 + \sqrt{y})^{13}$ jednak je:
+
+\subsection*{Solution}
+Koristimo binomnu teoremu:
+\[
+(x^3 + \sqrt{y})^{13} = \sum_{k=0}^{13} \binom{13}{k} (x^3)^{13-k} (\sqrt{y})^k
+\]
+
+Opšti član je:
+\[
+\binom{13}{k} (x^3)^{13-k} (\sqrt{y})^k = \binom{13}{k} x^{3(13-k)} y^{k/2}
+\]
+
+Da bi dobili član sa $x^{27} y^2$, potrebno je:
+\begin{align}
+3(13-k) &= 27\\
+\frac{k}{2} &= 2
+\end{align}
+
+Iz druge jednačine: $k = 4$
+
+Proveravamo prvu jednačinu: $3(13-4) = 3 \cdot 9 = 27$ ✓
+
+Dakle, koeficijent je:
+\[
+\binom{13}{4} = \frac{13!}{4!(13-4)!} = \frac{13!}{4! \cdot 9!}
+\]
+
+\[
+= \frac{13 \cdot 12 \cdot 11 \cdot 10}{4 \cdot 3 \cdot 2 \cdot 1} = \frac{13 \cdot 12 \cdot 11 \cdot 10}{24}
+\]
+
+\[
+= \frac{17160}{24} = 715
+\]
+
+\subsection*{Answer}
+715 (opcija \textbf{D}).
+
+\end{document}

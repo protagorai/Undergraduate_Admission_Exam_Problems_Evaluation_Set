@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+How many distinct natural numbers can be written using digits $1,2,3,4,5$ if each digit may be used at most once?
+
+\subsection*{Solution}
+We can form numbers of length $k=1,2,3,4,5$.
+For each $k$, the count is the number of permutations of $k$ distinct digits chosen from $5$:
+\[
+P(5,k)=\frac{5!}{(5-k)!}.
+\]
+Therefore the total is
+\[
+\sum_{k=1}^{5}\frac{5!}{(5-k)!}
+=\frac{5!}{4!}+\frac{5!}{3!}+\frac{5!}{2!}+\frac{5!}{1!}+\frac{5!}{0!}
+=5+20+60+120+120=325.
+\]
+
+\subsection*{Answer}
+$325$ (option \textbf{A}).
+
+\end{document}
+

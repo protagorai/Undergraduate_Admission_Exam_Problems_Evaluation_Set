@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Koje od sledecih nejednakosti su tacne?
+\begin{align*}
+&(i)\ \sqrt[3]{3}<\sqrt2, \\
+&(ii)\ \sqrt[3]{3+\sqrt3}<\sqrt{2+\sqrt2}, \\
+&(iii)\ 3\sqrt5<5\sqrt3, \\
+&(iv)\ \sqrt{12+3\sqrt{75}}<2\sqrt{48}+5\sqrt3, \\
+&(v)\ \sqrt{9+4\sqrt5}<\sqrt{19-8\sqrt3}.
+\end{align*}
+
+\subsection*{Solution}
+\textbf{(i)} Obe strane su pozitivne, pa mozemo povisiti na stepen $6$:
+\[
+(\sqrt[3]{3})^6=3^2=9,\qquad (\sqrt2)^6=2^3=8,
+\]
+pa je $9<8$ netacno. Dakle, (i) je \emph{netacna}.
+
+\medskip
+\textbf{(ii)} Povisimo na stepen $6$:
+\[
+(\sqrt[3]{3+\sqrt3})^6=(3+\sqrt3)^2=12+6\sqrt3,
+\]
+\[
+(\sqrt{2+\sqrt2})^6=(2+\sqrt2)^3
+=(2+\sqrt2)(6+4\sqrt2)=20+14\sqrt2.
+\]
+Posto je $12+6\sqrt3<20+14\sqrt2$ (npr.\ numericki), (ii) je \emph{tacna}.
+
+\medskip
+\textbf{(iii)} Kvadriranjem dobijamo
+\[
+(3\sqrt5)^2=45<75=(5\sqrt3)^2,
+\]
+pa je (iii) \emph{tacna}.
+
+\medskip
+\textbf{(iv)} Prvo $\sqrt{75}=5\sqrt3$, pa je
+\[
+\sqrt{12+3\sqrt{75}}=\sqrt{12+15\sqrt3}>0.
+\]
+Desna strana je
+\[
+2\sqrt{48}+5\sqrt3=2\cdot4\sqrt3+5\sqrt3=13\sqrt3.
+\]
+Kako je $12+15\sqrt3< (13\sqrt3)^2=507$, sledi
+\[
+\sqrt{12+15\sqrt3}<13\sqrt3,
+\]
+pa je (iv) \emph{tacna}.
+
+\medskip
+\textbf{(v)} Uporedimo kvadrate:
+\[
+9+4\sqrt5 \stackrel{?}{<} 19-8\sqrt3
+\iff 4\sqrt5+8\sqrt3<10,
+\]
+sto je netacno (leva strana je znatno veca od $10$). Dakle, (v) je \emph{netacna}.
+
+\medskip
+Tacne su (ii), (iii) i (iv).
+
+\subsection*{Answer}
+(ii), (iii) i (iv) (option \textbf{C}).
+
+\end{document}
+

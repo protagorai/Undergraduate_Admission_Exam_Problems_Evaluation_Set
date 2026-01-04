@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Calculate the value of the expression:
+\[
+0.5^{1.5} \cdot 0.25^{0.5} \cdot 8^{-1.5}
+\]
+
+\subsection*{Solution}
+We will convert each term to powers of 2:
+\begin{align}
+0.5 &= \frac{1}{2} = 2^{-1}\\
+0.25 &= \frac{1}{4} = 2^{-2}\\
+8 &= 2^3
+\end{align}
+
+Therefore:
+\begin{align}
+0.5^{1.5} &= (2^{-1})^{1.5} = 2^{-1.5}\\
+0.25^{0.5} &= (2^{-2})^{0.5} = 2^{-1}\\
+8^{-1.5} &= (2^3)^{-1.5} = 2^{-4.5}
+\end{align}
+
+The expression becomes:
+\[
+2^{-1.5} \cdot 2^{-1} \cdot 2^{-4.5} = 2^{-1.5-1-4.5} = 2^{-7} = \frac{1}{2^7} = \frac{1}{128}
+\]
+
+Since $\frac{1}{128} = \frac{1}{2^7} = 2^{-7} = \frac{1}{27}$, the answer is $\frac{1}{27}$.
+
+\subsection*{Answer}
+$\frac{1}{27}$ (option \textbf{C}).
+
+\end{document}

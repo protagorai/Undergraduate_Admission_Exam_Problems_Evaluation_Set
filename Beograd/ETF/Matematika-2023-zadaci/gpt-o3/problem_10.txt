@@ -1,0 +1,8 @@
+Problem 10 (Matematika 2023)
+Zapremina prave pravilne četvorostrane zarubljene piramide čija je dijagonala 18 cm, a stranice osnove 14 cm i 10 cm, iznosi (u cm³):
+a) 436
+b) 218
+c) 109
+d) 900
+e) 872
+n) Ne znam

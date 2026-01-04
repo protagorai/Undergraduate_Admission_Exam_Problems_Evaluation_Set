@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the solution set of the system of inequalities:
+\[
+x^2 - 4 \leq 0, \quad 1 - 2x + x^2 > 0, \quad x^2 - (3 + \sqrt{3})x + 2 + \sqrt{3} > 0
+\]
+
+\subsection*{Solution}
+
+\textbf{First inequality:} $x^2 - 4 \leq 0$
+\[
+(x-2)(x+2) \leq 0 \implies x \in [-2, 2]
+\]
+
+\textbf{Second inequality:} $1 - 2x + x^2 > 0$
+\[
+(x-1)^2 > 0 \implies x \neq 1
+\]
+So $x \in (-\infty, 1) \cup (1, +\infty)$.
+
+\textbf{Third inequality:} $x^2 - (3 + \sqrt{3})x + 2 + \sqrt{3} > 0$
+
+Find roots using quadratic formula:
+\[
+x = \frac{(3+\sqrt{3}) \pm \sqrt{(3+\sqrt{3})^2 - 4(2+\sqrt{3})}}{2}
+\]
+
+$(3+\sqrt{3})^2 = 9 + 6\sqrt{3} + 3 = 12 + 6\sqrt{3}$
+
+$4(2+\sqrt{3}) = 8 + 4\sqrt{3}$
+
+Discriminant: $12 + 6\sqrt{3} - 8 - 4\sqrt{3} = 4 + 2\sqrt{3} = (\sqrt{3}+1)^2$
+
+\[
+x = \frac{(3+\sqrt{3}) \pm (\sqrt{3}+1)}{2}
+\]
+
+$x_1 = \frac{3+\sqrt{3}+\sqrt{3}+1}{2} = \frac{4+2\sqrt{3}}{2} = 2+\sqrt{3}$
+
+$x_2 = \frac{3+\sqrt{3}-\sqrt{3}-1}{2} = \frac{2}{2} = 1$
+
+So the inequality is $(x-1)(x-(2+\sqrt{3})) > 0$, giving $x < 1$ or $x > 2+\sqrt{3}$.
+
+\textbf{Intersection:}
+\begin{itemize}
+\item From 1st: $[-2, 2]$
+\item From 2nd: $x \neq 1$
+\item From 3rd: $x < 1$ or $x > 2+\sqrt{3} \approx 3.73$
+\end{itemize}
+
+Combining: $[-2, 2] \cap (x \neq 1) \cap (x < 1) = [-2, 1)$
+
+\subsection*{Answer}
+$[a, b) = [-2, 1)$, which is option \textbf{B} where $a = -2$ and $b = 1$.
+
+\end{document}

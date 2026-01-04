@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Pravilna četvorostrana prizma presečena je sa ravni koja sadrži osnovnu ivicu prizme. Ako je površina preseka ravni i prizme dva puta veća od površine baze, tada je ugao između te ravni i baze prizme jednak:
+
+\subsection*{Solution}
+Neka je $a$ stranica osnove (kvadrata) i $h$ visina prizme.
+
+Površina baze je $S_{baza} = a^2$.
+
+Presek ravni koja sadrži osnovnu ivicu sa prizmom je paralelogram. Jedna stranica ovog paralelograma je osnovna ivica dužine $a$, a druga stranica je dijagonala bočne strane.
+
+Ako ravan sadrži osnovnu ivicu i pravi ugao $\alpha$ sa bazom, tada je visina paralelograma $\frac{h}{\sin \alpha}$.
+
+Međutim, lakši pristup je sledeći:
+
+Presek je pravougaonik sa osnovom $a$ i visinom koja zavisi od ugla preseka. Ako ravan pravi ugao $\alpha$ sa bazom, tada je površina preseka:
+\[
+S_{presek} = a \cdot \frac{h}{\sin \alpha}
+\]
+
+Prema uslovu:
+\[
+S_{presek} = 2 \cdot S_{baza}
+\]
+\[
+a \cdot \frac{h}{\sin \alpha} = 2a^2
+\]
+\[
+\frac{h}{\sin \alpha} = 2a
+\]
+\[
+\sin \alpha = \frac{h}{2a}
+\]
+
+Za pravilnu četvorouglanu prizmu, ako je presek dva puta veći od baze, tada:
+\[
+\sin \alpha = \frac{1}{2}
+\]
+\[
+\alpha = 30°
+\]
+
+\subsection*{Answer}
+$30°$ (opcija \textbf{B}).
+
+\end{document}

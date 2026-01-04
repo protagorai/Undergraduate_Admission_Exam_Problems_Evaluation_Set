@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+The side length of square $ABCD$ is 8 cm. A circle passes through vertices $A$ and $D$ and touches side $BC$. Find the area of the circle.
+
+\subsection*{Solution}
+Let's set up a coordinate system with $A$ at the origin, $B$ at $(8,0)$, $C$ at $(8,8)$, and $D$ at $(0,8)$.
+
+The circle passes through $A(0,0)$ and $D(0,8)$, and touches side $BC$ (the line $x = 8$).
+
+Since the circle passes through $A$ and $D$, its center lies on the perpendicular bisector of segment $AD$. The midpoint of $AD$ is $(0,4)$, and since $AD$ is vertical, the perpendicular bisector is the horizontal line $y = 4$.
+
+So the center of the circle is at $(h, 4)$ for some value $h$.
+
+The radius of the circle is the distance from the center $(h, 4)$ to point $A(0, 0)$:
+\[
+r = \sqrt{h^2 + 16}
+\]
+
+Since the circle touches the line $x = 8$, the distance from the center to this line equals the radius:
+\[
+|8 - h| = r = \sqrt{h^2 + 16}
+\]
+
+Since the circle passes through points on the left side of the square and touches the right side, we expect $h < 8$, so $|8 - h| = 8 - h$.
+
+Therefore:
+\[
+8 - h = \sqrt{h^2 + 16}
+\]
+
+Squaring both sides:
+\[
+(8 - h)^2 = h^2 + 16
+\]
+
+\[
+64 - 16h + h^2 = h^2 + 16
+\]
+
+\[
+64 - 16h = 16
+\]
+
+\[
+48 = 16h
+\]
+
+\[
+h = 3
+\]
+
+So the center is at $(3, 4)$ and the radius is:
+\[
+r = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+\]
+
+The area of the circle is:
+\[
+A = \pi r^2 = \pi \cdot 5^2 = 25\pi \text{ cm}^2
+\]
+
+\subsection*{Answer}
+$25\pi$ cm² (option \textbf{E}).
+
+\end{document}

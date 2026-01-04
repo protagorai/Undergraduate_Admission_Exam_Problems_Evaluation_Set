@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+The real solution of the equation $x + \log_{21}(3^x + 1) = x \log_{21} 7 + \log_{21} 756$ belongs to the interval:
+
+\subsection*{Solution}
+Starting with the equation:
+\[
+x + \log_{21}(3^x + 1) = x \log_{21} 7 + \log_{21} 756
+\]
+
+Note that $\log_{21} 21 = 1$, so $x = x \cdot \log_{21} 21 = \log_{21} 21^x$.
+
+The equation becomes:
+\[
+\log_{21} 21^x + \log_{21}(3^x + 1) = \log_{21} 7^x + \log_{21} 756
+\]
+
+Using logarithm properties:
+\[
+\log_{21}[21^x(3^x + 1)] = \log_{21}[756 \cdot 7^x]
+\]
+
+Therefore:
+\[
+21^x(3^x + 1) = 756 \cdot 7^x
+\]
+
+Since $21 = 3 \cdot 7$, we have $21^x = 3^x \cdot 7^x$:
+\[
+3^x \cdot 7^x(3^x + 1) = 756 \cdot 7^x
+\]
+
+Dividing both sides by $7^x$ (which is always positive):
+\[
+3^x(3^x + 1) = 756
+\]
+
+Let $t = 3^x$, where $t > 0$:
+\[
+t(t + 1) = 756
+\]
+\[
+t^2 + t - 756 = 0
+\]
+
+Using the quadratic formula:
+\[
+t = \frac{-1 \pm \sqrt{1 + 3024}}{2} = \frac{-1 \pm \sqrt{3025}}{2} = \frac{-1 \pm 55}{2}
+\]
+
+So $t = \frac{54}{2} = 27$ or $t = \frac{-56}{2} = -28$.
+
+Since $t = 3^x > 0$, we have $t = 27 = 3^3$.
+
+Therefore $3^x = 3^3$, which gives $x = 3$.
+
+Let's verify: $x = 3$ should belong to one of the intervals.
+
+Checking the intervals:
+\begin{itemize}
+    \item (A) $(-\infty, -21]$ - No
+    \item (B) $(-21, 0]$ - No
+    \item (C) $(0, 21)$ - Yes, $3 \in (0, 21)$
+    \item (D) $[21, 42)$ - No
+    \item (E) $[42, +\infty)$ - No
+\end{itemize}
+
+\subsection*{Answer}
+$(0, 21)$ (option \textbf{C}).
+
+\end{document}

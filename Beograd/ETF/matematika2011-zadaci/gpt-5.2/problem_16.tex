@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+U razvoju binoma $(x+y)^n$, $(x,y\in\mathbb{R},\, n\in\mathbb{N})$ drugi član je jednak $240$, treći član $720$ a četvrti $1080$. Tada je zbir $x+y+n$ jednak:
+\[
+\text{(A)}~11\quad
+\text{(B)}~9\quad
+\text{(C)}~10\quad
+\text{(D)}~25\quad
+\text{(E)}~280.
+\]
+
+\subsection*{Solution}
+U razvoju $(x+y)^n$ važi:
+\[
+T_2=\binom{n}{1}x^{n-1}y=nx^{n-1}y=240,
+\]
+\[
+T_3=\binom{n}{2}x^{n-2}y^2=720,\qquad
+T_4=\binom{n}{3}x^{n-3}y^3=1080.
+\]
+Iz odnosa:
+\[
+\frac{T_3}{T_2}=\frac{\binom{n}{2}x^{n-2}y^2}{nx^{n-1}y}
+=\frac{n(n-1)}{2n}\cdot\frac{y}{x}
+=\frac{n-1}{2}\cdot\frac{y}{x}
+=\frac{720}{240}=3,
+\]
+pa je
+\[
+\frac{y}{x}=\frac{6}{n-1}.
+\]
+Takođe,
+\[
+\frac{T_4}{T_3}
+=\frac{\binom{n}{3}x^{n-3}y^3}{\binom{n}{2}x^{n-2}y^2}
+=\frac{n-2}{3}\cdot\frac{y}{x}
+=\frac{1080}{720}=\frac32,
+\]
+odakle
+\[
+\frac{y}{x}=\frac{9}{2(n-2)}.
+\]
+Izjednačimo:
+\[
+\frac{6}{n-1}=\frac{9}{2(n-2)}
+\;\Rightarrow\;
+12(n-2)=9(n-1)
+\;\Rightarrow\;
+3n=15
+\;\Rightarrow\;
+n=5.
+\]
+Tada je $\dfrac{y}{x}=\dfrac{6}{4}=\dfrac32$, tj.\ $y=\frac32x$.
+Iz $T_2=240$:
+\[
+5x^4y=240
+\;\Rightarrow\;
+5x^4\cdot \frac32x=240
+\;\Rightarrow\;
+\frac{15}{2}x^5=240
+\;\Rightarrow\;
+x^5=32
+\;\Rightarrow\;
+x=2,
+\]
+pa je $y=3$. Zato je
+\[
+x+y+n=2+3+5=10.
+\]
+
+\subsection*{Answer}
+$10$ (option \textbf{C}).
+
+\end{document}
+

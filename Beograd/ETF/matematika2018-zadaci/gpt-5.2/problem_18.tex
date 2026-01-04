@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Odrediti oblast definisanosti funkcije
+\[
+f(x)=\frac{\sqrt{\cos^2 x+\sin x\cos x-1}}{\log_{1/7}(9-x^2)}.
+\]
+
+\subsection*{Solution}
+Da bi funkcija bila definisana, potrebno je:
+
+\medskip
+\textbf{1) Podkoren mora biti nenegativan:}
+\[
+\cos^2 x+\sin x\cos x-1 \ge 0.
+\]
+Koristimo $\cos^2 x-1=-\sin^2 x$:
+\[
+\cos^2 x+\sin x\cos x-1 = -\sin^2 x+\sin x\cos x=\sin x(\cos x-\sin x).
+\]
+Dakle uslov je
+\[
+\sin x(\cos x-\sin x)\ge 0.
+\]
+Nule su $\sin x=0 \Rightarrow x=0$ (u posmatranom intervalu $(-3,3)$) i
+\[
+\cos x-\sin x=0 \Rightarrow \tan x=1 \Rightarrow x=\frac{\pi}{4}+k\pi.
+\]
+U intervalu $(-3,3)$ to daje $x=-\frac{3\pi}{4}$ i $x=\frac{\pi}{4}$.
+Provera znaka (npr. tačkama $x=-2.8,-1,0.5,1$) daje rešenje:
+\[
+x\in(-3,-3\pi/4]\ \cup\ [0,\pi/4].
+\]
+
+\medskip
+\textbf{2) Logaritam u imenitelju mora biti definisan i nenula.}
+Za $\log_{1/7}(9-x^2)$ treba
+\[
+9-x^2>0 \;\Longleftrightarrow\; |x|<3,
+\]
+što je već ispunjeno u prethodnom koraku, i još
+\[
+\log_{1/7}(9-x^2)\ne 0 \;\Longleftrightarrow\; 9-x^2\ne 1
+\;\Longleftrightarrow\; x^2\ne 8 \;\Longleftrightarrow\; x\ne \pm 2\sqrt2.
+\]
+Od ta dva broja, samo $x=-2\sqrt2$ pripada intervalu $(-3,-3\pi/4]$ (dok $2\sqrt2>\pi/4$, pa ionako nije u delu
+$[0,\pi/4]$).
+
+\medskip
+Zato je oblast definisanosti:
+\[
+\Big((-3,-3\pi/4]\setminus\{-2\sqrt2\}\Big)\ \cup\ [0,\pi/4].
+\]
+
+\subsection*{Answer}
+$[0,\pi/4]\cup\big((-3,-3\pi/4]\setminus\{-2\sqrt2\}\big)$ (option \textbf{D}).
+
+\end{document}
+

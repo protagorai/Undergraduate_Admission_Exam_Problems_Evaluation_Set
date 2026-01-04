@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 20}
+Brojevi $2, \sqrt{6}, \frac{9}{2}$ su članovi:
+
+A) opadajuće aritmetičke progresije; B) rastuće aritmetičke progresije; C) geometrijske progresije; D) niza sa opštim članom $a_n = \frac{9n}{2} + \frac{1}{n}, (n=1,2,...)$; E) niza sa opštim članom $a_n = \frac{2+\sqrt{6}}{n} - 1, (n=1,2,...)$; N) Ne znam.
+
+\subsection*{Solution}
+Obeležimo brojeve sa $a=2, b=\sqrt{6}, c=\frac{9}{2}$.
+Proverimo da li su članovi geometrijske progresije.
+Posmatrajmo količnike:
+\[ \frac{b}{a} = \frac{\sqrt{6}}{2} = \sqrt{\frac{6}{4}} = \sqrt{\frac{3}{2}} \]
+\[ \frac{c}{b} = \frac{9/2}{\sqrt{6}} = \frac{9}{2\sqrt{6}} = \frac{3\sqrt{3}}{2\sqrt{2}} = \frac{3}{2} \sqrt{\frac{3}{2}} = \left(\sqrt{\frac{3}{2}}\right)^2 \cdot \sqrt{\frac{3}{2}} = \left(\sqrt{\frac{3}{2}}\right)^3 \]
+Vidimo da je $\frac{c}{b} = (\frac{b}{a})^3$.
+Ovo znači da brojevi mogu biti članovi iste geometrijske progresije.
+Na primer, ako je količnik progresije $q$ takav da je $q^k = \sqrt{\frac{3}{2}}$, tada su brojevi oblika $x, xq^k, xq^{4k}$.
+Ako uzmemo $x=2$, prvi broj je $2$.
+Drugi broj je $2 \cdot \sqrt{\frac{3}{2}} = \sqrt{6}$.
+Treći broj bi odgovarao $2 \cdot (\sqrt{\frac{3}{2}})^4 = 2 \cdot \frac{9}{4} = \frac{9}{2}$.
+Dakle, brojevi $2, \sqrt{6}, 9/2$ su 1., 2. i 5. član geometrijske progresije sa prvim članom 2 i količnikom $q = (\frac{3}{2})^{1/4}$ (ili neki drugi sličan odnos).
+Svakako pripadaju geometrijskoj progresiji.
+
+Provera za ostale opcije:
+A, B) Nisu aritmetička progresija jer $\sqrt{6}-2 \neq 4.5-\sqrt{6}$.
+D) Za $n=1$, $a_1 = 4.5+1=5.5 \neq 2$.
+E) Nema realnog $n$ za koji je $a_n=2$.
+
+\subsection*{Answer}
+geometrijske progresije (option \textbf{C}).
+\end{document}

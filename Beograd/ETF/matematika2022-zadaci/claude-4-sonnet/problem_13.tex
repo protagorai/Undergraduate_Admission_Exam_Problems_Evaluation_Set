@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Suma beskonačne opadajuće geometrijske progresije sa pozitivnim članovima iznosi $9/2$. Ako je suma kvadratnih korena članova progresije jednaka 3, tada količnik progresije iznosi:
+
+\subsection*{Solution}
+Neka je geometrijska progresija $a, aq, aq^2, \ldots$ gde je $a > 0$ i $0 < q < 1$.
+
+Suma beskonačne geometrijske progresije:
+\[
+S = \frac{a}{1-q} = \frac{9}{2}
+\]
+
+Suma kvadratnih korena članova:
+\[
+\sqrt{a} + \sqrt{aq} + \sqrt{aq^2} + \cdots = \sqrt{a}(1 + \sqrt{q} + (\sqrt{q})^2 + \cdots) = \frac{\sqrt{a}}{1-\sqrt{q}} = 3
+\]
+
+Iz prve jednačine: $a = \frac{9}{2}(1-q)$
+
+Iz druge jednačine: $\sqrt{a} = 3(1-\sqrt{q})$
+
+Kvadriranjem druge jednačine:
+\[
+a = 9(1-\sqrt{q})^2 = 9(1 - 2\sqrt{q} + q)
+\]
+
+Izjednačavanjem:
+\[
+\frac{9}{2}(1-q) = 9(1 - 2\sqrt{q} + q)
+\]
+
+\[
+\frac{1-q}{2} = 1 - 2\sqrt{q} + q
+\]
+
+\[
+1-q = 2 - 4\sqrt{q} + 2q
+\]
+
+\[
+-1 - 3q = -4\sqrt{q}
+\]
+
+\[
+1 + 3q = 4\sqrt{q}
+\]
+
+Kvadriranjem:
+\[
+(1 + 3q)^2 = 16q
+\]
+
+\[
+1 + 6q + 9q^2 = 16q
+\]
+
+\[
+9q^2 - 10q + 1 = 0
+\]
+
+\[
+(9q - 1)(q - 1) = 0
+\]
+
+Dakle $q = \frac{1}{9}$ ili $q = 1$. Pošto je $0 < q < 1$, imamo $q = \frac{1}{9}$.
+
+\subsection*{Answer}
+$\frac{1}{9}$ (option \textbf{A}).
+
+\end{document}

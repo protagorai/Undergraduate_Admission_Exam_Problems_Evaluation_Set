@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Find the set of all real solutions of the equation:
+\[2\sqrt{x} \cdot 4^x + 5 \cdot 2^{x+1} + 2\sqrt{x} = 2^{2x+2} + 5\sqrt{x} \cdot 2^x + 4\]
+
+\subsection*{Solution}
+Let's rewrite the equation. Note that $4^x = 2^{2x}$ and $2^{x+1} = 2 \cdot 2^x$.
+
+Left side: $2\sqrt{x} \cdot 2^{2x} + 5 \cdot 2 \cdot 2^x + 2\sqrt{x} = 2\sqrt{x} \cdot 2^{2x} + 10 \cdot 2^x + 2\sqrt{x}$
+
+Right side: $2^{2x+2} + 5\sqrt{x} \cdot 2^x + 4 = 4 \cdot 2^{2x} + 5\sqrt{x} \cdot 2^x + 4$
+
+Let $u = 2^x$ and $v = \sqrt{x}$. Then:
+\[2v \cdot u^2 + 10u + 2v = 4u^2 + 5v \cdot u + 4\]
+
+Rearranging:
+\[2vu^2 - 4u^2 + 10u - 5vu + 2v - 4 = 0\]
+\[2u^2(v - 2) - 5u(v - 2) + 2(v - 2) = 0\]
+\[(v - 2)(2u^2 - 5u + 2) = 0\]
+
+\textbf{Case 1:} $v - 2 = 0 \Rightarrow \sqrt{x} = 2 \Rightarrow x = 4$
+
+\textbf{Case 2:} $2u^2 - 5u + 2 = 0$
+
+Using the quadratic formula:
+\[u = \frac{5 \pm \sqrt{25 - 16}}{4} = \frac{5 \pm 3}{4}\]
+
+So $u = 2$ or $u = \frac{1}{2}$.
+
+$2^x = 2 \Rightarrow x = 1$
+
+$2^x = \frac{1}{2} \Rightarrow x = -1$ (but we need $x \geq 0$ for $\sqrt{x}$, so rejected)
+
+\textbf{Solutions:} $x = 1$ and $x = 4$
+
+\textbf{Verification for $x = 1$:}
+LHS: $2(1)(4) + 5(2)(2) + 2(1) = 8 + 20 + 2 = 30$
+RHS: $16 + 5(1)(2) + 4 = 16 + 10 + 4 = 30$ ✓
+
+\textbf{Verification for $x = 4$:}
+LHS: $2(2)(256) + 5(2)(16) + 2(2) = 1024 + 160 + 4 = 1188$
+RHS: $4(256) + 5(2)(16) + 4 = 1024 + 160 + 4 = 1188$ ✓
+
+Number of solutions: $2$
+
+\subsection*{Answer}
+$2$ (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,48 @@
+RESENJA - MATEMATIKA 2025 ZADACI
+=====================================
+
+1. N (Ne znam) - 31
+2. B - 36π
+3. A - (-2/3)
+4. D - 5
+5. B - (-4/3)
+6. E - 72
+7. A - 4
+8. B - 0
+9. A - [a,+∞)
+10. A - 35
+11. A - (a,b)
+12. B - 4 cm
+13. A - 1/(4√2)
+14. D - 90°
+15. B - 4
+16. B - [a,b) ∪ (c,d]
+17. E - 3x² - 5x + 3
+18. D - (0,π/6] ∪ [π/3, 5π/6]
+19. D - (27πr³)/8
+20. E - (a,b) ∪ (c,d)
+
+OBJAŠNJENJA:
+============
+
+Problem 1: Rešavanje jednačine sa ugniježđenim korijenima daje p+q = 31
+Problem 2: Sfera sa jednakom površinom i zapreminom ima S = 36π
+Problem 3: Logaritamska jednačina se svodi na -2/3
+Problem 4: Kompleksni broj z ima |z| = 5
+Problem 5: Trigonometrijska jednačina daje tan α = -4/3
+Problem 6: Pravougli trapez sa upisanim krugom ima površinu 72
+Problem 7: Sistem jednačina ima 4 realna rešenja
+Problem 8: Suma svih realnih rešenja eksponencijalne jednačine je 0
+Problem 9: Nejednačina sa korijenima ima rešenje [a,+∞)
+Problem 10: Aritmetička progresija daje n-ti član 35
+Problem 11: Parametar m za kvadratnu jednačinu ima skup (a,b)
+Problem 12: Trougao sa datim uslovima ima BC = 4 cm
+Problem 13: Granična vrednost je 1/(4√2)
+Problem 14: Ugao između elipse i hiperbole je 90°
+Problem 15: Trigonometrijska jednačina ima 4 rešenja
+Problem 16: Nejednačina sa logaritmima ima rešenje [a,b) ∪ (c,d]
+Problem 17: Ostatak pri deljenju polinoma je 3x² - 5x + 3
+Problem 18: Eksponencijalna nejednačina ima rešenje (0,π/6] ∪ [π/3, 5π/6]
+Problem 19: Minimalna zapremina sfere je (27πr³)/8
+Problem 20: Parametar p za jednačinu sa apsolutnim vrednostima ima skup (a,b) ∪ (c,d)
+

@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Find the value of $\displaystyle\frac{\sin 2° + \sin 4° + \sin 6° - \sin 12°}{\sin 3° \sin 4° \sin 5°}$.
+
+(A) $-6$ \quad (B) $-1$ \quad (C) $6$ \quad (D) $4$ \quad (E) $-4$
+
+\subsection*{Solution}
+\textbf{Numerator:} $\sin 2° + \sin 4° + \sin 6° - \sin 12°$
+
+Using sum-to-product formulas:
+\[
+\sin 2° + \sin 6° = 2\sin 4° \cos 2°
+\]
+
+So the numerator becomes:
+\[
+2\sin 4° \cos 2° + \sin 4° - \sin 12°
+\]
+\[
+= \sin 4°(2\cos 2° + 1) - \sin 12°
+\]
+
+Note that $\sin 12° = 2\sin 6° \cos 6°$.
+
+Also, $2\cos 2° + 1 = 2\cos 2° + 2\cos 60° = 2(\cos 2° + \cos 60°) = 4\cos 31° \cos 29°$... 
+
+Let me try a different approach. Using product formulas:
+\[
+\sin 3° \sin 4° \sin 5° = \frac{1}{4}[\sin 4° (cos 2° - \cos 8°)]
+\]
+
+Actually, let's compute numerically to verify:
+\begin{itemize}
+\item $\sin 2° \approx 0.0349$
+\item $\sin 4° \approx 0.0698$
+\item $\sin 6° \approx 0.1045$
+\item $\sin 12° \approx 0.2079$
+\end{itemize}
+
+Numerator $\approx 0.0349 + 0.0698 + 0.1045 - 0.2079 = 0.0013$
+
+\begin{itemize}
+\item $\sin 3° \approx 0.0523$
+\item $\sin 4° \approx 0.0698$
+\item $\sin 5° \approx 0.0872$
+\end{itemize}
+
+Denominator $\approx 0.0523 \times 0.0698 \times 0.0872 \approx 0.000318$
+
+Ratio $\approx 0.0013/0.000318 \approx 4$
+
+\subsection*{Answer}
+(D) $4$
+
+\end{document}

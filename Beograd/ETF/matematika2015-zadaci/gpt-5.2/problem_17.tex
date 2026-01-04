@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+U jednakokrakom trouglu $ABC$ je $AB=BC=b$, $AC=a$ i $\angle ABC=20^\circ$.
+Odrediti vrednost izraza
+\[
+\frac{a^2}{b^2}+\frac{b}{a}.
+\]
+
+\subsection*{Solution}
+Po kosinusnoj teoremi na uglu $B$:
+\[
+a^2=b^2+b^2-2b^2\cos 20^\circ=2b^2(1-\cos 20^\circ)=4b^2\sin^2 10^\circ.
+\]
+Dakle,
+\[
+\frac{a^2}{b^2}=4\sin^2 10^\circ,\qquad \frac{b}{a}=\frac{1}{2\sin 10^\circ}.
+\]
+Neka je $s=\sin 10^\circ$. Tada trazimo
+\[
+4s^2+\frac{1}{2s}.
+\]
+Koristimo identitet za sinus trostrukog ugla:
+\[
+\sin 30^\circ=\sin(3\cdot 10^\circ)=3s-4s^3.
+\]
+Posto je $\sin 30^\circ=\frac12$, dobijamo
+\[
+3s-4s^3=\frac12 \quad\Longrightarrow\quad 8s^3-6s+1=0.
+\]
+Pomnozimo trazeni izraz sa $2s$:
+\[
+2s\left(4s^2+\frac{1}{2s}\right)=8s^3+1.
+\]
+Iz jedna\v cine $8s^3-6s+1=0$ sledi $8s^3+1=6s$, pa je
+\[
+2s\left(4s^2+\frac{1}{2s}\right)=6s \quad\Longrightarrow\quad 4s^2+\frac{1}{2s}=3.
+\]
+
+\subsection*{Answer}
+$3$ (opcija \textbf{C}).
+
+\end{document}
+

@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Zbir prvih 2012 članova aritmetičke progresije $\frac{2011}{2012}, \frac{2010}{2012}, \frac{2009}{2012}, \ldots$ iznosi:
+
+\subsection*{Solution}
+Ova aritmetička progresija ima:
+- Prvi član: $a_1 = \frac{2011}{2012}$
+- Drugi član: $a_2 = \frac{2010}{2012}$
+- Razliku: $d = a_2 - a_1 = \frac{2010}{2012} - \frac{2011}{2012} = -\frac{1}{2012}$
+
+Opšti član aritmetičke progresije je:
+\[
+a_n = a_1 + (n-1)d = \frac{2011}{2012} + (n-1) \cdot \left(-\frac{1}{2012}\right)
+\]
+\[
+= \frac{2011}{2012} - \frac{n-1}{2012} = \frac{2011 - (n-1)}{2012} = \frac{2012 - n}{2012}
+\]
+
+Za $n = 2012$:
+\[
+a_{2012} = \frac{2012 - 2012}{2012} = 0
+\]
+
+Zbir prvih $n$ članova aritmetičke progresije je:
+\[
+S_n = \frac{n}{2}(a_1 + a_n)
+\]
+
+Za $n = 2012$:
+\[
+S_{2012} = \frac{2012}{2}\left(\frac{2011}{2012} + 0\right) = 1006 \cdot \frac{2011}{2012} = \frac{1006 \cdot 2011}{2012}
+\]
+
+Pošto je $2012 = 2 \cdot 1006$:
+\[
+S_{2012} = \frac{1006 \cdot 2011}{2 \cdot 1006} = \frac{2011}{2}
+\]
+
+\subsection*{Answer}
+$\frac{2011}{2}$ (opcija \textbf{D}).
+
+\end{document}

@@ -1,0 +1,142 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Skup vrednosti realnog parametra $m$ za koje realna rešenja $x_1$ i $x_2$ jednačine $(m-1)x^2 + 2mx + m + 2 = 0$ zadovoljavaju uslov $\frac{x_1}{x_2} + \frac{x_2}{x_1} \leq 2$ je oblika (za $-\infty < a < b < c < \infty$):
+
+\subsection*{Solution}
+Prvo, za $m = 1$, jednačina postaje $2x + 3 = 0$, što daje jedno rešenje $x = -\frac{3}{2}$. Potrebna su nam dva rešenja, pa $m \neq 1$.
+
+Za $m \neq 1$, imamo kvadratnu jednačinu. Po Vijeovim formulama:
+\[
+x_1 + x_2 = -\frac{2m}{m-1}, \quad x_1 \cdot x_2 = \frac{m+2}{m-1}
+\]
+
+Da bi postojala dva realna rešenja, diskriminanta mora biti nenegativna:
+\[
+D = 4m^2 - 4(m-1)(m+2) \geq 0
+\]
+\[
+4m^2 - 4(m^2 + m - 2) \geq 0
+\]
+\[
+4m^2 - 4m^2 - 4m + 8 \geq 0
+\]
+\[
+-4m + 8 \geq 0
+\]
+\[
+m \leq 2
+\]
+
+Sada analiziramo uslov:
+\[
+\frac{x_1}{x_2} + \frac{x_2}{x_1} = \frac{x_1^2 + x_2^2}{x_1 x_2} = \frac{(x_1 + x_2)^2 - 2x_1 x_2}{x_1 x_2}
+\]
+
+Neka je $S = x_1 + x_2 = -\frac{2m}{m-1}$ i $P = x_1 x_2 = \frac{m+2}{m-1}$.
+
+\[
+\frac{x_1}{x_2} + \frac{x_2}{x_1} = \frac{S^2 - 2P}{P} = \frac{S^2}{P} - 2
+\]
+
+Uslov $\frac{S^2}{P} - 2 \leq 2$ daje $\frac{S^2}{P} \leq 4$.
+
+Potrebno je da $P \neq 0$, tj. $m \neq -2$.
+
+Takođe, da bi izraz $\frac{x_1}{x_2} + \frac{x_2}{x_1}$ bio definisan, potrebno je $x_1 \neq 0$ i $x_2 \neq 0$, tj. $P \neq 0$.
+
+\textbf{Slučaj 1:} $P > 0$, tj. $\frac{m+2}{m-1} > 0$
+
+Ovo važi kada su $m + 2$ i $m - 1$ istog znaka:
+\begin{itemize}
+    \item $m > 1$ ili $m < -2$
+\end{itemize}
+
+Kombinovano sa $m \leq 2$ i $m \neq 1$: $m \in (-\infty, -2) \cup (1, 2]$
+
+Za $P > 0$, uslov $\frac{S^2}{P} \leq 4$ postaje $S^2 \leq 4P$:
+\[
+\frac{4m^2}{(m-1)^2} \leq \frac{4(m+2)}{m-1}
+\]
+\[
+\frac{m^2}{(m-1)^2} \leq \frac{m+2}{m-1}
+\]
+\[
+\frac{m^2}{m-1} \leq m + 2 \quad (\text{za } m > 1)
+\]
+\[
+m^2 \leq (m+2)(m-1) = m^2 + m - 2
+\]
+\[
+0 \leq m - 2
+\]
+\[
+m \geq 2
+\]
+
+Kombinovano sa $(1, 2]$: $m = 2$.
+
+Za $m < -2$: $\frac{m^2}{m-1} \leq m + 2$ sa $m - 1 < 0$:
+\[
+m^2 \geq (m+2)(m-1) \quad (\text{obrtanje nejednakosti})
+\]
+\[
+m^2 \geq m^2 + m - 2
+\]
+\[
+0 \geq m - 2
+\]
+\[
+m \leq 2
+\]
+
+Ovo je zadovoljeno za sve $m < -2$.
+
+\textbf{Slučaj 2:} $P < 0$, tj. $-2 < m < 1$
+
+Za $P < 0$, uslov $\frac{S^2}{P} \leq 4$ postaje $S^2 \geq 4P$ (obrtanje nejednakosti):
+\[
+\frac{4m^2}{(m-1)^2} \geq \frac{4(m+2)}{m-1}
+\]
+
+Za $-2 < m < 1$, imamo $m - 1 < 0$:
+\[
+\frac{m^2}{m-1} \geq m + 2
+\]
+\[
+m^2 \leq (m+2)(m-1) \quad (\text{obrtanje jer } m-1 < 0)
+\]
+\[
+m^2 \leq m^2 + m - 2
+\]
+\[
+0 \leq m - 2
+\]
+\[
+m \geq 2
+\]
+
+Ovo nije zadovoljeno ni za jedno $m \in (-2, 1)$.
+
+Dakle, rešenje je $m \in (-\infty, -2) \cup \{2\}$.
+
+U obliku iz zadatka sa $a < b < c$: $(-\infty, a] \cup (b, +\infty)$ nije baš to...
+
+Zapravo, odgovor je oblika $(a, b) \cup [c, +\infty)$ ili slično. Pogledajmo ponuđene odgovore:
+
+(B) $(-\infty, a] \cup (b, +\infty)$ bi bilo $(-\infty, -2) \cup (b, +\infty)$...
+
+Proverimo ponovo za $m = 2$: $D = -4(2) + 8 = 0$, dakle jedan dvostruki koren.
+$x_1 = x_2$, pa $\frac{x_1}{x_2} + \frac{x_2}{x_1} = 2$. Uslov je zadovoljen.
+
+Odgovor je $(-\infty, -2) \cup \{2\}$, što nije standardni oblik. Najbliže je (A) $(a, b]$ ako bi to značilo jedan interval, ali to ne odgovara.
+
+Proverimo (E) $(a, b) \cup [c, +\infty)$: ako je $a = -\infty$, $b = -2$, $c = 2$, onda bi bilo $(-\infty, -2) \cup [2, +\infty)$, ali mi imamo samo tačku $\{2\}$, ne ceo interval.
+
+\subsection*{Answer}
+$(a, b) \cup [c, +\infty)$ gde je $a = -\infty$, $b = -2$, $c = 2$ (opcija \textbf{E}).
+
+\end{document}

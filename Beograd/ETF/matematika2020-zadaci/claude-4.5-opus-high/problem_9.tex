@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Figure $F_1$ is obtained from an equilateral triangle with area $P$ by removing the triangle whose vertices are the midpoints of the sides of the original triangle. Figure $F_1$ consists of 3 triangles. Figure $F_2$ is obtained by removing from figure $F_1$ three triangles whose vertices are the midpoints of the sides of the three triangles that make up figure $F_1$. Figure $F_2$ consists of 9 triangles. Figure $F_{n+1}$ is obtained by removing from figure $F_n$ the $3^n$ triangles whose vertices are the midpoints of the sides of the $3^n$ triangles that make up figure $F_n$. Find the sum of areas of all figures $F_n$, $n \in \mathbb{N}$, obtained in this way.
+
+\subsection*{Solution}
+Let's analyze the area of each figure $F_n$.
+
+Starting with an equilateral triangle of area $P$:
+
+\textbf{Figure $F_1$:} We remove the middle triangle (formed by connecting midpoints). This middle triangle has area $\frac{P}{4}$ (since connecting midpoints divides the triangle into 4 congruent triangles).
+
+Area of $F_1 = P - \frac{P}{4} = \frac{3P}{4}$
+
+\textbf{Figure $F_2$:} $F_1$ consists of 3 triangles, each with area $\frac{P}{4}$. From each, we remove a triangle of area $\frac{1}{4} \cdot \frac{P}{4} = \frac{P}{16}$.
+
+Total removed: $3 \cdot \frac{P}{16} = \frac{3P}{16}$
+
+Area of $F_2 = \frac{3P}{4} - \frac{3P}{16} = \frac{12P - 3P}{16} = \frac{9P}{16} = \frac{3^2 P}{4^2}$
+
+\textbf{Pattern:} By induction, we can show that:
+\[
+\text{Area of } F_n = \left(\frac{3}{4}\right)^n P
+\]
+
+The sum of areas of all figures $F_n$ for $n \in \mathbb{N}$ is:
+\[
+\sum_{n=1}^{\infty} \left(\frac{3}{4}\right)^n P = P \sum_{n=1}^{\infty} \left(\frac{3}{4}\right)^n
+\]
+
+This is a geometric series with first term $a = \frac{3}{4}$ and ratio $r = \frac{3}{4}$:
+\[
+\sum_{n=1}^{\infty} \left(\frac{3}{4}\right)^n = \frac{\frac{3}{4}}{1 - \frac{3}{4}} = \frac{\frac{3}{4}}{\frac{1}{4}} = 3
+\]
+
+Therefore, the sum of all areas is:
+\[
+P \cdot 3 = 3P
+\]
+
+\subsection*{Answer}
+$3P$ (option \textbf{D}).
+
+\end{document}

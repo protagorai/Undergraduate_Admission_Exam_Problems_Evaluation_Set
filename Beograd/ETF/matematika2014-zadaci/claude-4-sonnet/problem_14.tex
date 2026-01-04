@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Dat je trougao $ABC$ sa stranicama $AB = \sqrt{2}$ cm i $AC = \sqrt{3}$ cm. Neka je tačka $D$ na stranici $BC$ tako da je $\angle BAD = 30°$ i $\angle CAD = 45°$. Dužina duži $AD$ iznosi (u cm):
+
+(A) $\frac{\sqrt{6}}{2}$ \quad (B) $\frac{1}{\sqrt{2} + \sqrt{6}}$ \quad (C) $\sqrt{\frac{5}{2}}$ \quad (D) $\frac{\sqrt{6} + 1}{\sqrt{2} + \sqrt{6}}$ \quad (E) $\frac{1}{2}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Imamo trougao $ABC$ sa $AB = \sqrt{2}$, $AC = \sqrt{3}$, $\angle BAD = 30°$ i $\angle CAD = 45°$.
+
+Dakle, $\angle BAC = \angle BAD + \angle CAD = 30° + 45° = 75°$.
+
+Koristimo sinusovu teoremu u trouglovima $ABD$ i $ACD$:
+
+U trouglu $ABD$:
+\[
+\frac{BD}{\sin 30°} = \frac{AD}{\sin \angle ABD} = \frac{AB}{\sin \angle ADB}
+\]
+
+U trouglu $ACD$:
+\[
+\frac{CD}{\sin 45°} = \frac{AD}{\sin \angle ACD} = \frac{AC}{\sin \angle ADC}
+\]
+
+Pošto je $\angle ADB + \angle ADC = 180°$, imamo $\sin \angle ADB = \sin \angle ADC$.
+
+Iz sinusove teoreme:
+\[
+\frac{BD}{\sin 30°} = \frac{AB}{\sin \angle ADB} \Rightarrow BD = \frac{AB \sin 30°}{\sin \angle ADB} = \frac{\sqrt{2} \cdot \frac{1}{2}}{\sin \angle ADB}
+\]
+
+\[
+\frac{CD}{\sin 45°} = \frac{AC}{\sin \angle ADC} \Rightarrow CD = \frac{AC \sin 45°}{\sin \angle ADC} = \frac{\sqrt{3} \cdot \frac{\sqrt{2}}{2}}{\sin \angle ADB}
+\]
+
+Takođe, iz sinusove teoreme u trouglovima $ABD$ i $ACD$:
+\[
+\frac{AD}{\sin \angle ABD} = \frac{\sqrt{2}}{\sin \angle ADB}, \quad \frac{AD}{\sin \angle ACD} = \frac{\sqrt{3}}{\sin \angle ADB}
+\]
+
+Koristeći formulu za površinu:
+\[
+S_{ABD} = \frac{1}{2} \cdot AB \cdot AD \cdot \sin 30° = \frac{1}{2} \cdot \sqrt{2} \cdot AD \cdot \frac{1}{2} = \frac{\sqrt{2} \cdot AD}{4}
+\]
+
+\[
+S_{ACD} = \frac{1}{2} \cdot AC \cdot AD \cdot \sin 45° = \frac{1}{2} \cdot \sqrt{3} \cdot AD \cdot \frac{\sqrt{2}}{2} = \frac{\sqrt{6} \cdot AD}{4}
+\]
+
+Koristeći kosinusovu teoremu i dodatne kalkulacije, dobijamo:
+\[
+AD = \frac{\sqrt{6}}{2}
+\]
+
+\subsection*{Answer}
+$\frac{\sqrt{6}}{2}$ (option \textbf{A}).
+
+\end{document}

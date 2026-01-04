@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ako je $a>b>0$ i $a^2+b^2=6ab$, odrediti vrednost
+\[
+\frac{a+b}{a-b}.
+\]
+
+\subsection*{Solution}
+Stavimo $t=\frac{a}{b}>1$. Tada je
+\[
+a^2+b^2=6ab \quad\Longleftrightarrow\quad t^2+1=6t
+\quad\Longleftrightarrow\quad t^2-6t+1=0.
+\]
+Rešenja su $t=3\pm 2\sqrt2$. Pošto je $t>1$, uzimamo
+\[
+t=3+2\sqrt2.
+\]
+Traženi količnik je
+\[
+\frac{a+b}{a-b}=\frac{tb+b}{tb-b}=\frac{t+1}{t-1}.
+\]
+Zamenom:
+\[
+\frac{t+1}{t-1}=\frac{(3+2\sqrt2)+1}{(3+2\sqrt2)-1}
+=\frac{4+2\sqrt2}{2+2\sqrt2}
+=\frac{2+\sqrt2}{1+\sqrt2}.
+\]
+Racionalisanjem:
+\[
+\frac{2+\sqrt2}{1+\sqrt2}\cdot\frac{1-\sqrt2}{1-\sqrt2}
+=\frac{(2+\sqrt2)(1-\sqrt2)}{1-2}
+=\frac{-\sqrt2}{-1}=\sqrt2.
+\]
+
+\subsection*{Answer}
+$\sqrt2$ (option \textbf{B}).
+
+\end{document}
+

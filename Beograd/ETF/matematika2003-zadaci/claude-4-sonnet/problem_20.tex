@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+The numbers $2, \sqrt{6}, \frac{3}{2}$ are members of:
+
+A) a decreasing arithmetic progression; B) an increasing arithmetic progression; C) a geometric progression; D) an arithmetic progression with first term $a_n = \frac{9n}{2} + \frac{1}{n}$ $(n = 1, 2, \ldots)$; E) a sequence with general term $a_n = \frac{2+\sqrt{6}}{n} - 1$ $(n = 1, 2, \ldots)$; N) Ne znam.
+
+\subsection*{Solution}
+Let's check each option with the given numbers $2, \sqrt{6}, \frac{3}{2}$.
+
+First, let's order them: $\sqrt{6} \approx 2.449$, so we have $\frac{3}{2} < 2 < \sqrt{6}$.
+
+\textbf{Option A: Decreasing arithmetic progression}
+For an arithmetic progression, the common difference should be constant.
+$d_1 = \sqrt{6} - 2 \approx 0.449$
+$d_2 = \frac{3}{2} - \sqrt{6} \approx 1.5 - 2.449 = -0.949$
+Since $d_1 \neq d_2$, this is not an arithmetic progression.
+
+\textbf{Option B: Increasing arithmetic progression}
+Same calculation as above - not an arithmetic progression.
+
+\textbf{Option C: Geometric progression}
+For a geometric progression, the common ratio should be constant.
+$r_1 = \frac{\sqrt{6}}{2}$
+$r_2 = \frac{\frac{3}{2}}{\sqrt{6}} = \frac{3}{2\sqrt{6}} = \frac{3\sqrt{6}}{12} = \frac{\sqrt{6}}{4}$
+
+We need to check if $\frac{\sqrt{6}}{2} = \frac{\sqrt{6}}{4}$, which is false.
+
+\textbf{Option D: $a_n = \frac{9n}{2} + \frac{1}{n}$}
+$a_1 = \frac{9 \cdot 1}{2} + \frac{1}{1} = \frac{9}{2} + 1 = \frac{11}{2} = 5.5 \neq 2$
+
+\textbf{Option E: $a_n = \frac{2+\sqrt{6}}{n} - 1$}
+$a_1 = \frac{2+\sqrt{6}}{1} - 1 = 2 + \sqrt{6} - 1 = 1 + \sqrt{6} \neq 2$
+
+Wait, let me reconsider the ordering and check if these could be terms of a sequence in a different order.
+
+Let me check if $2, \sqrt{6}, \frac{3}{2}$ could be $a_1, a_2, a_3$ of some sequence:
+
+For option E with $a_n = \frac{2+\sqrt{6}}{n} - 1$:
+$a_1 = (2+\sqrt{6}) - 1 = 1 + \sqrt{6} \approx 3.449$
+$a_2 = \frac{2+\sqrt{6}}{2} - 1 = \frac{2+\sqrt{6}-2}{2} = \frac{\sqrt{6}}{2} \approx 1.225$
+$a_3 = \frac{2+\sqrt{6}}{3} - 1$
+
+This doesn't match our numbers either.
+
+Actually, let me check if they form a geometric progression in the order $\frac{3}{2}, 2, \sqrt{6}$:
+$r_1 = \frac{2}{\frac{3}{2}} = \frac{4}{3}$
+$r_2 = \frac{\sqrt{6}}{2}$
+
+For geometric progression: $\left(\frac{4}{3}\right)^2 = \frac{16}{9}$ and $\frac{\sqrt{6}}{2} \cdot \frac{4}{3} = \frac{4\sqrt{6}}{6} = \frac{2\sqrt{6}}{3}$
+
+We need $\frac{16}{9} = \frac{2\sqrt{6}}{3}$, which gives $\frac{16}{3} = 2\sqrt{6}$, so $\frac{8}{3} = \sqrt{6}$.
+Squaring: $\frac{64}{9} = 6$, so $64 = 54$, which is false.
+
+Let me try the order $2, \frac{3}{2}, \sqrt{6}$ for geometric progression:
+$r_1 = \frac{\frac{3}{2}}{2} = \frac{3}{4}$
+$r_2 = \frac{\sqrt{6}}{\frac{3}{2}} = \frac{2\sqrt{6}}{3}$
+
+For GP: $\left(\frac{3}{4}\right)^2 = \frac{9}{16}$ should equal $\frac{2\sqrt{6}}{3} \cdot \frac{3}{4} = \frac{\sqrt{6}}{2}$.
+So $\frac{9}{16} = \frac{\sqrt{6}}{2}$, giving $\frac{9}{8} = \sqrt{6}$.
+Squaring: $\frac{81}{64} = 6$, so $81 = 384$, which is false.
+
+Based on my calculations, none of the standard progressions work. Let me assume there might be an error in my interpretation or the problem setup.
+
+\subsection*{Answer}
+N) Ne znam.
+
+\end{document}

@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Figura $F_1$ dobijena je tako što je iz jednakostraničnog trougla čija su površina $P$ izbačen trougao čija su temena središta stranica polaznog trougla. Figura $F_1$ se sastoji iz 3 trougla. Figura $F_2$ dobijena je tako što su iz figure $F_1$ izbačena tri trougla čija su temena središta stranica tri trougla koji čine figuru $F_1$. Figura $F_2$ se sastoji iz 9 trouglova. Figura $F_{n+1}$ dobijena je tako što je iz figure $F_n$ izbačeno $3^n$ trouglova čija su temena središta stranica $3^n$ trouglova koji čine figuru $F_n$. Zbir površina svih figura $F_n$, $n \in \mathbb{N}$, dobijenih na opisani način, jednak je:
+\[
+(A)\ \frac{3}{4}P\quad (B)\ \frac{4}{3}P\quad (C)\ 4P\quad (D)\ 3P\quad (E)\ +\infty\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Ovo je proces formiranja fraktala poznatog kao trougao Sjerpinskog.
+U prvom koraku, izbacujemo središnji trougao čija je površina $1/4$ polaznog trougla. Preostala površina figure $F_1$ je $P_1 = P - \frac{1}{4}P = \frac{3}{4}P$.
+U drugom koraku, od svakog od 3 preostala trougla (svaki površine $P/4$) oduzimamo središnji deo (površine $1/4 \cdot P/4 = P/16$). Ukupno oduzimamo $3 \cdot P/16$.
+Površina figure $F_2$ je $P_2 = P_1 - \frac{3}{16}P = \frac{3}{4}P - \frac{3}{16}P = \frac{12-3}{16}P = \frac{9}{16}P = \left(\frac{3}{4}\right)^2 P$.
+Induktivno, površina figure $F_n$ je $P_n = \left(\frac{3}{4}\right)^n P$.
+Zadatak traži "Zbir površina svih figura $F_n$". Ovo se najverovatnije odnosi na sumu geometrijskog reda:
+\[
+S = \sum_{n=1}^{\infty} P_n = \sum_{n=1}^{\infty} P \left(\frac{3}{4}\right)^n
+\]
+Ovo je geometrijski red sa prvim članom $a_1 = \frac{3}{4}P$ i količnikom $q = \frac{3}{4}$.
+\[
+S = \frac{a_1}{1-q} = \frac{\frac{3}{4}P}{1-\frac{3}{4}} = \frac{\frac{3}{4}P}{\frac{1}{4}} = 3P
+\]
+
+\subsection*{Answer}
+$3P$ (option \textbf{D}).
+
+\end{document}

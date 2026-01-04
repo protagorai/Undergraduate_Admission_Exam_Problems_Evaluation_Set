@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Krug sadrži tri tačke čije su koordinate $(0,6)$, $(0,10)$ i $(8,0)$. Apscisa druge tačke u kojoj dati krug seče $x$-osu, jednaka je:
+\[
+\text{(A) }7\quad
+\text{(B) }7{,}25\quad
+\text{(C) }7{,}5\quad
+\text{(D) }7{,}75\quad
+\text{(E) }9.
+\]
+
+\subsection*{Solution}
+Tačke $(0,6)$ i $(0,10)$ imaju istu apscisu, pa je središte njihove duži $(0,8)$, a simetrala te tetive je prava $y=8$.
+Dakle, centar kruga je oblika $C(h,8)$.
+
+Poluprečnik je isti do tačaka $(0,6)$ i $(8,0)$, pa:
+\[
+h^2+(8-6)^2=(8-h)^2+(0-8)^2.
+\]
+Odavde
+\[
+h^2+4=(8-h)^2+64=h^2-16h+128
+\ \Longrightarrow\ -16h=-124\ \Longrightarrow\ h=\frac{31}{4}.
+\]
+Dakle $C\!\left(\frac{31}{4},8\right)$ i
+\[
+r^2=h^2+4=\frac{961}{16}+\frac{64}{16}=\frac{1025}{16}.
+\]
+Jednačina kruga je
+\[
+\left(x-\frac{31}{4}\right)^2+(y-8)^2=\frac{1025}{16}.
+\]
+Za presek sa $x$-osom stavimo $y=0$:
+\[
+\left(x-\frac{31}{4}\right)^2+64=\frac{1025}{16}
+\ \Longrightarrow\
+\left(x-\frac{31}{4}\right)^2=\frac{1}{16}.
+\]
+Zato je $x=\frac{31\pm 1}{4}$, tj.\ $x=8$ ili $x=\frac{30}{4}=7.5$.
+Pošto je jedna tačka preseka već $(8,0)$, druga ima apscisu $7.5$.
+
+\subsection*{Answer}
+$7{,}5$ (option \textbf{C}).
+
+\end{document}
+

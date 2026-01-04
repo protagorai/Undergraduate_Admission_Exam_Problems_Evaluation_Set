@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Find the number of real solutions to the system:
+\[
+\log_{|x-y|}\frac{xy}{2} = 2, \quad x + y = xy + 1
+\]
+
+\subsection*{Solution}
+From the first equation:
+\[
+\log_{|x-y|}\frac{xy}{2} = 2 \implies |x-y|^2 = \frac{xy}{2} \implies (x-y)^2 = \frac{xy}{2}
+\]
+
+From the second equation:
+\[
+x + y = xy + 1
+\]
+
+Let $s = x + y$ and $p = xy$. Then:
+\begin{align*}
+s &= p + 1 \\
+(x-y)^2 &= s^2 - 4p = \frac{p}{2}
+\end{align*}
+
+From $s = p + 1$:
+\[
+(p+1)^2 - 4p = \frac{p}{2}
+\]
+\[
+p^2 + 2p + 1 - 4p = \frac{p}{2}
+\]
+\[
+p^2 - 2p + 1 = \frac{p}{2}
+\]
+\[
+2p^2 - 4p + 2 = p
+\]
+\[
+2p^2 - 5p + 2 = 0
+\]
+
+Using quadratic formula:
+\[
+p = \frac{5 \pm \sqrt{25 - 16}}{4} = \frac{5 \pm 3}{4}
+\]
+
+So $p = 2$ or $p = \frac{1}{2}$.
+
+\textbf{Case 1:} $p = 2$, then $s = 3$.
+$x + y = 3$, $xy = 2$ gives $x, y$ as roots of $t^2 - 3t + 2 = 0$: $t = 1$ or $t = 2$.
+Solutions: $(1, 2)$ and $(2, 1)$. Check: $|x-y| = 1$, need $|x-y| \neq 0, 1$ for valid log base.
+Base = 1 is invalid! These don't work.
+
+\textbf{Case 2:} $p = \frac{1}{2}$, then $s = \frac{3}{2}$.
+$x + y = \frac{3}{2}$, $xy = \frac{1}{2}$ gives roots of $t^2 - \frac{3}{2}t + \frac{1}{2} = 0$, i.e., $2t^2 - 3t + 1 = 0$.
+$t = 1$ or $t = \frac{1}{2}$.
+Solutions: $(1, \frac{1}{2})$ and $(\frac{1}{2}, 1)$. Check: $|x-y| = \frac{1}{2}$, valid base.
+
+So there are 2 valid solutions.
+
+\subsection*{Answer}
+$2$ (option \textbf{B}).
+
+\end{document}

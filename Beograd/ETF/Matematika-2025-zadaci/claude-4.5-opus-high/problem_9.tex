@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Skup svih realnih rešenja nejednačine $\sqrt{x + 3 - 4\sqrt{x-1}} + \sqrt{x + 3 + 4\sqrt{x-1}} \geq 4$ je oblika (za $-\infty < a < b < c < \infty$):
+
+\subsection*{Solution}
+Prvo, uslovi postojanja: $x - 1 \geq 0$, tj. $x \geq 1$.
+
+Neka je $u = \sqrt{x - 1} \geq 0$. Tada $x = u^2 + 1$ i $x + 3 = u^2 + 4$.
+
+Izrazi pod korenima postaju:
+\[
+x + 3 - 4\sqrt{x-1} = u^2 + 4 - 4u = (u - 2)^2
+\]
+\[
+x + 3 + 4\sqrt{x-1} = u^2 + 4 + 4u = (u + 2)^2
+\]
+
+Dakle:
+\[
+\sqrt{(u-2)^2} + \sqrt{(u+2)^2} = |u - 2| + |u + 2|
+\]
+
+Pošto je $u \geq 0$, imamo $u + 2 > 0$, pa $|u + 2| = u + 2$.
+
+Za $|u - 2|$:
+\begin{itemize}
+    \item Ako $u \geq 2$: $|u - 2| = u - 2$
+    \item Ako $0 \leq u < 2$: $|u - 2| = 2 - u$
+\end{itemize}
+
+\textbf{Slučaj 1:} $0 \leq u < 2$ (tj. $1 \leq x < 5$)
+\[
+|u - 2| + |u + 2| = (2 - u) + (u + 2) = 4
+\]
+
+Nejednačina $4 \geq 4$ je zadovoljena za sve $x \in [1, 5)$.
+
+\textbf{Slučaj 2:} $u \geq 2$ (tj. $x \geq 5$)
+\[
+|u - 2| + |u + 2| = (u - 2) + (u + 2) = 2u
+\]
+
+Nejednačina $2u \geq 4$ daje $u \geq 2$, tj. $x \geq 5$.
+
+Kombinujući oba slučaja, rešenje je $x \geq 1$, tj. $[1, +\infty)$.
+
+Međutim, pogledajmo ponuđene odgovore. Oni su oblika sa parametrima $a, b, c$.
+
+Ako je $a = 1$, $b$ i $c$ su neki drugi brojevi, onda bi odgovor bio oblika $[a, +\infty) = [1, +\infty)$.
+
+Odgovor (A) $[a, +\infty)$ odgovara našem rešenju $[1, +\infty)$.
+
+\subsection*{Answer}
+$[a, +\infty)$ gde je $a = 1$ (opcija \textbf{A}).
+
+\end{document}

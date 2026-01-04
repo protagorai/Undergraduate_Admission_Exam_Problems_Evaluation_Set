@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 10}
+Skup svih realnih rešenja nejednačine $\frac{\arccos(x^2-3x+1)}{8x^2-10x+3} > 0$ je oblika:
+
+\subsection*{Rešenje}
+Imenilac $8x^2-10x+3$ ima korene $x_{1,2} = \frac{10 \pm 2}{16}$, tj. $1/2$ i $3/4$.
+Imenilac je pozitivan za $x \in (-\infty, 1/2) \cup (3/4, \infty)$.
+Brojilac $\arccos(t)$ je definisan za $t \in [-1, 1]$ i nenegativan je.
+Uslov definisanosti: $-1 \le x^2-3x+1 \le 1$.
+$x^2-3x \le 0 \implies x \in [0, 3]$.
+$x^2-3x+2 \ge 0 \implies x \in (-\infty, 1] \cup [2, \infty)$.
+Presek (domen): $[0, 1] \cup [2, 3]$.
+Da bi razlomak bio strogo pozitivan, brojilac mora biti pozitivan (ne nula) i imenilac pozitivan.
+$\arccos(t) = 0 \iff t=1$.
+$x^2-3x+1 = 1 \iff x(x-3)=0 \iff x=0, x=3$.
+Dakle $x \neq 0, 3$.
+Brojilac je pozitivan na $(0, 1] \cup [2, 3)$.
+Imenilac je pozitivan na $(-\infty, 1/2) \cup (3/4, \infty)$.
+Presek ovih uslova:
+$(0, 1/2) \cup (3/4, 1] \cup [2, 3)$.
+Ovo odgovara obliku $(a, b) \cup (c, d] \cup [e, f)$.
+
+\subsection*{Odgovor}
+$(a, b) \cup (c, d] \cup [e, f)$ (opcija \textbf{E}).
+
+\end{document}

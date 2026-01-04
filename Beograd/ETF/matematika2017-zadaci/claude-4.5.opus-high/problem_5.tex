@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Let $P(x)$ be a polynomial of minimum degree with real coefficients and roots $-1$ and $2i$. If $P(0) = -12$, find $P(-2)$.
+
+(A) $-12$ \quad (B) $24$ \quad (C) $-30$ \quad (D) $-36$ \quad (E) $72$
+
+\subsection*{Solution}
+Since $P(x)$ has real coefficients and $2i$ is a root, its complex conjugate $-2i$ must also be a root.
+
+The minimum degree polynomial with roots $-1$, $2i$, and $-2i$ is:
+\[
+P(x) = a(x + 1)(x - 2i)(x + 2i) = a(x + 1)(x^2 + 4)
+\]
+
+Expanding:
+\[
+P(x) = a(x^3 + x^2 + 4x + 4)
+\]
+
+Using the condition $P(0) = -12$:
+\[
+P(0) = a(0 + 0 + 0 + 4) = 4a = -12
+\]
+\[
+a = -3
+\]
+
+So:
+\[
+P(x) = -3(x + 1)(x^2 + 4)
+\]
+
+Now we find $P(-2)$:
+\[
+P(-2) = -3(-2 + 1)((-2)^2 + 4) = -3(-1)(4 + 4) = -3(-1)(8) = 24
+\]
+
+\subsection*{Answer}
+(B) $24$
+
+\end{document}

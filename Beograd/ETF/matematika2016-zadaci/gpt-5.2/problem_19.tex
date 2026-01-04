@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+A sphere is inscribed in a right circular cone. The generatrices (slant edges) make an angle $\alpha$ with the base plane.
+Find the value of $\tan\frac{\alpha}{2}$ for which the ratio $\dfrac{V_\ell}{V_k}$ (sphere volume to cone volume) is maximized.
+
+\subsection*{Solution}
+Let the cone have base radius $r$ and height $h$, and slant height $s=\sqrt{r^2+h^2}$.
+In the axial cross-section we get an isosceles triangle with base $2r$ and height $h$; the inscribed circle radius equals the sphere radius $\rho$.
+For a triangle, inradius is $\rho=\dfrac{\text{Area}}{\text{semiperimeter}}$, so
+\[
+\rho=\frac{rh}{r+s}.
+\]
+Then
+\[
+V_\ell=\frac{4}{3}\pi\rho^3,\qquad V_k=\frac{1}{3}\pi r^2h,
+\]
+hence
+\[
+\frac{V_\ell}{V_k}=4\frac{\rho^3}{r^2h}
+=4\frac{(rh)^3}{(r+s)^3}\cdot\frac{1}{r^2h}
+=4\frac{rh^2}{(r+s)^3}.
+\]
+This ratio is scale-invariant, so set $r=1$ and write $t=h/r=h>0$.
+Then $s=\sqrt{1+t^2}$ and
+\[
+R(t)=4\frac{t^2}{(1+\sqrt{1+t^2})^3}.
+\]
+Let $u=\sqrt{1+t^2}>1$, so $t^2=u^2-1$. Then
+\[
+R(u)=4\frac{u^2-1}{(1+u)^3}=4\frac{(u-1)(u+1)}{(u+1)^3}
+=4\frac{u-1}{(u+1)^2}.
+\]
+Maximize $f(u)=\dfrac{u-1}{(u+1)^2}$ for $u>1$:
+\[
+f'(u)=\frac{(u+1)^2-2(u-1)(u+1)}{(u+1)^4}
+=\frac{(u+1)(3-u)}{(u+1)^4}
+=\frac{3-u}{(u+1)^3}.
+\]
+Thus $f'(u)=0$ at $u=3$, giving the maximum. Hence
+\[
+\sqrt{1+t^2}=3\Rightarrow t^2=8\Rightarrow t=2\sqrt2.
+\]
+Geometrically, $\tan\alpha=\dfrac{h}{r}=t$, and also $\sec\alpha=\sqrt{1+\tan^2\alpha}=u=3$.
+Using
+\[
+\tan\frac{\alpha}{2}=\frac{\sec\alpha-1}{\tan\alpha},
+\]
+we get
+\[
+\tan\frac{\alpha}{2}=\frac{3-1}{2\sqrt2}=\frac{1}{\sqrt2}.
+\]
+
+\subsection*{Answer}
+$\dfrac{1}{\sqrt2}$ (option \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Nejednačina $\sqrt{\frac{1}{x+1}} > \frac{1}{2x-1}$ je tačna ako i samo ako je:
+
+A) $x \in (-1, 1/2) \cup (5/4, +\infty)$; \quad B) $x \in (5/4, +\infty)$; \quad C) $x \in (-1, 1/2)$; 
+
+D) $x \in (4/5, +\infty)$; \quad E) $x \in (0, 4/5)$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Da bi leva strana bila definisana, potrebno je $\frac{1}{x+1} \geq 0$, tj. $x > -1$.
+
+\textbf{Slučaj 1:} $2x - 1 < 0$, tj. $x < \frac{1}{2}$
+
+U ovom slučaju desna strana je negativna, a leva je nenegativna (koren), pa je nejednačina automatski zadovoljena.
+
+Kombinovano sa $x > -1$: $x \in (-1, \frac{1}{2})$
+
+\textbf{Slučaj 2:} $2x - 1 > 0$, tj. $x > \frac{1}{2}$
+
+Obe strane su pozitivne, pa možemo kvadrirati:
+\[
+\frac{1}{x+1} > \frac{1}{(2x-1)^2}
+\]
+\[
+(2x-1)^2 > x + 1
+\]
+\[
+4x^2 - 4x + 1 > x + 1
+\]
+\[
+4x^2 - 5x > 0
+\]
+\[
+x(4x - 5) > 0
+\]
+
+Rešenja su $x < 0$ ili $x > \frac{5}{4}$.
+
+Kombinovano sa $x > \frac{1}{2}$: $x > \frac{5}{4}$, tj. $x \in (\frac{5}{4}, +\infty)$
+
+\textbf{Konačno rešenje:}
+\[
+x \in (-1, \frac{1}{2}) \cup (\frac{5}{4}, +\infty)
+\]
+
+\subsection*{Odgovor}
+$x \in (-1, 1/2) \cup (5/4, +\infty)$ (opcija \textbf{A}).
+
+\end{document}

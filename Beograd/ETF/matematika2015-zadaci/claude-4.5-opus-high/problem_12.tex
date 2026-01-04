@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Ako se zna da $\dfrac{14}{9}$ binomnog koeficijenta trećeg člana, binomni koeficijent četvrtog člana i binomni koeficijent petog člana u razvoju binoma $\left(\sqrt[3]{x} + \dfrac{1}{\sqrt{x}}\right)^n$ ($n \in \mathbf{N}$, $x > 0$), čine geometrijsku progresiju, tada je binomni koeficijent uz $\sqrt{x}$ jednak:
+
+\subsection*{Solution}
+The binomial coefficients of the 3rd, 4th, and 5th terms are $\binom{n}{2}$, $\binom{n}{3}$, and $\binom{n}{4}$.
+
+Given that $\dfrac{14}{9}\binom{n}{2}$, $\binom{n}{3}$, $\binom{n}{4}$ form a geometric progression:
+\[
+\left(\binom{n}{3}\right)^2 = \frac{14}{9}\binom{n}{2} \cdot \binom{n}{4}
+\]
+
+Using $\binom{n}{k} = \dfrac{n!}{k!(n-k)!}$:
+\[
+\binom{n}{2} = \frac{n(n-1)}{2}, \quad \binom{n}{3} = \frac{n(n-1)(n-2)}{6}, \quad \binom{n}{4} = \frac{n(n-1)(n-2)(n-3)}{24}
+\]
+
+\[
+\left(\frac{n(n-1)(n-2)}{6}\right)^2 = \frac{14}{9} \cdot \frac{n(n-1)}{2} \cdot \frac{n(n-1)(n-2)(n-3)}{24}
+\]
+
+\[
+\frac{n^2(n-1)^2(n-2)^2}{36} = \frac{14 \cdot n^2(n-1)^2(n-2)(n-3)}{9 \cdot 48}
+\]
+
+\[
+\frac{(n-2)^2}{36} = \frac{14(n-2)(n-3)}{432}
+\]
+
+\[
+\frac{(n-2)}{36} = \frac{14(n-3)}{432} = \frac{7(n-3)}{216}
+\]
+
+\[
+\frac{n-2}{36} = \frac{7(n-3)}{216}
+\]
+
+\[
+6(n-2) = 7(n-3)
+\]
+\[
+6n - 12 = 7n - 21
+\]
+\[
+n = 9
+\]
+
+Now find the term with $\sqrt{x} = x^{1/2}$.
+
+General term: $\binom{9}{k}\left(x^{1/3}\right)^{9-k}\left(x^{-1/2}\right)^k = \binom{9}{k}x^{(9-k)/3 - k/2}$
+
+Exponent of $x$: $\dfrac{9-k}{3} - \dfrac{k}{2} = \dfrac{18-2k-3k}{6} = \dfrac{18-5k}{6}$
+
+For $\sqrt{x}$: $\dfrac{18-5k}{6} = \dfrac{1}{2}$, so $18 - 5k = 3$, giving $k = 3$.
+
+Binomial coefficient: $\binom{9}{3} = 84$.
+
+\subsection*{Answer}
+$84$ (option \textbf{C}).
+
+\end{document}

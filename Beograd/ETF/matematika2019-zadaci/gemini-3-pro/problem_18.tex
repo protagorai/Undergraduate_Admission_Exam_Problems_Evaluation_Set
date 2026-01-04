@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 18}
+Ako su $\alpha, \beta$ i $\gamma$, $\alpha \ge \beta \ge \gamma$, uglovi trougla i ako je $\sin\alpha - \sin\beta + \sin\gamma = 1$, onda je ugao $\gamma$ jednak:
+
+\subsection*{Solution}
+Identitet za uglove trougla:
+$\sin\alpha + \sin\gamma - \sin\beta = 4\sin\frac{\alpha}{2}\sin\frac{\gamma}{2}\cos\frac{\beta}{2}$.
+Jednačina postaje:
+$4\sin\frac{\alpha}{2}\sin\frac{\gamma}{2}\cos\frac{\beta}{2} = 1$.
+Kako je $\alpha+\gamma = 180^\circ-\beta$, imamo $\frac{\alpha+\gamma}{2} = 90^\circ - \frac{\beta}{2}$, pa je $\cos\frac{\beta}{2} = \sin\frac{\alpha+\gamma}{2}$.
+Jednačina: $4\sin\frac{\alpha}{2}\sin\frac{\gamma}{2}\sin\left(\frac{\alpha}{2}+\frac{\gamma}{2}\right) = 1$.
+Neka su $x=\frac{\alpha}{2}, y=\frac{\gamma}{2}$.
+$4\sin x \sin y (\sin x \cos y + \cos x \sin y) = 1$.
+Analizom ovog izraza ili proverom specifičnih vrednosti:
+Ako je $\alpha=90^\circ, \beta=45^\circ, \gamma=45^\circ$:
+$\sin 90^\circ - \sin 45^\circ + \sin 45^\circ = 1 - \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2} = 1$.
+Ovi uglovi zadovoljavaju uslov $\alpha \ge \beta \ge \gamma$.
+Dakle, $\gamma = 45^\circ$ je rešenje.
+
+\subsection*{Answer}
+$45^\circ$ (Opcija \textbf{E})
+
+\end{document}

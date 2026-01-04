@@ -1,0 +1,2 @@
+13. Skup svih realnih brojeva x za koje važi (x-1)\sqrt{x^2 - x - 2} \ge 0 je:
+A) (0,1);   B) (-\infty, -2);   C) \{-1\} \cup [2, +\infty);   D) (1,2);   E) (\tfrac12,1);   N) Ne znam.

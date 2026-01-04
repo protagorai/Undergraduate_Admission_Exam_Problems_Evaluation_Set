@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Find the equation of the perpendicular bisector of segment $MN$, where $M(4, 2)$ and $N(-2, 0)$.
+
+(A) $y = -\frac{1}{3}x + \frac{4}{3}$ \quad (B) $y = 3x - 2$ \quad (C) $y = -3x + 4$ \quad (D) $y = -3x + 10$ \quad (E) $y = -x + 2$
+
+\subsection*{Solution}
+\textbf{Step 1:} Find the midpoint of $MN$.
+\[
+\text{Midpoint} = \left(\frac{4 + (-2)}{2}, \frac{2 + 0}{2}\right) = \left(\frac{2}{2}, \frac{2}{2}\right) = (1, 1)
+\]
+
+\textbf{Step 2:} Find the slope of line $MN$.
+\[
+m_{MN} = \frac{2 - 0}{4 - (-2)} = \frac{2}{6} = \frac{1}{3}
+\]
+
+\textbf{Step 3:} The perpendicular bisector has slope that is the negative reciprocal:
+\[
+m_{\perp} = -\frac{1}{m_{MN}} = -\frac{1}{1/3} = -3
+\]
+
+\textbf{Step 4:} Write the equation of the line through $(1, 1)$ with slope $-3$:
+\[
+y - 1 = -3(x - 1)
+\]
+\[
+y = -3x + 3 + 1 = -3x + 4
+\]
+
+\subsection*{Answer}
+$y = -3x + 4$ (option \textbf{C}).
+
+\end{document}

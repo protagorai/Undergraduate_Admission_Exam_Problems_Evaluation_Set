@@ -1,0 +1,8 @@
+Problem 9
+Skup rešenja nejednačine 3/5 \le x + x^2 + x^3 + \dots + x^n + \dots < 1, x \in \mathbb{R}, je oblika (za neke realne brojeve a, b takve da je -\infty < a < b < +\infty):
+(A) [a, b)
+(B) (a, b]
+(C) [a, b]
+(D) {a, b}
+(E) (a, b)
+(N) Ne znam

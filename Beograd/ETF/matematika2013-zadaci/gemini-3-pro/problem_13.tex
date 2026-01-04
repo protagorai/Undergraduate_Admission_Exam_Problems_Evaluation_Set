@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 13}
+Ukupan broj realnih rešenja sistema jednačina $x^2 + xy - \sqrt{2} \cdot x = 0, x^2 + y^2 = 2$ je:
+\[ (A)\ 4 \quad (B)\ 2 \quad (C)\ 1 \quad (D)\ 3 \quad (E)\ 0 \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+The first equation is:
+\[ x^2 + xy - \sqrt{2}x = 0 \]
+Factor out $x$:
+\[ x(x + y - \sqrt{2}) = 0 \]
+This gives two cases:
+Case 1: $x = 0$.
+Substitute into the second equation $x^2 + y^2 = 2$:
+\[ 0^2 + y^2 = 2 \implies y^2 = 2 \implies y = \pm\sqrt{2} \]
+Solutions: $(0, \sqrt{2})$ and $(0, -\sqrt{2})$.
+
+Case 2: $x + y - \sqrt{2} = 0 \implies y = \sqrt{2} - x$.
+Substitute into $x^2 + y^2 = 2$:
+\[ x^2 + (\sqrt{2} - x)^2 = 2 \]
+\[ x^2 + (2 - 2\sqrt{2}x + x^2) = 2 \]
+\[ 2x^2 - 2\sqrt{2}x + 2 = 2 \]
+\[ 2x^2 - 2\sqrt{2}x = 0 \]
+\[ 2x(x - \sqrt{2}) = 0 \]
+This gives $x = 0$ or $x = \sqrt{2}$.
+If $x = 0$, then $y = \sqrt{2} - 0 = \sqrt{2}$. Solution $(0, \sqrt{2})$, which we already found.
+If $x = \sqrt{2}$, then $y = \sqrt{2} - \sqrt{2} = 0$. Solution $(\sqrt{2}, 0)$.
+
+Total unique solutions are $(0, \sqrt{2})$, $(0, -\sqrt{2})$, $(\sqrt{2}, 0)$.
+There are 3 solutions.
+
+\subsection*{Answer}
+$3$ (option \textbf{D}).
+
+\end{document}

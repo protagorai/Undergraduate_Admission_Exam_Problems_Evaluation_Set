@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Ako je zbir svih binomnih koeficijenata u razvoju binoma
+\[
+\big(\sqrt[5]{3}+\sqrt[3]{5}\big)^n
+\]
+jednak $4^{52}$, odrediti broj racionalnih članova u ovom razvoju.
+
+\subsection*{Solution}
+\textbf{1) Određivanje $n$.}
+Zbir binomnih koeficijenata u razvoju $(a+b)^n$ je
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+Dato je $2^n=4^{52}=(2^2)^{52}=2^{104}$, pa je
+\[
+n=104.
+\]
+
+\medskip
+\textbf{2) Opšti član i uslov racionalnosti.}
+Opšti član razvoja je
+\[
+\binom{104}{k}\,(\sqrt[5]{3})^{104-k}\,(\sqrt[3]{5})^{k}
+\;=\;\binom{104}{k}\,3^{\frac{104-k}{5}}\,5^{\frac{k}{3}}.
+\]
+Pošto su $3$ i $5$ različiti prosti brojevi, član je racionalan ako i samo ako su oba eksponenta celi brojevi:
+\[
+\frac{104-k}{5}\in\mathbb{Z}\quad\text{i}\quad \frac{k}{3}\in\mathbb{Z}.
+\]
+To znači
+\[
+k\equiv 104\pmod 5 \;\Longleftrightarrow\; k\equiv 4\pmod 5,
+\qquad k\equiv 0\pmod 3.
+\]
+Tražimo rešenje modulo $15$. Brojevi deljivi sa $3$ su $0,3,6,9,12$ (mod $15$), a jedini koji je $4$ (mod $5$)
+je $9$. Dakle
+\[
+k\equiv 9\pmod{15}.
+\]
+Zato je $k=9+15m$. U opsegu $0\le k\le 104$ dobijamo:
+\[
+9+15m\le 104 \Rightarrow m\le 6,
+\]
+pa je $m=0,1,2,3,4,5,6$, ukupno $7$ vrednosti $k$.
+
+\subsection*{Answer}
+$7$ (option \textbf{A}).
+
+\end{document}
+

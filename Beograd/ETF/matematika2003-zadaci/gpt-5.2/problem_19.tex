@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Ako je
+\[
+\cos x:\cos 2x:\cos 4x=1:2:y,
+\]
+odrediti $y$.
+
+\subsection*{Solution}
+Iz odnosa $\cos x:\cos 2x=1:2$ sledi
+\[
+\cos 2x=2\cos x.
+\]
+Ozna\v{c}imo $c=\cos x$. Tada je $\cos 2x=2c^2-1$, pa va\v{z}i
+\[
+2c^2-1=2c \quad\Longrightarrow\quad 2c^2-2c-1=0.
+\]
+Re\v{s}enje je
+\[
+c=\frac{2\pm\sqrt{4+8}}{4}=\frac{2\pm 2\sqrt3}{4}=\frac{1\pm\sqrt3}{2}.
+\]
+Po\v{s}to mora biti $|c|\le 1$, uzimamo
+\[
+c=\frac{1-\sqrt3}{2}.
+\]
+Tada je
+\[
+\cos 2x=2c=1-\sqrt3.
+\]
+Sada ra\v{c}unamo
+\[
+\cos 4x=2\cos^2 2x-1=2(1-\sqrt3)^2-1.
+\]
+Po\v{s}to je $(1-\sqrt3)^2=1-2\sqrt3+3=4-2\sqrt3$, dobijamo
+\[
+\cos 4x=2(4-2\sqrt3)-1=8-4\sqrt3-1=7-4\sqrt3.
+\]
+
+Iz definicije odnosa $1:2:y$ postoji konstanta $\lambda$ takva da
+\[
+\cos x=\lambda,\qquad \cos 2x=2\lambda,\qquad \cos 4x=y\lambda.
+\]
+Odatle je $\lambda=\cos x=c$, pa
+\[
+y=\frac{\cos 4x}{\cos x}=\frac{7-4\sqrt3}{(1-\sqrt3)/2}
+=\frac{2(7-4\sqrt3)}{1-\sqrt3}.
+\]
+Racionalizacijom:
+\[
+y=\frac{2(7-4\sqrt3)(1+\sqrt3)}{(1-\sqrt3)(1+\sqrt3)}
+=\frac{2(7-4\sqrt3)(1+\sqrt3)}{-2}
+=-(7-4\sqrt3)(1+\sqrt3).
+\]
+Ra\v{c}unamo:
+\[
+(7-4\sqrt3)(1+\sqrt3)=7+7\sqrt3-4\sqrt3-12=-5+3\sqrt3,
+\]
+pa je
+\[
+y=-(-5+3\sqrt3)=5-3\sqrt3.
+\]
+
+\subsection*{Answer}
+$5-3\sqrt3$ (option \textbf{D}).
+
+\end{document}
+

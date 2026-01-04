@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 19}
+Odrediti ukupan broj realnih rešenja jednačine
+\[
+\sin 14x-\sin 12x+8\sin x-\cos 13x=4
+\]
+na intervalu \((0,2\pi)\).
+
+\subsection*{Rešenje}
+Koristimo identitet:
+\[
+\sin A-\sin B=2\cos\frac{A+B}{2}\,\sin\frac{A-B}{2}.
+\]
+Za \(A=14x\), \(B=12x\) dobijamo:
+\[
+\sin 14x-\sin 12x=2\cos 13x\sin x.
+\]
+Jednačina postaje
+\[
+2\cos 13x\sin x+8\sin x-\cos 13x=4.
+\]
+Grupišemo po \(\cos 13x\):
+\[
+\cos 13x(2\sin x-1)+8\sin x=4.
+\]
+Prebacimo:
+\[
+\cos 13x(2\sin x-1)=4-8\sin x=4(1-2\sin x)=-4(2\sin x-1).
+\]
+Dakle
+\[
+(2\sin x-1)(\cos 13x+4)=0.
+\]
+Kako je \(\cos 13x\in[-1,1]\), uslov \(\cos 13x+4=0\) nema rešenja. Ostaje
+\[
+2\sin x-1=0 \Rightarrow \sin x=\frac12.
+\]
+Na \((0,2\pi)\) to daje \(x=\frac{\pi}{6}\) i \(x=\frac{5\pi}{6}\), ukupno \(2\) rešenja.
+
+\subsection*{Odgovor}
+\[
+\boxed{(C)\ 2}
+\]
+\end{document}
+

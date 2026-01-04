@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je
+\[
+f\!\left(\frac{1-x}{1+x}\right)=x\quad (x\in\mathbb R\setminus\{-1,0,1\}),
+\]
+tada je $f(f(x))$ jednako:
+\[
+\text{(A) }x\quad
+\text{(B) }\frac{1-x}{1+x}\quad
+\text{(C) }\frac{1}{x}\quad
+\text{(D) }\frac{1+x}{1-x}\quad
+\text{(E) }2x.
+\]
+
+\subsection*{Solution}
+Označimo transformaciju
+\[
+T(x)=\frac{1-x}{1+x}.
+\]
+Uslov zadatka je $f(T(x))=x$, tj.\ $f$ je inverzna funkcija od $T$: $f=T^{-1}$.
+
+Međutim,
+\[
+T(T(x))=\frac{1-\frac{1-x}{1+x}}{1+\frac{1-x}{1+x}}
+=\frac{\frac{(1+x)-(1-x)}{1+x}}{\frac{(1+x)+(1-x)}{1+x}}
+=\frac{2x}{2}=x,
+\]
+pa je $T^{-1}=T$, odnosno $f(x)=T(x)$ (na datom domenu). Zato
+\[
+f(f(x))=T(T(x))=x.
+\]
+
+\subsection*{Answer}
+$x$ (option \textbf{A}).
+
+\end{document}
+

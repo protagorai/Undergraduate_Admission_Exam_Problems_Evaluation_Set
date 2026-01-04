@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+U jednakostraničnom trouglu čija je osnovica $a = 10$ cm i krak $b = 13$ cm upisan je kvadrat tako da mu dva temena leže na osnovici trougla, a druga dva na kracima. Dužina stranice kvadrata (u cm) jednaka je:
+
+\subsection*{Solution}
+Postavimo koordinatni sistem tako da je osnovica trougla na x-osi od $(0,0)$ do $(10,0)$, a vrh trougla u tački $(5,h)$ gde je $h$ visina trougla.
+
+Visina trougla se računa iz Pitagorine teoreme:
+\[
+h = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \sqrt{144} = 12 \text{ cm}
+\]
+
+Neka je stranica kvadrata $s$. Kvadrat ima temena u tačkama $(x, 0)$, $(x+s, 0)$, $(x, s)$, $(x+s, s)$.
+
+Zbog simetrije, kvadrat je centriran, pa je $x = \frac{10-s}{2}$.
+
+Gornja temena kvadrata moraju da leže na stranama trougla. Jednačina leve strane trougla je:
+\[
+y = \frac{12}{5}x
+\]
+
+Jednačina desne strane trougla je:
+\[
+y = \frac{12}{5}(10-x) = 24 - \frac{12}{5}x
+\]
+
+Levo gornje teme $(x, s)$ mora da leži na levoj strani:
+\[
+s = \frac{12}{5} \cdot \frac{10-s}{2} = \frac{12(10-s)}{10} = \frac{6(10-s)}{5}
+\]
+\[
+5s = 6(10-s) = 60 - 6s
+\]
+\[
+11s = 60
+\]
+\[
+s = \frac{60}{11}
+\]
+
+\subsection*{Answer}
+$\frac{60}{11}$ (option \textbf{A}).
+
+\end{document}

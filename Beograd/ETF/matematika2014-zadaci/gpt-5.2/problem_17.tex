@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Ako je uređen par $(x,y)$ $(x,y\in\mathbb R,\ x,y>0,\ x\neq 1)$ rešenje sistema jednačina
+\[
+x^p=y^q,\qquad x^q=y^p \qquad (p,q\in\mathbb R\setminus\{0\},\ p\neq q),
+\]
+tada je proizvod $x\cdot y$ jednak:
+\[
+\text{(A) }\frac{p-q}{2}\quad
+\text{(B) }\frac{2}{p-q}\quad
+\text{(C) }1\quad
+\text{(D) }\left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}\quad
+\text{(E) }\left(\frac{q}{p}\right)^{\frac{p+q}{p-q}}.
+\]
+
+\subsection*{Solution}
+Pošto su $x,y>0$, možemo logaritmovati. Neka su $u=\ln x$ i $v=\ln y$.
+Sistem postaje
+\[
+pu=qv,\qquad qu=pv.
+\]
+Množenjem prve jednačine sa $p$ i druge sa $q$ dobijamo
+\[
+p^2u=pqv,\qquad q^2u=pqv,
+\]
+pa oduzimanjem sledi
+\[
+(p^2-q^2)u=0.
+\]
+Pošto je u zadatku dat neki (postojeći) realan par rešenja sa uslovom $x\neq 1$, mora važiti $u\neq 0$, pa je nužno
+\[
+p^2-q^2=0 \ \Longleftrightarrow\ p=-q
+\quad (\text{jer je }p\neq q).
+\]
+Tada iz $x^p=y^q=y^{-p}$ sledi $x^p y^p=1$, odnosno $(xy)^p=1$.
+Kako je $p\neq 0$ i $x,y>0$, dobijamo $xy=1$.
+
+\subsection*{Answer}
+$1$ (option \textbf{C}).
+
+\end{document}
+

@@ -1,0 +1,2 @@
+6. Ako je duži krak pravouglog trapeza jednak 10, a poluprečnik kružnice upisane u taj trapez jednak 4, onda je površina tog trapeza jednaka:
+(A) 96   (B) 36   (C) 24   (D) 48   (E) 72   (N) Ne znam

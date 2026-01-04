@@ -1,0 +1,2 @@
+7. Broj rešenja jednačine 9^{3x-11} = 3^{8x-2} je:
+A) 0;   B) 1;   C) 2;   D) 3;   E) 4;   N) Ne znam.

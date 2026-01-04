@@ -1,0 +1,5 @@
+Problem 7
+
+Lopta je upisana u kocku. Odnos površina lopte i kocke je:
+
+(A) \(\dfrac{2\pi}{3}\)   (B) \(\dfrac{\pi}{6}\)   (C) \(\dfrac{4\pi}{3}\)   (D) \(\dfrac{\pi}{12}\)   (E) \(\dfrac{8\pi}{3}\)   (N) Ne znam

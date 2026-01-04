@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Naći skup svih realnih $x$ koji zadovoljavaju nejednačinu
+\[
+\frac35\;\le\;x+x^{2}+x^{3}+\dots\;<1.
+\]
+Rezultat treba zapisati u jednom od ponuđenih intervalnih oblika.
+
+\subsection*{Rešenje}
+Beskonačni red je geometrijski sa prvim članom $x$ i količnikom $x$.  Zbir konvergira (i jednak je $\tfrac{x}{1-x}$) pod uslovom $|x|<1$.
+
+Pretpostavljamo dakle $|x|<1$ i razmatramo nejednačine
+\[
+\frac35\le\frac{x}{1-x}<1.
+\]
+
+\textbf{1.}  Gornja granica.
+Pošto je $1-x>0$ (jer $x<1$), množimo bez promene smera:
+\[
+\frac{x}{1-x}<1\;\Longrightarrow\;x<1-x\;\Longrightarrow\;2x<1\;\Longrightarrow\;x<\frac12.
+\]
+
+\textbf{2.}  Donja granica.
+\[
+\frac{x}{1-x}\ge\frac35\;\Longrightarrow\;5x\ge3(1-x)=3-3x\;\Longrightarrow\;8x\ge3\;\Longrightarrow\;x\ge\frac38.
+\]
+
+\textbf{3.}  Uklapamo i uslov konvergencije $|x|<1$ (koji je ionako ispunjen za pronađene vrednosti).  Domena rešenja zato je
+\[
+\left[\frac38,\;\frac12\right).
+\]
+
+\subsection*{Odgovor}
+Interval zatvoren s leve, otvoren s desne strane odговara шаблону $[a,b)$ – \textbf{opcija A} sa $a=3/8$, $b=1/2$.
+
+\end{document}

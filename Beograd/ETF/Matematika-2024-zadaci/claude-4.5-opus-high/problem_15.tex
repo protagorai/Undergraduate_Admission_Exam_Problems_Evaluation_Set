@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Find the number of solutions of the equation
+\[
+\frac{\cos 3x + \cos 4x + \cos 5x}{\sin x - \sqrt{3}\cos x} = 0
+\]
+on the segment $[0, \pi]$.
+
+\subsection*{Solution}
+For the fraction to equal zero, the numerator must be zero and the denominator must be non-zero.
+
+\textbf{Numerator = 0:}
+\[
+\cos 3x + \cos 4x + \cos 5x = 0
+\]
+
+Using sum-to-product formula for $\cos 3x + \cos 5x$:
+\[
+\cos 3x + \cos 5x = 2\cos 4x \cos x
+\]
+
+So:
+\[
+\cos 4x + 2\cos 4x \cos x = 0
+\]
+\[
+\cos 4x (1 + 2\cos x) = 0
+\]
+
+\textbf{Case 1:} $\cos 4x = 0$
+\[
+4x = \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \frac{7\pi}{2}, \ldots
+\]
+\[
+x = \frac{\pi}{8}, \frac{3\pi}{8}, \frac{5\pi}{8}, \frac{7\pi}{8}
+\]
+In $[0, \pi]$: 4 solutions.
+
+\textbf{Case 2:} $\cos x = -\frac{1}{2}$
+\[
+x = \frac{2\pi}{3}
+\]
+In $[0, \pi]$: 1 solution.
+
+\textbf{Denominator $\neq 0$:}
+\[
+\sin x - \sqrt{3}\cos x \neq 0
+\]
+\[
+2\sin\left(x - \frac{\pi}{3}\right) \neq 0
+\]
+\[
+x \neq \frac{\pi}{3}, \frac{4\pi}{3}, \ldots
+\]
+In $[0, \pi]$: $x \neq \frac{\pi}{3}$.
+
+\textbf{Check solutions:}
+None of $\frac{\pi}{8}, \frac{3\pi}{8}, \frac{5\pi}{8}, \frac{7\pi}{8}, \frac{2\pi}{3}$ equals $\frac{\pi}{3}$.
+
+Total solutions: $4 + 1 = 5$
+
+\subsection*{Answer}
+$5$ (option \textbf{C}).
+
+\end{document}
+

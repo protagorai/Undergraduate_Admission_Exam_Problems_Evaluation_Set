@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 14}
+Na koliko načina od 2 matematičara i 8 inženjera možemo formirati petočlanu komisiju u kojoj će biti bar jedan matematičar?
+\[
+(A)\; 196 \quad (B)\; 248 \quad (C)\; 70 \quad (D)\; 56 \quad (E)\; 140
+\]
+
+\subsection*{Solution}
+Ukupan broj osoba je $2+8=10$.
+Ukupan broj načina da se izabere 5 osoba od 10 je:
+\[
+\binom{10}{5} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 2 \cdot 9 \cdot 2 \cdot 7 = 252
+\]
+Broj komisija u kojima nema matematičara (svi su inženjeri) je izbor 5 inženjera od 8:
+\[
+\binom{8}{5} = \binom{8}{3} = \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = 56
+\]
+Broj komisija sa bar jednim matematičarom je ukupan broj komisija minus broj komisija bez matematičara:
+\[
+252 - 56 = 196
+\]
+
+\subsection*{Answer}
+196 (option \textbf{A}).
+
+\end{document}

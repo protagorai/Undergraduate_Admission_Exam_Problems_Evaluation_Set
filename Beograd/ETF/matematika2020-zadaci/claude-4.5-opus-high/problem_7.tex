@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Find the real part of the complex number $(z - z^2 + 2z^3)(2 - z + z^2)$, where $z = \frac{-1 + i\sqrt{3}}{2}$, $i^2 = -1$.
+
+\subsection*{Solution}
+First, let's recognize that $z = \frac{-1 + i\sqrt{3}}{2}$ is a primitive cube root of unity, often denoted $\omega$.
+
+We know that $\omega^3 = 1$ and $1 + \omega + \omega^2 = 0$.
+
+Let's verify: $z = e^{i \cdot 2\pi/3} = \cos(120°) + i\sin(120°) = -\frac{1}{2} + i\frac{\sqrt{3}}{2}$ ✓
+
+Properties of $\omega$:
+\begin{itemize}
+    \item $\omega^3 = 1$
+    \item $\omega^2 = \frac{-1 - i\sqrt{3}}{2}$
+    \item $1 + \omega + \omega^2 = 0$
+\end{itemize}
+
+Now let's compute the expression $(z - z^2 + 2z^3)(2 - z + z^2)$.
+
+Since $z^3 = 1$:
+\[
+z - z^2 + 2z^3 = z - z^2 + 2
+\]
+
+For the second factor:
+\[
+2 - z + z^2
+\]
+
+Now multiply:
+\[
+(z - z^2 + 2)(2 - z + z^2)
+\]
+
+Let's expand:
+\[
+= z(2 - z + z^2) - z^2(2 - z + z^2) + 2(2 - z + z^2)
+\]
+\[
+= 2z - z^2 + z^3 - 2z^2 + z^3 - z^4 + 4 - 2z + 2z^2
+\]
+
+Using $z^3 = 1$ and $z^4 = z$:
+\[
+= 2z - z^2 + 1 - 2z^2 + 1 - z + 4 - 2z + 2z^2
+\]
+\[
+= (2z - z - 2z) + (-z^2 - 2z^2 + 2z^2) + (1 + 1 + 4)
+\]
+\[
+= -z - z^2 + 6
+\]
+
+Since $1 + z + z^2 = 0$, we have $z + z^2 = -1$.
+
+Therefore:
+\[
+-z - z^2 + 6 = -(z + z^2) + 6 = -(-1) + 6 = 1 + 6 = 7
+\]
+
+Wait, but we need the real part. Since the result is $7$, which is a real number, the real part is $7$.
+
+But let me double-check option (C) says 4. Let me recalculate...
+
+Actually, let me recalculate more carefully:
+\[
+(z - z^2 + 2z^3)(2 - z + z^2)
+\]
+
+With $z^3 = 1$:
+\[
+= (z - z^2 + 2)(2 - z + z^2)
+\]
+
+Expanding term by term:
+- $z \cdot 2 = 2z$
+- $z \cdot (-z) = -z^2$
+- $z \cdot z^2 = z^3 = 1$
+- $(-z^2) \cdot 2 = -2z^2$
+- $(-z^2) \cdot (-z) = z^3 = 1$
+- $(-z^2) \cdot z^2 = -z^4 = -z$
+- $2 \cdot 2 = 4$
+- $2 \cdot (-z) = -2z$
+- $2 \cdot z^2 = 2z^2$
+
+Sum: $2z - z^2 + 1 - 2z^2 + 1 - z + 4 - 2z + 2z^2$
+
+Collecting terms:
+- $z$ terms: $2z - z - 2z = -z$
+- $z^2$ terms: $-z^2 - 2z^2 + 2z^2 = -z^2$
+- Constants: $1 + 1 + 4 = 6$
+
+Result: $-z - z^2 + 6 = -(z + z^2) + 6 = -(-1) + 6 = 7$
+
+Hmm, I get 7, but let me check if perhaps the question asks for something different or I misread.
+
+Actually wait - looking at option (C) = 4, let me reconsider. Maybe I should compute directly.
+
+$z = \frac{-1 + i\sqrt{3}}{2}$
+
+$z^2 = \frac{1 - 2i\sqrt{3} - 3}{4} = \frac{-2 - 2i\sqrt{3}}{4} = \frac{-1 - i\sqrt{3}}{2}$
+
+$z + z^2 = \frac{-1 + i\sqrt{3}}{2} + \frac{-1 - i\sqrt{3}}{2} = \frac{-2}{2} = -1$ ✓
+
+So the result is indeed $7 - 0i$, and the real part is $7$.
+
+But wait, looking at the options again: (A) $4(1 + \text{Im}^2 z)$, (B) $0$, (C) $4$, (D) $-\frac{1}{2}$, (E) $-\text{Re}z + 1$.
+
+$\text{Im}(z) = \frac{\sqrt{3}}{2}$, so $\text{Im}^2(z) = \frac{3}{4}$.
+
+Option (A): $4(1 + \frac{3}{4}) = 4 \cdot \frac{7}{4} = 7$ ✓
+
+\subsection*{Answer}
+$4(1 + \text{Im}^2 z) = 7$ (option \textbf{A}).
+
+\end{document}

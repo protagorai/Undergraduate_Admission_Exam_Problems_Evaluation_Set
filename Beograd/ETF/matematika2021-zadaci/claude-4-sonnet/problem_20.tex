@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the limit:
+\[
+\lim_{x \to 0} \frac{1 - \cos x \cos(2x) \cos(3x)}{1 - \cos x}
+\]
+
+\subsection*{Solution}
+As $x \to 0$, both numerator and denominator approach 0, so we can use L'Hôpital's rule or Taylor expansions.
+
+Using Taylor expansions around $x = 0$:
+\[
+\cos x = 1 - \frac{x^2}{2} + \frac{x^4}{24} + O(x^6)
+\]
+\[
+\cos(2x) = 1 - \frac{(2x)^2}{2} + \frac{(2x)^4}{24} + O(x^6) = 1 - 2x^2 + \frac{2x^4}{3} + O(x^6)
+\]
+\[
+\cos(3x) = 1 - \frac{(3x)^2}{2} + \frac{(3x)^4}{24} + O(x^6) = 1 - \frac{9x^2}{2} + \frac{27x^4}{8} + O(x^6)
+\]
+
+The denominator is:
+\[
+1 - \cos x = 1 - \left(1 - \frac{x^2}{2} + O(x^4)\right) = \frac{x^2}{2} + O(x^4)
+\]
+
+For the numerator, we need:
+\[
+\cos x \cos(2x) \cos(3x) = \left(1 - \frac{x^2}{2} + O(x^4)\right)\left(1 - 2x^2 + O(x^4)\right)\left(1 - \frac{9x^2}{2} + O(x^4)\right)
+\]
+
+Expanding to order $x^2$:
+\[
+\cos x \cos(2x) \cos(3x) = 1 - \left(\frac{1}{2} + 2 + \frac{9}{2}\right)x^2 + O(x^4) = 1 - 7x^2 + O(x^4)
+\]
+
+Therefore:
+\[
+1 - \cos x \cos(2x) \cos(3x) = 1 - (1 - 7x^2 + O(x^4)) = 7x^2 + O(x^4)
+\]
+
+The limit becomes:
+\[
+\lim_{x \to 0} \frac{7x^2 + O(x^4)}{\frac{x^2}{2} + O(x^4)} = \lim_{x \to 0} \frac{7x^2}{\frac{x^2}{2}} = \frac{7}{\frac{1}{2}} = 14
+\]
+
+\subsection*{Answer}
+14 (option \textbf{B}).
+
+\end{document}

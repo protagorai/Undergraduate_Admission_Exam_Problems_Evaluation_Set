@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Compute the value of
+\[
+\left(3^{\frac{2-\log_{3\sqrt3}5+2\log_{9}4}{4}}\right)^6.
+\]
+
+\subsection*{Solution}
+Rewrite everything using base $3$.
+Since $3\sqrt3=3^{3/2}$,
+\[
+\log_{3\sqrt3}5=\log_{3^{3/2}}5=\frac{\ln 5}{\frac32\ln 3}=\frac{2}{3}\log_3 5.
+\]
+Also, $9=3^2$, hence
+\[
+\log_{9}4=\log_{3^2}4=\frac{\ln 4}{2\ln 3}=\frac12\log_3 4,
+\qquad
+2\log_9 4=\log_3 4.
+\]
+Therefore the exponent inside becomes
+\[
+\frac{2-\frac23\log_3 5+\log_3 4}{4}.
+\]
+Raising to the $6$th power multiplies the exponent by $6$:
+\[
+\left(3^{\frac{2-\log_{3\sqrt3}5+2\log_9 4}{4}}\right)^6
+=3^{\frac{6}{4}\left(2-\frac23\log_3 5+\log_3 4\right)}
+=3^{\frac32\left(2-\frac23\log_3 5+\log_3 4\right)}.
+\]
+So
+\[
+=3^{3+\frac32\log_3 4-\log_3 5}
+=3^3\cdot \frac{3^{\log_3(4^{3/2})}}{3^{\log_3 5}}
+=27\cdot \frac{4^{3/2}}{5}.
+\]
+Finally, $4^{3/2}=(\sqrt4)^3=2^3=8$, hence
+\[
+27\cdot\frac{8}{5}=\frac{216}{5}.
+\]
+
+\subsection*{Answer}
+$\dfrac{216}{5}$ (option \textbf{E}).
+
+\end{document}
+

@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Ukupan broj realnih rešenja sistema jednačina
+\[
+\frac{x+y}{x-y}+\frac{x-y}{x+y}=\frac{5}{2},\qquad x^2+y^2=20
+\]
+jeste:
+\[
+\text{(A)}~0\quad
+\text{(B)}~2\quad
+\text{(C)}~4\quad
+\text{(D)}~6\quad
+\text{(E)}~8.
+\]
+
+\subsection*{Solution}
+Neka je $u=\dfrac{x+y}{x-y}$ (uz uslov $x\neq \pm y$). Tada je
+\[
+u+\frac{1}{u}=\frac{5}{2}
+\;\Rightarrow\;
+2u^2-5u+2=0,
+\]
+pa
+\[
+u=\frac{5\pm 3}{4}\in\left\{2,\frac12\right\}.
+\]
+
+\textbf{1) Ako je $u=2$:} tada $x+y=2(x-y)$, tj.\ $x=3y$.
+
+\textbf{2) Ako je $u=\frac12$:} tada $x+y=\frac12(x-y)$, tj.\ $x=-3y$.
+
+U oba slučaja iz $x^2+y^2=20$ dobijamo:
+\[
+9y^2+y^2=20 \;\Rightarrow\; 10y^2=20 \;\Rightarrow\; y=\pm\sqrt2,
+\]
+pa za svaki slučaj imamo po $2$ rešenja. Ukupno: $4$ realna rešenja (pri čemu $x\pm y\neq 0$ za dobijene parove).
+
+\subsection*{Answer}
+$4$ (option \textbf{C}).
+
+\end{document}
+

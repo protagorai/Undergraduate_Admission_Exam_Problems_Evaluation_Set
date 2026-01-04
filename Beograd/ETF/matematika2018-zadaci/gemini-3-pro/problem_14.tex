@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 14}
+The first two terms of an increasing geometric progression are the solutions to the equation
+$\frac{2^{2 \sin x}}{1 + 2^{2 \sin x}} = 1 - \frac{3 - 2^{2 \sin x}}{5 - 2^{2 \sin x}}$
+on the interval $(0, \pi)$. If the sum of this progression is $651\pi$, then the total number of its terms is equal to:
+
+\subsection*{Solution}
+Let $u = 2^{2 \sin x}$. Since $x \in (0, \pi)$, $\sin x \in (0, 1]$, so $u \in (1, 4]$.
+Equation:
+\[ \frac{u}{1+u} = 1 - \frac{3-u}{5-u} \]
+\[ \frac{u}{1+u} = \frac{(5-u)-(3-u)}{5-u} = \frac{2}{5-u} \]
+\[ u(5-u) = 2(1+u) \]
+\[ 5u - u^2 = 2 + 2u \]
+\[ u^2 - 3u + 2 = 0 \]
+\[ (u-1)(u-2) = 0 \]
+Solutions for $u$: $u=1$ or $u=2$.
+If $u=1$, $2^{2\sin x}=1 \implies \sin x = 0$, but $x \in (0, \pi)$, so no solution.
+If $u=2$, $2^{2\sin x}=2^1 \implies 2\sin x = 1 \implies \sin x = \frac{1}{2}$.
+Solutions in $(0, \pi)$: $x_1 = \frac{\pi}{6}$ and $x_2 = \frac{5\pi}{6}$.
+Since the progression is increasing, $b_1 = \frac{\pi}{6}$ and $b_2 = \frac{5\pi}{6}$.
+Common ratio $q = \frac{b_2}{b_1} = \frac{5\pi/6}{\pi/6} = 5$.
+Sum $S_n = b_1 \frac{q^n - 1}{q - 1}$.
+\[ 651\pi = \frac{\pi}{6} \frac{5^n - 1}{5 - 1} \]
+\[ 651 = \frac{1}{6} \frac{5^n - 1}{4} \]
+\[ 651 \cdot 24 = 5^n - 1 \]
+\[ 15624 = 5^n - 1 \]
+\[ 5^n = 15625 \]
+Since $5^6 = 15625$, we have $n=6$.
+
+\subsection*{Answer}
+6 (option \textbf{B}).
+
+\end{document}

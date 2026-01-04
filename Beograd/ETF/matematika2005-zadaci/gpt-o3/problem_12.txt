@@ -1,0 +1,3 @@
+Problem 12: Razlika veće i manje osnove jednakokrakog trapeza čiji je obim 32 cm a poluprečnik upisanog kruga 2 cm iznosi (u cm):
+
+(A) √3   (B) 8√3   (C) √6   (D) 3√2   (E) 6√6   (N) Ne znam

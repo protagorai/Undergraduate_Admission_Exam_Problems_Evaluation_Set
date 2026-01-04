@@ -1,0 +1,5 @@
+Problem 14
+
+Na koliko načina od 2 matematičara i 8 inženjera možemo formirati petočlanu komisiju u kojoj će biti bar jedan matematičar?
+
+(A) 196    (B) 248    (C) 70    (D) 56    (E) 140    (N) Ne znam

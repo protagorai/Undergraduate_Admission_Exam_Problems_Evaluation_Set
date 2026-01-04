@@ -1,0 +1,8 @@
+Problem 20
+Broj načina na koji se mogu izabrati četiri različita broja iz skupa {1,2,\dots,9} tako da je bar jedan od njih deljiv sa četiri i bar jedan od njih strogo veći od pet iznosi:
+(A) 202
+(B) 87
+(C) 367
+(D) 91
+(E) 108
+(N) Ne znam

@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+The domain of the function $f(x) = \frac{\sqrt{\cos^2 x + \sin x \cos x - 1}}{\log_{\frac{1}{2}}(9 - x^2)}$ is (for some real numbers $a, b, c, d, e$ such that $-\infty < a < b < c < d < e < +\infty$):
+
+\subsection*{Solution}
+For the function to be defined, we need:
+
+1. The expression under the square root to be non-negative:
+   $\cos^2 x + \sin x \cos x - 1 \geq 0$
+
+2. The denominator to be non-zero:
+   $\log_{\frac{1}{2}}(9 - x^2) \neq 0$
+
+3. The argument of the logarithm to be positive:
+   $9 - x^2 > 0$
+
+Let's start with condition 3:
+$9 - x^2 > 0 \Rightarrow x^2 < 9 \Rightarrow -3 < x < 3$
+
+For condition 2:
+$\log_{\frac{1}{2}}(9 - x^2) \neq 0$
+This means $9 - x^2 \neq 1$, so $x^2 \neq 8$, which gives $x \neq \pm 2\sqrt{2}$.
+
+For condition 1:
+$\cos^2 x + \sin x \cos x - 1 \geq 0$
+
+Using the identity $\cos^2 x = 1 - \sin^2 x$:
+$1 - \sin^2 x + \sin x \cos x - 1 \geq 0$
+$-\sin^2 x + \sin x \cos x \geq 0$
+$\sin x(\cos x - \sin x) \geq 0$
+
+This can be rewritten as:
+$\sin x \cos x - \sin^2 x \geq 0$
+$\frac{1}{2}\sin(2x) - \frac{1 - \cos(2x)}{2} \geq 0$
+$\sin(2x) - 1 + \cos(2x) \geq 0$
+$\sin(2x) + \cos(2x) \geq 1$
+
+Using the identity $\sin(2x) + \cos(2x) = \sqrt{2}\sin(2x + \frac{\pi}{4})$:
+$\sqrt{2}\sin(2x + \frac{\pi}{4}) \geq 1$
+$\sin(2x + \frac{\pi}{4}) \geq \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}$
+
+This gives us:
+$\frac{\pi}{4} \leq 2x + \frac{\pi}{4} \leq \frac{3\pi}{4} + 2\pi k$ for integer $k$
+
+Simplifying:
+$0 \leq 2x \leq \frac{\pi}{2} + 2\pi k$
+$0 \leq x \leq \frac{\pi}{4} + \pi k$
+
+Within the interval $(-3, 3)$, we need to find where this condition is satisfied.
+
+For $k = 0$: $0 \leq x \leq \frac{\pi}{4}$
+For $k = -1$: $-\pi \leq x \leq \frac{\pi}{4} - \pi = -\frac{3\pi}{4}$
+
+Since $\frac{\pi}{4} \approx 0.785 < 3$ and $-\frac{3\pi}{4} \approx -2.356 > -3$, both intervals are within $(-3, 3)$.
+
+Combining all conditions:
+- $-3 < x < 3$
+- $x \neq \pm 2\sqrt{2} \approx \pm 2.83$
+- $x \in [-\frac{3\pi}{4}, 0] \cup [0, \frac{\pi}{4}] = [-\frac{3\pi}{4}, \frac{\pi}{4}]$
+
+Since $2\sqrt{2} \approx 2.83 > \frac{\pi}{4} \approx 0.785$, the restriction $x \neq 2\sqrt{2}$ doesn't affect our domain.
+Since $-2\sqrt{2} \approx -2.83 < -\frac{3\pi}{4} \approx -2.356$, the restriction $x \neq -2\sqrt{2}$ doesn't affect our domain either.
+
+Therefore, the domain is $[-\frac{3\pi}{4}, \frac{\pi}{4}]$.
+
+\subsection*{Answer}
+$(a, c) \cup (c, d)$ (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,5 @@
+Problem 10
+
+Ako su \(x_1\) i \(x_2\) rešenja jednačine \(3x^{2} + 17x - 14 = 0\), tada je vrednost izraza \(\dfrac{3x_{1}^{2} + 5x_{1}x_{2} + 3x_{2}^{2}}{4x_{1}^{2} + 4x_{1}x_{2} + 4x_{2}^{2}}\) jednaka:
+
+(A) \(\dfrac{909}{952}\)   (B) \(\dfrac{303}{238}\)   (C) \(\dfrac{101}{352}\)   (D) \(\dfrac{5}{9}\)   (E) \(\dfrac{13}{3}\)   (N) Ne znam

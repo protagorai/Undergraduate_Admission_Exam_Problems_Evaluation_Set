@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Find the sum of coefficients of tangent lines to the circle $x^2 + y^2 = 2$ that pass through the point of intersection with the line $x - y - 1 = 0$ and satisfy $x + y - 3 = 0$.
+
+\subsection*{Solution}
+The circle is $x^2 + y^2 = 2$ with center $(0,0)$ and radius $\sqrt{2}$.
+
+The line $x - y - 1 = 0$ can be written as $y = x - 1$.
+
+We need tangent lines to the circle that pass through a point on both lines.
+
+First, find where the lines $x - y - 1 = 0$ and $x + y - 3 = 0$ intersect:
+\begin{align*}
+x - y &= 1 \\
+x + y &= 3
+\end{align*}
+
+Adding: $2x = 4 \Rightarrow x = 2$, and $y = 1$.
+
+So the point is $(2, 1)$.
+
+Now find tangent lines from $(2,1)$ to circle $x^2 + y^2 = 2$.
+
+Distance from $(2,1)$ to center $(0,0)$: $d = \sqrt{4+1} = \sqrt{5}$.
+
+For a tangent line $y - 1 = m(x - 2)$, or $mx - y + (1 - 2m) = 0$.
+
+Distance from $(0,0)$ to this line equals $\sqrt{2}$:
+\[
+\frac{|0 - 0 + (1-2m)|}{\sqrt{m^2 + 1}} = \sqrt{2}
+\]
+\[
+\frac{|1-2m|}{\sqrt{m^2+1}} = \sqrt{2}
+\]
+\[
+(1-2m)^2 = 2(m^2 + 1)
+\]
+\[
+1 - 4m + 4m^2 = 2m^2 + 2
+\]
+\[
+2m^2 - 4m - 1 = 0
+\]
+
+Sum of slopes (coefficients): $m_1 + m_2 = \frac{4}{2} = 2$.
+
+\subsection*{Answer}
+$2$ (option \textbf{A}).
+
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Zbir najveće i najmanje vrednosti funkcije $f(x) = x^3 + 3x^2 - 72x + 90$ na segmentu $[-5, 5]$ iznosi:
+
+(A) 314 \quad (B) 330 \quad (C) 400 \quad (D) 412 \quad (E) 321 \quad (N) Ne znam
+
+\subsection*{Solution}
+To find the maximum and minimum values on $[-5, 5]$, we need to check:
+\begin{enumerate}
+\item Critical points where $f'(x) = 0$
+\item Endpoints $x = -5$ and $x = 5$
+\end{enumerate}
+
+Finding critical points:
+\[
+f'(x) = 3x^2 + 6x - 72 = 3(x^2 + 2x - 24) = 3(x + 6)(x - 4)
+\]
+
+Setting $f'(x) = 0$: $x = -6$ or $x = 4$
+
+Only $x = 4$ is in the interval $[-5, 5]$.
+
+Evaluating $f(x)$ at critical point and endpoints:
+
+\textbf{At $x = -5$:}
+\[
+f(-5) = (-5)^3 + 3(-5)^2 - 72(-5) + 90 = -125 + 75 + 360 + 90 = 400
+\]
+
+\textbf{At $x = 4$:}
+\[
+f(4) = 4^3 + 3(4)^2 - 72(4) + 90 = 64 + 48 - 288 + 90 = -86
+\]
+
+\textbf{At $x = 5$:}
+\[
+f(5) = 5^3 + 3(5)^2 - 72(5) + 90 = 125 + 75 - 360 + 90 = -70
+\]
+
+Comparing values:
+\begin{itemize}
+\item $f(-5) = 400$ (maximum)
+\item $f(4) = -86$ (minimum)
+\item $f(5) = -70$
+\end{itemize}
+
+Sum of maximum and minimum:
+\[
+400 + (-86) = 314
+\]
+
+\subsection*{Answer}
+$314$ (option \textbf{A}).
+
+\end{document}

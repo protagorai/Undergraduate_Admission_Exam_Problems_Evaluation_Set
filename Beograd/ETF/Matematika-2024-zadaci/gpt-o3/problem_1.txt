@@ -1,0 +1,12 @@
+Problem 1
+Za a \in \mathbb{R}, a \neq 3, izraz
+
+    (a^3 - 27)/(a - 3)^2 - (a^2 - 2a - 3)/(a + 3)^2 - 3a
+
+je jednak:
+(A) a - 3
+(B) 3/2
+(C) a + 1
+(D) a
+(E) 1
+(N) Ne znam

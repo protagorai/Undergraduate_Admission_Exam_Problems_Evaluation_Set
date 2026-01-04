@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Sistem jednačina $3^x - 2y^2 = 77$, $3^{\frac{x}{2}} - 2\frac{y^2}{4} = 7$ ima:
+
+\subsection*{Solution}
+Neka je $u = 3^{\frac{x}{2}}$ i $v = \frac{y^2}{4}$.
+
+Tada je $3^x = (3^{\frac{x}{2}})^2 = u^2$ i $y^2 = 4v$.
+
+Sistem postaje:
+\[
+u^2 - 2(4v) = 77 \Rightarrow u^2 - 8v = 77
+\]
+\[
+u - 2v = 7
+\]
+
+Iz druge jednačine: $u = 7 + 2v$.
+
+Zamenimo u prvu:
+\[
+(7 + 2v)^2 - 8v = 77
+\]
+\[
+49 + 28v + 4v^2 - 8v = 77
+\]
+\[
+4v^2 + 20v + 49 - 77 = 0
+\]
+\[
+4v^2 + 20v - 28 = 0
+\]
+\[
+v^2 + 5v - 7 = 0
+\]
+
+Diskriminanta: $\Delta = 25 + 28 = 53 > 0$.
+
+Dakle, postoje dva realna rešenja za $v$, što znači da postoje dva realna rešenja za $y^2$, a time i četiri realna rešenja za $y$ (po dva za svako $v$).
+
+Za svako $v$ imamo jedinstveno $u = 7 + 2v > 0$, pa postoji jedinstveno $x$ takvo da $3^{\frac{x}{2}} = u$.
+
+\subsection*{Answer}
+Četiri realna rešenja (option \textbf{C}).
+
+\end{document}

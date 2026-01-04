@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Ako je $i^2 = -1$ i $\varepsilon$ kompleksan broj koji zadovoljava uslov $\varepsilon^2 + \varepsilon + 1 = 0$, tada je rešenje jednačine $\frac{x-1}{x+1} = \varepsilon\frac{1+i}{1-i}$ po $x$ jednako:
+
+(A) $-2\varepsilon + 1 - 2i$ \quad (B) $-2\varepsilon - 1 + 2i$ \quad (C) $-2\varepsilon - 1 - 2i$ \quad (D) $2\varepsilon + 1 - 2i$ \quad (E) $2\varepsilon - 1 - 2i$ \quad (N) Ne znam
+
+\subsection*{Solution}
+First, simplify $\frac{1+i}{1-i}$:
+\[
+\frac{1+i}{1-i} = \frac{(1+i)^2}{(1-i)(1+i)} = \frac{1 + 2i + i^2}{1 - i^2} = \frac{1 + 2i - 1}{1 + 1} = \frac{2i}{2} = i
+\]
+
+So the equation becomes:
+\[
+\frac{x-1}{x+1} = \varepsilon \cdot i
+\]
+
+Let $\varepsilon i = k$. Then:
+\[
+x - 1 = k(x + 1)
+\]
+\[
+x - 1 = kx + k
+\]
+\[
+x - kx = k + 1
+\]
+\[
+x(1 - k) = k + 1
+\]
+\[
+x = \frac{k + 1}{1 - k} = \frac{\varepsilon i + 1}{1 - \varepsilon i}
+\]
+
+Multiply numerator and denominator by the conjugate of the denominator:
+\[
+x = \frac{(1 + \varepsilon i)(1 + \varepsilon i)}{(1 - \varepsilon i)(1 + \varepsilon i)} = \frac{(1 + \varepsilon i)^2}{1 - \varepsilon^2 i^2} = \frac{(1 + \varepsilon i)^2}{1 + \varepsilon^2}
+\]
+
+Since $\varepsilon^2 + \varepsilon + 1 = 0$, we have $\varepsilon^2 = -\varepsilon - 1$.
+
+So $1 + \varepsilon^2 = 1 - \varepsilon - 1 = -\varepsilon$.
+
+And $(1 + \varepsilon i)^2 = 1 + 2\varepsilon i + \varepsilon^2 i^2 = 1 + 2\varepsilon i - \varepsilon^2 = 1 + 2\varepsilon i - (-\varepsilon - 1) = 2 + \varepsilon + 2\varepsilon i$
+
+Therefore:
+\[
+x = \frac{2 + \varepsilon + 2\varepsilon i}{-\varepsilon} = -\frac{2 + \varepsilon}{\varepsilon} - 2i = -\frac{2}{\varepsilon} - 1 - 2i
+\]
+
+Since $\varepsilon^2 + \varepsilon + 1 = 0$, we have $\varepsilon(\varepsilon + 1) = -1$, so $\frac{1}{\varepsilon} = -(\varepsilon + 1) = -\varepsilon - 1$.
+
+Therefore:
+\[
+-\frac{2}{\varepsilon} = -2(-\varepsilon - 1) = 2\varepsilon + 2
+\]
+
+So:
+\[
+x = 2\varepsilon + 2 - 1 - 2i = 2\varepsilon + 1 - 2i
+\]
+
+\subsection*{Answer}
+$2\varepsilon + 1 - 2i$ (option \textbf{D}).
+
+\end{document}

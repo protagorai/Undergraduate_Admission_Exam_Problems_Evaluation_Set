@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Za koju vrednost realnog parametra $\alpha$ sistem jednačina
+\[
+2x-5y=0,\qquad 3x-\alpha y=0
+\]
+ima više od jednog rešenja?
+
+\subsection*{Solution}
+Ovo je homogen linearni sistem sa matricom koeficijenata
+\[
+A=\begin{pmatrix}2 & -5\\[2pt] 3 & -\alpha\end{pmatrix}.
+\]
+Homogen sistem ima više od jednog rešenja (beskonačno mnogo) ako i samo ako je $\det A=0$.
+Računamo
+\[
+\det A = 2(-\alpha)-(-5)\cdot 3 = -2\alpha+15.
+\]
+Uslov $\det A=0$ daje
+\[
+-2\alpha+15=0 \quad\Rightarrow\quad \alpha=\frac{15}{2}.
+\]
+
+\subsection*{Answer}
+$\dfrac{15}{2}$ (option \textbf{E}).
+
+\end{document}
+

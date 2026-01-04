@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Broj četvorocifrenih brojeva deljivih sa 5 čije su sve cifre različite jednaka je:
+
+(A) 1008 \quad (B) 952 \quad (C) 1200 \quad (D) 896 \quad (E) 840
+
+\subsection*{Solution}
+Četvorocifren broj ima oblik $\overline{abcd}$ gde je $a \neq 0$ (prva cifra ne može biti 0).
+
+Broj je deljiv sa 5 ako se završava na 0 ili 5, tj. $d \in \{0, 5\}$.
+
+\textbf{Slučaj 1:} $d = 0$
+
+Potrebno je izabrati cifre $a, b, c$ tako da su sve različite i različite od 0.
+\begin{itemize}
+\item $a$ može biti bilo koja cifra od 1 do 9 (9 izbora)
+\item $b$ može biti bilo koja cifra osim $a$ i $0$, ali 0 je već iskorišćen za $d$, dakle $b$ može biti bilo koja od preostalih 8 cifara (uključujući mogućnost da bude neka cifra $\neq a$, ali ne 0)
+
+Zapravo: $b$ može biti bilo koja cifra osim $a$ i $d=0$: to je 8 cifara
+\item $c$ može biti bilo koja cifra osim $a$, $b$ i $0$: to je 7 cifara
+\end{itemize}
+
+Broj kombinacija: $9 \times 8 \times 7 = 504$
+
+\textbf{Slučaj 2:} $d = 5$
+
+\begin{itemize}
+\item $a$ može biti bilo koja cifra od 1 do 9 osim 5: 8 izbora
+\item $b$ može biti bilo koja cifra osim $a$, $d=5$: 8 izbora
+\item $c$ može biti bilo koja cifra osim $a$, $b$, $d=5$: 7 izbora
+\end{itemize}
+
+Broj kombinacija: $8 \times 8 \times 7 = 448$
+
+Ukupan broj četvorocifrenih brojeva deljivih sa 5 sa svim različitim ciframa:
+\[
+504 + 448 = 952
+\]
+
+\subsection*{Answer}
+$952$ (opcija \textbf{(B)}).
+
+\end{document}
+

@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+U rastućoj aritmetičkoj progresiji od 11 članova, prvi, peti i jedanaesti član čine prva tri člana geometrijske progresije. Ako je prvi član te aritmetičke progresije jednak 24, tada je zbir svih članova te aritmetičke progresije jednak:
+
+\subsection*{Solution}
+Let the arithmetic progression be $a_n$. $a_1 = 24$.
+Terms are $a_1, a_5, a_{11}$.
+$a_5 = 24 + 4d$
+$a_{11} = 24 + 10d$
+Geometric progression condition: $a_5^2 = a_1 \cdot a_{11}$.
+\[ (24 + 4d)^2 = 24(24 + 10d) \]
+\[ 576 + 192d + 16d^2 = 576 + 240d \]
+\[ 16d^2 - 48d = 0 \]
+\[ 16d(d - 3) = 0 \]
+$d=0$ or $d=3$. Since it is increasing, $d=3$.
+Sum of 11 terms:
+\[ S_{11} = \frac{11}{2} (2a_1 + 10d) = \frac{11}{2} (48 + 30) = \frac{11}{2} \cdot 78 = 11 \cdot 39 = 429 \]
+
+\subsection*{Answer}
+429 (option \textbf{D})
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Neka su $\alpha$, $\beta$ i $\gamma$ uglovi a $a$, $b$ i $c$ stranice proizvoljnog trougla. Tada je 
+\[
+\frac{b - 2a\cos\gamma}{a\sin\gamma} + \frac{c - 2b\cos\alpha}{b\sin\alpha} + \frac{a - 2c\cos\beta}{c\sin\beta}
+\]
+jednako:
+
+(A) $-2$ \quad (B) $-1$ \quad (C) $0$ \quad (D) $1$ \quad (E) Nijedan od ponuđenih odgovora \quad (N) Ne znam
+
+\subsection*{Solution}
+Using the law of cosines:
+\begin{align*}
+a^2 &= b^2 + c^2 - 2bc\cos\alpha \\
+b^2 &= a^2 + c^2 - 2ac\cos\beta \\
+c^2 &= a^2 + b^2 - 2ab\cos\gamma
+\end{align*}
+
+From the third equation: $2ab\cos\gamma = a^2 + b^2 - c^2$, so $2a\cos\gamma = \frac{a^2 + b^2 - c^2}{b}$.
+
+Thus:
+\[
+b - 2a\cos\gamma = b - \frac{a^2 + b^2 - c^2}{b} = \frac{b^2 - a^2 - b^2 + c^2}{b} = \frac{c^2 - a^2}{b}
+\]
+
+Using the law of sines: $\frac{a}{\sin\alpha} = \frac{b}{\sin\beta} = \frac{c}{\sin\gamma} = 2R$
+
+So $a\sin\gamma = a \cdot \frac{c}{2R} = \frac{ac}{2R}$.
+
+First term:
+\[
+\frac{b - 2a\cos\gamma}{a\sin\gamma} = \frac{\frac{c^2 - a^2}{b}}{\frac{ac}{2R}} = \frac{(c^2 - a^2) \cdot 2R}{abc} = \frac{2R(c^2 - a^2)}{abc}
+\]
+
+Similarly:
+\[
+\frac{c - 2b\cos\alpha}{b\sin\alpha} = \frac{2R(a^2 - b^2)}{abc}
+\]
+\[
+\frac{a - 2c\cos\beta}{c\sin\beta} = \frac{2R(b^2 - c^2)}{abc}
+\]
+
+Adding all three:
+\[
+\frac{2R}{abc}\left[(c^2 - a^2) + (a^2 - b^2) + (b^2 - c^2)\right] = \frac{2R}{abc} \cdot 0 = 0
+\]
+
+\subsection*{Answer}
+$0$ (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 15}
+Data su tri različita proizvoda fabrike A, četiri različita proizvoda fabrike B i pet različitih proizvoda fabrike C. Na koliko različitih načina se svi proizvodi mogu poređati u niz uz sledeće uslove: proizvodi fabrike B su jedan pored drugog, proizvodi fabrike C su jedan pored drugog, nikoja dva proizvoda fabrike A nisu jedan pored drugog?
+
+A) $5!$; B) $4!5!$; C) $3!4!5!$; D) $2!3!4!5!$; E) $12 \cdot 3!$; N) Ne znam.
+
+\subsection*{Solution}
+Imamo grupe proizvoda: A (3 kom), B (4 kom), C (5 kom).
+Uslovi:
+1. Svi B su zajedno (blok B). Broj permutacija unutar bloka je $4!$.
+2. Svi C su zajedno (blok C). Broj permutacija unutar bloka je $5!$.
+3. Nikoja dva A nisu zajedno.
+
+Posmatramo elemente koje treba rasporediti: blok B, blok C, i 3 pojedinačna proizvoda A ($A_1, A_2, A_3$).
+Prvo rasporedimo elemente koji nisu A, a to su blok B i blok C.
+Broj načina da se rasporede ova dva bloka je $2!$ (redosled B-C ili C-B).
+Ovi blokovi stvaraju 3 mesta (prostora) gde možemo umetnuti proizvode A kako se ne bi dodirivali:
+\_ Blok1 \_ Blok2 \_
+Imamo tačno 3 mesta i 3 proizvoda A. Svaki proizvod A mora ići na jedno mesto.
+Broj načina da rasporedimo 3 proizvoda A na 3 mesta je $3!$.
+
+Ukupan broj načina je proizvod svih mogućnosti:
+\[ N = (\text{raspored B unutar bloka}) \cdot (\text{raspored C unutar bloka}) \cdot (\text{raspored blokova}) \cdot (\text{raspored A}) \]
+\[ N = 4! \cdot 5! \cdot 2! \cdot 3! \]
+\[ N = 2! 3! 4! 5! \]
+
+\subsection*{Answer}
+$2!3!4!5!$ (option \textbf{D}).
+\end{document}

@@ -1,0 +1,8 @@
+Problem 13 (Matematika 2023)
+Ako pri deljenju polinoma P1 polinomom x²−1 ostatak iznosi x, a pri deljenju P2 polinomom x²−1 ostatak je x+2, ostatak pri deljenju P1·P2 polinomom x²−1 jednak je:
+a) 1
+b) x+2
+c) 2x
+d) 2x+1
+e) 2x−1
+n) Ne znam

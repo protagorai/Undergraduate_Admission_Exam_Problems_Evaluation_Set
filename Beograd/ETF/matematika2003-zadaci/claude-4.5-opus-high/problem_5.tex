@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Proizvod rešenja jednačine $\sqrt{x^{\log\sqrt{x}}} = 10$ je:
+
+\textbf{A)} 2; \quad \textbf{B)} 1; \quad \textbf{C)} $\frac{1}{100}$; \quad \textbf{D)} 100; \quad \textbf{E)} 10
+
+\subsection*{Solution}
+Neka je $\log x = t$ (logaritam sa osnovom 10). Tada je $\log\sqrt{x} = \frac{t}{2}$.
+
+Jednačina postaje:
+\[
+\sqrt{x^{t/2}} = 10
+\]
+\[
+x^{t/4} = 10
+\]
+
+Logaritmujemo obe strane:
+\[
+\frac{t}{4} \cdot \log x = \log 10 = 1
+\]
+\[
+\frac{t}{4} \cdot t = 1
+\]
+\[
+\frac{t^2}{4} = 1
+\]
+\[
+t^2 = 4
+\]
+\[
+t = \pm 2
+\]
+
+Dakle $\log x = 2$ ili $\log x = -2$, što daje:
+\[
+x_1 = 10^2 = 100, \quad x_2 = 10^{-2} = \frac{1}{100}
+\]
+
+Proizvod rešenja:
+\[
+x_1 \cdot x_2 = 100 \cdot \frac{1}{100} = 1
+\]
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}

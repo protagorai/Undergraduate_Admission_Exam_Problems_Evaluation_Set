@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 9}
+Find the set of all real solutions to $\sqrt{x+3} - 4\sqrt{x-1} + \sqrt{x+3} + 4\sqrt{x-1} \geq 4$ for $-\infty < a < b < c < \infty$.
+
+\subsection*{Solution}
+Let's simplify the left side of the inequality:
+\[
+\sqrt{x+3} - 4\sqrt{x-1} + \sqrt{x+3} + 4\sqrt{x-1} = 2\sqrt{x+3}
+\]
+
+So our inequality becomes:
+\[
+2\sqrt{x+3} \geq 4
+\]
+
+Dividing by 2:
+\[
+\sqrt{x+3} \geq 2
+\]
+
+For this to be defined, we need $x + 3 \geq 0$, so $x \geq -3$.
+
+Also, from the original expression, we need $x - 1 \geq 0$, so $x \geq 1$.
+
+The more restrictive condition is $x \geq 1$.
+
+Now, squaring both sides of $\sqrt{x+3} \geq 2$ (which is valid since both sides are non-negative):
+\[
+x + 3 \geq 4
+\]
+\[
+x \geq 1
+\]
+
+So the solution is $x \geq 1$, which can be written as $[1, +\infty)$.
+
+Looking at the answer choices, this corresponds to option (A) $[a, +\infty)$ where $a = 1$.
+
+But wait, let me double-check the original problem statement. The inequality seems to have some parameters $a$, $b$, $c$ mentioned, but they don't appear in the actual inequality. Let me re-read...
+
+The problem asks for the set where $-\infty < a < b < c < \infty$, which suggests we're looking for an interval. Given our solution $[1, +\infty)$, this would correspond to option (A) $[a, +\infty)$.
+
+Actually, looking more carefully at the answer options, they seem to involve the parameters $a$, $b$, $c$. Let me check if there's a different interpretation.
+
+Looking at the options:
+(A) $[a, +\infty)$
+(B) $(-\infty, a] \cup (b, +\infty)$
+(C) $(a, b) \cup \{c\}$
+(D) $(-\infty, a] \cup [b, c]$
+(E) $[a, b] \cup [c, +\infty)$
+
+Since our solution is $[1, +\infty)$, this matches the form of option (A).
+
+\subsection*{Answer}
+$[a, +\infty)$ (option \textbf{A}).
+
+\end{document}
+

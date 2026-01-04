@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+U jednakokraki trougao osnovice dužine 12cm i odgovarajuće visine dužine 8cm, upisan je pravougaonik maksimalne površine tako da mu jedna stranica pripada osnovici trougla. Obim pravougaonika (u cm) je:
+
+\subsection*{Solution}
+Postavimo koordinatni sistem tako da je osnova trougla na $x$-osi od $(-6, 0)$ do $(6, 0)$, a vrh trougla u $(0, 8)$.
+
+Jednačina stranice trougla od $(6, 0)$ do $(0, 8)$ je:
+\[
+\frac{x}{6} + \frac{y}{8} = 1 \Rightarrow y = 8 - \frac{4x}{3}
+\]
+
+Neka je pravougaonik sa temenima u $(-a, 0)$, $(a, 0)$, $(a, h)$, $(-a, h)$, gde je $0 < a \leq 6$.
+
+Visina pravougaonika je $h = 8 - \frac{4a}{3}$.
+
+Površina pravougaonika je:
+\[
+P = 2a \cdot h = 2a\left(8 - \frac{4a}{3}\right) = 16a - \frac{8a^2}{3}
+\]
+
+Da nađemo maksimum, derivišemo po $a$:
+\[
+\frac{dP}{da} = 16 - \frac{16a}{3} = 0
+\]
+\[
+16 = \frac{16a}{3} \Rightarrow a = 3
+\]
+
+Za $a = 3$: $h = 8 - \frac{4 \cdot 3}{3} = 8 - 4 = 4$.
+
+Obim pravougaonika je:
+\[
+O = 2(2a + h) = 2(6 + 4) = 20
+\]
+
+\subsection*{Answer}
+$20$ (option \textbf{A}).
+
+\end{document}

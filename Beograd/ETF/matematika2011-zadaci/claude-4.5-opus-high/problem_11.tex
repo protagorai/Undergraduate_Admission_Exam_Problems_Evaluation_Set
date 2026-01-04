@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Find the total number of real solutions of the system:
+\[
+\frac{x+y}{x-y} + \frac{x-y}{x+y} = \frac{5}{2}, \quad x^2 + y^2 = 20
+\]
+
+\subsection*{Solution}
+Let $u = \frac{x+y}{x-y}$. Then the first equation becomes:
+\[
+u + \frac{1}{u} = \frac{5}{2}
+\]
+\[
+\frac{u^2 + 1}{u} = \frac{5}{2}
+\]
+\[
+2u^2 + 2 = 5u
+\]
+\[
+2u^2 - 5u + 2 = 0
+\]
+\[
+(2u - 1)(u - 2) = 0
+\]
+
+So $u = \frac{1}{2}$ or $u = 2$.
+
+\textbf{Case 1:} $\frac{x+y}{x-y} = 2$
+
+$x + y = 2(x - y) = 2x - 2y$
+
+$3y = x$, so $x = 3y$
+
+Substituting into $x^2 + y^2 = 20$:
+\[
+9y^2 + y^2 = 20 \Rightarrow 10y^2 = 20 \Rightarrow y^2 = 2 \Rightarrow y = \pm\sqrt{2}
+\]
+
+This gives solutions $(3\sqrt{2}, \sqrt{2})$ and $(-3\sqrt{2}, -\sqrt{2})$.
+
+\textbf{Case 2:} $\frac{x+y}{x-y} = \frac{1}{2}$
+
+$2(x + y) = x - y$
+
+$2x + 2y = x - y$
+
+$x = -3y$
+
+Substituting into $x^2 + y^2 = 20$:
+\[
+9y^2 + y^2 = 20 \Rightarrow 10y^2 = 20 \Rightarrow y^2 = 2 \Rightarrow y = \pm\sqrt{2}
+\]
+
+This gives solutions $(-3\sqrt{2}, \sqrt{2})$ and $(3\sqrt{2}, -\sqrt{2})$.
+
+We need to verify these don't make denominators zero ($x \neq y$ and $x \neq -y$):
+- For $x = 3y$: $x - y = 2y \neq 0$ (when $y \neq 0$), $x + y = 4y \neq 0$ ✓
+- For $x = -3y$: $x - y = -4y \neq 0$, $x + y = -2y \neq 0$ ✓
+
+Total: \textbf{4} real solutions.
+
+\subsection*{Answer}
+\textbf{(C)} 4
+
+\end{document}

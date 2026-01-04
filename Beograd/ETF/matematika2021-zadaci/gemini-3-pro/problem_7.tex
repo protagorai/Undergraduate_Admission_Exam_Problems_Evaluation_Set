@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 7}
+Skup svih realnih rešenja nejednačine $\ln(x+1) > x^2 + 3x + 3$ je oblika:
+
+\subsection*{Rešenje}
+Definiciono područje: $x > -1$.
+Posmatrajmo funkciju $h(x) = \ln(x+1) - (x^2+3x+3)$.
+Izvod: $h'(x) = \frac{1}{x+1} - (2x+3) = \frac{1 - (2x^2+5x+3)}{x+1} = \frac{-2x^2-5x-2}{x+1}$.
+Nule izvoda su $x = -2$ i $x = -1/2$. U domenu $x > -1$ je samo $x = -1/2$.
+Funkcija raste na $(-1, -1/2)$ i opada na $(-1/2, \infty)$.
+Maksimum je u $x = -1/2$.
+$h(-1/2) = \ln(1/2) - (1/4 - 3/2 + 3) = -\ln 2 - 1.75 < 0$.
+Dakle, $h(x)$ je uvek negativna, tj. $\ln(x+1) < x^2+3x+3$ za svako $x$ iz domena.
+Nejednačina nema rešenja.
+
+\subsection*{Odgovor}
+Nijedan od prethodno ponuđenih odgovora (opcija \textbf{E}), jer je rešenje prazan skup.
+
+\end{document}

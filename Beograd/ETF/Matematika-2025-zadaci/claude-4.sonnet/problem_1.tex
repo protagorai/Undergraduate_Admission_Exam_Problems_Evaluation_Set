@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 1}
+If $x = 2^{p/q}$ solves the equation $\sqrt{x\sqrt{x\sqrt{x\sqrt{x}}}} = 2$, find $p + q$ for some natural numbers $p$ and $q$.
+
+\subsection*{Solution}
+Let's denote the nested radical as $y = \sqrt{x\sqrt{x\sqrt{x\sqrt{x}}}}$.
+
+We can write this as:
+\[
+y = \sqrt{x \cdot \sqrt{x \cdot \sqrt{x \cdot \sqrt{x}}}}
+\]
+
+Let's work from the inside out. If we assume the pattern continues infinitely, we get:
+\[
+y = \sqrt{x \cdot y}
+\]
+
+Squaring both sides:
+\[
+y^2 = x \cdot y
+\]
+
+Since $y \neq 0$ (as $y = 2$), we can divide by $y$:
+\[
+y = x
+\]
+
+But we're given that $y = 2$, so $x = 2$.
+
+Now, if $x = 2^{p/q} = 2$, then:
+\[
+2^{p/q} = 2^1
+\]
+
+This means $\frac{p}{q} = 1$, so $p = q$.
+
+The simplest natural numbers satisfying this are $p = 1$ and $q = 1$.
+
+Therefore, $p + q = 1 + 1 = 2$.
+
+Let's verify: If $x = 2$, then $\sqrt{x\sqrt{x\sqrt{x\sqrt{x}}}} = \sqrt{2\sqrt{2\sqrt{2\sqrt{2}}}}$.
+
+Working from inside: $\sqrt{2} \approx 1.414$, $\sqrt{2\sqrt{2}} \approx 1.682$, $\sqrt{2\sqrt{2\sqrt{2}}} \approx 1.834$, $\sqrt{2\sqrt{2\sqrt{2\sqrt{2}}}} \approx 1.915$.
+
+Actually, let me reconsider this more carefully. The expression has exactly 4 nested radicals, not infinite.
+
+Let $u = \sqrt{x}$, so $x = u^2$.
+Then: $\sqrt{x\sqrt{x\sqrt{x\sqrt{x}}}} = \sqrt{u^2\sqrt{u^2\sqrt{u^2\sqrt{u^2}}}} = \sqrt{u^2\sqrt{u^2\sqrt{u^2 \cdot u}}} = \sqrt{u^2\sqrt{u^2\sqrt{u^3}}}$
+
+Let me try a different approach. Since $x = 2^{p/q}$, let's substitute and solve:
+$\sqrt{x\sqrt{x\sqrt{x\sqrt{x}}}} = 2$
+
+Let $x = 2^t$ where $t = p/q$. Then:
+$\sqrt{2^t\sqrt{2^t\sqrt{2^t\sqrt{2^t}}}} = 2$
+
+Working from inside:
+- $\sqrt{2^t} = 2^{t/2}$
+- $\sqrt{2^t \cdot 2^{t/2}} = \sqrt{2^{t + t/2}} = \sqrt{2^{3t/2}} = 2^{3t/4}$
+- $\sqrt{2^t \cdot 2^{3t/4}} = \sqrt{2^{t + 3t/4}} = \sqrt{2^{7t/4}} = 2^{7t/8}$
+- $\sqrt{2^t \cdot 2^{7t/8}} = \sqrt{2^{t + 7t/8}} = \sqrt{2^{15t/8}} = 2^{15t/16}$
+
+So we need: $2^{15t/16} = 2^1$
+
+Therefore: $\frac{15t}{16} = 1$, which gives $t = \frac{16}{15}$.
+
+Since $t = \frac{p}{q} = \frac{16}{15}$, we have $p = 16$ and $q = 15$.
+
+Therefore, $p + q = 16 + 15 = 31$.
+
+\subsection*{Answer}
+$31$ (option \textbf{N} - not among the given options, but this is the correct mathematical result).
+
+\end{document}
+

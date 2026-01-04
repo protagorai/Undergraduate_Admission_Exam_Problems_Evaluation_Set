@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Data je funkcija $f(x)=2x-x^2$. Odrediti $f\bigl(f(f(1-x))\bigr)$.
+
+\subsection*{Solution}
+Najpre izračunamo redom:
+\[
+f(1-x)=2(1-x)-(1-x)^2
+=2-2x-(1-2x+x^2)=1-x^2.
+\]
+Zatim
+\[
+f(f(1-x))=f(1-x^2)=2(1-x^2)-(1-x^2)^2
+=2-2x^2-(1-2x^2+x^4)=1-x^4.
+\]
+Najzad,
+\[
+f(f(f(1-x)))=f(1-x^4)=2(1-x^4)-(1-x^4)^2
+=2-2x^4-(1-2x^4+x^8)=1-x^8.
+\]
+
+\subsection*{Answer}
+$1-x^8$ (option \textbf{E}).
+
+\end{document}
+

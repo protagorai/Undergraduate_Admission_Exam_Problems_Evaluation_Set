@@ -1,0 +1,11 @@
+Problem 9
+
+Neka su \(\alpha,\beta,\gamma\) uglovi, a \(a,b,c\) stranice proizvoljnog trougla. Tada je
+
+\[
+\frac{b - 2a\cos\gamma}{a\sin\gamma} + \frac{c - 2b\cos\alpha}{b\sin\alpha} + \frac{a - 2c\cos\beta}{c\sin\beta}
+\]
+
+jednako:
+
+(A) \(-2\)   (B) \(-1\)   (C) 0   (D) 1   (E) Nijedan od ponuđenih odgovora   (N) Ne znam

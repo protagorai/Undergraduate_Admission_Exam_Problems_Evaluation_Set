@@ -1,0 +1,7 @@
+Problem 15
+
+Zbir svih realnih rešenja jednačine
+\sqrt{\sin^{2} x + \frac{1}{2}} + \sqrt{\cos^{2} x + \frac{1}{2}} = 2
+na segmentu [0, 2\pi] iznosi:
+
+(A) \pi    (B) 2\pi    (C) 3\pi    (D) 4\pi    (E) Nijedan od ponuđenih odgovora    (N) Ne znam

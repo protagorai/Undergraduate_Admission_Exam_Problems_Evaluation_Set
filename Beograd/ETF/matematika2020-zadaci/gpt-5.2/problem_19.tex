@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 19}
+
+Date su ta\v cke
+\[
+A(2,2),\quad A'(-2,-2),\quad B(4,-4),\quad B'(-4,4).
+\]
+Du\v zi \(AA'\) i \(BB'\) su ose elipse \(\mathcal{E}\). Neka je \(Y(0,y_0)\), \(y_0>0\), prese\v cna ta\v cka \(y\)-ose i elipse. Odrediti \(y_0\).
+
+\subsection*{1) Centar i poluose}
+Centar elipse je presek osa, tj. sredina du\v zi \(AA'\) i \(BB'\):
+\[
+O(0,0).
+\]
+Pravci osa su \(y=x\) (kroz \(A,A'\)) i \(y=-x\) (kroz \(B,B'\)), koji su normalni.
+
+Poluosovina du\v zine je rastojanje od centra do temena na osi.
+\[
+|OA|=\sqrt{2^2+2^2}=2\sqrt2,\qquad |OB|=\sqrt{4^2+(-4)^2}=4\sqrt2.
+\]
+Dakle, poluose su \(b=2\sqrt2\) i \(a=4\sqrt2\) (ve\'ca je \(a\)).
+
+\subsection*{2) Rotirane koordinate}
+Uvedimo ortonormiranu bazu du\v z osa:
+\[
+u=\frac{x-y}{\sqrt2}\quad (\text{du\v z }y=-x),\qquad
+v=\frac{x+y}{\sqrt2}\quad (\text{du\v z }y=x).
+\]
+U tim koordinatama elipsa ima jedna\v cinu
+\[
+\frac{u^2}{a^2}+\frac{v^2}{b^2}=1
+\quad\Rightarrow\quad
+\frac{u^2}{(4\sqrt2)^2}+\frac{v^2}{(2\sqrt2)^2}=1
+\quad\Rightarrow\quad
+\frac{u^2}{32}+\frac{v^2}{8}=1.
+\]
+
+\subsection*{3) Presek sa \(y\)-osom}
+Za ta\v cku \(Y(0,y_0)\) imamo
+\[
+u=\frac{0-y_0}{\sqrt2}=-\frac{y_0}{\sqrt2},\qquad
+v=\frac{0+y_0}{\sqrt2}=\frac{y_0}{\sqrt2}.
+\]
+Dakle \(u^2=v^2=\dfrac{y_0^2}{2}\). Uvrstimo:
+\[
+\frac{y_0^2/2}{32}+\frac{y_0^2/2}{8}=1
+\quad\Rightarrow\quad
+\frac{y_0^2}{64}+\frac{y_0^2}{16}=1
+\quad\Rightarrow\quad
+y_0^2\left(\frac{1}{64}+\frac{4}{64}\right)=1
+\quad\Rightarrow\quad
+y_0^2\cdot\frac{5}{64}=1.
+\]
+Otuda
+\[
+y_0^2=\frac{64}{5}\quad\Rightarrow\quad y_0=\frac{8}{\sqrt5}\ \ (y_0>0).
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{\frac{8}{\sqrt5}}\qquad\text{(A)}
+\]
+
+\end{document}
+

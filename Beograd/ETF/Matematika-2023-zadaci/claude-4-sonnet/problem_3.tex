@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Trapez je opisan oko kruga poluprečnika $r$. Ako je poznato da je površina trapeza (u $\text{cm}^2$) pet puta veća od obima tog trapeza (u cm), tada dužina poluprečnika $r$ (u cm) iznosi:
+
+\subsection*{Solution}
+Za trapez opisan oko kruga (tangentni trapez) važi da je zbir suprotnih stranica jednak.
+
+Označimo stranice trapeza kao $a$, $b$, $c$, $d$, gde su $a$ i $c$ paralelne stranice (osnove), a $b$ i $d$ kraci.
+
+Za tangentni četvorougao važi: $a + c = b + d$.
+
+Obim trapeza je: $O = a + b + c + d = 2(a + c)$.
+
+Površina trapeza opisanog oko kruga poluprečnika $r$ je:
+\[
+P = r \cdot s
+\]
+gde je $s$ poluobim, tj. $s = \frac{O}{2} = a + c$.
+
+Dakle: $P = r(a + c)$.
+
+Prema uslovu zadatka:
+\[
+P = 5O
+\]
+\[
+r(a + c) = 5 \cdot 2(a + c)
+\]
+\[
+r(a + c) = 10(a + c)
+\]
+
+Pošto je $a + c > 0$ (stranice trapeza), možemo podeliti sa $(a + c)$:
+\[
+r = 10
+\]
+
+\subsection*{Answer}
+$10$ (opcija \textbf{C}).
+
+\end{document}

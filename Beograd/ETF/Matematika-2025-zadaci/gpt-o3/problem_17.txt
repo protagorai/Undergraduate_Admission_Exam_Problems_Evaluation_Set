@@ -1,0 +1,2 @@
+17. Ako polinom P_n(x) (n ≥ 3) pri deljenju sa x daje ostatak 3, a pri deljenju sa x^2 + 1 daje ostatak −x + 2, onda polinom (P_n(x))^2 + P_n(x) + 1 pri deljenju sa x^3 + x daje ostatak:
+(A) 7x^2 − 5x + 13   (B) −3x^2 − 5x + 3   (C) 3x^2 + 4x + 5   (D) 7x^2 + 5x + 13   (E) 3x^2 − 5x + 3   (N) Ne znam

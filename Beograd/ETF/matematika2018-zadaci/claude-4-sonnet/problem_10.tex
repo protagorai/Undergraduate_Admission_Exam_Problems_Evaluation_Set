@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+The value of the real parameter $\alpha$ for which the system of equations $2x - 5y = 0$, $3x - \alpha y = 0$ has more than one solution is:
+
+\subsection*{Solution}
+For a homogeneous system of linear equations to have more than one solution (infinitely many solutions), the coefficient matrix must be singular (determinant equals zero) and the equations must be dependent.
+
+The system is:
+\begin{align}
+2x - 5y &= 0\\
+3x - \alpha y &= 0
+\end{align}
+
+The coefficient matrix is:
+\[
+A = \begin{pmatrix}
+2 & -5\\
+3 & -\alpha
+\end{pmatrix}
+\]
+
+For the system to have infinitely many solutions, we need:
+\[
+\det(A) = 2(-\alpha) - (-5)(3) = -2\alpha + 15 = 0
+\]
+
+Solving for $\alpha$:
+\[
+-2\alpha + 15 = 0 \Rightarrow \alpha = \frac{15}{2}
+\]
+
+Let's verify: when $\alpha = \frac{15}{2}$, the system becomes:
+\begin{align}
+2x - 5y &= 0\\
+3x - \frac{15}{2}y &= 0
+\end{align}
+
+From the first equation: $x = \frac{5y}{2}$
+
+Substituting into the second equation:
+\[
+3 \cdot \frac{5y}{2} - \frac{15}{2}y = \frac{15y}{2} - \frac{15y}{2} = 0
+\]
+
+This confirms that the equations are dependent when $\alpha = \frac{15}{2}$.
+
+\subsection*{Answer}
+$\frac{15}{2}$ (option \textbf{E}).
+
+\end{document}

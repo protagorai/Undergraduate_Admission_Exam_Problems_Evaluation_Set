@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Oko pravog valjka čiji je poluprečnik osnove jednak $r$, a visina jednaka $3r$, opisana je prava kupa tako da se centri donjih osnova valjka i kupe poklapaju, a gornja osnova valjka dodiruje omotač kupe. Minimalna zapremina takve kupe iznosi:
+
+\subsection*{Solution}
+Neka je poluprečnik osnove kupe $R$ i visina kupe $H$.
+
+Valjak ima poluprečnik $r$ i visinu $3r$.
+
+Uslov je da gornja osnova valjka (krug poluprečnika $r$ na visini $3r$) dodiruje omotač kupe.
+
+Kupa ima vrh na visini $H$ iznad osnove. Izvodnica kupe ide od vrha do ivice osnove.
+
+Jednačina izvodnice kupe (u preseku kroz osu):
+\[
+\frac{x}{R} + \frac{y}{H} = 1 \quad \text{ili} \quad x = R\left(1 - \frac{y}{H}\right)
+\]
+
+gde je $x$ rastojanje od ose, a $y$ visina.
+
+Na visini $y = 3r$, gornja osnova valjka (poluprečnika $r$) dodiruje omotač:
+\[
+r = R\left(1 - \frac{3r}{H}\right)
+\]
+\[
+r = R - \frac{3rR}{H}
+\]
+\[
+r = R\left(1 - \frac{3r}{H}\right)
+\]
+
+Rešavamo za $R$:
+\[
+R = \frac{r}{1 - \frac{3r}{H}} = \frac{rH}{H - 3r}
+\]
+
+Zapremina kupe:
+\[
+V = \frac{1}{3}\pi R^2 H = \frac{\pi H}{3} \cdot \frac{r^2 H^2}{(H - 3r)^2} = \frac{\pi r^2 H^3}{3(H - 3r)^2}
+\]
+
+Da bismo našli minimum, uvodimo smenu $t = \frac{H}{r}$, gde je $t > 3$ (jer $H > 3r$):
+\[
+V = \frac{\pi r^2 (tr)^3}{3(tr - 3r)^2} = \frac{\pi r^5 t^3}{3r^2(t - 3)^2} = \frac{\pi r^3 t^3}{3(t - 3)^2}
+\]
+
+Minimiziramo $f(t) = \frac{t^3}{(t-3)^2}$ za $t > 3$.
+
+\[
+f'(t) = \frac{3t^2(t-3)^2 - t^3 \cdot 2(t-3)}{(t-3)^4} = \frac{t^2(t-3)[3(t-3) - 2t]}{(t-3)^4} = \frac{t^2(3t - 9 - 2t)}{(t-3)^3} = \frac{t^2(t - 9)}{(t-3)^3}
+\]
+
+$f'(t) = 0$ kada $t = 9$ (za $t > 3$).
+
+Za $3 < t < 9$: $f'(t) < 0$ (funkcija opada)
+Za $t > 9$: $f'(t) > 0$ (funkcija raste)
+
+Dakle, minimum je u $t = 9$, tj. $H = 9r$.
+
+\[
+R = \frac{r \cdot 9r}{9r - 3r} = \frac{9r^2}{6r} = \frac{3r}{2}
+\]
+
+Minimalna zapremina:
+\[
+V_{min} = \frac{1}{3}\pi R^2 H = \frac{1}{3}\pi \left(\frac{3r}{2}\right)^2 \cdot 9r = \frac{\pi}{3} \cdot \frac{9r^2}{4} \cdot 9r = \frac{81\pi r^3}{12} = \frac{27\pi r^3}{4}
+\]
+
+\subsection*{Answer}
+$\frac{27\pi r^3}{4}$ (opcija \textbf{C}).
+
+\end{document}

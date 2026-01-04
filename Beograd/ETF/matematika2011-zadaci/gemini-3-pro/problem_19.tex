@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 19}
+Sva realna rešenja jednačine $\log_{2011}(2010x) = \log_{2010}(2011x)$ pripadaju intervalu:
+\[
+(A)\; (0, \frac{1}{2011}] \quad (B)\; (\frac{1}{2011}, \frac{1}{2010}] \quad (C)\; (\frac{1}{2010}, 1] \quad (D)\; (1, \frac{2011}{2010}] \quad (E)\; (\frac{2011}{2010}, +\infty)
+\]
+
+\subsection*{Solution}
+Neka je vrednost logaritama $t$.
+\[
+\log_{2011}(2010x) = t \Rightarrow 2010x = 2011^t \Rightarrow x = \frac{2011^t}{2010}
+\]
+\[
+\log_{2010}(2011x) = t \Rightarrow 2011x = 2010^t \Rightarrow x = \frac{2010^t}{2011}
+\]
+Izjednačavanjem izraza za $x$:
+\[
+\frac{2011^t}{2010} = \frac{2010^t}{2011}
+\]
+\[
+\frac{2011^t}{2010^t} = \frac{2010}{2011} \Rightarrow \left(\frac{2011}{2010}\right)^t = \left(\frac{2011}{2010}\right)^{-1}
+\]
+Sledi da je $t = -1$.
+Vrednost $x$ je:
+\[
+x = \frac{2011^{-1}}{2010} = \frac{1}{2011 \cdot 2010}
+\]
+Procenimo vrednost $x$:
+$x = \frac{1}{4042110}$, što je svakako manje od $\frac{1}{2011}$.
+Takođe $x > 0$.
+Dakle, $x \in (0, \frac{1}{2011}]$.
+
+\subsection*{Answer}
+$(0, \frac{1}{2011}]$ (option \textbf{A}).
+
+\end{document}

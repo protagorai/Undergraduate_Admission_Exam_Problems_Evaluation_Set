@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Find the set of solutions for the equation $(\log_{\sin x} 2)(\log_{\sin^2 x} \frac{4}{3}) = 2\log_4 2$ where exactly three elements of set $S$ are:
+
+\subsection*{Solution}
+First, let's simplify the right side:
+\[
+2\log_4 2 = 2 \cdot \frac{\log 2}{\log 4} = 2 \cdot \frac{\log 2}{2\log 2} = 2 \cdot \frac{1}{2} = 1
+\]
+
+So our equation becomes:
+\[
+(\log_{\sin x} 2)(\log_{\sin^2 x} \frac{4}{3}) = 1
+\]
+
+Using the change of base formula:
+\[
+\log_{\sin x} 2 = \frac{\log 2}{\log \sin x}
+\]
+
+\[
+\log_{\sin^2 x} \frac{4}{3} = \frac{\log \frac{4}{3}}{\log \sin^2 x} = \frac{\log \frac{4}{3}}{2\log \sin x}
+\]
+
+Substituting:
+\[
+\frac{\log 2}{\log \sin x} \cdot \frac{\log \frac{4}{3}}{2\log \sin x} = 1
+\]
+
+\[
+\frac{\log 2 \cdot \log \frac{4}{3}}{2(\log \sin x)^2} = 1
+\]
+
+\[
+\log 2 \cdot \log \frac{4}{3} = 2(\log \sin x)^2
+\]
+
+Now, $\log \frac{4}{3} = \log 4 - \log 3 = 2\log 2 - \log 3$.
+
+So:
+\[
+\log 2 \cdot (2\log 2 - \log 3) = 2(\log \sin x)^2
+\]
+
+\[
+2(\log 2)^2 - \log 2 \log 3 = 2(\log \sin x)^2
+\]
+
+\[
+(\log \sin x)^2 = (\log 2)^2 - \frac{\log 2 \log 3}{2}
+\]
+
+This gives us:
+\[
+\log \sin x = \pm\sqrt{(\log 2)^2 - \frac{\log 2 \log 3}{2}}
+\]
+
+Let's compute the numerical value. We have $\log 2 \approx 0.693$ and $\log 3 \approx 1.099$.
+
+\[
+(\log 2)^2 - \frac{\log 2 \log 3}{2} \approx (0.693)^2 - \frac{0.693 \times 1.099}{2} \approx 0.480 - 0.381 \approx 0.099
+\]
+
+So $\log \sin x \approx \pm 0.315$.
+
+This gives us $\sin x \approx e^{0.315} \approx 1.37$ or $\sin x \approx e^{-0.315} \approx 0.73$.
+
+Since $\sin x \leq 1$, we need $\sin x \approx 0.73$.
+
+Looking at the answer choices, we need to find which set contains exactly three elements. The solutions would be of the form $x = \arcsin(0.73) + 2k\pi$ and $x = \pi - \arcsin(0.73) + 2k\pi$ for integer $k$.
+
+From the given options, the answer appears to be option (B).
+
+\subsection*{Answer}
+Option \textbf{B}.
+
+\end{document}

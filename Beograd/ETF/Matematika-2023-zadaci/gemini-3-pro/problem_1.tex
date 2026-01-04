@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Vrednost izraza 
+\[
+3 \cdot \frac{\sqrt{8+2\sqrt{7}}}{\sqrt{8-2\sqrt{7}}} - \frac{\sqrt{3+\sqrt{7}}}{\sqrt{3-\sqrt{7}}} \cdot \sqrt{2}
+\]
+iznosi:
+
+(A) 2 \quad (B) $\sqrt{6}$ \quad (C) $3\sqrt{2}$ \quad (D) $\sqrt{2}$ \quad (E) 1
+
+\subsection*{Solution}
+Prvo pojednostavimo izraze pod korenom. Primetimo da:
+\[
+8 + 2\sqrt{7} = 7 + 2\sqrt{7} + 1 = (\sqrt{7} + 1)^2
+\]
+\[
+8 - 2\sqrt{7} = 7 - 2\sqrt{7} + 1 = (\sqrt{7} - 1)^2
+\]
+Dakle:
+\[
+\frac{\sqrt{8+2\sqrt{7}}}{\sqrt{8-2\sqrt{7}}} = \frac{\sqrt{7}+1}{\sqrt{7}-1}
+\]
+Racionalizujemo:
+\[
+\frac{\sqrt{7}+1}{\sqrt{7}-1} = \frac{(\sqrt{7}+1)^2}{(\sqrt{7}-1)(\sqrt{7}+1)} = \frac{7 + 2\sqrt{7} + 1}{7-1} = \frac{8 + 2\sqrt{7}}{6} = \frac{4 + \sqrt{7}}{3}
+\]
+
+Sada za drugi razlomak:
+\[
+\frac{\sqrt{3+\sqrt{7}}}{\sqrt{3-\sqrt{7}}} = \sqrt{\frac{3+\sqrt{7}}{3-\sqrt{7}}}
+\]
+Racionalizujemo unutar korena:
+\[
+\frac{3+\sqrt{7}}{3-\sqrt{7}} = \frac{(3+\sqrt{7})^2}{(3-\sqrt{7})(3+\sqrt{7})} = \frac{9 + 6\sqrt{7} + 7}{9-7} = \frac{16 + 6\sqrt{7}}{2} = 8 + 3\sqrt{7}
+\]
+Dakle:
+\[
+\frac{\sqrt{3+\sqrt{7}}}{\sqrt{3-\sqrt{7}}} = \sqrt{8 + 3\sqrt{7}}
+\]
+Primetimo da $8 + 3\sqrt{7} = \frac{16 + 6\sqrt{7}}{2} = \frac{(3+\sqrt{7})^2}{2}$. Ovo nije tačno jer smo upravo to dobili kvadriranjem, ali tražimo koren iz toga.
+Zapravo, već smo izračunali $\frac{3+\sqrt{7}}{3-\sqrt{7}} = 8+3\sqrt{7}$.
+Treba nam $\sqrt{8+3\sqrt{7}}$.
+$\sqrt{8+3\sqrt{7}} = \sqrt{\frac{16+6\sqrt{7}}{2}} = \frac{\sqrt{(3+\sqrt{7})^2}}{\sqrt{2}} = \frac{3+\sqrt{7}}{\sqrt{2}}$.
+Ili koristimo formulu za $\sqrt{A \pm \sqrt{B}}$.
+$\sqrt{8+\sqrt{63}}$. $a=8, b=63$. $\sqrt{\frac{8+\sqrt{64-63}}{2}} + \sqrt{\frac{8-\sqrt{64-63}}{2}} = \sqrt{\frac{9}{2}} + \sqrt{\frac{7}{2}} = \frac{3}{\sqrt{2}} + \frac{\sqrt{7}}{\sqrt{2}} = \frac{3+\sqrt{7}}{\sqrt{2}}$.
+
+Sada ceo izraz:
+\[
+3 \cdot \frac{4 + \sqrt{7}}{3} - \frac{3+\sqrt{7}}{\sqrt{2}} \cdot \sqrt{2} = (4 + \sqrt{7}) - (3+\sqrt{7}) = 4 - 3 = 1
+\]
+
+\subsection*{Answer}
+$1$ (opcija \textbf{(E)}).
+
+\end{document}

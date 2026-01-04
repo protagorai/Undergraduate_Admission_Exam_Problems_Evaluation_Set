@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+If the complex number $z$ satisfies $2z + 3\bar{z} = 10 + 3i$, where $z$ is a complex number conjugate to $z$, then the modulus of the complex number conjugate to $z$ is:
+
+\subsection*{Solution}
+Let $z = a + bi$ where $a, b \in \mathbb{R}$. Then $\bar{z} = a - bi$.
+
+Substituting into the equation:
+\begin{align}
+2z + 3\bar{z} &= 10 + 3i\\
+2(a + bi) + 3(a - bi) &= 10 + 3i\\
+2a + 2bi + 3a - 3bi &= 10 + 3i\\
+5a - bi &= 10 + 3i
+\end{align}
+
+Comparing real and imaginary parts:
+\begin{align}
+5a &= 10 \Rightarrow a = 2\\
+-b &= 3 \Rightarrow b = -3
+\end{align}
+
+Therefore $z = 2 - 3i$ and $\bar{z} = 2 + 3i$.
+
+The modulus of $\bar{z}$ is:
+\[
+|\bar{z}| = |2 + 3i| = \sqrt{2^2 + 3^2} = \sqrt{4 + 9} = \sqrt{13}
+\]
+
+\subsection*{Answer}
+$\sqrt{13}$ (option \textbf{C}).
+
+\end{document}

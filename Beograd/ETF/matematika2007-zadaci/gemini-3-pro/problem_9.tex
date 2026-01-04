@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Neka su $\alpha, \beta$ i $\gamma$ uglovi a $a, b$ i $c$ stranice proizvoljnog trougla. Tada je $\frac{b-2a\cos \gamma}{a \sin \gamma} + \frac{c-2b\cos \alpha}{b \sin \alpha} + \frac{a-2c\cos \beta}{c \sin \beta}$ jednako :
+\[
+(A)\ -2 \quad (B)\ -1 \quad (C)\ 0 \quad (D)\ 1 \quad (E)\ \text{Nijedan od ponuđenih odgovora} \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Koristimo kosinusnu teoremu da izrazimo $\cos \gamma, \cos \alpha, \cos \beta$:
+\[
+a^2 = b^2 + c^2 - 2bc \cos \alpha \Rightarrow 2b \cos \alpha = \frac{b^2 + c^2 - a^2}{c}
+\]
+\[
+b^2 = a^2 + c^2 - 2ac \cos \beta \Rightarrow 2c \cos \beta = \frac{a^2 + c^2 - b^2}{a}
+\]
+\[
+c^2 = a^2 + b^2 - 2ab \cos \gamma \Rightarrow 2a \cos \gamma = \frac{a^2 + b^2 - c^2}{b}
+\]
+Takođe, površina trougla $S$ je data sa $2S = ab \sin \gamma = bc \sin \alpha = ac \sin \beta$.
+Analizirajmo prvi sabirak:
+\[
+\frac{b - 2a \cos \gamma}{a \sin \gamma} = \frac{b - \frac{a^2+b^2-c^2}{b}}{a \sin \gamma} = \frac{\frac{b^2 - (a^2+b^2-c^2)}{b}}{a \sin \gamma} = \frac{c^2 - a^2}{ab \sin \gamma} = \frac{c^2 - a^2}{2S}
+\]
+Slično za drugi sabirak:
+\[
+\frac{c - 2b \cos \alpha}{b \sin \alpha} = \frac{c - \frac{b^2+c^2-a^2}{c}}{b \sin \alpha} = \frac{\frac{c^2 - b^2 - c^2 + a^2}{c}}{b \sin \alpha} = \frac{a^2 - b^2}{bc \sin \alpha} = \frac{a^2 - b^2}{2S}
+\]
+I treći sabirak:
+\[
+\frac{a - 2c \cos \beta}{c \sin \beta} = \frac{a - \frac{a^2+c^2-b^2}{a}}{c \sin \beta} = \frac{\frac{a^2 - a^2 - c^2 + b^2}{a}}{c \sin \beta} = \frac{b^2 - c^2}{ac \sin \beta} = \frac{b^2 - c^2}{2S}
+\]
+Sabiranjem dobijamo:
+\[
+\frac{c^2 - a^2 + a^2 - b^2 + b^2 - c^2}{2S} = \frac{0}{2S} = 0
+\]
+
+\subsection*{Answer}
+0 (option \textbf{C}).
+
+\end{document}

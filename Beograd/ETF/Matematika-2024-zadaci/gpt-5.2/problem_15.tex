@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Broj re\u{s}enja jedna\u{c}ine
+\[
+\frac{\cos 3x+\cos 4x+\cos 5x}{\sin x-\sqrt3\cos x}=0
+\]
+na segmentu $[0,\pi]$ iznosi:
+
+\subsection*{Solution}
+Razlomak je jednak nuli ako i samo ako je brojilac nula, a imenilac razli\u{c}it od nule.
+
+\medskip
+\noindent\textbf{1) Brojilac.}
+Koristimo identitet $\cos 3x+\cos 5x=2\cos 4x\cos x$, pa
+\[
+\cos 3x+\cos 4x+\cos 5x
+=2\cos 4x\cos x+\cos 4x
+=\cos 4x(2\cos x+1).
+\]
+Zato su re\u{s}enja brojica:
+\[
+\cos 4x=0 \quad\text{ili}\quad \cos x=-\frac12.
+\]
+\[
+\cos 4x=0 \;\Longleftrightarrow\; 4x=\frac{\pi}{2}+k\pi
+\;\Longleftrightarrow\; x=\frac{\pi}{8}+\frac{k\pi}{4}.
+\]
+Na intervalu $[0,\pi]$ dobijamo $k=0,1,2,3$, tj. \v{c}etiri re\u{s}enja:
+\[
+x\in\left\{\frac{\pi}{8},\frac{3\pi}{8},\frac{5\pi}{8},\frac{7\pi}{8}\right\}.
+\]
+Tako\u{d}e, $\cos x=-\frac12$ daje $x=\frac{2\pi}{3}$ na $[0,\pi]$.
+
+\medskip
+\noindent\textbf{2) Imenilac.}
+\[
+\sin x-\sqrt3\cos x=0 \;\Longleftrightarrow\; \tan x=\sqrt3
+\;\Longleftrightarrow\; x=\frac{\pi}{3}\quad (\text{na }[0,\pi]).
+\]
+Nijedno od na\u{d}enih re\u{s}enja nejednakosti ne poklapa se sa $x=\pi/3$, pa su sva va\u{z}e\u{c}a.
+
+Ukupno ima $4+1=5$ re\u{s}enja.
+
+\subsection*{Answer}
+$5$ (option \textbf{C}).
+
+\end{document}
+
+
+
+

@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 20}
+Let set $A = \{a_1, a_2, ..., a_{11}\}$. How many ordered pairs $(X, Y)$ are there such that $X \subset A, Y \subset A$, $|X|=8, |Y|=7$ and $|X \cap Y| = 5$?
+
+\subsection*{Solution}
+Let $n = |A| = 11$. We want to choose subsets $X$ and $Y$.
+Let $k = |X \cap Y| = 5$.
+The size of $X$ is 8, so $|X \setminus Y| = 8 - 5 = 3$.
+The size of $Y$ is 7, so $|Y \setminus X| = 7 - 5 = 2$.
+The elements of $A$ are distributed into four disjoint sets:
+1. $X \cap Y$ (size 5)
+2. $X \setminus Y$ (size 3)
+3. $Y \setminus X$ (size 2)
+4. $A \setminus (X \cup Y)$ (remaining elements)
+
+Number of remaining elements: $11 - 5 - 3 - 2 = 1$.
+
+We calculate the number of ways to choose these elements:
+1. Choose 5 elements for intersection: $\binom{11}{5}$.
+2. Choose 3 elements for $X \setminus Y$ from the remaining 6: $\binom{6}{3}$.
+3. Choose 2 elements for $Y \setminus X$ from the remaining 3: $\binom{3}{2}$.
+4. The last element is determined (goes to neither).
+
+Total ways = $\binom{11}{5} \cdot \binom{6}{3} \cdot \binom{3}{2}$.
+$\binom{11}{5} = \frac{11 \cdot 10 \cdot 9 \cdot 8 \cdot 7}{120} = 462$.
+$\binom{6}{3} = \frac{6 \cdot 5 \cdot 4}{6} = 20$.
+$\binom{3}{2} = 3$.
+Total = $462 \cdot 20 \cdot 3 = 462 \cdot 60 = 27720$.
+
+\subsection*{Answer}
+27720 (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Dvocifreni broj koji je jednak proizvodu zbira svojih cifara i apsolutne vrednosti razlike
+pripada intervalu:
+\[
+\text{(A) }[10,30]\quad
+\text{(B) }[31,50]\quad
+\text{(C) }[51,70]\quad
+\text{(D) }[71,80]\quad
+\text{(E) }[81,99].
+\]
+
+\subsection*{Solution}
+Neka je dvocifreni broj $10a+b$, gde su $a\in\{1,\dots,9\}$ i $b\in\{0,\dots,9\}$.
+Uslov zadatka je
+\[
+10a+b=(a+b)\,|a-b|.
+\]
+Razmatramo slucajeve.
+
+\medskip
+\textbf{1) $a\ge b$.} Tada je $|a-b|=a-b$ i
+\[
+10a+b=(a+b)(a-b)=a^2-b^2.
+\]
+Prebacivanjem dobijamo
+\[
+b^2+b=a^2-10a=a(a-10).
+\]
+Leva strana je $\ge 0$, dok je desna strana negativna za $a\in\{1,\dots,9\}$, sto je nemoguce.
+Dakle, ovaj slucaj otpada.
+
+\medskip
+\textbf{2) $b>a$.} Tada je $|a-b|=b-a$ i
+\[
+10a+b=(a+b)(b-a)=b^2-a^2.
+\]
+Odavde
+\[
+b^2-b=a^2+10a=a(a+10).
+\]
+Sada ispitamo moguce vrednosti $a(a+10)$:
+\[
+\begin{array}{c|ccccccccc}
+a&1&2&3&4&5&6&7&8&9\\ \hline
+a(a+10)&11&24&39&56&75&96&119&144&171
+\end{array}
+\]
+Dok su moguce vrednosti $b^2-b=b(b-1)$ za $b\in\{0,\dots,9\}$:
+\[
+0,0,2,6,12,20,30,42,56,72.
+\]
+Jedino poklapanje je $56$, pa je $a=4$ i $b=8$.
+Dakle, broj je $48$, i on pripada intervalu $[31,50]$.
+
+\subsection*{Answer}
+$48\in[31,50]$ (option \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 7 - Solution}
+
+\textbf{Problem:} Find the sum of squares of all solutions of the equation:
+\[
+\frac{8\log_{16}x}{1 + 2\log_{16}x} = \frac{\log_{16}x}{1 - \log_{16}x} + 1
+\]
+
+\textbf{Solution:}
+
+Let $t = \log_{16}x$. The equation becomes:
+\[
+\frac{8t}{1 + 2t} = \frac{t}{1 - t} + 1
+\]
+
+Simplify the right side:
+\[
+\frac{t}{1-t} + 1 = \frac{t + (1-t)}{1-t} = \frac{1}{1-t}
+\]
+
+So we have:
+\[
+\frac{8t}{1 + 2t} = \frac{1}{1 - t}
+\]
+
+Cross multiply:
+\[
+8t(1-t) = 1 + 2t
+\]
+\[
+8t - 8t^2 = 1 + 2t
+\]
+\[
+-8t^2 + 6t - 1 = 0
+\]
+\[
+8t^2 - 6t + 1 = 0
+\]
+\[
+(4t - 1)(2t - 1) = 0
+\]
+
+Solutions: $t = \frac{1}{4}$ or $t = \frac{1}{2}$
+
+Check domain: $t \neq -\frac{1}{2}$ and $t \neq 1$ -- both solutions are valid.
+
+Convert back to $x$:
+\begin{itemize}
+\item $t = \frac{1}{4}$: $x_1 = 16^{1/4} = 2$
+\item $t = \frac{1}{2}$: $x_2 = 16^{1/2} = 4$
+\end{itemize}
+
+\textbf{Sum of squares:}
+\[
+x_1^2 + x_2^2 = 2^2 + 4^2 = 4 + 16 = 20
+\]
+
+\textbf{Answer: В) 20}
+
+\end{document}
+

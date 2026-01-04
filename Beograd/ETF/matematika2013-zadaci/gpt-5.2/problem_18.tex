@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 18}
+Na koliko načina se mogu izabrati tri broja iz skupa \(\{1,2,3,\dots,40\}\) tako da im zbir bude neparan?
+
+\subsection*{Rešenje}
+U skupu \(\{1,\dots,40\}\) ima \(20\) neparnih i \(20\) parnih brojeva.
+
+Zbir tri broja je neparan ako izaberemo:
+\begin{itemize}
+\item tačno \(1\) neparan i \(2\) parna, ili
+\item \(3\) neparna.
+\end{itemize}
+Broj načina je
+\[
+\binom{20}{1}\binom{20}{2}+\binom{20}{3}
+=20\cdot 190+1140=3800+1140=4940.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\ 4940}
+\]
+\end{document}
+

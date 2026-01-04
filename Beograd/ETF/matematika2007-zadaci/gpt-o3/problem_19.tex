@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 19}
+Neka su
+\[
+ a=\frac{\sin1^{\circ}}{\sin2^{\circ}},\qquad b=\frac{\sin2^{\circ}}{\sin3^{\circ}},\qquad c=\frac{\sin3^{\circ}}{\sin4^{\circ}}.
+\]
+Odrediti odnos izmedju $a,b,c$.
+
+\subsection*{Rešenje}
+Za male uglove ($0^{\circ}<x<10^{\circ}$) sinus je strogo konkavna i rastuća funkcija. Za takvu funkciju $f$ važi da je opadajući niz kvocijenata
+\[
+ \frac{f(x)}{f(x+\Delta)}\;\text{opada kada }x\text{ raste}.
+\]
+Ovde je $f(x)=\sin x$ i $\Delta=1^{\circ}$. Пошто је $1^{\circ}<2^{\circ}<3^{\circ}$, следи
+\[
+ \frac{\sin1^{\circ}}{\sin2^{\circ}}<\frac{\sin2^{\circ}}{\sin3^{\circ}}<\frac{\sin3^{\circ}}{\sin4^{\circ}},
+\]
+odnosно $a<b<c$.
+
+(Нумеричка провера: $a\approx0.50,\;b\approx0.67,\;c\approx0.75$.)
+
+\subsection*{Одговор}
+$\boxed{a<b<c}$ (опција \textbf{A}).
+
+\end{document}

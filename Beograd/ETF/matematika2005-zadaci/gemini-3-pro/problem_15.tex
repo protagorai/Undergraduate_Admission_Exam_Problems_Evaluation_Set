@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 15}
+Skup rešenja sistema nejednačina $x^2 - 4 \leq 0$, $1 - 2x + x^2 > 0$, $x^2 - (3+\sqrt{3})x + 2 + \sqrt{3} > 0$ je oblika:
+(A) $[a, b]$ (B) $[a, b)$ (C) $(a, b) \cup (b, +\infty)$ (D) $(a, b]$ (E) $(-\infty, a]$ (N) Ne znam
+
+\subsection*{Rešenje}
+Rešavamo svaku nejednačinu posebno:
+1. $x^2 - 4 \leq 0 \iff x^2 \leq 4 \iff x \in [-2, 2]$.
+
+2. $1 - 2x + x^2 > 0 \iff (x-1)^2 > 0$. Ovo je tačno za svako realno $x$ osim za $x=1$. Dakle $x \in \mathbb{R} \setminus \{1\}$.
+
+3. $x^2 - (3+\sqrt{3})x + 2 + \sqrt{3} > 0$.
+Rešimo kvadratnu jednačinu $x^2 - (3+\sqrt{3})x + (2 + \sqrt{3}) = 0$.
+Diskriminanta:
+\[
+D = (3+\sqrt{3})^2 - 4(2+\sqrt{3}) = 9 + 6\sqrt{3} + 3 - 8 - 4\sqrt{3} = 4 + 2\sqrt{3} = (1+\sqrt{3})^2
+\]
+Rešenja su:
+\[
+x_{1,2} = \frac{3+\sqrt{3} \pm (1+\sqrt{3})}{2}
+\]
+$x_1 = \frac{4+2\sqrt{3}}{2} = 2+\sqrt{3}$
+$x_2 = \frac{2}{2} = 1$
+Pošto je koeficijent uz $x^2$ pozitivan, nejednačina važi "spolja", tj. $x \in (-\infty, 1) \cup (2+\sqrt{3}, +\infty)$.
+
+Sada tražimo presek svih uslova:
+- $x \in [-2, 2]$
+- $x \neq 1$
+- $x < 1$ ili $x > 2+\sqrt{3}$
+
+Presek $[-2, 2]$ i $(-\infty, 1) \cup (2+\sqrt{3}, +\infty)$ je $[-2, 1)$.
+Uslov $x \neq 1$ je već zadovoljen jer je interval otvoren kod 1.
+Rešenje je $[-2, 1)$, što je oblika $[a, b)$.
+
+\subsection*{Odgovor}
+$[a, b)$ (opcija \textbf{B}).
+
+\end{document}

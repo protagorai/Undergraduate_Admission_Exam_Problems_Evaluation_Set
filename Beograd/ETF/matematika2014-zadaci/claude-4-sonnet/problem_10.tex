@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Neka je $s = 1 + q + q^2 + \cdots$ ($|q| < 1$) i $S = 1 + Q + Q^2 + \cdots$ ($|Q| < 1$), gde su $s$ i $S$ dati brojevi. Tada je zbir $1 + qQ + q^2Q^2 + q^3Q^3 + \cdots$ jednak:
+
+(A) $\frac{s \cdot S}{s+S-1}$ \quad (B) $\frac{s \cdot S}{2 \cdot s \cdot S - S + 1}$ \quad (C) $\frac{s \cdot S}{s \cdot S + S - 2}$ \quad (D) $\frac{2s \cdot S - 1}{s + S - 1}$ \quad (E) $s \cdot S$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Imamo geometrijske redove:
+\[
+s = 1 + q + q^2 + \cdots = \frac{1}{1-q} \quad (|q| < 1)
+\]
+\[
+S = 1 + Q + Q^2 + \cdots = \frac{1}{1-Q} \quad (|Q| < 1)
+\]
+
+Iz ovih formula dobijamo:
+\[
+q = 1 - \frac{1}{s}, \quad Q = 1 - \frac{1}{S}
+\]
+
+Traženi zbir je:
+\[
+T = 1 + qQ + (qQ)^2 + (qQ)^3 + \cdots = \frac{1}{1-qQ}
+\]
+
+Računamo $qQ$:
+\[
+qQ = \left(1 - \frac{1}{s}\right)\left(1 - \frac{1}{S}\right) = 1 - \frac{1}{s} - \frac{1}{S} + \frac{1}{sS}
+\]
+\[
+= 1 - \frac{S + s - 1}{sS} = \frac{sS - S - s + 1}{sS}
+\]
+
+Dakle:
+\[
+1 - qQ = 1 - \frac{sS - S - s + 1}{sS} = \frac{sS - (sS - S - s + 1)}{sS} = \frac{S + s - 1}{sS}
+\]
+
+Konačno:
+\[
+T = \frac{1}{1-qQ} = \frac{sS}{S + s - 1} = \frac{s \cdot S}{s + S - 1}
+\]
+
+\subsection*{Answer}
+$\frac{s \cdot S}{s+S-1}$ (option \textbf{A}).
+
+\end{document}

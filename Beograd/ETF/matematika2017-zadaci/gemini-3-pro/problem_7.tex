@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Granična vrednost $\lim_{x \to 5\pi} \frac{e^{- \frac{1}{(5\pi-x)^2}} + \sqrt{3\pi} \cdot \log_2 \frac{x+3\pi}{2\pi} } {(\sqrt{6x-5\pi} - 2\sqrt{\pi}) \cdot \text{tg}(\frac{x}{5} - \frac{4\pi}{3})}$ jednaka je:
+(A) $\frac{\pi}{3}$
+(B) 0
+(C) $+\infty$
+(D) $-\infty$
+(E) $-\frac{2}{3}$
+(N) Ne znam
+
+\subsection*{Solution}
+Let $h = x - 5\pi$. Then $x = 5\pi + h$, and as $x \to 5\pi$, $h \to 0$.
+Substitute $x$ in the expression:
+
+Numerator:
+1. $e^{- \frac{1}{(5\pi-x)^2}} = e^{- \frac{1}{h^2}}$. As $h \to 0$, $1/h^2 \to \infty$, so $e^{-\infty} \to 0$.
+2. $\sqrt{3\pi} \cdot \log_2 \frac{5\pi+h+3\pi}{2\pi} = \sqrt{3\pi} \cdot \log_2 \frac{8\pi+h}{2\pi} = \sqrt{3\pi} \cdot \log_2 (4 + \frac{h}{2\pi})$.
+   As $h \to 0$, this approaches $\sqrt{3\pi} \cdot \log_2 4 = \sqrt{3\pi} \cdot 2 = 2\sqrt{3\pi}$.
+Total numerator limit is $2\sqrt{3\pi}$.
+
+Denominator:
+1. $\sqrt{6x-5\pi} - 2\sqrt{\pi} = \sqrt{6(5\pi+h)-5\pi} - 2\sqrt{\pi} = \sqrt{25\pi+6h} - 2\sqrt{\pi}$.
+   As $h \to 0$, this approaches $\sqrt{25\pi} - 2\sqrt{\pi} = 5\sqrt{\pi} - 2\sqrt{\pi} = 3\sqrt{\pi}$.
+2. $\text{tg}(\frac{x}{5} - \frac{4\pi}{3}) = \text{tg}(\frac{5\pi+h}{5} - \frac{4\pi}{3}) = \text{tg}(\pi + \frac{h}{5} - \frac{4\pi}{3}) = \text{tg}(\frac{h}{5} - \frac{\pi}{3})$.
+   As $h \to 0$, this approaches $\text{tg}(-\frac{\pi}{3}) = -\sqrt{3}$.
+Total denominator limit is $3\sqrt{\pi} \cdot (-\sqrt{3}) = -3\sqrt{3\pi}$.
+
+The limit of the ratio is:
+\[
+L = \frac{2\sqrt{3\pi}}{-3\sqrt{3\pi}} = -\frac{2}{3}.
+\]
+
+\subsection*{Answer}
+$-\frac{2}{3}$ (option \textbf{E}).
+
+\end{document}

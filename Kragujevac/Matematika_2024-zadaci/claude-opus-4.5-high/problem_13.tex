@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 13 - Solution}
+
+\textbf{Problem:} If $z = \left(\frac{2-3\mathrm{i}}{1+\mathrm{i}} + \frac{2+\mathrm{i}}{1-\mathrm{i}}\right)^{2024}$, where $\mathrm{i}^2 = -1$, find $z^{2024}$.
+
+\textbf{Solution:}
+
+\textbf{Step 1: Simplify the first fraction}
+\[
+\frac{2-3\mathrm{i}}{1+\mathrm{i}} = \frac{(2-3\mathrm{i})(1-\mathrm{i})}{(1+\mathrm{i})(1-\mathrm{i})} = \frac{2 - 2\mathrm{i} - 3\mathrm{i} + 3\mathrm{i}^2}{1 - \mathrm{i}^2} = \frac{2 - 5\mathrm{i} - 3}{1 + 1} = \frac{-1 - 5\mathrm{i}}{2}
+\]
+
+\textbf{Step 2: Simplify the second fraction}
+\[
+\frac{2+\mathrm{i}}{1-\mathrm{i}} = \frac{(2+\mathrm{i})(1+\mathrm{i})}{(1-\mathrm{i})(1+\mathrm{i})} = \frac{2 + 2\mathrm{i} + \mathrm{i} + \mathrm{i}^2}{1 + 1} = \frac{2 + 3\mathrm{i} - 1}{2} = \frac{1 + 3\mathrm{i}}{2}
+\]
+
+\textbf{Step 3: Add the fractions}
+\[
+\frac{-1 - 5\mathrm{i}}{2} + \frac{1 + 3\mathrm{i}}{2} = \frac{-1 - 5\mathrm{i} + 1 + 3\mathrm{i}}{2} = \frac{-2\mathrm{i}}{2} = -\mathrm{i}
+\]
+
+\textbf{Step 4: Calculate $z = (-\mathrm{i})^{2024}$}
+
+The powers of $(-\mathrm{i})$ cycle with period 4:
+\begin{itemize}
+\item $(-\mathrm{i})^1 = -\mathrm{i}$
+\item $(-\mathrm{i})^2 = \mathrm{i}^2 = -1$
+\item $(-\mathrm{i})^3 = (-\mathrm{i})^2 \cdot (-\mathrm{i}) = -1 \cdot (-\mathrm{i}) = \mathrm{i}$
+\item $(-\mathrm{i})^4 = ((-\mathrm{i})^2)^2 = (-1)^2 = 1$
+\end{itemize}
+
+Since $2024 = 4 \times 506$:
+\[
+z = (-\mathrm{i})^{2024} = \left((-\mathrm{i})^4\right)^{506} = 1^{506} = 1
+\]
+
+Note: The question asks for $z^{2024}$ where $z = (\ldots)^{2024}$. Since $z = 1$, we have $z^{2024} = 1^{2024} = 1$.
+
+\textbf{Answer: В) 1}
+
+\end{document}
+

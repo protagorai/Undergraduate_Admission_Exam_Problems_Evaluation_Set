@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Jednačina $\log_2(1 - x) = \log_2(x - 3)$:
+\begin{enumerate}
+\item[(A)] Nema rešenja
+\item[(B)] Ima beskonačno mnogo rešenja
+\item[(C)] $x = 3$ je jedinstveno rešenje
+\item[(D)] $x = 1$ je jedinstveno rešenje
+\item[(E)] Zadovoljena je za $x = 2$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Da bi logaritmi bili definisani, moraju biti ispunjeni uslovi:
+\begin{itemize}
+\item $1 - x > 0 \Rightarrow x < 1$
+\item $x - 3 > 0 \Rightarrow x > 3$
+\end{itemize}
+
+Ovi uslovi su međusobno kontradiktni jer ne postoji $x$ takvo da je istovremeno $x < 1$ i $x > 3$.
+
+Dakle, ne postoji vrednost $x$ za koju su oba logaritma definisana.
+
+Alternativno, ako pretpostavimo da su logaritmi definisani, iz jednačine:
+\[
+\log_2(1 - x) = \log_2(x - 3)
+\]
+
+sledi:
+\[
+1 - x = x - 3
+\]
+\[
+1 + 3 = x + x
+\]
+\[
+4 = 2x
+\]
+\[
+x = 2
+\]
+
+Međutim, proveravamo da li je $x = 2$ u domenu:
+\begin{itemize}
+\item Za $x = 2$: $1 - x = 1 - 2 = -1 < 0$ (logaritam nije definisan)
+\item Za $x = 2$: $x - 3 = 2 - 3 = -1 < 0$ (logaritam nije definisan)
+\end{itemize}
+
+Dakle, $x = 2$ ne pripada domenu funkcije.
+
+\subsection*{Answer}
+Jednačina \textbf{(A) nema rešenja} jer ne postoji vrednost $x$ za koju su oba logaritma definisana.
+
+\end{document}

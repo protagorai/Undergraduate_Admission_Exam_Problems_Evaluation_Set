@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Izvodnice prave kružne kupe nagnute su prema ravni osnove kupe pod uglom $\alpha$, a u kupu je upisana lopta. Vrednost $\text{tg}\frac{\alpha}{2}$ tako da odnos $V_l/V_k$ (zapremine lopte i zapremine kupe) ima najveću moguću vrednost, jednaka je:
+
+\subsection*{Solution}
+Cone base radius $R$, height $H$. $\tan \alpha = H/R$.
+Volume $V_k = \frac{1}{3}\pi R^3 \tan \alpha$.
+Sphere radius $r = R \tan(\alpha/2)$.
+Volume $V_l = \frac{4}{3}\pi R^3 \tan^3(\alpha/2)$.
+Ratio $y = \frac{4 \tan^3(\alpha/2)}{\tan \alpha}$.
+Let $t = \tan(\alpha/2)$. $\tan \alpha = \frac{2t}{1-t^2}$.
+$y = \frac{4t^3 (1-t^2)}{2t} = 2t^2(1-t^2) = 2t^2 - 2t^4$.
+Maximize $y(t)$. $y' = 4t - 8t^3 = 4t(1-2t^2)$.
+$2t^2 = 1 \implies t = 1/\sqrt{2}$.
+
+
+\subsection*{Answer}
+$\frac{1}{\sqrt{2}}$ (option \textbf{B})
+
+\end{document}

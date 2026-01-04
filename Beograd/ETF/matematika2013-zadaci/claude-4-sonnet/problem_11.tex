@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Neka su $x_1$ i $x_2$ koreni jednačine $x^2 + bx + c = 0$ ($b, c \in \mathbb{R} \setminus \{0\}$), tada je izraz $x_1^4 + x_2^4$ jednak:
+
+\subsection*{Solution}
+Iz Viète-ovih formula za jednačinu $x^2 + bx + c = 0$:
+\[
+x_1 + x_2 = -b, \quad x_1 \cdot x_2 = c
+\]
+
+Trebamo da nađemo $x_1^4 + x_2^4$.
+
+Prvo računamo $x_1^2 + x_2^2$:
+\[
+x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = (-b)^2 - 2c = b^2 - 2c
+\]
+
+Zatim računamo $x_1^4 + x_2^4$:
+\[
+x_1^4 + x_2^4 = (x_1^2 + x_2^2)^2 - 2(x_1x_2)^2 = (b^2 - 2c)^2 - 2c^2
+\]
+\[
+= b^4 - 4b^2c + 4c^2 - 2c^2 = b^4 - 4b^2c + 2c^2
+\]
+
+\subsection*{Answer}
+$b^4 - 4b^2c + 2c^2$ (option \textbf{C}).
+
+\end{document}

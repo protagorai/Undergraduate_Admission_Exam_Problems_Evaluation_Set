@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 15}
+Odrediti interval u kome se nalazi skup realnih rešenja jednačine
+\[
+4^x-7\cdot 2^{\frac{x-3}{2}}=2^{-x}.
+\]
+
+\subsection*{Rešenje}
+Neka je \(t=2^{x/2}>0\). Tada je \(4^x=2^{2x}=t^4\), a \(2^{-x}=t^{-2}\), i
+\[
+2^{\frac{x-3}{2}}=2^{x/2}\cdot 2^{-3/2}=\frac{t}{2\sqrt{2}}.
+\]
+Jednačina postaje
+\[
+t^4-7\cdot \frac{t}{2\sqrt{2}}=t^{-2}.
+\]
+Množenjem sa \(t^2\) dobijamo
+\[
+t^6-\frac{7}{2\sqrt{2}}t^3=1.
+\]
+Neka je \(u=t^3>0\). Tada
+\[
+u^2-\frac{7}{2\sqrt{2}}u-1=0.
+\]
+\[
+u=\frac{\frac{7}{2\sqrt{2}}\pm\sqrt{\left(\frac{7}{2\sqrt{2}}\right)^2+4}}{2}
+=\frac{\frac{7\sqrt{2}}{4}\pm \frac{9\sqrt{2}}{4}}{2}.
+\]
+Dobijamo \(u_1=2\sqrt{2}>0\), \(u_2=-\frac{\sqrt{2}}{4}<0\) (odbacujemo). Dakle
+\[
+t^3=2\sqrt{2}=2^{3/2}\Rightarrow t=2^{1/2}=\sqrt{2}.
+\]
+Pošto je \(t=2^{x/2}\), sledi \(2^{x/2}=2^{1/2}\Rightarrow x=1\).
+
+Dakle rešenje je \(x=1\), što pripada intervalu \((0,3]\).
+
+\subsection*{Odgovor}
+\[
+\boxed{(B)\ (0,3]}
+\]
+\end{document}
+

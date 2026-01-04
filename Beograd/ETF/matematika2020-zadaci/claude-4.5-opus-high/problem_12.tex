@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+The side length of square $ABCD$ is 8 cm. A circle passes through vertices $A$ and $D$ and is tangent to side $BC$. Find the area of this circle.
+
+\subsection*{Solution}
+Let's set up a coordinate system with $A$ at the origin:
+\begin{itemize}
+    \item $A = (0, 0)$
+    \item $B = (8, 0)$
+    \item $C = (8, 8)$
+    \item $D = (0, 8)$
+\end{itemize}
+
+Let the center of the circle be at $(h, k)$ with radius $r$.
+
+Since the circle passes through $A(0, 0)$ and $D(0, 8)$:
+\[
+h^2 + k^2 = r^2 \quad \text{(distance from center to } A \text{)}
+\]
+\[
+h^2 + (k - 8)^2 = r^2 \quad \text{(distance from center to } D \text{)}
+\]
+
+From these two equations:
+\[
+h^2 + k^2 = h^2 + (k - 8)^2
+\]
+\[
+k^2 = k^2 - 16k + 64
+\]
+\[
+16k = 64 \implies k = 4
+\]
+
+So the center has $y$-coordinate 4 (which makes sense by symmetry since $A$ and $D$ are symmetric about $y = 4$).
+
+The circle is tangent to line $BC$, which is the vertical line $x = 8$.
+
+The distance from the center $(h, 4)$ to the line $x = 8$ equals the radius:
+\[
+|8 - h| = r
+\]
+
+Since the circle passes through $A(0, 0)$ and has center $(h, 4)$:
+\[
+r^2 = h^2 + 16
+\]
+
+From $|8 - h| = r$, and since the center must be to the left of $x = 8$ for the circle to be tangent (not intersecting), we have $h < 8$, so $r = 8 - h$.
+
+Substituting into $r^2 = h^2 + 16$:
+\[
+(8 - h)^2 = h^2 + 16
+\]
+\[
+64 - 16h + h^2 = h^2 + 16
+\]
+\[
+64 - 16h = 16
+\]
+\[
+48 = 16h \implies h = 3
+\]
+
+Therefore $r = 8 - 3 = 5$.
+
+The area of the circle is:
+\[
+\pi r^2 = \pi \cdot 25 = 25\pi \text{ cm}^2
+\]
+
+\subsection*{Answer}
+$25\pi$ cm$^2$ (option \textbf{B}).
+
+\end{document}

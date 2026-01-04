@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 11}
+Koja od navedenih relacija postoji između rešenja $x_1$ i $x_2$ kvadratne jednačine $x^2 - 6x + 5 + m(x^2 - 5x + 6) = 0$ ($m \in \mathbf{R}$, $m \neq -1$)?
+
+\subsection*{Solution}
+Rearrange the equation as a standard quadratic equation in $x$:
+\[
+x^2 - 6x + 5 + mx^2 - 5mx + 6m = 0
+\]
+\[
+(1+m)x^2 - (6+5m)x + (5+6m) = 0
+\]
+Using Vieta's formulas:
+\[
+x_1 + x_2 = \frac{6+5m}{1+m}
+\]
+\[
+x_1 x_2 = \frac{5+6m}{1+m}
+\]
+We look for a relation independent of $m$. Let's test the options.
+Consider $x_1 + x_2 + x_1 x_2$:
+\[
+\frac{6+5m}{1+m} + \frac{5+6m}{1+m} = \frac{11 + 11m}{1+m} = \frac{11(1+m)}{1+m} = 11
+\]
+So $x_1 + x_2 + x_1 x_2 = 11$, or $x_1 + x_2 + x_1 x_2 - 11 = 0$.
+
+\subsection*{Answer}
+(B) $x_1 + x_2 + x_1 x_2 - 11 = 0$
+
+\end{document}

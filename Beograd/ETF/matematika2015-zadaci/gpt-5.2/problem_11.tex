@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Ukupan broj parova celih brojeva $(x,y)$ takvih da vazi
+\[
+|x^2-2x|-y<\frac12
+\qquad\text{i}\qquad
+y+|x-1|<2
+\]
+jednak je:
+
+\subsection*{Solution}
+Oznacimo $A=|x^2-2x|$. Prva nejednakost je
+\[
+A-y<\frac12 \quad\Longleftrightarrow\quad y>A-\frac12.
+\]
+Kako je $y\in\mathbb Z$ i $A\in\mathbb Z$, najmanji ceo broj veci od $A-\frac12$ je $A$, pa je
+\[
+y\ge A.
+\]
+Druga nejednakost daje
+\[
+y<2-|x-1|.
+\]
+Kako je $2-|x-1|$ ceo broj, ovo je ekvivalentno sa
+\[
+y\le 1-|x-1|.
+\]
+Zato mora vaziti
+\[
+A\le 1-|x-1|.
+\]
+Ako je $|x-1|\ge 2$, desna strana je $\le -1$, sto je nemoguce jer je $A\ge 0$.
+Dakle, $|x-1|\in\{0,1\}$, tj. $x\in\{1,0,2\}$.
+
+\begin{itemize}
+\item $x=1$: $A=|1-2|=1$, pa je $y\ge 1$ i $y\le 1$, tj. $y=1$.
+\item $x=0$: $A=0$, pa je $y\ge 0$ i $y\le 0$, tj. $y=0$.
+\item $x=2$: $A=0$, pa je $y=0$.
+\end{itemize}
+
+Ukupno ima $3$ para.
+
+\subsection*{Answer}
+$3$ (opcija \textbf{E}).
+
+\end{document}
+

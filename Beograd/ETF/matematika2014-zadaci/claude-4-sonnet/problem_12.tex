@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Krug sadrži tri tačke čije su koordinate $(0,6)$, $(0,10)$ i $(8,0)$. Apscisa druge tačke u kojoj dati krug seče $x$-osu, jednaka je:
+
+(A) $7$ \quad (B) $7,25$ \quad (C) $7,5$ \quad (D) $7,75$ \quad (E) $9$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Opšta jednačina kruga je $(x-a)^2 + (y-b)^2 = r^2$, gde je $(a,b)$ centar i $r$ poluprečnik.
+
+Krug prolazi kroz tačke $(0,6)$, $(0,10)$ i $(8,0)$:
+
+Za $(0,6)$: $a^2 + (6-b)^2 = r^2$ \quad (1)
+Za $(0,10)$: $a^2 + (10-b)^2 = r^2$ \quad (2)  
+Za $(8,0)$: $(8-a)^2 + b^2 = r^2$ \quad (3)
+
+Iz (1) i (2):
+\[
+a^2 + (6-b)^2 = a^2 + (10-b)^2
+\]
+\[
+(6-b)^2 = (10-b)^2
+\]
+\[
+36 - 12b + b^2 = 100 - 20b + b^2
+\]
+\[
+36 - 12b = 100 - 20b
+\]
+\[
+8b = 64 \Rightarrow b = 8
+\]
+
+Iz (1) i (3):
+\[
+a^2 + (6-8)^2 = (8-a)^2 + 8^2
+\]
+\[
+a^2 + 4 = 64 - 16a + a^2 + 64
+\]
+\[
+4 = 128 - 16a
+\]
+\[
+16a = 124 \Rightarrow a = 7,75
+\]
+
+Dakle, centar kruga je $(7,75; 8)$.
+
+Krug seče $x$-osu kada je $y = 0$:
+\[
+(x - 7,75)^2 + (0 - 8)^2 = r^2
+\]
+
+Iz jednačine (1): $r^2 = (7,75)^2 + (6-8)^2 = 60,0625 + 4 = 64,0625$
+
+\[
+(x - 7,75)^2 + 64 = 64,0625
+\]
+\[
+(x - 7,75)^2 = 0,0625
+\]
+\[
+x - 7,75 = \pm 0,25
+\]
+\[
+x = 7,75 \pm 0,25
+\]
+
+Dakle $x = 8$ ili $x = 7,5$.
+
+Pošto već znamo da krug prolazi kroz $(8,0)$, druga tačka je $(7,5; 0)$.
+
+\subsection*{Answer}
+$7,5$ (option \textbf{C}).
+
+\end{document}

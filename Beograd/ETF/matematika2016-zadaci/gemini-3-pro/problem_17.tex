@@ -1,0 +1,20 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Na polici se nalazi 5 knjiga na engleskom, 7 na španskom i 8 na francuskom jeziku. Sve knjige su međusobno različite. Na koliko načina možemo rasporediti knjige ako sve napisane na francuskom jeziku moraju biti jedna do druge?
+
+\subsection*{Solution}
+Group 8 French books as one block.
+Total items to arrange: 5 (Eng) + 7 (Spa) + 1 (Fre block) = 13 items.
+Ways to arrange items: $13!$.
+Ways to arrange French books within block: $8!$.
+Total: $13! \cdot 8!$.
+
+
+\subsection*{Answer}
+$13! \cdot 8!$ (option \textbf{A})
+
+\end{document}

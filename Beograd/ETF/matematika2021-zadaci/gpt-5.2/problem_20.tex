@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Granicna vrednost
+\[
+\lim_{x\to 0}\frac{1-\cos x\cos(2x)\cos(3x)}{1-\cos x}
+\]
+jednaka je:
+(A) 0 \ (B) 14 \ (C) 12 \ (D) 2 \ (E) 10.
+
+\subsection*{Solution}
+Koristimo razvoje za male $x$:
+\[
+\cos(kx)=1-\frac{k^2x^2}{2}+O(x^4)\quad (x\to 0).
+\]
+Tada
+\begin{align*}
+\cos x\cos(2x)\cos(3x)
+&=\prod_{k=1}^3\left(1-\frac{k^2x^2}{2}+O(x^4)\right)\\
+&=1-\frac{(1^2+2^2+3^2)x^2}{2}+O(x^4)\\
+&=1-\frac{14x^2}{2}+O(x^4)
+=1-7x^2+O(x^4).
+\end{align*}
+Zato je brojilac
+\[
+1-\cos x\cos(2x)\cos(3x)=7x^2+O(x^4),
+\]
+dok je imenilac
+\[
+1-\cos x=\frac{x^2}{2}+O(x^4).
+\]
+Odavde sledi
+\[
+\lim_{x\to 0}\frac{1-\cos x\cos(2x)\cos(3x)}{1-\cos x}
+=\lim_{x\to 0}\frac{7x^2+O(x^4)}{\frac{x^2}{2}+O(x^4)}=14.
+\]
+
+\subsection*{Answer}
+$14$ (option \textbf{B}).
+
+\end{document}
+

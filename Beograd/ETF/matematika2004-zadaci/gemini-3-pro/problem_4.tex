@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 4}
+Ako je $a > b > 0$ i $a^2 + b^2 = 6ab$, tada je $\frac{a+b}{a-b}$ jednako:
+\begin{itemize}
+    \item[A)] $-\sqrt{2}$
+    \item[B)] $\sqrt{2}$
+    \item[C)] $\sqrt{6}$
+    \item[D)] $1$
+    \item[E)] $\frac{1}{\sqrt{2}}$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Let $X = \frac{a+b}{a-b}$. We can compute $X^2$:
+\[ X^2 = \left(\frac{a+b}{a-b}\right)^2 = \frac{a^2 + 2ab + b^2}{a^2 - 2ab + b^2} = \frac{(a^2 + b^2) + 2ab}{(a^2 + b^2) - 2ab}. \]
+Substitute the given condition $a^2 + b^2 = 6ab$:
+\[ X^2 = \frac{6ab + 2ab}{6ab - 2ab} = \frac{8ab}{4ab} = 2. \]
+Thus $X = \pm \sqrt{2}$.
+Since $a > b > 0$, we have $a+b > 0$ and $a-b > 0$. Therefore, the ratio $X$ must be positive.
+\[ X = \sqrt{2}. \]
+
+\subsection*{Answer}
+The value is $\sqrt{2}$, which corresponds to option \textbf{B}.
+
+\end{document}

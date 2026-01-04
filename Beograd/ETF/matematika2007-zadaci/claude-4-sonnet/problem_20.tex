@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Broj načina na koji se može formirati petočlana komisija od 2 matematičara i 8 fizičara, tako da u njoj bude bar jedan matematičar iznosi:
+\begin{enumerate}
+\item[(A)] 132
+\item[(B)] 196
+\item[(C)] 212
+\item[(D)] 314
+\item[(E)] 422
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Imamo ukupno 2 matematičara i 8 fizičara, što je ukupno 10 ljudi.
+
+Treba da formiramo petočlanu komisiju sa bar jednim matematičarom.
+
+Koristićemo komplementarni pristup: ukupan broj načina minus broj načina bez matematičara.
+
+\textbf{Ukupan broj načina da se izabere 5 ljudi od 10:}
+\[
+\binom{10}{5} = \frac{10!}{5! \cdot 5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = \frac{30240}{120} = 252
+\]
+
+\textbf{Broj načina da se izabere 5 ljudi samo od 8 fizičara (bez matematičara):}
+\[
+\binom{8}{5} = \binom{8}{3} = \frac{8!}{3! \cdot 5!} = \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = \frac{336}{6} = 56
+\]
+
+\textbf{Broj načina sa bar jednim matematičarom:}
+\[
+252 - 56 = 196
+\]
+
+Alternativno, možemo direktno računati:
+
+\textbf{Slučaj 1: Tačno 1 matematičar i 4 fizičara}
+\[
+\binom{2}{1} \cdot \binom{8}{4} = 2 \cdot \frac{8!}{4! \cdot 4!} = 2 \cdot \frac{8 \cdot 7 \cdot 6 \cdot 5}{4 \cdot 3 \cdot 2 \cdot 1} = 2 \cdot 70 = 140
+\]
+
+\textbf{Slučaj 2: Tačno 2 matematičara i 3 fizičara}
+\[
+\binom{2}{2} \cdot \binom{8}{3} = 1 \cdot \frac{8!}{3! \cdot 5!} = 1 \cdot \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = 56
+\]
+
+\textbf{Ukupno:}
+\[
+140 + 56 = 196
+\]
+
+\subsection*{Answer}
+Broj načina je 196, što odgovara opciji \textbf{(B)}.
+
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Given
+\[
+x=\sqrt{(-2)^2}-\sqrt{2^2}+\sqrt{|{-2}|},\qquad
+y=\sqrt[3]{-1}-\sqrt2,
+\]
+compute the value of
+\[
+\frac{x^3-y^3}{x^2-2xy+y^2}:\frac{x^2+xy+y^2}{x^2-y^2}.
+\]
+
+\subsection*{Solution}
+First,
+\[
+\sqrt{(-2)^2}=2,\quad \sqrt{2^2}=2,\quad \sqrt{|{-2}|}=\sqrt2
+\;\Rightarrow\; x=\sqrt2.
+\]
+Also, $\sqrt[3]{-1}=-1$, hence $y=-1-\sqrt2$.
+
+Use identities:
+\[
+x^3-y^3=(x-y)(x^2+xy+y^2),\qquad x^2-2xy+y^2=(x-y)^2,\qquad x^2-y^2=(x-y)(x+y).
+\]
+Then the expression simplifies to
+\[
+\frac{(x-y)(x^2+xy+y^2)}{(x-y)^2}\cdot \frac{(x-y)(x+y)}{x^2+xy+y^2}=x+y,
+\]
+so
+\[
+x+y=\sqrt2+(-1-\sqrt2)=-1.
+\]
+
+\subsection*{Answer}
+$-1$ (option \textbf{Г}).
+
+\end{document}
+
+
+
+
+
+
+
+

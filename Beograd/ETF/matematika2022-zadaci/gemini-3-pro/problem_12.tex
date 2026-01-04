@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 12}
+U trouglu $ABC$ je $AC = 3cm$ i $BC = 2cm$, dok je ugao kod temena $C$ jednak $60^0$. Neka je $D$ presečna tačka simetrale tog ugla sa stranicom $AB$, a tačka $E$ na stranici $BC$ takva da je duž $DE$ paralelna sa $AC$. Površina trougla $CDE$ (u $cm^2$) jednaka je:
+\begin{itemize}
+    \item[(A)] $9\sqrt{3}/16$
+    \item[(B)] $3\sqrt{3}/16$
+    \item[(C)] $9/25$
+    \item[(D)] $9/16$
+    \item[(E)] $9\sqrt{3}/25$
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Neka su $a=2, b=3, \gamma=60^\circ$. $CD$ je simetrala ugla $\gamma$.
+Tačka $D$ deli stranicu $AB$ u odnosu naleglih stranica: $AD:DB = b:a = 3:2$.
+Kako je $DE \parallel AC$, trougao $BDE$ je sličan trouglu $BAC$.
+Koeficijent sličnosti je $k = \frac{BD}{BA} = \frac{2}{3+2} = \frac{2}{5}$.
+Tada je $DE = k \cdot AC = \frac{2}{5} \cdot 3 = \frac{6}{5}$.
+Takođe, tačka $E$ deli $BC$ u istom odnosu: $BE:EC = 2:3$.
+Dužina $EC = \frac{3}{5} BC = \frac{3}{5} \cdot 2 = \frac{6}{5}$.
+Površina trougla $CDE$:
+Uočimo ugao $\angle DCE$. To je ugao $\angle BCA = 60^\circ$.
+Wait, $E$ je na $BC$. Dakle ugao kod temena $C$ u trouglu $CDE$ je isti ugao $\gamma = 60^\circ$.
+Susedne stranice su $CD$ i $CE$? Ne. Temena su $C, D, E$. Stranice su $CD, DE, EC$.
+Možemo izračunati površinu kao $\frac{1}{2} CE \cdot h_D$, gde je $h_D$ visina iz $D$ na $BC$.
+Visina iz $A$ na $BC$ je $h_A = b \sin \gamma = 3 \frac{\sqrt{3}}{2}$.
+Zbog sličnosti (ili Talesove teoreme), $h_D = \frac{BD}{BA} h_A = \frac{2}{5} \cdot \frac{3\sqrt{3}}{2} = \frac{3\sqrt{3}}{5}$.
+Površina $P_{CDE} = \frac{1}{2} \cdot CE \cdot h_D = \frac{1}{2} \cdot \frac{6}{5} \cdot \frac{3\sqrt{3}}{5} = \frac{9\sqrt{3}}{25}$.
+
+\subsection*{Answer}
+$9\sqrt{3}/25$ (option \textbf{E}).
+
+\end{document}

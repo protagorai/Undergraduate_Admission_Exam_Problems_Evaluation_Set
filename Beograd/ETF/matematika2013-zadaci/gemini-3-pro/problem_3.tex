@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 3}
+Vrednost izraza $\frac{x^{0,5}+1}{x+x^{0,5}+1} : \frac{1}{x^{1,5}-1}$, za $x \ge 0, x \ne 1$ je:
+\[ (A)\ x^2-1 \quad (B)\ 2x-1 \quad (C)\ 2\sqrt{x}-1 \quad (D)\ x-1 \quad (E)\ \sqrt{x}-1 \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Let's simplify the expression. Note that $x^{0,5} = \sqrt{x}$ and $x^{1,5} = (\sqrt{x})^3 = \sqrt{x}^3$.
+Let $t = \sqrt{x}$. The expression becomes:
+\[ \frac{t+1}{t^2+t+1} : \frac{1}{t^3-1} \]
+We know that $t^3 - 1 = (t-1)(t^2+t+1)$.
+So the expression is:
+\[ \frac{t+1}{t^2+t+1} \cdot \frac{t^3-1}{1} \]
+\[ = \frac{t+1}{t^2+t+1} \cdot (t-1)(t^2+t+1) \]
+Cancel $t^2+t+1$:
+\[ = (t+1)(t-1) \]
+\[ = t^2 - 1 \]
+Substitute back $t = \sqrt{x}$:
+\[ = (\sqrt{x})^2 - 1 = x - 1 \]
+
+\subsection*{Answer}
+$x - 1$ (option \textbf{D}).
+
+\end{document}

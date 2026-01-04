@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+If $A = \frac{1}{6}\left((\log_2 3)^3 - (\log_2 6)^3 - (\log_2 12)^3 + (\log_2 24)^3\right)$, then the value of the expression $2^A$ is:
+
+\subsection*{Solution}
+Let's denote $x = \log_2 3$. Then we can express the other logarithms in terms of $x$:
+
+\begin{align}
+\log_2 6 &= \log_2(2 \cdot 3) = \log_2 2 + \log_2 3 = 1 + x\\
+\log_2 12 &= \log_2(4 \cdot 3) = \log_2 4 + \log_2 3 = 2 + x\\
+\log_2 24 &= \log_2(8 \cdot 3) = \log_2 8 + \log_2 3 = 3 + x
+\end{align}
+
+Substituting into the expression for $A$:
+\[A = \frac{1}{6}\left(x^3 - (1+x)^3 - (2+x)^3 + (3+x)^3\right)\]
+
+Let's expand each cubic term:
+\begin{align}
+(1+x)^3 &= 1 + 3x + 3x^2 + x^3\\
+(2+x)^3 &= 8 + 12x + 6x^2 + x^3\\
+(3+x)^3 &= 27 + 27x + 9x^2 + x^3
+\end{align}
+
+Substituting:
+\begin{align}
+A &= \frac{1}{6}\left[x^3 - (1 + 3x + 3x^2 + x^3) - (8 + 12x + 6x^2 + x^3) + (27 + 27x + 9x^2 + x^3)\right]\\
+&= \frac{1}{6}\left[x^3 - 1 - 3x - 3x^2 - x^3 - 8 - 12x - 6x^2 - x^3 + 27 + 27x + 9x^2 + x^3\right]\\
+&= \frac{1}{6}\left[(x^3 - x^3 - x^3 + x^3) + (-3x - 12x + 27x) + (-3x^2 - 6x^2 + 9x^2) + (-1 - 8 + 27)\right]\\
+&= \frac{1}{6}\left[0 + 12x + 0 + 18\right]\\
+&= \frac{1}{6}(12x + 18)\\
+&= 2x + 3
+\end{align}
+
+Since $x = \log_2 3$, we have:
+\[A = 2\log_2 3 + 3 = \log_2 3^2 + \log_2 2^3 = \log_2 9 + \log_2 8 = \log_2(9 \cdot 8) = \log_2 72\]
+
+Therefore:
+\[2^A = 2^{\log_2 72} = 72\]
+
+\subsection*{Answer}
+$72$ (option \textbf{C}).
+
+\end{document}

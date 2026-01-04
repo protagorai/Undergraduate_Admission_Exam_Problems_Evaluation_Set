@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Let $x$ and $y$ be real numbers, $x \neq 0$, $y \neq 0$, such that the inequality $|x| < |y|$ holds.
+Which of the following statements are always true?
+
+(i) $\frac{x}{y} < 1$
+(ii) $x^2 < y^2$
+(iii) $\frac{1}{x} > \frac{1}{y}$
+(iv) $\frac{1}{x^2} < \frac{1}{y^2}$
+(v) $x < y$
+
+\subsection*{Solution}
+Given: $|x| < |y|$ where $x, y \neq 0$.
+
+Let's analyze each statement:
+
+\textbf{(i) $\frac{x}{y} < 1$:}
+This is not always true. For example, if $x = -1$ and $y = 2$, then $|x| = 1 < 2 = |y|$, but $\frac{x}{y} = \frac{-1}{2} = -0.5 < 1$. However, if $x = 1$ and $y = -2$, then $|x| = 1 < 2 = |y|$, but $\frac{x}{y} = \frac{1}{-2} = -0.5 < 1$. Actually, let me think more carefully. If $x = -3$ and $y = 2$, then $\frac{x}{y} = -1.5 < 1$. But if $x = 3$ and $y = -2$, then $\frac{x}{y} = -1.5 < 1$. It seems this might be true, but let me check edge cases.
+
+Actually, this is not always true. The sign matters.
+
+\textbf{(ii) $x^2 < y^2$:}
+Since $|x| < |y|$, squaring both sides gives $|x|^2 < |y|^2$, which means $x^2 < y^2$.
+This is always true.
+
+\textbf{(iii) $\frac{1}{x} > \frac{1}{y}$:}
+This depends on the signs of $x$ and $y$. For example:
+- If $x = 1, y = 2$: $\frac{1}{x} = 1 > \frac{1}{y} = 0.5$ ✓
+- If $x = -1, y = 2$: $\frac{1}{x} = -1 < \frac{1}{y} = 0.5$ ✗
+This is not always true.
+
+\textbf{(iv) $\frac{1}{x^2} < \frac{1}{y^2}$:}
+Since $|x| < |y|$ and both are positive, we have $x^2 < y^2$.
+Taking reciprocals (and flipping the inequality since both sides are positive):
+$\frac{1}{x^2} > \frac{1}{y^2}$
+So $\frac{1}{x^2} < \frac{1}{y^2}$ is false. This statement is never true.
+
+Wait, let me reconsider. If $x^2 < y^2$ and both are positive, then $\frac{1}{x^2} > \frac{1}{y^2}$.
+So statement (iv) is always false.
+
+\textbf{(v) $x < y$:}
+This is not always true. For example, if $x = 1$ and $y = -2$, then $|x| = 1 < 2 = |y|$, but $x = 1 > -2 = y$.
+
+Therefore, only statement (ii) is always true.
+
+Looking at the options:
+(A) Only (i)
+(B) (i) and (ii)
+(C) (ii), (iii) and (v)
+(D) (i) and (iv)
+(E) (i), (ii) and (v)
+
+Wait, let me double-check statement (i) more carefully.
+
+For $\frac{x}{y} < 1$, we need $x < y$ when $y > 0$ and $x > y$ when $y < 0$.
+
+Case 1: $y > 0$. Then $|y| = y$. Since $|x| < |y| = y$, we have $-y < x < y$, so $x < y$, which gives $\frac{x}{y} < 1$.
+
+Case 2: $y < 0$. Then $|y| = -y$. Since $|x| < |y| = -y$, we have $-(-y) < x < -y$, so $y < x < -y$. But this is impossible since $y < 0$ and $-y > 0$.
+
+Wait, that's not right. If $y < 0$, then $|y| = -y > 0$. The condition $|x| < |y|$ means $|x| < -y$.
+
+If $x > 0$, then $x < -y$, so $x + y < 0$, so $x < -y$. Since $y < 0$, we have $\frac{x}{y} < 0 < 1$.
+
+If $x < 0$, then $-x < -y$, so $x > y$. Since $y < 0$, we have $\frac{x}{y} = \frac{\text{negative}}{\text{negative}} > 0$. We need to check if $\frac{x}{y} < 1$, i.e., if $x < y$. But we just found $x > y$, so $\frac{x}{y} > 1$.
+
+So statement (i) is not always true.
+
+Let me reconsider the options. I think only (ii) is always true.
+
+But looking at the given options, none of them say "only (ii)". Let me re-examine.
+
+Actually, let me check statement (iii) again with specific examples:
+
+If $x = 1, y = 2$: $\frac{1}{x} = 1, \frac{1}{y} = 0.5$, so $\frac{1}{x} > \frac{1}{y}$ ✓
+If $x = -1, y = 2$: $\frac{1}{x} = -1, \frac{1}{y} = 0.5$, so $\frac{1}{x} < \frac{1}{y}$ ✗
+If $x = 1, y = -2$: $\frac{1}{x} = 1, \frac{1}{y} = -0.5$, so $\frac{1}{x} > \frac{1}{y}$ ✓
+If $x = -1, y = -2$: $\frac{1}{x} = -1, \frac{1}{y} = -0.5$, so $\frac{1}{x} < \frac{1}{y}$ ✗
+
+So (iii) is not always true.
+
+Let me check (v):
+If $x = 1, y = 2$: $x < y$ ✓
+If $x = -1, y = 2$: $x < y$ ✓
+If $x = 1, y = -2$: $x > y$ ✗
+If $x = -1, y = -2$: $x > y$ ✗
+
+So (v) is not always true.
+
+Therefore, only (ii) is always true. But this doesn't match any of the given options exactly.
+
+Let me re-examine the problem. Maybe I misunderstood something.
+
+Actually, looking at the options again, maybe the answer is (B) (i) and (ii), and I need to reconsider (i).
+
+Let me be more systematic about (i):
+
+$\frac{x}{y} < 1 \Leftrightarrow \frac{x}{y} - 1 < 0 \Leftrightarrow \frac{x - y}{y} < 0$
+
+This means $x - y$ and $y$ have opposite signs.
+
+Case 1: $y > 0$ and $x - y < 0$, i.e., $y > 0$ and $x < y$.
+Case 2: $y < 0$ and $x - y > 0$, i.e., $y < 0$ and $x > y$.
+
+Now, given $|x| < |y|$:
+
+If $y > 0$, then $|y| = y$, so $|x| < y$. This means $-y < x < y$, so $x < y$. Combined with $y > 0$, we're in Case 1, so $\frac{x}{y} < 1$.
+
+If $y < 0$, then $|y| = -y$, so $|x| < -y$. This means $-(-y) < x < -y$, i.e., $y < x < -y$. Since $y < 0$ and $-y > 0$, we have $y < x < -y$. In particular, $x > y$. Combined with $y < 0$, we're in Case 2, so $\frac{x}{y} < 1$.
+
+So statement (i) is always true!
+
+Therefore, both (i) and (ii) are always true.
+
+\subsection*{Answer}
+(i) and (ii) (option \textbf{B}).
+
+\end{document}

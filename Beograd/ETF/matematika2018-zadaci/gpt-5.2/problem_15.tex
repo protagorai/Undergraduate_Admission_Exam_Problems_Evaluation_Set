@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Data je funkcija
+\[
+f(x)=x^2-2\alpha x+\alpha^2+2\alpha-8,\qquad \alpha\in\mathbb{R}.
+\]
+Neka je $S$ skup svih $\alpha$ takvih da funkcija $f$ ima bar jednu realnu nulu i da važi $f(x)\ge 0$
+za svako $x\in[0,3]$. Odrediti $S$.
+
+\subsection*{Solution}
+Primetimo da je
+\[
+f(x)=(x-\alpha)^2+2\alpha-8.
+\]
+
+\medskip
+\textbf{1) Uslov da $f$ ima realnu nulu.}
+Parabola je otvorena naviše i minimalna vrednost je $2\alpha-8$ (u tački $x=\alpha$), pa realna nula postoji
+ako i samo ako je minimum $\le 0$, tj.
+\[
+2\alpha-8\le 0 \quad\Rightarrow\quad \alpha\le 4.
+\]
+
+\medskip
+\textbf{2) Uslov $f(x)\ge 0$ za $x\in[0,3]$.}
+Minimum na zatvorenom intervalu postiže se u tački $x=\alpha$ ako je $\alpha\in[0,3]$, inače u krajnjim tačkama.
+
+\smallskip
+\emph{(i) Ako je $\alpha\in[0,3]$:} tada je minimum $f(\alpha)=2\alpha-8<0$, pa ovaj slučaj ne daje rešenja.
+
+\smallskip
+\emph{(ii) Ako je $\alpha<0$:} minimum na $[0,3]$ je u $x=0$:
+\[
+f(0)=\alpha^2+2\alpha-8=(\alpha+1)^2-9\ge 0
+\;\Longleftrightarrow\; |\alpha+1|\ge 3
+\;\Longleftrightarrow\; \alpha\le -4 \ \text{ili}\ \alpha\ge 2.
+\]
+Pošto je ovde $\alpha<0$, ostaje $\alpha\le -4$.
+
+\smallskip
+\emph{(iii) Ako je $\alpha>3$:} minimum na $[0,3]$ je u $x=3$:
+\[
+f(3)=9-6\alpha+\alpha^2+2\alpha-8=\alpha^2-4\alpha+1=(\alpha-2)^2-3\ge 0
+\]
+\[
+\Longleftrightarrow\; |\alpha-2|\ge \sqrt3
+\;\Longleftrightarrow\; \alpha\le 2-\sqrt3 \ \text{ili}\ \alpha\ge 2+\sqrt3.
+\]
+Sa $\alpha>3$ dobijamo $\alpha\ge 2+\sqrt3$.
+
+\medskip
+\textbf{3) Presek sa uslovom $\alpha\le 4$.}
+Dobijamo
+\[
+S = (-\infty,-4]\ \cup\ [2+\sqrt3,4].
+\]
+
+\subsection*{Answer}
+$(-\infty,-4]\cup[2+\sqrt3,4]$ (option \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 18}
+Date su dve paralelne prave. Na jednoj od njih je 10 a na drugoj 12 različitih tačaka. Broj trouglova koje određuju ove tačke je:
+\begin{itemize}
+    \item[A)] $\binom{10}{2}\binom{12}{1} + \binom{10}{1}\binom{12}{2}$
+    \item[B)] $\binom{22}{3} - \binom{22}{2}$
+    \item[C)] $\binom{10}{1}\binom{12}{1}$
+    \item[D)] $\binom{10}{2}\binom{12}{2}$
+    \item[E)] $10 \cdot 9 \cdot 12 \cdot 11$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+A triangle is formed by choosing 3 non-collinear points. Since the points lie on two parallel lines, we cannot choose 3 points from the same line.
+The possible ways to choose 3 points are:
+\begin{enumerate}
+    \item Choose 2 points from the first line (which has 10 points) and 1 point from the second line (which has 12 points).
+    The number of ways is $\binom{10}{2} \cdot \binom{12}{1}$.
+    \item Choose 1 point from the first line and 2 points from the second line.
+    The number of ways is $\binom{10}{1} \cdot \binom{12}{2}$.
+\end{enumerate}
+The total number of triangles is the sum of these two cases:
+\[ \binom{10}{2}\binom{12}{1} + \binom{10}{1}\binom{12}{2}. \]
+
+\subsection*{Answer}
+The correct formula is given in option \textbf{A}.
+
+\end{document}

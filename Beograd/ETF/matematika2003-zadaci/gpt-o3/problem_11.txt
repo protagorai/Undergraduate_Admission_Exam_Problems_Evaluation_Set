@@ -1,0 +1,2 @@
+11. Visina valjka maksimalne zapremine upisanog u loptu poluprečnika \sqrt{3} jednaka je:
+A) 1;   B) 2;   C) 2\sqrt{2};   D) \sqrt{3};   E) \frac{3}{2};   N) Ne znam.

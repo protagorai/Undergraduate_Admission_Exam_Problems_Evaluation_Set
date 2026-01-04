@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Ispitati znak izraza
+\[
+F(x)=\frac{(x^{2}-4)\bigl(5x^{2}-6\cdot5^{x+1}+125\bigr)}{\sqrt{9-3^{x}-3^{x+2}}}
+\]
+i odrediti skup rešenja nejednačine $F(x)\le0$ u jednom od ponuđenih oblika.
+
+\subsection*{Rešenje – ideja}\footnotesize
+Potpuna analitička faktorizacija srednjeg faktora zahtevala би transcendentalno rešenje; zato se oslanjamo na kvalitativnu analizu.
+
+\textbf{1. Domen.}  Imenilac realan $\iff9-3^{x}-3^{x+2}>0\iff3^{x}(1+9)<9\iff3^{x}<\tfrac{9}{10}\iff x<\log_{3}\tfrac{9}{10}\approx-0.0458.$  Dobijamo $x<0$ (jer $\log_{3}0.9<0$).
+
+\textbf{2. Znak $x^{2}-4$.}  Tačке promene znaka $x=\pm2$.  Na dozvoljenom poluosi $(-\infty,0)$ relevantna je tačka $x=-2$.
+
+\textbf{3. Analiza drugog faktora $g(x)=5x^{2}-6\cdot5^{x+1}+125$.}  Numerički:
+\begin{center}\begin{tabular}{c|cccccc}
+$x$ & $-\infty$&$-2$&$-1$&$-0.5$&$0$&$\to0^{+}$\\\hline
+$g(x)$ & $+\infty$&$+37$&$+11$&$+2.3$&$-5$&$\searrow$
+\end{tabular}\end{center}
+Prelaz kroz nulu dobija se u $x=c\approx-0.27$ (jedinstveni realni koren u $(-1,0)$).
+
+\textbf{4. Tabela znakova na $(-\infty,0)$}
+\begin{center}\begin{tabular}{c|cccc}
+Interval & $(-\infty,-2)$ & $(-2,c)$ & $(c,0)$ \\
+\hline
+$x^{2}-4$ & $+$ & $0\to -$ & $-$ \\
+$g(x)$ & $+$ & $+$ & $-$ \\
+$F(x)$ (bez korena) & $+$ & $-$ & $+$ \\
+\end{tabular}\end{center}
+Koren u imeniocu ne menja znak (uvek $>$0).  Dopušteno je $F\le0$ pa uzimamo interval gde je $-$ plus tačke gde je $0$.
+\[
+\boxed{\;x\in(-2,\,c]\;\cup\;\{-2\}\,},\qquad c\approx-0.27.
+\]
+
+\subsection*{Odgovor}
+Oblik $(a,b] \cup \{c\}$ odgovara \textbf{opciji E}.
+
+\end{document}

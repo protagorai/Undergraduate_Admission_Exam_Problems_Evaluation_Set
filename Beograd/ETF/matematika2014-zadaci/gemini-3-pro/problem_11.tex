@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Proizvod svih realnih rešenja jednačine $\frac{2013x}{2014} = 2013^{\log_x 2014}$ pripada skupu:
+\begin{enumerate}
+    \item[(A)] $(0, 1]$
+    \item[(B)] $(1, 2]$
+    \item[(C)] $(2, 3]$
+    \item[(D)] $(3, 4]$
+    \item[(E)] $(4, +\infty)$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let $a = 2013$ and $b = 2014$. The equation is:
+\[
+\frac{ax}{b} = a^{\log_x b}
+\]
+Take $\log_x$ of both sides (assuming $x>0, x \neq 1$):
+\[
+\log_x \left(\frac{ax}{b}\right) = \log_x (a^{\log_x b})
+\]
+\[
+\log_x a + \log_x x - \log_x b = (\log_x b)(\log_x a)
+\]
+\[
+\log_x a + 1 - \log_x b = \log_x a \cdot \log_x b
+\]
+Let $u = \log_x a$ and $v = \log_x b$.
+\[
+u + 1 - v = uv \implies uv - u + v - 1 = 0
+\]
+\[
+u(v-1) + (v-1) = 0 \implies (u+1)(v-1) = 0
+\]
+So either $u = -1$ or $v = 1$.
+Case 1: $u = -1 \implies \log_x a = -1 \implies x^{-1} = a \implies x = \frac{1}{a} = \frac{1}{2013}$.
+Case 2: $v = 1 \implies \log_x b = 1 \implies x^1 = b \implies x = b = 2014$.
+The solutions are $x_1 = \frac{1}{2013}$ and $x_2 = 2014$.
+The product of solutions is:
+\[
+P = x_1 \cdot x_2 = \frac{2014}{2013} = 1 + \frac{1}{2013}
+\]
+Since $1 < 1 + \frac{1}{2013} \le 2$, the product belongs to $(1, 2]$.
+
+\subsection*{Answer}
+$(1, 2]$ (option \textbf{(B)}).
+
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Vrednost realnog parametra $\alpha$ za koju sistem jednačina $2x - 5y = 0$, $3x - \alpha y = 0$ ima više od jednog rešenja je:
+
+\subsection*{Solution}
+This is a homogeneous system of linear equations. Such a system always has the trivial solution $(0, 0)$.
+
+For the system to have more than one solution (infinitely many solutions), the two equations must be linearly dependent (proportional).
+
+The system in matrix form:
+\[
+\begin{pmatrix} 2 & -5 \\ 3 & -\alpha \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\]
+
+For infinitely many solutions, the determinant must equal zero:
+\[
+\det \begin{pmatrix} 2 & -5 \\ 3 & -\alpha \end{pmatrix} = 0
+\]
+\[
+2(-\alpha) - (-5)(3) = 0
+\]
+\[
+-2\alpha + 15 = 0
+\]
+\[
+\alpha = \frac{15}{2}
+\]
+
+Let's verify: When $\alpha = \frac{15}{2}$, the second equation becomes $3x - \frac{15}{2}y = 0$, or $6x - 15y = 0$, which is $3(2x - 5y) = 0$. This is indeed proportional to the first equation.
+
+\subsection*{Answer}
+$\dfrac{15}{2}$ (option \textbf{E}).
+
+\end{document}

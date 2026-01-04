@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ako je $k\in\mathbb R$ i $i^2=-1$, tada je modul kompleksnog broja
+\[
+\left(\frac{1+i}{1-i}\right)^{2015}+\frac{-1+5ki}{3i}-1
+\]
+najmanji za $k$ jednako:
+
+\subsection*{Solution}
+Prvo,
+\[
+\frac{1+i}{1-i}=\frac{(1+i)^2}{(1-i)(1+i)}=\frac{1+2i+i^2}{2}=\frac{2i}{2}=i,
+\]
+pa je
+\[
+\left(\frac{1+i}{1-i}\right)^{2015}=i^{2015}=i^{4\cdot 503+3}=i^3=-i.
+\]
+Dalje,
+\[
+\frac{-1+5ki}{3i}=\frac{-1+5ki}{3}\cdot\frac{1}{i}
+=\frac{-1+5ki}{3}\cdot(-i)=\frac{i+5k}{3}=\frac{5k}{3}+\frac{i}{3}.
+\]
+Zato je ceo broj
+\[
+z=-i+\left(\frac{5k}{3}+\frac{i}{3}\right)-1=\left(\frac{5k}{3}-1\right)-\frac{2}{3}i.
+\]
+Modul je
+\[
+|z|=\sqrt{\left(\frac{5k}{3}-1\right)^2+\left(\frac{2}{3}\right)^2}.
+\]
+Ovo je minimalno kada je realni deo nula, tj.
+\[
+\frac{5k}{3}-1=0 \quad\Longrightarrow\quad k=\frac{3}{5}.
+\]
+
+\subsection*{Answer}
+$k=\dfrac{3}{5}$ (opcija \textbf{A}).
+
+\end{document}
+

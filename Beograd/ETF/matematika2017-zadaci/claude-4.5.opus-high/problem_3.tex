@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+If $x + \frac{1}{x} = 3$ ($x \in \mathbf{R}^+$), then $\sqrt[4]{x} + \frac{1}{\sqrt[4]{x}}$ equals:
+
+(A) $\sqrt{2+\sqrt{5}}$ \quad (B) $\sqrt[4]{5}$ \quad (C) $\sqrt{3}$ \quad (D) $\sqrt[4]{3}$ \quad (E) $\sqrt{1+\sqrt{3}}$
+
+\subsection*{Solution}
+Let $y = \sqrt[4]{x} + \frac{1}{\sqrt[4]{x}}$. We need to find $y$.
+
+First, let's find $\sqrt{x} + \frac{1}{\sqrt{x}}$.
+
+Let $u = \sqrt{x} + \frac{1}{\sqrt{x}}$. Then:
+\[
+u^2 = x + 2 + \frac{1}{x} = \left(x + \frac{1}{x}\right) + 2 = 3 + 2 = 5
+\]
+
+Since $x > 0$, we have $u > 0$, so $u = \sqrt{5}$.
+
+Now, let $y = \sqrt[4]{x} + \frac{1}{\sqrt[4]{x}}$. Then:
+\[
+y^2 = \sqrt{x} + 2 + \frac{1}{\sqrt{x}} = \left(\sqrt{x} + \frac{1}{\sqrt{x}}\right) + 2 = \sqrt{5} + 2
+\]
+
+Since $y > 0$:
+\[
+y = \sqrt{2 + \sqrt{5}}
+\]
+
+\subsection*{Answer}
+(A) $\sqrt{2+\sqrt{5}}$
+
+\end{document}

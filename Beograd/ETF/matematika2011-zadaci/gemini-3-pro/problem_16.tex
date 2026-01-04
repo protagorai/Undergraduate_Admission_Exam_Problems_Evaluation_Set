@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 16}
+U razvoju binoma $(x+y)^n$ ($x,y \in \mathbf{R}, n \in \mathbf{N}$) drugi član je jednak 240, treći član 720 a četvrti 1080. Tada je zbir $x+y+n$ jednak:
+\[
+(A)\; 11 \quad (B)\; 9 \quad (C)\; 10 \quad (D)\; 25 \quad (E)\; 280
+\]
+
+\subsection*{Solution}
+Opšti član u razvoju $(x+y)^n$ je $T_{k+1} = \binom{n}{k} x^{n-k} y^k$.
+Dati su članovi:
+\[
+T_2 = \binom{n}{1} x^{n-1} y = n x^{n-1} y = 240
+\]
+\[
+T_3 = \binom{n}{2} x^{n-2} y^2 = \frac{n(n-1)}{2} x^{n-2} y^2 = 720
+\]
+\[
+T_4 = \binom{n}{3} x^{n-3} y^3 = \frac{n(n-1)(n-2)}{6} x^{n-3} y^3 = 1080
+\]
+Posmatrajmo odnos uzastopnih članova:
+\[
+\frac{T_3}{T_2} = \frac{\frac{n(n-1)}{2} x^{n-2} y^2}{n x^{n-1} y} = \frac{n-1}{2} \cdot \frac{y}{x} = \frac{720}{240} = 3 \Rightarrow (n-1)\frac{y}{x} = 6
+\]
+\[
+\frac{T_4}{T_3} = \frac{\frac{n(n-1)(n-2)}{6} x^{n-3} y^3}{\frac{n(n-1)}{2} x^{n-2} y^2} = \frac{n-2}{3} \cdot \frac{y}{x} = \frac{1080}{720} = \frac{3}{2} \Rightarrow (n-2)\frac{y}{x} = \frac{9}{2}
+\]
+Deljenjem ove dve jednačine eliminišemo $y/x$:
+\[
+\frac{n-1}{n-2} = \frac{6}{9/2} = \frac{12}{9} = \frac{4}{3}
+\]
+\[
+3(n-1) = 4(n-2) \Rightarrow 3n - 3 = 4n - 8 \Rightarrow n = 5
+\]
+Sada nađemo $y/x$:
+\[
+(5-1)\frac{y}{x} = 6 \Rightarrow 4\frac{y}{x} = 6 \Rightarrow \frac{y}{x} = \frac{3}{2} \Rightarrow y = 1.5x
+\]
+Zamenimo u prvu jednačinu $n x^{n-1} y = 240$:
+\[
+5 x^4 (1.5x) = 240
+\]
+\[
+7.5 x^5 = 240 \Rightarrow x^5 = \frac{240}{7.5} = 32 \Rightarrow x = 2
+\]
+Tada je $y = 1.5 \cdot 2 = 3$.
+Traženi zbir je:
+\[
+x + y + n = 2 + 3 + 5 = 10
+\]
+
+\subsection*{Answer}
+10 (option \textbf{C}).
+
+\end{document}

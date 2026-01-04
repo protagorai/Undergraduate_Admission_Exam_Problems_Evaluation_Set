@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Neka je $s = 1+q+q^2+\dots (|q|<1)$ i $S = 1+Q+Q^2+\dots (|Q|<1)$, gde su $s$ i $S$ dati brojevi. Tada je zbir $1+qQ+q^2Q^2+q^3Q^3+\dots$ jednak:
+\begin{enumerate}
+    \item[(A)] $\frac{s \cdot S}{s+S-1}$
+    \item[(B)] $\frac{s \cdot S}{2s \cdot S - s - S + 1}$
+    \item[(C)] $\frac{s \cdot S}{s \cdot S + s + S - 2}$
+    \item[(D)] $\frac{2s \cdot S - 1}{s+S-1}$
+    \item[(E)] $s \cdot S$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+We are given two infinite geometric series sums:
+\[
+s = \sum_{n=0}^{\infty} q^n = \frac{1}{1-q} \implies 1-q = \frac{1}{s} \implies q = 1 - \frac{1}{s} = \frac{s-1}{s}
+\]
+\[
+S = \sum_{n=0}^{\infty} Q^n = \frac{1}{1-Q} \implies 1-Q = \frac{1}{S} \implies Q = 1 - \frac{1}{S} = \frac{S-1}{S}
+\]
+We want to find the sum of the series $1+qQ+(qQ)^2+\dots$. Since $|q|<1$ and $|Q|<1$, $|qQ|<1$, so the series converges.
+Let $X$ be the sum:
+\[
+X = \sum_{n=0}^{\infty} (qQ)^n = \frac{1}{1-qQ}
+\]
+Substitute $q$ and $Q$:
+\[
+1-qQ = 1 - \left(\frac{s-1}{s}\right)\left(\frac{S-1}{S}\right) = 1 - \frac{sS - s - S + 1}{sS}
+\]
+\[
+1-qQ = \frac{sS - (sS - s - S + 1)}{sS} = \frac{s+S-1}{sS}
+\]
+Thus:
+\[
+X = \frac{1}{\frac{s+S-1}{sS}} = \frac{sS}{s+S-1}
+\]
+
+\subsection*{Answer}
+$\frac{s \cdot S}{s+S-1}$ (option \textbf{(A)}).
+
+\end{document}

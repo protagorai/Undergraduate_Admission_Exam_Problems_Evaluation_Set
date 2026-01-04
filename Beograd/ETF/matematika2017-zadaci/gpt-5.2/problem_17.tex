@@ -1,0 +1,59 @@
+\section*{Zadatak 17}
+Izra\v{c}unati vrednost izraza
+\[
+\frac{\sin 2^\circ+\sin 4^\circ+\sin 6^\circ-\sin 12^\circ}{\sin 3^\circ\sin 4^\circ\sin 5^\circ}.
+\]
+
+\subsection*{Re\v{s}enje}
+Najpre grupi\v{s}emo prva tri sabirka:
+\[
+\sin 2^\circ+\sin 6^\circ=2\sin 4^\circ\cos 2^\circ,
+\]
+pa je brojilac
+\[
+N=2\sin 4^\circ\cos 2^\circ+\sin 4^\circ-\sin 12^\circ
+=\sin 4^\circ(2\cos 2^\circ+1)-\sin 12^\circ.
+\]
+Koristimo
+\[
+\sin 12^\circ=\sin(4^\circ+8^\circ)=\sin 4^\circ\cos 8^\circ+\cos 4^\circ\sin 8^\circ,
+\]
+i \v{c}injenicu $\sin 8^\circ=2\sin 4^\circ\cos 4^\circ$. Tada
+\[
+N=\sin 4^\circ(2\cos 2^\circ+1-\cos 8^\circ)-\cos 4^\circ\cdot 2\sin 4^\circ\cos 4^\circ
+\]
+\[
+=\sin 4^\circ\bigl(2\cos 2^\circ+1-\cos 8^\circ-2\cos^2 4^\circ\bigr).
+\]
+Po\v{s}to je $2\cos^2 4^\circ=1+\cos 8^\circ$, dobijamo
+\[
+N=\sin 4^\circ\bigl(2\cos 2^\circ-2\cos 8^\circ\bigr)
+=2\sin 4^\circ(\cos 2^\circ-\cos 8^\circ).
+\]
+Imenilac je
+\[
+D=\sin 3^\circ\sin 4^\circ\sin 5^\circ
+=\sin 4^\circ(\sin 3^\circ\sin 5^\circ).
+\]
+A
+\[
+\sin 3^\circ\sin 5^\circ=\frac12\bigl(\cos(3^\circ-5^\circ)-\cos(3^\circ+5^\circ)\bigr)
+=\frac12(\cos 2^\circ-\cos 8^\circ).
+\]
+Zato je
+\[
+D=\sin 4^\circ\cdot \frac12(\cos 2^\circ-\cos 8^\circ).
+\]
+Kona\v{c}no,
+\[
+\frac{N}{D}
+\;=\;
+\frac{2\sin 4^\circ(\cos 2^\circ-\cos 8^\circ)}{\sin 4^\circ\cdot \frac12(\cos 2^\circ-\cos 8^\circ)}
+\;=\;4.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\;\; 4}
+\]
+

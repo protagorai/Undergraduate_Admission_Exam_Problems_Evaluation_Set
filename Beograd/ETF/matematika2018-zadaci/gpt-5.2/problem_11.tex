@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Naći skup svih realnih $k$ za koje rešenja $x_1,x_2$ jednačine
+\[
+x^2-(k-5)x+k-6=0
+\]
+zadovoljavaju:
+\[
+\frac{1}{x_1}+\frac{1}{x_2}<\frac12,\qquad x_1^2+x_2^2\ge 2.
+\]
+
+\subsection*{Solution}
+Po Vijetovim formulama:
+\[
+S=x_1+x_2=k-5,\qquad P=x_1x_2=k-6.
+\]
+Pošto se pojavljuju recipročne vrednosti, mora biti $P\ne 0$, tj. $k\ne 6$.
+
+\medskip
+\textbf{1) Prvi uslov.}
+\[
+\frac1{x_1}+\frac1{x_2}=\frac{x_1+x_2}{x_1x_2}=\frac{S}{P}=\frac{k-5}{k-6}<\frac12.
+\]
+Prebacimo na jednu stranu:
+\[
+\frac{k-5}{k-6}-\frac12=\frac{2(k-5)-(k-6)}{2(k-6)}=\frac{k-4}{2(k-6)}<0
+\;\Longleftrightarrow\;
+\frac{k-4}{k-6}<0.
+\]
+Razlomak je negativan kada su brojilac i imenilac suprotnih znakova, pa je
+\[
+4<k<6.
+\]
+
+\medskip
+\textbf{2) Drugi uslov.}
+\[
+x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=S^2-2P=(k-5)^2-2(k-6)=k^2-12k+37.
+\]
+Uslov $x_1^2+x_2^2\ge 2$ daje
+\[
+k^2-12k+37\ge 2 \;\Longleftrightarrow\; k^2-12k+35\ge 0
+\;\Longleftrightarrow\; (k-6)^2\ge 1,
+\]
+odnosno
+\[
+k\le 5 \quad \text{ili}\quad k\ge 7.
+\]
+
+\medskip
+\textbf{3) Presek uslova.}
+Sa $4<k<6$ dobijamo
+\[
+(4,6)\cap\big((-\infty,5]\cup[7,\infty)\big)=(4,5].
+\]
+
+\subsection*{Answer}
+$(4,5]$ (option \textbf{A}).
+
+\end{document}
+

@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Skup svih realnih vrednosti $x$ za koje važi nejednakost $|4^{3x} - 2^{4x+2} \cdot 3^{x+1} + 20 \cdot 12^x \cdot 3^x| \ge 8 \cdot 6^x (8^{x-1} + 6^x)$ je oblika:
+
+\subsection*{Solution}
+Sredimo izraze u nejednačini:
+$4^{3x} = 64^x$.
+$2^{4x+2} \cdot 3^{x+1} = 4 \cdot 16^x \cdot 3 \cdot 3^x = 12 \cdot 48^x$.
+$20 \cdot 12^x \cdot 3^x = 20 \cdot 36^x$.
+Desna strana: $8 \cdot 6^x \cdot 8^{x-1} + 8 \cdot 6^x \cdot 6^x = 6^x \cdot 8^x + 8 \cdot 36^x = 48^x + 8 \cdot 36^x$.
+Nejednačina:
+$|64^x - 12 \cdot 48^x + 20 \cdot 36^x| \ge 48^x + 8 \cdot 36^x$.
+Podelimo sve sa $36^x$ (pozitivno):
+$|(\frac{64}{36})^x - 12 (\frac{48}{36})^x + 20| \ge (\frac{48}{36})^x + 8$.
+$|(\frac{16}{9})^x - 12 (\frac{4}{3})^x + 20| \ge (\frac{4}{3})^x + 8$.
+Smena $t = (\frac{4}{3})^x$.
+$|t^2 - 12t + 20| \ge t + 8$.
+Nule kvadratne funkcije su $2$ i $10$.
+1. $t \in [0, 2] \cup [10, \infty)$: $t^2 - 12t + 20 \ge t + 8 \Rightarrow t^2 - 13t + 12 \ge 0$.
+$(t-1)(t-12) \ge 0 \Rightarrow t \in [0, 1] \cup [12, \infty)$.
+2. $t \in (2, 10)$: $-(t^2 - 12t + 20) \ge t + 8 \Rightarrow t^2 - 11t + 28 \le 0$.
+$(t-4)(t-7) \le 0 \Rightarrow t \in [4, 7]$.
+Unija rešenja za $t$: $[0, 1] \cup [4, 7] \cup [12, \infty)$.
+Vraćamo na $x$:
+$x \in (-\infty, 0] \cup [\log_{4/3} 4, \log_{4/3} 7] \cup [\log_{4/3} 12, \infty)$.
+Oblik je $(-\infty, a] \cup [b, c] \cup [d, +\infty)$.
+
+\subsection*{Answer}
+$(-\infty, a] \cup [b, c] \cup [d, +\infty)$ (option \textbf{A}).
+
+\end{document}

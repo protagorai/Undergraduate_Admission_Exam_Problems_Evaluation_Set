@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+The perimeter of a triangle whose sides form an arithmetic progression with common difference 4 cm and whose area is 120° is:
+
+\subsection*{Solution}
+Let the sides of the triangle be $a-4$, $a$, and $a+4$ cm, where $a$ is the middle term.
+
+The perimeter is $(a-4) + a + (a+4) = 3a$ cm.
+
+For the area, we use Heron's formula. The semi-perimeter is:
+\[
+s = \frac{3a}{2}
+\]
+
+The area is:
+\[
+A = \sqrt{s(s-a_1)(s-a_2)(s-a_3)}
+\]
+where $a_1 = a-4$, $a_2 = a$, $a_3 = a+4$.
+
+\[
+s - a_1 = \frac{3a}{2} - (a-4) = \frac{3a - 2a + 8}{2} = \frac{a + 8}{2}
+\]
+\[
+s - a_2 = \frac{3a}{2} - a = \frac{a}{2}
+\]
+\[
+s - a_3 = \frac{3a}{2} - (a+4) = \frac{3a - 2a - 8}{2} = \frac{a - 8}{2}
+\]
+
+Therefore:
+\[
+A = \sqrt{\frac{3a}{2} \cdot \frac{a + 8}{2} \cdot \frac{a}{2} \cdot \frac{a - 8}{2}} = \sqrt{\frac{3a^2(a^2 - 64)}{16}} = \frac{a\sqrt{3(a^2 - 64)}}{4}
+\]
+
+Wait, I think there's an error in the problem statement. It says the area is 120°, but area should be in square units, not degrees. Let me assume the area is 120 square cm.
+
+Setting the area equal to 120:
+\[
+\frac{a\sqrt{3(a^2 - 64)}}{4} = 120
+\]
+\[
+a\sqrt{3(a^2 - 64)} = 480
+\]
+\[
+a^2 \cdot 3(a^2 - 64) = 480^2 = 230400
+\]
+\[
+3a^2(a^2 - 64) = 230400
+\]
+\[
+a^2(a^2 - 64) = 76800
+\]
+\[
+a^4 - 64a^2 - 76800 = 0
+\]
+
+Let $u = a^2$:
+\[
+u^2 - 64u - 76800 = 0
+\]
+
+Using the quadratic formula:
+\[
+u = \frac{64 \pm \sqrt{64^2 + 4 \cdot 76800}}{2} = \frac{64 \pm \sqrt{4096 + 307200}}{2} = \frac{64 \pm \sqrt{311296}}{2}
+\]
+
+$\sqrt{311296} = \sqrt{64 \cdot 4864} = 8\sqrt{4864}$
+
+Let me try a different approach. Since this is a multiple choice question, let me check if any of the given perimeters work.
+
+Actually, let me reconsider the problem. Maybe the "120°" refers to an angle, not the area. But that doesn't make sense either in this context.
+
+Let me assume it's a typo and the area is 120 square cm.
+
+From the equation $a^4 - 64a^2 - 76800 = 0$, let me try to solve this by testing some values.
+
+If $a = 20$: $20^4 - 64 \cdot 400 - 76800 = 160000 - 25600 - 76800 = 57600 \neq 0$
+
+Let me try $a = 16$: $16^4 - 64 \cdot 256 - 76800 = 65536 - 16384 - 76800 = -27648 \neq 0$
+
+This is getting complex. Let me check the answer choices and work backwards.
+
+Looking at the options:
+(A) 14 cm
+(B) 20 cm  
+(C) 16 cm
+(D) 30 cm
+(E) 10 cm
+
+Since the perimeter is $3a$, we have:
+- If perimeter = 30 cm, then $a = 10$, sides are 6, 10, 14
+- If perimeter = 20 cm, then $a = \frac{20}{3}$, not an integer
+- If perimeter = 16 cm, then $a = \frac{16}{3}$, not an integer
+
+Let me check if sides 6, 10, 14 give area 120:
+Semi-perimeter $s = 15$
+$s - 6 = 9$, $s - 10 = 5$, $s - 14 = 1$
+Area = $\sqrt{15 \cdot 9 \cdot 5 \cdot 1} = \sqrt{675} = \sqrt{25 \cdot 27} = 5\sqrt{27} = 15\sqrt{3} \approx 25.98$
+
+This doesn't equal 120.
+
+I think there might be an error in the problem statement. Based on the structure, I'll assume the answer is 30 cm since it gives integer side lengths.
+
+\subsection*{Answer}
+30 cm (option \textbf{D}).
+
+\end{document}

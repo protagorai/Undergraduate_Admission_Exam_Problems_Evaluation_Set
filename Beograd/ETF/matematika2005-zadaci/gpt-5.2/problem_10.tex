@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+U proizvoljnom trouglu čije su stranice $a,b,c$ i odgovarajući uglovi $\alpha$ i $\beta$ količnik
+\[
+\frac{\sin(\alpha-\beta)}{\sin(\alpha+\beta)}
+\]
+jednak je:
+\[
+\text{(A) }\frac{(a-b)^2}{c^2}\quad
+\text{(B) }\frac{c^2}{a^2-b^2}\quad
+\text{(C) }\frac{a^2-b^2}{c^2}\quad
+\text{(D) }\frac{c^2}{(a-b)^2}\quad
+\text{(E) }\frac{(a-b)^2}{(a+b)^2}\quad
+\text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Koristimo formulu:
+\[
+\sin(\alpha\pm\beta)=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta.
+\]
+Po teoremi sinusa $\sin\alpha=\dfrac{a}{2R}$ i $\sin\beta=\dfrac{b}{2R}$, pa je
+\[
+\frac{\sin(\alpha-\beta)}{\sin(\alpha+\beta)}
+=\frac{a\cos\beta-b\cos\alpha}{a\cos\beta+b\cos\alpha}.
+\]
+Po kosinusnoj teoremi:
+\[
+\cos\alpha=\frac{b^2+c^2-a^2}{2bc},\qquad
+\cos\beta=\frac{a^2+c^2-b^2}{2ac}.
+\]
+Zato
+\[
+a\cos\beta=\frac{a^2+c^2-b^2}{2c},\qquad
+b\cos\alpha=\frac{b^2+c^2-a^2}{2c}.
+\]
+Sledi:
+\[
+a\cos\beta-b\cos\alpha=\frac{(a^2+c^2-b^2)-(b^2+c^2-a^2)}{2c}=\frac{a^2-b^2}{c},
+\]
+\[
+a\cos\beta+b\cos\alpha=\frac{(a^2+c^2-b^2)+(b^2+c^2-a^2)}{2c}=\frac{2c^2}{2c}=c.
+\]
+Dakle,
+\[
+\frac{\sin(\alpha-\beta)}{\sin(\alpha+\beta)}=\frac{(a^2-b^2)/c}{c}=\frac{a^2-b^2}{c^2}.
+\]
+
+\subsection*{Answer}
+$\dfrac{a^2-b^2}{c^2}$ (option \textbf{C}).
+
+\end{document}
+

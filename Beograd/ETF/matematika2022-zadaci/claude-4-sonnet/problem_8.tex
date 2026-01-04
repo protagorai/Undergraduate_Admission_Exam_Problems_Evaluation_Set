@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Broj različitih prirodnih brojeva napisanih pomoću cifara 1, 2, 3, 4, 5 tako da se svaka cifra koristi najviše jednom je:
+
+\subsection*{Solution}
+Trebamo da prebrojimo sve prirodne brojeve koji se mogu formirati koristeći cifre 1, 2, 3, 4, 5, gde se svaka cifra koristi najviše jednom.
+
+Ovo uključuje:
+- Jednocifrene brojeve: 5 brojeva (1, 2, 3, 4, 5)
+- Dvocifrene brojeve: $5 \times 4 = 20$ brojeva
+- Trocifrene brojeve: $5 \times 4 \times 3 = 60$ brojeva  
+- Četvorocifrene brojeve: $5 \times 4 \times 3 \times 2 = 120$ brojeva
+- Petocifrene brojeve: $5 \times 4 \times 3 \times 2 \times 1 = 120$ brojeva
+
+Ukupno:
+\[
+5 + 20 + 60 + 120 + 120 = 325
+\]
+
+\subsection*{Answer}
+325 (option \textbf{A}).
+
+\end{document}

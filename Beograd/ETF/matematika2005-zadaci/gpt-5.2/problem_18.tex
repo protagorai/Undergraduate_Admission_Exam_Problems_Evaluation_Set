@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Ako je
+\[
+\tan\alpha=\frac{(1+\tan 1^\circ)(1+\tan 2^\circ)-2}{(1-\tan 1^\circ)(1-\tan 2^\circ)-2}
+\]
+i $\alpha\in(0,90^\circ)$, tada je $\alpha$:
+\[
+\text{(A) }40^\circ\quad \text{(B) }41^\circ\quad \text{(C) }42^\circ\quad \text{(D) }43^\circ\quad \text{(E) }44^\circ\quad \text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Označimo $t_1=\tan 1^\circ$, $t_2=\tan 2^\circ$. Tada:
+\[
+(1+t_1)(1+t_2)-2=t_1+t_2+t_1t_2-1,
+\]
+\[
+(1-t_1)(1-t_2)-2=t_1t_2-t_1-t_2-1.
+\]
+Dakle,
+\[
+\tan\alpha=\frac{t_1t_2+(t_1+t_2)-1}{t_1t_2-(t_1+t_2)-1}.
+\]
+Neka su $S=t_1+t_2$ i $P=t_1t_2$. Iz formule za tangens zbira:
+\[
+\tan 3^\circ=\tan(1^\circ+2^\circ)=\frac{S}{1-P}\quad\Rightarrow\quad S=\tan 3^\circ\,(1-P).
+\]
+Ubacivanjem dobijamo:
+\begin{align*}
+\tan\alpha
+&=\frac{P+\tan 3^\circ(1-P)-1}{P-\tan 3^\circ(1-P)-1}\\
+&=\frac{(1-\tan 3^\circ)(P-1)}{(1+\tan 3^\circ)(P-1)}
+=\frac{1-\tan 3^\circ}{1+\tan 3^\circ}.
+\end{align*}
+Prepoznajemo formulu
+\[
+\tan(45^\circ-\theta)=\frac{1-\tan\theta}{1+\tan\theta},
+\]
+pa je
+\[
+\tan\alpha=\tan(45^\circ-3^\circ)=\tan 42^\circ.
+\]
+Kako je $\alpha\in(0,90^\circ)$, sledi $\alpha=42^\circ$.
+
+\subsection*{Answer}
+$42^\circ$ (option \textbf{C}).
+
+\end{document}
+

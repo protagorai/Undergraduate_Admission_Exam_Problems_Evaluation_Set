@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Maksimalna površina pravougaonika upisanog u parabolički odsetak ograničen parabolom $y = 1 - x^2$ i pravom $y = 0$, tako da mu jedna stranica pripada $x$-osi, jeste:
+
+\subsection*{Solution}
+Parabola $y = 1 - x^2$ seče $x$-osu kada je $y = 0$:
+$1 - x^2 = 0$
+$x^2 = 1$
+$x = \pm 1$
+
+Dakle, parabolički odsetak je ograničen tačkama $(-1, 0)$, $(1, 0)$ i vrhom parabole $(0, 1)$.
+
+Neka je pravougaonik sa temenom na $x$-osi u tačkama $(-a, 0)$ i $(a, 0)$ gde je $0 < a \leq 1$.
+
+Visina pravougaonika u tačkama $x = \pm a$ je $y = 1 - a^2$.
+
+Dakle, pravougaonik ima:
+- Širinu: $2a$
+- Visinu: $1 - a^2$
+
+Površina je:
+$P(a) = 2a(1 - a^2) = 2a - 2a^3$
+
+Da bismo našli maksimum, derivišemo po $a$:
+$P'(a) = 2 - 6a^2$
+
+Postavimo $P'(a) = 0$:
+$2 - 6a^2 = 0$
+$6a^2 = 2$
+$a^2 = \frac{1}{3}$
+$a = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$
+
+Proveravamo da je ovo maksimum:
+$P''(a) = -12a$
+$P''\left(\frac{\sqrt{3}}{3}\right) = -12 \cdot \frac{\sqrt{3}}{3} = -4\sqrt{3} < 0$ ✓
+
+Maksimalna površina je:
+$P\left(\frac{\sqrt{3}}{3}\right) = 2 \cdot \frac{\sqrt{3}}{3} \left(1 - \left(\frac{\sqrt{3}}{3}\right)^2\right)$
+
+$= \frac{2\sqrt{3}}{3} \left(1 - \frac{1}{3}\right) = \frac{2\sqrt{3}}{3} \cdot \frac{2}{3} = \frac{4\sqrt{3}}{9}$
+
+\subsection*{Answer}
+$\frac{4\sqrt{3}}{9}$ (opcija \textbf{B}).
+
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Dat je trougao $ABC$ sa stranicama $AB = \sqrt{2}$ cm i $AC = \sqrt{3}$ cm. Neka je tačka $D$ na stranici $BC$ tako da je $\angle BAD = 30^\circ$ i $\angle CAD = 45^\circ$. Dužina duži $AD$ iznosi (u cm):
+\begin{enumerate}
+    \item[(A)] $\frac{\sqrt{6}}{2}$
+    \item[(B)] $\frac{1}{\sqrt{2}+\sqrt{6}}$
+    \item[(C)] $\sqrt{\frac{5}{2}}$
+    \item[(D)] $\frac{\sqrt{6}+1}{\sqrt{2}+\sqrt{6}}$
+    \item[(E)] $\frac{1}{2}$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let $AD = x$.
+We use the area method. Area($ABC$) = Area($ABD$) + Area($ADC$).
+Area($ABD$) = $\frac{1}{2} AB \cdot AD \sin 30^\circ = \frac{1}{2} \sqrt{2} x \frac{1}{2} = \frac{\sqrt{2}}{4}x$.
+Area($ADC$) = $\frac{1}{2} AC \cdot AD \sin 45^\circ = \frac{1}{2} \sqrt{3} x \frac{\sqrt{2}}{2} = \frac{\sqrt{6}}{4}x$.
+Area($ABC$) = $\frac{1}{2} AB \cdot AC \sin(30^\circ+45^\circ) = \frac{1}{2} \sqrt{2} \sqrt{3} \sin 75^\circ$.
+$\sin 75^\circ = \sin(45^\circ+30^\circ) = \frac{\sqrt{2}}{2}\frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2}\frac{1}{2} = \frac{\sqrt{6}+\sqrt{2}}{4}$.
+Area($ABC$) = $\frac{\sqrt{6}}{2} \frac{\sqrt{6}+\sqrt{2}}{4} = \frac{6 + \sqrt{12}}{8} = \frac{6 + 2\sqrt{3}}{8} = \frac{3+\sqrt{3}}{4}$.
+Equating areas:
+\[
+\frac{\sqrt{2}}{4}x + \frac{\sqrt{6}}{4}x = \frac{3+\sqrt{3}}{4}
+\]
+\[
+x(\sqrt{2}+\sqrt{6}) = 3+\sqrt{3}
+\]
+\[
+x(\sqrt{2}+\sqrt{6}) = \sqrt{3}(\sqrt{3}+1)
+\]
+Note that $\sqrt{2}+\sqrt{6} = \sqrt{2}(1+\sqrt{3})$.
+\[
+x \sqrt{2}(1+\sqrt{3}) = \sqrt{3}(1+\sqrt{3})
+\]
+\[
+x \sqrt{2} = \sqrt{3} \implies x = \frac{\sqrt{3}}{\sqrt{2}} = \frac{\sqrt{6}}{2}
+\]
+
+\subsection*{Answer}
+$\frac{\sqrt{6}}{2}$ (option \textbf{(A)}).
+
+\end{document}

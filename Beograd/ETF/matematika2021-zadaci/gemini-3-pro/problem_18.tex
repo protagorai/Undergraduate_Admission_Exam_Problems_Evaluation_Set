@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 18}
+Ostatak pri deljenju polinoma $P(x) = x^{2024}+x^{2023}+x^{2022}+x^{2021}+x^{20}+1$ polinomom $Q(x) = x^3+x^2+x+1$ jeste:
+
+\subsection*{Rešenje}
+$Q(x) = x^2(x+1) + (x+1) = (x^2+1)(x+1)$.
+Koreni $Q(x)$ su $i, -i, -1$.
+Ostatak je oblika $R(x) = ax^2+bx+c$.
+$P(-1) = 1-1+1-1+1+1 = 2$.
+$P(i) = i^{2024}+i^{2023}+i^{2022}+i^{2021}+i^{20}+1$.
+$i^{2024} = (i^4)^{506} = 1$.
+$P(i) = 1 - i - 1 + i + 1 + 1 = 2$.
+Dakle $R(-1)=2$ i $R(i)=2$.
+$a(-1)^2 + b(-1) + c = 2 \implies a-b+c=2$.
+$a(i)^2 + b(i) + c = 2 \implies -a+c + bi = 2$.
+Iz drugog sledi $b=0$ i $-a+c=2$.
+Iz prvog $a+c=2$.
+Sabiranjem: $2c=4 \implies c=2$. $a=0$.
+Ostatak je $R(x) = 2$.
+
+\subsection*{Odgovor}
+2 (opcija \textbf{B}).
+
+\end{document}

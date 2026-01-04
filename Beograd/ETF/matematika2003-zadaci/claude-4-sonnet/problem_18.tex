@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+The sum $1 + 11 + 111 + \cdots + \underbrace{11\ldots1}_{n}$ equals:
+
+A) $\frac{1}{81}(10^{n+1} - 10 - 9n)$; B) $\frac{1}{9}(10^n - 9n + 8)$; C) $\frac{1}{81}(10^{n+1} - 19n)$; D) $\frac{1}{9}(10^{2n} - 40n - 50)$; E) $\frac{1}{11}(11^n - n + 1)$; N) Ne znam.
+
+\subsection*{Solution}
+Each term in the sum can be written as:
+- $1 = \frac{10^1 - 1}{9}$
+- $11 = \frac{10^2 - 1}{9}$  
+- $111 = \frac{10^3 - 1}{9}$
+- $\vdots$
+- $\underbrace{11\ldots1}_{n} = \frac{10^n - 1}{9}$
+
+So the sum is:
+\[
+S = \sum_{k=1}^{n} \frac{10^k - 1}{9} = \frac{1}{9}\sum_{k=1}^{n}(10^k - 1) = \frac{1}{9}\left(\sum_{k=1}^{n}10^k - \sum_{k=1}^{n}1\right)
+\]
+
+\[
+= \frac{1}{9}\left(\sum_{k=1}^{n}10^k - n\right)
+\]
+
+The geometric series gives us:
+\[
+\sum_{k=1}^{n}10^k = 10 + 10^2 + \cdots + 10^n = 10\frac{10^n - 1}{10 - 1} = \frac{10(10^n - 1)}{9}
+\]
+
+Therefore:
+\[
+S = \frac{1}{9}\left(\frac{10(10^n - 1)}{9} - n\right) = \frac{1}{9} \cdot \frac{10(10^n - 1) - 9n}{9}
+\]
+
+\[
+= \frac{10(10^n - 1) - 9n}{81} = \frac{10 \cdot 10^n - 10 - 9n}{81} = \frac{10^{n+1} - 10 - 9n}{81}
+\]
+
+\subsection*{Answer}
+$\frac{1}{81}(10^{n+1} - 10 - 9n)$ (option \textbf{A}).
+
+\end{document}

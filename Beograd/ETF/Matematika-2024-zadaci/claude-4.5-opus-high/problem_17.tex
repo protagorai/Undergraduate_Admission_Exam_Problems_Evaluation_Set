@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Let there be a triangle with sides $a$, $b$, $c$ and area $P = 15\sqrt{3}$ cm$^2$, 
+circumradius $R = \frac{14\sqrt{3}}{3}$ cm. If $a$ is the side of length 10 cm 
+opposite to an acute angle, find the sum of lengths of sides $b$ and $c$ (in cm).
+
+\subsection*{Solution}
+Using the formula $P = \frac{abc}{4R}$:
+\[
+15\sqrt{3} = \frac{10 \cdot bc}{4 \cdot \frac{14\sqrt{3}}{3}}
+\]
+\[
+15\sqrt{3} = \frac{10 \cdot bc}{\frac{56\sqrt{3}}{3}} = \frac{30bc}{56\sqrt{3}}
+\]
+\[
+15\sqrt{3} \cdot 56\sqrt{3} = 30bc
+\]
+\[
+15 \cdot 56 \cdot 3 = 30bc
+\]
+\[
+2520 = 30bc
+\]
+\[
+bc = 84
+\]
+
+Using the formula $P = \frac{1}{2}bc \sin A$:
+\[
+15\sqrt{3} = \frac{1}{2} \cdot 84 \cdot \sin A
+\]
+\[
+\sin A = \frac{30\sqrt{3}}{84} = \frac{5\sqrt{3}}{14}
+\]
+
+Since $A$ is acute:
+\[
+\cos A = \sqrt{1 - \sin^2 A} = \sqrt{1 - \frac{75}{196}} = \sqrt{\frac{121}{196}} = \frac{11}{14}
+\]
+
+Using the Law of Cosines: $a^2 = b^2 + c^2 - 2bc\cos A$
+\[
+100 = b^2 + c^2 - 2 \cdot 84 \cdot \frac{11}{14}
+\]
+\[
+100 = b^2 + c^2 - 132
+\]
+\[
+b^2 + c^2 = 232
+\]
+
+Now we can find $b + c$:
+\[
+(b + c)^2 = b^2 + 2bc + c^2 = 232 + 2 \cdot 84 = 232 + 168 = 400
+\]
+\[
+b + c = 20
+\]
+
+\subsection*{Answer}
+$20$ (option \textbf{D}).
+
+\end{document}
+

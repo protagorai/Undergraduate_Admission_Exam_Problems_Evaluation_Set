@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 19}
+Neka je $A=\{1, 2, \dots, 2019\}$ i $B=\{(x,y) \in A \times A \mid |x-y| \ge 2\}$. Broj elemenata skupa $B$ jeste:
+
+\subsection*{Solution}
+Ukupan broj parova u $A \times A$ je $2019^2$.
+Posmatrajmo komplementarni skup $B^c = \{(x,y) \in A \times A \mid |x-y| < 2\}$.
+Uslov $|x-y| < 2$ znači da je $|x-y|=0$ ili $|x-y|=1$.
+1. $|x-y|=0 \Rightarrow x=y$. Ima ih 2019.
+2. $|x-y|=1 \Rightarrow y=x+1$ ili $x=y+1$.
+Parovi su $(1,2), (2,3), \dots, (2018, 2019)$ i obrnuto $(2,1), \dots, (2019, 2018)$.
+Ima ih $2 \cdot 2018 = 4036$.
+Broj elemenata u $B$ je:
+$|B| = 2019^2 - (2019 + 4036) = 2019^2 - 2019 - 2(2019-1) = 2019(2019-1) - 2(2019-1)$
+$= (2019-2)(2019-1) = 2017 \cdot 2018$.
+
+\subsection*{Answer}
+$2018 \cdot 2017$ (Opcija \textbf{C})
+
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Koeficijent uz $a^8$ u razvoju binoma $\left(\frac{1}{\sqrt{a}} - a\right)^{12}$ je:
+
+\subsection*{Solution}
+Koristimo binomnu teoremu:
+$\left(\frac{1}{\sqrt{a}} - a\right)^{12} = \sum_{k=0}^{12} \binom{12}{k} \left(\frac{1}{\sqrt{a}}\right)^{12-k} (-a)^k$
+
+$= \sum_{k=0}^{12} \binom{12}{k} \frac{1}{a^{(12-k)/2}} (-1)^k a^k$
+
+$= \sum_{k=0}^{12} \binom{12}{k} (-1)^k a^{k - (12-k)/2}$
+
+$= \sum_{k=0}^{12} \binom{12}{k} (-1)^k a^{k - 6 + k/2}$
+
+$= \sum_{k=0}^{12} \binom{12}{k} (-1)^k a^{3k/2 - 6}$
+
+Za koeficijent uz $a^8$, trebamo:
+$\frac{3k}{2} - 6 = 8$
+$\frac{3k}{2} = 14$
+$3k = 28$
+$k = \frac{28}{3}$
+
+Pošto $k$ mora biti ceo broj, nema člana sa $a^8$.
+
+Međutim, proverimo ponovo. Imamo:
+$\left(a^{-1/2} - a\right)^{12}$
+
+Opšti član je:
+$\binom{12}{k} (a^{-1/2})^{12-k} (-a)^k = \binom{12}{k} (-1)^k a^{-(12-k)/2} a^k = \binom{12}{k} (-1)^k a^{k - (12-k)/2}$
+
+$= \binom{12}{k} (-1)^k a^{k - 6 + k/2} = \binom{12}{k} (-1)^k a^{3k/2 - 6}$
+
+Za $a^8$: $\frac{3k}{2} - 6 = 8$, pa $k = \frac{28}{3}$, što nije ceo broj.
+
+Možda je greška u interpretaciji. Pokušajmo drugačije:
+$\left(\frac{1}{\sqrt{a}} - a\right)^{12} = \left(a^{-1/2} - a^1\right)^{12}$
+
+Opšti član: $\binom{12}{k} (a^{-1/2})^{12-k} (-a^1)^k = \binom{12}{k} (-1)^k a^{-(12-k)/2 + k}$
+
+$= \binom{12}{k} (-1)^k a^{-6 + k/2 + k} = \binom{12}{k} (-1)^k a^{3k/2 - 6}$
+
+Dakle, za $a^8$: $\frac{3k}{2} - 6 = 8$, što daje $k = \frac{28}{3}$.
+
+Pošto ovo nije ceo broj, koeficijent je 0.
+
+\subsection*{Answer}
+$0$ (opcija \textbf{A}).
+
+\end{document}

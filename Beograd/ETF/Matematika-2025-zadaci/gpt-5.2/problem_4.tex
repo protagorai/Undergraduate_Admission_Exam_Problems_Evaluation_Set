@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 4}
+Ako je kompleksan broj $z$ rešenje jednačine
+\[
+|z| - z + 2\overline{z} + 12i - 2 = 0,
+\]
+onda je $|z|$ jednako.
+
+\subsection*{Solution}
+Neka je $z=x+iy$, pa je $\overline{z}=x-iy$ i $|z|=\sqrt{x^2+y^2}$.
+Ubacivanjem dobijamo:
+\[
+|z|-(x+iy)+2(x-iy)+12i-2=0.
+\]
+Razdvojimo realni i imaginarni deo:
+\[
+(|z|+x-2)+i(12-3y)=0.
+\]
+Dakle $12-3y=0\Rightarrow y=4$, a zatim $|z|+x-2=0\Rightarrow |z|=2-x$.
+Sada
+\[
+|z|=\sqrt{x^2+16}=2-x.
+\]
+Kvadriranjem (uz uslov $2-x\ge 0$) dobijamo:
+\[
+x^2+16=(2-x)^2=x^2-4x+4 \Rightarrow 16=-4x+4 \Rightarrow x=-3,
+\]
+pa je
+\[
+|z|=\sqrt{(-3)^2+4^2}=5.
+\]
+
+\subsection*{Answer}
+$5$ (option \textbf{D}).
+
+\end{document}
+
+

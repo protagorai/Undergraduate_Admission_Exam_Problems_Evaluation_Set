@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako za dijagonale romba važi jednakost $d_1 = (2 - \sqrt{3})d_2$, tada je oštar ugao romba jednak:
+
+\subsection*{Solution}
+Let the diagonals of the rhombus be $d_1$ and $d_2$, where $d_1 = (2 - \sqrt{3})d_2$.
+
+The diagonals of a rhombus bisect each other at right angles. If $\alpha$ is an acute angle of the rhombus, then:
+\[
+\tan\left(\frac{\alpha}{2}\right) = \frac{d_1/2}{d_2/2} = \frac{d_1}{d_2} = 2 - \sqrt{3}
+\]
+
+We recognize that $\tan(15°) = 2 - \sqrt{3}$.
+
+To verify: $\tan(15°) = \tan(45° - 30°) = \dfrac{\tan 45° - \tan 30°}{1 + \tan 45° \tan 30°} = \dfrac{1 - \frac{1}{\sqrt{3}}}{1 + \frac{1}{\sqrt{3}}} = \dfrac{\sqrt{3} - 1}{\sqrt{3} + 1}$
+
+Rationalizing:
+\[
+\frac{\sqrt{3} - 1}{\sqrt{3} + 1} \cdot \frac{\sqrt{3} - 1}{\sqrt{3} - 1} = \frac{(\sqrt{3} - 1)^2}{3 - 1} = \frac{3 - 2\sqrt{3} + 1}{2} = \frac{4 - 2\sqrt{3}}{2} = 2 - \sqrt{3}
+\]
+
+So $\dfrac{\alpha}{2} = 15°$, which gives $\alpha = 30°$.
+
+\subsection*{Answer}
+$30°$ (option \textbf{B}).
+
+\end{document}

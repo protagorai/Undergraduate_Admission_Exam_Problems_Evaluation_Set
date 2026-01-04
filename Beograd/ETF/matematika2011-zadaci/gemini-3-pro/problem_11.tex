@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 11}
+Ukupan broj realnih rešenja sistema jednačina $\frac{x+y}{x-y} + \frac{x-y}{x+y} = \frac{5}{2}$, $x^2+y^2=20$ jeste:
+\[
+(A)\; 0 \quad (B)\; 2 \quad (C)\; 4 \quad (D)\; 6 \quad (E)\; 8
+\]
+
+\subsection*{Solution}
+Uvedimo smenu $t = \frac{x+y}{x-y}$. Tada je $\frac{x-y}{x+y} = \frac{1}{t}$.
+Prva jednačina postaje:
+\[
+t + \frac{1}{t} = \frac{5}{2}
+\]
+Množenjem sa $2t$:
+\[
+2t^2 - 5t + 2 = 0
+\]
+Rešenja ove kvadratne jednačine su $t_{1,2} = \frac{5 \pm \sqrt{25-16}}{4} = \frac{5 \pm 3}{4}$.
+Dakle, $t_1 = 2$ i $t_2 = \frac{1}{2}$.
+
+Slučaj 1: $\frac{x+y}{x-y} = 2$
+\[
+x+y = 2(x-y) \Rightarrow x+y = 2x-2y \Rightarrow x = 3y
+\]
+Zamenimo u drugu jednačinu sistema $x^2+y^2=20$:
+\[
+(3y)^2 + y^2 = 20 \Rightarrow 10y^2 = 20 \Rightarrow y^2 = 2 \Rightarrow y = \pm\sqrt{2}
+\]
+Ako je $y=\sqrt{2}$, $x=3\sqrt{2}$. Rešenje: $(3\sqrt{2}, \sqrt{2})$.
+Ako je $y=-\sqrt{2}$, $x=-3\sqrt{2}$. Rešenje: $(-3\sqrt{2}, -\sqrt{2})$.
+
+Slučaj 2: $\frac{x+y}{x-y} = \frac{1}{2}$
+\[
+2(x+y) = x-y \Rightarrow 2x+2y = x-y \Rightarrow x = -3y
+\]
+Zamenimo u drugu jednačinu:
+\[
+(-3y)^2 + y^2 = 20 \Rightarrow 10y^2 = 20 \Rightarrow y^2 = 2 \Rightarrow y = \pm\sqrt{2}
+\]
+Ako je $y=\sqrt{2}$, $x=-3\sqrt{2}$. Rešenje: $(-3\sqrt{2}, \sqrt{2})$.
+Ako je $y=-\sqrt{2}$, $x=3\sqrt{2}$. Rešenje: $(3\sqrt{2}, -\sqrt{2})$.
+
+Ukupno imamo 4 realna rešenja.
+
+\subsection*{Answer}
+4 (option \textbf{C}).
+
+\end{document}

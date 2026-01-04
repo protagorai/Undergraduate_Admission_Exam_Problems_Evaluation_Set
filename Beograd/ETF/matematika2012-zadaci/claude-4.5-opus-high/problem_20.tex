@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Najmanja vrednost funkcije $f(x) = 4x + \frac{9\pi^2}{x} + \sin x$ za $0 < x < +\infty$ je:
+
+(A) $5\pi + 2$ \quad (B) $\frac{5\pi}{2}$ \quad (C) $12\pi - 1$ \quad (D) $3\pi + 1$ \quad (E) $\pi^2$ \quad (N) Ne znam
+
+\subsection*{Solution}
+We want to minimize $f(x) = 4x + \frac{9\pi^2}{x} + \sin x$ for $x > 0$.
+
+First, note that by AM-GM inequality:
+\[
+4x + \frac{9\pi^2}{x} \geq 2\sqrt{4x \cdot \frac{9\pi^2}{x}} = 2\sqrt{36\pi^2} = 12\pi
+\]
+
+Equality holds when $4x = \frac{9\pi^2}{x}$, i.e., $4x^2 = 9\pi^2$, so $x = \frac{3\pi}{2}$ (taking positive root).
+
+At $x = \frac{3\pi}{2}$:
+\[
+\sin\frac{3\pi}{2} = -1
+\]
+
+So:
+\[
+f\left(\frac{3\pi}{2}\right) = 12\pi + (-1) = 12\pi - 1
+\]
+
+To verify this is indeed the minimum, we check the derivative:
+\[
+f'(x) = 4 - \frac{9\pi^2}{x^2} + \cos x
+\]
+
+At $x = \frac{3\pi}{2}$:
+\[
+f'\left(\frac{3\pi}{2}\right) = 4 - \frac{9\pi^2}{(3\pi/2)^2} + \cos\frac{3\pi}{2} = 4 - \frac{9\pi^2}{9\pi^2/4} + 0 = 4 - 4 + 0 = 0
+\]
+
+The second derivative:
+\[
+f''(x) = \frac{18\pi^2}{x^3} - \sin x
+\]
+
+At $x = \frac{3\pi}{2}$:
+\[
+f''\left(\frac{3\pi}{2}\right) = \frac{18\pi^2}{(3\pi/2)^3} - \sin\frac{3\pi}{2} = \frac{18\pi^2}{27\pi^3/8} + 1 = \frac{18\pi^2 \cdot 8}{27\pi^3} + 1 = \frac{16}{3\pi} + 1 > 0
+\]
+
+So $x = \frac{3\pi}{2}$ is indeed a local minimum. Given the behavior of $f(x)$ as $x \to 0^+$ and $x \to +\infty$ (both go to $+\infty$), this is the global minimum.
+
+\subsection*{Answer}
+$12\pi - 1$ (option \textbf{C}).
+
+\end{document}

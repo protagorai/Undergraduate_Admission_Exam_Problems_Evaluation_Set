@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+U geometrijskoj progresiji je $a_1 + a_5 = 51$, $a_2 + a_6 = 102$. Za koju vrednost $n$ je zbir $n$ prvih članova te progresije $S_n = 3069$?
+\begin{enumerate}
+\item[(A)] $n = 4$
+\item[(B)] $n = 6$
+\item[(C)] $n = 8$
+\item[(D)] $n = 10$
+\item[(E)] $n = 12$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+U geometrijskoj progresiji je $a_n = a_1 \cdot q^{n-1}$, gde je $q$ količnik progresije.
+
+Imamo:
+\begin{align}
+a_1 + a_5 &= a_1 + a_1 q^4 = a_1(1 + q^4) = 51 \\
+a_2 + a_6 &= a_1 q + a_1 q^5 = a_1 q(1 + q^4) = 102
+\end{align}
+
+Iz druge jednačine:
+\[
+a_1 q(1 + q^4) = 102
+\]
+
+Delimo drugu jednačinu prvom:
+\[
+\frac{a_1 q(1 + q^4)}{a_1(1 + q^4)} = \frac{102}{51} = 2
+\]
+\[
+q = 2
+\]
+
+Sada iz prve jednačine:
+\[
+a_1(1 + 2^4) = a_1(1 + 16) = 17a_1 = 51
+\]
+\[
+a_1 = 3
+\]
+
+Proveravamo:
+\begin{align}
+a_1 + a_5 &= 3 + 3 \cdot 2^4 = 3 + 3 \cdot 16 = 3 + 48 = 51 \checkmark \\
+a_2 + a_6 &= 3 \cdot 2 + 3 \cdot 2^5 = 6 + 3 \cdot 32 = 6 + 96 = 102 \checkmark
+\end{align}
+
+Formula za zbir prvih $n$ članova geometrijske progresije je:
+\[
+S_n = a_1 \frac{q^n - 1}{q - 1} = 3 \frac{2^n - 1}{2 - 1} = 3(2^n - 1)
+\]
+
+Tražimo $n$ takvo da je $S_n = 3069$:
+\[
+3(2^n - 1) = 3069
+\]
+\[
+2^n - 1 = 1023
+\]
+\[
+2^n = 1024 = 2^{10}
+\]
+\[
+n = 10
+\]
+
+\subsection*{Answer}
+$n = 10$, što odgovara opciji \textbf{(D)}.
+
+\end{document}

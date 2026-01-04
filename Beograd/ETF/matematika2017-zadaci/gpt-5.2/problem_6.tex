@@ -1,0 +1,42 @@
+\section*{Zadatak 6}
+Data je funkcija
+\[
+f(x)=x-\sin(\pi x)\cos(\pi x)+\frac{\ln(2x)}{x}+e^{\tg(2\pi x)}.
+\]
+Odrediti $f'\!\left(\frac12\right)$.
+
+\subsection*{Resenje}
+Koristimo $\sin(\pi x)\cos(\pi x)=\frac12\sin(2\pi x)$, pa je
+\[
+\frac{d}{dx}\bigl[-\sin(\pi x)\cos(\pi x)\bigr]
+ \;=\;-\frac12\cdot 2\pi\cos(2\pi x)=-\pi\cos(2\pi x).
+\]
+Za $g(x)=\dfrac{\ln(2x)}{x}$ dobijamo
+\[
+g'(x)=\frac{1-\ln(2x)}{x^2}.
+\]
+Za $h(x)=e^{\tg(2\pi x)}$ vazi
+\[
+h'(x)=e^{\tg(2\pi x)}\cdot \sec^2(2\pi x)\cdot 2\pi.
+\]
+Sada u $x=\frac12$:
+\[
+\cos(2\pi\cdot\tfrac12)=\cos\pi=-1 \Rightarrow -\pi\cos(2\pi x)=+\pi,
+\]
+\[
+g'\!\left(\tfrac12\right)=\frac{1-\ln 1}{(1/2)^2}=\frac{1}{1/4}=4,
+\]
+\[
+\tg(2\pi\cdot\tfrac12)=\tg\pi=0,\quad e^0=1,\quad \sec^2\pi=1
+\Rightarrow h'\!\left(\tfrac12\right)=2\pi.
+\]
+Dakle
+\[
+f'\!\left(\tfrac12\right)=1+\pi+4+2\pi=5+3\pi.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(B)\;\; 5+3\pi}
+\]
+

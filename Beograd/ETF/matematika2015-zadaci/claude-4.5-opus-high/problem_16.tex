@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Broj parova $(p, q)$, $p, q \in \mathbf{R}$ takvih da je polinom $x^4 + px^2 + q$ deljiv polinomom $x^2 + px + q$, jednak je:
+
+\subsection*{Solution}
+If $x^4 + px^2 + q$ is divisible by $x^2 + px + q$, then:
+\[
+x^4 + px^2 + q = (x^2 + px + q)(x^2 + ax + b)
+\]
+for some $a, b \in \mathbf{R}$.
+
+Expanding the right side:
+\[
+(x^2 + px + q)(x^2 + ax + b) = x^4 + ax^3 + bx^2 + px^3 + apx^2 + bpx + qx^2 + aqx + bq
+\]
+\[
+= x^4 + (a+p)x^3 + (b + ap + q)x^2 + (bp + aq)x + bq
+\]
+
+Comparing coefficients with $x^4 + 0 \cdot x^3 + px^2 + 0 \cdot x + q$:
+
+\begin{align}
+a + p &= 0 \implies a = -p \\
+b + ap + q &= p \\
+bp + aq &= 0 \\
+bq &= q
+\end{align}
+
+From (1): $a = -p$
+
+From (4): $bq = q \implies q(b-1) = 0$, so $q = 0$ or $b = 1$.
+
+\textbf{Case 1:} $q = 0$
+
+From (2): $b + (-p)p + 0 = p \implies b - p^2 = p \implies b = p + p^2$
+
+From (3): $bp + (-p) \cdot 0 = 0 \implies bp = 0$
+
+So $p(p + p^2) = 0 \implies p^2(1 + p) = 0 \implies p = 0$ or $p = -1$.
+
+This gives $(p, q) = (0, 0)$ or $(-1, 0)$.
+
+\textbf{Case 2:} $b = 1$
+
+From (2): $1 + (-p)p + q = p \implies 1 - p^2 + q = p \implies q = p + p^2 - 1$
+
+From (3): $1 \cdot p + (-p)q = 0 \implies p - pq = 0 \implies p(1 - q) = 0$
+
+So $p = 0$ or $q = 1$.
+
+If $p = 0$: $q = 0 + 0 - 1 = -1$. So $(0, -1)$.
+
+If $q = 1$: $1 = p + p^2 - 1 \implies p^2 + p - 2 = 0 \implies (p+2)(p-1) = 0$
+
+So $p = -2$ or $p = 1$. This gives $(−2, 1)$ and $(1, 1)$.
+
+Total solutions: $(0, 0)$, $(-1, 0)$, $(0, -1)$, $(-2, 1)$, $(1, 1)$ — \textbf{5} pairs.
+
+\subsection*{Answer}
+$5$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 15}
+Neka je dat pravougli trougao čije su katete dužina $a$ i $b$. Neka je nad svakom od stranica ovog pravouglog trougla konstruisan kvadrat. Ako spojimo temena ova tri kvadrata koja ne pripadaju trouglu dobijamo šestougao. Površina ovog šestougla jednaka je:
+
+\subsection*{Rešenje}
+Površina šestougla se sastoji od:
+1. Površine početnog trougla $P_{tr} = \frac{ab}{2}$.
+2. Površina tri kvadrata: $a^2 + b^2 + c^2$, gde je $c^2 = a^2+b^2$. Dakle $2(a^2+b^2)$.
+3. Površina tri "dopunska" trougla između kvadrata.
+Za trougao između kvadrata nad katetama (teme pravog ugla): ugao je $360^\circ - 90^\circ - 90^\circ - 90^\circ = 90^\circ$. Stranice su $a$ i $b$. Površina je $ab/2$.
+Za trouglove kod oštrih uglova $\alpha$ i $\beta$: uglovi su $180^\circ - \alpha$ i $180^\circ - \beta$.
+Površina trougla kod temena A je $\frac{1}{2}bc \sin(180^\circ-\alpha) = \frac{1}{2}bc \sin\alpha = \frac{1}{2}bc \cdot \frac{a}{c} = \frac{ab}{2}$.
+Slično kod temena B, površina je $\frac{ab}{2}$.
+Ukupna površina:
+$P = \frac{ab}{2} + 2(a^2+b^2) + 3 \cdot \frac{ab}{2} = 2ab + 2a^2 + 2b^2 = 2(a^2+b^2+ab)$.
+
+\subsection*{Odgovor}
+$2(a^2+ab+b^2)$ (opcija \textbf{E}).
+
+\end{document}

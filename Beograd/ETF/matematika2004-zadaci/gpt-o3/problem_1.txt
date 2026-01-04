@@ -1,0 +1,2 @@
+Ako je $i$ imaginarna jedinica onda je količnik $\frac{i^{2004}+i^{2005}}{i^{2003}-i^{2002}}$ jednak:
+A) 0; B) $-i$; C) 1; D) $-1$; E) $i$; N) Ne znam.

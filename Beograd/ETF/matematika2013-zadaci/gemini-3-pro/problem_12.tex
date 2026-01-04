@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 12}
+U razvoju binoma $\left( x - \frac{1}{\sqrt[5]{x}} \right)^{12}$ ($x \in \mathbf{R} \setminus \{0\}$), član koji ne sadrži $x$ jednak je:
+\[ (A)\ -132 \quad (B)\ 66 \quad (C)\ 11 \quad (D)\ -12 \quad (E)\ 1 \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+The general term of the expansion $(a+b)^n$ is given by $T_{k+1} = \binom{n}{k} a^{n-k} b^k$.
+Here $n=12$, $a=x$, $b=-x^{-1/5}$.
+\[ T_{k+1} = \binom{12}{k} x^{12-k} \left( -x^{-1/5} \right)^k \]
+\[ T_{k+1} = \binom{12}{k} (-1)^k x^{12-k} x^{-k/5} \]
+\[ T_{k+1} = \binom{12}{k} (-1)^k x^{12 - k - k/5} \]
+We want the term independent of $x$, so the exponent must be 0:
+\[ 12 - k - \frac{k}{5} = 0 \]
+\[ 12 - \frac{6k}{5} = 0 \]
+\[ 12 = \frac{6k}{5} \implies 60 = 6k \implies k = 10 \]
+Substitute $k=10$ into the coefficient:
+\[ \binom{12}{10} (-1)^{10} = \binom{12}{2} \cdot 1 = \frac{12 \cdot 11}{2} = 66 \]
+
+\subsection*{Answer}
+$66$ (option \textbf{B}).
+
+\end{document}

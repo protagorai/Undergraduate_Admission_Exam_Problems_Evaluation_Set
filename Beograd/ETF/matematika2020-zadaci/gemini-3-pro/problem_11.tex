@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Realno rešenje jednačine $x+\log_{21}(3^x+1) = x\log_{21} 7 + \log_{21} 756$ pripada intervalu:
+\[
+(A)\ (-\infty, -21]\quad (B)\ (-21, 0]\quad (C)\ (0, 21)\quad (D)\ [21, 42)\quad (E)\ [42, +\infty)\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Prebacimo $x$ na desnu stranu ili ga zapišimo kao logaritam: $x = x \log_{21} 21 = \log_{21} 21^x$.
+Jednačina postaje:
+\[
+\log_{21} 21^x + \log_{21}(3^x+1) = \log_{21} 7^x + \log_{21} 756
+\]
+Koristeći svojstva logaritama:
+\[
+\log_{21} (21^x (3^x+1)) = \log_{21} (7^x \cdot 756)
+\]
+Antilogaritmovanjem:
+\[
+21^x (3^x+1) = 7^x \cdot 756
+\]
+Zapišimo $21^x$ kao $(3 \cdot 7)^x = 3^x \cdot 7^x$:
+\[
+3^x \cdot 7^x (3^x+1) = 7^x \cdot 756
+\]
+Deljenjem sa $7^x$ (koje je uvek pozitivno):
+\[
+3^x (3^x+1) = 756
+\]
+Uvedimo smenu $u = 3^x$, gde je $u > 0$:
+\[
+u(u+1) = 756 \implies u^2 + u - 756 = 0
+\]
+Rešavamo kvadratnu jednačinu:
+\[
+u_{1,2} = \frac{-1 \pm \sqrt{1 - 4(1)(-756)}}{2} = \frac{-1 \pm \sqrt{1 + 3024}}{2} = \frac{-1 \pm \sqrt{3025}}{2} = \frac{-1 \pm 55}{2}
+\]
+$u_1 = 27$, $u_2 = -28$.
+Zbog $u > 0$, jedino rešenje je $u = 27$.
+\[
+3^x = 27 \implies 3^x = 3^3 \implies x = 3
+\]
+Rešenje $x=3$ pripada intervalu $(0, 21)$.
+
+\subsection*{Answer}
+$(0, 21)$ (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Calculate the expression:
+\[
+\left(\frac{x\sqrt{x} - y\sqrt{y}}{\sqrt{x} - \sqrt{y}} + \sqrt{xy}\right) : \left(\frac{\sqrt{x} - \sqrt{y}}{x - y}\right)^{-2}
+\]
+for all values $x, y \in \mathbb{R}$ for which it is defined, where the identical expression is:
+
+\subsection*{Solution}
+First, let's simplify the first part of the expression.
+
+For the numerator $x\sqrt{x} - y\sqrt{y}$:
+\[
+x\sqrt{x} - y\sqrt{y} = x^{3/2} - y^{3/2} = (\sqrt{x})^3 - (\sqrt{y})^3
+\]
+
+Using the identity $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$:
+\[
+(\sqrt{x})^3 - (\sqrt{y})^3 = (\sqrt{x} - \sqrt{y})(x + \sqrt{xy} + y)
+\]
+
+Therefore:
+\[
+\frac{x\sqrt{x} - y\sqrt{y}}{\sqrt{x} - \sqrt{y}} = \frac{(\sqrt{x} - \sqrt{y})(x + \sqrt{xy} + y)}{\sqrt{x} - \sqrt{y}} = x + \sqrt{xy} + y
+\]
+
+So the first part becomes:
+\[
+x + \sqrt{xy} + y + \sqrt{xy} = x + 2\sqrt{xy} + y = (\sqrt{x} + \sqrt{y})^2
+\]
+
+For the second part:
+\[
+\left(\frac{\sqrt{x} - \sqrt{y}}{x - y}\right)^{-2} = \left(\frac{x - y}{\sqrt{x} - \sqrt{y}}\right)^2
+\]
+
+Since $x - y = (\sqrt{x})^2 - (\sqrt{y})^2 = (\sqrt{x} - \sqrt{y})(\sqrt{x} + \sqrt{y})$:
+\[
+\frac{x - y}{\sqrt{x} - \sqrt{y}} = \frac{(\sqrt{x} - \sqrt{y})(\sqrt{x} + \sqrt{y})}{\sqrt{x} - \sqrt{y}} = \sqrt{x} + \sqrt{y}
+\]
+
+Therefore:
+\[
+\left(\frac{x - y}{\sqrt{x} - \sqrt{y}}\right)^2 = (\sqrt{x} + \sqrt{y})^2
+\]
+
+The final result is:
+\[
+(\sqrt{x} + \sqrt{y})^2 : (\sqrt{x} + \sqrt{y})^2 = 1
+\]
+
+\subsection*{Answer}
+1 (option \textbf{A}).
+
+\end{document}

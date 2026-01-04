@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+U trouglu $ABC$ je $|BC| = 3 \cdot |AB|$ i $\angle ABC = 60^\circ$. Tada je zbir $\cos \angle BAC + \cos \angle ACB$ jednak:
+(A) $\frac{1}{\sqrt{7}}$
+(B) $\frac{2}{\sqrt{7}}$
+(C) $\frac{3}{\sqrt{7}}$
+(D) $\frac{4}{\sqrt{7}}$
+(E) $\frac{5}{\sqrt{7}}$
+(N) Ne znam
+
+\subsection*{Solution}
+Let $a, b, c$ be the lengths of sides $BC, AC, AB$ respectively.
+We are given $a = 3c$ and the angle $\beta = \angle ABC = 60^\circ$.
+We need to find $\cos \alpha + \cos \gamma$, where $\alpha = \angle BAC$ and $\gamma = \angle ACB$.
+
+First, find side $b$ using the Law of Cosines:
+\[
+b^2 = a^2 + c^2 - 2ac \cos \beta = (3c)^2 + c^2 - 2(3c)c \cos 60^\circ = 9c^2 + c^2 - 6c^2 \cdot \frac{1}{2} = 10c^2 - 3c^2 = 7c^2.
+\]
+So $b = c\sqrt{7}$.
+
+Now find $\cos \alpha$ and $\cos \gamma$ using the Law of Cosines again.
+For $\alpha$:
+\[
+a^2 = b^2 + c^2 - 2bc \cos \alpha \implies \cos \alpha = \frac{b^2 + c^2 - a^2}{2bc}.
+\]
+Substitute $a=3c, b=c\sqrt{7}$:
+\[
+\cos \alpha = \frac{7c^2 + c^2 - 9c^2}{2 \cdot c\sqrt{7} \cdot c} = \frac{-c^2}{2c^2\sqrt{7}} = -\frac{1}{2\sqrt{7}}.
+\]
+For $\gamma$:
+\[
+c^2 = a^2 + b^2 - 2ab \cos \gamma \implies \cos \gamma = \frac{a^2 + b^2 - c^2}{2ab}.
+\]
+Substitute values:
+\[
+\cos \gamma = \frac{9c^2 + 7c^2 - c^2}{2 \cdot 3c \cdot c\sqrt{7}} = \frac{15c^2}{6c^2\sqrt{7}} = \frac{5}{2\sqrt{7}}.
+\]
+
+The sum is:
+\[
+\cos \alpha + \cos \gamma = -\frac{1}{2\sqrt{7}} + \frac{5}{2\sqrt{7}} = \frac{4}{2\sqrt{7}} = \frac{2}{\sqrt{7}}.
+\]
+
+\subsection*{Answer}
+$\frac{2}{\sqrt{7}}$ (option \textbf{B}).
+
+\end{document}

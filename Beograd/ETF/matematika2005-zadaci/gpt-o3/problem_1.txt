@@ -1,0 +1,7 @@
+Problem 1: Vrednost izraza
+
+    \[ \frac{\sqrt{32}}{\sqrt{8}} + \sqrt{3}\,\sqrt{12} - \sqrt{50}\,\sqrt{2} \]
+
+je:
+
+(A) 0   (B) -2   (C) 2   (D) -1   (E) 1   (N) Ne znam

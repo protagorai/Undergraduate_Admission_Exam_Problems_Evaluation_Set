@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 6}
+Broj svih realnih rešenja jednačine $x = \sqrt{x-\frac{1}{x}} + \sqrt{1-\frac{1}{x}}$ jeste:
+
+\subsection*{Rešenje}
+Definiciono područje:
+Potkorene veličine moraju biti nenegativne:
+1) $x - \frac{1}{x} \ge 0 \implies \frac{x^2-1}{x} \ge 0 \implies x \in [-1, 0) \cup [1, \infty)$.
+2) $1 - \frac{1}{x} \ge 0 \implies \frac{x-1}{x} \ge 0 \implies x \in (-\infty, 0) \cup [1, \infty)$.
+Presek uslova i uslov $x \ge 0$ (jer je leva strana $x$ jednaka sumi korena):
+Domen je $x \in [1, \infty)$.
+
+Analizirajmo funkciju $f(x) = \sqrt{x-\frac{1}{x}} + \sqrt{1-\frac{1}{x}}$.
+Za $x=1$, $f(1) = 0$, a $x=1$. $1 \neq 0$.
+Za $x > 1$, $x$ raste brže od $f(x)$.
+Provera derivacije ili vrednosti pokazuje da $x > f(x)$ za sve $x \ge 1$.
+Na primer za $x=2$: $2 > \sqrt{1.5} + \sqrt{0.5} \approx 1.22 + 0.71 = 1.93$.
+Jednačina nema rešenja.
+
+\subsection*{Odgovor}
+0 (opcija \textbf{A}).
+
+\end{document}

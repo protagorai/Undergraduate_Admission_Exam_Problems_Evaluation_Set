@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 14}
+Ukupan broj rešenja jednačine $\sin^2 x + \sin^2 2x = 1$ na intervalu $(0, 2\pi)$ jednak je:
+(A) 2 (B) 3 (C) 4 (D) 5 (E) 6 (N) Ne znam
+
+\subsection*{Rešenje}
+Koristimo identitet $\sin^2 x + \cos^2 x = 1$, pa je $\sin^2 x - 1 = -\cos^2 x$.
+Jednačina postaje:
+\[
+\sin^2 2x = 1 - \sin^2 x = \cos^2 x
+\]
+Razvijemo $\sin 2x = 2 \sin x \cos x$:
+\[
+(2 \sin x \cos x)^2 = \cos^2 x
+\]
+\[
+4 \sin^2 x \cos^2 x - \cos^2 x = 0
+\]
+\[
+\cos^2 x (4 \sin^2 x - 1) = 0
+\]
+Ovo daje dva slučaja:
+1. $\cos^2 x = 0 \implies \cos x = 0$.
+Na intervalu $(0, 2\pi)$, rešenja su $x = \frac{\pi}{2}$ i $x = \frac{3\pi}{2}$. (2 rešenja)
+
+2. $4 \sin^2 x - 1 = 0 \implies \sin^2 x = \frac{1}{4} \implies \sin x = \pm \frac{1}{2}$.
+- $\sin x = \frac{1}{2}$: $x = \frac{\pi}{6}$ i $x = \frac{5\pi}{6}$.
+- $\sin x = -\frac{1}{2}$: $x = \frac{7\pi}{6}$ i $x = \frac{11\pi}{6}$.
+(4 rešenja)
+
+Ukupan broj rešenja je $2 + 4 = 6$.
+
+\subsection*{Odgovor}
+6 (opcija \textbf{E}).
+
+\end{document}

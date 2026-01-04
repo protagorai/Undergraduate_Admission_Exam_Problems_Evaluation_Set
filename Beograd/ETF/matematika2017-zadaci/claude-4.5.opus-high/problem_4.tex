@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Given complex numbers $z_1 = 2017 + 2018i$, $z_2 = 2018 + 2019i$ and 
+\[
+w = (z_2 - z_1)^{-2020} \cdot \left(\frac{\overline{z_1} + 1}{2018}\right)^{2021}
+\]
+where $\overline{z_1}$ is the complex conjugate of $z_1$ and $i^2 = -1$. Find $|w|$.
+
+(A) $\sqrt{5}$ \quad (B) $\sqrt{2017}$ \quad (C) $\sqrt{2020}$ \quad (D) $\sqrt{2}$ \quad (E) $\sqrt{10}$
+
+\subsection*{Solution}
+First, let's compute $z_2 - z_1$:
+\[
+z_2 - z_1 = (2018 + 2019i) - (2017 + 2018i) = 1 + i
+\]
+
+The modulus of $z_2 - z_1$:
+\[
+|z_2 - z_1| = |1 + i| = \sqrt{1^2 + 1^2} = \sqrt{2}
+\]
+
+Now, the complex conjugate of $z_1$:
+\[
+\overline{z_1} = 2017 - 2018i
+\]
+
+So:
+\[
+\overline{z_1} + 1 = 2018 - 2018i = 2018(1 - i)
+\]
+
+Therefore:
+\[
+\frac{\overline{z_1} + 1}{2018} = 1 - i
+\]
+
+The modulus:
+\[
+\left|\frac{\overline{z_1} + 1}{2018}\right| = |1 - i| = \sqrt{2}
+\]
+
+Now we can find $|w|$:
+\[
+|w| = |z_2 - z_1|^{-2020} \cdot \left|\frac{\overline{z_1} + 1}{2018}\right|^{2021}
+\]
+\[
+|w| = (\sqrt{2})^{-2020} \cdot (\sqrt{2})^{2021} = (\sqrt{2})^{2021-2020} = (\sqrt{2})^1 = \sqrt{2}
+\]
+
+\subsection*{Answer}
+(D) $\sqrt{2}$
+
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Let $x \in \mathbb{R}$ be a positive real number and let $n \in \mathbb{N}$ be an even number. The sum of all binomial coefficients in the expansion of the binomial $\left(x^{2019} + \frac{1}{x^{2019}}\right)^n$ is four times greater than the sum of all binomial coefficients in the expansion of the binomial $\left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^{\frac{n}{2}}$. The sum of the members of these two binomial expansions that do not contain $x$ is:
+
+\subsection*{Solution}
+For any binomial $(a + b)^k$, the sum of all binomial coefficients is $2^k$ (obtained by setting $a = b = 1$).
+
+For the first binomial $\left(x^{2019} + \frac{1}{x^{2019}}\right)^n$:
+Sum of binomial coefficients = $2^n$
+
+For the second binomial $\left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^{\frac{n}{2}}$:
+Sum of binomial coefficients = $2^{\frac{n}{2}}$
+
+Given condition: $2^n = 4 \cdot 2^{\frac{n}{2}}$
+
+$2^n = 2^2 \cdot 2^{\frac{n}{2}} = 2^{2 + \frac{n}{2}}$
+
+Therefore: $n = 2 + \frac{n}{2}$
+
+$2n = 4 + n$
+
+$n = 4$
+
+Now we need to find the constant terms (terms that don't contain $x$) in both expansions.
+
+For $\left(x^{2019} + \frac{1}{x^{2019}}\right)^4$:
+The general term is $\binom{4}{k} (x^{2019})^k \left(\frac{1}{x^{2019}}\right)^{4-k} = \binom{4}{k} x^{2019k - 2019(4-k)} = \binom{4}{k} x^{2019(2k-4)}$
+
+For the constant term, we need $2019(2k-4) = 0$, so $2k - 4 = 0$, giving $k = 2$.
+
+Constant term = $\binom{4}{2} = 6$
+
+For $\left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^2$:
+The general term is $\binom{2}{j} (\sqrt{x})^j \left(\frac{1}{\sqrt{x}}\right)^{2-j} = \binom{2}{j} x^{\frac{j - (2-j)}{2}} = \binom{2}{j} x^{j-1}$
+
+For the constant term, we need $j - 1 = 0$, so $j = 1$.
+
+Constant term = $\binom{2}{1} = 2$
+
+The sum of constant terms = $6 + 2 = 8$.
+
+\subsection*{Answer}
+8 (option \textbf{C}).
+
+\end{document}

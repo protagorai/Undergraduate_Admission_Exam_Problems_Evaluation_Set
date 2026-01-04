@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je $f\left(\frac{1-x}{1+x}\right) = x$ ($x \in \mathbb{R} \setminus \{-1,0,1\}$), tada je $f(f(x))$ jednako:
+
+(A) $x$ \quad (B) $\frac{1-x}{1+x}$ \quad (C) $\frac{1}{x}$ \quad (D) $\frac{1+x}{1-x}$ \quad (E) $2x$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Prvo pronalazimo eksplicitnu formu funkcije $f$.
+
+Postavimo $t = \frac{1-x}{1+x}$. Tada je $f(t) = x$.
+
+Iz $t = \frac{1-x}{1+x}$ rešavamo za $x$:
+\[
+t(1+x) = 1-x \Rightarrow t + tx = 1 - x \Rightarrow tx + x = 1 - t
+\]
+\[
+x(t+1) = 1-t \Rightarrow x = \frac{1-t}{1+t}
+\]
+
+Dakle, $f(t) = \frac{1-t}{1+t}$.
+
+Sada računamo $f(f(x))$:
+\[
+f(f(x)) = f\left(\frac{1-x}{1+x}\right) = \frac{1-\frac{1-x}{1+x}}{1+\frac{1-x}{1+x}}
+\]
+
+Uprošćavamo brojilac:
+\[
+1-\frac{1-x}{1+x} = \frac{1+x-(1-x)}{1+x} = \frac{1+x-1+x}{1+x} = \frac{2x}{1+x}
+\]
+
+Uprošćavamo imenilac:
+\[
+1+\frac{1-x}{1+x} = \frac{1+x+(1-x)}{1+x} = \frac{1+x+1-x}{1+x} = \frac{2}{1+x}
+\]
+
+Dakle:
+\[
+f(f(x)) = \frac{\frac{2x}{1+x}}{\frac{2}{1+x}} = \frac{2x}{1+x} \cdot \frac{1+x}{2} = x
+\]
+
+\subsection*{Answer}
+$x$ (option \textbf{A}).
+
+\end{document}

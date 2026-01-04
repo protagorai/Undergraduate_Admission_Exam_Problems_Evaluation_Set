@@ -1,0 +1,2 @@
+1. Ako je x = 2^{p/q} rešenje jednačine √{x\sqrt{2\sqrt{x\sqrt{\sqrt{x}}}}} = 2, za neke uzajamno proste prirodne brojeve p i q, tada je p + q jednako:
+(A) 47   (B) 50   (C) 53   (D) 57   (E) 63   (N) Ne znam

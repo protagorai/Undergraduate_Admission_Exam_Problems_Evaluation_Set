@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Let $x \in \mathbb{R}$ be a positive number and let $n \in \mathbb{N}$ be an even number. The sum of all binomial coefficients in the expansion of $\left(x^{2019} + \frac{1}{x^{2019}}\right)^n$ is four times greater than the sum of all binomial coefficients in the expansion of $\left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^{\frac{n}{2}}$. The sum of those members of the two expansions that do not contain $x$ is:
+
+\subsection*{Solution}
+The sum of all binomial coefficients in $(a + b)^k$ is $2^k$ (obtained by setting $a = b = 1$).
+
+For the first expansion $\left(x^{2019} + \frac{1}{x^{2019}}\right)^n$:
+Sum of binomial coefficients = $2^n$
+
+For the second expansion $\left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^{\frac{n}{2}}$:
+Sum of binomial coefficients = $2^{n/2}$
+
+Given condition: $2^n = 4 \cdot 2^{n/2}$
+$2^n = 2^2 \cdot 2^{n/2} = 2^{2 + n/2}$
+
+This gives us: $n = 2 + \frac{n}{2}$
+$n - \frac{n}{2} = 2$
+$\frac{n}{2} = 2$
+$n = 4$
+
+Now we need to find the terms that don't contain $x$ in both expansions.
+
+\textbf{First expansion:} $\left(x^{2019} + \frac{1}{x^{2019}}\right)^4$
+
+The general term is: $\binom{4}{k}(x^{2019})^k\left(\frac{1}{x^{2019}}\right)^{4-k} = \binom{4}{k}x^{2019k}x^{-2019(4-k)} = \binom{4}{k}x^{2019(2k-4)}$
+
+For the term to not contain $x$, we need: $2019(2k-4) = 0$
+Since $2019 \neq 0$, we need $2k - 4 = 0$, so $k = 2$.
+
+The constant term is: $\binom{4}{2} = 6$
+
+\textbf{Second expansion:} $\left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^2$
+
+The general term is: $\binom{2}{j}(\sqrt{x})^j\left(\frac{1}{\sqrt{x}}\right)^{2-j} = \binom{2}{j}x^{j/2}x^{-(2-j)/2} = \binom{2}{j}x^{(j-2+j)/2} = \binom{2}{j}x^{j-1}$
+
+For the term to not contain $x$, we need: $j - 1 = 0$, so $j = 1$.
+
+The constant term is: $\binom{2}{1} = 2$
+
+Therefore, the sum of terms that don't contain $x$ is: $6 + 2 = 8$
+
+\subsection*{Answer}
+8 (option \textbf{C}).
+
+\end{document}

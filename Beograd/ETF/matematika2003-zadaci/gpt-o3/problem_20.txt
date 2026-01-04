@@ -1,0 +1,2 @@
+20. Brojevi 2, \sqrt{6}, \tfrac{9}{2} su članovi:
+A) opadajuće aritmetičke progresije;   B) rastuće aritmetičke progresije;   C) geometrijske progresije;   D) niza sa opštim članom a_n = \tfrac{9n}{2} + \tfrac{1}{n}, \;(n=1,2,\dots);   E) niza sa opštim članom a_n = 2n + \tfrac{\sqrt{6}}{n} - 1,\; (n=1,2,\dots);   N) Ne znam.

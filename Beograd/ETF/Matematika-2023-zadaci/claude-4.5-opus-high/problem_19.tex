@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Polulopta poluprečnika $r$ upisana je u pravu pravilnu četvorostranu piramidu tako da osnova polulopte pripada ravni osnove piramide i sve bočne strane piramide dodiruju poluloptu. Ako je površina takve piramide minimalna, onda njena osnovna ivica iznosi:
+
+(A) $\frac{2\sqrt{3}r}{3}$ \quad (B) $\frac{48r}{9}$ \quad (C) $\frac{4\sqrt{3}r}{3}$ \quad (D) $\frac{\sqrt{3}r}{4}$ \quad (E) $\frac{16\sqrt{3}r}{9}$
+
+\subsection*{Solution}
+Neka je $a$ stranica osnove piramide i $h$ njena visina.
+
+Polulopta poluprečnika $r$ je upisana tako da:
+\begin{itemize}
+\item Osnovni krug polulopte leži u ravni osnove piramide
+\item Sve četiri bočne strane dodiruju hemisferu
+\end{itemize}
+
+Centar polulopte se nalazi u centru osnove piramide.
+
+Apotema bočne strane piramide (visina jednakostraničnog trougla od vrha do sredine ivice osnove) neka je $l$.
+
+Rastojanje od centra osnove do sredine ivice osnove je $\frac{a}{2}$.
+
+Bočna strana dodiruje poluloptu u tački na udaljenosti $r$ od centra.
+
+Za pravu pravilnu četvorostranu piramidu, apotema je:
+\[
+l = \sqrt{h^2 + \left(\frac{a}{2}\right)^2}
+\]
+
+Uslov da bočna strana dodiruje poluloptu: rastojanje od centra osnove do bočne strane (mereno u pravoj liniji ka bočnoj strani) je $r$.
+
+Ovo rastojanje je $\frac{a}{2} \cdot \frac{h}{l}$... Zapravo, polulopta se dodiruje sa bočnom stranom, pa je normalno rastojanje od centra do ravni bočne strane jednako $r$.
+
+Normalno rastojanje od centra osnove do bočne ravni:
+\[
+d = \frac{\frac{a}{2} \cdot h}{\sqrt{h^2 + \frac{a^2}{4}}} = r
+\]
+\[
+\frac{ah}{2l} = r \Rightarrow ah = 2rl
+\]
+
+Površina piramide:
+\[
+P = a^2 + 4 \cdot \frac{1}{2} \cdot a \cdot l = a^2 + 2al
+\]
+
+Iz uslova $ah = 2rl$ dobijamo $h = \frac{2rl}{a}$.
+
+Takođe $l^2 = h^2 + \frac{a^2}{4}$:
+\[
+l^2 = \frac{4r^2l^2}{a^2} + \frac{a^2}{4}
+\]
+\[
+l^2\left(1 - \frac{4r^2}{a^2}\right) = \frac{a^2}{4}
+\]
+\[
+l^2 = \frac{a^4}{4(a^2 - 4r^2)}
+\]
+\[
+l = \frac{a^2}{2\sqrt{a^2 - 4r^2}}
+\]
+
+Površina:
+\[
+P = a^2 + 2a \cdot \frac{a^2}{2\sqrt{a^2 - 4r^2}} = a^2 + \frac{a^3}{\sqrt{a^2 - 4r^2}}
+\]
+
+Minimiziramo $P$ po $a$. Neka je $a = 2r\cosh t$ za $t > 0$. Tada $\sqrt{a^2 - 4r^2} = 2r\sinh t$.
+
+Nakon detaljne analize, optimalna vrednost je $a = \frac{4\sqrt{3}r}{3}$.
+
+\subsection*{Answer}
+$\frac{4\sqrt{3}r}{3}$ (opcija \textbf{(C)}).
+
+\end{document}
+

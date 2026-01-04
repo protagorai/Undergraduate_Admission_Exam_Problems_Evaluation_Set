@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Skup svih realnih resenja nejednacine
+\[
+4^x \le 3\cdot 2^{\sqrt{x}+x}+4^{1+\sqrt{x}}
+\]
+je oblika (za neke realne brojeve $a<b<c$):
+\[
+\text{(A) }(-\infty,a]\cup[b,+\infty)\quad
+\text{(B) }(a,b]\quad
+\text{(C) }[a,b]\quad
+\text{(D) }[a,b]\cup[c,+\infty)\quad
+\text{(E) }(a,b]\cup[c,+\infty).
+\]
+
+\subsection*{Solution}
+Zbog $\sqrt{x}$ mora biti $x\ge 0$. Neka je $s=\sqrt{x}\ (\ge 0)$, pa je $x=s^2$.
+Nejednacina postaje
+\[
+4^{s^2}\le 3\cdot 2^{s+s^2}+4^{1+s}.
+\]
+Prebacimo sve na stepenove baze $2$:
+\[
+4^{s^2}=2^{2s^2},\qquad 2^{s+s^2}=2^{s^2+s},\qquad 4^{1+s}=4\cdot 4^s=2^{2s+2}.
+\]
+Dakle,
+\[
+2^{2s^2}\le 3\cdot 2^{s^2+s}+2^{2s+2}.
+\]
+Podelimo sa $2^{s^2+s}>0$:
+\[
+2^{2s^2-(s^2+s)}\le 3+2^{2s+2-(s^2+s)}
+\]
+odnosno
+\[
+2^{s^2-s}\le 3+2^{-s^2+s+2}.
+\]
+Uvedimo $A=2^{s^2-s}>0$. Tada je
+\[
+2^{-s^2+s+2}=4\cdot 2^{-(s^2-s)}=\frac{4}{A},
+\]
+pa nejednacina postaje
+\[
+A\le 3+\frac{4}{A}.
+\]
+Mnozenjem sa $A>0$:
+\[
+A^2\le 3A+4 \ \Longleftrightarrow\ A^2-3A-4\le 0
+\ \Longleftrightarrow\ (A-4)(A+1)\le 0.
+\]
+Kako je $A>0$, sledi $A\le 4$, tj.
+\[
+2^{s^2-s}\le 4=2^2 \ \Longleftrightarrow\ s^2-s\le 2
+\ \Longleftrightarrow\ (s-2)(s+1)\le 0.
+\]
+Uz $s\ge 0$ dobijamo $0\le s\le 2$, pa je
+\[
+0\le x=s^2\le 4.
+\]
+
+\subsection*{Answer}
+$[0,4]$ (option \textbf{C}).
+
+\end{document}
+

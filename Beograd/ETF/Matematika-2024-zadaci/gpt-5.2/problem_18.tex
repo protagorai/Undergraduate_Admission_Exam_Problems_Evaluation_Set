@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Maksimalna zapremina $V$ pravilne \v{s}estostrane piramide upisane u loptu polupre\u{c}nika $R$ iznosi:
+
+\subsection*{Solution}
+Neka je lopta polupre\u{c}nika $R$ sa centrom u koordinatnom po\u{c}etku.
+Rotacijom mo\u{z}emo uzeti da je vrh piramide $S$ na severnom polu:
+\[
+S=(0,0,R).
+\]
+Baza je pravilni \v{s}estougao u ravni $z=z_0$ ($z_0<R$), sa centrom na $z$-osi.
+Temena baze su na lopti, pa za polupre\u{c}nik opisane kru\u{z}nice baze va\u{z}i
+\[
+\rho^2+z_0^2=R^2 \;\Longrightarrow\; \rho^2=R^2-z_0^2.
+\]
+Povr\u{s}ina pravilnog \v{s}estougla sa opisanim polupre\u{c}nikom $\rho$ je
+\[
+P_{\text{b}}=\frac{3\sqrt3}{2}\rho^2=\frac{3\sqrt3}{2}(R^2-z_0^2).
+\]
+Visina piramide je
+\[
+h=R-z_0.
+\]
+Zapremina:
+\[
+V(z_0)=\frac13 P_{\text{b}}h
+=\frac13\cdot \frac{3\sqrt3}{2}(R^2-z_0^2)(R-z_0)
+=\frac{\sqrt3}{2}(R^2-z_0^2)(R-z_0).
+\]
+Primetimo da je
+\[
+(R^2-z_0^2)(R-z_0)=(R-z_0)(R+z_0)(R-z_0)=(R+z_0)(R-z_0)^2.
+\]
+Neka je $u=R-z_0>0$. Tada je $R+z_0=2R-u$, pa
+\[
+V=\frac{\sqrt3}{2}(2R-u)u^2.
+\]
+Maksimum: derivacijom $g(u)=(2R-u)u^2=2Ru^2-u^3$ dobijamo
+\[
+g'(u)=4Ru-3u^2=u(4R-3u)=0 \;\Rightarrow\; u=\frac{4R}{3}.
+\]
+Tada je
+\[
+g_{\max}=\left(2R-\frac{4R}{3}\right)\left(\frac{4R}{3}\right)^2
+=\frac{2R}{3}\cdot \frac{16R^2}{9}=\frac{32R^3}{27}.
+\]
+Zato
+\[
+V_{\max}=\frac{\sqrt3}{2}\cdot \frac{32R^3}{27}=\frac{16\sqrt3}{27}R^3.
+\]
+
+\subsection*{Answer}
+$\dfrac{16\sqrt3}{27}R^3$ (option \textbf{A}).
+
+\end{document}
+
+
+
+

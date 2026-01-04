@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Izračunati graničnu vrednost
+\[
+\lim_{x\to 2}\frac{\tan\!\left(\frac{3\pi x}{8}\right)\,\big(\log(5x-9)+1\big)\,\big(\sqrt[3]{x}-\sqrt[3]{2}\big)}
+{(x-2)\left(\sqrt{2x^3-x-5}-\sqrt{2x}\right)}.
+\]
+
+\subsection*{Solution}
+Posmatrajmo faktore posebno kada $x\to 2$:
+\[
+\tan\!\left(\frac{3\pi x}{8}\right)\to \tan\!\left(\frac{3\pi}{4}\right)=-1,
+\qquad \log(5x-9)+1 \to \log 1 +1=1.
+\]
+Dalje, funkcija $\sqrt[3]{x}$ je diferencijabilna, pa
+\[
+\lim_{x\to 2}\frac{\sqrt[3]{x}-\sqrt[3]{2}}{x-2}=(\sqrt[3]{x})'\big|_{x=2}
+\;=\;\frac{1}{3\cdot 2^{2/3}}.
+\]
+Za poslednji faktor u imeniocu:
+\[
+\sqrt{2x^3-x-5}-\sqrt{2x}\;\xrightarrow[x\to 2]{}\;\sqrt{16-2-5}-\sqrt4=\sqrt9-2=1.
+\]
+Zato je tražena granica
+\[
+(-1)\cdot 1\cdot \frac{1}{3\cdot 2^{2/3}}\cdot \frac{1}{1}
+\;=\;-\frac{1}{3\cdot 2^{2/3}}.
+\]
+
+\subsection*{Answer}
+$-\dfrac{1}{3\cdot 2^{2/3}}$ (option \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Maksimalna zapremina $V$ pravilne šestostrane piramide upisane u loptu poluprečnika $R$ iznosi:
+
+\subsection*{Solution}
+Neka je $a$ stranica osnove (pravilnog šestougla) i $h$ visina piramide.
+
+Za pravilnu šestostanu piramidu upisanu u loptu poluprečnika $R$:
+- Centar lopte se nalazi na visini piramide
+- Rastojanje od centra lopte do bilo kog temena je $R$
+
+Neka je centar lopte na rastojanju $x$ od osnove piramide. Tada je visina piramide $h = R + x$.
+
+Poluprečnik opisane kružnice oko pravilnog šestougla sa stranicom $a$ je takođe $a$.
+
+Iz uslova da su sva temena na lopti:
+\[a^2 + x^2 = R^2\]
+
+Dakle $a^2 = R^2 - x^2$.
+
+Površina pravilnog šestougla sa stranicom $a$:
+\[P = \frac{3\sqrt{3}}{2}a^2 = \frac{3\sqrt{3}}{2}(R^2 - x^2)\]
+
+Zapremina piramide:
+\[V = \frac{1}{3}Ph = \frac{1}{3} \cdot \frac{3\sqrt{3}}{2}(R^2 - x^2)(R + x)\]
+\[= \frac{\sqrt{3}}{2}(R^2 - x^2)(R + x)\]
+\[= \frac{\sqrt{3}}{2}(R^3 + R^2x - Rx^2 - x^3)\]
+
+Da bismo našli maksimum, derivišemo po $x$:
+\[\frac{dV}{dx} = \frac{\sqrt{3}}{2}(R^2 - 2Rx - 3x^2) = 0\]
+\[R^2 - 2Rx - 3x^2 = 0\]
+\[3x^2 + 2Rx - R^2 = 0\]
+
+Koristeći kvadratnu formulu:
+\[x = \frac{-2R \pm \sqrt{4R^2 + 12R^2}}{6} = \frac{-2R \pm 4R}{6}\]
+
+Uzimamo pozitivno rešenje: $x = \frac{R}{3}$.
+
+Maksimalna zapremina:
+\[V_{max} = \frac{\sqrt{3}}{2}(R^2 - \frac{R^2}{9})(R + \frac{R}{3})\]
+\[= \frac{\sqrt{3}}{2} \cdot \frac{8R^2}{9} \cdot \frac{4R}{3}\]
+\[= \frac{\sqrt{3}}{2} \cdot \frac{32R^3}{27} = \frac{16\sqrt{3}R^3}{27}\]
+
+\subsection*{Answer}
+$\frac{16\sqrt{3}R^3}{27}$ (opcija \textbf{A}).
+
+\end{document}

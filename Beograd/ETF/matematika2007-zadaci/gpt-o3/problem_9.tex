@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Dokazati da je za stranice $a,b,c$ i uglove $\alpha,\beta,\gamma$ trougla tačno:
+\[
+\frac{b-2a\cos\gamma}{a\sin\gamma}+\frac{c-2b\cos\alpha}{b\sin\alpha}+\frac{a-2c\cos\beta}{c\sin\beta}=0.
+\]
+
+\subsection*{Rešenje}
+Upotrebimo teoremu kosinusa:
+\[
+\cos\gamma=\frac{a^{2}+b^{2}-c^{2}}{2ab},\qquad \cos\alpha=\frac{b^{2}+c^{2}-a^{2}}{2bc},\qquad \cos\beta=\frac{c^{2}+a^{2}-b^{2}}{2ca}.
+\]
+Takođe, sinusnu teoremu $\dfrac a{\sin\alpha}=\dfrac b{\sin\beta}=\dfrac c{\sin\gamma}=2R$.
+Izračunajmo prvi član:
+\begin{align*}
+\frac{b-2a\cos\gamma}{a\sin\gamma}&=\frac{b-\frac{a(a^{2}+b^{2}-c^{2})}{ab}}{a\sin\gamma}=\frac{b-\frac{a^{2}+b^{2}-c^{2}}{b}}{a\sin\gamma}\\
+&=\frac{\frac{b^{2}-a^{2}-b^{2}+c^{2}}{b}}{a\sin\gamma}=\frac{c^{2}-a^{2}}{ab\sin\gamma}.
+\end{align*}
+Po sinusnoj teoremi $\sin\gamma=\tfrac c{2R}$, pa član postaje
+\[
+\frac{c^{2}-a^{2}}{ab}\cdot\frac{2R}{c}=\frac{2R(c^{2}-a^{2})}{abc}.
+\]
+Analogno dobijamo
+\[
+\frac{c-2b\cos\alpha}{b\sin\alpha}=\frac{2R(a^{2}-b^{2})}{abc},\quad \frac{a-2c\cos\beta}{c\sin\beta}=\frac{2R(b^{2}-c^{2})}{abc}.
+\]
+Zbir tri izraza iznosi
+\[
+\frac{2R}{abc}\bigl[(c^{2}-a^{2})+(a^{2}-b^{2})+(b^{2}-c^{2})\bigr]=0.
+\]
+\subsection*{Odgovor}
+$0$ (opcija \textbf{C}).
+
+\end{document}

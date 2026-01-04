@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 16}
+Najmanja vrednost rastojanja tačke $M(0,1)$ od tačaka $(x,y)$ takvih da je $y = 1 + \frac{1}{4\sqrt{3}x^{3/2}}$, za $x > 0$, iznosi:
+\[ (A)\ 2\sqrt{\frac{2}{3}} \quad (B)\ \frac{\sqrt{3}}{3} \quad (C)\ \frac{\sqrt{2}}{2} \quad (D)\ \frac{1}{2}\sqrt{\frac{5}{3}} \quad (E)\ \frac{1}{3} \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Let $P(x,y)$ be a point on the curve. The distance squared $d^2$ from $M(0,1)$ to $P(x,y)$ is:
+\[ D(x) = (x-0)^2 + (y-1)^2 \]
+Substitute $y - 1 = \frac{1}{4\sqrt{3}x^{3/2}}$:
+\[ D(x) = x^2 + \left( \frac{1}{4\sqrt{3}x^{3/2}} \right)^2 \]
+\[ D(x) = x^2 + \frac{1}{16 \cdot 3 \cdot x^3} = x^2 + \frac{1}{48}x^{-3} \]
+To find the minimum, take the derivative with respect to $x$:
+\[ D'(x) = 2x - 3 \cdot \frac{1}{48}x^{-4} = 2x - \frac{1}{16x^4} \]
+Set $D'(x) = 0$:
+\[ 2x = \frac{1}{16x^4} \]
+\[ 32x^5 = 1 \]
+\[ x^5 = \frac{1}{32} \implies x = \frac{1}{2} \]
+Check second derivative to confirm minimum: $D''(x) = 2 + \frac{4}{16x^5} > 0$ for $x > 0$.
+Calculate the minimum squared distance:
+\[ D(1/2) = \left(\frac{1}{2}\right)^2 + \frac{1}{48(1/2)^3} = \frac{1}{4} + \frac{1}{48 \cdot (1/8)} = \frac{1}{4} + \frac{1}{6} \]
+\[ D(1/2) = \frac{3}{12} + \frac{2}{12} = \frac{5}{12} \]
+The minimum distance is $\sqrt{5/12}$:
+\[ d = \sqrt{\frac{5}{12}} = \frac{\sqrt{5}}{2\sqrt{3}} = \frac{1}{2}\sqrt{\frac{5}{3}} \]
+
+\subsection*{Answer}
+$\frac{1}{2}\sqrt{\frac{5}{3}}$ (option \textbf{D}).
+
+\end{document}

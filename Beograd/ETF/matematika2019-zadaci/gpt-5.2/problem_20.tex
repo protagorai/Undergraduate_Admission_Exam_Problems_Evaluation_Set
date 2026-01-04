@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+U Dekartovom pravouglom koordinatnom sistemu date su tačke $A(2,1)$ i $B(4,3)$.
+Ako je $C$ tačka na $x$-osi za koju je zbir dužina $AC$ i $BC$ minimalan, tada je taj zbir jednak:
+
+\subsection*{Solution}
+Pošto je $C$ na $x$-osi, klasičan trik je refleksija preko $x$-ose.
+Reflektujmo tačku $A(2,1)$ preko $x$-ose: dobijamo $A'(2,-1)$.
+
+Za svaku tačku $C=(t,0)$ važi $AC=A'C$ (simetrija), pa je
+\[
+AC+BC=A'C+BC.
+\]
+Zbir $A'C+BC$ je minimalan kada je $C$ presečna tačka prave $A'B$ sa $x$-osom, a minimalna vrednost je dužina $A'B$:
+\[
+\min_{C\in x\text{-osi}}(AC+BC)=|A'B|.
+\]
+Računamo:
+\[
+|A'B|=\sqrt{(4-2)^2+(3-(-1))^2}=\sqrt{2^2+4^2}=\sqrt{20}=2\sqrt5.
+\]
+
+\subsection*{Answer}
+$2\sqrt5$ (option \textbf{A}).
+
+\end{document}
+

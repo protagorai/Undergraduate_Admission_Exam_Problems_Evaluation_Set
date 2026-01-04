@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Zbir svih realnih rešenja jednačine $\sqrt{\sin^2 x + \frac{1}{2}} + \sqrt{\cos^2 x + \frac{1}{2}} = 2$ na segmentu $[0, 2\pi]$ iznosi:
+
+(A) $\pi$ \quad (B) $2\pi$ \quad (C) $3\pi$ \quad (D) $4\pi$ \quad (E) Nijedan od ponuđenih odgovora \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $f(x) = \sqrt{\sin^2 x + \frac{1}{2}} + \sqrt{\cos^2 x + \frac{1}{2}}$.
+
+Since $\sin^2 x + \cos^2 x = 1$, let $u = \sin^2 x$. Then $\cos^2 x = 1 - u$ where $0 \leq u \leq 1$.
+
+So we have:
+$$f(x) = \sqrt{u + \frac{1}{2}} + \sqrt{1 - u + \frac{1}{2}} = \sqrt{u + \frac{1}{2}} + \sqrt{\frac{3}{2} - u}$$
+
+Let $g(u) = \sqrt{u + \frac{1}{2}} + \sqrt{\frac{3}{2} - u}$ for $u \in [0, 1]$.
+
+To find the maximum of $g(u)$, we take the derivative:
+$$g'(u) = \frac{1}{2\sqrt{u + \frac{1}{2}}} - \frac{1}{2\sqrt{\frac{3}{2} - u}}$$
+
+Setting $g'(u) = 0$:
+$$\frac{1}{\sqrt{u + \frac{1}{2}}} = \frac{1}{\sqrt{\frac{3}{2} - u}}$$
+
+This gives us $u + \frac{1}{2} = \frac{3}{2} - u$, so $2u = 1$, thus $u = \frac{1}{2}$.
+
+At $u = \frac{1}{2}$ (which corresponds to $\sin^2 x = \cos^2 x = \frac{1}{2}$):
+$$g\left(\frac{1}{2}\right) = \sqrt{\frac{1}{2} + \frac{1}{2}} + \sqrt{\frac{3}{2} - \frac{1}{2}} = \sqrt{1} + \sqrt{1} = 2$$
+
+Let's check the endpoints:
+- At $u = 0$: $g(0) = \sqrt{\frac{1}{2}} + \sqrt{\frac{3}{2}} = \frac{\sqrt{2}}{2} + \frac{\sqrt{6}}{2} = \frac{\sqrt{2} + \sqrt{6}}{2} < 2$
+- At $u = 1$: $g(1) = \sqrt{\frac{3}{2}} + \sqrt{\frac{1}{2}} = \frac{\sqrt{6} + \sqrt{2}}{2} < 2$
+
+So the maximum value of $f(x)$ is 2, achieved when $\sin^2 x = \cos^2 x = \frac{1}{2}$.
+
+This happens when $|\sin x| = |\cos x| = \frac{\sqrt{2}}{2}$, which occurs at:
+$x = \frac{\pi}{4}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}$
+
+The sum of these solutions is:
+$$\frac{\pi}{4} + \frac{3\pi}{4} + \frac{5\pi}{4} + \frac{7\pi}{4} = \frac{16\pi}{4} = 4\pi$$
+
+\subsection*{Answer}
+(D) $4\pi$
+
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 17}
+Maksimalni obim pravougaonika upisanog u krug datog poluprečnika $r$ iznosi:
+\[
+(A)\; 5\sqrt{2}r \quad (B)\; 4\sqrt{2}r \quad (C)\; \sqrt{2}r \quad (D)\; 3\sqrt{2}r \quad (E)\; \text{Nijedan od ponuđenih odgovora}
+\]
+
+\subsection*{Solution}
+Neka su stranice pravougaonika $a$ i $b$. Dijagonala pravougaonika je prečnik kruga $2r$.
+Važi $a^2 + b^2 = (2r)^2 = 4r^2$.
+Obim je $O = 2(a+b)$. Da bismo maksimizovali obim, treba maksimizovati $a+b$ uz uslov $a^2+b^2 = \text{const}$.
+Kvadrat zbira je $(a+b)^2 = a^2 + b^2 + 2ab$. Za fiksirano $a^2+b^2$, zbir je maksimalan kada je proizvod $ab$ maksimalan, što se postiže kada je $a=b$ (kvadrat).
+Tada je $2a^2 = 4r^2 \Rightarrow a^2 = 2r^2 \Rightarrow a = r\sqrt{2}$.
+Maksimalni obim je:
+\[
+O_{max} = 2(r\sqrt{2} + r\sqrt{2}) = 4r\sqrt{2}
+\]
+
+\subsection*{Answer}
+$4\sqrt{2}r$ (option \textbf{B}).
+
+\end{document}

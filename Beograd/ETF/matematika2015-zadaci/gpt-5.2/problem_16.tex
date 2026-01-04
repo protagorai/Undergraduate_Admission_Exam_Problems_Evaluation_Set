@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Broj parova $(p,q)$, $p,q\in\mathbb R$ takvih da je polinom
+\[
+x^4+px^2+q
+\]
+deljiv polinomom $x^2+px+q$ jednak je:
+
+\subsection*{Solution}
+Ako je deljivo, postoji kvadratni kolicnik $x^2+ax+b$ tako da
+\[
+(x^2+px+q)(x^2+ax+b)=x^4+px^2+q.
+\]
+Mnozenjem:
+\[
+x^4+(a+p)x^3+(b+ap+q)x^2+(bp+aq)x+bq.
+\]
+Poredjenjem koeficijenata sa $x^4+0\cdot x^3+px^2+0\cdot x+q$ dobijamo sistem:
+\[
+a+p=0,\qquad b+ap+q=p,\qquad bp+aq=0,\qquad bq=q.
+\]
+Iz $a+p=0$ je $a=-p$.
+Iz $bq=q$ sledi $q(b-1)=0$, tj. $q=0$ ili $b=1$.
+Uslov $bp+aq=0$ uz $a=-p$ daje $p(b-q)=0$, pa ili $p=0$ ili $b=q$.
+
+\medskip
+\noindent\textbf{1) $p=0$.}
+Tada je $a=0$ i iz $b+q=0$ sledi $b=-q$.
+Uslov $q(b-1)=0$ daje:
+\begin{itemize}
+\item $q=0 \Rightarrow b=0$ daje $(p,q)=(0,0)$;
+\item $b=1 \Rightarrow -q=1 \Rightarrow q=-1$ daje $(p,q)=(0,-1)$.
+\end{itemize}
+
+\medskip
+\noindent\textbf{2) $p\ne 0$.}
+Tada mora vaziti $b=q$.
+Uslov $q(b-1)=0$ postaje $q(q-1)=0$, pa je $q=0$ ili $q=1$.
+\begin{itemize}
+\item $q=0$: iz $b+ap+q=p$ dobijamo $0+(-p)p+0=p$, tj. $p^2+p=0$, pa (uz $p\ne 0$) $p=-1$.
+\item $q=1$: iz $1+(-p)p+1=p$ dobijamo $2-p^2=p$, tj. $p^2+p-2=0$, pa $p=1$ ili $p=-2$.
+\end{itemize}
+
+Ukupno dobijamo $5$ parova:
+\[
+(0,0),\ (0,-1),\ (-1,0),\ (1,1),\ (-2,1).
+\]
+
+\subsection*{Answer}
+$5$ (opcija \textbf{E}).
+
+\end{document}
+

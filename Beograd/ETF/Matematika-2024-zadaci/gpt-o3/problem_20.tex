@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Koliko četvoročlanih podskupova skupa $\{1,2,\dots,9\}$ sadrži bar jedan broj deljiv sa~4 i bar jedan broj veći od~5?
+
+\subsection*{Rešenje}
+Razbijamo po uslovima.
+
+Brojevi deljivi sa 4 u skupu su $4$ i $8$ (2 komada).  Brojevi $>5$ su $6,7,8,9$ (4 komada).
+Posmatrajmo univerzum svih $\binom{9}{4}=126$ četvoročlanih podskupova.
+
+Koristimo princip uključenja–isključenja.
+\begin{itemize}
+ \item $A$ – skupovi bez broja deljivog sa 4.  Izbacujemo 4 i 8; ostaje 7 brojeva.  Broj takvih podskupova: $\binom{7}{4}=35$.
+ \item $B$ – skupovi bez broja $>5$.  Dozvoljeni elementi $1..5$ (5 komada).  Broj: $\binom{5}{4}=5$.
+ \item $A\cap B$ – skupovi istovremeno bez($4$,$8$) i bez($6$–$9$); ostaje $1..3,5$ (4 broja).  Broj: $\binom{4}{4}=1$.
+\end{itemize}
+Traženi broj je
+\[
+126-35-5+1=87.
+\]
+
+\subsection*{Odgovor}
+\[87\qquad(\text{opcija B})\]
+
+\end{document}

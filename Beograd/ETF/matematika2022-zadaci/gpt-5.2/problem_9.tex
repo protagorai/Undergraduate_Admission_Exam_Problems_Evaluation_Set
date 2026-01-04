@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+How many distinct real solutions does the system have?
+\[
+\begin{cases}
+4x^2-5xy+y^2=0,\\
+2x^2+y^2-4x-5y+6=0.
+\end{cases}
+\]
+
+\subsection*{Solution}
+The first equation factors via the ratio $t=y/x$ (note $x\neq 0$, because $x=0$ would force $y=0$, which does not satisfy the second equation):
+\[
+4x^2-5xy+y^2=x^2\left(4-5\frac{y}{x}+\left(\frac{y}{x}\right)^2\right)=0.
+\]
+So
+\[
+t^2-5t+4=0 \quad\Longrightarrow\quad (t-1)(t-4)=0,
+\]
+hence the solutions lie on the lines $y=x$ or $y=4x$.
+
+\medskip
+\noindent\textbf{1) }If $y=x$, substitute into the second equation:
+\[
+2x^2+x^2-4x-5x+6=0 \;\Longrightarrow\; 3x^2-9x+6=0
+\]
+\[
+\Longrightarrow\; x^2-3x+2=0 \;\Longrightarrow\; x=1 \text{ or } x=2.
+\]
+Thus $(x,y)=(1,1),(2,2)$.
+
+\medskip
+\noindent\textbf{2) }If $y=4x$, substitute:
+\[
+2x^2+16x^2-4x-20x+6=0 \;\Longrightarrow\; 18x^2-24x+6=0
+\]
+\[
+\Longrightarrow\; 3x^2-4x+1=0 \;\Longrightarrow\; x=\frac{4\pm 2}{6}\in\left\{1,\frac13\right\}.
+\]
+Thus $(x,y)=(1,4),\left(\frac13,\frac43\right)$.
+
+\medskip
+In total there are $4$ distinct real solutions.
+
+\subsection*{Answer}
+$4$ solutions (option \textbf{B}, ``greater than $3$'').
+
+\end{document}
+

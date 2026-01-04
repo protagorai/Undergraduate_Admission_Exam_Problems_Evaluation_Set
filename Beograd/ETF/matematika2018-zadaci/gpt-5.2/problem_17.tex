@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Odrediti zbir svih rešenja jednačine
+\[
+\Big(\sqrt{\log_7(-2x-1)}-\log_7\sqrt{4x^2+4x+1}-1\Big)\cdot \log_7|x+7|
+=-3\log_7\sqrt[3]{\,x+7\,}.
+\]
+
+\subsection*{Solution}
+\textbf{1) Domen.}
+Da bi $\sqrt{\log_7(-2x-1)}$ bilo definisano, treba:
+\[
+-2x-1>0 \Rightarrow x<-\frac12,
+\qquad \log_7(-2x-1)\ge 0 \Rightarrow -2x-1\ge 1 \Rightarrow x\le -1.
+\]
+Dalje, $\log_7\sqrt[3]{x+7}$ zahteva $\sqrt[3]{x+7}>0\Rightarrow x+7>0\Rightarrow x>-7$,
+a $\log_7|x+7|$ zahteva $x\ne -7$. Dakle domen je
+\[
+(-7,-1].
+\]
+U ovom domenu je $x+7>0$, pa je $|x+7|=x+7$.
+
+\medskip
+\textbf{2) Uprošćavanje.}
+Primećujemo da je
+\[
+\sqrt{4x^2+4x+1}=\sqrt{(2x+1)^2}=|2x+1|.
+\]
+Za $x\le -1$ je $2x+1<0$, pa $|2x+1|=-(2x+1)=-2x-1$ i zato
+\[
+\log_7\sqrt{4x^2+4x+1}=\log_7(-2x-1).
+\]
+Takođe,
+\[
+\log_7\sqrt[3]{x+7}=\log_7\big((x+7)^{1/3}\big)=\frac13\log_7(x+7).
+\]
+Zamenom dobijamo jednačinu:
+\[
+\Big(\sqrt{\log_7(-2x-1)}-\log_7(-2x-1)-1\Big)\cdot \log_7(x+7)
+=-\,\log_7(x+7).
+\]
+Prebacimo desnu stranu levo i faktorišemo $\log_7(x+7)$:
+\[
+\Big(\sqrt{\log_7(-2x-1)}-\log_7(-2x-1)\Big)\cdot \log_7(x+7)=0.
+\]
+Dakle, važi ili
+\[
+\log_7(x+7)=0 \quad\Rightarrow\quad x+7=1 \Rightarrow x=-6,
+\]
+ili
+\[
+\sqrt{\log_7(-2x-1)}=\log_7(-2x-1).
+\]
+Označimo $A=\log_7(-2x-1)\ (\ge 0)$. Tada uslov $\sqrt{A}=A$ daje $A\in\{0,1\}$.
+
+\smallskip
+\emph{(i) $A=0$:} $-2x-1=1 \Rightarrow x=-1$.
+
+\smallskip
+\emph{(ii) $A=1$:} $-2x-1=7 \Rightarrow x=-4$.
+
+\medskip
+Sva rešenja u domenu su $x\in\{-6,-4,-1\}$, pa je njihov zbir
+\[
+-6-4-1=-11.
+\]
+
+\subsection*{Answer}
+$-11$ (option \textbf{A}).
+
+\end{document}
+

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+U kocku $K_1$ ivice 1 cm upisana je lopta $L_1$, zatim je u loptu $L_1$ upisana kocka $K_2$, zatim u nju lopta $L_2$ i zatim se postupak nastavlja na isti način. Zbir površina (u cm$^2$) svih kocki $K_n$, $n \in N$, iznosi:
+
+(A) 2 \quad (B) 8 \quad (C) 18 \quad (D) 4 \quad (E) 9
+
+\subsection*{Solution}
+Neka je $a_1 = 1$ cm ivica prve kocke $K_1$.
+
+Lopta $L_1$ upisana u kocku $K_1$ ima prečnik jednak ivici kocke, dakle poluprečnik $r_1 = \frac{a_1}{2} = \frac{1}{2}$ cm.
+
+Kocka $K_2$ upisana u loptu $L_1$: dijagonala kocke $K_2$ jednaka je prečniku lopte $L_1$.
+\[
+a_2\sqrt{3} = 2r_1 = 1 \Rightarrow a_2 = \frac{1}{\sqrt{3}}
+\]
+
+Uopšteno, ako je $a_n$ ivica $n$-te kocke:
+\begin{itemize}
+\item Lopta $L_n$ upisana u $K_n$ ima poluprečnik $r_n = \frac{a_n}{2}$
+\item Kocka $K_{n+1}$ upisana u $L_n$: $a_{n+1}\sqrt{3} = 2r_n = a_n$
+\end{itemize}
+
+Dakle:
+\[
+a_{n+1} = \frac{a_n}{\sqrt{3}}
+\]
+
+Ovo je geometrijski niz sa količnikom $q = \frac{1}{\sqrt{3}}$.
+
+Površina kocke $K_n$ je $P_n = 6a_n^2$.
+
+Površina prve kocke: $P_1 = 6 \cdot 1^2 = 6$ cm$^2$.
+
+Niz površina:
+\[
+P_n = 6a_n^2 = 6 \cdot \left(\frac{1}{\sqrt{3}}\right)^{2(n-1)} = 6 \cdot \left(\frac{1}{3}\right)^{n-1}
+\]
+
+Zbir beskonačnog geometrijskog niza:
+\[
+S = \sum_{n=1}^{\infty} P_n = \sum_{n=1}^{\infty} 6 \cdot \left(\frac{1}{3}\right)^{n-1} = \frac{6}{1 - \frac{1}{3}} = \frac{6}{\frac{2}{3}} = 9
+\]
+
+\subsection*{Answer}
+$9$ cm$^2$ (opcija \textbf{(E)}).
+
+\end{document}
+

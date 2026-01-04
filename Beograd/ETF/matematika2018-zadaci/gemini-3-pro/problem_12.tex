@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 12}
+The set of solutions to the inequality $x + 2 < \sqrt{x+44}$ is of the form:
+
+\subsection*{Solution}
+We analyze the inequality $x + 2 < \sqrt{x+44}$.
+1. Domain of the square root: $x + 44 \geq 0 \implies x \geq -44$.
+
+2. Case 1: $x + 2 < 0$.
+   If $x < -2$, then the LHS is negative, while the RHS (square root) is non-negative.
+   Thus, the inequality holds for all $x$ in the domain such that $x < -2$.
+   Intersection: $x \in [-44, -2)$.
+
+3. Case 2: $x + 2 \geq 0$.
+   If $x \geq -2$, both sides are non-negative, so we can square both sides:
+   \[ (x+2)^2 < x + 44 \]
+   \[ x^2 + 4x + 4 < x + 44 \]
+   \[ x^2 + 3x - 40 < 0 \]
+   Roots of $x^2 + 3x - 40 = 0$: $(x+8)(x-5) = 0 \implies x=-8, x=5$.
+   The inequality holds for $x \in (-8, 5)$.
+   Intersection with condition $x \geq -2$: $[-2, 5)$.
+
+Total solution set is the union of Case 1 and Case 2:
+\[ [-44, -2) \cup [-2, 5) = [-44, 5) \]
+This is an interval of the form $[a, b)$.
+
+\subsection*{Answer}
+$[a, b)$ (option \textbf{A}).
+
+\end{document}

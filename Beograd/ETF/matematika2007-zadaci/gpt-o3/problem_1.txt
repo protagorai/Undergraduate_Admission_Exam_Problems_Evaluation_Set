@@ -1,0 +1,5 @@
+Problem 1 (matematika 2007)
+
+Vrednost izraza \(2^{0.5} - 2^{0} - (2^{0.5} + 2^{0})^{-1}\) jednaka je:
+
+(A) 0   (B) 1   (C) 2   (D) \(\sqrt{2}\)   (E) \(-\sqrt{2}\)   (N) Ne znam

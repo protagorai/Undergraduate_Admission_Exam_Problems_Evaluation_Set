@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Ako je zbir prva tri člana rastućeg aritmetičkog niza jednak 15 i njihov proizvod jednak 105, a zbir prvih $n$ članova tog niza jednak 1023, onda je $n$ jednako:
+
+\subsection*{Solution}
+Neka su prva tri člana aritmetičkog niza $a-d$, $a$, $a+d$, gde je $d > 0$ (jer je niz rastući).
+
+Iz uslova da je zbir jednak 15:
+\[
+(a - d) + a + (a + d) = 3a = 15 \Rightarrow a = 5
+\]
+
+Iz uslova da je proizvod jednak 105:
+\[
+(a - d) \cdot a \cdot (a + d) = a(a^2 - d^2) = 105
+\]
+\[
+5(25 - d^2) = 105
+\]
+\[
+25 - d^2 = 21
+\]
+\[
+d^2 = 4
+\]
+\[
+d = 2 \quad (\text{jer } d > 0)
+\]
+
+Dakle, prvi član je $a_1 = a - d = 5 - 2 = 3$, a razlika je $d = 2$.
+
+Niz je: $3, 5, 7, 9, 11, ...$
+
+Formula za zbir prvih $n$ članova aritmetičkog niza:
+\[
+S_n = \frac{n}{2}(2a_1 + (n-1)d) = \frac{n}{2}(2 \cdot 3 + (n-1) \cdot 2) = \frac{n}{2}(6 + 2n - 2) = \frac{n}{2}(2n + 4) = n(n + 2)
+\]
+
+Iz uslova $S_n = 1023$:
+\[
+n(n + 2) = 1023
+\]
+\[
+n^2 + 2n - 1023 = 0
+\]
+
+Rešavamo kvadratnu jednačinu:
+\[
+n = \frac{-2 \pm \sqrt{4 + 4092}}{2} = \frac{-2 \pm \sqrt{4096}}{2} = \frac{-2 \pm 64}{2}
+\]
+
+\[
+n_1 = \frac{-2 + 64}{2} = \frac{62}{2} = 31
+\]
+\[
+n_2 = \frac{-2 - 64}{2} = -33 \quad (\text{odbacujemo jer } n > 0)
+\]
+
+Proveravamo: $S_{31} = 31 \cdot 33 = 1023$ \checkmark
+
+\subsection*{Answer}
+$31$ (opcija \textbf{C}).
+
+\end{document}

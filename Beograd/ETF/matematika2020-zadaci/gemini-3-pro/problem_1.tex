@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Vrednost izraza $\log_4 3 \log_5 4 \log_6 5 \log_7 6 \log_8 7 \log_9 8$ jednaka je:
+\[
+(A)\ \frac{1}{2}\quad (B)\ \frac{1}{3}\quad (C)\ 2\quad (D)\ 3\quad (E)\ \frac{2}{3}\log_2 3\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Koristimo formulu za promenu osnove logaritma $\log_a b = \frac{\ln b}{\ln a}$. Izraz postaje:
+\[
+\frac{\ln 3}{\ln 4} \cdot \frac{\ln 4}{\ln 5} \cdot \frac{\ln 5}{\ln 6} \cdot \frac{\ln 6}{\ln 7} \cdot \frac{\ln 7}{\ln 8} \cdot \frac{\ln 8}{\ln 9}
+\]
+Skraćivanjem dijagonalnih članova dobijamo:
+\[
+\frac{\ln 3}{\ln 9} = \log_9 3 = \log_{3^2} 3 = \frac{1}{2} \log_3 3 = \frac{1}{2}
+\]
+
+\subsection*{Answer}
+$\frac{1}{2}$ (option \textbf{A}).
+
+\end{document}

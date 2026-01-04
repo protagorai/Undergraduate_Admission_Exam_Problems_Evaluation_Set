@@ -1,0 +1,2 @@
+20. Skup vrednosti realnog parametra p za koje jednačina |x − p| + |x − 1| = 1 ima tačno dva realna i različita rešenja je oblika (za neke a,b,c,d ∈ ℝ, −∞ < a < b < c < d < +∞):
+(A) {a,b}   (B) (a,b)   (C) (−∞,a] ∪ {b}   (D) (a,b] ∪ (c,d]   (E) [a,b]   (N) Ne znam

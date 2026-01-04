@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 6 - Solution}
+
+\textbf{Problem:} Find the number of integer solutions of the inequality $3 \cdot 16^x + 2 \cdot 81^x \leq 5 \cdot 36^x$.
+
+\textbf{Solution:}
+
+Divide both sides by $36^x$ (which is always positive):
+\[
+3 \cdot \frac{16^x}{36^x} + 2 \cdot \frac{81^x}{36^x} \leq 5
+\]
+
+\[
+3 \cdot \left(\frac{16}{36}\right)^x + 2 \cdot \left(\frac{81}{36}\right)^x \leq 5
+\]
+
+\[
+3 \cdot \left(\frac{4}{6}\right)^{2x} + 2 \cdot \left(\frac{9}{6}\right)^{2x} \leq 5
+\]
+
+\[
+3 \cdot \left(\frac{2}{3}\right)^{2x} + 2 \cdot \left(\frac{3}{2}\right)^{2x} \leq 5
+\]
+
+Let $t = \left(\frac{2}{3}\right)^{2x}$, where $t > 0$. Then $\left(\frac{3}{2}\right)^{2x} = \frac{1}{t}$.
+
+\[
+3t + \frac{2}{t} \leq 5
+\]
+
+Multiply by $t > 0$:
+\[
+3t^2 + 2 \leq 5t
+\]
+\[
+3t^2 - 5t + 2 \leq 0
+\]
+\[
+(3t - 2)(t - 1) \leq 0
+\]
+
+Solution: $\frac{2}{3} \leq t \leq 1$
+
+Now convert back to $x$:
+\begin{itemize}
+\item $t \geq \frac{2}{3}$: $\left(\frac{2}{3}\right)^{2x} \geq \frac{2}{3} = \left(\frac{2}{3}\right)^1$ $\implies 2x \leq 1 \implies x \leq \frac{1}{2}$
+\item $t \leq 1$: $\left(\frac{2}{3}\right)^{2x} \leq 1 = \left(\frac{2}{3}\right)^0$ $\implies 2x \geq 0 \implies x \geq 0$
+\end{itemize}
+
+Therefore: $0 \leq x \leq \frac{1}{2}$
+
+Integer solutions: only $x = 0$
+
+\textbf{Number of integer solutions: 1}
+
+\textbf{Answer: А) 1}
+
+\end{document}
+

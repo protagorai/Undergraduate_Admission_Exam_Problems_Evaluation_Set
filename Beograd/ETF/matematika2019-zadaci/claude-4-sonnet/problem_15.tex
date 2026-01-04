@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+The number of real solutions of the equation $3^x + 4^x = 5^x$ is:
+
+\subsection*{Solution}
+We need to solve $3^x + 4^x = 5^x$.
+
+Dividing both sides by $5^x$ (which is always positive):
+$\frac{3^x}{5^x} + \frac{4^x}{5^x} = 1$
+
+$\left(\frac{3}{5}\right)^x + \left(\frac{4}{5}\right)^x = 1$
+
+Let $f(x) = \left(\frac{3}{5}\right)^x + \left(\frac{4}{5}\right)^x$.
+
+We need to find where $f(x) = 1$.
+
+Let's analyze the behavior of $f(x)$:
+
+\textbf{At $x = 0$:}
+$f(0) = \left(\frac{3}{5}\right)^0 + \left(\frac{4}{5}\right)^0 = 1 + 1 = 2$
+
+\textbf{As $x \to +\infty$:}
+Since $\frac{3}{5} < 1$ and $\frac{4}{5} < 1$, both terms approach 0.
+$f(x) \to 0 + 0 = 0$
+
+\textbf{As $x \to -\infty$:}
+$\left(\frac{3}{5}\right)^x = \left(\frac{5}{3}\right)^{-x} \to +\infty$
+$\left(\frac{4}{5}\right)^x = \left(\frac{5}{4}\right)^{-x} \to +\infty$
+So $f(x) \to +\infty$
+
+\textbf{Derivative:}
+$f'(x) = \left(\frac{3}{5}\right)^x \ln\left(\frac{3}{5}\right) + \left(\frac{4}{5}\right)^x \ln\left(\frac{4}{5}\right)$
+
+Since $\ln\left(\frac{3}{5}\right) < 0$ and $\ln\left(\frac{4}{5}\right) < 0$, and both $\left(\frac{3}{5}\right)^x > 0$ and $\left(\frac{4}{5}\right)^x > 0$, we have $f'(x) < 0$ for all $x$.
+
+This means $f(x)$ is strictly decreasing.
+
+Since $f(x)$ is continuous and strictly decreasing, and:
+- $f(0) = 2 > 1$
+- $\lim_{x \to +\infty} f(x) = 0 < 1$
+
+By the Intermediate Value Theorem, there exists exactly one value of $x$ where $f(x) = 1$.
+
+Let's verify this makes sense by checking a few values:
+
+At $x = 1$:
+$f(1) = \frac{3}{5} + \frac{4}{5} = \frac{7}{5} = 1.4 > 1$
+
+At $x = 2$:
+$f(2) = \left(\frac{3}{5}\right)^2 + \left(\frac{4}{5}\right)^2 = \frac{9}{25} + \frac{16}{25} = \frac{25}{25} = 1$
+
+So $x = 2$ is the solution! Let's verify:
+$3^2 + 4^2 = 9 + 16 = 25 = 5^2$ ✓
+
+\subsection*{Answer}
+1 (option \textbf{B}).
+
+\end{document}

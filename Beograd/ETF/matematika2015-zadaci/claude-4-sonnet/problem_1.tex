@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+If $k \in \mathbb{Z}$ and $0.0010101 \cdot 10^k > 1001$, what is the smallest possible value for $k$?
+
+\subsection*{Solution}
+We need to find the smallest integer $k$ such that:
+\[0.0010101 \cdot 10^k > 1001\]
+
+First, let's convert $0.0010101$ to a fraction:
+\[0.0010101 = \frac{10101}{10^7} = \frac{10101}{10000000}\]
+
+So our inequality becomes:
+\[\frac{10101}{10000000} \cdot 10^k > 1001\]
+
+Simplifying:
+\[\frac{10101 \cdot 10^k}{10^7} > 1001\]
+\[10101 \cdot 10^{k-7} > 1001\]
+\[10^{k-7} > \frac{1001}{10101} = \frac{1001}{10101}\]
+
+Since $\frac{1001}{10101} = \frac{1001}{10101} \approx 0.099$, we need:
+\[10^{k-7} > 0.099\]
+
+Since $10^{-1} = 0.1 > 0.099$, we need $k-7 \geq -1$, so $k \geq 6$.
+
+Let's verify: For $k = 6$:
+\[0.0010101 \cdot 10^6 = 1010.1 > 1001 \checkmark\]
+
+For $k = 5$:
+\[0.0010101 \cdot 10^5 = 101.01 < 1001\]
+
+Therefore, the smallest value is $k = 6$.
+
+\subsection*{Answer}
+$6$ (option \textbf{D}).
+
+\end{document}

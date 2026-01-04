@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Zbir svih realnih rešenja jednačine $\sqrt{x^2-1} + \sqrt{x^2+x-2} = \sqrt[4]{x^2-2x+1}$ nalazi se u intervalu:
+(A) $[-3, 0)$
+(B) $[0, 3)$
+(C) $[3, 6)$
+(D) $[-6, -3)$
+(E) nijedan od prethodno ponuđenih odgovora
+(N) Ne znam
+
+\subsection*{Solution}
+Simplify the terms:
+\[ \sqrt{x^2-1} = \sqrt{(x-1)(x+1)} \]
+\[ \sqrt{x^2+x-2} = \sqrt{(x-1)(x+2)} \]
+\[ \sqrt[4]{x^2-2x+1} = \sqrt[4]{(x-1)^2} = \sqrt{|x-1|} \]
+The domain is defined by $(x-1)(x+1) \ge 0$ and $(x-1)(x+2) \ge 0$.
+1. $(x-1)(x+1) \ge 0 \implies x \in (-\infty, -1] \cup [1, \infty)$.
+2. $(x-1)(x+2) \ge 0 \implies x \in (-\infty, -2] \cup [1, \infty)$.
+Intersection: $x \in (-\infty, -2] \cup [1, \infty)$.
+
+\textbf{Case 1: $x \ge 1$.}
+Then $|x-1| = x-1$.
+\[ \sqrt{x-1}\sqrt{x+1} + \sqrt{x-1}\sqrt{x+2} = \sqrt{x-1} \]
+\[ \sqrt{x-1} (\sqrt{x+1} + \sqrt{x+2} - 1) = 0 \]
+Solution 1: $\sqrt{x-1} = 0 \implies x=1$.
+Solution 2: $\sqrt{x+1} + \sqrt{x+2} = 1$.
+For $x \ge 1$, $\sqrt{x+1} \ge \sqrt{2} > 1$, so the sum is $>1$. No solution.
+
+\textbf{Case 2: $x \le -2$.}
+Then $|x-1| = -(x-1) = 1-x$.
+\[ \sqrt{(1-x)(-1-x)} + \sqrt{(1-x)(-2-x)} = \sqrt{1-x} \]
+\[ \sqrt{1-x} (\sqrt{-x-1} + \sqrt{-x-2} - 1) = 0 \]
+Solution 1: $\sqrt{1-x} = 0 \implies x=1$ (not in domain of Case 2).
+Solution 2: $\sqrt{-x-1} + \sqrt{-x-2} = 1$.
+Let $u = -x$. Since $x \le -2$, $u \ge 2$.
+\[ \sqrt{u-1} + \sqrt{u-2} = 1. \]
+Since $u \ge 2$, $\sqrt{u-1} \ge 1$ and $\sqrt{u-2} \ge 0$.
+The sum is $\ge 1$. Equality holds only if both minima are met: $\sqrt{u-1}=1$ and $\sqrt{u-2}=0$.
+$u-1=1 \implies u=2$.
+$u-2=0 \implies u=2$.
+Both consistent. So $u=2$ is a solution.
+$x = -u = -2$.
+
+Total solutions: $x_1 = 1$ and $x_2 = -2$.
+Sum: $S = 1 + (-2) = -1$.
+The value $-1$ lies in the interval $[-3, 0)$.
+
+\subsection*{Answer}
+$[-3, 0)$ (option \textbf{A}).
+
+\end{document}

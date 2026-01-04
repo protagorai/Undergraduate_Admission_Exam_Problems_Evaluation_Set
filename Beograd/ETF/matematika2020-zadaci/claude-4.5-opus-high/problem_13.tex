@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+How many integer solutions does the inequality $\left(\sqrt{7 + 4\sqrt{3}}\right)^{\cos x} + \left(\sqrt{7 - 4\sqrt{3}}\right)^{\cos x} \leq 4$ have for $x$ in the interval $[-2\pi, \sqrt{3} + \sqrt{5}]$?
+
+\subsection*{Solution}
+First, let's simplify $\sqrt{7 + 4\sqrt{3}}$ and $\sqrt{7 - 4\sqrt{3}}$.
+
+Note that $7 + 4\sqrt{3} = 4 + 4\sqrt{3} + 3 = (2 + \sqrt{3})^2$.
+
+So $\sqrt{7 + 4\sqrt{3}} = 2 + \sqrt{3}$.
+
+Similarly, $7 - 4\sqrt{3} = 4 - 4\sqrt{3} + 3 = (2 - \sqrt{3})^2$.
+
+So $\sqrt{7 - 4\sqrt{3}} = 2 - \sqrt{3}$.
+
+Note that $(2 + \sqrt{3})(2 - \sqrt{3}) = 4 - 3 = 1$, so $2 - \sqrt{3} = \frac{1}{2 + \sqrt{3}}$.
+
+Let $a = 2 + \sqrt{3}$ and let $t = \cos x$. The inequality becomes:
+\[
+a^t + a^{-t} \leq 4
+\]
+
+Let $u = a^t$ where $u > 0$. Then:
+\[
+u + \frac{1}{u} \leq 4
+\]
+\[
+u^2 + 1 \leq 4u
+\]
+\[
+u^2 - 4u + 1 \leq 0
+\]
+
+The roots of $u^2 - 4u + 1 = 0$ are:
+\[
+u = \frac{4 \pm \sqrt{16 - 4}}{2} = \frac{4 \pm \sqrt{12}}{2} = 2 \pm \sqrt{3}
+\]
+
+So the inequality holds when $2 - \sqrt{3} \leq u \leq 2 + \sqrt{3}$.
+
+Since $u = a^t = (2 + \sqrt{3})^t$:
+\[
+(2 + \sqrt{3})^{-1} \leq (2 + \sqrt{3})^t \leq (2 + \sqrt{3})^1
+\]
+
+Since $a = 2 + \sqrt{3} > 1$, the function $a^t$ is increasing, so:
+\[
+-1 \leq t \leq 1
+\]
+
+This means $-1 \leq \cos x \leq 1$, which is always true for all real $x$.
+
+Wait, that would mean all $x$ satisfy the inequality. Let me re-check...
+
+Actually, the condition $-1 \leq \cos x \leq 1$ is always satisfied, so the inequality holds for all $x$ in the given interval.
+
+The interval is $[-2\pi, \sqrt{3} + \sqrt{5}]$.
+
+We need to count integer values in this interval.
+
+$-2\pi \approx -6.28$ and $\sqrt{3} + \sqrt{5} \approx 1.73 + 2.24 = 3.97$.
+
+The integers in $[-6.28, 3.97]$ are: $-6, -5, -4, -3, -2, -1, 0, 1, 2, 3$.
+
+That's 10 integers.
+
+But wait, let me reconsider the problem. The question asks for integer solutions of the inequality. Let me check if all these integers satisfy the original inequality.
+
+For any integer $x$, $\cos x$ is between $-1$ and $1$, so the inequality is satisfied.
+
+Actually, I need to verify: $-2\pi \approx -6.283$, so $-6 > -2\pi$, meaning $-6$ is in the interval.
+$\sqrt{3} + \sqrt{5} \approx 3.968$, so $3 < 3.968$, meaning $3$ is in the interval.
+
+Integers: $-6, -5, -4, -3, -2, -1, 0, 1, 2, 3$ — that's 10 integers.
+
+Hmm, but the options are 3, 4, 11, 10, and "infinitely many". Let me reconsider.
+
+Actually, looking at the answer choices: (A) 3, (B) 4, (C) 11, (D) 10, (E) Infinitely many.
+
+If I count: $-6, -5, -4, -3, -2, -1, 0, 1, 2, 3$ = 10 integers.
+
+But wait, is $-6$ in the interval? $-2\pi = -6.283...$, so $-6 > -2\pi$. Yes, $-6$ is included.
+
+Is $3$ in the interval? $\sqrt{3} + \sqrt{5} = 3.968...$, so $3 < 3.968$. Yes, $3$ is included.
+
+So there are 10 integer solutions.
+
+\subsection*{Answer}
+$10$ (option \textbf{D}).
+
+\end{document}

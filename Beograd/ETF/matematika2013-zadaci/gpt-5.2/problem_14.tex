@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\begin{document}
+\section*{Zadatak 14}
+U valjak prečnika osnove \(14\sqrt{3}\,\mathrm{cm}\) i visine \(20\,\mathrm{cm}\) upisana je prava trostrana prizma čija je osnova trougao \(ABC\) sa \(BC=9\,\mathrm{cm}\) i uglom naspram stranice \(AC\) jednakim \(120^\circ\). Naći zapreminu prizme.
+
+\subsection*{Rešenje}
+Poluprečnik opisane kružnice trougla (kružnice osnove valjka) je
+\[
+R=\frac{14\sqrt{3}}{2}=7\sqrt{3}.
+\]
+Ugao naspram stranice \(AC\) je \(\angle B=120^\circ\), pa po proširenoj sinovoj teoremi:
+\[
+\frac{AC}{\sin 120^\circ}=2R \Rightarrow AC=2R\sin 120^\circ
+=2\cdot 7\sqrt{3}\cdot \frac{\sqrt{3}}{2}=21.
+\]
+Označimo \(a=BC=9\), \(b=AC=21\), \(c=AB\). Po kosinusnoj teoremi za stranicu \(b\):
+\[
+b^2=a^2+c^2-2ac\cos B.
+\]
+Kako je \(\cos 120^\circ=-\frac12\), dobijamo
+\[
+21^2=9^2+c^2-2\cdot 9\cdot c\left(-\frac12\right)
+ \Rightarrow 441=81+c^2+9c.
+\]
+\[
+c^2+9c-360=0 \Rightarrow c=\frac{-9+39}{2}=15.
+\]
+Površina osnove:
+\[
+P_{\triangle}=\frac12\cdot a\cdot c\cdot \sin B
+=\frac12\cdot 9\cdot 15\cdot \frac{\sqrt{3}}{2}
+=\frac{135\sqrt{3}}{4}.
+\]
+Visina prizme je \(20\), pa je zapremina
+\[
+V=P_{\triangle}\cdot 20=\frac{135\sqrt{3}}{4}\cdot 20=675\sqrt{3}.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{(D)\ 675\sqrt{3}}
+\]
+\end{document}
+

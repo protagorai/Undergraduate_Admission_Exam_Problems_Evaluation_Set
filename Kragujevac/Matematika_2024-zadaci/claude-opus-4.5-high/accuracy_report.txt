@@ -1,0 +1,63 @@
+PMF Kragujevac - Mathematics Entrance Exam 2024
+===============================================
+ACCURACY COMPARISON REPORT
+===============================================
+
+Problem | Computed Answer | Official Answer | Match
+--------|----------------|-----------------|------
+   1    |       Г        |        Г        |  ✓
+   2    |       Б        |        Б        |  ✓
+   3    |       Г        |        Г        |  ✓
+   4    |       Г        |        Г        |  ✓
+   5    |       Б        |        Б        |  ✓
+   6    |       А        |        А        |  ✓
+   7    |       В        |        В        |  ✓
+   8    |       В        |        В        |  ✓
+   9    |       Б        |        Б        |  ✓
+  10    |       А        |        А        |  ✓
+  11    |       Д        |        Д        |  ✓
+  12    |       Д        |        Д        |  ✓
+  13    |       В        |        В        |  ✓
+  14    |       Д        |        Д        |  ✓
+  15    |       А        |        А        |  ✓
+
+===============================================
+ACCURACY STATISTICS
+===============================================
+
+Total Problems:     15
+Correct Answers:    15
+Incorrect Answers:   0
+
+ACCURACY:          100.00%
+
+===============================================
+DETAILED COMPARISON
+===============================================
+
+Problem 1:  Computed: Г (-1)          Official: Г  ✓ MATCH
+Problem 2:  Computed: Б (1)           Official: Б  ✓ MATCH
+Problem 3:  Computed: Г (4)           Official: Г  ✓ MATCH
+Problem 4:  Computed: Г (17)          Official: Г  ✓ MATCH
+Problem 5:  Computed: Б (-3)          Official: Б  ✓ MATCH
+Problem 6:  Computed: А (1)           Official: А  ✓ MATCH
+Problem 7:  Computed: В (20)          Official: В  ✓ MATCH
+Problem 8:  Computed: В (2)           Official: В  ✓ MATCH
+Problem 9:  Computed: Б (5 cm)        Official: Б  ✓ MATCH
+Problem 10: Computed: А (8/3 cm³)     Official: А  ✓ MATCH
+Problem 11: Computed: Д (2x+y-11=0)   Official: Д  ✓ MATCH
+Problem 12: Computed: Д (-3/2)        Official: Д  ✓ MATCH
+Problem 13: Computed: В (1)           Official: В  ✓ MATCH
+Problem 14: Computed: Д (6000)        Official: Д  ✓ MATCH
+Problem 15: Computed: А (324)         Official: А  ✓ MATCH
+
+===============================================
+CONCLUSION
+===============================================
+
+All 15 computed solutions match the official answer key.
+The solver achieved perfect accuracy on this exam.
+
+Source of computed answers: solutions.txt
+Source of official answers: answers/*.png (red-circled options)
+

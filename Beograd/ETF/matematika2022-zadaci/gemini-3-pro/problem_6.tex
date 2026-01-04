@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 6}
+Neka su $x$ i $y$ kompleksni brojevi različiti od nule. Ako je $\frac{x}{y} + 4\frac{y}{x} = 2$ tada $\frac{x^3}{y^3}$ iznosi:
+\begin{itemize}
+    \item[(A)] -8
+    \item[(B)] 0
+    \item[(C)] 16
+    \item[(D)] 8
+    \item[(E)] -16
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Uvedimo smenu $t = \frac{x}{y}$. Jednačina postaje:
+\[ t + \frac{4}{t} = 2 \]
+Množenjem sa $t$ ($t \neq 0$):
+\[ t^2 + 4 = 2t \]
+\[ t^2 - 2t + 4 = 0 \]
+Rešavamo kvadratnu jednačinu po $t$:
+\[ t_{1,2} = \frac{2 \pm \sqrt{4 - 16}}{2} = \frac{2 \pm \sqrt{-12}}{2} = \frac{2 \pm 2i\sqrt{3}}{2} = 1 \pm i\sqrt{3} \]
+Tražimo vrednost $\frac{x^3}{y^3} = t^3$.
+\[ t = 1 \pm i\sqrt{3} = 2\left(\frac{1}{2} \pm i\frac{\sqrt{3}}{2}\right) = 2e^{\pm i\frac{\pi}{3}} \]
+Tada je:
+\[ t^3 = (2e^{\pm i\frac{\pi}{3}})^3 = 8e^{\pm i\pi} = 8(\cos \pi \pm i \sin \pi) = 8(-1) = -8 \]
+Alternativno, iz $t^2 - 2t + 4 = 0$ imamo $t^2 = 2t - 4$.
+\[ t^3 = t \cdot t^2 = t(2t - 4) = 2t^2 - 4t = 2(2t - 4) - 4t = 4t - 8 - 4t = -8 \]
+
+\subsection*{Answer}
+-8 (option \textbf{A}).
+
+\end{document}

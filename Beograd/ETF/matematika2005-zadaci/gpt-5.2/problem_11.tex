@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Date su funkcije $f_1(x)=x$, $f_2(x)=\dfrac{x^2}{x}$, $f_3(x)=\sqrt{x^2}$, $f_4(x)=(\sqrt{x})^2$. Tačan je iskaz:
+\[
+\text{(A) Sve funkcije su međusobno jednake}\qquad
+\text{(B) }f_1=f_2\neq f_3\qquad
+\text{(C) Među datim funkcijama nema međusobno jednakih}
+\]
+\[
+\text{(D) }f_1=f_3\neq f_4\qquad
+\text{(E) }f_1\neq f_3=f_4\qquad
+\text{(N) Ne znam.}
+\]
+
+\subsection*{Solution}
+Funkcije se porede kao preslikavanja: moraju imati isti domen i iste vrednosti.
+\begin{itemize}
+\item $f_1(x)=x$ ima domen $\mathbb{R}$.
+\item $f_2(x)=\dfrac{x^2}{x}=x$, ali je definisana samo za $x\neq 0$, dakle domen je $\mathbb{R}\setminus\{0\}$.
+\item $f_3(x)=\sqrt{x^2}=|x|$ ima domen $\mathbb{R}$ i nije jednaka $f_1$ jer za $x<0$ važi $|x|\neq x$.
+\item $f_4(x)=(\sqrt{x})^2=x$, ali samo za $x\ge 0$, dakle domen je $[0,\infty)$.
+\end{itemize}
+Ni dve od ovih funkcija nemaju istovremeno isti domen i iste vrednosti na tom domenu, pa nema međusobno jednakih funkcija.
+
+\subsection*{Answer}
+Tačno je (option \textbf{C}).
+
+\end{document}
+

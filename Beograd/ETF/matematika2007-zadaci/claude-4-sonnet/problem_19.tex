@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Dati su brojevi $a = \frac{\sin 1}{\sin 2}$, $b = \frac{\sin 2}{\sin 3}$, $c = \frac{\sin 3}{\sin 4}$. Tada je:
+\begin{enumerate}
+\item[(A)] $a < b < c$
+\item[(B)] $c < b < a$
+\item[(C)] $c < a < b$
+\item[(D)] $b < a < c$
+\item[(E)] $a < c < b$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Brojevi 1, 2, 3, 4 su u radijanima. Primetimo da:
+\begin{itemize}
+\item $1 \text{ rad} \approx 57.3°$
+\item $2 \text{ rad} \approx 114.6°$
+\item $3 \text{ rad} \approx 171.9°$
+\item $4 \text{ rad} \approx 229.2°$
+\end{itemize}
+
+Pošto je $\pi \approx 3.14$, imamo:
+\begin{itemize}
+\item $1 < \frac{\pi}{2}$, pa je $\sin 1 > 0$ i $\sin 1$ je rastući
+\item $\frac{\pi}{2} < 2 < \pi$, pa je $\sin 2 > 0$ i $\sin 2$ je opadajući
+\item $\frac{\pi}{2} < 3 < \pi$, pa je $\sin 3 > 0$ i $\sin 3$ je opadajući
+\item $\pi < 4 < \frac{3\pi}{2}$, pa je $\sin 4 < 0$
+\end{itemize}
+
+Tačnije:
+\begin{itemize}
+\item $\sin 1 \approx 0.841$
+\item $\sin 2 \approx 0.909$
+\item $\sin 3 \approx 0.141$
+\item $\sin 4 \approx -0.757$
+\end{itemize}
+
+Dakle:
+\begin{align}
+a &= \frac{\sin 1}{\sin 2} \approx \frac{0.841}{0.909} \approx 0.925 \\
+b &= \frac{\sin 2}{\sin 3} \approx \frac{0.909}{0.141} \approx 6.447 \\
+c &= \frac{\sin 3}{\sin 4} \approx \frac{0.141}{-0.757} \approx -0.186
+\end{align}
+
+Dakle: $c < 0 < a < b$.
+
+To znači $c < a < b$.
+
+\subsection*{Answer}
+$c < a < b$, što odgovara opciji \textbf{(C)}.
+
+\end{document}

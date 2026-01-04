@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Skup svih rešenja nejednačine $\frac{(x+1)(x+2)}{(x-1)(x-2)} \ge 1$ je :
+\[
+(A)\ (-\infty, +\infty) \quad (B)\ [0, +\infty) \quad (C)\ [0, 1] \quad (D)\ [0, 1) \cup (2, +\infty) \quad (E)\ (-\infty, 0] \cup (2, +\infty) \quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Prebacimo 1 na levu stranu:
+\[
+\frac{(x+1)(x+2)}{(x-1)(x-2)} - 1 \ge 0
+\]
+Svedemo na zajednički imenilac:
+\[
+\frac{(x+1)(x+2) - (x-1)(x-2)}{(x-1)(x-2)} \ge 0
+\]
+Izmnožimo brojilac:
+\[
+(x^2 + 3x + 2) - (x^2 - 3x + 2) = 6x
+\]
+Nejednačina postaje:
+\[
+\frac{6x}{(x-1)(x-2)} \ge 0
+\]
+Analiziramo znak izraza pomoću tabele ili intervala. Nule su $x=0$, a prekidne tačke $x=1$ i $x=2$.
+\begin{itemize}
+    \item Za $x < 0$: brojilac $(-)$, imenilac $(-)(-) = (+)$, količnik $(-)$.
+    \item Za $0 \le x < 1$: brojilac $(+)$, imenilac $(-)(-) = (+)$, količnik $(+)$.
+    \item Za $1 < x < 2$: brojilac $(+)$, imenilac $(+)(-) = (-)$, količnik $(-)$.
+    \item Za $x > 2$: brojilac $(+)$, imenilac $(+)(+) = (+)$, količnik $(+)$.
+\end{itemize}
+Rešenje je unija intervala gde je izraz nenegativan:
+\[
+x \in [0, 1) \cup (2, +\infty)
+\]
+Napomena: $x=1$ i $x=2$ su isključeni jer funkcija nije definisana u tim tačkama.
+
+\subsection*{Answer}
+$[0, 1) \cup (2, +\infty)$ (option \textbf{D}).
+
+\end{document}

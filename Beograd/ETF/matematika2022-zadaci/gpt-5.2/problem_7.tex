@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Compute
+\[
+\lim_{x\to \pi/4}\frac{\cot^3 x-1}{2-\cot x-\cot^3 x}.
+\]
+
+\subsection*{Solution}
+Let $u=\cot x$. As $x\to\pi/4$ we have $u\to 1$. The limit becomes
+\[
+\lim_{u\to 1}\frac{u^3-1}{2-u-u^3}.
+\]
+Factor:
+\[
+u^3-1=(u-1)(u^2+u+1),
+\]
+and
+\[
+2-u-u^3=-(u^3+u-2)=-(u-1)(u^2+u+2).
+\]
+Cancel $(u-1)$:
+\[
+\lim_{u\to 1}-\frac{u^2+u+1}{u^2+u+2}
+=-\frac{1+1+1}{1+1+2}=-\frac{3}{4}.
+\]
+
+\subsection*{Answer}
+$-\dfrac{3}{4}$ (option \textbf{B}).
+
+\end{document}
+

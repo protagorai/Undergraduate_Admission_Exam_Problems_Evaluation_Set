@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+The number of solutions to the equation $(\cos x)^{\sin^2 x - \frac{1}{2}\sin x + \frac{1}{2}} = 1$ on the interval $[0, \frac{\pi}{2}]$ is:
+
+A) $0$; B) $1$; C) $2$; D) $3$; E) $4$; N) Ne znam.
+
+\subsection*{Solution}
+For the equation $a^b = 1$ to hold, we need one of the following:
+1. $a = 1$ (and $b$ can be anything)
+2. $a = -1$ and $b$ is an even integer
+3. $a \neq 0$ and $b = 0$
+
+In our case, $a = \cos x$ and $b = \sin^2 x - \frac{1}{2}\sin x + \frac{1}{2}$.
+
+On the interval $[0, \frac{\pi}{2}]$, we have $\cos x \geq 0$, so case 2 doesn't apply.
+
+\textbf{Case 1:} $\cos x = 1$
+This occurs when $x = 0$.
+
+\textbf{Case 3:} $\sin^2 x - \frac{1}{2}\sin x + \frac{1}{2} = 0$
+Let $u = \sin x$. Then:
+\[
+u^2 - \frac{1}{2}u + \frac{1}{2} = 0
+\]
+
+Multiplying by 2:
+\[
+2u^2 - u + 1 = 0
+\]
+
+Using the quadratic formula:
+\[
+u = \frac{1 \pm \sqrt{1 - 8}}{4} = \frac{1 \pm \sqrt{-7}}{4}
+\]
+
+Since the discriminant is negative, there are no real solutions for $u$, so no solutions from this case.
+
+Let me double-check the exponent: $\sin^2 x - \frac{1}{2}\sin x + \frac{1}{2}$
+
+Actually, let me factor this differently:
+\[
+\sin^2 x - \frac{1}{2}\sin x + \frac{1}{2} = \left(\sin x - \frac{1}{4}\right)^2 + \frac{1}{2} - \frac{1}{16} = \left(\sin x - \frac{1}{4}\right)^2 + \frac{7}{16}
+\]
+
+Since this is always positive (minimum value is $\frac{7}{16} > 0$), case 3 doesn't apply.
+
+Therefore, the only solution is $x = 0$.
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}

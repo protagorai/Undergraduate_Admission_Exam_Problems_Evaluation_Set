@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 3}
+Vrednost izraza $\left( 3^{\frac{2 - \log_{3\sqrt{3}} 5 + 2\log_9 4}{4}} \right)^6$ je:
+\begin{itemize}
+    \item[(A)] 1
+    \item[(B)] 8/9
+    \item[(C)] 2
+    \item[(D)] 25/9
+    \item[(E)] 216/5
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Oznaczimo izraz sa $I$.
+\[ I = 3^{\frac{6}{4} (2 - \log_{3\sqrt{3}} 5 + 2\log_9 4)} = 3^{\frac{3}{2} (2 - \log_{3\sqrt{3}} 5 + 2\log_9 4)} \]
+Sredimo logaritme u eksponentu.
+Osnova prvog logaritma: $3\sqrt{3} = 3^1 \cdot 3^{1/2} = 3^{3/2}$.
+\[ \log_{3\sqrt{3}} 5 = \log_{3^{3/2}} 5 = \frac{1}{3/2} \log_3 5 = \frac{2}{3} \log_3 5 \]
+Drugi logaritam:
+\[ 2\log_9 4 = 2\log_{3^2} 2^2 = 2 \cdot \frac{2}{2} \log_3 2 = 2 \log_3 2 \]
+Zamenimo u eksponent:
+\[ E = \frac{3}{2} \left( 2 - \frac{2}{3} \log_3 5 + 2 \log_3 2 \right) = 3 - \log_3 5 + 3 \log_3 2 \]
+Sada računamo vrednost izraza:
+\[ I = 3^{3 - \log_3 5 + 3 \log_3 2} = \frac{3^3 \cdot 3^{3 \log_3 2}}{3^{\log_3 5}} \]
+\[ I = \frac{27 \cdot (3^{\log_3 2})^3}{5} = \frac{27 \cdot 2^3}{5} = \frac{27 \cdot 8}{5} = \frac{216}{5} \]
+
+\subsection*{Answer}
+216/5 (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 9}
+Ako je polinom $P(x) = x^{2014} + px^{2013} + qx - 1$ ($p, q \in \mathbf{R}$), deljiv polinomom $x+1$, tada je zbir $p+q$ jednak:
+\[ (A)\ 0 \quad (B)\ 1 \quad (C)\ 2 \quad (D)\ -2 \quad (E)\ -1 \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+If $P(x)$ is divisible by $x+1$, then by Bezout's theorem, $P(-1) = 0$.
+Substitute $x = -1$ into the polynomial:
+\[ P(-1) = (-1)^{2014} + p(-1)^{2013} + q(-1) - 1 \]
+Since 2014 is even and 2013 is odd:
+\[ P(-1) = 1 + p(-1) - q - 1 \]
+\[ P(-1) = 1 - p - q - 1 \]
+\[ P(-1) = -p - q \]
+Set equal to 0:
+\[ -p - q = 0 \implies p + q = 0 \]
+
+\subsection*{Answer}
+$0$ (option \textbf{A}).
+
+\end{document}

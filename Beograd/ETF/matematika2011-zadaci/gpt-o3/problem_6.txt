@@ -1,0 +1,5 @@
+Problem 6
+
+Osnovice jednakokrakog trapeza su 15 cm i 5 cm, a kraci 13 cm. Njegova visina (u cm) iznosi:
+
+(A) 16    (B) 8    (C) 10    (D) 12    (E) 9    (N) Ne znam

@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 19}
+Skup svih rešenja nejednačine $\frac{(x^2-4)(5^{2x} - 6 \cdot 5^{x+1} + 5^3)}{\sqrt{9 - 3^{x^2-3x+2}}} \le 0$ je oblika (za neke realne brojeve $a, b, c, d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+1. Domen:
+Potkorena veličina u imeniocu mora biti strogo pozitivna (jer je u imeniocu):
+$9 - 3^{x^2-3x+2} > 0$
+$3^2 > 3^{x^2-3x+2}$
+$2 > x^2 - 3x + 2$
+$x^2 - 3x < 0$
+$x(x-3) < 0 \implies x \in (0, 3)$.
+Domen je $D = (0, 3)$.
+
+2. Znak brojioca:
+Brojilac je proizvod dva faktora: $A = x^2 - 4$ i $B = 5^{2x} - 6 \cdot 5^{x+1} + 5^3$.
+$B = (5^x)^2 - 30 \cdot 5^x + 125$.
+Smena $t = 5^x$: $t^2 - 30t + 125 = 0$.
+$t_{1,2} = \frac{30 \pm 20}{2} \implies t_1 = 25, t_2 = 5$.
+$5^x = 25 \implies x = 2$.
+$5^x = 5 \implies x = 1$.
+Faktor $B$ je pozitivan za $5^x \in (-\infty, 5) \cup (25, \infty)$, tj. $x \in (-\infty, 1) \cup (2, \infty)$, a negativan za $x \in (1, 2)$.
+
+Faktor $A = x^2 - 4$ ima nule $\pm 2$. Na domenu $(0, 3)$, $x=-2$ nije relevantno.
+$A$ je negativan na $(0, 2)$, a pozitivan na $(2, 3)$.
+
+Analiza znaka na $(0, 3)$:
+- Interval $(0, 1)$:
+  $A < 0$ (jer $x^2 < 1 < 4$)
+  $B > 0$ (jer $x < 1$)
+  Proizvod $A \cdot B < 0$. Rešenje!
+- Tačka $x = 1$:
+  $B = 0 \implies$ Proizvod je 0. Rešenje!
+- Interval $(1, 2)$:
+  $A < 0$
+  $B < 0$
+  Proizvod $A \cdot B > 0$. Nije rešenje.
+- Tačka $x = 2$:
+  $A = 0, B = 0 \implies$ Proizvod je 0. Rešenje!
+- Interval $(2, 3)$:
+  $A > 0$
+  $B > 0$
+  Proizvod $A \cdot B > 0$. Nije rešenje.
+
+Dakle, rešenje je $x \in (0, 1] \cup \{2\}$.
+Ovo odgovara obliku $(a, b] \cup \{c\}$ sa $a=0, b=1, c=2$.
+
+\subsection*{Answer}
+$(a, b] \cup \{c\}$ (option \textbf{E}).
+
+\end{document}
+

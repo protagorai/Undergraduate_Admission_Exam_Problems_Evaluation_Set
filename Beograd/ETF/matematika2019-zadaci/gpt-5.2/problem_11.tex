@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Neka je $x\in\mathbb{R}$ pozitivan broj i neka je $n\in\mathbb{N}$ paran broj.
+Zbir svih binomnih koeficijenata u razvoju binoma
+\[
+\left(x^{2019}+\frac{1}{x^{2019}}\right)^n
+\]
+četiri puta je veći od zbira svih binomnih koeficijenata u razvoju binoma
+\[
+\left(\sqrt{x}+\frac{1}{\sqrt{x}}\right)^{\frac{n}{2}}.
+\]
+Zbir onih članova ova dva razvoja binoma koji ne sadrže $x$ jednak je:
+
+\subsection*{Solution}
+Zbir svih binomnih koeficijenata u razvoju $(a+b)^m$ jednak je $2^m$.
+Zato je uslov
+\[
+2^n=4\cdot 2^{n/2}.
+\]
+Odavde
+\[
+2^{n-n/2}=4 \;\Rightarrow\; 2^{n/2}=4 \;\Rightarrow\; \frac{n}{2}=2 \;\Rightarrow\; n=4.
+\]
+
+Sada tražimo zbir članova koji ne sadrže $x$ (konstantni članovi).
+
+\medskip
+\noindent\textbf{1) }$\left(x^{2019}+x^{-2019}\right)^4$:
+opšti član je $\binom{4}{k}x^{2019(4-2k)}$. Konstantni član nastaje za $4-2k=0$, tj.\ $k=2$,
+pa je konstanta $\binom{4}{2}=6$.
+
+\medskip
+\noindent\textbf{2) }$\left(x^{1/2}+x^{-1/2}\right)^{2}$:
+\[
+\left(\sqrt{x}+\frac{1}{\sqrt{x}}\right)^2=x+2+\frac1x,
+\]
+pa je konstantni član $2$.
+
+Zbir konstantnih članova je $6+2=8$.
+
+\subsection*{Answer}
+$8$ (option \textbf{C}).
+
+\end{document}
+

@@ -1,0 +1,2 @@
+13. Granična vrednost lim_{x→2} \frac{x\sqrt{x} − \sqrt{2}x − 2\sqrt{x} + 2\sqrt{2}}{x^3 − 4x^2 + 4x} iznosi:
+(A) \frac{1}{4\sqrt{2}}   (B) \frac{1}{2\sqrt{2}}   (C) 0   (D) \sqrt{2}   (E) \frac{1}{5\sqrt{2}}   (N) Ne znam

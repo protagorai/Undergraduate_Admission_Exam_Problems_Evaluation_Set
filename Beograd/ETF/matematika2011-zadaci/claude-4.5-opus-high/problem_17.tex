@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Find the maximum perimeter of a rectangle inscribed in a circle with radius $r$.
+
+\subsection*{Solution}
+Let the rectangle have sides $a$ and $b$. Since it's inscribed in a circle of radius $r$, the diagonal of the rectangle equals the diameter $2r$.
+
+By the Pythagorean theorem:
+\[
+a^2 + b^2 = (2r)^2 = 4r^2
+\]
+
+The perimeter is $P = 2(a + b)$. We want to maximize $a + b$ subject to $a^2 + b^2 = 4r^2$.
+
+Using the Cauchy-Schwarz inequality:
+\[
+(a + b)^2 \leq 2(a^2 + b^2) = 2 \cdot 4r^2 = 8r^2
+\]
+
+Therefore $a + b \leq 2\sqrt{2}r$, with equality when $a = b$.
+
+When $a = b$: $2a^2 = 4r^2 \Rightarrow a = \sqrt{2}r$.
+
+The maximum perimeter is:
+\[
+P_{\max} = 2(a + b) = 2 \cdot 2\sqrt{2}r = 4\sqrt{2}r
+\]
+
+\subsection*{Answer}
+\textbf{(B)} $4\sqrt{2}r$
+
+\end{document}

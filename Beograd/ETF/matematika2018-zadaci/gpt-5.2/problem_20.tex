@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Dat je skup $A=\{a_1,a_2,\dots,a_{11}\}$. Koliko ima uređenih parova $(X,Y)$ takvih da je
+$X\subset A$, $Y\subset A$, $|X|=8$, $|Y|=7$ i $|X\cap Y|=5$?
+
+\subsection*{Solution}
+Neka je $I=X\cap Y$. Tada je $|I|=5$.
+
+\medskip
+\textbf{1) Izbor preseka.}
+Biramo 5 elemenata preseka iz skupa od 11 elemenata:
+\[
+\binom{11}{5}.
+\]
+
+\medskip
+\textbf{2) Izbor elemenata van preseka.}
+Preostaje $11-5=6$ elemenata u $A\setminus I$.
+
+Skup $X$ ima još $8-5=3$ elementa van preseka, pa biramo
+\[
+\binom{6}{3}
+\]
+za $X\setminus I$.
+
+Da bi $|X\cap Y|=5$ bilo tačno (nema dodatnog preklapanja van $I$), skup $Y\setminus I$ mora biti disjunktan sa $X\setminus I$.
+Pošto je nakon izbora $X\setminus I$ ostalo $6-3=3$ elemenata, za $Y\setminus I$ (veličine $7-5=2$) biramo
+\[
+\binom{3}{2}.
+\]
+
+\medskip
+\textbf{3) Ukupan broj uređenih parova.}
+\[
+\binom{11}{5}\binom{6}{3}\binom{3}{2}
+=462\cdot 20\cdot 3
+=27720.
+\]
+
+\subsection*{Answer}
+$27720$ (option \textbf{C}).
+
+\end{document}
+

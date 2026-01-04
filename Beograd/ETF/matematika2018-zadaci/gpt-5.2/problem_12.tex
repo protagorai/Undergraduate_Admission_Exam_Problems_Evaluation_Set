@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Rešiti nejednačinu
+\[
+x+2<\sqrt{x+44}.
+\]
+
+\subsection*{Solution}
+Domen je $x+44\ge 0$, tj. $x\ge -44$.
+Uvedimo smenu $t=\sqrt{x+44}$, gde je $t\ge 0$. Tada je $x=t^2-44$ i nejednačina postaje
+\[
+t^2-44+2<t \;\Longleftrightarrow\; t^2-t-42<0.
+\]
+Faktorišemo:
+\[
+t^2-t-42=(t-7)(t+6).
+\]
+Pošto je $t\ge 0$, faktor $t+6>0$, pa uslov $(t-7)(t+6)<0$ svodi se na
+\[
+t-7<0 \quad\Rightarrow\quad 0\le t<7.
+\]
+Vraćanjem na $x$ dobijamo
+\[
+0\le \sqrt{x+44}<7 \;\Longleftrightarrow\; 0\le x+44<49 \;\Longleftrightarrow\; -44\le x<5.
+\]
+
+\subsection*{Answer}
+$[-44,5)$ (option \textbf{A}).
+
+\end{document}
+

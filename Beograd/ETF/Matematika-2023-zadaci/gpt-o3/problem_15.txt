@@ -1,0 +1,8 @@
+Problem 15 (Matematika 2023)
+U razvoju binoma (√2 + 1/√2)^n, n∈ℕ, binomni koeficijent četvrtog člana veći je 26 puta od koeficijenta trećeg člana. Broj racionalnih sabiraka u razvoju iznosi:
+a) 12
+b) 14
+c) 15
+d) 16
+e) 17
+n) Ne znam

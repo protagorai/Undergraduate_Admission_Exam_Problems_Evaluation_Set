@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+If points $M$, $N$, $P$, and $Q$ are the midpoints of edges $DA$, $AB$, $BC$, and $CD$ of a regular tetrahedron $ABCD$ with edge length $a$, find the area of quadrilateral $MNPQ$.
+
+\subsection*{Solution}
+In a regular tetrahedron, all edges have length $a$. Let's find the shape and area of quadrilateral $MNPQ$.
+
+The midpoints are:
+\begin{itemize}
+    \item $M$ = midpoint of $DA$
+    \item $N$ = midpoint of $AB$
+    \item $P$ = midpoint of $BC$
+    \item $Q$ = midpoint of $CD$
+\end{itemize}
+
+By the midpoint theorem, in any triangle, the segment connecting midpoints of two sides is parallel to the third side and has half its length.
+
+In triangle $DAB$:
+\begin{itemize}
+    \item $MN$ connects midpoints of $DA$ and $AB$
+    \item $MN \parallel DB$ and $MN = \frac{1}{2}DB = \frac{a}{2}$ (since $DB = a$)
+\end{itemize}
+
+In triangle $BCD$:
+\begin{itemize}
+    \item $PQ$ connects midpoints of $BC$ and $CD$
+    \item $PQ \parallel DB$ and $PQ = \frac{1}{2}DB = \frac{a}{2}$
+\end{itemize}
+
+So $MN \parallel PQ$ and $MN = PQ = \frac{a}{2}$.
+
+In triangle $ABC$:
+\begin{itemize}
+    \item $NP$ connects midpoints of $AB$ and $BC$
+    \item $NP \parallel AC$ and $NP = \frac{1}{2}AC = \frac{a}{2}$
+\end{itemize}
+
+In triangle $DCA$:
+\begin{itemize}
+    \item $QM$ connects midpoints of $CD$ and $DA$
+    \item $QM \parallel AC$ and $QM = \frac{1}{2}AC = \frac{a}{2}$
+\end{itemize}
+
+So $NP \parallel QM$ and $NP = QM = \frac{a}{2}$.
+
+Therefore, $MNPQ$ is a parallelogram with all sides equal to $\frac{a}{2}$, making it a rhombus.
+
+To find the area, we need the diagonals $MP$ and $NQ$.
+
+$MP$ connects midpoints of $DA$ and $BC$. In the tetrahedron, $DA$ and $BC$ are opposite edges (they don't share a vertex). The distance between midpoints of opposite edges in a regular tetrahedron with edge $a$ is $\frac{a}{\sqrt{2}}$.
+
+Similarly, $NQ$ connects midpoints of $AB$ and $CD$ (another pair of opposite edges), so $NQ = \frac{a}{\sqrt{2}}$.
+
+Since $MP = NQ = \frac{a}{\sqrt{2}}$, and the diagonals of the rhombus bisect each other at right angles (which can be verified by symmetry of the tetrahedron), the area is:
+\[
+\text{Area} = \frac{1}{2} \cdot MP \cdot NQ = \frac{1}{2} \cdot \frac{a}{\sqrt{2}} \cdot \frac{a}{\sqrt{2}} = \frac{1}{2} \cdot \frac{a^2}{2} = \frac{a^2}{4}
+\]
+
+\subsection*{Answer}
+$\frac{a^2}{4}$ (option \textbf{A}).
+
+\end{document}

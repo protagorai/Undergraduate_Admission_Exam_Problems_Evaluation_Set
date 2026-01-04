@@ -1,0 +1,20 @@
+1. E, i
+2. A, 5
+3. E, 0
+4. B, \sqrt{2}
+5. B, k
+6. D, 0
+7. C, a^3x^2 + b(b^2-3ac)x + c^3 = 0
+8. C, b
+9. E, \sqrt{82}
+10. E, -1/2
+11. A, x \in (-1, 1/2) \cup (5/4, +\infty)
+12. E, 1 - x^8
+13. B, dva realna rešenja
+14. A, 20
+15. C, \sqrt{13/2}
+16. C, -56
+17. E, E_1 = E_3, E_2 = E_4
+18. A, \binom{10}{2}\binom{12}{1} + \binom{10}{1}\binom{12}{2}
+19. D, [a, b]
+20. B, 1

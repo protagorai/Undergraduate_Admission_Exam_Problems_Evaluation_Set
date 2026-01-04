@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Ako je $A = \dfrac{1}{6}\left((\log_2 3)^3 - (\log_2 6)^3 - (\log_2 12)^3 + (\log_2 24)^3\right)$, tada je vrednost izraza $2^A$ jednaka:
+
+\subsection*{Solution}
+Let $x = \log_2 3$. Then:
+\begin{itemize}
+\item $\log_2 3 = x$
+\item $\log_2 6 = \log_2(2 \cdot 3) = 1 + x$
+\item $\log_2 12 = \log_2(4 \cdot 3) = 2 + x$
+\item $\log_2 24 = \log_2(8 \cdot 3) = 3 + x$
+\end{itemize}
+
+So:
+\[
+A = \frac{1}{6}\left(x^3 - (1+x)^3 - (2+x)^3 + (3+x)^3\right)
+\]
+
+Let's compute each term:
+\[
+x^3 = x^3
+\]
+\[
+(1+x)^3 = 1 + 3x + 3x^2 + x^3
+\]
+\[
+(2+x)^3 = 8 + 12x + 6x^2 + x^3
+\]
+\[
+(3+x)^3 = 27 + 27x + 9x^2 + x^3
+\]
+
+Now compute:
+\[
+x^3 - (1+x)^3 - (2+x)^3 + (3+x)^3
+\]
+\[
+= x^3 - (1 + 3x + 3x^2 + x^3) - (8 + 12x + 6x^2 + x^3) + (27 + 27x + 9x^2 + x^3)
+\]
+
+Collecting terms:
+\begin{itemize}
+\item $x^3$ terms: $1 - 1 - 1 + 1 = 0$
+\item $x^2$ terms: $-3 - 6 + 9 = 0$
+\item $x$ terms: $-3 - 12 + 27 = 12$
+\item constant terms: $-1 - 8 + 27 = 18$
+\end{itemize}
+
+So:
+\[
+A = \frac{1}{6}(12x + 18) = 2x + 3 = 2\log_2 3 + 3 = \log_2 9 + 3 = \log_2 9 + \log_2 8 = \log_2 72
+\]
+
+Therefore:
+\[
+2^A = 2^{\log_2 72} = 72
+\]
+
+\subsection*{Answer}
+$72$ (option \textbf{C}).
+
+\end{document}

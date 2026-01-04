@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 5}
+Zbir $\sin \frac{3\pi}{7} + \sin \frac{4\pi}{7}$ jednak je:
+\[
+(A)\; -2\sin \frac{\pi}{14} \quad (B)\; -2\cos \frac{\pi}{14} \quad (C)\; 2\sin \frac{\pi}{14} \quad (D)\; 2\cos \frac{\pi}{7} \quad (E)\; 2\cos \frac{\pi}{14}
+\]
+
+\subsection*{Solution}
+Koristimo osobinu $\sin(\pi - \alpha) = \sin \alpha$.
+Primetimo da je $\frac{3\pi}{7} + \frac{4\pi}{7} = \frac{7\pi}{7} = \pi$, pa je $\frac{4\pi}{7} = \pi - \frac{3\pi}{7}$.
+Tada je:
+\[
+\sin \frac{4\pi}{7} = \sin \left(\pi - \frac{3\pi}{7}\right) = \sin \frac{3\pi}{7}
+\]
+Naš izraz postaje:
+\[
+\sin \frac{3\pi}{7} + \sin \frac{3\pi}{7} = 2 \sin \frac{3\pi}{7}
+\]
+Da bismo dobili rešenje u ponuđenom obliku (preko kosinusa), koristimo vezu $\sin \alpha = \cos(\frac{\pi}{2} - \alpha)$:
+\[
+\frac{\pi}{2} - \frac{3\pi}{7} = \frac{7\pi - 6\pi}{14} = \frac{\pi}{14}
+\]
+Dakle:
+\[
+2 \sin \frac{3\pi}{7} = 2 \cos \frac{\pi}{14}
+\]
+
+\subsection*{Answer}
+$2\cos \frac{\pi}{14}$ (option \textbf{E}).
+
+\end{document}

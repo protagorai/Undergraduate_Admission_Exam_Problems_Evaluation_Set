@@ -1,0 +1,62 @@
+REŠENJA - MATEMATIKA 2017 PRIJEMNI ISPIT
+========================================
+
+1. (N) Ne znam
+   Izraz √(-89) nije definisan u realnim brojevima.
+
+2. (A) ∛(36πV²)
+   Površina lopte izražena preko zapremine.
+
+3. (B) √5
+   Iz uslova x + 1/x = 3 sledi da je √x + 1/√x = √5.
+
+4. (D) √2
+   |w| = √2 na osnovu svojstava modula kompleksnih brojeva.
+
+5. (B) 24
+   P(-2) = 24 za polinom sa korenima -1, 2i, -2i i P(0) = -12.
+
+6. (D) 5
+   f'(1/2) = 5 (zanemarujući imaginarni deo).
+
+7. (E) -2/3
+   Granična vrednost složenog izraza.
+
+8. (B) 2122
+   Koeficijent uz x⁴ u razvoju datog izraza.
+
+9. (C) 31
+   f(f(f(17) + 1) + 1) = 31 za datu po delovima definisanu funkciju.
+
+10. (C) 3/√7
+    cos∠BAC + cos∠ACB = 3/√7 u trouglu sa datim uslovima.
+
+11. (D) 5(-21α + 53β)
+    Zbir prvih 160 članova aritmetičke progresije.
+
+12. (C) 4
+    Ukupan broj realnih rešenja trigonometrijske jednačine na datom intervalu.
+
+13. (C) arctan(2/3)
+    Oštар ugao između tangenti dve krive u datim tačkama.
+
+14. (B) [a,b) ∪ (b,+∞)
+    Skup rešenja nejednačine sa apsolutnim vrednostima i korenima.
+
+15. (B) 2
+    Ukupan broj realnih rešenja sistema jednačina.
+
+16. (B) [0,3)
+    Zbir svih realnih rešenja jednačine sa korenima se nalazi u intervalu [0,3).
+
+17. (D) 4
+    Vrednost trigonometrijskog izraza.
+
+18. (A) S³·√3/216
+    Maksimalna zapremina pravilne trostrane prizme.
+
+19. (D) (-∞,a) ∪ {b}
+    Skup vrednosti parametra m za koje je zadovoljena nejednačina.
+
+20. (A) 2592
+    Ukupan broj preslikavanja sa datim uslovima.

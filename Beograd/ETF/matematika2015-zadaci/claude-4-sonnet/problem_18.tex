@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+The tangent to the curve $y = e^{-x}$ (where $x > -1$) intersects the coordinate axes at points $A$ and $B$. If $O$ is the coordinate origin, the maximum area of triangle $OAB$ is:
+
+\subsection*{Solution}
+Let the point of tangency be $(a, e^{-a})$ where $a > -1$.
+
+The derivative of $y = e^{-x}$ is $y' = -e^{-x}$.
+
+At point $(a, e^{-a})$, the slope of the tangent line is $-e^{-a}$.
+
+The equation of the tangent line is:
+\[y - e^{-a} = -e^{-a}(x - a)\]
+\[y = -e^{-a}x + ae^{-a} + e^{-a}\]
+\[y = -e^{-a}x + e^{-a}(a + 1)\]
+
+To find the intercepts:
+
+\textbf{x-intercept (point A):} Set $y = 0$:
+\[0 = -e^{-a}x + e^{-a}(a + 1)\]
+\[e^{-a}x = e^{-a}(a + 1)\]
+\[x = a + 1\]
+
+So $A = (a + 1, 0)$.
+
+\textbf{y-intercept (point B):} Set $x = 0$:
+\[y = e^{-a}(a + 1)\]
+
+So $B = (0, e^{-a}(a + 1))$.
+
+The area of triangle $OAB$ with vertices at $O(0,0)$, $A(a+1, 0)$, and $B(0, e^{-a}(a+1))$ is:
+\[\text{Area} = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times (a+1) \times e^{-a}(a+1) = \frac{(a+1)^2 e^{-a}}{2}\]
+
+To maximize this, we take the derivative with respect to $a$ and set it equal to zero:
+\[\frac{d}{da}\left[\frac{(a+1)^2 e^{-a}}{2}\right] = \frac{1}{2}\frac{d}{da}[(a+1)^2 e^{-a}]\]
+
+Using the product rule:
+\[\frac{d}{da}[(a+1)^2 e^{-a}] = 2(a+1)e^{-a} + (a+1)^2(-e^{-a}) = e^{-a}[2(a+1) - (a+1)^2]\]
+\[= e^{-a}(a+1)[2 - (a+1)] = e^{-a}(a+1)(1-a)\]
+
+Setting this equal to zero:
+\[e^{-a}(a+1)(1-a) = 0\]
+
+Since $e^{-a} > 0$ and $a > -1$ (so $a+1 > 0$), we need:
+\[1 - a = 0 \Rightarrow a = 1\]
+
+At $a = 1$, the maximum area is:
+\[\text{Area} = \frac{(1+1)^2 e^{-1}}{2} = \frac{4e^{-1}}{2} = \frac{2}{e}\]
+
+\subsection*{Answer}
+$\frac{2}{e}$ (option \textbf{E}).
+
+\end{document}

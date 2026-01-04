@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+
+\begin{document}
+\section*{Zadatak 1}
+
+Tra\v zi se vrednost izraza
+\[
+\log_{4}3\cdot \log_{5}4\cdot \log_{6}5\cdot \log_{7}6\cdot \log_{8}7\cdot \log_{9}8.
+\]
+Koristimo promenu osnove: \(\log_a b=\dfrac{\ln b}{\ln a}\). Tada
+\[
+\frac{\ln 3}{\ln 4}\cdot\frac{\ln 4}{\ln 5}\cdot\frac{\ln 5}{\ln 6}\cdot\frac{\ln 6}{\ln 7}\cdot\frac{\ln 7}{\ln 8}\cdot\frac{\ln 8}{\ln 9}
+=\frac{\ln 3}{\ln 9}.
+\]
+Po\v sto je \(\ln 9=\ln(3^2)=2\ln 3\), sledi
+\[
+\frac{\ln 3}{\ln 9}=\frac{\ln 3}{2\ln 3}=\frac12.
+\]
+
+\subsection*{Odgovor}
+\[
+\boxed{\frac12}\qquad\text{(A)}
+\]
+
+\end{document}
+

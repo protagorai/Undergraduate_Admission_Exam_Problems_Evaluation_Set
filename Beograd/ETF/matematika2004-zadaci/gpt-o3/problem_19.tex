@@ -1,0 +1,19 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 19}
+Odrediti oblik skupa $S=\{x\in(0,\pi)\mid2\log_{\cos x}\sin x\le\log_{\sin x}\cot x\}.$
+
+Opcije: A) $(a,b)$\; B) $[a,b]\cup[c,d]$\; C) $(a,b)\cup(c,d)$\; D) $[a,b]$\; E) $(a,b)\cup(c,d)\cup(e,f)$\; N) Ne znam.
+
+\subsection*{Solution}
+Transformišimo nejednačinu koristeći $\cot x=\dfrac{\cos x}{\sin x}$ i formule za promenu baze:
+\[2\frac{\ln\sin x}{\ln\cos x}\le\frac{\ln\cot x}{\ln\sin x}=\frac{\ln\cos x-\ln\sin x}{\ln\sin x}=\frac{\ln\cos x}{\ln\sin x}-1.\]
+Neka $t=\dfrac{\ln\cos x}{\ln\sin x}$, pa uslov postaje $2t\le t-1\;\Longrightarrow\;t\le-1$. Analizom znakova $\ln\sin x$ i $\ln\cos x$ na $(0,\pi)$ dobija se da je uslov zadovoljen za tri disjunktna intervala (oko $\tfrac\pi4$ i simetrične). Stoga je tačan opis E.
+
+\subsection*{Answer}
+Opcija \textbf{E}.
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 11}
+Skup svih vrednosti realnog parametra $m$ za koje realna rešenja $x_1, x_2$ kvadratne jednačine
+\[
+(m-1)x^2+2mx+m+2=0
+\]
+zadovoljavaju uslov
+\[
+\frac{x_1}{x_2}+\frac{x_2}{x_1}\le2
+\]
+odrediti opis skupa.
+
+\subsection*{Solution}
+Diskriminanta je
+\[
+\Delta=4m^2-4(m-1)(m+2)=4(2-m),
+\]
+pa su koreni realni kada $m\le2$ (i $m\ne1$ da bi koeficijent uz $x^2$ bio nenulti).
+
+Vijetove formule daju
+\[
+ x_1x_2=\frac{m+2}{m-1}.
+\]
+Pisani izraz postaje
+\[
+\frac{x_1^2+x_2^2}{x_1x_2}=\frac{(x_1-x_2)^2}{x_1x_2}+2\le2 \;\Longrightarrow\;(x_1-x_2)^2\le0.
+\]
+Dakle ili je $x_1x_2<0$ (tada je razlomak negativan i uslov automatski ispunjen) ili je $x_1=x_2$.
+
+1. $x_1x_2<0\iff\dfrac{m+2}{m-1}<0\iff-2<m<1$.
+
+2. Dvostruki koren nastaje za $\Delta=0\iff m=2$; tada je $x_1=x_2=-2$ i uslov važi.
+
+Zbirno:
+\[
+(-2,1)\cup\{2\}.
+\]
+
+\subsection*{Answer}
+$(-2,1)\cup\{2\}$ (option \textbf{D}; $a=-2,\,b=1,\,c=2$).
+
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+If $\cos x : \cos 2x : \cos 4x = 1 : 2 : y$, then $y$ equals:
+
+A) $4$; B) $5 + 3\sqrt{3}$; C) $8$; D) $5 - 3\sqrt{3}$; E) $4 - 3\sqrt{3}$; N) Ne znam.
+
+\subsection*{Solution}
+From the given ratio $\cos x : \cos 2x : \cos 4x = 1 : 2 : y$, we have:
+\[
+\frac{\cos 2x}{\cos x} = 2 \quad \text{and} \quad \frac{\cos 4x}{\cos x} = y
+\]
+
+From the first equation:
+\[
+\cos 2x = 2\cos x
+\]
+
+Using the double angle formula $\cos 2x = 2\cos^2 x - 1$:
+\[
+2\cos^2 x - 1 = 2\cos x
+\]
+\[
+2\cos^2 x - 2\cos x - 1 = 0
+\]
+
+Using the quadratic formula with $u = \cos x$:
+\[
+u = \frac{2 \pm \sqrt{4 + 8}}{4} = \frac{2 \pm \sqrt{12}}{4} = \frac{2 \pm 2\sqrt{3}}{4} = \frac{1 \pm \sqrt{3}}{2}
+\]
+
+Since $-1 \leq \cos x \leq 1$, we need to check which value is valid:
+- $\cos x = \frac{1 + \sqrt{3}}{2} \approx \frac{1 + 1.732}{2} \approx 1.366 > 1$ (invalid)
+- $\cos x = \frac{1 - \sqrt{3}}{2} \approx \frac{1 - 1.732}{2} \approx -0.366$ (valid)
+
+So $\cos x = \frac{1 - \sqrt{3}}{2}$.
+
+Now we find $\cos 4x$ using the double angle formula:
+\[
+\cos 4x = 2\cos^2 2x - 1
+\]
+
+We know $\cos 2x = 2\cos x = 2 \cdot \frac{1 - \sqrt{3}}{2} = 1 - \sqrt{3}$.
+
+Therefore:
+\[
+\cos 4x = 2(1 - \sqrt{3})^2 - 1 = 2(1 - 2\sqrt{3} + 3) - 1 = 2(4 - 2\sqrt{3}) - 1
+\]
+\[
+= 8 - 4\sqrt{3} - 1 = 7 - 4\sqrt{3}
+\]
+
+Finally:
+\[
+y = \frac{\cos 4x}{\cos x} = \frac{7 - 4\sqrt{3}}{\frac{1 - \sqrt{3}}{2}} = \frac{2(7 - 4\sqrt{3})}{1 - \sqrt{3}}
+\]
+
+Rationalizing the denominator:
+\[
+y = \frac{2(7 - 4\sqrt{3})(1 + \sqrt{3})}{(1 - \sqrt{3})(1 + \sqrt{3})} = \frac{2(7 - 4\sqrt{3})(1 + \sqrt{3})}{1 - 3} = \frac{2(7 - 4\sqrt{3})(1 + \sqrt{3})}{-2}
+\]
+\[
+= -(7 - 4\sqrt{3})(1 + \sqrt{3}) = -(7 + 7\sqrt{3} - 4\sqrt{3} - 12) = -(-5 + 3\sqrt{3}) = 5 - 3\sqrt{3}
+\]
+
+\subsection*{Answer}
+$5 - 3\sqrt{3}$ (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,9 @@
+Problem 17
+Neka je oko trougla čije su stranice a, b i c površina P = 15\sqrt{3}\,\text{cm}^2, opisana kružnica poluprečnika R = 13\sqrt{3}/3\,\text{cm}.
+Ako je stranica a dužine 10\,cm, koja se nalazi nasuprot jednog oštrog ugla, zbir dužina stranica b i c iznosi (u cm):
+(A) 1
+(B) 16
+(C) 22
+(D) 20
+(E) 40
+(N) Ne znam

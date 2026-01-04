@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Given points $A(2, 2)$, $A'(-2, -2)$, $B(4, -4)$, and $B'(-4, 4)$. Lines $AA'$ and $BB'$ are axes of an ellipse $\mathcal{E}$. If $y_0 > 0$ and point $Y(0, y_0)$ is the intersection of the $y$-axis and the ellipse, find $y_0$.
+
+\subsection*{Solution}
+First, let's find the equations of lines $AA'$ and $BB'$.
+
+Line $AA'$ passes through $A(2, 2)$ and $A'(-2, -2)$:
+\[
+\text{slope} = \frac{-2 - 2}{-2 - 2} = \frac{-4}{-4} = 1
+\]
+Equation: $y = x$ (passes through origin with slope 1)
+
+Line $BB'$ passes through $B(4, -4)$ and $B'(-4, 4)$:
+\[
+\text{slope} = \frac{4 - (-4)}{-4 - 4} = \frac{8}{-8} = -1
+\]
+Equation: $y = -x$ (passes through origin with slope -1)
+
+The center of the ellipse is at the intersection of the axes, which is the origin $(0, 0)$.
+
+The axes of the ellipse are $y = x$ and $y = -x$, which are perpendicular (as expected for an ellipse).
+
+The semi-axis lengths:
+\begin{itemize}
+    \item Along $y = x$: distance from center to $A$ (or $A'$) is $\sqrt{2^2 + 2^2} = \sqrt{8} = 2\sqrt{2}$
+    \item Along $y = -x$: distance from center to $B$ (or $B'$) is $\sqrt{4^2 + (-4)^2} = \sqrt{32} = 4\sqrt{2}$
+\end{itemize}
+
+So $a = 4\sqrt{2}$ (semi-major axis along $y = -x$) and $b = 2\sqrt{2}$ (semi-minor axis along $y = x$).
+
+The ellipse equation in the rotated coordinate system (where the axes are along the principal axes) would be:
+\[
+\frac{u^2}{(4\sqrt{2})^2} + \frac{v^2}{(2\sqrt{2})^2} = 1
+\]
+where $u$ is along $y = -x$ and $v$ is along $y = x$.
+
+The rotation from $(x, y)$ to $(u, v)$ by $45°$:
+\[
+u = \frac{x + y}{\sqrt{2}}, \quad v = \frac{-x + y}{\sqrt{2}}
+\]
+
+Wait, let me reconsider. The axis along $y = x$ corresponds to direction $(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}})$.
+
+For point $(0, y_0)$ on the $y$-axis:
+\[
+u = \frac{0 + y_0}{\sqrt{2}} = \frac{y_0}{\sqrt{2}}, \quad v = \frac{0 + y_0}{\sqrt{2}} = \frac{y_0}{\sqrt{2}}
+\]
+
+Hmm, let me redo the rotation. If $y = -x$ is one axis and $y = x$ is the other:
+
+Unit vector along $y = -x$: $\mathbf{e}_1 = \frac{1}{\sqrt{2}}(1, -1)$
+Unit vector along $y = x$: $\mathbf{e}_2 = \frac{1}{\sqrt{2}}(1, 1)$
+
+For point $(x, y)$:
+\[
+u = (x, y) \cdot \mathbf{e}_1 = \frac{x - y}{\sqrt{2}}
+\]
+\[
+v = (x, y) \cdot \mathbf{e}_2 = \frac{x + y}{\sqrt{2}}
+\]
+
+The ellipse equation:
+\[
+\frac{u^2}{32} + \frac{v^2}{8} = 1
+\]
+
+For point $(0, y_0)$:
+\[
+u = \frac{0 - y_0}{\sqrt{2}} = \frac{-y_0}{\sqrt{2}}, \quad v = \frac{0 + y_0}{\sqrt{2}} = \frac{y_0}{\sqrt{2}}
+\]
+
+Substituting:
+\[
+\frac{y_0^2/2}{32} + \frac{y_0^2/2}{8} = 1
+\]
+\[
+\frac{y_0^2}{64} + \frac{y_0^2}{16} = 1
+\]
+\[
+\frac{y_0^2}{64} + \frac{4y_0^2}{64} = 1
+\]
+\[
+\frac{5y_0^2}{64} = 1
+\]
+\[
+y_0^2 = \frac{64}{5}
+\]
+\[
+y_0 = \frac{8}{\sqrt{5}} = \frac{8\sqrt{5}}{5}
+\]
+
+\subsection*{Answer}
+$\frac{8}{\sqrt{5}} = \frac{8\sqrt{5}}{5}$ (option \textbf{A}).
+
+\end{document}

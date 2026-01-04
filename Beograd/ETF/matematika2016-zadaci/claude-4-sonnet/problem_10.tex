@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+In isosceles triangle ABC, $AB = AC = b$ and $\angle BAC = 30°$. Find the height of the triangle.
+
+\subsection*{Solution}
+Let's denote the height from vertex A to base BC as h, and let it meet BC at point D.
+
+Since triangle ABC is isosceles with $AB = AC = b$, the height from A bisects both the angle BAC and the base BC.
+
+Therefore, $\angle BAD = \angle CAD = \frac{30°}{2} = 15°$.
+
+In right triangle ABD:
+- $AB = b$ (hypotenuse)
+- $AD = h$ (height we want to find)
+- $\angle BAD = 15°$
+
+Using trigonometry:
+\[
+\cos(15°) = \frac{AD}{AB} = \frac{h}{b}
+\]
+
+Therefore:
+\[
+h = b \cos(15°)
+\]
+
+We need to find $\cos(15°)$. Using the half-angle formula:
+\[
+\cos(15°) = \cos\left(\frac{30°}{2}\right) = \sqrt{\frac{1 + \cos(30°)}{2}}
+\]
+
+Since $\cos(30°) = \frac{\sqrt{3}}{2}$:
+\[
+\cos(15°) = \sqrt{\frac{1 + \frac{\sqrt{3}}{2}}{2}} = \sqrt{\frac{2 + \sqrt{3}}{4}} = \frac{\sqrt{2 + \sqrt{3}}}{2}
+\]
+
+We can simplify $\sqrt{2 + \sqrt{3}}$. Note that:
+\[
+\left(\frac{\sqrt{6} + \sqrt{2}}{2}\right)^2 = \frac{6 + 2\sqrt{12} + 2}{4} = \frac{8 + 4\sqrt{3}}{4} = 2 + \sqrt{3}
+\]
+
+Therefore:
+\[
+\sqrt{2 + \sqrt{3}} = \frac{\sqrt{6} + \sqrt{2}}{2}
+\]
+
+So:
+\[
+\cos(15°) = \frac{\sqrt{6} + \sqrt{2}}{4}
+\]
+
+Therefore, the height is:
+\[
+h = b \cdot \frac{\sqrt{6} + \sqrt{2}}{4} = \frac{b(\sqrt{6} + \sqrt{2})}{4}
+\]
+
+This can also be written as $\frac{b}{4}(\sqrt{6} + \sqrt{2})$.
+
+\subsection*{Answer}
+$\frac{b}{4}(\sqrt{6} + \sqrt{2})$ (option \textbf{C}).
+
+\end{document}

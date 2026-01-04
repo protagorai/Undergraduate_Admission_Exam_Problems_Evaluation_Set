@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Granična vrednost $\lim_{x\to 2} \frac{x\sqrt{x} - \sqrt{2}x - 2\sqrt{x} + 2\sqrt{2}}{x^3 - 4x^2 + 4x}$ iznosi:
+
+\subsection*{Solution}
+
+Let $\sqrt{x} = t$. Then $x \to 2 \implies t \to \sqrt{2}$.
+Numerator: $t^3 - \sqrt{2}t^2 - 2t + 2\sqrt{2} = t^2(t-\sqrt{2}) - 2(t-\sqrt{2}) = (t^2-2)(t-\sqrt{2}) = (t-\sqrt{2})^2(t+\sqrt{2})$.
+Denominator: $x(x-2)^2 = t^2(t^2-2)^2 = t^2(t-\sqrt{2})^2(t+\sqrt{2})^2$.
+Limit:
+\[
+\lim_{t \to \sqrt{2}} \frac{(t-\sqrt{2})^2(t+\sqrt{2})}{t^2(t-\sqrt{2})^2(t+\sqrt{2})^2} = \lim_{t \to \sqrt{2}} \frac{1}{t^2(t+\sqrt{2})}.
+\]
+Substitute $t = \sqrt{2}$:
+\[
+\frac{1}{(\sqrt{2})^2(\sqrt{2}+\sqrt{2})} = \frac{1}{2(2\sqrt{2})} = \frac{1}{4\sqrt{2}}.
+\]
+
+
+\subsection*{Answer}
+\frac{1}{4\sqrt{2}} (option \textbf{A}).
+
+\end{document}

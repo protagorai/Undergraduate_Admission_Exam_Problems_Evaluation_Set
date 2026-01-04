@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Broj svih realnih rešenja jednačine $\sin^2 x + \frac{1}{\sin^2 x} = \sin x$ jeste:
+\[
+(A)\ 0\quad (B)\ 1\quad (C)\ 2\quad (D)\ 3\quad (E)\ \text{Veći od 3}\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Neka je $u = \sin x$. Jednačina postaje $u^2 + \frac{1}{u^2} = u$.
+Za $u$ mora važiti $u \in [-1, 1]$ i $u \neq 0$.
+Posmatrajmo levu stranu jednačine $L(u) = u^2 + \frac{1}{u^2}$.
+Na osnovu nejednakosti između aritmetičke i geometrijske sredine (za $u^2 > 0$):
+\[
+u^2 + \frac{1}{u^2} \ge 2\sqrt{u^2 \cdot \frac{1}{u^2}} = 2
+\]
+Dakle, leva strana je uvek veća ili jednaka 2.
+Jednakost važi samo ako je $u^2 = 1$, tj. $u = \pm 1$.
+Posmatrajmo desnu stranu jednačine $D(u) = u$.
+Kako je $u = \sin x$, maksimalna vrednost desne strane je 1.
+Imamo situaciju: $L(u) \ge 2$, a $D(u) \le 1$.
+Jednačina $L(u) = D(u)$ nema rešenja.
+
+\subsection*{Answer}
+$0$ (option \textbf{A}).
+
+\end{document}

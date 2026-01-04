@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 8}
+Find the sum of all real solutions to $8^x - \frac{21}{4} \cdot 4^x + \frac{21}{4} \cdot 2^x - 1 = 0$.
+
+\subsection*{Solution}
+Let's make a substitution. Let $t = 2^x$, so $t > 0$.
+
+Then:
+- $2^x = t$
+- $4^x = (2^2)^x = (2^x)^2 = t^2$
+- $8^x = (2^3)^x = (2^x)^3 = t^3$
+
+The equation becomes:
+\[
+t^3 - \frac{21}{4}t^2 + \frac{21}{4}t - 1 = 0
+\]
+
+Multiplying by 4 to clear fractions:
+\[
+4t^3 - 21t^2 + 21t - 4 = 0
+\]
+
+Let's try to factor this cubic equation. We can look for rational roots using the rational root theorem. Possible rational roots are $\pm 1, \pm 2, \pm 4, \pm \frac{1}{2}, \pm \frac{1}{4}$.
+
+Let's test $t = \frac{1}{4}$:
+\[
+4\left(\frac{1}{4}\right)^3 - 21\left(\frac{1}{4}\right)^2 + 21\left(\frac{1}{4}\right) - 4 = 4 \cdot \frac{1}{64} - 21 \cdot \frac{1}{16} + 21 \cdot \frac{1}{4} - 4
+\]
+\[
+= \frac{1}{16} - \frac{21}{16} + \frac{21}{4} - 4 = \frac{1 - 21}{16} + \frac{21}{4} - 4 = -\frac{20}{16} + \frac{84}{16} - \frac{64}{16} = \frac{-20 + 84 - 64}{16} = 0
+\]
+
+So $t = \frac{1}{4}$ is a root. This means $(4t - 1)$ is a factor.
+
+Let's perform polynomial division:
+\[
+4t^3 - 21t^2 + 21t - 4 = (4t - 1)(t^2 - 5t + 4)
+\]
+
+Now we factor $t^2 - 5t + 4$:
+\[
+t^2 - 5t + 4 = (t - 1)(t - 4)
+\]
+
+So the complete factorization is:
+\[
+4t^3 - 21t^2 + 21t - 4 = (4t - 1)(t - 1)(t - 4) = 0
+\]
+
+This gives us the solutions:
+- $4t - 1 = 0 \Rightarrow t = \frac{1}{4}$
+- $t - 1 = 0 \Rightarrow t = 1$
+- $t - 4 = 0 \Rightarrow t = 4$
+
+Now we convert back to $x$ using $t = 2^x$:
+
+1. $2^x = \frac{1}{4} = 2^{-2} \Rightarrow x = -2$
+2. $2^x = 1 = 2^0 \Rightarrow x = 0$
+3. $2^x = 4 = 2^2 \Rightarrow x = 2$
+
+The sum of all solutions is:
+\[
+(-2) + 0 + 2 = 0
+\]
+
+\subsection*{Answer}
+$0$ (option \textbf{B}).
+
+\end{document}
+

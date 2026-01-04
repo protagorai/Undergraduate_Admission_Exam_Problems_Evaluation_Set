@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 13}
+Jednačina kružnice čiji je centar na $x$-osi i koja sa parabolom $y^2=12x$ u tački $A(3,6)$ ima zajedničku tangentu jeste:
+
+\subsection*{Solution}
+Jednačina parabole je $y^2 = 2px \Rightarrow 2p=12 \Rightarrow p=6$.
+Jednačina tangente parabole u tački $A(x_0, y_0)$ je $yy_0 = p(x+x_0)$.
+Za $A(3,6)$: $6y = 6(x+3) \Rightarrow y = x+3$. Koeficijent pravca tangente je $k_t=1$.
+Normala u tački $A$ je normalna na tangentu, pa je njen koeficijent pravca $k_n = -1/k_t = -1$.
+Jednačina normale kroz $A(3,6)$: $y-6 = -1(x-3) \Rightarrow y = -x+9$.
+Centar kružnice $C(x_c, 0)$ leži na normali.
+$0 = -x_c + 9 \Rightarrow x_c = 9$. Centar je $C(9,0)$.
+Poluprečnik $R$ je rastojanje $CA$:
+$R^2 = (9-3)^2 + (0-6)^2 = 36 + 36 = 72$.
+Jednačina kružnice:
+$(x-9)^2 + y^2 = 72$.
+
+\subsection*{Answer}
+$(x-9)^2+y^2=72$ (Opcija \textbf{D})
+
+\end{document}

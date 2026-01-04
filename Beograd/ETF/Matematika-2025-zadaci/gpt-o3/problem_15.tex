@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 15}
+Koliko realnih \emph{različitih} rešenja ima jednačina
+\[
+\tan^{2}x = \frac{1-\cos x}{1-\sin x},\qquad x\in[0,2\pi] ?
+\]
+
+\subsection*{Solution}
+Obeležimo $s=\sin x$, $c=\cos x$.
+Jednačina je definisana samo ako $c\ne0$ (da bi $\tan x$ postojao) i $s\ne1$ (da se izbegne nula u imeniocu desne strane).
+
+\paragraph{1. Prebacivanje na $s$ i $c$.}
+\[
+\frac{s^{2}}{c^{2}} = \frac{1-c}{1-s}\quad\Longrightarrow\quad s^{2}(1-s)=c^{2}(1-c).\tag{1}
+\]
+Koristimo $c^{2}=1-s^{2}$ pa desnu stranu pišemo kao $(1-s^{2})(1-c)$. Ipak, pogodnije je primetiti da se u oba člana pojavljuje faktor $(s-c)$.
+
+Dodajmo i oduzmimo tako da izdvojimo taj faktor:
+\[
+s^{2}(1-s)-c^{2}(1-c)=0\ \Longrightarrow\ (s-c)\bigl(s+c -s c -1\bigr)=0.\tag{2}
+\]
+Dakle su dve mogućnosti:
+\[
+\boxed{s=c}\quad\text{ili}\quad\boxed{s+c=1+sc}.\tag{A}
+\]
+
+\paragraph{2. Prvi slučaj $\;\sin x = \cos x$.}
+Tada je $\tan x = 1$ i, na zadatom intervalu, dobijamo
+\[
+x=\frac{\pi}{4},\;\frac{5\pi}{4}.
+\]
+Napomena: $x=\frac{\pi}{4}$ je regularna tačka (ne anulira imenioce), a $x=\tfrac{5\pi}{4}$ takođe – oba zadovoljavaju jednačinu.
+
+\paragraph{3. Drugi slučaj $\;s+c=1+sc$.}
+Stavimo $p=s+c$ i $q=sc$. Увео је класичну замену; тада услов постаје $p=1+q$. Са друге стране
+\[
+p^{2}=s^{2}+c^{2}+2sc=1+2q.\tag{3}
+\]
+Уметањем $q=p-1$ у (3):
+\[p^{2}=1+2(p-1)=2p-1\ \Longrightarrow\ (p-1)^{2}=0 \ \Longrightarrow\ p=1\ (\text{па}\ q=0).\]
+Зато $s+c=1$ и $sc=0$. Производ нула значи или $s=0$ или $c=0$; али $c=0$ је искључено, па је $s=0$ и $c=1$ – једино могуће кад је $x=0$ или $x=2\pi$.
+
+\paragraph{4. Преглед решења.}
+\[
+ x\in\left\{0,\ 2\pi,\ \tfrac{\pi}{4},\ \tfrac{5\pi}{4}\right\}.
+\]
+Сва четири вредности задовољавају иницијалне доменске услове, па су решења различита.
+
+\subsection*{Answer}
+Једначина има \textbf{4} реална и различита решења (опција \textbf{B}).
+
+\end{document}

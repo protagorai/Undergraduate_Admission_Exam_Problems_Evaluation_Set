@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Date su funkcije: $f_1(x) = 2^{\log_2 x}$, $f_2(x) = \log_2 2^x$, $f_3(x) = x$, $f_4(x) = (x \cdot 2^{-\log_2\sqrt{x}})^2$.
+
+Tačan je iskaz:
+
+(A) Među funkcijama nema međusobno jednakih \quad (B) $f_1 = f_2 = f_3 \neq f_4$ \\
+(C) $f_1 \neq f_2 = f_3 \neq f_4 \neq f_1$ \quad (D) $f_3 \neq f_1 = f_2 \neq f_4$ \\
+(E) $f_2 = f_3 \neq f_1 = f_4$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's analyze each function:
+
+\textbf{$f_1(x) = 2^{\log_2 x}$:}
+
+For $x > 0$: $2^{\log_2 x} = x$
+
+Domain: $x > 0$
+
+\textbf{$f_2(x) = \log_2 2^x$:}
+
+$\log_2 2^x = x$ for all real $x$
+
+Domain: all real numbers
+
+\textbf{$f_3(x) = x$:}
+
+Domain: all real numbers
+
+\textbf{$f_4(x) = (x \cdot 2^{-\log_2\sqrt{x}})^2$:}
+
+For $x > 0$: $2^{-\log_2\sqrt{x}} = 2^{-\frac{1}{2}\log_2 x} = 2^{\log_2 x^{-1/2}} = x^{-1/2} = \frac{1}{\sqrt{x}}$
+
+So $x \cdot 2^{-\log_2\sqrt{x}} = x \cdot \frac{1}{\sqrt{x}} = \sqrt{x}$
+
+Therefore $f_4(x) = (\sqrt{x})^2 = x$ for $x > 0$
+
+Domain: $x > 0$
+
+\textbf{Comparison:}
+\begin{itemize}
+\item $f_2$ and $f_3$ are equal on all real numbers: $f_2 = f_3$
+\item $f_1$ equals $x$ only for $x > 0$, so $f_1 \neq f_2$ and $f_1 \neq f_3$ (different domains)
+\item $f_4$ equals $x$ only for $x > 0$, so $f_4 \neq f_2$ and $f_4 \neq f_3$
+\item $f_1$ and $f_4$ have the same domain ($x > 0$) and both equal $x$ there, so $f_1 = f_4$
+\end{itemize}
+
+Therefore: $f_2 = f_3$ and $f_1 = f_4$, but $f_1 \neq f_2$.
+
+\subsection*{Answer}
+$f_2 = f_3 \neq f_1 = f_4$ (option \textbf{E}).
+
+\end{document}

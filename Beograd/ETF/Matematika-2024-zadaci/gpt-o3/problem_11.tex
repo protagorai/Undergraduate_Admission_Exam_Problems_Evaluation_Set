@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Date su funkcije
+\[
+\begin{aligned}
+&f_{1}(x)=|x-1|,\\
+&f_{2}(x)=\frac{x^{2}-1}{x+1},\\
+&f_{3}(x)=\frac{x^{2}-x^{3}+1}{x+1},\\
+&f_{4}(x)=2\log_{2}(x-1).
+\end{aligned}
+\]
+Odabrati tačan odnos među navedenim funkcijama.
+
+\subsection*{Rešenje}
+\textbf{1.}  Poređenje \(f_{1}\) i \(f_{2}\).
+Za \(x\neq-1\):
+\[
+\frac{x^{2}-1}{x+1}=\frac{(x-1)(x+1)}{x+1}=x-1.
+\]
+Dakle \(f_{2}(x)=x-1\) za \(x\neq-1\), a to je isto što i \(|x-1|\) samo kada je \(x\ge1\).  Za \(x<1\) vrednosti se razlikuju.
+Zaključak: \(f_{1}\ne f_{2}.\)
+
+\textbf{2.}  Poređenje \(f_{1}\) i \(f_{4}\).
+Za \(x>1\) imamo
+\[f_{1}(x)=x-1,\qquad f_{4}(x)=2\log_{2}(x-1).\]
+Jednakost bi zahtevala
+\[x-1=2\log_{2}(x-1).\]
+Leva strana raste linearno, desna logaritamski; poklapaju se jedino u \(x=\tfrac32\).  Dakle nisu identične.
+
+\textbf{3.}  Poređenje \(f_{2}\) i \(f_{3}\).
+Za \(x\neq-1\)
+\[
+f_{3}(x)=\frac{x^{2}-x^{3}+1}{x+1}=\frac{(x^{2}+1)(1-x)}{x+1}=-(x^{2}+1)\frac{x-1}{x+1}.
+\]
+To očigledno nije jednako \(x-1\) sem možda u izolovanim tačkama.
+
+\textbf{4.}  Zaključak.
+Ni dve funkcije nisu identične, pa su sve četiri različite.
+
+\subsection*{Odgovor}
+Sve funkcije su različite – \textbf{opcija E}.
+
+\end{document}

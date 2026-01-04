@@ -1,0 +1,7 @@
+Problem 7
+
+Ako su x_1 i x_2 koreni kvadratne jednačine
+\frac{1}{x - 1} + \frac{1}{x - 2} = 1,
+tada je izraz \frac{x_1 + x_2}{x_1 x_2} jednak:
+
+(A) \frac{1}{3}    (B) \frac{2}{3}    (C) 2    (D) 3    (E) 5    (N) Ne znam

@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Neka su u proizvoljnom trouglu $\alpha, \beta$ i $\gamma$ uglovi, $a, b$ i $c$ dužine stranica naspram datih uglova i $R$ poluprečnik opisanog kruga, tada je $\frac{a^2 + b^2 + c^2}{3 - \cos^2 \alpha - \cos^2 \beta - \cos^2 \gamma}$ jednako:
+
+(A) $R^2$ \quad (B) $2R^2$ \quad (C) $3R^2$ \quad (D) $4R^2$ \quad (E) $5R^2$ \quad (N) Ne znam
+
+\subsection*{Solution}
+We'll use several trigonometric identities and the law of sines.
+
+From the law of sines: $\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$
+
+This gives us: $a = 2R\sin \alpha$, $b = 2R\sin \beta$, $c = 2R\sin \gamma$
+
+Therefore:
+$$a^2 + b^2 + c^2 = 4R^2(\sin^2 \alpha + \sin^2 \beta + \sin^2 \gamma)$$
+
+For the denominator, we use the identity $\sin^2 x + \cos^2 x = 1$:
+$$\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 3 - (\sin^2 \alpha + \sin^2 \beta + \sin^2 \gamma)$$
+
+So the denominator becomes:
+$$3 - \cos^2 \alpha - \cos^2 \beta - \cos^2 \gamma = 3 - (3 - (\sin^2 \alpha + \sin^2 \beta + \sin^2 \gamma)) = \sin^2 \alpha + \sin^2 \beta + \sin^2 \gamma$$
+
+Therefore:
+\begin{align}
+\frac{a^2 + b^2 + c^2}{3 - \cos^2 \alpha - \cos^2 \beta - \cos^2 \gamma} &= \frac{4R^2(\sin^2 \alpha + \sin^2 \beta + \sin^2 \gamma)}{\sin^2 \alpha + \sin^2 \beta + \sin^2 \gamma}\\
+&= 4R^2
+\end{align}
+
+\subsection*{Answer}
+(D) $4R^2$
+
+\end{document}

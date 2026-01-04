@@ -1,0 +1,5 @@
+Problem 16
+
+U razvoju binoma (x + y)^{n} (x, y \in \mathbb{R}, n \in \mathbb{N}) drugi član je jednak 240, treći član 720, a četvrti 1080. Tada je zbir x + y + n jednak:
+
+(A) 11    (B) 9    (C) 10    (D) 25    (E) 280    (N) Ne znam

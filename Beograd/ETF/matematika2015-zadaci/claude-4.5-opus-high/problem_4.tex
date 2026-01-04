@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ako je $k \in \mathbf{R}$, $i^2 = -1$, tada je moduo kompleksnog broja $\left(\dfrac{1+i}{1-i}\right)^{2015} + \dfrac{-1+5ki}{3i} - 1$ najmanji za $k$ jednako:
+
+\subsection*{Solution}
+First, simplify $\dfrac{1+i}{1-i}$:
+\[
+\frac{1+i}{1-i} = \frac{(1+i)^2}{(1-i)(1+i)} = \frac{1 + 2i - 1}{1 + 1} = \frac{2i}{2} = i
+\]
+
+So $\left(\dfrac{1+i}{1-i}\right)^{2015} = i^{2015}$.
+
+Since $i^4 = 1$, we have $2015 = 4 \cdot 503 + 3$, so $i^{2015} = i^3 = -i$.
+
+Now simplify $\dfrac{-1+5ki}{3i}$:
+\[
+\frac{-1+5ki}{3i} = \frac{(-1+5ki)(-i)}{3i \cdot (-i)} = \frac{i - 5ki^2}{3} = \frac{i + 5k}{3} = \frac{5k}{3} + \frac{i}{3}
+\]
+
+So the complex number is:
+\[
+-i + \frac{5k}{3} + \frac{i}{3} - 1 = \left(\frac{5k}{3} - 1\right) + i\left(\frac{1}{3} - 1\right) = \left(\frac{5k}{3} - 1\right) - \frac{2i}{3}
+\]
+
+The modulus is:
+\[
+|z| = \sqrt{\left(\frac{5k}{3} - 1\right)^2 + \frac{4}{9}}
+\]
+
+This is minimized when the real part equals zero:
+\[
+\frac{5k}{3} - 1 = 0 \implies k = \frac{3}{5}
+\]
+
+\subsection*{Answer}
+$\dfrac{3}{5}$ (option \textbf{A}).
+
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Ako je $x > 0$, onda je $\sqrt{x\sqrt{x\sqrt{x}}}$ jednako:
+\begin{enumerate}
+\item[(A)] $x\sqrt{x}$
+\item[(B)] $x\sqrt[4]{x}$
+\item[(C)] $\sqrt[4]{x}$
+\item[(D)] $\sqrt[3]{x^3}$
+\item[(E)] $\sqrt[7]{x^7}$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Počinjemo iznutra ka spolja:
+\[
+\sqrt{x\sqrt{x\sqrt{x}}}
+\]
+
+Prvo računamo $\sqrt{x}$:
+\[
+\sqrt{x} = x^{1/2}
+\]
+
+Zatim $x\sqrt{x}$:
+\[
+x\sqrt{x} = x \cdot x^{1/2} = x^{1 + 1/2} = x^{3/2}
+\]
+
+Sada $\sqrt{x\sqrt{x}}$:
+\[
+\sqrt{x\sqrt{x}} = \sqrt{x^{3/2}} = (x^{3/2})^{1/2} = x^{3/4}
+\]
+
+Zatim $x\sqrt{x\sqrt{x}}$:
+\[
+x\sqrt{x\sqrt{x}} = x \cdot x^{3/4} = x^{1 + 3/4} = x^{7/4}
+\]
+
+Konačno $\sqrt{x\sqrt{x\sqrt{x}}}$:
+\[
+\sqrt{x\sqrt{x\sqrt{x}}} = \sqrt{x^{7/4}} = (x^{7/4})^{1/2} = x^{7/8}
+\]
+
+Proveravamo koji od ponuđenih odgovora odgovara $x^{7/8}$:
+
+\begin{itemize}
+\item[(A)] $x\sqrt{x} = x^{3/2} = x^{12/8}$ ✗
+\item[(B)] $x\sqrt[4]{x} = x \cdot x^{1/4} = x^{5/4} = x^{10/8}$ ✗
+\item[(C)] $\sqrt[4]{x} = x^{1/4} = x^{2/8}$ ✗
+\item[(D)] $\sqrt[3]{x^3} = x$ ✗
+\item[(E)] $\sqrt[7]{x^7} = x$ ✗
+\end{itemize}
+
+Čini se da nijedan od ponuđenih odgovora ne odgovara tačno $x^{7/8}$.
+
+Međutim, proveravamo da li je možda $\sqrt[7]{x^7} = x^{7/7} = x^1 = x$, što nije jednako $x^{7/8}$.
+
+Možda postoji greška u čitanju. Proveravamo da li je možda trebalo $\sqrt[8]{x^7}$:
+\[
+\sqrt[8]{x^7} = x^{7/8}
+\]
+
+To bi bilo tačno, ali to nije ponuđeno kao opcija.
+
+\subsection*{Answer}
+Na osnovu analize, rezultat je $x^{7/8}$, što ne odgovara tačno nijednom od ponuđenih odgovora. Odgovor je \textbf{(N) Ne znam}.
+
+\end{document}

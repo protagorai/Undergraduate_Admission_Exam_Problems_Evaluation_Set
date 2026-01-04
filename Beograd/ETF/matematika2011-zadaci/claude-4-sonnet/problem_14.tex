@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Na koliko načina od 2 matematičara i 8 inženjera možemo formirati petočlanu komisiju u kojoj će biti bar jedan matematičar?
+
+(A) $196$ \quad (B) $248$ \quad (C) $70$ \quad (D) $56$ \quad (E) $140$ \quad (N) Ne znam
+
+\subsection*{Solution}
+We have 2 mathematicians and 8 engineers, and we want to form a 5-member committee with at least one mathematician.
+
+It's easier to use the complement: total ways minus ways with no mathematicians.
+
+Total ways to choose 5 people from 10:
+$$\binom{10}{5} = \frac{10!}{5! \cdot 5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = \frac{30240}{120} = 252$$
+
+Ways to choose 5 people with no mathematicians (all from 8 engineers):
+$$\binom{8}{5} = \binom{8}{3} = \frac{8!}{3! \cdot 5!} = \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = \frac{336}{6} = 56$$
+
+Therefore, ways to choose 5 people with at least one mathematician:
+$$252 - 56 = 196$$
+
+Alternatively, we can count directly:
+- 1 mathematician, 4 engineers: $\binom{2}{1} \cdot \binom{8}{4} = 2 \cdot 70 = 140$
+- 2 mathematicians, 3 engineers: $\binom{2}{2} \cdot \binom{8}{3} = 1 \cdot 56 = 56$
+
+Total: $140 + 56 = 196$
+
+\subsection*{Answer}
+(A) $196$
+
+\end{document}

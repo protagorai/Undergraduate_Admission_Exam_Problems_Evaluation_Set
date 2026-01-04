@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Skup svih vrednosti parametra $n \in R$ za koje prava $y = x + n$ i kriva $y = x^3 - 2x^2 + x - 2$ imaju najveći broj presečnih tačaka je oblika (za neke $a, b \in R$, takve da je $a < b$):
+
+(A) $(-\infty, a] \cup \{b\}$ \quad (B) $\{a\} \cup [b, \infty)$ \quad (C) $(-\infty, a] \cup [b, \infty)$ \quad (D) $(a, b)$ \quad (E) $[a, b]$
+
+\subsection*{Solution}
+Presek krive i prave:
+$x^3 - 2x^2 + x - 2 = x + n$.
+$x^3 - 2x^2 - 2 = n$.
+Posmatrajmo funkciju $f(x) = x^3 - 2x^2 - 2$.
+Tražimo broj rešenja jednačine $f(x) = n$.
+Najveći broj presečnih tačaka za kubnu funkciju je 3.
+To se dešava kada je $n$ između lokalnog minimuma i lokalnog maksimuma.
+Nađimo ekstreme $f(x)$.
+$f'(x) = 3x^2 - 4x = x(3x - 4)$.
+Nule izvoda: $x_1 = 0$ i $x_2 = 4/3$.
+$f''(x) = 6x - 4$.
+$f''(0) = -4 < 0 \Rightarrow$ maksimum u $x=0$.
+$V_{max} = f(0) = 0 - 0 - 2 = -2$.
+$f''(4/3) = 8 - 4 > 0 \Rightarrow$ minimum u $x=4/3$.
+$V_{min} = f(4/3) = (4/3)^3 - 2(4/3)^2 - 2 = 64/27 - 32/9 - 2 = \frac{64 - 96 - 54}{27} = \frac{-86}{27}$.
+$-86/27 \approx -3.18$.
+$-2 = -2$.
+Da bi imali 3 rešenja, $n$ mora biti strogo između minimuma i maksimuma.
+$n \in (-86/27, -2)$.
+Dakle interval $(a, b)$ gde je $a = -86/27$ i $b = -2$.
+
+\subsection*{Answer}
+$(a, b)$ (opcija \textbf{(D)}).
+
+\end{document}

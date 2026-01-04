@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Find the total number of real solutions of the system:
+\[
+x^2 + xy - \sqrt{2} \cdot x = 0, \quad x^2 + y^2 = 2
+\]
+
+Options: (A) $4$ \quad (B) $2$ \quad (C) $1$ \quad (D) $0$ \quad (E) $3$ \quad (N) Ne znam
+
+\subsection*{Solution}
+From the first equation:
+\[
+x^2 + xy - \sqrt{2}x = 0
+\]
+\[
+x(x + y - \sqrt{2}) = 0
+\]
+
+\textbf{Case 1:} $x = 0$
+
+Substituting into the second equation: $0 + y^2 = 2$, so $y = \pm\sqrt{2}$.
+
+This gives solutions: $(0, \sqrt{2})$ and $(0, -\sqrt{2})$.
+
+\textbf{Case 2:} $x + y - \sqrt{2} = 0$, i.e., $y = \sqrt{2} - x$
+
+Substituting into the second equation:
+\[
+x^2 + (\sqrt{2} - x)^2 = 2
+\]
+\[
+x^2 + 2 - 2\sqrt{2}x + x^2 = 2
+\]
+\[
+2x^2 - 2\sqrt{2}x = 0
+\]
+\[
+2x(x - \sqrt{2}) = 0
+\]
+
+So $x = 0$ or $x = \sqrt{2}$.
+
+If $x = 0$: $y = \sqrt{2}$ (already found in Case 1).
+
+If $x = \sqrt{2}$: $y = \sqrt{2} - \sqrt{2} = 0$.
+
+This gives solution: $(\sqrt{2}, 0)$.
+
+\textbf{Total solutions:}
+\begin{enumerate}
+\item $(0, \sqrt{2})$
+\item $(0, -\sqrt{2})$
+\item $(\sqrt{2}, 0)$
+\end{enumerate}
+
+There are \textbf{3} distinct real solutions.
+
+\subsection*{Answer}
+$3$ (option \textbf{E}).
+
+\end{document}

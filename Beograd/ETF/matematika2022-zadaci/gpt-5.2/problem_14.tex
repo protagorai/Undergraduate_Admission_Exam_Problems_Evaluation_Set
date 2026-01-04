@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Find the number of distinct real solutions of
+\[
+\sqrt{1-x}+\sqrt{1+x}-\sqrt{1-x^2}=\frac{5}{4}.
+\]
+
+\subsection*{Solution}
+The domain is $-1\le x\le 1$.
+Let
+\[
+a=\sqrt{1-x},\qquad b=\sqrt{1+x},
+\]
+so $a,b\ge 0$ and
+\[
+a^2+b^2=(1-x)+(1+x)=2.
+\]
+Also,
+\[
+\sqrt{1-x^2}=\sqrt{(1-x)(1+x)}=\sqrt{a^2b^2}=ab.
+\]
+The equation becomes
+\[
+a+b-ab=\frac{5}{4}.
+\]
+Denote $s=a+b$ and $p=ab$. Then the equation is $s-p=\frac54$, so $p=s-\frac54$.
+But
+\[
+s^2=a^2+b^2+2ab=2+2p,
+\]
+hence $p=\frac{s^2-2}{2}$. Equate the two expressions for $p$:
+\[
+\frac{s^2-2}{2}=s-\frac54
+\quad\Longrightarrow\quad
+2s^2-4s+1=0.
+\]
+Thus
+\[
+s=\frac{4\pm\sqrt{16-8}}{4}=1\pm\frac{\sqrt2}{2}.
+\]
+Since $a,b\ge 0$ and $a^2+b^2=2$, we must have $s=a+b\ge \sqrt2$.
+Therefore only
+\[
+s=1+\frac{\sqrt2}{2}
+\]
+is possible.
+
+\medskip
+For this $s$, the pair $(a,b)$ is determined up to swapping, and swapping $(a,b)$ replaces $x$ by $-x$ (because $a^2=1-x$, $b^2=1+x$).
+Here $s\ne 2$, so $a\ne b$ and $x\ne 0$. Hence there are exactly two solutions: $x=\pm x_0$.
+
+\subsection*{Answer}
+There are $2$ distinct real solutions (option \textbf{D}).
+
+\end{document}
+

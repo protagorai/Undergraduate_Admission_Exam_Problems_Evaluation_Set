@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+In triangle $ABC$, $|BC| = 3 \cdot |AB|$ and $\angle ABC = 60°$. Find $\cos\angle BAC + \cos\angle ACB$.
+
+(A) $\frac{1}{\sqrt{7}}$ \quad (B) $\frac{2}{\sqrt{7}}$ \quad (C) $\frac{3}{\sqrt{7}}$ \quad (D) $\frac{4}{\sqrt{7}}$ \quad (E) $\frac{5}{\sqrt{7}}$
+
+\subsection*{Solution}
+Let $|AB| = c$ and $|BC| = a = 3c$. The angle $\angle ABC = B = 60°$.
+
+Using the Law of Cosines to find $|AC| = b$:
+\[
+b^2 = a^2 + c^2 - 2ac\cos B = 9c^2 + c^2 - 2 \cdot 3c \cdot c \cdot \cos 60°
+\]
+\[
+b^2 = 10c^2 - 6c^2 \cdot \frac{1}{2} = 10c^2 - 3c^2 = 7c^2
+\]
+\[
+b = c\sqrt{7}
+\]
+
+Using the Law of Sines:
+\[
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
+\]
+
+\[
+\sin A = \frac{a \sin B}{b} = \frac{3c \cdot \frac{\sqrt{3}}{2}}{c\sqrt{7}} = \frac{3\sqrt{3}}{2\sqrt{7}}
+\]
+
+\[
+\sin C = \frac{c \sin B}{b} = \frac{c \cdot \frac{\sqrt{3}}{2}}{c\sqrt{7}} = \frac{\sqrt{3}}{2\sqrt{7}}
+\]
+
+Using $\cos^2 x = 1 - \sin^2 x$:
+\[
+\cos^2 A = 1 - \frac{27}{28} = \frac{1}{28} \Rightarrow \cos A = \frac{1}{2\sqrt{7}}
+\]
+
+\[
+\cos^2 C = 1 - \frac{3}{28} = \frac{25}{28} \Rightarrow \cos C = \frac{5}{2\sqrt{7}}
+\]
+
+Therefore:
+\[
+\cos A + \cos C = \frac{1}{2\sqrt{7}} + \frac{5}{2\sqrt{7}} = \frac{6}{2\sqrt{7}} = \frac{3}{\sqrt{7}}
+\]
+
+\subsection*{Answer}
+(C) $\frac{3}{\sqrt{7}}$
+
+\end{document}

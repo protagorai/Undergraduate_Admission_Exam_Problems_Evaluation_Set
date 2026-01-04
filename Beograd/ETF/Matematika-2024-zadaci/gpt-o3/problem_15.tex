@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Na segmentu $[0,\pi]$ odrediti broj rešenja jednačine
+\[
+\frac{\cos3x+\cos4x+\cos5x}{\sin x-\sqrt3\cos x}=0.
+\]
+
+\subsection*{Rešenje}
+Razlomak je nula kada je brojilac nula, a imenilac različit od nule.
+
+\textbf{1.}  Sredimo brojilac.
+Koristimo identitet \(\cos A+\cos B=2\cos\tfrac{A+B}{2}\cos\tfrac{A-B}{2}\):
+\[
+\cos3x+\cos5x=2\cos4x\cos x.
+\]
+Zato
+\[
+\cos3x+\cos4x+\cos5x=\cos4x(2\cos x)+\cos4x=\cos4x(2\cos x+1).
+\]
+Dakle nule brojica nastaju kada
+\[
+\cos4x=0\quad\text{ili}\quad2\cos x+1=0.
+\]
+
+\textbf{2.}  Imenilac.
+\[
+\sin x-\sqrt3\cos x=0\;\Longrightarrow\;\tan x=\sqrt3 \;\Longrightarrow\;x=\frac{\pi}{3}
+\quad(\text{u }[0,\pi]).
+\]
+Rešenja koja poklapaju ovu tačku moraju se izuzeti.
+
+\textbf{3.}  Prebrojimo rešenja u $[0,\pi]$.
+\begin{itemize}
+  \item \(\cos4x=0\Rightarrow4x=\tfrac{\pi}{2}+k\pi\Rightarrow x=\tfrac{\pi}{8}+k\tfrac{\pi}{4}\).  Za $k=0,1,2,3$ dobijamo
+  \[
+    x\in\Bigl\{\tfrac{\pi}{8},\,\tfrac{3\pi}{8},\,\tfrac{5\pi}{8},\,\tfrac{7\pi}{8}\Bigr\}\subset(0,\pi].
+  \]
+  Ni jedna od ovih tačaka nije $\pi/3$, pa su sve dozvoljene: \textbf{4 rešenja}.
+  \item \(2\cos x+1=0\Rightarrow\cos x=-\tfrac12\Rightarrow x=\tfrac{2\pi}{3}\) (jedina vrednost u $[0,\pi]$).
+  Imenilac u toj tački iznosi
+  \[
+  \sin\tfrac{2\pi}{3}-\sqrt3\cos\tfrac{2\pi}{3}=\tfrac{\sqrt3}{2}-\sqrt3\Bigl(-\tfrac12\Bigr)=\sqrt3\neq0,
+  \]
+  pa je tačka prihvatljiva.  Još \textbf{1 rešenje}.
+\end{itemize}
+Ukupno rešenja: $4+1=5$.
+
+\subsection*{Odgovor}
+\[5\qquad(\text{opcija C})\]
+
+\end{document}

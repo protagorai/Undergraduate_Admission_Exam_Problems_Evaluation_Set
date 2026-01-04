@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 9}
+Skup svih realnih rešenja nejednačine
+\[
+\sqrt{x+3-4\sqrt{x-1}}+\sqrt{x+3+4\sqrt{x-1}}\ge 4
+\]
+je oblika (za $-\infty<a<b<c<+\infty$).
+
+\subsection*{Solution}
+Uslov domena je $x-1\ge 0\Rightarrow x\ge 1$.
+Postavimo $u=\sqrt{x-1}\ (\ge 0)$, pa je $x=u^2+1$ i $x+3=u^2+4$.
+Tada su podkorenovi:
+\[
+u^2+4\pm 4u=(u\pm 2)^2.
+\]
+Nejednačina postaje
+\[
+\sqrt{(u-2)^2}+\sqrt{(u+2)^2}\ge 4 \iff |u-2|+|u+2|\ge 4.
+\]
+Za $u\ge 0$ važi:
+\begin{itemize}
+\item ako je $0\le u\le 2$, onda $|u-2|=2-u$, $|u+2|=u+2$, pa je zbir $4$;
+\item ako je $u\ge 2$, onda $|u-2|=u-2$, $|u+2|=u+2$, pa je zbir $2u\ge 4$.
+\end{itemize}
+Dakle nejednačina važi za svako $u\ge 0$, tj. za svako $x\ge 1$.
+
+\subsection*{Answer}
+$[1,+\infty)$ (option \textbf{A} with $a=1$).
+
+\end{document}
+
+

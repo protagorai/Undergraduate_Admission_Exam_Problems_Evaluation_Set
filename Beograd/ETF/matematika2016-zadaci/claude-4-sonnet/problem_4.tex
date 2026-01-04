@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Four circles AB and CD intersect normally and intersect at point M such that AM = 3 cm, MB = 4 cm, CM = 2 cm and MD = 6 cm. Find the diameter of the circle (in cm).
+
+\subsection*{Solution}
+When two chords intersect inside a circle, we use the intersecting chords theorem:
+If two chords AB and CD intersect at point M inside a circle, then:
+\[
+AM \cdot MB = CM \cdot MD
+\]
+
+Let's verify this condition:
+\[
+AM \cdot MB = 3 \cdot 4 = 12
+\]
+\[
+CM \cdot MD = 2 \cdot 6 = 12
+\]
+
+Since $AM \cdot MB = CM \cdot MD = 12$, the condition is satisfied.
+
+Now we need to find the diameter. The total length of chord AB is:
+\[
+AB = AM + MB = 3 + 4 = 7 \text{ cm}
+\]
+
+The total length of chord CD is:
+\[
+CD = CM + MD = 2 + 6 = 8 \text{ cm}
+\]
+
+For two perpendicular chords intersecting at point M, if we place the center of the circle at origin and M at coordinates that make the chords perpendicular, we can use the relationship for the radius R:
+
+Using the formula for intersecting chords and the constraint that they are perpendicular:
+\[
+R^2 = \left(\frac{AB}{2}\right)^2 + d_1^2 = \left(\frac{CD}{2}\right)^2 + d_2^2
+\]
+
+where $d_1$ and $d_2$ are distances from center to the chords.
+
+For perpendicular chords intersecting at M, we can calculate:
+\[
+R^2 = \frac{(AM - MB)^2 + (CM - MD)^2 + AB^2 + CD^2}{8}
+\]
+
+\[
+R^2 = \frac{(3-4)^2 + (2-6)^2 + 7^2 + 8^2}{8} = \frac{1 + 16 + 49 + 64}{8} = \frac{130}{8} = 16.25
+\]
+
+Therefore $R = \sqrt{16.25} = \frac{\sqrt{65}}{2}$
+
+The diameter is $2R = \sqrt{65}$.
+
+\subsection*{Answer}
+$\sqrt{65}$ (option \textbf{C}).
+
+\end{document}

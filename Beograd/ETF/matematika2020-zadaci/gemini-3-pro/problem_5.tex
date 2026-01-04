@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Grafik funkcije $f(x)=ax^2+bx+c$, $a,b,c \in \mathbb{R}$, $x \in \mathbb{R}$, dat je na slici. Vrednost izraza $a(b+c)$ jednaka je:
+\[
+(A)\ -1\quad (B)\ 5\quad (C)\ 7\quad (D)\ -7\quad (E)\ 6\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Sa slike (koja nije priložena ovde, ali na osnovu opisa problema) vidimo da parabola seče x-osu u tačkama $x_1 = -2$ i $x_2 = 3$. To znači da je funkcija oblika:
+\[
+f(x) = a(x+2)(x-3)
+\]
+Teme parabole se nalazi na sredini između nula, dakle u $x_T = \frac{-2+3}{2} = \frac{1}{2}$.
+Maksimalna vrednost (y-koordinata temena) sa slike je $y_T = \frac{25}{4} = 6.25$.
+Uvrštavanjem koordinata temena u jednačinu:
+\[
+\frac{25}{4} = a\left(\frac{1}{2}+2\right)\left(\frac{1}{2}-3\right) = a\left(\frac{5}{2}\right)\left(-\frac{5}{2}\right) = -\frac{25}{4}a
+\]
+Odavde sledi $a = -1$.
+Sada imamo funkciju:
+\[
+f(x) = -1(x+2)(x-3) = -(x^2 - x - 6) = -x^2 + x + 6
+\]
+Dakle, koeficijenti su $a = -1$, $b = 1$, $c = 6$.
+Tražena vrednost izraza je:
+\[
+a(b+c) = -1(1+6) = -1 \cdot 7 = -7
+\]
+
+\subsection*{Answer}
+$-7$ (option \textbf{D}).
+
+\end{document}

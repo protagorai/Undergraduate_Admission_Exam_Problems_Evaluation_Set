@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Find the value of the expression $(4 + \sqrt{15})(\sqrt{10} - \sqrt{6})\sqrt{4 - \sqrt{15}}$.
+
+\subsection*{Solution}
+Let's denote $a = \sqrt{15}$. We need to compute $(4 + a)(\sqrt{10} - \sqrt{6})\sqrt{4 - a}$.
+
+First, note that:
+\[
+(4 + \sqrt{15})(4 - \sqrt{15}) = 16 - 15 = 1
+\]
+
+So $(4 + \sqrt{15}) = \frac{1}{4 - \sqrt{15}}$.
+
+Let's compute $(4 + \sqrt{15})\sqrt{4 - \sqrt{15}}$:
+\[
+(4 + \sqrt{15})\sqrt{4 - \sqrt{15}} = \frac{\sqrt{4 - \sqrt{15}}}{4 - \sqrt{15}} \cdot (4 + \sqrt{15})(4 - \sqrt{15}) = \frac{1}{\sqrt{4 - \sqrt{15}}}
+\]
+
+Wait, let me recalculate more carefully:
+\[
+(4 + \sqrt{15})\sqrt{4 - \sqrt{15}} = \sqrt{4 + \sqrt{15}} \cdot \sqrt{4 + \sqrt{15}} \cdot \sqrt{4 - \sqrt{15}}
+\]
+\[
+= \sqrt{4 + \sqrt{15}} \cdot \sqrt{(4 + \sqrt{15})(4 - \sqrt{15})} = \sqrt{4 + \sqrt{15}} \cdot \sqrt{1} = \sqrt{4 + \sqrt{15}}
+\]
+
+Now we need: $\sqrt{4 + \sqrt{15}} \cdot (\sqrt{10} - \sqrt{6})$.
+
+Let's simplify $\sqrt{4 + \sqrt{15}}$. Assume $\sqrt{4 + \sqrt{15}} = \sqrt{a} + \sqrt{b}$.
+Then $4 + \sqrt{15} = a + b + 2\sqrt{ab}$.
+
+So $a + b = 4$ and $2\sqrt{ab} = \sqrt{15}$, meaning $4ab = 15$, so $ab = \frac{15}{4}$.
+
+From $a + b = 4$ and $ab = \frac{15}{4}$: $a$ and $b$ are roots of $t^2 - 4t + \frac{15}{4} = 0$.
+\[
+t = \frac{4 \pm \sqrt{16 - 15}}{2} = \frac{4 \pm 1}{2}
+\]
+
+So $a = \frac{5}{2}$, $b = \frac{3}{2}$.
+
+Therefore: $\sqrt{4 + \sqrt{15}} = \sqrt{\frac{5}{2}} + \sqrt{\frac{3}{2}} = \frac{\sqrt{10} + \sqrt{6}}{2}$.
+
+Now:
+\[
+\sqrt{4 + \sqrt{15}} \cdot (\sqrt{10} - \sqrt{6}) = \frac{\sqrt{10} + \sqrt{6}}{2} \cdot (\sqrt{10} - \sqrt{6})
+\]
+\[
+= \frac{(\sqrt{10})^2 - (\sqrt{6})^2}{2} = \frac{10 - 6}{2} = \frac{4}{2} = 2
+\]
+
+\subsection*{Answer}
+$2$ (option \textbf{C}).
+
+\end{document}

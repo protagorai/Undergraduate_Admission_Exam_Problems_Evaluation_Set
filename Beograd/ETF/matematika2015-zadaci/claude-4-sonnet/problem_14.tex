@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Given an arithmetic progression $a_1, a_2, \ldots$ whose difference is $d = 1$, and the sum of the first 98 terms is $a_1 + a_2 + \cdots + a_{98} = 137$. Then the sum $a_2 + a_4 + a_6 + \cdots + a_{98}$ is:
+
+\subsection*{Solution}
+In an arithmetic progression with first term $a_1$ and common difference $d = 1$:
+\[a_n = a_1 + (n-1)d = a_1 + (n-1)\]
+
+The sum of the first 98 terms is:
+\[S_{98} = \sum_{k=1}^{98} a_k = \sum_{k=1}^{98} [a_1 + (k-1)] = 98a_1 + \sum_{k=1}^{98} (k-1)\]
+
+We have:
+\[\sum_{k=1}^{98} (k-1) = \sum_{k=0}^{97} k = \frac{97 \times 98}{2} = \frac{9506}{2} = 4753\]
+
+So:
+\[S_{98} = 98a_1 + 4753 = 137\]
+\[98a_1 = 137 - 4753 = -4616\]
+\[a_1 = -\frac{4616}{98} = -\frac{2308}{49} = -47.1020...\]
+
+Wait, let me recalculate this more carefully.
+\[a_1 = \frac{137 - 4753}{98} = \frac{-4616}{98} = -\frac{2308}{49}\]
+
+Let me verify: $-\frac{2308}{49} = -47.1020...$
+
+Actually, let me check if $a_1$ should be an integer. Let's assume it is and work backwards.
+
+If $a_1 = -47$, then:
+\[S_{98} = 98(-47) + 4753 = -4606 + 4753 = 147\]
+
+If $a_1 = -48$, then:
+\[S_{98} = 98(-48) + 4753 = -4704 + 4753 = 49\]
+
+Neither gives 137. Let me recalculate the sum formula.
+
+For an arithmetic sequence with first term $a_1$ and common difference $d = 1$:
+\[S_n = \frac{n}{2}[2a_1 + (n-1)d] = \frac{n}{2}[2a_1 + (n-1)]\]
+
+For $n = 98$:
+\[S_{98} = \frac{98}{2}[2a_1 + 97] = 49[2a_1 + 97] = 98a_1 + 49 \times 97 = 98a_1 + 4753\]
+
+So we have:
+\[98a_1 + 4753 = 137\]
+\[98a_1 = 137 - 4753 = -4616\]
+\[a_1 = -\frac{4616}{98} = -\frac{2308}{49}\]
+
+Now, we want to find $a_2 + a_4 + a_6 + \cdots + a_{98}$.
+
+The even-indexed terms are: $a_2, a_4, a_6, \ldots, a_{98}$.
+These form an arithmetic sequence with first term $a_2 = a_1 + 1$ and common difference 2.
+There are 49 such terms.
+
+\[a_2 + a_4 + a_6 + \cdots + a_{98} = \sum_{k=1}^{49} a_{2k} = \sum_{k=1}^{49} [a_1 + (2k-1)]\]
+\[= 49a_1 + \sum_{k=1}^{49} (2k-1) = 49a_1 + \sum_{k=1}^{49} (2k-1)\]
+
+We have:
+\[\sum_{k=1}^{49} (2k-1) = 2\sum_{k=1}^{49} k - \sum_{k=1}^{49} 1 = 2 \cdot \frac{49 \times 50}{2} - 49 = 49 \times 50 - 49 = 49(50-1) = 49 \times 49 = 2401\]
+
+Therefore:
+\[a_2 + a_4 + a_6 + \cdots + a_{98} = 49a_1 + 2401 = 49 \times \left(-\frac{2308}{49}\right) + 2401 = -2308 + 2401 = 93\]
+
+\subsection*{Answer}
+$93$ (option \textbf{B}).
+
+\end{document}

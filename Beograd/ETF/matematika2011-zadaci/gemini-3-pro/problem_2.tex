@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 2}
+Vrednost izraza $\left(\frac{i^{2011} + i^{2012}}{i^{2013} - i^{2014}}\right)^{2015}$, ($i^2 = -1$), jednaka je:
+\[
+(A)\; -1 \quad (B)\; 0 \quad (C)\; 1 \quad (D)\; i \quad (E)\; -i
+\]
+
+\subsection*{Solution}
+Prvo uprostimo stepene imaginarne jedinice $i$:
+\[
+i^{2011} = i^{4 \cdot 502 + 3} = i^3 = -i
+\]
+\[
+i^{2012} = i^{4 \cdot 503} = 1
+\]
+\[
+i^{2013} = i^{4 \cdot 503 + 1} = i
+\]
+\[
+i^{2014} = i^{4 \cdot 503 + 2} = i^2 = -1
+\]
+Sada zamenimo ove vrednosti u izraz u zagradi:
+\[
+\frac{i^{2011} + i^{2012}}{i^{2013} - i^{2014}} = \frac{-i + 1}{i - (-1)} = \frac{1-i}{1+i}
+\]
+Racionališemo izraz množenjem imenioca i brojioca sa $1-i$:
+\[
+\frac{1-i}{1+i} \cdot \frac{1-i}{1-i} = \frac{(1-i)^2}{1^2 - i^2} = \frac{1 - 2i + i^2}{1 - (-1)} = \frac{1 - 2i - 1}{2} = \frac{-2i}{2} = -i
+\]
+Konačno stepenujemo dobijeni rezultat sa 2015:
+\[
+(-i)^{2015} = (-1)^{2015} \cdot i^{2015} = -1 \cdot i^{4 \cdot 503 + 3} = -1 \cdot i^3 = -1 \cdot (-i) = i
+\]
+
+\subsection*{Answer}
+$i$ (option \textbf{D}).
+
+\end{document}

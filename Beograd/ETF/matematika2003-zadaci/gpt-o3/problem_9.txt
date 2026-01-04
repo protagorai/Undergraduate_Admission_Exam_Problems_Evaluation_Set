@@ -1,0 +1,2 @@
+9. Ako je prava y = kx + n zajednička tangenta kruga x^2 + y^2 = 4 i elipse 2x^2 + 5y^2 = 10, tada je k^2 + n^2 jednako:
+A) 4;   B) 7;   C) 6;   D) 5;   E) 14;   N) Ne znam.

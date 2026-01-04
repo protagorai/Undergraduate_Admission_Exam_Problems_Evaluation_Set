@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Koja od navedenih relacija postoji između rešenja $x_1$ i $x_2$ kvadratne jednačine $x^2 - 6x + 5 + m(x^2 - 5x + 6) = 0$ ($m \in \mathbf{R}$, $m \neq -1$)?
+
+(A) $x_1 + x_2 + 4x_1x_2 = 2$ \quad (B) $x_1 + x_2 + x_1x_2 - 11 = 0$
+
+(C) $x_1 + x_2 - x_1x_2 + 2 = 0$ \quad (D) $x_1 + x_2 - x_1x_2 = 4$
+
+(E) $x_1 + x_2 + 3x_1x_2 = 1$ \quad (N) Ne znam
+
+\subsection*{Solution}
+First, let's simplify the equation:
+\[
+x^2 - 6x + 5 + m(x^2 - 5x + 6) = 0
+\]
+\[
+x^2 - 6x + 5 + mx^2 - 5mx + 6m = 0
+\]
+\[
+(1+m)x^2 - (6+5m)x + (5+6m) = 0
+\]
+
+By Vieta's formulas:
+\[
+x_1 + x_2 = \frac{6+5m}{1+m}
+\]
+\[
+x_1 \cdot x_2 = \frac{5+6m}{1+m}
+\]
+
+Let $S = x_1 + x_2$ and $P = x_1 \cdot x_2$.
+
+We need to find a relation between $S$ and $P$ that eliminates $m$.
+
+From $S = \frac{6+5m}{1+m}$:
+\[
+S(1+m) = 6 + 5m
+\]
+\[
+S + Sm = 6 + 5m
+\]
+\[
+Sm - 5m = 6 - S
+\]
+\[
+m(S - 5) = 6 - S
+\]
+\[
+m = \frac{6-S}{S-5}
+\]
+
+From $P = \frac{5+6m}{1+m}$:
+\[
+P(1+m) = 5 + 6m
+\]
+\[
+P + Pm = 5 + 6m
+\]
+\[
+Pm - 6m = 5 - P
+\]
+\[
+m(P - 6) = 5 - P
+\]
+\[
+m = \frac{5-P}{P-6}
+\]
+
+Setting the two expressions for $m$ equal:
+\[
+\frac{6-S}{S-5} = \frac{5-P}{P-6}
+\]
+
+Cross-multiplying:
+\[
+(6-S)(P-6) = (5-P)(S-5)
+\]
+\[
+6P - 36 - SP + 6S = 5S - 25 - PS + 5P
+\]
+\[
+6P - 36 - SP + 6S = 5S - 25 - PS + 5P
+\]
+\[
+6P - 36 + 6S = 5S - 25 + 5P
+\]
+\[
+P + S = 11
+\]
+
+So $x_1 + x_2 + x_1x_2 = 11$, which means $x_1 + x_2 + x_1x_2 - 11 = 0$.
+
+\subsection*{Answer}
+$x_1 + x_2 + x_1x_2 - 11 = 0$ (option \textbf{B}).
+
+\end{document}

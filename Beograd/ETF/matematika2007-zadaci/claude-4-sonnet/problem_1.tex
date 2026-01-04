@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Vrednost izraza $20^5 - 20 - (20^5 + 20)^{-1}$ jednaka je:
+\begin{enumerate}
+\item[(A)] 0
+\item[(B)] 1
+\item[(C)] 2
+\item[(D)] $\sqrt{2}$
+\item[(E)] $-\sqrt{2}$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Označimo $a = 20^5$ i $b = 20$. Tada je izraz:
+\[
+a - b - (a + b)^{-1} = a - b - \frac{1}{a + b}
+\]
+
+Sada računamo:
+\[
+a - b - \frac{1}{a + b} = \frac{(a - b)(a + b) - 1}{a + b} = \frac{a^2 - b^2 - 1}{a + b}
+\]
+
+Pošto je $a = 20^5$ i $b = 20$:
+\[
+a^2 - b^2 = (20^5)^2 - 20^2 = 20^{10} - 400
+\]
+
+Dakle:
+\[
+\frac{20^{10} - 400 - 1}{20^5 + 20} = \frac{20^{10} - 401}{20^5 + 20}
+\]
+
+Međutim, primetimo da možemo faktorizovati:
+\[
+20^5 + 20 = 20(20^4 + 1)
+\]
+
+Ali lakši pristup je da direktno računamo numeričku vrednost:
+\[
+20^5 = 3,200,000
+\]
+\[
+20^5 + 20 = 3,200,020
+\]
+\[
+(20^5 + 20)^{-1} = \frac{1}{3,200,020} \approx 0
+\]
+
+Dakle:
+\[
+20^5 - 20 - (20^5 + 20)^{-1} \approx 3,200,000 - 20 - 0 = 3,199,980
+\]
+
+Međutim, ovo ne odgovara nijednom od ponuđenih odgovora. Proveravamo da li postoji greška u tumačenju.
+
+Možda je problem u tome što treba da računamo tačno. Vratimo se na:
+\[
+20^5 - 20 - \frac{1}{20^5 + 20}
+\]
+
+Pošto je $\frac{1}{20^5 + 20}$ veoma mali broj (praktično 0), rezultat je približno $20^5 - 20$.
+
+Proveravamo da li možda postoji drugačije tumačenje problema. Možda je trebalo da bude $(20^5 - 20 - 20^5) + 20^{-1}$?
+
+Ako je izraz $(20^5 - 20) - (20^5 + 20)^{-1}$, tada:
+\[
+20^5 - 20 - \frac{1}{20^5 + 20} = 20(20^4 - 1) - \frac{1}{20^5 + 20}
+\]
+
+Pošto je $\frac{1}{20^5 + 20}$ zanemarljivo mali, odgovor je približno $20(20^4 - 1)$.
+
+Međutim, nijedan od ponuđenih odgovora ne odgovara ovome. Možda postoji greška u čitanju problema.
+
+\subsection*{Answer}
+Na osnovu analize, nijedan od standardnih odgovora ne odgovara tačno, pa je odgovor \textbf{(N) Ne znam}.
+
+\end{document}

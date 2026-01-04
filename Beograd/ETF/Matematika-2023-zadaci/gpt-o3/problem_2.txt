@@ -1,0 +1,8 @@
+Problem 2 (Matematika 2023)
+Rastojanje tačke A(3,4) od centra kružnice x^2 + y^2 + 2x + 6y + 6 = 0 iznosi:
+a) 8
+b) √65
+c) √17
+d) √53
+e) 5
+n) Ne znam

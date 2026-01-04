@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Površina trougla $\triangle ABC$ je 30 cm$^2$. Neka je $D$ tačka na stranici $AB$ takva da deli duž $AB$ u razmeri $2:3$ i neka je $E$ tačka na stranici $BC$ takva da je duž $ED$ dužine 9 cm i normalna na stranicu $BC$. Tada dužina duži $BC$ iznosi:
+
+\subsection*{Solution}
+Neka je $A$ u koordinatnom početku, i neka je $B$ na pozitivnom delu $x$-ose.
+
+Tačka $D$ deli $AB$ u razmeri $2:3$, što znači $AD:DB = 2:3$.
+
+Dakle ako je $|AB| = c$, onda je $|AD| = \frac{2c}{5}$.
+
+Neka je $B = (c, 0)$ i $D = \left(\frac{2c}{5}, 0\right)$.
+
+Tačka $E$ je na stranici $BC$, i $ED \perp BC$ sa $|ED| = 9$.
+
+Neka je $C = (x_C, y_C)$.
+
+Vektor $\vec{BC} = (x_C - c, y_C)$.
+
+Pošto je $ED \perp BC$, vektor $\vec{ED}$ je normalan na $\vec{BC}$.
+
+Tačka $E$ leži na $BC$, pa možemo pisati $E = B + t \cdot \vec{BC} = (c + t(x_C - c), ty_C)$ za neko $t \in [0, 1]$.
+
+Vektor $\vec{ED} = D - E = \left(\frac{2c}{5} - c - t(x_C - c), -ty_C\right) = \left(-\frac{3c}{5} - t(x_C - c), -ty_C\right)$
+
+Uslov $\vec{ED} \perp \vec{BC}$:
+\[
+\vec{ED} \cdot \vec{BC} = 0
+\]
+\[
+\left(-\frac{3c}{5} - t(x_C - c)\right)(x_C - c) + (-ty_C)(y_C) = 0
+\]
+\[
+-\frac{3c}{5}(x_C - c) - t(x_C - c)^2 - ty_C^2 = 0
+\]
+\[
+-\frac{3c}{5}(x_C - c) = t\left[(x_C - c)^2 + y_C^2\right] = t \cdot |BC|^2
+\]
+
+Neka je $|BC| = a$. Tada:
+\[
+t = -\frac{3c(x_C - c)}{5a^2}
+\]
+
+Dužina $|ED| = 9$:
+\[
+|ED|^2 = \left(-\frac{3c}{5} - t(x_C - c)\right)^2 + t^2 y_C^2 = 81
+\]
+
+Ovo postaje komplikovano. Koristimo drugi pristup.
+
+Površina trougla $ABC$ je 30 cm$^2$:
+\[
+P_{ABC} = \frac{1}{2} \cdot |AB| \cdot h_C = 30
+\]
+gde je $h_C$ visina iz $C$ na $AB$.
+
+Dakle $|AB| \cdot h_C = 60$.
+
+Koristimo činjenicu da je $ED \perp BC$ i $|ED| = 9$.
+
+Površina trougla $DBC$:
+\[
+P_{DBC} = \frac{1}{2} \cdot |BC| \cdot |ED| = \frac{1}{2} \cdot |BC| \cdot 9 = \frac{9|BC|}{2}
+\]
+
+Odnos površina $P_{DBC}$ i $P_{ABC}$:
+
+Pošto $D$ deli $AB$ u odnosu $2:3$ (tj. $AD:AB = 2:5$), imamo $DB:AB = 3:5$.
+
+Trouglovi $DBC$ i $ABC$ imaju istu visinu iz $C$ na pravu $AB$, pa:
+\[
+\frac{P_{DBC}}{P_{ABC}} = \frac{DB}{AB} = \frac{3}{5}
+\]
+
+Dakle:
+\[
+P_{DBC} = \frac{3}{5} \cdot 30 = 18 \text{ cm}^2
+\]
+
+Iz formule za površinu:
+\[
+\frac{9|BC|}{2} = 18
+\]
+\[
+|BC| = \frac{36}{9} = 4 \text{ cm}
+\]
+
+\subsection*{Answer}
+$4$ cm (opcija \textbf{B}).
+
+\end{document}

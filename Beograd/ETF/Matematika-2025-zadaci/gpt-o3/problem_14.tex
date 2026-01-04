@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 14}
+Ugao između elipse
+\[
+\frac{x^{2}}{9}+\frac{y^{2}}{4}=1
+\]
+i hiperbole
+\[
+\frac{x^{2}}{4}-y^{2}=1
+\]
+u njihovoj presečnoj tački u prvom kvadrantu iznosi?
+
+\subsection*{Solution}
+\paragraph{1. Koordinate preseka.}
+Iz elipse dobijamo $y^{2}=4-\dfrac{4x^{2}}{9}$, a iz hiperbole $y^{2}=\dfrac{x^{2}}{4}-1$. Izjednačavanjem:
+\[
+4-\frac{4x^{2}}{9}=\frac{x^{2}}{4}-1\;\Longrightarrow\;5=x^{2}\bigl(\tfrac14+\tfrac49\bigr)=x^{2}\,\frac{25}{36}\;\Longrightarrow\;x^{2}=\frac{36}{5}.
+\]
+U prvom kvadrantu je $x=\dfrac{6}{\sqrt5}$.  Iz hiperbole dobijamo
+\[
+y^{2}=\frac{x^{2}}{4}-1=\frac{36/5}{4}-1=\frac{9}{5}-1=\frac{4}{5}\;\Longrightarrow\;y=\frac{2}{\sqrt5}.
+\]
+
+\paragraph{2. Nagibi tangenti.}
+\emph{Elipsa.} Implicitna diferencijacija daje
+\[
+\frac{2x}{9}+\frac{2y}{4}\,y'=0\;\Longrightarrow\;y'_{1}=-\frac{4x}{9y}.
+\]
+U tački $(6/\sqrt5,2/\sqrt5)$ je
+\[
+ m_{1}=-\frac{4\cdot(6/\sqrt5)}{9\cdot(2/\sqrt5)}=-\frac{24}{18}=-\frac43.
+\]
+\emph{Hiperbola.} Diferencijacija
+\[
+\frac{x}{2}-2y\,y'=0\;\Longrightarrow\;y'_{2}=\frac{x}{4y},
+\]
+pa je
+\[
+ m_{2}=\frac{6/\sqrt5}{4\cdot(2/\sqrt5)}=\frac{6}{8}=\frac34.
+\]
+
+\paragraph{3. Ugao između krivih.}
+Za nagibe $m_{1}$ i $m_{2}$ ugao $\varphi$ ispunjava
+\[
+\tan\varphi=\left|\frac{m_{2}-m_{1}}{1+m_{1}m_{2}}\right|.
+\]
+Ovde je $m_{1}m_{2}=(-4/3)(3/4)=-1$, pa je imenilac $0$ i $\tan\varphi$ neograničen. Stoga je $\varphi=90^{\circ}$.
+
+\subsection*{Answer}
+$90^{\circ}$ (option \textbf{D}).
+
+\end{document}

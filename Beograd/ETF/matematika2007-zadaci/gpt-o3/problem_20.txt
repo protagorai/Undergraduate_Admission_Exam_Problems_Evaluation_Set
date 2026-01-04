@@ -1,0 +1,5 @@
+Problem 20
+
+Broj načina na koji se može formirati petočlana komisija od 2 matematičara i 8 fizičara, tako da u njoj bude bar jedan matematičar, iznosi:
+
+(A) 132   (B) 196   (C) 212   (D) 314   (E) 422   (N) Ne znam

@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Broj realnih rešenja jednačine $f(x) + f(f(x)) = x$, gde je $f(x) = |x| + a$, $a > 0$, jednak je:
+
+\subsection*{Solution}
+Given $f(x) = |x| + a$ where $a > 0$.
+
+First, find $f(f(x))$:
+\[
+f(f(x)) = f(|x| + a) = ||x| + a| + a = |x| + a + a = |x| + 2a
+\]
+(since $|x| + a > 0$ for all $x$ when $a > 0$)
+
+So the equation becomes:
+\[
+|x| + a + |x| + 2a = x
+\]
+\[
+2|x| + 3a = x
+\]
+
+\textbf{Case 1:} $x \geq 0$
+
+Then $|x| = x$:
+\[
+2x + 3a = x \implies x = -3a
+\]
+
+But this contradicts $x \geq 0$ since $a > 0$. No solution in this case.
+
+\textbf{Case 2:} $x < 0$
+
+Then $|x| = -x$:
+\[
+-2x + 3a = x \implies 3a = 3x \implies x = a
+\]
+
+But this contradicts $x < 0$ since $a > 0$. No solution in this case.
+
+Therefore, there are \textbf{0} real solutions.
+
+\subsection*{Answer}
+$0$ (option \textbf{B}).
+
+\end{document}

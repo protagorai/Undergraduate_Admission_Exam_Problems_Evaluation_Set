@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Polulopta poluprečnika $r$ upisana je u pravu pravilnu četvorostranu piramidu tako da osnova polulopte pripada ravni osnove piramide i sve bočne strane piramide dodiruju poluloptu. Ako je površina takve piramide minimalna, onda njena osnovna ivica iznosi:
+
+(A) $\frac{2\sqrt{3}r}{3}$ \quad (B) $\frac{48r}{9}$ \quad (C) $\frac{4\sqrt{3}r}{3}$ \quad (D) $\frac{\sqrt{3}r}{4}$ \quad (E) $\frac{16\sqrt{3}r}{9}$
+
+\subsection*{Solution}
+Osnova piramide je kvadrat stranice $a$. Visina piramide $H$.
+Bočne strane su jednakokraki trouglovi visine $h$ (apotema).
+Polulopta je na osnovi, dodiruje bočne strane. Centar osnove je centar polulopte.
+Rastojanje od centra do bočne strane je $r$.
+Posmatrajmo poprečni presek kroz visinu piramide i sredinu ivice osnove.
+To je pravougli trougao sa katetama $H$ i $a/2$, i hipotenuzom $h$.
+Visina ovog trougla koja odgovara hipotenuzi je poluprečnik polulopte $r$ (jer je to normalno rastojanje od centra do bočne strane).
+Iz sličnosti trouglova ili površine:
+$\frac{1}{2} h \cdot r = \frac{1}{2} H \cdot \frac{a}{2}$ (ne, ovo nije tačno, površina je $r \cdot h$? Ne).
+Dvaput površina trougla preseka: $H \cdot (a/2) = h \cdot r$.
+Dakle $aH = 2rh \Rightarrow H = \frac{2rh}{a}$.
+Takođe veza $h^2 = H^2 + (a/2)^2$.
+$h^2 = \frac{4r^2 h^2}{a^2} + \frac{a^2}{4}$.
+$h^2 (1 - \frac{4r^2}{a^2}) = \frac{a^2}{4}$.
+$h^2 \frac{a^2 - 4r^2}{a^2} = \frac{a^2}{4}$.
+$h = \frac{a^2}{2\sqrt{a^2 - 4r^2}}$. Uslov $a > 2r$.
+
+Površina piramide $P = a^2 + 4 \frac{a h}{2} = a^2 + 2ah$.
+Zamenimo $h$:
+$P(a) = a^2 + 2a \frac{a^2}{2\sqrt{a^2 - 4r^2}} = a^2 + \frac{a^3}{\sqrt{a^2 - 4r^2}}$.
+Tražimo minimum po $a$.
+$P'(a) = 2a + \frac{3a^2\sqrt{a^2-4r^2} - a^3 \frac{2a}{2\sqrt{a^2-4r^2}}}{a^2-4r^2} = 0$.
+$2a + \frac{3a^2(a^2-4r^2) - a^4}{(a^2-4r^2)^{3/2}} = 0$.
+Podelimo sa $a$ (jer $a \neq 0$):
+$2 + \frac{3a^4 - 12a^2r^2 - a^4}{(a^2-4r^2)^{3/2}} = 0$.
+$2 + \frac{2a^4 - 12a^2r^2}{(a^2-4r^2)^{3/2}} = 0$.
+$2 (a^2-4r^2)^{3/2} + 2a^4 - 12a^2r^2 = 0$.
+$(a^2-4r^2)^{3/2} = 6a^2r^2 - a^4$.
+Kvadriramo:
+$(a^2-4r^2)^3 = (6a^2r^2 - a^4)^2$.
+Neka je $a^2 = x$.
+$(x-4r^2)^3 = (6xr^2 - x^2)^2 = x^2(6r^2 - x)^2$.
+$x^3 - 12x^2r^2 + 48xr^4 - 64r^6 = x^2 (36r^4 - 12xr^2 + x^2) = 36x^2r^4 - 12x^3r^2 + x^4$.
+Ovo izgleda komplikovano.
+Vratimo se na izvod.
+$P = a^2 + a^3 (a^2-4r^2)^{-1/2}$.
+Možemo koristiti smenu $a^2 - 4r^2 = t^2 \Rightarrow a^2 = t^2 + 4r^2$.
+$h = \frac{t^2+4r^2}{2t}$.
+$P = t^2 + 4r^2 + 2\sqrt{t^2+4r^2} \frac{t^2+4r^2}{2t} = t^2 + 4r^2 + \frac{(t^2+4r^2)^{3/2}}{t}$.
+Ovo i dalje deluje gadno.
+
+Alternativno, koristimo trigonometriju.
+Ugao nagiba bočne strane prema osnovi je $\alpha$.
+$r = (a/2) \tan(\alpha/2)$.
+$a = 2r \cot(\alpha/2)$.
+$P = a^2 + \frac{a^2}{\cos \alpha} = a^2 (1 + \frac{1}{\cos \alpha})$.
+Treba izraziti sve preko $\alpha$.
+$a = 2r \frac{\cos(\alpha/2)}{\sin(\alpha/2)}$.
+$P(\alpha) = 4r^2 \cot^2(\alpha/2) \frac{1+\cos \alpha}{\cos \alpha} = 4r^2 \frac{\cos^2(\alpha/2)}{\sin^2(\alpha/2)} \frac{2\cos^2(\alpha/2)}{\cos \alpha}$.
+$P(\alpha) = 8r^2 \frac{\cos^4(\alpha/2)}{\sin^2(\alpha/2) \cos \alpha}$.
+Tražimo minimum.
+Možemo i lakše.
+$a = 2r \sqrt{k}$ gde $k$ nešto...
+Probajmo sa rezultatima.
+Ako $a = \frac{4\sqrt{3}r}{3}$, onda $a^2 = \frac{16 \cdot 3 r^2}{9} = \frac{16}{3} r^2$.
+$a^2 - 4r^2 = \frac{16}{3}r^2 - \frac{12}{3}r^2 = \frac{4}{3}r^2$.
+$h = \frac{16/3 r^2}{2 \sqrt{4/3 r^2}} = \frac{16/3 r^2}{2 \cdot 2r/\sqrt{3}} = \frac{16/3 r^2}{4r/\sqrt{3}} = \frac{4\sqrt{3}}{3}r$.
+U ovom slučaju $h=a$. Jednakostranični trouglovi?
+$P = a^2 + 2a^2 = 3a^2$.
+Da vidimo da li je to minimum.
+Jednačina je bila $(a^2-4r^2)^{3/2} = 6a^2r^2 - a^4$.
+Za $a^2 = 16/3 r^2$:
+Leva: $(4/3 r^2)^{3/2} = (4/3)^{3/2} r^3 = \frac{8}{3\sqrt{3}} r^3$.
+Desna: $6(16/3)r^4 - (16/3)^2 r^4 = 32r^4 - \frac{256}{9}r^4 = \frac{288-256}{9}r^4 = \frac{32}{9}r^4$.
+Nisu iste dimenzije? A, $a^2$ je $r^2$, $a^4$ je $r^4$.
+Gde sam pogrešio?
+$2a + \dots = 0$.
+$P' = 2a + \frac{3a^2 \sqrt{} - a^3 \frac{a}{\sqrt{}}}{a^2-4r^2}$.
+Brojilac drugog dela: $\frac{3a^2(a^2-4r^2) - a^4}{\sqrt{a^2-4r^2}}$.
+$P' = 2a + \frac{2a^4 - 12a^2r^2}{(a^2-4r^2)^{3/2}}$.
+Podelio sam sa $a$.
+$2 + \frac{2a^2(a^2-6r^2)}{(a^2-4r^2)^{3/2}} = 0$.
+$(a^2-4r^2)^{3/2} + a^2(a^2-6r^2) = 0$.
+$(a^2-4r^2)^{3/2} = a^2(6r^2-a^2)$.
+Proverimo rešenje $a^2 = 8r^2$? (Ovo bi dalo $a=2\sqrt{2}r$).
+$(4r^2)^{3/2} = 8r^3$.
+$8r^2(6r^2-8r^2) = -16r^4$. Ne.
+
+Proverimo $a^2 = 6r^2$.
+Leva: $(2r^2)^{3/2} = 2\sqrt{2}r^3$.
+Desna: 0. Ne.
+
+Proverimo $a = \frac{4\sqrt{3}r}{3} \Rightarrow a^2 = \frac{16}{3}r^2$.
+Leva: $(4/3 r^2)^{3/2} = \frac{8}{3\sqrt{3}} r^3 = \frac{8\sqrt{3}}{9} r^3$.
+Desna: $\frac{16}{3}r^2 (6r^2 - \frac{16}{3}r^2) = \frac{16}{3}r^2 (\frac{18-16}{3}r^2) = \frac{16}{3}r^2 \frac{2}{3}r^2 = \frac{32}{9}r^4$.
+Opet dimenzije.
+Ah, $P = a^2 + \frac{a^3}{\sqrt{a^2-4r^2}}$.
+Izvod po $a$:
+$2a + \frac{3a^2\sqrt{a^2-4r^2} - a^3 \frac{1}{2\sqrt{a^2-4r^2}} 2a}{a^2-4r^2} = 2a + \frac{3a^2(a^2-4r^2) - a^4}{(a^2-4r^2)^{3/2}}$.
+$= 2a + \frac{3a^4 - 12a^2r^2 - a^4}{(a^2-4r^2)^{3/2}} = 2a + \frac{2a^4 - 12a^2r^2}{(a^2-4r^2)^{3/2}}$.
+Izvučemo $2a$:
+$2a (1 + \frac{a^2 - 6r^2}{(a^2-4r^2)^{3/2}} ) = 0$.
+$1 + \frac{a^2 - 6r^2}{(a^2-4r^2)^{3/2}} = 0$.
+$(a^2-4r^2)^{3/2} = 6r^2 - a^2$.
+Ovde se dimenzije slažu ($r^3 = r^2$). Ne, $r^3 = r^2$. Greška u dimenzijama u mojoj glavi?
+$(L^2)^{3/2} = L^3$. $L^2$. Ne, leva strana je $L^3$, desna $L^2$.
+Gde je greška u izvodu?
+$h = \frac{a^2}{2\sqrt{a^2-4r^2}}$. Dimenzija $L^2/L = L$. OK.
+$P = a^2 + 2a h = a^2 + \frac{a^3}{\sqrt{a^2-4r^2}}$. Dimenzija $L^2 + L^3/L = L^2$. OK.
+Izvod po $a$: $L$.
+$2a$ je $L$.
+Drugi član: Brojilac $L^4$, imenilac $L^3$. Rezultat $L$. OK.
+Jednačina: $(a^2-4r^2)^{3/2} = 6r^2 - a^2$.
+Leva: $L^3$. Desna: $L^2$.
+Ah, drugi član u izvodu je $\frac{2a^4 - 12a^2r^2}{(a^2-4r^2)^{3/2}}$.
+Kad izjednačim sa $-2a$:
+$-2a = \frac{2a^4 - 12a^2r^2}{(a^2-4r^2)^{3/2}}$.
+Delim sa $2a$:
+$-1 = \frac{a^2 - 6r^2}{(a^2-4r^2)^{3/2}}$.
+$-(a^2-4r^2)^{3/2} = a^2 - 6r^2$.
+$(a^2-4r^2)^{3/2} = 6r^2 - a^2$.
+I dalje leva $L^3$, desna $L^2$.
+Čekaj, $a^2 - 6r^2$ je brojilac (izvučeno $2a$).
+Izraz u zagradi je $1 + \frac{a(a^2-6r^2)}{(a^2-4r^2)^{3/2}}$.
+Ne, bilo je $2a^4$. Izvukao sam $2a$, ostaje $a^3$.
+A, $2a(1 + \frac{a^2 - 6r^2}{(a^2-4r^2)^{3/2}})$. Ako je bilo $2a^4$, onda ostaje $a^3$.
+Da, $2a^4 - 12a^2r^2 = 2a(a^3 - 6ar^2)$.
+Dakle jednačina je $(a^2-4r^2)^{3/2} = 6ar^2 - a^3 = a(6r^2 - a^2)$.
+Sada su dimenzije $L^3 = L^3$.
+
+Proba $a^2 = 3r^2$? Ne može zbog korena.
+Proba $a^2 = 5r^2$? $(r^2)^{3/2} = r^3$.
+Desna: $\sqrt{5}r (r^2) = \sqrt{5}r^3$. Nije.
+
+Proba sa rešenjem (C) $a = \frac{4\sqrt{3}}{3}r$. $a^2 = \frac{16}{3}r^2$.
+Leva: $(\frac{16}{3}r^2 - 4r^2)^{3/2} = (\frac{4}{3}r^2)^{3/2} = \frac{8}{3\sqrt{3}}r^3$.
+Desna: $\frac{4\sqrt{3}}{3}r (6r^2 - \frac{16}{3}r^2) = \frac{4\sqrt{3}}{3}r (\frac{2}{3}r^2) = \frac{8\sqrt{3}}{9}r^3$.
+Da li je $\frac{8}{3\sqrt{3}} = \frac{8\sqrt{3}}{9}$?
+$\frac{8}{3\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}} = \frac{8\sqrt{3}}{3 \cdot 3} = \frac{8\sqrt{3}}{9}$.
+Jeste!
+Dakle rešenje je (C).
+
+\subsection*{Answer}
+$\frac{4\sqrt{3}r}{3}$ (opcija \textbf{(C)}).
+
+\end{document}

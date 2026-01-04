@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Skup rešenja nejednačine
+\[
+\log_{\sin x}\!\cos x+\log_{\cos x}\!\sin x>2
+\]
+na segmentu $[0,2\pi]$ je oblika (za neke realne brojeve $a,b,c,d$ takve da je $0\le a<b<c<d\le 2\pi$):
+
+\subsection*{Solution}
+\textbf{Domen:} Da bi logaritmi bili definisani, potrebno je
+\[
+\sin x>0,\ \sin x\neq 1,\qquad \cos x>0,\ \cos x\neq 1,
+\]
+i takođe argumenti moraju biti pozitivni: $\sin x>0$ i $\cos x>0$.
+Na $[0,2\pi]$ to daje $x\in(0,\pi/2)$ (krajevi $0$ i $\pi/2$ otpadaju jer daju bazu $1$ ili $0$).
+
+Za $x\in(0,\pi/2)$ postavimo $a=\sin x$ i $b=\cos x$, pa su $a,b\in(0,1)$.
+Tada je
+\[
+\log_{\sin x}\cos x+\log_{\cos x}\sin x=\frac{\ln b}{\ln a}+\frac{\ln a}{\ln b}.
+\]
+Označimo $u=\frac{\ln b}{\ln a}$. Pošto su $\ln a<0$ i $\ln b<0$, imamo $u>0$, pa važi nejednakost
+\[
+u+\frac1u\ge 2,
+\]
+sa jednakošću ako i samo ako je $u=1$.
+Dakle,
+\[
+u+\frac1u>2 \iff u\neq 1 \iff \ln b\neq \ln a \iff b\neq a \iff \sin x\neq \cos x.
+\]
+U intervalu $(0,\pi/2)$ to se dešava svuda osim u tački $x=\pi/4$.
+
+Zato je skup rešenja
+\[
+(0,\tfrac{\pi}{4})\cup(\tfrac{\pi}{4},\tfrac{\pi}{2}).
+\]
+
+\subsection*{Answer}
+$(0,\tfrac{\pi}{4})\cup(\tfrac{\pi}{4},\tfrac{\pi}{2})$ (option \textbf{A}).
+
+\end{document}
+

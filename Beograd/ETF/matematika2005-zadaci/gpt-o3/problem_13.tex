@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Odrediti broj realnih rešenja sistema
+\[
+\log_{|x-y|}\frac{xy}{2}=2,\qquad x+y=xy+1.
+\]
+
+\subsection*{Rešenje}
+Prva jednačina daje
+\[\frac{xy}{2}=(|x-y|)^{2}\quad(>0).\]
+Druga se može zapisati kao $xy=x+y-1$. Uvrštavanjem dobijamo
+\[(x+y-1)=2(|x-y|)^{2}.\]
+Simetrijom pretpostavimo $x\ge y$ (rešenja se udvostručuju ako $x\ne y$). Neka su $s=x+y,\;d=x-y\;(d\ge0)$. Tada $xy=\tfrac{s^{2}-d^{2}}{4}$. Prva relacija postaje
+\[\frac{s^{2}-d^{2}}{4}=2d^{2}\;\Longrightarrow\;s^{2}=9d^{2}.\]
+Budući da su $s,d$ realni, $s=\pm3d$. Za $d>0$ imamo $s=3d$ (jer $s\ge d$), a za $d=0$ sledi $x=y$.
+Druga relacija $xy=s-d^{2}-1$ postaje posle uvrštavanja
+\[\frac{s^{2}-d^{2}}{4}=s-1\;\Longrightarrow\;s^{2}-d^{2}=4s-4.
+\]
+Zamenom $s=3d$ dobijamo $9d^{2}-d^{2}=12d-4\;\Rightarrow\;8d^{2}-12d+4=0\;\Rightarrow\;2d^{2}-3d+1=0$, pa $d=1$ ili $d=\tfrac12$.
+Za $d=1$ dobijamo $s=3$, što vodi na parove $(2,1)$ i $(1,2)$.
+Za $d=\tfrac12$ dobijamo $s=\tfrac32$, što vodi na $(\tfrac{5}{4},\tfrac14)$ i $(\tfrac14,\tfrac{5}{4})$.
+Za $d=0$ postaje $s^{2}=4s-4\Rightarrow (s-2)^{2}=0\Rightarrow s=2$, pa $x=y=1$.
+Ukupно има $5$ realnih rešenja.
+
+\subsection*{Odgovor}
+$5$ (опција \textbf{D}).
+
+\end{document}

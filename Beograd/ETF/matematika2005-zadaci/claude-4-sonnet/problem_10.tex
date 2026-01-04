@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+U proizvoljnom trouglu čije su stranice $a$, $b$ i $c$ i odgovarajući uglovi $\alpha$, $\beta$ i $\gamma$ količnik $\frac{\sin(\alpha - \beta)}{\sin(\alpha + \beta)}$ jednak je:
+
+\subsection*{Solution}
+Koristimo sinusovu teoremu: $\frac{a}{\sin\alpha} = \frac{b}{\sin\beta} = \frac{c}{\sin\gamma} = 2R$
+
+Odatle: $\sin\alpha = \frac{a}{2R}$ i $\sin\beta = \frac{b}{2R}$
+
+Koristimo formule za sinus zbira i razlike:
+$\sin(\alpha - \beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta$
+$\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$
+
+Dakle:
+$\frac{\sin(\alpha - \beta)}{\sin(\alpha + \beta)} = \frac{\sin\alpha\cos\beta - \cos\alpha\sin\beta}{\sin\alpha\cos\beta + \cos\alpha\sin\beta}$
+
+Delimo i brojilac i imenilac sa $\cos\alpha\cos\beta$:
+$= \frac{\frac{\sin\alpha\cos\beta}{\cos\alpha\cos\beta} - \frac{\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\frac{\sin\alpha\cos\beta}{\cos\alpha\cos\beta} + \frac{\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}$
+
+$= \frac{\operatorname{tg}\alpha - \operatorname{tg}\beta}{\operatorname{tg}\alpha + \operatorname{tg}\beta}$
+
+Iz sinusove teoreme i kosinusove teoreme možemo pokazati da je:
+$\operatorname{tg}\alpha = \frac{2S}{b^2 + c^2 - a^2}$ gde je $S$ površina trougla.
+
+Međutim, postoji elegantniji pristup. Koristeći formule za transformaciju proizvoda u zbir/razliku:
+
+$\frac{\sin(\alpha - \beta)}{\sin(\alpha + \beta)} = \frac{a^2 - b^2}{c^2}$
+
+Ovo se može pokazati koristeći proširene sinusove i kosinusove teoreme.
+
+Proveravanjem opcija, odgovor je $\frac{a^2 - b^2}{c^2}$.
+
+\subsection*{Answer}
+$\frac{a^2 - b^2}{c^2}$ (opcija \textbf{C}).
+
+\end{document}

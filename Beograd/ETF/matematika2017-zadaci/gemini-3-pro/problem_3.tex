@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Ako je $x + \frac{1}{x} = 3$ ($x \in \mathbf{R}^+$), tada je $\sqrt[4]{x} + \frac{1}{\sqrt[4]{x}}$ jednako:
+(A) $\sqrt{2+\sqrt{5}}$
+(B) $\sqrt[4]{5}$
+(C) $\sqrt{3}$
+(D) $\sqrt[4]{3}$
+(E) $\sqrt{1+\sqrt{3}}$
+(N) Ne znam
+
+\subsection*{Solution}
+Let $t = \sqrt[4]{x} + \frac{1}{\sqrt[4]{x}}$. Since $x \in \mathbf{R}^+$, $t > 0$.
+Squaring $t$:
+\[
+t^2 = \left(\sqrt[4]{x} + \frac{1}{\sqrt[4]{x}}\right)^2 = \sqrt{x} + 2 + \frac{1}{\sqrt{x}} = \left(\sqrt{x} + \frac{1}{\sqrt{x}}\right) + 2.
+\]
+Let $u = \sqrt{x} + \frac{1}{\sqrt{x}}$. Squaring $u$:
+\[
+u^2 = \left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^2 = x + 2 + \frac{1}{x} = \left(x + \frac{1}{x}\right) + 2.
+\]
+We are given $x + \frac{1}{x} = 3$. So,
+\[
+u^2 = 3 + 2 = 5 \implies u = \sqrt{5} \quad (\text{since } u > 0).
+\]
+Now substitute $u$ back into the equation for $t^2$:
+\[
+t^2 = u + 2 = \sqrt{5} + 2.
+\]
+Thus,
+\[
+t = \sqrt{2 + \sqrt{5}}.
+\]
+
+\subsection*{Answer}
+$\sqrt{2+\sqrt{5}}$ (option \textbf{A}).
+
+\end{document}

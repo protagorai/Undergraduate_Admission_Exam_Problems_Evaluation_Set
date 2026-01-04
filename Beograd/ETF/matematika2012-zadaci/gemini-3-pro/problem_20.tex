@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 20}
+Najmanja vrednost funkcije $f(x) = 4x + \frac{9\pi^2}{x} + \sin x$ za $0 < x < +\infty$ je:
+
+\subsection*{Solution}
+Consider $g(x) = 4x + \frac{9\pi^2}{x}$. By AM-GM inequality:
+\[
+4x + \frac{9\pi^2}{x} \ge 2\sqrt{4x \cdot \frac{9\pi^2}{x}} = 2\sqrt{36\pi^2} = 12\pi
+\]
+Equality holds when $4x = \frac{9\pi^2}{x} \implies x^2 = \frac{9\pi^2}{4} \implies x = \frac{3\pi}{2}$.
+At $x = \frac{3\pi}{2}$, $\sin x = \sin \frac{3\pi}{2} = -1$.
+So $f(3\pi/2) = 12\pi - 1$.
+Since $-1$ is the minimum possible value for $\sin x$, and $12\pi$ is the minimum for the first part, and they occur at the same $x$, this is the global minimum.
+\[
+f_{min} = 12\pi - 1
+\]
+
+\subsection*{Answer}
+(C) $12\pi - 1$
+
+\end{document}

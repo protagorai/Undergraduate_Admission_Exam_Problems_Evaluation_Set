@@ -1,0 +1,67 @@
+RESENJA - Prijemni ispit iz matematike za upis na Elektrotehnicki fakultet
+Univerzitet u Beogradu, 24. jul 2025.
+Sifra zadataka: 11569
+
+================================================================================
+
+1.  (E) 63
+    p + q = 63, gde je x = 2^(p/q) = 2^(32/31)
+
+2.  (B) 36π
+    S = 36π cm² (poluprečnik lopte r = 3)
+
+3.  (A) -2/3
+    log_b(a²b) + log_√a(a/√b) = -2/3
+
+4.  (D) 5
+    |z| = 5, gde je z = -3 + 4i
+
+5.  (B) -4/3
+    tan α = -4/3
+
+6.  (E) 72
+    Površina trapeza = 72
+
+7.  (A) 4
+    Broj realnih rešenja sistema je 4
+
+8.  (B) 0
+    Zbir svih realnih rešenja je 0 (rešenja su x = -2, 0, 2)
+
+9.  (A) [a, +∞)
+    Skup rešenja je [1, +∞), tj. a = 1
+
+10. (C) 31
+    n = 31
+
+11. (E) (a, b) ∪ [c, +∞)
+    Skup vrednosti parametra m je (-∞, -2) ∪ {2}
+
+12. (B) 4 cm
+    Dužina duži BC = 4 cm
+
+13. (A) 1/(4√2)
+    Granična vrednost = 1/(4√2) = √2/8
+
+14. (D) 90°
+    Ugao između elipse i hiperbole u presečnoj tački je 90°
+
+15. (B) 4
+    Broj realnih i različitih rešenja je 4
+
+16. (D) (-∞, a) ∪ (b, c) ∪ (d, +∞)
+    Skup rešenja je (-∞, -16√2) ∪ (16√2, +∞)
+
+17. (A) 7x² - 5x + 13
+    Ostatak pri deljenju sa x³ + x je 7x² - 5x + 13
+
+18. (D) (0, π/6] ∪ [π/3, 5π/6]
+    Skup rešenja nejednačine na (0, π)
+
+19. (C) 27πr³/4
+    Minimalna zapremina kupe = 27πr³/4
+
+20. (B) (a, b)
+    Skup vrednosti parametra p je (0, 2)
+
+================================================================================

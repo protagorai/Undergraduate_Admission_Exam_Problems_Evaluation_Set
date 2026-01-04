@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Let $A = \{1, 2, \ldots, 2019\}$ and $B = \{(x,y) \in A \times A \mid |x - y| \geq 2\}$. The number of elements in set $B$ is:
+
+\subsection*{Solution}
+We need to count the number of ordered pairs $(x,y)$ where $x, y \in \{1, 2, \ldots, 2019\}$ and $|x - y| \geq 2$.
+
+The condition $|x - y| \geq 2$ is equivalent to $x - y \geq 2$ or $y - x \geq 2$, which means $x \geq y + 2$ or $y \geq x + 2$.
+
+It's easier to count the complement: pairs where $|x - y| < 2$, i.e., $|x - y| \leq 1$.
+
+The condition $|x - y| \leq 1$ means $x - y \leq 1$ and $y - x \leq 1$, which is equivalent to $-1 \leq x - y \leq 1$, or $y - 1 \leq x \leq y + 1$.
+
+So we need to count pairs $(x,y)$ where $|x - y| \leq 1$:
+
+\textbf{Case 1:} $x = y$
+There are 2019 such pairs: $(1,1), (2,2), \ldots, (2019,2019)$.
+
+\textbf{Case 2:} $x = y + 1$
+We need $y \geq 1$ and $y + 1 \leq 2019$, so $1 \leq y \leq 2018$.
+There are 2018 such pairs: $(2,1), (3,2), \ldots, (2019,2018)$.
+
+\textbf{Case 3:} $x = y - 1$
+We need $y \geq 2$ and $y - 1 \geq 1$, so $2 \leq y \leq 2019$.
+There are 2018 such pairs: $(1,2), (2,3), \ldots, (2018,2019)$.
+
+Total number of pairs with $|x - y| \leq 1$: $2019 + 2018 + 2018 = 6055$.
+
+The total number of pairs in $A \times A$ is $2019^2 = 4076361$.
+
+Therefore, the number of pairs with $|x - y| \geq 2$ is:
+$4076361 - 6055 = 4070306$
+
+Let me double-check this calculation:
+$2019^2 = 2019 \times 2019$
+
+$2019 \times 2019 = 2019 \times (2000 + 19) = 2019 \times 2000 + 2019 \times 19$
+$= 4038000 + 38361 = 4076361$
+
+$4076361 - 6055 = 4070306$
+
+Looking at the answer choices:
+(A) $2019^2$
+(B) $2^{2019}$
+(C) $2018 \cdot 2017$
+(D) $2018!$
+(E) $\binom{2018}{2}$
+
+Let me check option (C): $2018 \cdot 2017 = 4070306$
+
+Indeed! This matches our calculation.
+
+We can also think about it this way: for each $x$, we exclude the values $y$ such that $|x - y| \leq 1$. For most values of $x$, we exclude 3 values of $y$ (namely $x-1, x, x+1$), leaving $2019 - 3 = 2016$ valid values.
+
+However, for $x = 1$, we only exclude $y \in \{1, 2\}$ (2 values), leaving 2017 valid values.
+For $x = 2019$, we only exclude $y \in \{2018, 2019\}$ (2 values), leaving 2017 valid values.
+
+So the total count is: $2017 + 2016 \times 2017 + 2017 = 2017(1 + 2016 + 1) = 2017 \times 2018$.
+
+\subsection*{Answer}
+$2018 \cdot 2017$ (option \textbf{C}).
+
+\end{document}

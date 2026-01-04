@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 8}
+Ako je $\log_{b^2} x + \log_{x^2} b = 1, b>0, b \ne 1, x \ne 1$, tada je $x$ jednako:
+\begin{itemize}
+    \item[A)] $\frac{1}{b}$
+    \item[B)] $\frac{1}{b^2}$
+    \item[C)] $b$
+    \item[D)] $b^2$
+    \item[E)] $\sqrt{b}$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Recall the change of base formula and logarithm properties:
+\[ \log_{b^2} x = \frac{\log_b x}{\log_b b^2} = \frac{\log_b x}{2}. \]
+\[ \log_{x^2} b = \frac{\log_b b}{\log_b x^2} = \frac{1}{2 \log_b x}. \]
+Let $t = \log_b x$. The equation becomes:
+\[ \frac{t}{2} + \frac{1}{2t} = 1. \]
+Multiply by $2t$ (assuming $t \neq 0$, which holds since $x \neq 1$):
+\[ t^2 + 1 = 2t. \]
+\[ t^2 - 2t + 1 = 0 \implies (t-1)^2 = 0 \implies t = 1. \]
+Substitute back $t = \log_b x$:
+\[ \log_b x = 1 \implies x = b. \]
+
+\subsection*{Answer}
+The value is $b$, which corresponds to option \textbf{C}.
+
+\end{document}

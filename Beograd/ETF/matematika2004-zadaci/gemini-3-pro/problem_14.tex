@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 14}
+U jednakokraki trougao osnovice dužine 12cm i odgovarajuće visine dužine 8cm, upisan je pravougaonik maksimalne površine tako da mu jedna stranica pripada osnovici trougla. Obim pravougaonika (u cm) je:
+\begin{itemize}
+    \item[A)] $20$
+    \item[B)] $16$
+    \item[C)] $14$
+    \item[D)] $24$
+    \item[E)] $10$
+    \item[N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Let the base of the triangle be $b=12$ and the height be $h=8$.
+Let the rectangle have width $x$ (along the base of the triangle) and height $y$.
+Using similar triangles, the ratio of the height of the smaller triangle above the rectangle to the base of that triangle ($x$) is equal to the ratio of the height of the large triangle ($h$) to its base ($b$):
+Actually, it's better to relate the height and base directly.
+The triangle above the rectangle has height $h-y$ and base $x$.
+\[ \frac{h-y}{h} = \frac{x}{b}. \]
+Substitute values:
+\[ \frac{8-y}{8} = \frac{x}{12}. \]
+\[ 1 - \frac{y}{8} = \frac{x}{12} \implies \frac{y}{8} = 1 - \frac{x}{12} = \frac{12-x}{12}. \]
+\[ y = \frac{8}{12}(12-x) = \frac{2}{3}(12-x). \]
+The area of the rectangle is $A = xy$:
+\[ A(x) = x \cdot \frac{2}{3}(12-x) = \frac{2}{3}(12x - x^2). \]
+This is a downward opening parabola. The maximum occurs at the vertex $x = -\frac{12}{2(-1)} = 6$.
+When $x=6$, the height is:
+\[ y = \frac{2}{3}(12-6) = \frac{2}{3}(6) = 4. \]
+The dimensions of the rectangle are $6$ cm and $4$ cm.
+The perimeter is:
+\[ P = 2(x+y) = 2(6+4) = 2(10) = 20 \text{ cm}. \]
+
+\subsection*{Answer}
+The perimeter is $20$, which corresponds to option \textbf{A}.
+
+\end{document}

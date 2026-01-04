@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Najkraće rastojanje između pravih $\sqrt{2}x + y = 1$ i $2x + \sqrt{2}y = 3\sqrt{2}$ jednako je:
+
+\subsection*{Solution}
+Date su prave:
+$p_1: \sqrt{2}x + y - 1 = 0$
+$p_2: 2x + \sqrt{2}y - 3\sqrt{2} = 0$
+
+Primetimo da ako podelimo jednačinu $p_2$ sa $\sqrt{2}$, dobijamo:
+$\frac{2}{\sqrt{2}}x + y - \frac{3\sqrt{2}}{\sqrt{2}} = 0 \Rightarrow \sqrt{2}x + y - 3 = 0$.
+
+Dakle, prave su paralelne. Rastojanje $d$ između paralelnih pravih $Ax + By + C_1 = 0$ i $Ax + By + C_2 = 0$ dato je formulom:
+\[
+d = \frac{|C_1 - C_2|}{\sqrt{A^2 + B^2}}
+\]
+U našem slučaju, $A=\sqrt{2}$, $B=1$, $C_1 = -1$, $C_2 = -3$.
+\[
+d = \frac{|-1 - (-3)|}{\sqrt{(\sqrt{2})^2 + 1^2}} = \frac{|2|}{\sqrt{2+1}} = \frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}.
+\]
+
+\subsection*{Answer}
+$\frac{2\sqrt{3}}{3}$ (option \textbf{D}).
+
+\end{document}

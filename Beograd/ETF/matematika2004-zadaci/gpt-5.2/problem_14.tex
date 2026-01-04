@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+U jednakokraki trougao osnovice dužine $12\text{ cm}$ i odgovarajuće visine dužine $8\text{ cm}$ upisan je pravougaonik maksimalne površine tako da mu jedna stranica pripada osnovici trougla.
+Odrediti obim pravougaonika (u cm).
+
+\subsection*{Solution}
+Neka trougao ima osnovicu $B=12$ i visinu $H=8$.
+Pravougaonik ima visinu $h$ i osnovicu $w$ na osnovici trougla.
+Na visini $h$ presečna duž trougla je, po sličnosti, proporcionalno manja:
+\[
+w=B\left(1-\frac{h}{H}\right).
+\]
+Površina pravougaonika je
+\[
+A(h)=w\cdot h
+=B h\left(1-\frac{h}{H}\right)
+=B\left(h-\frac{h^2}{H}\right),
+\qquad 0<h<H.
+\]
+To je kvadratna funkcija koja maksimum postiže kada je
+\[
+A'(h)=B\left(1-\frac{2h}{H}\right)=0 \quad\Rightarrow\quad h=\frac{H}{2}=4.
+\]
+Tada je
+\[
+w=B\left(1-\frac{1}{2}\right)=\frac{B}{2}=6.
+\]
+Obim pravougaonika je
+\[
+O=2(w+h)=2(6+4)=20.
+\]
+
+\subsection*{Answer}
+$20$ (option \textbf{A}).
+
+\end{document}
+

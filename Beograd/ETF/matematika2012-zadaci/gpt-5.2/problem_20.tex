@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Find the minimum value of
+\[
+f(x)=4x+\frac{9\pi^2}{x}+\sin x,\qquad x>0.
+\]
+Options: (A) $5\pi+2$ \quad (B) $\frac{5\pi}{2}$ \quad (C) $12\pi-1$ \quad (D) $3\pi+1$ \quad (E) $\pi^2$.
+
+\subsection*{Solution}
+By AM--GM, for $x>0$,
+\[
+4x+\frac{9\pi^2}{x}\ge 2\sqrt{4x\cdot \frac{9\pi^2}{x}}=2\sqrt{36\pi^2}=12\pi,
+\]
+with equality when
+\[
+4x=\frac{9\pi^2}{x}\ \Rightarrow\ 4x^2=9\pi^2\ \Rightarrow\ x=\frac{3\pi}{2}.
+\]
+Therefore
+\[
+f(x)=\left(4x+\frac{9\pi^2}{x}\right)+\sin x \ge 12\pi+\sin x \ge 12\pi-1.
+\]
+At $x=\frac{3\pi}{2}$ we have equality in AM--GM and $\sin\left(\frac{3\pi}{2}\right)=-1$, so
+\[
+f\!\left(\frac{3\pi}{2}\right)=12\pi-1.
+\]
+Hence the minimum is $12\pi-1$.
+
+\subsection*{Answer}
+$12\pi-1$ (option \textbf{C}).
+
+\end{document}
+

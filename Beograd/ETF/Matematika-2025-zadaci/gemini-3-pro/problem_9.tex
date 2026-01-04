@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Skup svih realnih rešenja nejednačine $\sqrt{x+3-4\sqrt{x-1}} + \sqrt{x+3+4\sqrt{x-1}} \ge 4$ je oblika (za $-\infty < a < b < c < \infty$):
+
+\subsection*{Solution}
+
+Let $\sqrt{x-1} = u$, where $u \ge 0$. Then $x-1 = u^2 \implies x = u^2+1$.
+Substitute into the inequality:
+\[
+\sqrt{u^2+1+3-4u} + \sqrt{u^2+1+3+4u} \ge 4
+\]
+\[
+\sqrt{u^2-4u+4} + \sqrt{u^2+4u+4} \ge 4
+\]
+\[
+\sqrt{(u-2)^2} + \sqrt{(u+2)^2} \ge 4
+\]
+\[
+|u-2| + |u+2| \ge 4.
+\]
+Since $u \ge 0$, $|u+2| = u+2$.
+\[
+|u-2| + u + 2 \ge 4 \implies |u-2| \ge 2 - u.
+\]
+Case 1: $u - 2 \ge 0 \implies u \ge 2$.
+$u-2 \ge 2-u \implies 2u \ge 4 \implies u \ge 2$.
+This condition is satisfied for all $u \in [2, \infty)$.
+Case 2: $u - 2 < 0 \implies 0 \le u < 2$.
+$-(u-2) \ge 2-u \implies 2-u \ge 2-u$.
+This is always true. So all $u \in [0, 2)$ are solutions.
+Combining cases, the solution for $u$ is $[0, \infty)$.
+Since $u = \sqrt{x-1}$, we have $\sqrt{x-1} \ge 0$, which implies $x-1 \ge 0 \implies x \ge 1$.
+The solution set is $[1, \infty)$.
+The form given in options is like $[a, +\infty)$.
+Identifying with the form $[a, +\infty)$, we have $a=1$.
+
+
+\subsection*{Answer}
+[a, +\infty) (option \textbf{A}).
+
+\end{document}

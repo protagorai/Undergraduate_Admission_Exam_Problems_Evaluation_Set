@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 20}
+Skup svih realnih vrednosti $x$ za koje važi nejednakost $\frac{3 \cdot 3^{2x} - 4 \cdot 4^{2x}}{|-1+5^{x+1}|-4} < 0$ je oblika (za neke realne brojeve $a,b$ takve da je $-\infty < a < b < +\infty$):
+\[
+(A)\; (0, a) \quad (B)\; (-\infty, a) \cup (b, +\infty) \quad (C)\; [a, b] \quad (D)\; (a, b) \quad (E)\; (a, b) \cup (b, +\infty)
+\]
+
+\subsection*{Solution}
+Posmatrajmo brojilac $B(x) = 3 \cdot 9^x - 4 \cdot 16^x$ i imenilac $I(x) = |5^{x+1}-1| - 4$.
+
+Analiza brojioca:
+$3 \cdot 9^x - 4 \cdot 16^x < 0 \Leftrightarrow 3 \cdot 9^x < 4 \cdot 16^x \Leftrightarrow \frac{3}{4} < \left(\frac{16}{9}\right)^x = \left(\frac{4}{3}\right)^{2x}$.
+Kako je $\frac{3}{4} = (\frac{4}{3})^{-1}$, imamo $(\frac{4}{3})^{-1} < (\frac{4}{3})^{2x}$.
+Pošto je osnova $\frac{4}{3} > 1$, sledi $-1 < 2x \Rightarrow x > -1/2$.
+Dakle:
+$B(x) < 0$ za $x > -1/2$.
+$B(x) > 0$ za $x < -1/2$.
+$B(x) = 0$ za $x = -1/2$.
+
+Analiza imenioca:
+$I(x) < 0 \Leftrightarrow |5^{x+1}-1| < 4 \Leftrightarrow -4 < 5^{x+1}-1 < 4 \Leftrightarrow -3 < 5^{x+1} < 5$.
+Leva nejednakost $-3 < 5^{x+1}$ je uvek tačna.
+Desna nejednakost $5^{x+1} < 5^1 \Rightarrow x+1 < 1 \Rightarrow x < 0$.
+Dakle:
+$I(x) < 0$ za $x < 0$.
+$I(x) > 0$ za $x > 0$.
+$I(x) = 0$ za $x = 0$.
+
+Rešavanje nejednakosti $\frac{B(x)}{I(x)} < 0$:
+Razlomak je negativan kada su brojilac i imenilac različitog znaka.
+Slučaj 1: $B(x) > 0$ i $I(x) < 0$.
+$x < -1/2$ i $x < 0$. Presek: $x \in (-\infty, -1/2)$.
+Slučaj 2: $B(x) < 0$ i $I(x) > 0$.
+$x > -1/2$ i $x > 0$. Presek: $x \in (0, +\infty)$.
+
+Unija rešenja je $(-\infty, -1/2) \cup (0, +\infty)$.
+Ovo odgovara obliku pod (B) gde je $a = -1/2$ i $b = 0$.
+
+\subsection*{Answer}
+$(-\infty, a) \cup (b, +\infty)$ (option \textbf{B}).
+
+\end{document}

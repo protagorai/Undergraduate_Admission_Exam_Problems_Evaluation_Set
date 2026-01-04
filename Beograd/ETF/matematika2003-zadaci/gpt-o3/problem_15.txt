@@ -1,0 +1,2 @@
+15. Data su tri različita proizvoda fabrike A, četiri različita proizvoda fabrike B i pet različitih proizvoda fabrike C. Na koliko različitih načina se svi proizvodi mogu poređati u niz uz sledeće uslove: proizvodi fabrike B su jedan pored drugog, proizvodi fabrike C su jedan pored drugog, nijedna dva proizvoda fabrike A nisu jedan pored drugog?
+A) 5!;   B) 4!5!;   C) 3!4!5!;   D) 2!3!4!5!;   E) 12\cdot3!;   N) Ne znam.

@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Prave $-ax + y - 3 = 0$, $x - by + 2 = 0$ seku se u centru kruga $x^2 + y^2 - 2x + 4y - 10 = 0$. Ugao između ovih pravih je:
+
+(A) $60°$ \quad (B) $30°$ \quad (C) $90°$ \quad (D) $45°$ \quad (E) $75°$ \quad (N) Ne znam
+
+\subsection*{Solution}
+First, let's find the center of the circle by rewriting the equation in standard form.
+
+Starting with $x^2 + y^2 - 2x + 4y - 10 = 0$, we complete the square:
+\begin{align}
+x^2 - 2x + y^2 + 4y &= 10\\
+(x^2 - 2x + 1) + (y^2 + 4y + 4) &= 10 + 1 + 4\\
+(x - 1)^2 + (y + 2)^2 &= 15
+\end{align}
+
+So the center of the circle is $(1, -2)$.
+
+Since the lines intersect at the center, we have:
+\begin{align}
+-a(1) + (-2) - 3 &= 0 \quad \Rightarrow \quad -a - 5 = 0 \quad \Rightarrow \quad a = -5\\
+(1) - b(-2) + 2 &= 0 \quad \Rightarrow \quad 1 + 2b + 2 = 0 \quad \Rightarrow \quad b = -\frac{3}{2}
+\end{align}
+
+So our lines are:
+\begin{align}
+L_1: 5x + y - 3 &= 0\\
+L_2: x + \frac{3}{2}y + 2 &= 0 \quad \text{or} \quad 2x + 3y + 4 = 0
+\end{align}
+
+To find the angle between two lines $A_1x + B_1y + C_1 = 0$ and $A_2x + B_2y + C_2 = 0$, we use:
+$$\cos \theta = \frac{|A_1A_2 + B_1B_2|}{\sqrt{A_1^2 + B_1^2}\sqrt{A_2^2 + B_2^2}}$$
+
+For our lines:
+- $L_1: 5x + y - 3 = 0$ has $(A_1, B_1) = (5, 1)$
+- $L_2: 2x + 3y + 4 = 0$ has $(A_2, B_2) = (2, 3)$
+
+\begin{align}
+\cos \theta &= \frac{|5 \cdot 2 + 1 \cdot 3|}{\sqrt{5^2 + 1^2}\sqrt{2^2 + 3^2}}\\
+&= \frac{|10 + 3|}{\sqrt{26}\sqrt{13}}\\
+&= \frac{13}{\sqrt{26 \cdot 13}}\\
+&= \frac{13}{\sqrt{338}}\\
+&= \frac{13}{13\sqrt{2}}\\
+&= \frac{1}{\sqrt{2}}\\
+&= \frac{\sqrt{2}}{2}
+\end{align}
+
+Since $\cos \theta = \frac{\sqrt{2}}{2}$, we have $\theta = 45°$.
+
+\subsection*{Answer}
+(D) $45°$
+
+\end{document}

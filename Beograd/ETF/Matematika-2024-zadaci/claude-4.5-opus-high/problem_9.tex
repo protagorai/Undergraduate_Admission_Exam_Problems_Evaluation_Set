@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Find the solution set of the inequality:
+\[
+-\frac{3}{5} \leq x + x^2 + x^3 + \ldots + x^n + \ldots < 1, \quad x \in \mathbb{R}
+\]
+
+\subsection*{Solution}
+The infinite series $x + x^2 + x^3 + \ldots$ is a geometric series that converges for $|x| < 1$.
+
+For $|x| < 1$, the sum is:
+\[
+S = \frac{x}{1-x}
+\]
+
+We need to solve:
+\[
+-\frac{3}{5} \leq \frac{x}{1-x} < 1, \quad |x| < 1
+\]
+
+\textbf{Left inequality:} $\frac{x}{1-x} \geq -\frac{3}{5}$
+\[
+\frac{x}{1-x} + \frac{3}{5} \geq 0 \implies \frac{5x + 3(1-x)}{5(1-x)} \geq 0 \implies \frac{2x + 3}{1-x} \geq 0
+\]
+
+For $-1 < x < 1$, we have $1-x > 0$, so we need $2x + 3 \geq 0$, i.e., $x \geq -\frac{3}{2}$.
+Since $-\frac{3}{2} < -1$, this is automatically satisfied for all $x \in (-1, 1)$.
+
+\textbf{Right inequality:} $\frac{x}{1-x} < 1$
+\[
+\frac{x}{1-x} - 1 < 0 \implies \frac{x - (1-x)}{1-x} < 0 \implies \frac{2x - 1}{1-x} < 0
+\]
+
+For $x < 1$: $(1-x) > 0$, so we need $2x - 1 < 0$, i.e., $x < \frac{1}{2}$.
+
+\textbf{Combined:} $-1 < x < 1$ and $x < \frac{1}{2}$, so $-1 < x < \frac{1}{2}$.
+
+This is the open interval $(a, b)$ with $a = -1$, $b = \frac{1}{2}$.
+
+\subsection*{Answer}
+$(a, b)$ (option \textbf{E}).
+
+\end{document}
+

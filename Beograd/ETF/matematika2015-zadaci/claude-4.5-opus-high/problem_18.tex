@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Tangenta krive $y = e^{-x}$ ($x > -1$), seče koordinatne ose u tačkama $A$ i $B$. Ako je $O$ koordinatni početak, maksimalna površina trougla $OAB$ iznosi:
+
+\subsection*{Solution}
+The curve is $y = e^{-x}$ for $x > -1$.
+
+At point $(t, e^{-t})$ on the curve, the derivative is $y' = -e^{-x}$, so the slope at this point is $-e^{-t}$.
+
+Equation of tangent line at $(t, e^{-t})$:
+\[
+y - e^{-t} = -e^{-t}(x - t)
+\]
+\[
+y = -e^{-t}x + te^{-t} + e^{-t} = e^{-t}(t + 1 - x)
+\]
+
+\textbf{Finding intercepts:}
+
+$x$-intercept (set $y = 0$): $0 = e^{-t}(t + 1 - x) \implies x = t + 1$
+
+So $A = (t + 1, 0)$.
+
+$y$-intercept (set $x = 0$): $y = e^{-t}(t + 1)$
+
+So $B = (0, e^{-t}(t + 1))$.
+
+\textbf{Area of triangle $OAB$:}
+\[
+S = \frac{1}{2} |OA| \cdot |OB| = \frac{1}{2}(t + 1) \cdot e^{-t}(t + 1) = \frac{(t+1)^2 e^{-t}}{2}
+\]
+
+To maximize, let $f(t) = (t+1)^2 e^{-t}$.
+
+\[
+f'(t) = 2(t+1)e^{-t} - (t+1)^2 e^{-t} = (t+1)e^{-t}[2 - (t+1)] = (t+1)(1-t)e^{-t}
+\]
+
+Setting $f'(t) = 0$: $t = -1$ or $t = 1$.
+
+Since $t > -1$, the critical point is $t = 1$.
+
+Check second derivative or sign change: For $t < 1$, $f'(t) > 0$; for $t > 1$, $f'(t) < 0$. So $t = 1$ is a maximum.
+
+Maximum area:
+\[
+S_{\max} = \frac{(1+1)^2 e^{-1}}{2} = \frac{4}{2e} = \frac{2}{e}
+\]
+
+\subsection*{Answer}
+$\dfrac{2}{e}$ (option \textbf{B}).
+
+\end{document}

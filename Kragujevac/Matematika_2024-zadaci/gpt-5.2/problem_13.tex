@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Let
+\[
+z=\left(\frac{2-3i}{1+i}+\frac{2+i}{1-i}\right)^{2024},\qquad i^2=-1.
+\]
+Compute $z^{2024}$.
+
+\subsection*{Solution}
+Simplify each fraction by multiplying by the conjugate.
+\[
+\frac{2-3i}{1+i}=\frac{(2-3i)(1-i)}{(1+i)(1-i)}
+=\frac{2-2i-3i+3i^2}{2}
+=\frac{-1-5i}{2}.
+\]
+\[
+\frac{2+i}{1-i}=\frac{(2+i)(1+i)}{(1-i)(1+i)}
+=\frac{2+2i+i+i^2}{2}
+=\frac{1+3i}{2}.
+\]
+Sum:
+\[
+\frac{-1-5i}{2}+\frac{1+3i}{2}=\frac{-2i}{2}=-i.
+\]
+So
+\[
+z=(-i)^{2024}.
+\]
+Since $(-i)^4=1$ and $2024\equiv 0\pmod 4$, we get $(-i)^{2024}=1$, hence $z=1$ and therefore
+\[
+z^{2024}=1^{2024}=1.
+\]
+
+\subsection*{Answer}
+$1$ (option \textbf{В}).
+
+\end{document}
+
+
+
+
+
+
+
+
+
+

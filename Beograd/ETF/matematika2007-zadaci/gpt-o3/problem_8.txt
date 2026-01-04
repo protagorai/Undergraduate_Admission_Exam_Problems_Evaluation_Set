@@ -1,0 +1,5 @@
+Problem 8
+
+Skup svih rešenja nejednačine \(\dfrac{(x+1)(x+2)}{(x-1)(x-2)} \ge 1\) je:
+
+(A) \((-\infty, +\infty)\)   (B) \([0, +\infty)\)   (C) \([0,1]\)   (D) \([0,1] \cup (2, +\infty)\)   (E) \((-\infty,0] \cup (2, +\infty)\)   (N) Ne znam

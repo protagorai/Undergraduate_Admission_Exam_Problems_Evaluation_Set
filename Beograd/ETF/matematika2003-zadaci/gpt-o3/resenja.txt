@@ -1,0 +1,20 @@
+1 A √5
+2 B nema rešenja
+3 N Ne znam
+4 N Ne znam
+5 N Ne znam
+6 A 2R^2 sinα sinβ sinγ
+7 B 1
+8 N Ne znam
+9 N Ne znam
+10 E 3
+11 B 2
+12 B 1
+13 C {-1} ∪ [2, +∞)
+14 N Ne znam
+15 D 34560
+16 N Ne znam
+17 N Ne znam
+18 B (1/9)(10^n - 9n + 8)
+19 N Ne znam
+20 N Ne znam

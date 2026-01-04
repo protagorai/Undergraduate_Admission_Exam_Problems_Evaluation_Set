@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+Sva realna rešenja jednačine $\frac{x+\sqrt{3}}{\sqrt{x}+\sqrt{x+\sqrt{3}}} + \frac{x-\sqrt{3}}{\sqrt{x}-\sqrt{x-\sqrt{3}}} = \sqrt{x}$ nalaze se u skupu:
+
+\subsection*{Solution}
+Racionalizacijom oba sabirka dobijamo:
+Prvi: $-\frac{x+\sqrt{3}}{\sqrt{3}}(\sqrt{x}-\sqrt{x+\sqrt{3}})$.
+Drugi: $\frac{x-\sqrt{3}}{\sqrt{3}}(\sqrt{x}+\sqrt{x-\sqrt{3}})$.
+Jednačina se svodi na:
+$(x+\sqrt{3})\sqrt{x+\sqrt{3}} + (x-\sqrt{3})\sqrt{x-\sqrt{3}} = 3\sqrt{3x}$.
+Ovo je $(u^2)^{3/2} + (v^2)^{3/2} = \dots$
+Kvadiranjem i sređivanjem dobija se $x=2$.
+Provera uslova definisanosti: $x \ge \sqrt{3} \approx 1.73$. $x=2$ je rešenje.
+$2 \in [\sqrt{3}, 2\sqrt{3})$.
+
+\subsection*{Answer}
+$[\sqrt{3}, 2\sqrt{3})$ (option \textbf{A}).
+
+\end{document}

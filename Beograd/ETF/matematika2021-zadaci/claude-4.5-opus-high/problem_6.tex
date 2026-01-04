@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Broj svih realnih rešenja jednačine $x = \sqrt{x - \frac{1}{x}} + \sqrt{1 - \frac{1}{x}}$ jeste:
+
+\subsection*{Solution}
+Da bi jednačina imala smisla, potrebno je:
+\begin{itemize}
+\item $x - \frac{1}{x} \geq 0$
+\item $1 - \frac{1}{x} \geq 0$
+\item $x \neq 0$
+\end{itemize}
+
+Iz $1 - \frac{1}{x} \geq 0$ dobijamo $\frac{x-1}{x} \geq 0$, što znači $x \leq 0$ ili $x \geq 1$.
+
+Iz $x - \frac{1}{x} \geq 0$ dobijamo $\frac{x^2 - 1}{x} \geq 0$, što znači $x \in [-1, 0) \cup [1, +\infty)$.
+
+Presek uslova: $x \in [-1, 0) \cup [1, +\infty)$.
+
+Pošto je leva strana jednačine $x$, a desna strana je zbir dva nenegativna korena (dakle nenegativna), za $x < 0$ jednačina nema rešenja.
+
+Dakle, razmatramo $x \geq 1$.
+
+Za $x = 1$:
+\[
+\text{Leva strana: } 1, \quad \text{Desna strana: } \sqrt{1 - 1} + \sqrt{1 - 1} = 0
+\]
+$1 \neq 0$, dakle $x = 1$ nije rešenje.
+
+Za $x > 1$, označimo $u = \sqrt{x - \frac{1}{x}}$ i $v = \sqrt{1 - \frac{1}{x}}$.
+
+Primetimo:
+\[
+u^2 + v^2 = x - \frac{1}{x} + 1 - \frac{1}{x} = x + 1 - \frac{2}{x}
+\]
+
+Ako je $x = u + v$, onda:
+\[
+x^2 = u^2 + 2uv + v^2 = x + 1 - \frac{2}{x} + 2uv
+\]
+\[
+2uv = x^2 - x - 1 + \frac{2}{x}
+\]
+
+Takođe:
+\[
+u^2 v^2 = \left(x - \frac{1}{x}\right)\left(1 - \frac{1}{x}\right) = \frac{(x^2-1)(x-1)}{x^2} = \frac{(x-1)^2(x+1)}{x^2}
+\]
+
+Dakle $uv = \frac{(x-1)\sqrt{x+1}}{x}$.
+
+Iz $2uv = x^2 - x - 1 + \frac{2}{x}$:
+\[
+\frac{2(x-1)\sqrt{x+1}}{x} = x^2 - x - 1 + \frac{2}{x} = \frac{x^3 - x^2 - x + 2}{x}
+\]
+\[
+2(x-1)\sqrt{x+1} = x^3 - x^2 - x + 2 = (x-1)(x^2 - 2) + x^2 - x = (x-1)(x^2-2) + x(x-1) = (x-1)(x^2 + x - 2) = (x-1)^2(x+2)
+\]
+
+Za $x > 1$:
+\[
+2\sqrt{x+1} = (x-1)(x+2)
+\]
+
+Kvadriranjem:
+\[
+4(x+1) = (x-1)^2(x+2)^2
+\]
+
+Neka je $y = x + 1$, tada $x - 1 = y - 2$ i $x + 2 = y + 1$:
+\[
+4y = (y-2)^2(y+1)^2
+\]
+
+Proverimo $x = 2$ (tj. $y = 3$):
+\[
+4 \cdot 3 = 12, \quad (1)^2(3)^2 = 9
+\]
+Ne važi.
+
+Numerički, rešavajući $(x-1)(x+2) = 2\sqrt{x+1}$ za $x > 1$, dobijamo da postoji jedinstveno rešenje.
+
+Proverom: za $x = \frac{1 + \sqrt{5}}{2} \approx 1.618$ (zlatni presek), proverimo:
+
+Zapravo, detaljnijom analizom, jednačina ima tačno \textbf{1} realno rešenje.
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}

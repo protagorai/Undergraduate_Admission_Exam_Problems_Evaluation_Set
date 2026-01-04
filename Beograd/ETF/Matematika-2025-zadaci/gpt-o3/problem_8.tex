@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 8}
+Izračunati zbir svih realnih rešenja jednačine
+\[
+8^x-\frac{21}{4}\,4^x+\frac{21}{4}\,2^x-1=0.
+\]
+
+\subsection*{Solution}
+Postavimo $t=2^x>0$. Tada je $8^x=t^3$ i $4^x=t^2$, pa jednačina prelazi u
+\[
+t^3-\frac{21}{4}t^2+\frac{21}{4}t-1=0.
+\]
+Množenjem sa $4$ dobijamo
+\[
+4t^3-21t^2+21t-4=0.
+\]
+Lako se vidi da je $t=1$ koren. Polinom faktorišemo:
+\[
+4t^3-21t^2+21t-4=(t-1)(4t^2-17t+4).
+\]
+Rešenja kvadratnog faktora:
+\[
+\Delta=17^2-64=225\;\Longrightarrow\;t=\frac{17\pm15}{8}\in\{4,\tfrac14\}.
+\]
+Dakle $t\in\{1,4,\tfrac14\}$, a to daje $x\in\{0,2,-2\}$.
+Zbir rešenja: $0+2-2=0$.
+
+\subsection*{Answer}
+$0$ (option \textbf{B}).
+
+\end{document}

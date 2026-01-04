@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Ukupan broj realnih rešenja jednačine $\sqrt{3 \cdot 2^{\log_{10} 2x} + 1} + \sqrt{2 \cdot 2^{\log_{10} 2x} + 9} = \sqrt{13 \cdot 2^{\log_{10} 2x} - 4}$ je:
+
+(A) 0 \quad (B) 1 \quad (C) 2 \quad (D) 3 \quad (E) Nijedan od ponuđenih odgovora \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $t = 2^{\log_{10} 2x}$. Note that $t > 0$ for the expression to be defined.
+
+The equation becomes:
+\[
+\sqrt{3t + 1} + \sqrt{2t + 9} = \sqrt{13t - 4}
+\]
+
+For the right side to be defined, we need $13t - 4 \geq 0$, so $t \geq \frac{4}{13}$.
+
+Squaring both sides:
+\[
+(3t + 1) + 2\sqrt{(3t + 1)(2t + 9)} + (2t + 9) = 13t - 4
+\]
+\[
+5t + 10 + 2\sqrt{(3t + 1)(2t + 9)} = 13t - 4
+\]
+\[
+2\sqrt{(3t + 1)(2t + 9)} = 8t - 14
+\]
+
+For this to have a solution, we need $8t - 14 \geq 0$, so $t \geq \frac{7}{4}$.
+
+Squaring again:
+\[
+4(3t + 1)(2t + 9) = (8t - 14)^2
+\]
+\[
+4(6t^2 + 27t + 2t + 9) = 64t^2 - 224t + 196
+\]
+\[
+4(6t^2 + 29t + 9) = 64t^2 - 224t + 196
+\]
+\[
+24t^2 + 116t + 36 = 64t^2 - 224t + 196
+\]
+\[
+0 = 40t^2 - 340t + 160
+\]
+\[
+0 = t^2 - 8.5t + 4
+\]
+\[
+0 = 2t^2 - 17t + 8
+\]
+
+Using the quadratic formula:
+\[
+t = \frac{17 \pm \sqrt{289 - 64}}{4} = \frac{17 \pm \sqrt{225}}{4} = \frac{17 \pm 15}{4}
+\]
+
+So $t = 8$ or $t = \frac{1}{2}$.
+
+Check $t = \frac{1}{2}$: We need $t \geq \frac{7}{4}$, but $\frac{1}{2} < \frac{7}{4}$, so this is rejected.
+
+Check $t = 8$:
+\[
+\sqrt{3(8) + 1} + \sqrt{2(8) + 9} = \sqrt{25} + \sqrt{25} = 5 + 5 = 10
+\]
+\[
+\sqrt{13(8) - 4} = \sqrt{100} = 10 \checkmark
+\]
+
+So $t = 8$ is valid. Now we solve $2^{\log_{10} 2x} = 8 = 2^3$:
+\[
+\log_{10} 2x = 3
+\]
+\[
+2x = 10^3 = 1000
+\]
+\[
+x = 500
+\]
+
+There is exactly one real solution.
+
+\subsection*{Answer}
+$1$ (option \textbf{B}).
+
+\end{document}

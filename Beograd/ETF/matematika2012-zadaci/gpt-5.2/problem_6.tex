@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Find the coefficient of $x^{27}y^2$ in the expansion of $(x^3+\sqrt{y})^{13}$.
+
+Options: (A) $12$ \quad (B) $1516$ \quad (C) $1312$ \quad (D) $715$ \quad (E) $78$.
+
+\subsection*{Solution}
+In the binomial expansion, the general term is
+\[
+\binom{13}{k}(x^3)^{13-k}(\sqrt{y})^k=\binom{13}{k}x^{3(13-k)}y^{k/2}.
+\]
+We need
+\[
+3(13-k)=27 \ \Rightarrow\ 39-3k=27 \ \Rightarrow\ k=4,
+\]
+and then $y^{k/2}=y^2$ is also satisfied.
+Thus the coefficient is
+\[
+\binom{13}{4}=715.
+\]
+
+\subsection*{Answer}
+$715$ (option \textbf{D}).
+
+\end{document}
+

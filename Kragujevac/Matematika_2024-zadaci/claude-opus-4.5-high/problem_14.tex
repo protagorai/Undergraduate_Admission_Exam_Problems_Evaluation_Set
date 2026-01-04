@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Problem 14 - Solution}
+
+\textbf{Problem:} How many 6-digit numbers are there whose first three digits are even (not necessarily different) and whose last three digits are different odd numbers?
+
+\textbf{Solution:}
+
+\textbf{First three digits (even, not necessarily different):}
+
+\begin{itemize}
+\item 1st digit: Even and non-zero (cannot start with 0)
+  \begin{itemize}
+  \item Choices: $\{2, 4, 6, 8\}$ = 4 options
+  \end{itemize}
+\item 2nd digit: Even (can be zero)
+  \begin{itemize}
+  \item Choices: $\{0, 2, 4, 6, 8\}$ = 5 options
+  \end{itemize}
+\item 3rd digit: Even (can be zero)
+  \begin{itemize}
+  \item Choices: $\{0, 2, 4, 6, 8\}$ = 5 options
+  \end{itemize}
+\end{itemize}
+
+\textbf{Last three digits (different odd numbers):}
+
+Odd digits: $\{1, 3, 5, 7, 9\}$ (5 digits total)
+
+\begin{itemize}
+\item 4th digit: 5 choices
+\item 5th digit: 4 choices (must be different from 4th)
+\item 6th digit: 3 choices (must be different from 4th and 5th)
+\end{itemize}
+
+\textbf{Total count:}
+\[
+4 \times 5 \times 5 \times 5 \times 4 \times 3 = 4 \times 25 \times 60 = 6000
+\]
+
+\textbf{Answer: Д) 6000}
+
+\end{document}
+

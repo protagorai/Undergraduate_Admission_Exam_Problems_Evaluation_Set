@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 19}
+Na koliko načina se u red mogu poređati 5 učenika i 2 učenice, tako da učenice ne stoje jedna pored druge?
+
+\subsection*{Solution}
+Total permutations of 7 people is $7! = 5040$.
+Permutations where 2 girls are together: Treat them as one block. There are 2 ways to arrange them within the block.
+We now arrange 5 boys + 1 block = 6 items. Number of ways: $6! \cdot 2! = 720 \cdot 2 = 1440$.
+Number of ways where girls are NOT together = Total - Together
+\[
+5040 - 1440 = 3600
+\]
+Alternatively, arrange 5 boys ($5! = 120$). This creates 6 slots (before, between, after).
+_ B _ B _ B _ B _ B _
+Choose 2 slots for girls: $\binom{6}{2} = 15$.
+Arrange girls in those slots: $2! = 2$.
+Total: $120 \cdot 15 \cdot 2 = 3600$.
+
+\subsection*{Answer}
+(B) 3600
+
+\end{document}

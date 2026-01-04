@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Given the function $f(x) = x^2 - 2\alpha x + \alpha^2 + 2\alpha - 8$, where $\alpha \in \mathbb{R}$. Let $S$ be the set of all values of the real parameter $\alpha$ such that the function $f$ has at least one real root and for which $f(x) \geq 0$ for all $x \in [0, 3]$. Then the set $S$ is:
+
+\subsection*{Solution}
+First, let's rewrite the function:
+\[
+f(x) = x^2 - 2\alpha x + \alpha^2 + 2\alpha - 8 = (x - \alpha)^2 + 2\alpha - 8
+\]
+
+This is a parabola with vertex at $(\alpha, 2\alpha - 8)$.
+
+For $f$ to have at least one real root, we need the minimum value to be non-positive:
+\[
+2\alpha - 8 \leq 0 \Rightarrow \alpha \leq 4
+\]
+
+For $f(x) \geq 0$ on $[0, 3]$, we need to consider where the vertex is located relative to the interval $[0, 3]$.
+
+Case 1: $\alpha < 0$ (vertex to the left of the interval)
+The function is increasing on $[0, 3]$, so we need $f(0) \geq 0$:
+\[
+f(0) = \alpha^2 + 2\alpha - 8 \geq 0
+\]
+\[
+(\alpha + 4)(\alpha - 2) \geq 0
+\]
+This gives $\alpha \leq -4$ or $\alpha \geq 2$.
+Since we're in Case 1 where $\alpha < 0$, we need $\alpha \leq -4$.
+
+Case 2: $0 \leq \alpha \leq 3$ (vertex inside the interval)
+The minimum value occurs at $x = \alpha$, so we need:
+\[
+f(\alpha) = 2\alpha - 8 \geq 0 \Rightarrow \alpha \geq 4
+\]
+But this contradicts $0 \leq \alpha \leq 3$, so there are no solutions in this case.
+
+Case 3: $\alpha > 3$ (vertex to the right of the interval)
+The function is decreasing on $[0, 3]$, so we need $f(3) \geq 0$:
+\[
+f(3) = 9 - 6\alpha + \alpha^2 + 2\alpha - 8 = \alpha^2 - 4\alpha + 1 \geq 0
+\]
+
+The discriminant is $16 - 4 = 12$, so the roots are:
+\[
+\alpha = \frac{4 \pm 2\sqrt{3}}{2} = 2 \pm \sqrt{3}
+\]
+
+So we need $\alpha \leq 2 - \sqrt{3}$ or $\alpha \geq 2 + \sqrt{3}$.
+Since we're in Case 3 where $\alpha > 3$, and $2 + \sqrt{3} \approx 3.73 > 3$, we need $\alpha \geq 2 + \sqrt{3}$.
+
+Combining all cases and the condition $\alpha \leq 4$:
+- From Case 1: $\alpha \leq -4$
+- From Case 3: $2 + \sqrt{3} \leq \alpha \leq 4$
+
+Therefore: $S = (-\infty, -4] \cup [2 + \sqrt{3}, 4]$
+
+\subsection*{Answer}
+$(-\infty, -4] \cup [2 + \sqrt{3}, 4]$ (option \textbf{B}).
+
+\end{document}

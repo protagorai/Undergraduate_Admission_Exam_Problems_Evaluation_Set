@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Prav valjak i prava kupa imaju zajednicku osnovu. Vrh kupe je centar druge osnove valjka.
+Ako je odnos visine valjka i izvodnice kupe $4:5$, tada je odnos povrsina valjka i kupe:
+
+\subsection*{Solution}
+Neka je visina valjka $h$ i poluprecnik zajednicke osnove $r$.
+Kako je vrh kupe u centru druge osnove valjka, visina kupe je takodje $h$.
+Dat je odnos $h:l=4:5$, pa je $l=\frac{5}{4}h$.
+
+Iz Pitagorine teoreme za kupu:
+\[
+l^2=r^2+h^2
+\quad\Longrightarrow\quad
+r^2=\left(\frac{5}{4}h\right)^2-h^2=\frac{25-16}{16}h^2=\frac{9}{16}h^2,
+\]
+odakle je $r=\frac{3}{4}h$.
+
+Povrsina valjka (ukupna) je
+\[
+S_v=2\pi r^2+2\pi rh
+=2\pi\cdot\frac{9}{16}h^2+2\pi\cdot\frac{3}{4}h\cdot h
+=\left(\frac{9}{8}+\frac{3}{2}\right)\pi h^2=\frac{21}{8}\pi h^2.
+\]
+Povrsina kupe (ukupna) je
+\[
+S_k=\pi r^2+\pi rl
+=\pi\cdot\frac{9}{16}h^2+\pi\cdot\frac{3}{4}h\cdot\frac{5}{4}h
+=\left(\frac{9}{16}+\frac{15}{16}\right)\pi h^2=\frac{3}{2}\pi h^2.
+\]
+Zato je
+\[
+\frac{S_v}{S_k}=\frac{21/8}{3/2}=\frac{21}{8}\cdot\frac{2}{3}=\frac{7}{4}.
+\]
+
+\subsection*{Answer}
+$7:4$ (opcija \textbf{E}).
+
+\end{document}
+

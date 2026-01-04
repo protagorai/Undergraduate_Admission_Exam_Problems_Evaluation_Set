@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 12}
+Data je funkcija $f(x)=2x-x^{2}$. Izračunati $f\bigl(f\bigl(f(1-x)\bigr)\bigr)$.
+
+Dati odgovori:
+A) $2x^{4}-x^{8}$\; B) $2x-x^{16}$\; C) $1-(1-x)^{8}$\; D) $2x^{3}-x^{8}$\; E) $1-x^{8}$\; N) Ne znam.
+
+\subsection*{Solution}
+Izračunajmo postupno.
+\[
+ f(1-x)=2(1-x)-(1-x)^{2}=2-2x-\bigl(1-2x+x^{2}\bigr)=1-x^{2}.
+\]
+\[
+ f\bigl(f(1-x)\bigr)=f(1-x^{2})=2(1-x^{2})-(1-x^{2})^{2}=1-x^{4}.
+\]
+\[
+ f\bigl(f(f(1-x))\bigr)=f(1-x^{4})=2(1-x^{4})-(1-x^{4})^{2}=1-x^{8}.
+\]
+
+\subsection*{Answer}
+$1-x^{8}$ (opcija \textbf{E}).
+
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Find a two-digit number that equals the product of the sum of its digits and the absolute difference of its digits.
+
+\subsection*{Solution}
+Let the two-digit number be $\overline{ab} = 10a + b$ where $a$ and $b$ are digits and $a \neq 0$.
+
+We need:
+\[
+10a + b = (a + b) \cdot |a - b|
+\]
+
+Let's consider cases based on whether $a \geq b$ or $a < b$.
+
+\textbf{Case 1:} $a \geq b$, so $|a - b| = a - b$
+\[
+10a + b = (a + b)(a - b) = a^2 - b^2
+\]
+\[
+10a + b = a^2 - b^2
+\]
+\[
+10a + b + b^2 = a^2
+\]
+\[
+b^2 + b + 10a - a^2 = 0
+\]
+\[
+b^2 + b = a^2 - 10a = a(a - 10)
+\]
+
+Since $a$ is a digit from 1 to 9, we have $a - 10 < 0$, so $a(a - 10) < 0$.
+But $b^2 + b = b(b + 1) \geq 0$ for $b \geq 0$.
+This is only possible if both sides equal 0, which means $b = 0$ and $a(a - 10) = 0$.
+Since $a \neq 0$, we need $a = 10$, but $a$ must be a single digit.
+
+\textbf{Case 2:} $a < b$, so $|a - b| = b - a$
+\[
+10a + b = (a + b)(b - a) = b^2 - a^2
+\]
+\[
+10a + b = b^2 - a^2
+\]
+\[
+a^2 + 10a + b - b^2 = 0
+\]
+\[
+a^2 + 10a = b^2 - b = b(b - 1)
+\]
+
+We need to find digits $a$ and $b$ such that $a < b$ and $a^2 + 10a = b(b - 1)$.
+
+Let's check systematically:
+- $a = 1$: $1 + 10 = 11 = b(b-1)$. We need $b(b-1) = 11$, so $b^2 - b - 11 = 0$.
+  $b = \frac{1 + \sqrt{45}}{2} \approx 3.85$, not an integer.
+  
+- $a = 2$: $4 + 20 = 24 = b(b-1)$. We need $b^2 - b - 24 = 0$.
+  $b = \frac{1 + \sqrt{97}}{2} \approx 5.42$, not an integer.
+
+- $a = 3$: $9 + 30 = 39 = b(b-1)$. We need $b^2 - b - 39 = 0$.
+  $b = \frac{1 + \sqrt{157}}{2} \approx 6.77$, not an integer.
+
+- $a = 4$: $16 + 40 = 56 = b(b-1)$. We need $b^2 - b - 56 = 0$.
+  $b = \frac{1 + \sqrt{225}}{2} = \frac{1 + 15}{2} = 8$.
+
+Let's verify: $a = 4, b = 8$. Number is 48.
+Sum of digits: $4 + 8 = 12$
+Absolute difference: $|4 - 8| = 4$
+Product: $12 \times 4 = 48$ ✓
+
+\subsection*{Answer}
+The interval containing 48 is [31, 50], so the answer is \textbf{B}.
+
+\end{document}

@@ -1,0 +1,36 @@
+\begin{solution}
+\textbf{Zadatak 3.}
+
+Neka je $|x|>2$. Označimo
+\[
+ t = \sqrt{x^{2}-4}\quad (t>0).
+\]
+Posmatrani izraz je
+\[
+S = \frac{x+2+t}{x+2-t}+\frac{x+2-t}{x+2+t}=a+\frac1a,\qquad a:=\frac{x+2+t}{x+2-t}.
+\]
+Пошто је $a>0$, важи стандардна формула
+\[
+a+\frac1a = \frac{a^{2}+1}{a}= \frac{(x+2+t)^{2}+(x+2-t)^{2}}{(x+2+t)(x+2-t)}.
+\]
+Израчунајмо:
+\begin{align*}
+(x+2+t)^{2}+(x+2-t)^{2} &= (x+2)^{2}+2(x+2)t+t^{2}+(x+2)^{2}-2(x+2)t+t^{2}\\
+&=2\bigl[(x+2)^{2}+t^{2}\bigr].
+\\
+(x+2+t)(x+2-t) &= (x+2)^{2}-t^{2}.
+\end{align*}
+Дакле
+\[
+S = 2\,\frac{(x+2)^{2}+t^{2}}{(x+2)^{2}-t^{2}}.
+\]
+Сада заменимо $t^{2}=x^{2}-4$ и $(x+2)^{2}=x^{2}+4x+4$:
+\begin{align*}
+S &=2\frac{(x^{2}+4x+4)+(x^{2}-4)}{(x^{2}+4x+4)-(x^{2}-4)}
+=2\frac{2x^{2}+4x}{4x+8}=\frac{2x(x+2)}{2(x+2)}=x.
+\end{align*}
+\[
+\boxed{S=x}
+\]
+Што одговара понуди (C).
+\end{solution}

@@ -1,0 +1,5 @@
+Problem 6
+
+Jednačina \(\log_2(1 - x) = \log_2(x - 3)\):
+
+(A) Nema rešenja   (B) Ima beskonačno mnogo rešenja   (C) \(x = 3\) je jedinstveno rešenje   (D) \(x = 1\) je jedinstveno rešenje   (E) Zadovoljena je za \(x = 2\)   (N) Ne znam

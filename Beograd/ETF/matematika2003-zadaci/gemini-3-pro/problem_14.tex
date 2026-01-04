@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 14}
+U jednakokraki trougao ABC ($AB=AC=3\text{cm}, BC=2\text{cm}$) upisan je krug koji dodiruje krake AB i AC redom u tačkama D i E. Dužina duži DE jednaka je (u cm):
+
+A) $\frac{13}{10}$; B) $\frac{6}{5}$; C) $\frac{135}{100}$; D) $\frac{4}{3}$; E) $\frac{7}{5}$; N) Ne znam.
+
+\subsection*{Solution}
+Neka su $D, E, F$ tačke dodira upisanog kruga sa stranicama $AB, AC, BC$.
+Zbog simetrije jednakokrakog trougla, $F$ je središte $BC$, pa je $BF=FC=1$.
+Svojstvo tangentnih duži iz temena: $BD=BF=1$ i $CE=CF=1$.
+Data je dužina kraka $AB=3$.
+Kako je $D$ na $AB$, imamo $AB = AD + DB$, pa je $3 = AD + 1$, odakle sledi $AD=2$.
+Slično, $AE=2$.
+Trougao $ADE$ je jednakokraki sa kracima $AD=AE=2$.
+Ugao $\alpha$ kod temena $A$ je zajednički za $\triangle ABC$ i $\triangle ADE$.
+Iz kosinusne teoreme za $\triangle ABC$:
+\[ BC^2 = AB^2 + AC^2 - 2 AB AC \cos \alpha \]
+\[ 2^2 = 3^2 + 3^2 - 2 \cdot 3 \cdot 3 \cos \alpha \]
+\[ 4 = 18 - 18 \cos \alpha \quad \Rightarrow \quad 18 \cos \alpha = 14 \quad \Rightarrow \quad \cos \alpha = \frac{7}{9} \]
+Sada primenimo kosinusnu teoremu na $\triangle ADE$:
+\[ DE^2 = AD^2 + AE^2 - 2 AD AE \cos \alpha \]
+\[ DE^2 = 2^2 + 2^2 - 2 \cdot 2 \cdot 2 \cdot \frac{7}{9} \]
+\[ DE^2 = 8 - 8 \cdot \frac{7}{9} = 8 \left( 1 - \frac{7}{9} \right) = 8 \cdot \frac{2}{9} = \frac{16}{9} \]
+\[ DE = \sqrt{\frac{16}{9}} = \frac{4}{3} \]
+
+\subsection*{Answer}
+$\frac{4}{3}$ (option \textbf{D}).
+\end{document}

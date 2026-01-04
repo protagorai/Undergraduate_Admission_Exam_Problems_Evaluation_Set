@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Zadatak 2}
+Koje od sledećih nejednakosti su tačne?
+\begin{enumerate}
+    \item[(i)] $\sqrt[3]{3} < \sqrt{2}$
+    \item[(ii)] $\sqrt[3]{3+\sqrt{3}} < \sqrt{2+\sqrt{2}}$
+    \item[(iii)] $3\sqrt{5} < 5\sqrt{3}$
+    \item[(iv)] $\sqrt{12+3\sqrt{75}} < 2\sqrt{48+5\sqrt{3}}$
+    \item[(v)] $\sqrt{9+4\sqrt{5}} < \sqrt{19-8\sqrt{3}}$
+\end{enumerate}
+
+\subsection*{Rešenje}
+Proverimo svaku nejednakost pojedinačno:
+
+(i) $\sqrt[3]{3} < \sqrt{2} \iff 3^{1/3} < 2^{1/2} \iff 3^2 < 2^3 \iff 9 < 8$. Netačno.
+
+(ii) Aproksimacija: $3+\sqrt{3} \approx 4.73$. $\sqrt[3]{4.73} \approx 1.68$.
+$2+\sqrt{2} \approx 3.41$. $\sqrt{3.41} \approx 1.85$.
+$1.68 < 1.85$. Tačno.
+
+(iii) $3\sqrt{5} < 5\sqrt{3} \iff \sqrt{9 \cdot 5} < \sqrt{25 \cdot 3} \iff \sqrt{45} < \sqrt{75}$. Tačno.
+
+(iv) Leva strana: $\sqrt{12+3\sqrt{75}} = \sqrt{12+15\sqrt{3}}$.
+Desna strana: $2\sqrt{48+5\sqrt{3}} = \sqrt{4(48+5\sqrt{3})} = \sqrt{192+20\sqrt{3}}$.
+Očigledno $12 < 192$ i $15\sqrt{3} < 20\sqrt{3}$. Tačno.
+
+(v) $\sqrt{9+4\sqrt{5}} = \sqrt{(\sqrt{5}+2)^2} = \sqrt{5}+2 \approx 2.23+2 = 4.23$.
+$\sqrt{19-8\sqrt{3}} = \sqrt{(4-\sqrt{3})^2} = 4-\sqrt{3} \approx 4-1.73 = 2.27$.
+$4.23 < 2.27$. Netačno.
+
+Tačna tvrđenja su (ii), (iii) i (iv).
+
+\subsection*{Odgovor}
+(ii), (iii) i (iv) (opcija \textbf{C}).
+
+\end{document}

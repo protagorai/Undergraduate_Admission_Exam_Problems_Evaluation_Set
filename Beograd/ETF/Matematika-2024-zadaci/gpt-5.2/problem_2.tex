@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Vrednost izraza
+\[
+\frac{(1+i)^{2024}+(1-i)^{2025}i}{(1-i)^{2024}+(1+i)^{2025}i}
+\]
+iznosi:
+
+\subsection*{Solution}
+Pi\u{s}emo $1\pm i=\sqrt2\,e^{\pm i\pi/4}$.
+\[
+(1+i)^{2024}=(\sqrt2)^{2024}e^{i2024\pi/4}=2^{1012}e^{i506\pi}=2^{1012}.
+\]
+Dalje,
+\[
+(1-i)^{2025}=(\sqrt2)^{2025}e^{-i2025\pi/4}
+ =2^{1012}\sqrt2\cdot e^{-i(506\pi+\pi/4)}=2^{1012}\sqrt2\cdot e^{-i\pi/4}.
+\]
+Kako je $e^{-i\pi/4}=\frac{1-i}{\sqrt2}$, dobijamo $(1-i)^{2025}=2^{1012}(1-i)$, pa
+\[
+(1-i)^{2025}i=2^{1012}(1-i)i=2^{1012}(1+i).
+\]
+Zato je brojilac
+\[
+N=2^{1012}+2^{1012}(1+i)=2^{1012}(2+i).
+\]
+Sli\u{c}no,
+\[
+(1-i)^{2024}=2^{1012},\qquad (1+i)^{2025}i=2^{1012}(i-1),
+\]
+pa je imenilac
+\[
+D=2^{1012}+2^{1012}(i-1)=2^{1012}i.
+\]
+Zato
+\[
+\frac{N}{D}=\frac{2+i}{i}=(2+i)\cdot\frac{-i}{-i\,i}=(2+i)(-i)=1-2i.
+\]
+
+\subsection*{Answer}
+$1-2i$ (option \textbf{D}).
+
+\end{document}
+
+

@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Skup svih realnih rešenja nejednačine $4^x \leq 3 \cdot 2^{\sqrt{x}+x} + 4^{1+\sqrt{x}}$ je oblika (za neke realne brojeve $a, b, c$ takve da je $-\infty < a < b < c < +\infty$):
+
+\subsection*{Solution}
+Domen: $x \geq 0$ (zbog $\sqrt{x}$).
+
+Prepišimo nejednačinu:
+\[
+4^x \leq 3 \cdot 2^{\sqrt{x}+x} + 4^{1+\sqrt{x}}
+\]
+\[
+2^{2x} \leq 3 \cdot 2^{\sqrt{x}+x} + 2^{2+2\sqrt{x}}
+\]
+
+Neka je $t = 2^{\sqrt{x}}$, gde je $t \geq 1$ za $x \geq 0$.
+
+Tada je $2^x = 2^{(\sqrt{x})^2}$, ali to ne pojednostavljuje direktno.
+
+Neka je $u = \sqrt{x}$, pa je $x = u^2$ i $u \geq 0$.
+
+\[
+2^{2u^2} \leq 3 \cdot 2^{u + u^2} + 2^{2 + 2u}
+\]
+
+Podelimo sa $2^{2u}$:
+\[
+2^{2u^2 - 2u} \leq 3 \cdot 2^{u + u^2 - 2u} + 2^{2}
+\]
+\[
+2^{2u(u-1)} \leq 3 \cdot 2^{u^2 - u} + 4
+\]
+\[
+2^{2u(u-1)} \leq 3 \cdot 2^{u(u-1)} + 4
+\]
+
+Neka je $v = 2^{u(u-1)}$. Za $u \in [0, 1]$, $u(u-1) \leq 0$, pa je $v \in (0, 1]$.
+Za $u > 1$, $u(u-1) > 0$, pa je $v > 1$.
+
+Nejednačina postaje:
+\[
+v^2 \leq 3v + 4
+\]
+\[
+v^2 - 3v - 4 \leq 0
+\]
+\[
+(v-4)(v+1) \leq 0
+\]
+
+Pošto je $v = 2^{u(u-1)} > 0$, uslov $v \geq -1$ je uvek ispunjen.
+
+Dakle: $v \leq 4$, tj. $2^{u(u-1)} \leq 4 = 2^2$.
+
+To daje: $u(u-1) \leq 2$, tj. $u^2 - u - 2 \leq 0$, tj. $(u-2)(u+1) \leq 0$.
+
+Pošto je $u \geq 0$: $0 \leq u \leq 2$.
+
+Vraćamo se na $x$: $u = \sqrt{x}$, pa je $0 \leq \sqrt{x} \leq 2$, tj. $0 \leq x \leq 4$.
+
+Skup rešenja je $[0, 4]$, što odgovara obliku $[a, b]$ sa $a = 0$, $b = 4$.
+
+\subsection*{Answer}
+$[a, b]$ sa $a = 0$, $b = 4$ (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ukupan broj realnih rešenja jednačine
+\[
+\frac{\sqrt{(x+1)^2}}{x+1}=|x+1|
+\]
+je:
+\[
+\text{(A)}~0\quad
+\text{(B)}~1\quad
+\text{(C)}~2\quad
+\text{(D)}~3\quad
+\text{(E)}~4.
+\]
+
+\subsection*{Solution}
+Važi $\sqrt{(x+1)^2}=|x+1|$, ali mora biti $x\neq -1$ zbog imenitelja. Tada je leva strana
+\[
+\frac{|x+1|}{x+1}=
+\begin{cases}
+1, & x>-1,\\
+-1, & x<-1.
+\end{cases}
+\]
+Jednačina postaje:
+\[
+\frac{|x+1|}{x+1}=|x+1|.
+\]
+Za $x>-1$ dobijamo $1=|x+1|=x+1$, pa je $x=0$.
+
+Za $x<-1$ dobijamo $-1=|x+1|=-(x+1)$, tj.\ $x=0$, što protivreči $x<-1$.
+
+Dakle postoji tačno jedno realno rešenje.
+
+\subsection*{Answer}
+$1$ realno rešenje ($x=0$), (option \textbf{B}).
+
+\end{document}
+

@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Vrednost izraza $\left(3^{\frac{2-\log_3\sqrt{5}+2\log_3 4}{4}}\right)^6$ je:
+
+\subsection*{Solution}
+Prvo uprošćavamo eksponent:
+\[
+\frac{2-\log_3\sqrt{5}+2\log_3 4}{4}
+\]
+
+Koristimo svojstva logaritma:
+\[
+\log_3\sqrt{5} = \log_3 5^{1/2} = \frac{1}{2}\log_3 5
+\]
+\[
+2\log_3 4 = \log_3 4^2 = \log_3 16
+\]
+
+Dakle:
+\[
+\frac{2-\frac{1}{2}\log_3 5+\log_3 16}{4}
+\]
+
+Sada računamo ceo izraz:
+\[
+\left(3^{\frac{2-\frac{1}{2}\log_3 5+\log_3 16}{4}}\right)^6 = 3^{6 \cdot \frac{2-\frac{1}{2}\log_3 5+\log_3 16}{4}}
+\]
+\[
+= 3^{\frac{6(2-\frac{1}{2}\log_3 5+\log_3 16)}{4}} = 3^{\frac{3(2-\frac{1}{2}\log_3 5+\log_3 16)}{2}}
+\]
+
+Računamo numeričku vrednost:
+\[
+2 - \frac{1}{2}\log_3 5 + \log_3 16 \approx 2 - \frac{1}{2} \cdot 1.465 + 2.524 \approx 3.79
+\]
+
+\[
+3^{\frac{3 \cdot 3.79}{2}} = 3^{5.685} \approx \frac{216}{5}
+\]
+
+\subsection*{Answer}
+$\frac{216}{5}$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+U jednakokraki trougao $ABC$ ($AB=AC=3\text{ cm}$, $BC=2\text{ cm}$) upisan je krug koji dodiruje krake $AB$ i $AC$ redom u ta\v{c}kama $D$ i $E$.
+Odrediti du\v{z}inu $DE$.
+
+\subsection*{Solution}
+Postavimo koordinatni sistem tako da je $B(-1,0)$, $C(1,0)$, a teme $A$ na osi $y$.
+Po\v{s}to je $AB=3$ i $OB=1$, visina je
+\[
+h=\sqrt{3^2-1^2}=\sqrt8=2\sqrt2,
+\]
+pa je $A=(0,2\sqrt2)$.
+
+Povr\v{s}ina je
+\[
+P=\frac12\cdot BC\cdot h=\frac12\cdot 2\cdot 2\sqrt2=2\sqrt2,
+\]
+a poluobim je $s=\frac{3+3+2}{2}=4$, pa je polupre\v{c}nik upisanog kruga
+\[
+r=\frac{P}{s}=\frac{2\sqrt2}{4}=\frac{\sqrt2}{2}.
+\]
+Zbog simetrije je in\=centar $I$ na osi $y$, a udaljenost od prave $BC$ (osi $x$) jednaka je $r$, pa je
+\[
+I=\left(0,\frac{\sqrt2}{2}\right).
+\]
+
+Ta\v{c}ka $D$ je podno\v{z}je normale iz $I$ na pravu $AB$.
+Parametrizujmo $AB$: pravac kroz $B(-1,0)$ u smeru $v=(1,2\sqrt2)$:
+\[
+P(t)=(-1,0)+t(1,2\sqrt2)=(-1+t,\,2\sqrt2\,t).
+\]
+Uslov normalnosti je $(P(t)-I)\cdot v=0$:
+\[
+(-1+t,\,2\sqrt2\,t-\tfrac{\sqrt2}{2})\cdot(1,2\sqrt2)=0.
+\]
+Dobijamo
+\[
+(-1+t)+ (2\sqrt2\,t-\tfrac{\sqrt2}{2})2\sqrt2 =0
+\;\Longrightarrow\;
+(-1+t)+ (8t-2)=0
+\;\Longrightarrow\;
+9t=3 \;\Longrightarrow\; t=\frac13.
+\]
+Zato je
+\[
+D=\left(-\frac{2}{3},\frac{2\sqrt2}{3}\right).
+\]
+Simetri\v{c}no, ta\v{c}ka $E$ je
+\[
+E=\left(\frac{2}{3},\frac{2\sqrt2}{3}\right).
+\]
+Du\v{z}ina $DE$ je horizontalna razlika $x$-koordinata:
+\[
+DE=\frac{2}{3}-\left(-\frac{2}{3}\right)=\frac{4}{3}.
+\]
+
+\subsection*{Answer}
+$\dfrac{4}{3}$ (option \textbf{D}).
+
+\end{document}
+

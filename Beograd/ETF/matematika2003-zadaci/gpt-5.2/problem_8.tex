@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Date su funkcije
+\[
+f_1(x)=1,\qquad
+f_2(x)=\frac{|\sin x|}{\sqrt{1-\cos^2 x}},\qquad
+f_3(x)=\frac{|\cos x|}{\sqrt{1-\sin^2 x}},\qquad
+f_4(x)=\tan x\cdot \cot x.
+\]
+Odrediti ta\v{c}an iskaz o njihovoj jednakosti.
+
+\subsection*{Solution}
+Sre\dj ivanjem dobijamo:
+\[
+\sqrt{1-\cos^2 x}=\sqrt{\sin^2 x}=|\sin x|\quad\Rightarrow\quad
+f_2(x)=\frac{|\sin x|}{|\sin x|}=1,
+\]
+ali samo tamo gde je definisana, tj.\ za $\sin x\neq 0$ (ina\v{c}e se deli nulom).
+
+Sli\v{c}no,
+\[
+\sqrt{1-\sin^2 x}=\sqrt{\cos^2 x}=|\cos x|\quad\Rightarrow\quad
+f_3(x)=\frac{|\cos x|}{|\cos x|}=1,
+\]
+ali samo za $\cos x\neq 0$.
+
+Za $f_4$ va\v{z}i
+\[
+f_4(x)=\tan x\cdot \cot x=\frac{\sin x}{\cos x}\cdot\frac{\cos x}{\sin x}=1,
+\]
+ali samo kada su i $\sin x\neq 0$ i $\cos x\neq 0$.
+
+Dakle, sve tri funkcije $f_2,f_3,f_4$ imaju vrednost $1$ tamo gde su definisane, ali imaju razli\v{c}ite prirodne domene:
+\[
+D_{f_1}=\mathbb{R},\quad
+D_{f_2}=\mathbb{R}\setminus\{k\pi\},\quad
+D_{f_3}=\mathbb{R}\setminus\left\{\frac{\pi}{2}+k\pi\right\},\quad
+D_{f_4}=\mathbb{R}\setminus\left(\{k\pi\}\cup\left\{\frac{\pi}{2}+k\pi\right\}\right).
+\]
+Po\v{s}to jednake funkcije moraju imati isti domen, me\dj u datim funkcijama nema me\dj usobno jednakih.
+
+\subsection*{Answer}
+Me\dj u datim funkcijama nema me\dj usobno jednakih (option \textbf{A}).
+
+\end{document}
+

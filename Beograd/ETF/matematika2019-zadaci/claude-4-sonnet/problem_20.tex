@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 20}
+In the Cartesian coordinate system, points $A(2,1)$ and $B(4,3)$ are given. If $C$ is a point on the x-axis such that the sum $AC + BC$ is minimal, then the point $C$ equals:
+
+\subsection*{Solution}
+We need to find point $C(c,0)$ on the x-axis that minimizes $AC + BC$.
+
+To minimize the sum of distances from two points to a point on a line, we use the reflection principle. We reflect one point across the line and find where the line connecting the reflected point to the other point intersects the given line.
+
+Let's reflect point $A(2,1)$ across the x-axis to get $A'(2,-1)$.
+
+The minimum value of $AC + BC$ equals $A'B$ (the distance from the reflected point to $B$), and this minimum is achieved when $C$ lies on the line segment $A'B$.
+
+The line through $A'(2,-1)$ and $B(4,3)$ has slope:
+$m = \frac{3 - (-1)}{4 - 2} = \frac{4}{2} = 2$
+
+The equation of line $A'B$ is:
+$y - 3 = 2(x - 4)$
+$y - 3 = 2x - 8$
+$y = 2x - 5$
+
+To find where this line intersects the x-axis, we set $y = 0$:
+$0 = 2x - 5$
+$2x = 5$
+$x = \frac{5}{2}$
+
+Therefore, $C = \left(\frac{5}{2}, 0\right)$.
+
+Let's verify this makes sense by checking that $A$, $C$, and $B'$ (reflection of $B$ across x-axis) are collinear, which would give the same result:
+
+$B'(4,-3)$ and line through $A(2,1)$ and $B'(4,-3)$:
+Slope: $\frac{-3-1}{4-2} = \frac{-4}{2} = -2$
+Equation: $y - 1 = -2(x - 2)$, so $y = -2x + 5$
+Setting $y = 0$: $0 = -2x + 5$, so $x = \frac{5}{2}$ ✓
+
+Both methods give the same answer: $C = \left(\frac{5}{2}, 0\right)$.
+
+\subsection*{Answer}
+$\left(\frac{5}{2}, 0\right)$ (option \textbf{D}).
+
+\end{document}

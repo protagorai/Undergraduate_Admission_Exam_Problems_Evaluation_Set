@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Razlika najvećeg i najmaneg realnog rešenja nejednačine $\log_{\frac{1}{2}}(\sqrt{x + 1} - x) \leq 2$ iznosi:
+
+\subsection*{Solution}
+Polazimo od nejednačine:
+\[
+\log_{\frac{1}{2}}(\sqrt{x + 1} - x) \leq 2
+\]
+
+Pošto je osnova $\frac{1}{2} < 1$, logaritamska funkcija je opadajuća, pa nejednačina postaje:
+\[
+\sqrt{x + 1} - x \geq \left(\frac{1}{2}\right)^2 = \frac{1}{4}
+\]
+
+Dakle:
+\[
+\sqrt{x + 1} - x \geq \frac{1}{4}
+\]
+\[
+\sqrt{x + 1} \geq x + \frac{1}{4}
+\]
+
+Prvo određujemo domen. Za $\sqrt{x + 1}$ potrebno je $x \geq -1$.
+Takođe, za logaritam potrebno je $\sqrt{x + 1} - x > 0$.
+
+Analizirajmo kada je $\sqrt{x + 1} - x > 0$:
+\[
+\sqrt{x + 1} > x
+\]
+
+Za $x \leq 0$: ovo je uvek tačno jer je leva strana nenegativna, a desna nepositivna.
+
+Za $x > 0$: kvadriramo obe strane (obe su pozitivne):
+\[
+x + 1 > x^2
+\]
+\[
+x^2 - x - 1 < 0
+\]
+
+Koreni su $x = \frac{1 \pm \sqrt{5}}{2}$. Pošto je $\frac{1 + \sqrt{5}}{2} > 0$, imamo:
+\[
+x < \frac{1 + \sqrt{5}}{2}
+\]
+
+Dakle, domen je $x \in \left[-1, \frac{1 + \sqrt{5}}{2}\right)$.
+
+Sada rešavamo $\sqrt{x + 1} \geq x + \frac{1}{4}$:
+
+Za $x + \frac{1}{4} \leq 0$, tj. $x \leq -\frac{1}{4}$: nejednačina je uvek tačna.
+
+Za $x > -\frac{1}{4}$: kvadriramo obe strane:
+\[
+x + 1 \geq \left(x + \frac{1}{4}\right)^2 = x^2 + \frac{x}{2} + \frac{1}{16}
+\]
+\[
+x + 1 \geq x^2 + \frac{x}{2} + \frac{1}{16}
+\]
+\[
+0 \geq x^2 - \frac{x}{2} - \frac{15}{16}
+\]
+\[
+x^2 - \frac{x}{2} - \frac{15}{16} \leq 0
+\]
+
+Koreni su:
+\[
+x = \frac{\frac{1}{2} \pm \sqrt{\frac{1}{4} + \frac{15}{4}}}{2} = \frac{\frac{1}{2} \pm \sqrt{4}}{2} = \frac{\frac{1}{2} \pm 2}{2}
+\]
+
+Dakle: $x_1 = -\frac{3}{4}$ i $x_2 = \frac{5}{4}$.
+
+Nejednačina $x^2 - \frac{x}{2} - \frac{15}{16} \leq 0$ je zadovoljena za $x \in \left[-\frac{3}{4}, \frac{5}{4}\right]$.
+
+Kombinujući sa domenom i uslovom $x > -\frac{1}{4}$:
+Rešenje je $x \in \left(-\frac{1}{4}, \frac{5}{4}\right]$.
+
+Ali treba uzeti u obzir i deo $x \leq -\frac{1}{4}$ iz domena $[-1, -\frac{1}{4}]$.
+
+Konačno rešenje: $x \in \left[-1, \frac{5}{4}\right]$.
+
+Razlika najvećeg i najmaneg rešenja:
+\[
+\frac{5}{4} - (-1) = \frac{5}{4} + 1 = \frac{9}{4}
+\]
+
+\subsection*{Answer}
+$\frac{9}{4}$ (opcija \textbf{A}).
+
+\end{document}

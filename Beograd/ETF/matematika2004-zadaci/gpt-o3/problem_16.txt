@@ -1,0 +1,2 @@
+U razvoju stepena binoma $(\sqrt{x} - \frac{1}{\sqrt[3]{x}})^8$ jedan član je $a \cdot x^{-\frac{1}{6}}$. Tada je $a$ jednako:
+A) 0; B) 56; C) -56; D) -70; E) 70; N) Ne znam.

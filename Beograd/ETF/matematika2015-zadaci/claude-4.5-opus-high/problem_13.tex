@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Ako je $N$ broj šestocifrenih brojeva koji u svom zapisu sadrže cifru 1 bar na jednom mestu, tada $N$ pripada intervalu:
+
+\subsection*{Solution}
+Total six-digit numbers: from 100000 to 999999, which is $9 \times 10^5 = 900000$ numbers.
+
+We'll count six-digit numbers that do NOT contain the digit 1.
+
+For a six-digit number without the digit 1:
+\begin{itemize}
+\item First digit: can be 2, 3, 4, 5, 6, 7, 8, 9 (8 choices, not 0 or 1)
+\item Remaining 5 digits: can be 0, 2, 3, 4, 5, 6, 7, 8, 9 (9 choices each)
+\end{itemize}
+
+Numbers without digit 1: $8 \times 9^5 = 8 \times 59049 = 472392$
+
+Numbers with at least one digit 1:
+\[
+N = 900000 - 472392 = 427608
+\]
+
+Now check which interval contains $N = 427608$:
+\begin{itemize}
+\item (A) $[10^5, 2 \cdot 10^5) = [100000, 200000)$ — No
+\item (B) $[2 \cdot 10^5, 3 \cdot 10^5) = [200000, 300000)$ — No
+\item (C) $[3 \cdot 10^5, 4 \cdot 10^5) = [300000, 400000)$ — No
+\item (D) $[4 \cdot 10^5, 5 \cdot 10^5) = [400000, 500000)$ — Yes!
+\item (E) $[5 \cdot 10^5, 6 \cdot 10^5) = [500000, 600000)$ — No
+\end{itemize}
+
+\subsection*{Answer}
+$[4 \cdot 10^5, 5 \cdot 10^5)$ (option \textbf{D}).
+
+\end{document}

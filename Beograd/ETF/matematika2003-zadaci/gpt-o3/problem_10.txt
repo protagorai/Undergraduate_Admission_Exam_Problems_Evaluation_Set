@@ -1,0 +1,2 @@
+10. Jednačina x^3 + x^2 + ax + b = 0 (a, b \in \mathbb{R}) ima rešenja 1-\sqrt{2} i 1+\sqrt{2}. Proizvod svih rešenja date jednačine je:
+A) -2;   B) -3;   C) 2;   D) 0;   E) 3;   N) Ne znam.

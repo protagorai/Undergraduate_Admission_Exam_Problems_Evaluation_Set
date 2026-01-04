@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Let
+\[
+\sqrt[4]{(\sqrt2+1)^x}+\sqrt[4]{(\sqrt2-1)^x}\le 2\sqrt2.
+\]
+Find the difference between the largest and the smallest solution.
+
+\subsection*{Solution}
+Rewrite the fourth roots as powers:
+\[
+\sqrt[4]{(\sqrt2+1)^x}=(\sqrt2+1)^{x/4},\qquad
+\sqrt[4]{(\sqrt2-1)^x}=(\sqrt2-1)^{x/4}.
+\]
+Note that $(\sqrt2+1)(\sqrt2-1)=1$, hence $\sqrt2-1=\dfrac{1}{\sqrt2+1}$, so
+\[
+(\sqrt2-1)^{x/4}=(\sqrt2+1)^{-x/4}.
+\]
+Let $a=(\sqrt2+1)^{x/4}>0$. Then the inequality becomes
+\[
+a+\frac{1}{a}\le 2\sqrt2.
+\]
+Multiply by $a>0$:
+\[
+a^2-2\sqrt2\,a+1\le 0.
+\]
+The roots are
+\[
+a=\frac{2\sqrt2\pm\sqrt{8-4}}{2}=\frac{2\sqrt2\pm 2}{2}=\sqrt2\pm 1.
+\]
+Thus
+\[
+\sqrt2-1\le a\le \sqrt2+1.
+\]
+Since $a=(\sqrt2+1)^{x/4}$ and $\sqrt2-1=(\sqrt2+1)^{-1}$, this is
+\[
+(\sqrt2+1)^{-1}\le (\sqrt2+1)^{x/4}\le (\sqrt2+1)^1
+\quad\Longrightarrow\quad
+-1\le \frac{x}{4}\le 1.
+\]
+Hence $-4\le x\le 4$. The smallest solution is $-4$ and the largest is $4$.
+
+\subsection*{Answer}
+$4-(-4)=8$ (option \textbf{B}).
+
+\end{document}
+

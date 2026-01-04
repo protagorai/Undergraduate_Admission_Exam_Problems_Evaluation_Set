@@ -1,0 +1,20 @@
+1. (C) 2014
+2. (D) 28%
+3. (D) -2-4\cos 2\alpha
+4. (A) 10\sqrt{2}
+5. (A) (0, 1)
+6. (A) x
+7. (B) a < a^3 < a^2
+8. (B) 2
+9. (C) -3/2
+10. (A) \frac{s \cdot S}{s+S-1}
+11. (B) (1, 2]
+12. (C) 7,5
+13. (D) [14, 18)
+14. (A) \frac{\sqrt{6}}{2}
+15. (E) 12
+16. (B) 8\sqrt{2} \text{ cm}^3
+17. (D) \left(\frac{p}{q}\right)^{\frac{p+q}{p-q}}
+18. (B) \left(\frac{\pi}{3}, \frac{\pi}{2}\right)
+19. (B) \frac{2\pi}{3}\sqrt{6}
+20. (D) 154

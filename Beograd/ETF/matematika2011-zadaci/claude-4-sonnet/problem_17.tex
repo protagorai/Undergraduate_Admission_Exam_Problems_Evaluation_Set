@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Maksimalni obim pravougaonika upisanog u krug datog poluprečnika $r$ iznosi:
+
+(A) $5\sqrt{2}r$ \quad (B) $4\sqrt{2}r$ \quad (C) $\sqrt{2}r$ \quad (D) $3\sqrt{2}r$ \quad (E) Nijedan od ponuđenih odgovora \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's place the circle at the origin with radius $r$. A rectangle inscribed in this circle will have its vertices on the circle.
+
+Due to symmetry, we can assume the rectangle has sides parallel to the coordinate axes. If the rectangle has vertices at $(\pm a, \pm b)$, then since these points lie on the circle:
+$$a^2 + b^2 = r^2$$
+
+The perimeter of the rectangle is:
+$$P = 2(2a + 2b) = 4(a + b)$$
+
+We want to maximize $P = 4(a + b)$ subject to the constraint $a^2 + b^2 = r^2$.
+
+Using the method of Lagrange multipliers, or alternatively, we can use the constraint to express one variable in terms of the other:
+$$b = \sqrt{r^2 - a^2}$$
+
+So we want to maximize:
+$$f(a) = 4(a + \sqrt{r^2 - a^2})$$
+
+Taking the derivative:
+$$f'(a) = 4\left(1 + \frac{-a}{\sqrt{r^2 - a^2}}\right) = 4\left(1 - \frac{a}{\sqrt{r^2 - a^2}}\right)$$
+
+Setting $f'(a) = 0$:
+$$1 - \frac{a}{\sqrt{r^2 - a^2}} = 0$$
+$$\frac{a}{\sqrt{r^2 - a^2}} = 1$$
+$$a = \sqrt{r^2 - a^2}$$
+$$a^2 = r^2 - a^2$$
+$$2a^2 = r^2$$
+$$a = \frac{r}{\sqrt{2}}$$
+
+Similarly, $b = \frac{r}{\sqrt{2}}$.
+
+So the maximum perimeter occurs when the rectangle is actually a square with side length $\frac{2r}{\sqrt{2}} = r\sqrt{2}$.
+
+The maximum perimeter is:
+$$P = 4 \cdot r\sqrt{2} = 4r\sqrt{2}$$
+
+\subsection*{Answer}
+(B) $4\sqrt{2}r$
+
+\end{document}

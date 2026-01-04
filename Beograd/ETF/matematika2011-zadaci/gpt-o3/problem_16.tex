@@ -1,0 +1,26 @@
+\begin{solution}
+\textbf{Zadatak 16.}
+
+Za binom \((x+y)^{n}\) koeficijenti prvih članova glase
+\[
+\binom n1 x^{n-1}y,\;\binom n2 x^{n-2}y^{2},\;\binom n3 x^{n-3}y^{3}.
+\]
+Dat je niz vrednosti
+\[
+\binom n1 x^{n-1}y=240,\qquad \binom n2 x^{n-2}y^{2}=720,\qquad \binom n3 x^{n-3}y^{3}=1080.
+\]
+Formiramo količnike:
+\[
+\frac{720}{240}=3=\frac{\binom n2}{\binom n1}\,\frac{y}{x}=\frac{n-1}{2}\,\frac{y}{x},\quad
+\frac{1080}{720}=\frac32=\frac{\binom n3}{\binom n2}\,\frac{y}{x}=\frac{n-2}{3}\,\frac{y}{x}.
+\]
+Deljenjem jednačina eliminiše se \(y/x\):
+\[
+\frac{\tfrac{n-1}{2}}{\tfrac{n-2}{3}}=2\;\Longrightarrow\;\frac{3(n-1)}{2(n-2)}=2 \;\Longrightarrow\; n=5.
+\]
+Iz \(3=\frac{n-1}{2}\,y/x\) sledi \(y/x=\tfrac32\).  Koristeći \(240=5x^{4}y\) dobijemo \(x=2\) i \(y=3\).
+
+Zbir je
+\[x+y+n=2+3+5=10.\]
+\boxed{10}\;\Rightarrow\;(C).
+\end{solution}

@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+U razvoju binoma $(x + y)^n$ $(x, y \in \mathbb{R}, n \in \mathbb{N})$ drugi član je jednak 240, treći član 720 a četvrti 1080. Tada je zbir $x + y + n$ jednak:
+
+(A) $11$ \quad (B) $9$ \quad (C) $10$ \quad (D) $25$ \quad (E) $280$ \quad (N) Ne znam
+
+\subsection*{Solution}
+In the binomial expansion $(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k$, the terms are:
+
+- 1st term: $\binom{n}{0} x^n y^0 = x^n$
+- 2nd term: $\binom{n}{1} x^{n-1} y^1 = nx^{n-1}y$
+- 3rd term: $\binom{n}{2} x^{n-2} y^2 = \frac{n(n-1)}{2}x^{n-2}y^2$
+- 4th term: $\binom{n}{3} x^{n-3} y^3 = \frac{n(n-1)(n-2)}{6}x^{n-3}y^3$
+
+Given:
+- 2nd term = $nx^{n-1}y = 240$
+- 3rd term = $\frac{n(n-1)}{2}x^{n-2}y^2 = 720$
+- 4th term = $\frac{n(n-1)(n-2)}{6}x^{n-3}y^3 = 1080$
+
+From the ratio of consecutive terms:
+$$\frac{\text{3rd term}}{\text{2nd term}} = \frac{\frac{n(n-1)}{2}x^{n-2}y^2}{nx^{n-1}y} = \frac{(n-1)y}{2x} = \frac{720}{240} = 3$$
+
+So $\frac{(n-1)y}{2x} = 3$, which gives us $(n-1)y = 6x$.
+
+$$\frac{\text{4th term}}{\text{3rd term}} = \frac{\frac{n(n-1)(n-2)}{6}x^{n-3}y^3}{\frac{n(n-1)}{2}x^{n-2}y^2} = \frac{(n-2)y}{3x} = \frac{1080}{720} = \frac{3}{2}$$
+
+So $\frac{(n-2)y}{3x} = \frac{3}{2}$, which gives us $(n-2)y = \frac{9x}{2}$.
+
+From the two equations:
+- $(n-1)y = 6x$ ... (1)
+- $(n-2)y = \frac{9x}{2}$ ... (2)
+
+Subtracting equation (2) from equation (1):
+$$y = 6x - \frac{9x}{2} = \frac{12x - 9x}{2} = \frac{3x}{2}$$
+
+Substituting back into equation (1):
+$$(n-1) \cdot \frac{3x}{2} = 6x$$
+$$\frac{3(n-1)x}{2} = 6x$$
+$$3(n-1) = 12$$
+$$n-1 = 4$$
+$$n = 5$$
+
+So $y = \frac{3x}{2}$.
+
+Using the 2nd term: $nx^{n-1}y = 5x^4 \cdot \frac{3x}{2} = \frac{15x^5}{2} = 240$
+
+This gives us $x^5 = 32$, so $x = 2$.
+
+Therefore $y = \frac{3 \cdot 2}{2} = 3$.
+
+Let's verify with the 3rd term:
+$$\frac{n(n-1)}{2}x^{n-2}y^2 = \frac{5 \cdot 4}{2} \cdot 2^3 \cdot 3^2 = 10 \cdot 8 \cdot 9 = 720$$ ✓
+
+And the 4th term:
+$$\frac{n(n-1)(n-2)}{6}x^{n-3}y^3 = \frac{5 \cdot 4 \cdot 3}{6} \cdot 2^2 \cdot 3^3 = 10 \cdot 4 \cdot 27 = 1080$$ ✓
+
+Therefore: $x + y + n = 2 + 3 + 5 = 10$
+
+\subsection*{Answer}
+(C) $10$
+
+\end{document}

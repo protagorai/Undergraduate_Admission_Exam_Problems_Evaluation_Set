@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Za $a \in \mathbb{R}$, $a \neq 3$ izračunati vrednost izraza
+\[
+\frac{a^{3}-27}{(a-3)^{2}}\cdot\frac{a^{2}-2a-3}{(a+3)^{2}-3a}.
+\]
+
+\subsection*{Rešenje}
+
+Korak po korak faktorizujemo sve polinome.
+\begin{align*}
+a^{3}-27 &= a^{3}-3^{3}=(a-3)(a^{2}+3a+9),\\[4pt]
+a^{2}-2a-3 &= (a-3)(a+1),\\[4pt]
+(a+3)^{2}-3a &= a^{2}+6a+9-3a = a^{2}+3a+9.
+\end{align*}
+Zamenjujemo dobijene faktore u originalnu razlomljenu funkciju:
+\[
+\frac{(a-3)(a^{2}+3a+9)}{(a-3)^{2}}\cdot\frac{(a-3)(a+1)}{a^{2}+3a+9}.
+\]
+Skraćujemo zajedničke faktore $(a-3)$ i $(a^{2}+3a+9)$:
+\[
+\frac{a^{2}+3a+9}{a-3}\cdot\frac{(a-3)(a+1)}{a^{2}+3a+9}=a+1.
+\]
+
+\subsection*{Odgovor}
+\[a+1\qquad (\text{opcija C})\]
+
+\end{document}

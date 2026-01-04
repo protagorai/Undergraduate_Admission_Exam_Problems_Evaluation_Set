@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Sva realna rešenja iracionalne jednačine $\frac{1}{\sqrt{x}+\sqrt{x-2}} + \frac{1}{\sqrt{x+2}+\sqrt{x}} = \frac{1}{4}$ pripadaju skupu:
+\begin{enumerate}
+    \item[(A)] $[2, 6)$
+    \item[(B)] $[6, 10)$
+    \item[(C)] $[10, 14)$
+    \item[(D)] $[14, 18)$
+    \item[(E)] $[18, +\infty)$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Rationalize each term:
+\[
+\frac{1}{\sqrt{x}+\sqrt{x-2}} = \frac{\sqrt{x}-\sqrt{x-2}}{x-(x-2)} = \frac{\sqrt{x}-\sqrt{x-2}}{2}
+\]
+\[
+\frac{1}{\sqrt{x+2}+\sqrt{x}} = \frac{\sqrt{x+2}-\sqrt{x}}{(x+2)-x} = \frac{\sqrt{x+2}-\sqrt{x}}{2}
+\]
+Summing them:
+\[
+\frac{\sqrt{x}-\sqrt{x-2} + \sqrt{x+2}-\sqrt{x}}{2} = \frac{\sqrt{x+2}-\sqrt{x-2}}{2}
+\]
+The equation becomes:
+\[
+\frac{\sqrt{x+2}-\sqrt{x-2}}{2} = \frac{1}{4} \implies \sqrt{x+2}-\sqrt{x-2} = \frac{1}{2}
+\]
+Square both sides:
+\[
+(x+2) - 2\sqrt{(x+2)(x-2)} + (x-2) = \frac{1}{4}
+\]
+\[
+2x - 2\sqrt{x^2-4} = \frac{1}{4}
+\]
+\[
+2\sqrt{x^2-4} = 2x - 0.25
+\]
+\[
+\sqrt{x^2-4} = x - 0.125 = x - \frac{1}{8}
+\]
+Square again:
+\[
+x^2-4 = x^2 - \frac{x}{4} + \frac{1}{64}
+\]
+\[
+-4 = -\frac{x}{4} + \frac{1}{64}
+\]
+\[
+\frac{x}{4} = 4 + \frac{1}{64} = \frac{257}{64}
+\]
+\[
+x = \frac{257}{16} = 16.0625
+\]
+The solution $16.0625$ lies in the interval $[14, 18)$.
+
+\subsection*{Answer}
+$[14, 18)$ (option \textbf{(D)}).
+
+\end{document}

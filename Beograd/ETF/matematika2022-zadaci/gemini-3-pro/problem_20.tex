@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 20}
+Minimalna dužina odsečka između koordinatnih osa koji formira tangenta, koja dodiruje elipsu $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a \ge b > 0$) u tački koja je u prvom kvadrantu, iznosi:
+\begin{itemize}
+    \item[(A)] $\sqrt{2(a^2 + b^2)}$
+    \item[(B)] $\frac{ab}{a+b}$
+    \item[(C)] $\sqrt{a^2 + b^2}$
+    \item[(D)] $\frac{b(a+b)}{a}$
+    \item[(E)] $a+b$
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Jednačina tangente u tački $M(x_0, y_0)$ na elipsi je $\frac{x x_0}{a^2} + \frac{y y_0}{b^2} = 1$.
+Odsečci na osama su $m = \frac{a^2}{x_0}$ i $n = \frac{b^2}{y_0}$.
+Dužina odsečka $L = \sqrt{m^2 + n^2} = \sqrt{\frac{a^4}{x_0^2} + \frac{b^4}{y_0^2}}$.
+Parametarski oblik: $x_0 = a \cos t, y_0 = b \sin t$.
+$L^2(t) = \frac{a^2}{\cos^2 t} + \frac{b^2}{\sin^2 t}$.
+Tražimo minimum funkcije $f(t) = \frac{a^2}{\cos^2 t} + \frac{b^2}{\sin^2 t}$.
+Izvod $f'(t) = \frac{2a^2 \sin t}{\cos^3 t} - \frac{2b^2 \cos t}{\sin^3 t} = 0$.
+$\tan^4 t = \frac{b^2}{a^2} \implies \tan^2 t = \frac{b}{a}$.
+Tada je $\sin^2 t = \frac{b}{a+b}$ i $\cos^2 t = \frac{a}{a+b}$.
+Minimum kvadrata dužine:
+\[ L_{min}^2 = \frac{a^2}{\frac{a}{a+b}} + \frac{b^2}{\frac{b}{a+b}} = a(a+b) + b(a+b) = (a+b)^2 \]
+Minimalna dužina $L_{min} = a+b$.
+
+\subsection*{Answer}
+$a+b$ (option \textbf{E}).
+
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+The first two terms of the increasing geometric progression are solutions of the equation $\frac{2^2 \sin x}{1 + 2^2 \sin x} = 1 - \frac{3 - 2^2 \sin x}{5 - 2^2 \sin x}$ on the interval $(0, \pi)$. If the sum of these progressions is $651\pi$, then the total number of terms is:
+
+\subsection*{Solution}
+Let's first solve the equation. Let $y = 2^2 \sin x = 4\sin x$.
+
+The equation becomes:
+\[
+\frac{y}{1 + y} = 1 - \frac{3 - y}{5 - y}
+\]
+
+Simplifying the right side:
+\[
+1 - \frac{3 - y}{5 - y} = \frac{5 - y - (3 - y)}{5 - y} = \frac{5 - y - 3 + y}{5 - y} = \frac{2}{5 - y}
+\]
+
+So we have:
+\[
+\frac{y}{1 + y} = \frac{2}{5 - y}
+\]
+
+Cross-multiplying:
+\[
+y(5 - y) = 2(1 + y)
+\]
+\[
+5y - y^2 = 2 + 2y
+\]
+\[
+5y - y^2 - 2 - 2y = 0
+\]
+\[
+3y - y^2 - 2 = 0
+\]
+\[
+y^2 - 3y + 2 = 0
+\]
+\[
+(y - 1)(y - 2) = 0
+\]
+
+So $y = 1$ or $y = 2$.
+
+Since $y = 4\sin x$:
+- $4\sin x = 1 \Rightarrow \sin x = \frac{1}{4}$
+- $4\sin x = 2 \Rightarrow \sin x = \frac{1}{2}$
+
+On the interval $(0, \pi)$:
+- $\sin x = \frac{1}{4}$ gives $x = \arcsin\frac{1}{4}$ and $x = \pi - \arcsin\frac{1}{4}$
+- $\sin x = \frac{1}{2}$ gives $x = \frac{\pi}{6}$ and $x = \frac{5\pi}{6}$
+
+Since we need an increasing geometric progression, let's order these values:
+$\arcsin\frac{1}{4} < \frac{\pi}{6} < \frac{5\pi}{6} < \pi - \arcsin\frac{1}{4}$
+
+Let the first two terms be $a$ and $ar$ where $r > 1$ is the common ratio.
+
+The sum of $n$ terms of a geometric progression is:
+\[
+S_n = a \cdot \frac{r^n - 1}{r - 1} = 651\pi
+\]
+
+Without more specific information about which two consecutive terms form the progression, let's assume the first two terms are $\frac{\pi}{6}$ and $\frac{5\pi}{6}$.
+
+Then $r = \frac{5\pi/6}{\pi/6} = 5$ and $a = \frac{\pi}{6}$.
+
+\[
+S_n = \frac{\pi}{6} \cdot \frac{5^n - 1}{5 - 1} = \frac{\pi}{6} \cdot \frac{5^n - 1}{4} = 651\pi
+\]
+
+\[
+\frac{5^n - 1}{24} = 651
+\]
+\[
+5^n - 1 = 15624
+\]
+\[
+5^n = 15625 = 5^6
+\]
+
+Therefore $n = 6$.
+
+\subsection*{Answer}
+6 (option \textbf{B}).
+
+\end{document}

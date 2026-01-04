@@ -1,0 +1,2 @@
+19. Oko pravog valjka čiji je poluprečnik osnove jednak r, a visina jednaka 3r, opisana je prava kupa tako da se centri donjih osnova valjka i kupe poklapaju, a gornja osnova valjka dodiruje omotač kupe. Minimalna zapremina takve kupe iznosi:
+(A) \frac{64π r^3}{9}   (B) \frac{32π r^3}{3}   (C) \frac{27π r^3}{8}   (D) \frac{27π r^3}{4}   (E) \frac{9π r^3}{4}   (N) Ne znam

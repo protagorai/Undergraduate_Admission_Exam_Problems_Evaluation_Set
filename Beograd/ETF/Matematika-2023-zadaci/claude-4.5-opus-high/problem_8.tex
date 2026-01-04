@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Zbir svih rešenja jednačine $z^2 + z\bar{z} + i\bar{z} = 0$, $z \in C$, iznosi:
+
+(A) $-1$ \quad (B) $0$ \quad (C) $-\frac{1}{2} - \frac{1}{2}i$ \quad (D) $-i$ \quad (E) $\frac{1}{2} - \frac{1}{2}i$
+
+\subsection*{Solution}
+Neka je $z = x + iy$, gde su $x, y \in \mathbb{R}$. Tada je $\bar{z} = x - iy$.
+
+\[
+z^2 = (x+iy)^2 = x^2 - y^2 + 2ixy
+\]
+\[
+z\bar{z} = |z|^2 = x^2 + y^2
+\]
+\[
+i\bar{z} = i(x-iy) = ix + y = y + ix
+\]
+
+Zamenjujemo u jednačinu:
+\[
+(x^2 - y^2 + 2ixy) + (x^2 + y^2) + (y + ix) = 0
+\]
+\[
+(2x^2 + y) + i(2xy + x) = 0
+\]
+
+Da bi kompleksan broj bio jednak nuli, i realni i imaginarni deo moraju biti nula:
+\[
+2x^2 + y = 0 \quad (1)
+\]
+\[
+2xy + x = 0 \quad (2)
+\]
+
+Iz (2): $x(2y + 1) = 0$, dakle $x = 0$ ili $y = -\frac{1}{2}$.
+
+\textbf{Slučaj 1:} $x = 0$
+
+Iz (1): $y = 0$
+
+Rešenje: $z_1 = 0$
+
+\textbf{Slučaj 2:} $y = -\frac{1}{2}$
+
+Iz (1): $2x^2 - \frac{1}{2} = 0 \Rightarrow x^2 = \frac{1}{4} \Rightarrow x = \pm\frac{1}{2}$
+
+Rešenja: $z_2 = \frac{1}{2} - \frac{1}{2}i$ i $z_3 = -\frac{1}{2} - \frac{1}{2}i$
+
+Zbir svih rešenja:
+\[
+z_1 + z_2 + z_3 = 0 + \left(\frac{1}{2} - \frac{1}{2}i\right) + \left(-\frac{1}{2} - \frac{1}{2}i\right) = -i
+\]
+
+\subsection*{Answer}
+$-i$ (opcija \textbf{(D)}).
+
+\end{document}
+

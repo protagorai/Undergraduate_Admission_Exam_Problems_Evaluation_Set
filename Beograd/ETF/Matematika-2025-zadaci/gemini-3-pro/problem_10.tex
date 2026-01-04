@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Ako je zbir prva tri člana rastućeg aritmetičkog niza jednak 15 i njihov proizvod jednak 105, a zbir prvih $n$ članova tog niza jednak 1023, onda je $n$ jednako:
+
+\subsection*{Solution}
+
+Let the terms be $a-d, a, a+d$ (where $d > 0$).
+Sum: $(a-d) + a + (a+d) = 3a = 15 \implies a = 5$.
+Product: $(5-d) \cdot 5 \cdot (5+d) = 105$.
+\[
+5(25 - d^2) = 105 \implies 25 - d^2 = 21 \implies d^2 = 4 \implies d = 2.
+\]
+(Since the sequence is increasing, $d > 0$, so $d=2$).
+The sequence starts: $3, 5, 7, \dots$. First term $a_1 = 3$, difference $d=2$.
+Sum of first $n$ terms $S_n = \frac{n}{2}[2a_1 + (n-1)d] = 1023$.
+\[
+\frac{n}{2}[6 + (n-1)2] = 1023
+\]
+\[
+n[3 + n - 1] = 1023
+\]
+\[
+n(n+2) = 1023 \implies n^2 + 2n - 1023 = 0.
+\]
+Solving for $n$:
+\[
+n = \frac{-2 \pm \sqrt{4 - 4(1)(-1023)}}{2} = -1 \pm \sqrt{1 + 1023} = -1 \pm \sqrt{1024}.
+\]
+\[
+n = -1 \pm 32.
+\]
+Since $n > 0$, $n = 31$.
+
+
+\subsection*{Answer}
+31 (option \textbf{C}).
+
+\end{document}

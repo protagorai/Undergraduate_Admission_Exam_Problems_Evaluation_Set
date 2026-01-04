@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Maksimalna zapremina $V$ pravilne šestostrane piramide upisane u loptu poluprečnika $R$ iznosi:
+
+\subsection*{Rešenje}
+Piramida je pravilna:  osnova je pravilni šestougao poluprečnika (circumradiusa) $r$, a vrh $S$ je iznad centra osnove.
+Pretpostavimo (bez gubitka opštosti, zbog simetrije maksimalne figure) da:
+\begin{itemize}
+  \item svih šest temena osnove leže u jednoj ravni na rastojanju $k$ od centra lopte $O$;
+  \item vrh $S$ leži na suprotnoj strani, tačno na površini lopte (rastojanje $OS=R$).
+\end{itemize}
+Tada za svako temе osnove $A$ važi
+\[OA^{2}=k^{2}+r^{2}=R^{2}\quad\Longrightarrow\quad r^{2}=R^{2}-k^{2}.\]
+Zapremina piramide
+\[
+V=\frac13\,P_{\text{osnove}}\,h,\qquad h=OS+ k=R+k.
+\]
+Za pravilni šestougao čiji je circumradius $r$ površina je
+\[P_{\text{osnove}}=\frac{3\sqrt3}{2}\,r^{2}=\frac{3\sqrt3}{2}(R^{2}-k^{2}).\]
+Dakle
+\[
+V(k)=\frac13\cdot\frac{3\sqrt3}{2}(R^{2}-k^{2})(R+k)=\frac{\sqrt3}{2}(R^{2}-k^{2})(R+k).
+\]
+Postavimo
+\[f(k)=(R^{2}-k^{2})(R+k)=(R-k)(R+k)^{2},\qquad k\in(-R,R).
+\]
+Maksimum dobijamo iz $f'(k)=0$:
+\[
+0=(R+k)(R-3k)\quad\Longrightarrow\quad k=-R\;(\text{min})\;\text{ili}\;k=\frac{R}{3}\;(\text{maks}).
+\]
+Uz $k=R/3$:
+\begin{align*}
+V_{\max}&=\frac{\sqrt3}{2}\bigl(R^{2}-\tfrac{R^{2}}{9}\bigr)\Bigl(R+\tfrac{R}{3}\Bigr)
+          =\frac{\sqrt3}{2}\,\frac{8R^{2}}{9}\,\frac{4R}{3}
+          =\frac{16\sqrt3}{27}\,R^{3}.
+\end{align*}
+
+\subsection*{Odgovor}
+\[\displaystyle \frac{16\sqrt3}{27}\,R^{3}\qquad(\text{opcija A})\]
+
+\end{document}

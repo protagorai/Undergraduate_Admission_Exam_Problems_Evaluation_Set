@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+How many integer solutions does the inequality $(\sqrt{7 + 4\sqrt{3}})^{\cos x} + (\sqrt{7 - 4\sqrt{3}})^{\cos x} \leq 4$ have in the interval $[-2\pi, \sqrt{3} + \sqrt{5}]$?
+
+\subsection*{Solution}
+First, let's simplify $\sqrt{7 + 4\sqrt{3}}$ and $\sqrt{7 - 4\sqrt{3}}$.
+
+Notice that:
+\[
+7 + 4\sqrt{3} = 4 + 4\sqrt{3} + 3 = (2 + \sqrt{3})^2
+\]
+
+So $\sqrt{7 + 4\sqrt{3}} = 2 + \sqrt{3}$.
+
+Similarly:
+\[
+7 - 4\sqrt{3} = 4 - 4\sqrt{3} + 3 = (2 - \sqrt{3})^2
+\]
+
+So $\sqrt{7 - 4\sqrt{3}} = 2 - \sqrt{3}$.
+
+Note that $(2 + \sqrt{3})(2 - \sqrt{3}) = 4 - 3 = 1$, so $2 - \sqrt{3} = \frac{1}{2 + \sqrt{3}}$.
+
+Our inequality becomes:
+\[
+(2 + \sqrt{3})^{\cos x} + (2 - \sqrt{3})^{\cos x} \leq 4
+\]
+
+\[
+(2 + \sqrt{3})^{\cos x} + \frac{1}{(2 + \sqrt{3})^{\cos x}} \leq 4
+\]
+
+Let $y = (2 + \sqrt{3})^{\cos x}$. Then we need:
+\[
+y + \frac{1}{y} \leq 4
+\]
+
+Multiplying by $y > 0$:
+\[
+y^2 + 1 \leq 4y
+\]
+
+\[
+y^2 - 4y + 1 \leq 0
+\]
+
+The roots are $y = \frac{4 \pm \sqrt{16 - 4}}{2} = \frac{4 \pm 2\sqrt{3}}{2} = 2 \pm \sqrt{3}$.
+
+So we need $2 - \sqrt{3} \leq y \leq 2 + \sqrt{3}$.
+
+Since $2 + \sqrt{3} > 1$ and $2 - \sqrt{3} < 1$, and $y = (2 + \sqrt{3})^{\cos x}$:
+
+For $y = 2 + \sqrt{3}$: $(2 + \sqrt{3})^{\cos x} = 2 + \sqrt{3}$, so $\cos x = 1$.
+
+For $y = 2 - \sqrt{3}$: $(2 + \sqrt{3})^{\cos x} = 2 - \sqrt{3} = \frac{1}{2 + \sqrt{3}}$, so $\cos x = -1$.
+
+Therefore, we need $-1 \leq \cos x \leq 1$, which is always true.
+
+So the inequality is satisfied for all real $x$.
+
+In the interval $[-2\pi, \sqrt{3} + \sqrt{5}]$:
+- $\sqrt{3} \approx 1.732$
+- $\sqrt{5} \approx 2.236$
+- $\sqrt{3} + \sqrt{5} \approx 3.968$
+
+So the interval is approximately $[-6.283, 3.968]$.
+
+The integers in this interval are: $-6, -5, -4, -3, -2, -1, 0, 1, 2, 3$.
+
+That's 10 integers.
+
+\subsection*{Answer}
+$10$ (option \textbf{D}).
+
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ako je $k \in \mathbf{R}$, $i^2 = -1$, tada je moduo kompleksnog broja $\left(\frac{1+i}{1-i}\right)^{2015} + \frac{-1+5ki}{3i} - 1$ najmanji za $k$ jednako:
+
+\subsection*{Solution}
+Uprostimo izraze:
+$\frac{1+i}{1-i} = \frac{(1+i)^2}{1^2+1^2} = \frac{1+2i-1}{2} = i$.
+Tada je prvi sabirak $i^{2015} = i^{4 \cdot 503 + 3} = (i^4)^{503} \cdot i^3 = 1 \cdot (-i) = -i$.
+
+Drugi sabirak:
+$\frac{-1+5ki}{3i} = \frac{(-1+5ki)(-3i)}{(3i)(-3i)} = \frac{3i - 15ki^2}{-9i^2} = \frac{3i + 15k}{9} = \frac{15k}{9} + \frac{3i}{9} = \frac{5k}{3} + \frac{1}{3}i$.
+
+Kompleksan broj $z$ je:
+$z = -i + \frac{5k}{3} + \frac{1}{3}i - 1 = \left(\frac{5k}{3} - 1\right) + i\left(\frac{1}{3} - 1\right) = \frac{5k-3}{3} - \frac{2}{3}i$.
+
+Moduo $|z|$ je:
+$|z| = \sqrt{\left(\frac{5k-3}{3}\right)^2 + \left(-\frac{2}{3}\right)^2}$.
+Ovaj izraz je minimalan kada je prvi sabirak (kvadrat) minimalan, odnosno jednak nuli (jer $k \in \mathbf{R}$).
+$\frac{5k-3}{3} = 0 \Rightarrow 5k = 3 \Rightarrow k = \frac{3}{5}$.
+
+\subsection*{Answer}
+$\frac{3}{5}$ (option \textbf{A}).
+
+\end{document}

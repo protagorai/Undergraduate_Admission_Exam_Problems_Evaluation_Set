@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+U tetivnom četvorouglu $ABCD$ dijagonala $BD$ je normalna na stranicu $BC$, uglovi $\measuredangle ABC$ i $\measuredangle BAD$ su jednaki $120^\circ$, a dužina stranice $AD$ jeste $1\,\text{cm}$. Proizvod dužine dijagonale $BD$ i dužine stranice $CD$ jednak je:
+\[
+(A)\ \frac{\sqrt{3}}{2}\,\text{cm}^2\quad (B)\ \sqrt{3}\,\text{cm}^2\quad (C)\ 2\sqrt{3}\,\text{cm}^2\quad (D)\ 6\sqrt{3}\,\text{cm}^2\quad (E)\ 2\,\text{cm}^2\quad (N)\ \text{Ne znam}
+\]
+
+\subsection*{Solution}
+Četvorougao je tetivan, pa je zbir naspramnih uglova $180^\circ$.
+$\angle ABC + \angle ADC = 180^\circ \implies 120^\circ + \angle ADC = 180^\circ \implies \angle ADC = 60^\circ$.
+$\angle BAD + \angle BCD = 180^\circ \implies 120^\circ + \angle BCD = 180^\circ \implies \angle BCD = 60^\circ$.
+U trouglu $BCD$, znamo da je $\angle DBC = 90^\circ$ (dato je $BD \perp BC$) i $\angle BCD = 60^\circ$.
+Sledi $\angle BDC = 180^\circ - 90^\circ - 60^\circ = 30^\circ$.
+Tada je $\angle ADB = \angle ADC - \angle BDC = 60^\circ - 30^\circ = 30^\circ$.
+Posmatrajmo trougao $ABD$. Znamo $\angle BAD = 120^\circ$ i $\angle ADB = 30^\circ$.
+Treći ugao je $\angle ABD = 180^\circ - 120^\circ - 30^\circ = 30^\circ$.
+Kako su dva ugla jednaka ($30^\circ$), trougao $ABD$ je jednakokrak sa osnovicom $BD$.
+Krakovi su jednaki: $AB = AD = 1$.
+Primenimo sinusnu teoremu na trougao $ABD$:
+\[
+\frac{BD}{\sin 120^\circ} = \frac{AD}{\sin 30^\circ} \implies BD = \frac{1 \cdot \frac{\sqrt{3}}{2}}{\frac{1}{2}} = \sqrt{3}
+\]
+Sada posmatrajmo trougao $BCD$. To je pravougli trougao ($\angle B = 90^\circ$) sa uglom $60^\circ$.
+$CD$ je hipotenuza.
+\[
+\sin(\angle BCD) = \sin 60^\circ = \frac{BD}{CD} \implies \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{CD} \implies CD = 2
+\]
+Traženi proizvod je:
+\[
+BD \cdot CD = \sqrt{3} \cdot 2 = 2\sqrt{3}
+\]
+
+\subsection*{Answer}
+$2\sqrt{3}\,\text{cm}^2$ (option \textbf{C}).
+
+\end{document}

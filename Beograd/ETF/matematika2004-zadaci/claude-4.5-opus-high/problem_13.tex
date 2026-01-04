@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Sistem jednačina $3^x - 2^{y^2} = 77$, $3^{\frac{x}{2}} - 2^{\frac{y^2}{2}} = 7$ ima:
+
+A) jedno realno rešenje; \quad B) dva realna rešenja; \quad C) četiri realna rešenja; 
+
+D) tri realna rešenja; \quad E) prazan skup realnih rešenja; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Neka je $u = 3^{\frac{x}{2}}$ i $v = 2^{\frac{y^2}{2}}$. Tada:
+\[
+3^x = u^2, \quad 2^{y^2} = v^2
+\]
+
+Sistem postaje:
+\begin{align*}
+u^2 - v^2 &= 77\\
+u - v &= 7
+\end{align*}
+
+Iz prve jednačine:
+\[
+(u-v)(u+v) = 77
+\]
+\[
+7(u+v) = 77
+\]
+\[
+u + v = 11
+\]
+
+Sada imamo sistem:
+\begin{align*}
+u - v &= 7\\
+u + v &= 11
+\end{align*}
+
+Sabiranjem: $2u = 18 \Rightarrow u = 9$
+
+Oduzimanjem: $2v = 4 \Rightarrow v = 2$
+
+Proveravamo: $u > 0$ i $v > 0$ su zadovoljeni.
+
+Iz $u = 9 = 3^{\frac{x}{2}}$:
+\[
+3^{\frac{x}{2}} = 3^2 \Rightarrow \frac{x}{2} = 2 \Rightarrow x = 4
+\]
+
+Iz $v = 2 = 2^{\frac{y^2}{2}}$:
+\[
+2^{\frac{y^2}{2}} = 2^1 \Rightarrow \frac{y^2}{2} = 1 \Rightarrow y^2 = 2 \Rightarrow y = \pm\sqrt{2}
+\]
+
+Dakle imamo dva rešenja: $(x, y) = (4, \sqrt{2})$ i $(x, y) = (4, -\sqrt{2})$.
+
+\subsection*{Odgovor}
+Dva realna rešenja (opcija \textbf{B}).
+
+\end{document}

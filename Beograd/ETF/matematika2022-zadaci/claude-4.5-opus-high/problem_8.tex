@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Find the number of distinct natural numbers that can be written using digits 1, 2, 3, 4, 5 such that each digit is used at most once.
+
+(A) 325 \quad (B) 120 \quad (C) 5 \quad (D) 3125 \quad (E) 450
+
+\subsection*{Solution}
+We need to count all possible natural numbers formed by using the digits 1, 2, 3, 4, 5 where each digit appears at most once in each number.
+
+\textbf{1-digit numbers:}
+We can choose any one of the 5 digits.
+\[
+\text{Count} = 5
+\]
+
+\textbf{2-digit numbers:}
+Choose 2 digits from 5 and arrange them.
+\[
+\text{Count} = P(5,2) = 5 \times 4 = 20
+\]
+
+\textbf{3-digit numbers:}
+Choose 3 digits from 5 and arrange them.
+\[
+\text{Count} = P(5,3) = 5 \times 4 \times 3 = 60
+\]
+
+\textbf{4-digit numbers:}
+Choose 4 digits from 5 and arrange them.
+\[
+\text{Count} = P(5,4) = 5 \times 4 \times 3 \times 2 = 120
+\]
+
+\textbf{5-digit numbers:}
+Use all 5 digits and arrange them.
+\[
+\text{Count} = P(5,5) = 5! = 120
+\]
+
+\textbf{Total:}
+\[
+5 + 20 + 60 + 120 + 120 = 325
+\]
+
+\subsection*{Answer}
+$325$ (option \textbf{A}).
+
+\end{document}

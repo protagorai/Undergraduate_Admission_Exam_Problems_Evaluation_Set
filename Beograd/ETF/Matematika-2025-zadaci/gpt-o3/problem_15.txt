@@ -1,0 +1,2 @@
+15. Broj realnih i različitih rešenja jednačine tg^2 x = \frac{1 − \cos x}{1 − \sin x}  na segmentu [0, 2π] je:
+(A) 3   (B) 4   (C) 2   (D) 1   (E) više od 4   (N) Ne znam

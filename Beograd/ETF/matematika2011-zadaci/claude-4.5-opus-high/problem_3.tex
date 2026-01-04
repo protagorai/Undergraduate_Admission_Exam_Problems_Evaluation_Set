@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+If $|x| > 2$, $x \in \mathbf{R}$, then the expression 
+\[
+\frac{x + 2 + \sqrt{x^2 - 4}}{x + 2 - \sqrt{x^2 - 4}} + \frac{x + 2 - \sqrt{x^2 - 4}}{x + 2 + \sqrt{x^2 - 4}}
+\]
+is identically equal to:
+
+\subsection*{Solution}
+Let $a = x + 2$ and $b = \sqrt{x^2 - 4}$. The expression becomes:
+\[
+\frac{a + b}{a - b} + \frac{a - b}{a + b}
+\]
+
+Finding a common denominator:
+\[
+\frac{(a + b)^2 + (a - b)^2}{(a - b)(a + b)} = \frac{a^2 + 2ab + b^2 + a^2 - 2ab + b^2}{a^2 - b^2}
+\]
+\[
+= \frac{2a^2 + 2b^2}{a^2 - b^2} = \frac{2(a^2 + b^2)}{a^2 - b^2}
+\]
+
+Now substitute back:
+\begin{align*}
+a^2 &= (x + 2)^2 = x^2 + 4x + 4 \\
+b^2 &= x^2 - 4 \\
+a^2 + b^2 &= x^2 + 4x + 4 + x^2 - 4 = 2x^2 + 4x \\
+a^2 - b^2 &= x^2 + 4x + 4 - (x^2 - 4) = 4x + 8 = 4(x + 2)
+\end{align*}
+
+Therefore:
+\[
+\frac{2(2x^2 + 4x)}{4(x + 2)} = \frac{4x(x + 2)}{4(x + 2)} = x
+\]
+
+(Note: For $|x| > 2$, we have $x + 2 \neq 0$ when $x > 2$, and when $x < -2$, we need to be careful, but the algebra still works out to $x$.)
+
+\subsection*{Answer}
+\textbf{(C)} $x$
+
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 15}
+Broj rešenja jednačine $\frac{\cos 3x + \cos 4x + \cos 5x}{\sin x - \sqrt{3}\cos x} = 0$ na segmentu $[0, \pi]$ iznosi:
+
+\subsection*{Solution}
+Razlomak je jednak nuli kada je brojilac jednak nuli, a imenilac različit od nule.
+
+1. Uslov brojilac = 0:
+$\cos 3x + \cos 4x + \cos 5x = 0$
+Grupišemo $\cos 3x$ i $\cos 5x$:
+$\cos 3x + \cos 5x = 2 \cos \frac{5x+3x}{2} \cos \frac{5x-3x}{2} = 2 \cos 4x \cos x$.
+Jednačina postaje:
+$2 \cos 4x \cos x + \cos 4x = 0$
+$\cos 4x (2 \cos x + 1) = 0$.
+
+Ovo se razlaže na dva slučaja:
+a) $\cos 4x = 0$
+$4x = \frac{\pi}{2} + k\pi$
+$x = \frac{\pi}{8} + \frac{k\pi}{4}$.
+Rešenja u $[0, \pi]$:
+$k=0 \implies x_1 = \pi/8$.
+$k=1 \implies x_2 = 3\pi/8$.
+$k=2 \implies x_3 = 5\pi/8$.
+$k=3 \implies x_4 = 7\pi/8$.
+
+b) $2 \cos x + 1 = 0 \implies \cos x = -1/2$.
+Na $[0, \pi]$, rešenje je $x_5 = 2\pi/3$.
+
+2. Uslov imenilac $\neq 0$:
+$\sin x - \sqrt{3}\cos x \neq 0$
+$\sin x \neq \sqrt{3}\cos x$.
+Ako je $\cos x \neq 0$, delimo sa $\cos x$:
+$\tan x \neq \sqrt{3}$.
+$x \neq \frac{\pi}{3} + n\pi$.
+U $[0, \pi]$, $x \neq \pi/3$.
+
+Proveravamo kandidate:
+$x_1 = \pi/8 \neq \pi/3$ (22.5 vs 60 stepeni) - OK.
+$x_2 = 3\pi/8 \neq \pi/3$ (67.5 vs 60) - OK.
+$x_3 = 5\pi/8 \neq \pi/3$ (112.5 vs 60) - OK.
+$x_4 = 7\pi/8 \neq \pi/3$ (157.5 vs 60) - OK.
+$x_5 = 2\pi/3 \neq \pi/3$ (120 vs 60) - OK.
+
+Takođe treba proveriti da li je $\cos x = 0$ za imenilac. Ako $\cos x = 0$, onda $\sin x = \pm 1 \neq 0$, pa imenilac nije 0.
+
+Dakle, imamo 5 rešenja.
+
+\subsection*{Answer}
+$5$ (option \textbf{C}).
+
+\end{document}
+

@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Neka je data kvadratna jednačina $p^2x^2 + p^3x + 1 = 0$, $p$ je pozitivan realan broj, i neka su $x_1$ i $x_2$ realna rešenja (realni koreni) date jednačine. Za koju vrednost parametra $p$ izraz $x_1^4 + x_2^4$ dostiže svoju minimalnu vrednost?
+
+\subsection*{Solution}
+Po Vijetovim formulama:
+\[
+x_1 + x_2 = -\frac{p^3}{p^2} = -p
+\]
+\[
+x_1 x_2 = \frac{1}{p^2}
+\]
+
+Da bi jednačina imala realne korene, diskriminanta mora biti nenegativna:
+\[
+D = p^6 - 4p^2 \geq 0
+\]
+\[
+p^2(p^4 - 4) \geq 0
+\]
+\[
+p^4 \geq 4
+\]
+\[
+p \geq \sqrt[4]{4} = \sqrt{2}
+\]
+
+Izračunajmo $x_1^4 + x_2^4$:
+\[
+x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = p^2 - \frac{2}{p^2}
+\]
+\[
+x_1^4 + x_2^4 = (x_1^2 + x_2^2)^2 - 2(x_1x_2)^2 = \left(p^2 - \frac{2}{p^2}\right)^2 - \frac{2}{p^4}
+\]
+\[
+= p^4 - 4 + \frac{4}{p^4} - \frac{2}{p^4} = p^4 - 4 + \frac{2}{p^4}
+\]
+
+Neka je $f(p) = p^4 - 4 + \frac{2}{p^4}$ za $p \geq \sqrt{2}$.
+
+Tražimo minimum:
+\[
+f'(p) = 4p^3 - \frac{8}{p^5} = \frac{4p^8 - 8}{p^5} = \frac{4(p^8 - 2)}{p^5}
+\]
+
+$f'(p) = 0$ kada je $p^8 = 2$, tj. $p = 2^{1/8} = \sqrt[8]{2}$.
+
+Ali $\sqrt[8]{2} \approx 1.09 < \sqrt{2} \approx 1.41$, dakle ova kritična tačka je van dozvoljenog domena.
+
+Na intervalu $[\sqrt{2}, +\infty)$, $f'(p) > 0$ za sve $p$ (jer $p^8 > 2$ za $p > \sqrt[8]{2}$, a $\sqrt{2} > \sqrt[8]{2}$).
+
+Proverimo: za $p = \sqrt{2}$: $p^8 = (\sqrt{2})^8 = 2^4 = 16 > 2$. Dakle $f'(p) > 0$ za $p \geq \sqrt{2}$.
+
+Funkcija $f$ je rastuća na $[\sqrt{2}, +\infty)$, pa minimum dostiže u $p = \sqrt{2}$.
+
+\subsection*{Answer}
+$p = \sqrt{2}$ (option \textbf{C}).
+
+\end{document}

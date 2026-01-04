@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+Ako je $|x + a| = a$ $(a \geq 0)$, tada je $||x| - a|$ jednako:
+
+(A) 0 \quad (B) $a$ \quad (C) $2a$ \quad (D) $3a$ \quad (E) $\frac{a}{2}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+From $|x + a| = a$ with $a \geq 0$, we have:
+\[
+-a \leq x + a \leq a
+\]
+\[
+-2a \leq x \leq 0
+\]
+
+So $x \in [-2a, 0]$, which means $|x| \in [0, 2a]$.
+
+Now we need to find $||x| - a|$.
+
+Since $|x| \in [0, 2a]$, we have $|x| - a \in [-a, a]$.
+
+Therefore $||x| - a| \in [0, a]$.
+
+But we need a single value. Let's check specific cases:
+
+\textbf{Case 1:} If $x = 0$, then $|0 + a| = a$ ✓, and $||0| - a| = |0 - a| = a$.
+
+\textbf{Case 2:} If $x = -a$, then $|-a + a| = 0 \neq a$ (unless $a = 0$).
+
+\textbf{Case 3:} If $x = -2a$, then $|-2a + a| = |-a| = a$ ✓, and $||-2a| - a| = |2a - a| = a$.
+
+For any $x$ satisfying $|x + a| = a$:
+- If $x \geq 0$: $|x + a| = x + a = a \Rightarrow x = 0$. Then $||x| - a| = |0 - a| = a$.
+- If $x < 0$: $|x + a| = a$ means either $x + a = a$ (so $x = 0$, contradiction) or $x + a = -a$ (so $x = -2a$), or $-a \leq x + a \leq a$.
+
+For $x \in [-2a, 0]$, we have $|x| = -x \in [0, 2a]$.
+
+$||x| - a| = |-x - a|$
+
+When $-x \geq a$ (i.e., $x \leq -a$): $||x| - a| = -x - a$
+When $-x < a$ (i.e., $x > -a$): $||x| - a| = a - (-x) = a + x$
+
+The question asks for a unique answer, so the answer depends on $x$. However, checking the boundary values that satisfy the original equation exactly ($x = 0$ and $x = -2a$), both give $||x| - a| = a$.
+
+\subsection*{Answer}
+$a$ (option \textbf{B}).
+
+\end{document}

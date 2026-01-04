@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Vrednost izraza $\left(\frac{x-9}{x+3\sqrt{x}+9} : \frac{x^{0.5}+3}{x^{1.5}-27}\right)^{0.5} - x^{0.5}$, za $x \in (9, +\infty)$, je:
+
+\textbf{A)} $x$; \quad \textbf{B)} $3 - 2\sqrt{x}$; \quad \textbf{C)} $-3$; \quad \textbf{D)} $\frac{3}{27}$; \quad \textbf{E)} $\sqrt{x}$
+
+\subsection*{Solution}
+Neka je $u = \sqrt{x} = x^{0.5}$, pa je $x = u^2$ i $x^{1.5} = u^3$.
+
+Izraz postaje:
+\[
+\left(\frac{u^2-9}{u^2+3u+9} : \frac{u+3}{u^3-27}\right)^{0.5} - u
+\]
+
+Faktorizujmo:
+\begin{itemize}
+\item $u^2 - 9 = (u-3)(u+3)$
+\item $u^3 - 27 = (u-3)(u^2+3u+9)$
+\end{itemize}
+
+Deljenje razlomaka pretvaramo u množenje:
+\[
+\frac{u^2-9}{u^2+3u+9} \cdot \frac{u^3-27}{u+3} = \frac{(u-3)(u+3)}{u^2+3u+9} \cdot \frac{(u-3)(u^2+3u+9)}{u+3}
+\]
+
+Skraćujemo:
+\[
+= \frac{(u-3)(u+3)(u-3)(u^2+3u+9)}{(u^2+3u+9)(u+3)} = (u-3)^2
+\]
+
+Sada:
+\[
+\left((u-3)^2\right)^{0.5} - u = |u-3| - u
+\]
+
+Za $x \in (9, +\infty)$, imamo $u = \sqrt{x} > 3$, pa je $u - 3 > 0$, što znači $|u-3| = u-3$.
+
+Dakle:
+\[
+(u-3) - u = -3
+\]
+
+\subsection*{Answer}
+$-3$ (option \textbf{C}).
+
+\end{document}

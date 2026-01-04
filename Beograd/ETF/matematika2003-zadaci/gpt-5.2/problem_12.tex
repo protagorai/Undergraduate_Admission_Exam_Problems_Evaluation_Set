@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Odrediti broj re\v{s}enja jedna\v{c}ine
+\[
+(\cos x)^{\sin^2 x-\frac{3}{2}\sin x+\frac12}=1
+\]
+na intervalu $\left[0,\frac{\pi}{2}\right]$.
+
+\subsection*{Solution}
+Na intervalu $\left[0,\frac{\pi}{2}\right]$ va\v{z}i $\cos x\in[0,1]$.
+Neka je
+\[
+E(x)=\sin^2 x-\frac{3}{2}\sin x+\frac12.
+\]
+Ozna\v{c}imo $s=\sin x\in[0,1]$. Tada
+\[
+E=s^2-\frac32 s+\frac12=(s-1)\left(s-\frac12\right).
+\]
+
+Za $0<\cos x<1$ jednakost $(\cos x)^{E}=1$ va\v{z}i samo ako je $E=0$.
+Slu\v{c}ajevi:
+\begin{itemize}
+\item $x=0$: tada je $\cos x=1$ pa je $1^{E}=1$ (re\v{s}enje).
+\item $E=0$: to je kada je $s=1$ ili $s=\frac12$.
+Za $s=1$ dobijamo $x=\frac{\pi}{2}$, ali tada je $\cos x=0$ i izraz $0^0$ nije definisan, pa nije re\v{s}enje.
+Za $s=\frac12$ dobijamo $x=\frac{\pi}{6}$ i $\cos x=\frac{\sqrt3}{2}>0$, pa je re\v{s}enje.
+\end{itemize}
+Drugih re\v{s}enja nema.
+
+\subsection*{Answer}
+$2$ re\v{s}enja (option \textbf{C}), i to $x=0$ i $x=\frac{\pi}{6}$.
+
+\end{document}
+

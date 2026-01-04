@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 18}
+U pravilnu četvorostranu zarubljenu piramidu upisana je lopta. Ako je visina bočne strane zarubljene piramide jednaka $\sqrt{3} cm$, a ugao koji bočne ivice zaklapaju sa ivicama veće osnove jednak $60^0$, onda je odnos zapremina zarubljene piramide i lopte:
+\begin{itemize}
+    \item[(A)] $10\sqrt{2}:\pi$
+    \item[(B)] $5:4\pi$
+    \item[(C)] $5:6\pi$
+    \item[(D)] $10:\pi$
+    \item[(E)] $20:\pi$
+    \item[(N)] Ne znam
+\end{itemize}
+
+\subsection*{Solution}
+Neka su osnovice $a$ i $b$ ($a > b$), a visina bočne strane (apotema) $h = \sqrt{3}$.
+Bočna strana je jednakokraki trapez. Ugao na većoj osnovici je $60^\circ$.
+Visina trapeza je $h = \frac{a-b}{2} \tan 60^\circ = \frac{a-b}{2} \sqrt{3}$.
+Iz $h = \sqrt{3}$ sledi $\frac{a-b}{2} = 1 \implies a-b = 2$.
+Uslov da se u zarubljenu piramidu može upisati lopta povlači da se u osni presek (koji je takođe jednakokraki trapez sa visinom piramide $H$ i krakom $h$) može upisati krug (poluprečnika $r = H/2$).
+Takođe, za postojanje upisane lopte, potreban je i uslov tangencijalnosti bočnih strana?
+Zapravo, uslov za loptu je da je visina $H$ jednaka prečniku upisane lopte, i da se u poprečni presek (kroz sredine stranica osnova) može upisati krug.
+Taj presek je trapez sa osnovicama $a$ i $b$ i kracima $h$.
+Uslov tangentnosti četvorougla: $a+b = 2h = 2\sqrt{3}$.
+Rešavamo sistem:
+$a-b = 2$
+$a+b = 2\sqrt{3}$
+Sledi $2a = 2+2\sqrt{3} \implies a = 1+\sqrt{3}$.
+$2b = 2\sqrt{3}-2 \implies b = \sqrt{3}-1$.
+Visina piramide $H$ je prečnik upisane lopte.
+$H^2 = h^2 - (\frac{a-b}{2})^2 = (\sqrt{3})^2 - 1^2 = 2$.
+$H = \sqrt{2}$. Poluprečnik lopte $r = \frac{\sqrt{2}}{2}$.
+Zapremina lopte $V_L = \frac{4}{3} \pi r^3 = \frac{4}{3} \pi \frac{2\sqrt{2}}{8} = \frac{\pi\sqrt{2}}{3}$.
+Zapremina piramide $V_P = \frac{H}{3} (a^2 + ab + b^2)$.
+$a^2 + b^2 = (\sqrt{3}+1)^2 + (\sqrt{3}-1)^2 = 8$.
+$ab = (\sqrt{3}+1)(\sqrt{3}-1) = 2$.
+$V_P = \frac{\sqrt{2}}{3} (8 + 2) = \frac{10\sqrt{2}}{3}$.
+Odnos $V_P : V_L = \frac{10\sqrt{2}}{3} : \frac{\pi\sqrt{2}}{3} = 10 : \pi$.
+
+\subsection*{Answer}
+$10:\pi$ (option \textbf{D}).
+
+\end{document}

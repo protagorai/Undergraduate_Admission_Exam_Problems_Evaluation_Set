@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Odrediti ukupan broj realnih rešenja sistema:
+\[
+50\left(\frac25\right)^{2x+3y-10}+20\left(\frac52\right)^{2x+3y-10}=133,
+\qquad (x+3)(y-1)=6.
+\]
+
+\subsection*{Solution}
+Označimo
+\[
+t=\left(\frac25\right)^{2x+3y-10}>0.
+\]
+Tada je
+\[
+\left(\frac52\right)^{2x+3y-10}=t^{-1},
+\]
+pa prva jednačina postaje
+\[
+50t+20t^{-1}=133.
+\]
+Množenjem sa $t$ dobijamo kvadratnu jednačinu:
+\[
+50t^2-133t+20=0.
+\]
+Diskriminanta je
+\[
+\Delta=133^2-4\cdot 50\cdot 20=17689-4000=13689=117^2,
+\]
+pa su rešenja
+\[
+t=\frac{133\pm 117}{100}\in\left\{\frac52,\frac{4}{25}\right\}.
+\]
+
+\medskip
+\textbf{Slučaj 1: $t=\frac52$.}
+Pošto je $\left(\frac25\right)^{-1}=\frac52$, dobijamo $2x+3y-10=-1$, tj.
+\[
+2x+3y=9.
+\]
+
+\medskip
+\textbf{Slučaj 2: $t=\frac{4}{25}=\left(\frac25\right)^2$.}
+Tada je $2x+3y-10=2$, tj.
+\[
+2x+3y=12.
+\]
+
+\medskip
+Druga jednačina daje
+\[
+y-1=\frac{6}{x+3}\quad (x\ne -3) \quad\Rightarrow\quad y=1+\frac{6}{x+3}.
+\]
+Ubacivanjem u $2x+3y=c$ (gde je $c\in\{9,12\}$) dobijamo:
+\[
+2x+3\left(1+\frac{6}{x+3}\right)=c
+\;\Longleftrightarrow\;
+2x+3+\frac{18}{x+3}=c.
+\]
+Neka je $u=x+3$ (pa $x=u-3$). Tada
+\[
+2(u-3)+\frac{18}{u}=c-3
+\;\Longleftrightarrow\;
+2u+\frac{18}{u}=c+3
+\;\Longleftrightarrow\;
+2u^2-(c+3)u+18=0.
+\]
+
+\smallskip
+\emph{Za $c=9$:} $2u^2-12u+18=0\Rightarrow u^2-6u+9=0\Rightarrow (u-3)^2=0$,
+pa je $u=3$, $x=0$, $y=1+\frac{6}{3}=3$. Jedno rešenje.
+
+\smallskip
+\emph{Za $c=12$:} $2u^2-15u+18=0$, $\Delta=225-144=81$, pa je
+\[
+u=\frac{15\pm 9}{4}\in\left\{6,\frac32\right\}.
+\]
+To daje $(x,y)=(3,2)$ i $(x,y)=\left(-\frac32,5\right)$. Dva rešenja.
+
+\medskip
+Ukupno ima $1+2=3$ realna rešenja.
+
+\subsection*{Answer}
+$3$ (option \textbf{D}).
+
+\end{document}
+

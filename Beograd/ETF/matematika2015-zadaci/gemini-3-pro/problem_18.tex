@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Tangenta krive $y = e^{-x} (x > -1)$, seče koordinatne ose u tačkama $A$ i $B$. Ako je $O$ koordinatni početak, maksimalna površina trougla $OAB$ iznosi:
+
+\subsection*{Solution}
+Jednačina tangente u $x_0$: $y - e^{-x_0} = -e^{-x_0}(x - x_0)$.
+Presek sa x-osom ($y=0$): $x_A = x_0 + 1$.
+Presek sa y-osom ($x=0$): $y_B = e^{-x_0}(1 + x_0)$.
+Površina trougla $P(x_0) = \frac{1}{2} x_A y_B = \frac{1}{2} (x_0+1)^2 e^{-x_0}$.
+Izvod: $P'(x) = \frac{1}{2} [2(x+1)e^{-x} - (x+1)^2 e^{-x}] = \frac{1}{2} e^{-x} (x+1)(1-x)$.
+Maksimum za $x=1$ (jer $x > -1$).
+$P(1) = \frac{1}{2} (2)^2 e^{-1} = 2e^{-1} = \frac{2}{e}$.
+
+\subsection*{Answer}
+$\frac{2}{e}$ (option \textbf{B}).
+
+\end{document}

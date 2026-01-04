@@ -1,0 +1,2 @@
+Ako je $\cos 2x = 1/2$ pri čemu je $0 < x < \pi$, tada je $\sin 7x$ jednako:
+A) 0; B) $\frac{\sqrt{3}}{2}$; C) 1; D) $-1$; E) $-\frac{1}{2}$; N) Ne znam.

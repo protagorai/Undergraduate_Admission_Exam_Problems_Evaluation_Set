@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Broj realnih i različitih rešenja jednačine $\cos 7x - \sin 5x = \sqrt{3}(\cos 5x - \sin 7x)$ na segmentu $\left[0, \frac{\pi}{2}\right]$ je:
+
+(A) veći od 4 \quad (B) 2 \quad (C) 4 \quad (D) 1 \quad (E) 3
+
+\subsection*{Solution}
+Sredimo jednačinu:
+\[
+\cos 7x - \sin 5x = \sqrt{3}\cos 5x - \sqrt{3}\sin 7x
+\]
+Grupišemo članove sa $7x$ i $5x$:
+\[
+\cos 7x + \sqrt{3}\sin 7x = \sin 5x + \sqrt{3}\cos 5x
+\]
+Podelimo sa 2:
+\[
+\frac{1}{2}\cos 7x + \frac{\sqrt{3}}{2}\sin 7x = \frac{1}{2}\sin 5x + \frac{\sqrt{3}}{2}\cos 5x
+\]
+Koristimo adicione formule.
+Leva strana: $\sin(30^\circ)\cos 7x + \cos(30^\circ)\sin 7x = \sin(7x + \frac{\pi}{6})$.
+Desna strana: $\sin 5x \cos(60^\circ) + \cos 5x \sin(60^\circ) = \sin(5x + \frac{\pi}{3})$.
+Dakle:
+\[
+\sin\left(7x + \frac{\pi}{6}\right) = \sin\left(5x + \frac{\pi}{3}\right)
+\]
+Imamo dva slučaja:
+1) $7x + \frac{\pi}{6} = 5x + \frac{\pi}{3} + 2k\pi$
+\[
+2x = \frac{\pi}{6} + 2k\pi \Rightarrow x = \frac{\pi}{12} + k\pi
+\]
+Za $k=0, x = \pi/12$. To je u $[0, \pi/2]$.
+Za $k=1, x = 13\pi/12 > \pi/2$.
+
+2) $7x + \frac{\pi}{6} = \pi - (5x + \frac{\pi}{3}) + 2k\pi$
+\[
+7x + \frac{\pi}{6} = \frac{2\pi}{3} - 5x + 2k\pi
+\]
+\[
+12x = \frac{\pi}{2} + 2k\pi \Rightarrow x = \frac{\pi}{24} + \frac{k\pi}{6}
+\]
+Tražimo rešenja u $[0, \pi/2]$.
+$k=0: x = \pi/24$.
+$k=1: x = \pi/24 + 4\pi/24 = 5\pi/24$.
+$k=2: x = \pi/24 + 8\pi/24 = 9\pi/24 = 3\pi/8$.
+$k=3: x = \pi/24 + 12\pi/24 = 13\pi/24 > 12\pi/24 = \pi/2$.
+
+Dakle imamo rešenja: $\pi/12, \pi/24, 5\pi/24, 3\pi/8$.
+Sva su različita i u intervalu.
+Broj rešenja je 4.
+
+\subsection*{Answer}
+$4$ (opcija \textbf{(C)}).
+
+\end{document}

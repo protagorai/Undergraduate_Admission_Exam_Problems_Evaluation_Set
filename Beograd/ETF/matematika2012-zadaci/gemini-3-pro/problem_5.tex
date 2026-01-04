@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 5}
+Ako se zna da je polinom $x^3 + ax^2 + bx - 4$ ($a, b \in \mathbf{R}$) deljiv polinomom $x^2 - 1$, tada zbir $a^2 + b^2$ iznosi:
+
+\subsection*{Solution}
+Let $P(x) = x^3 + ax^2 + bx - 4$.
+Since $P(x)$ is divisible by $x^2 - 1 = (x-1)(x+1)$, it must be that $P(1) = 0$ and $P(-1) = 0$.
+1) $P(1) = 1 + a + b - 4 = 0 \implies a + b = 3$
+2) $P(-1) = -1 + a - b - 4 = 0 \implies a - b = 5$
+
+Adding the two equations:
+\[
+2a = 8 \implies a = 4
+\]
+Subtracting the second from the first:
+\[
+2b = -2 \implies b = -1
+\]
+We need to find $a^2 + b^2$:
+\[
+a^2 + b^2 = 4^2 + (-1)^2 = 16 + 1 = 17
+\]
+
+\subsection*{Answer}
+(B) 17
+
+\end{document}

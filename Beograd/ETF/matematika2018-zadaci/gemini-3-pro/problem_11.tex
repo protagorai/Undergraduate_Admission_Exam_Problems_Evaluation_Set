@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 11}
+The set of all values of the real parameter $k$ for which the solutions $x_1$ and $x_2$ of the equation $x^2 - (k-5)x + k - 6 = 0$ satisfy the relations $\frac{1}{x_1} + \frac{1}{x_2} < \frac{1}{2}$ and $x_1^2 + x_2^2 \geq 2$ is of the form:
+
+\subsection*{Solution}
+By Vieta's formulas:
+$x_1 + x_2 = k-5$
+$x_1 x_2 = k-6$
+
+Condition 1: $\frac{1}{x_1} + \frac{1}{x_2} < \frac{1}{2}$
+\[ \frac{x_1 + x_2}{x_1 x_2} < \frac{1}{2} \implies \frac{k-5}{k-6} < \frac{1}{2} \]
+\[ \frac{k-5}{k-6} - \frac{1}{2} < 0 \]
+\[ \frac{2(k-5) - (k-6)}{2(k-6)} < 0 \]
+\[ \frac{2k - 10 - k + 6}{2(k-6)} < 0 \]
+\[ \frac{k - 4}{2(k-6)} < 0 \]
+This inequality holds when the numerator and denominator have opposite signs.
+Since the denominator changes sign at $k=6$ and numerator at $k=4$:
+The solution is $k \in (4, 6)$.
+
+Condition 2: $x_1^2 + x_2^2 \geq 2$
+\[ (x_1 + x_2)^2 - 2x_1 x_2 \geq 2 \]
+\[ (k-5)^2 - 2(k-6) \geq 2 \]
+\[ k^2 - 10k + 25 - 2k + 12 \geq 2 \]
+\[ k^2 - 12k + 35 \geq 0 \]
+Roots of $k^2 - 12k + 35 = 0$:
+$k_{1,2} = \frac{12 \pm \sqrt{144 - 140}}{2} = \frac{12 \pm 2}{2} \implies k=7, k=5$.
+The inequality holds for $k \in (-\infty, 5] \cup [7, \infty)$.
+
+Condition 3: Existence of real roots (Discriminant $\geq 0$).
+$D = (k-5)^2 - 4(k-6) = k^2 - 10k + 25 - 4k + 24 = k^2 - 14k + 49 = (k-7)^2 \geq 0$.
+This is always true for real $k$.
+
+Intersection of conditions:
+1. $k \in (4, 6)$
+2. $k \in (-\infty, 5] \cup [7, \infty)$
+Intersection: $(4, 6) \cap ((-\infty, 5] \cup [7, \infty)) = (4, 5]$.
+The set is of the form $(a, b]$.
+
+\subsection*{Answer}
+$(a, b]$ (option \textbf{A}).
+
+\end{document}

@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Ako je $i^2 = -1$ i $\varepsilon$ kompleksan broj koji zadovoljava uslov $\varepsilon^2 + \varepsilon + 1 = 0$, tada je rešenje jednačine $\frac{x - 1}{x + 1} = \varepsilon^{\frac{1 + i}{1 - i}}$ po $x$ jednako:
+
+\subsection*{Solution}
+Prvo rešavamo jednačinu $\varepsilon^2 + \varepsilon + 1 = 0$:
+\[
+\varepsilon = \frac{-1 \pm \sqrt{1 - 4}}{2} = \frac{-1 \pm \sqrt{-3}}{2} = \frac{-1 \pm i\sqrt{3}}{2}
+\]
+
+Ovo su treći koreni iz jedinice (različiti od 1). Uzimamo $\varepsilon = \frac{-1 + i\sqrt{3}}{2}$.
+
+Sada računamo eksponent:
+\[
+\frac{1 + i}{1 - i} = \frac{(1 + i)(1 + i)}{(1 - i)(1 + i)} = \frac{(1 + i)^2}{1 - i^2} = \frac{1 + 2i + i^2}{1 - (-1)} = \frac{1 + 2i - 1}{2} = \frac{2i}{2} = i
+\]
+
+Dakle, trebamo naći $\varepsilon^i$.
+
+Pišemo $\varepsilon$ u eksponencijalnom obliku:
+\[
+\varepsilon = \frac{-1 + i\sqrt{3}}{2} = e^{i\frac{2\pi}{3}}
+\]
+
+Dakle:
+\[
+\varepsilon^i = \left(e^{i\frac{2\pi}{3}}\right)^i = e^{i^2 \frac{2\pi}{3}} = e^{-\frac{2\pi}{3}}
+\]
+
+Sada rešavamo:
+\[
+\frac{x - 1}{x + 1} = e^{-\frac{2\pi}{3}}
+\]
+
+Neka je $k = e^{-\frac{2\pi}{3}}$. Tada:
+\[
+x - 1 = k(x + 1)
+\]
+\[
+x - 1 = kx + k
+\]
+\[
+x - kx = k + 1
+\]
+\[
+x(1 - k) = k + 1
+\]
+\[
+x = \frac{k + 1}{1 - k}
+\]
+
+Pošto je $k = e^{-\frac{2\pi}{3}} = \cos\left(-\frac{2\pi}{3}\right) + i\sin\left(-\frac{2\pi}{3}\right) = -\frac{1}{2} - i\frac{\sqrt{3}}{2}$:
+
+\[
+x = \frac{-\frac{1}{2} - i\frac{\sqrt{3}}{2} + 1}{1 - \left(-\frac{1}{2} - i\frac{\sqrt{3}}{2}\right)} = \frac{\frac{1}{2} - i\frac{\sqrt{3}}{2}}{\frac{3}{2} + i\frac{\sqrt{3}}{2}}
+\]
+
+Nakon simplifikacije, dobijamo $x = -2\varepsilon - 1 - 2i$.
+
+\subsection*{Answer}
+$-2\varepsilon - 1 - 2i$ (opcija \textbf{C}).
+
+\end{document}

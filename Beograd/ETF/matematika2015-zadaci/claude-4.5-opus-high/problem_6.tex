@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Prav valjak i prava kupa imaju zajedničku osnovu. Vrh kupe je centar druge osnove valjka. Ako je odnos visine valjka i izvodnice kupe 4:5, tada je odnos površina valjka i kupe jednak:
+
+\subsection*{Solution}
+Let $r$ be the radius of the common base, $h$ be the height of the cylinder, and $l$ be the slant height (izvodnica) of the cone.
+
+Given: $\dfrac{h}{l} = \dfrac{4}{5}$, so $l = \dfrac{5h}{4}$.
+
+The cone has the same height as the cylinder (since its apex is at the center of the other base), so the cone's height is also $h$.
+
+For the cone: $l^2 = r^2 + h^2$
+\[
+\left(\frac{5h}{4}\right)^2 = r^2 + h^2
+\]
+\[
+\frac{25h^2}{16} = r^2 + h^2
+\]
+\[
+r^2 = \frac{25h^2}{16} - h^2 = \frac{25h^2 - 16h^2}{16} = \frac{9h^2}{16}
+\]
+\[
+r = \frac{3h}{4}
+\]
+
+Surface area of cylinder (total):
+\[
+S_{\text{cylinder}} = 2\pi r^2 + 2\pi r h = 2\pi r(r + h) = 2\pi \cdot \frac{3h}{4}\left(\frac{3h}{4} + h\right) = 2\pi \cdot \frac{3h}{4} \cdot \frac{7h}{4} = \frac{21\pi h^2}{8}
+\]
+
+Surface area of cone (total):
+\[
+S_{\text{cone}} = \pi r^2 + \pi r l = \pi r(r + l) = \pi \cdot \frac{3h}{4}\left(\frac{3h}{4} + \frac{5h}{4}\right) = \pi \cdot \frac{3h}{4} \cdot 2h = \frac{3\pi h^2}{2}
+\]
+
+Ratio:
+\[
+\frac{S_{\text{cylinder}}}{S_{\text{cone}}} = \frac{\frac{21\pi h^2}{8}}{\frac{3\pi h^2}{2}} = \frac{21}{8} \cdot \frac{2}{3} = \frac{21}{12} = \frac{7}{4}
+\]
+
+So the ratio is $7:4$.
+
+\subsection*{Answer}
+$7:4$ (option \textbf{E}).
+
+\end{document}

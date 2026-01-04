@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Sistem jednačina
+\[
+3^x-2^{y^2}=77,\qquad 3^{\frac{x}{2}}-2^{\frac{y^2}{2}}=7
+\]
+ima:
+(\textit{A}) jedno realno rešenje; (\textit{B}) dva realna rešenja; (\textit{C}) četiri realna rešenja;
+(\textit{D}) tri realna rešenja; (\textit{E}) prazan skup realnih rešenja.
+
+\subsection*{Solution}
+Označimo
+\[
+a=3^{\frac{x}{2}},\qquad b=2^{\frac{y^2}{2}}.
+\]
+Tada je $a>0$, $b>0$, i važi
+\[
+3^x=a^2,\qquad 2^{y^2}=b^2.
+\]
+Sistem postaje
+\[
+a^2-b^2=77,\qquad a-b=7.
+\]
+Prvu jednačinu faktorišemo: $(a-b)(a+b)=77$, pa iz $a-b=7$ dobijamo
+\[
+7(a+b)=77\quad\Rightarrow\quad a+b=11.
+\]
+Rešavanjem sistema $a-b=7$, $a+b=11$ dobijamo $a=9$, $b=2$.
+
+Sada
+\[
+3^{\frac{x}{2}}=9=3^2 \Rightarrow x=4,
+\qquad
+2^{\frac{y^2}{2}}=2 \Rightarrow \frac{y^2}{2}=1 \Rightarrow y^2=2 \Rightarrow y=\pm\sqrt2.
+\]
+Dakle postoje tačno dva realna rešenja.
+
+\subsection*{Answer}
+Dva realna rešenja (option \textbf{B}).
+
+\end{document}
+

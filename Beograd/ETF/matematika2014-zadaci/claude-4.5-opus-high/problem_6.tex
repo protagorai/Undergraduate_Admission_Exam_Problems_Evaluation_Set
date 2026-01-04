@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Ako je $f\left(\frac{1-x}{1+x}\right) = x$ $(x \in \mathbf{R} \setminus \{-1, 0, 1\})$, tada je $f(f(x))$ jednako:
+
+(A) $x$ \quad (B) $\displaystyle\frac{1-x}{1+x}$ \quad (C) $\displaystyle\frac{1}{x}$ \quad (D) $\displaystyle\frac{1+x}{1-x}$ \quad (E) $2x$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Given $f\left(\frac{1-x}{1+x}\right) = x$.
+
+Let $t = \frac{1-x}{1+x}$. We need to express $x$ in terms of $t$:
+\[
+t(1+x) = 1-x \implies t + tx = 1 - x \implies tx + x = 1 - t \implies x(t+1) = 1-t
+\]
+\[
+x = \frac{1-t}{1+t}
+\]
+
+Therefore:
+\[
+f(t) = \frac{1-t}{1+t}
+\]
+
+Now we compute $f(f(x))$:
+\[
+f(x) = \frac{1-x}{1+x}
+\]
+
+\[
+f(f(x)) = f\left(\frac{1-x}{1+x}\right) = \frac{1 - \frac{1-x}{1+x}}{1 + \frac{1-x}{1+x}}
+\]
+
+Simplifying the numerator:
+\[
+1 - \frac{1-x}{1+x} = \frac{(1+x) - (1-x)}{1+x} = \frac{2x}{1+x}
+\]
+
+Simplifying the denominator:
+\[
+1 + \frac{1-x}{1+x} = \frac{(1+x) + (1-x)}{1+x} = \frac{2}{1+x}
+\]
+
+Therefore:
+\[
+f(f(x)) = \frac{\frac{2x}{1+x}}{\frac{2}{1+x}} = \frac{2x}{2} = x
+\]
+
+\subsection*{Answer}
+$x$ (option \textbf{A}).
+
+\end{document}

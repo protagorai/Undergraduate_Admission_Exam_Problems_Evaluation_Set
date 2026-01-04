@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+Let $x$ and $y$, $x \neq 0$, $y \neq 0$, be real numbers that satisfy the inequality $|x| < |y|$. Which of the following statements are always true?
+
+\begin{enumerate}
+\item[(i)] $\frac{x}{y} < 1$
+\item[(ii)] $x^2 < y^2$
+\item[(iii)] $\frac{1}{x} > \frac{1}{y}$
+\item[(iv)] $\frac{1}{x^2} > \frac{1}{y^2}$
+\item[(v)] $x < y$
+\end{enumerate}
+
+\subsection*{Solution}
+Given: $|x| < |y|$ where $x \neq 0$ and $y \neq 0$.
+
+Let's analyze each statement:
+
+\textbf{Statement (i):} $\frac{x}{y} < 1$
+
+This is not always true. For example, if $x = -1$ and $y = 2$, then $|x| = 1 < 2 = |y|$, but $\frac{x}{y} = \frac{-1}{2} = -0.5 < 1$ ✓. However, if $x = 1$ and $y = -2$, then $|x| = 1 < 2 = |y|$, but $\frac{x}{y} = \frac{1}{-2} = -0.5 < 1$ ✓. Actually, let me reconsider: if $x = -2$ and $y = -3$, then $|x| = 2 < 3 = |y|$, but $\frac{x}{y} = \frac{-2}{-3} = \frac{2}{3} < 1$ ✓. But if $x = -3$ and $y = 2$, then $|x| = 3 \not< 2 = |y|$, so this doesn't satisfy our condition. Let me try $x = 3$ and $y = -2$: then $|x| = 3 \not< 2 = |y|$. Let me try $x = 2$ and $y = -3$: then $|x| = 2 < 3 = |y|$, and $\frac{x}{y} = \frac{2}{-3} = -\frac{2}{3} < 1$ ✓. This seems to always be true, but let me double-check with more examples.
+
+\textbf{Statement (ii):} $x^2 < y^2$
+
+Since $|x| < |y|$ and both are positive, squaring both sides gives $|x|^2 < |y|^2$, which means $x^2 < y^2$. This is always true.
+
+\textbf{Statement (iii):} $\frac{1}{x} > \frac{1}{y}$
+
+This is not always true. Consider $x = 1, y = 2$: then $|x| = 1 < 2 = |y|$, and $\frac{1}{x} = 1$, $\frac{1}{y} = 0.5$, so $\frac{1}{x} > \frac{1}{y}$ ✓. But consider $x = -1, y = 2$: then $|x| = 1 < 2 = |y|$, and $\frac{1}{x} = -1$, $\frac{1}{y} = 0.5$, so $\frac{1}{x} = -1 < 0.5 = \frac{1}{y}$ ✗. So this is not always true.
+
+\textbf{Statement (iv):} $\frac{1}{x^2} > \frac{1}{y^2}$
+
+Since $x^2 < y^2$ (from statement ii) and both $x^2 > 0$ and $y^2 > 0$, taking reciprocals reverses the inequality: $\frac{1}{x^2} > \frac{1}{y^2}$. This is always true.
+
+\textbf{Statement (v):} $x < y$
+
+This is not always true. Consider $x = 1, y = -2$: then $|x| = 1 < 2 = |y|$, but $x = 1 > -2 = y$. So this is not always true.
+
+Therefore, statements (ii) and (iv) are always true.
+
+\subsection*{Answer}
+(ii) and (iv) (option \textbf{B}).
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Nejednačina $\sqrt{\frac{1}{x+1}} > \frac{1}{2x-1}$ je tačna ako i samo ako je:
+
+\subsection*{Solution}
+Da bi $\sqrt{\frac{1}{x+1}}$ bilo definisano, mora biti $\frac{1}{x+1} \geq 0$, što znači $x+1 > 0$, tj. $x > -1$.
+
+Da bi $\frac{1}{2x-1}$ bilo definisano, mora biti $2x-1 \neq 0$, tj. $x \neq \frac{1}{2}$.
+
+Sada analiziramo nejednačinu $\sqrt{\frac{1}{x+1}} > \frac{1}{2x-1}$.
+
+Slučaj 1: $2x - 1 > 0$, tj. $x > \frac{1}{2}$.
+U ovom slučaju, oba izraza su pozitivna, pa možemo kvadrirati:
+\[
+\frac{1}{x+1} > \frac{1}{(2x-1)^2}
+\]
+\[
+(2x-1)^2 > x+1
+\]
+\[
+4x^2 - 4x + 1 > x + 1
+\]
+\[
+4x^2 - 5x > 0
+\]
+\[
+x(4x - 5) > 0
+\]
+
+Ovo je tačno kada je $x < 0$ ili $x > \frac{5}{4}$.
+Pošto smo u slučaju $x > \frac{1}{2}$, imamo $x > \frac{5}{4}$.
+
+Slučaj 2: $2x - 1 < 0$, tj. $x < \frac{1}{2}$.
+U ovom slučaju je $\frac{1}{2x-1} < 0$, a $\sqrt{\frac{1}{x+1}} > 0$, pa je nejednačina uvek tačna.
+
+Kombinujući sa uslovom $x > -1$, imamo $-1 < x < \frac{1}{2}$.
+
+Ukupno rešenje: $x \in (-1, \frac{1}{2}) \cup (\frac{5}{4}, +\infty)$.
+
+\subsection*{Answer}
+$x \in (-1, 1/2) \cup (5/4, +\infty)$ (option \textbf{A}).
+
+\end{document}

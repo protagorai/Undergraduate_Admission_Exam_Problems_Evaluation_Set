@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+On a shelf there are 5 books in English, 7 in Spanish, and 8 in French. All books are mutually different. In how many ways can we arrange the books if all books written in French must be next to each other?
+
+\subsection*{Solution}
+Total books: $5 + 7 + 8 = 20$ books.
+
+If all 8 French books must be adjacent (next to each other), we treat them as a single ``super-book'' or block.
+
+This gives us: 5 English books + 7 Spanish books + 1 French block = 13 objects to arrange.
+
+\textbf{Step 1:} Arrange the 13 objects (5 English + 7 Spanish + 1 French block).
+
+Number of ways = $13!$
+
+\textbf{Step 2:} Within the French block, the 8 French books can be arranged among themselves.
+
+Number of ways = $8!$
+
+\textbf{Total arrangements:} $13! \cdot 8!$
+
+Looking at the answer options:
+- (A) $13! \cdot 8!$
+- (B) $13 \cdot 8!$
+- (C) $13 \cdot \binom{12}{5} + 7! \cdot 8!$
+- (D) $\binom{20}{7} \cdot \binom{13}{8} \cdot 5!$
+- (E) None of the above
+
+The answer is $13! \cdot 8!$, which matches option (A).
+
+\subsection*{Answer}
+$13! \cdot 8!$ (option \textbf{A}).
+
+\end{document}

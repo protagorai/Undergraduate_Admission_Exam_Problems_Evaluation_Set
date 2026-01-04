@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+In an arithmetic progression of 11 terms, the first, fifth and eleventh terms form a geometric progression. If the first term of the arithmetic progression is 24, find the sum of all terms of the arithmetic progression.
+
+\subsection*{Solution}
+Let the arithmetic progression be: $a_1, a_2, \ldots, a_{11}$ where $a_1 = 24$ and common difference is $d$.
+
+The terms are:
+\begin{align}
+a_1 &= 24\\
+a_5 &= a_1 + 4d = 24 + 4d\\
+a_{11} &= a_1 + 10d = 24 + 10d
+\end{align}
+
+Since $a_1, a_5, a_{11}$ form a geometric progression, we have:
+\[
+\frac{a_5}{a_1} = \frac{a_{11}}{a_5}
+\]
+
+This gives us:
+\[
+a_5^2 = a_1 \cdot a_{11}
+\]
+
+Substituting:
+\[
+(24 + 4d)^2 = 24 \cdot (24 + 10d)
+\]
+
+Expanding the left side:
+\[
+576 + 192d + 16d^2 = 576 + 240d
+\]
+
+Simplifying:
+\[
+192d + 16d^2 = 240d
+\]
+\[
+16d^2 - 48d = 0
+\]
+\[
+16d(d - 3) = 0
+\]
+
+So $d = 0$ or $d = 3$.
+
+If $d = 0$, all terms are equal to 24, and $a_1 = a_5 = a_{11} = 24$ forms a geometric progression with ratio 1.
+
+If $d = 3$, then $a_1 = 24$, $a_5 = 36$, $a_{11} = 54$. Check: $\frac{36}{24} = \frac{3}{2}$ and $\frac{54}{36} = \frac{3}{2}$, so this is also a geometric progression.
+
+For the sum of arithmetic progression:
+\[
+S_n = \frac{n}{2}(2a_1 + (n-1)d) = \frac{11}{2}(2 \cdot 24 + 10d) = \frac{11}{2}(48 + 10d)
+\]
+
+Case 1: $d = 0$: $S_{11} = \frac{11}{2} \cdot 48 = 264$
+
+Case 2: $d = 3$: $S_{11} = \frac{11}{2}(48 + 30) = \frac{11}{2} \cdot 78 = 429$
+
+Since 429 appears in the options, the answer is 429.
+
+\subsection*{Answer}
+429 (option \textbf{D}).
+
+\end{document}

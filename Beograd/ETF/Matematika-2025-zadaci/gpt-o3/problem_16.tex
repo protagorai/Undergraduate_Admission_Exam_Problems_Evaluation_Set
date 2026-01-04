@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 16}
+Odrediti skup svih realnih $x$ koji zadovoljavaju
+\[
+\sqrt{7-\log_{2}x^{2}}+\log_{2}x^{4}>4.
+\]
+
+\subsection*{Solution}
+\paragraph{1. Domena.} Potrebno je $x\ne0$ i $7-\log_{2}x^{2}\ge0\;\Longrightarrow\;\log_{2}x^{2}\le7\;\Longrightarrow\;|x|\le8\sqrt2$.
+
+\paragraph{2. Supstitucija.} Neka je
+\[
+a=\log_{2}x^{2}\qquad(|x|\le8\sqrt2,\, x\ne0).
+\]
+Tada je $\log_{2}x^{4}=2a$ i nejednačina prelazi u
+\[
+\sqrt{7-a}+2a>4,\qquad a\le7.\tag{1}
+\]
+
+\paragraph{3. Kvadratna promena.} Označimo $t=\sqrt{7-a}\;(t\ge0)$ pa je $a=7-t^{2}$. Уметањем у (1):
+\[
+t+2(7-t^{2})>4\;\Longrightarrow\;-2t^{2}+t+10>0\;\Longrightarrow\;2t^{2}-t-10<0.
+\]
+Решимо $2t^{2}-t-10=0\Rightarrow t=\dfrac{1\pm\sqrt{1+80}}{4}=\Bigl\{-2,\,\dfrac52\Bigr\}$. За $t\ge0$ добијамо интервал
+\[
+0\le t<\frac52.
+\]
+
+\paragraph{4. Назад на $a$ и $x$.} Услов $t<\tfrac52$ значи $7-a<t^{2}<\bigl(\tfrac52\bigr)^{2}=\tfrac{25}{4}$, тј.
+\[
+a>7-\frac{25}{4}=\frac34.
+\]
+Са друге стране $a\le7$. Дакле
+\[
+\frac34<a\le7.
+\]
+Враћајући $a=\log_{2}x^{2}$:
+\[
+|x|>2^{3/8}\quad\text{и}\quad |x|\le8\sqrt2.
+\]
+Збирно:
+\[
+(-8\sqrt2,-2^{3/8})\ \cup\ (2^{3/8},8\sqrt2].
+\]
+
+\subsection*{Answer}
+$[-8\sqrt2,\,-2^{3/8})\,\cup\,(2^{3/8},\,8\sqrt2]$ (opcija \textbf{B}).
+
+\end{document}

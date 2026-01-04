@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Sva realna rešenja jednačine $\log_{2011}(2010x) = \log_{2010}(2011x)$ pripadaju intervalu:
+
+(A) $\left(0, \frac{1}{2011}\right)$ \quad (B) $\left(\frac{1}{2011}, \frac{1}{2010}\right)$ \quad (C) $\left(\frac{1}{2010}, 1\right)$ \quad (D) $\left(1, \frac{2010}{2011}\right)$ \quad (E) $\left(\frac{2011}{2010}, +\infty\right)$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let's denote the equation as:
+$$\log_{2011}(2010x) = \log_{2010}(2011x)$$
+
+First, we need $2010x > 0$ and $2011x > 0$, so $x > 0$.
+
+Using the change of base formula:
+$$\frac{\ln(2010x)}{\ln(2011)} = \frac{\ln(2011x)}{\ln(2010)}$$
+
+Cross-multiplying:
+$$\ln(2010x) \cdot \ln(2010) = \ln(2011x) \cdot \ln(2011)$$
+
+Using logarithm properties:
+$$[\ln(2010) + \ln(x)] \cdot \ln(2010) = [\ln(2011) + \ln(x)] \cdot \ln(2011)$$
+
+Expanding:
+$$\ln^2(2010) + \ln(x) \cdot \ln(2010) = \ln^2(2011) + \ln(x) \cdot \ln(2011)$$
+
+Rearranging:
+$$\ln^2(2010) - \ln^2(2011) = \ln(x)[\ln(2011) - \ln(2010)]$$
+
+$$\ln^2(2010) - \ln^2(2011) = \ln(x) \cdot \ln\left(\frac{2011}{2010}\right)$$
+
+Using the difference of squares:
+$$[\ln(2010) - \ln(2011)][\ln(2010) + \ln(2011)] = \ln(x) \cdot \ln\left(\frac{2011}{2010}\right)$$
+
+$$-\ln\left(\frac{2011}{2010}\right) \cdot [\ln(2010) + \ln(2011)] = \ln(x) \cdot \ln\left(\frac{2011}{2010}\right)$$
+
+Since $\ln\left(\frac{2011}{2010}\right) > 0$, we can divide both sides by it:
+$$-[\ln(2010) + \ln(2011)] = \ln(x)$$
+
+$$\ln(x) = -\ln(2010 \cdot 2011)$$
+
+$$x = \frac{1}{2010 \cdot 2011}$$
+
+Let's verify this is in the correct interval:
+$$\frac{1}{2010 \cdot 2011} = \frac{1}{2010 \cdot 2011}$$
+
+Since $2010 \cdot 2011 > 2011^2$, we have:
+$$\frac{1}{2010 \cdot 2011} < \frac{1}{2011^2} < \frac{1}{2011}$$
+
+And since $2010 \cdot 2011 > 2010^2$, we have:
+$$\frac{1}{2010 \cdot 2011} < \frac{1}{2010^2} < \frac{1}{2010}$$
+
+But we need to be more precise. Since $2010 < 2011$:
+$$2010 \cdot 2011 > 2011 \cdot 2010 = 2010 \cdot 2011$$
+
+Wait, let me recalculate more carefully:
+$$\frac{1}{2011} = \frac{2010}{2011 \cdot 2010} = \frac{2010}{2010 \cdot 2011}$$
+$$\frac{1}{2010} = \frac{2011}{2010 \cdot 2011}$$
+
+Since $2010 < 2011$, we have $\frac{2010}{2010 \cdot 2011} < \frac{1}{2010 \cdot 2011} < \frac{2011}{2010 \cdot 2011}$.
+
+Therefore: $\frac{1}{2011} < \frac{1}{2010 \cdot 2011} < \frac{1}{2010}$
+
+So $x = \frac{1}{2010 \cdot 2011} \in \left(\frac{1}{2011}, \frac{1}{2010}\right)$.
+
+\subsection*{Answer}
+(B) $\left(\frac{1}{2011}, \frac{1}{2010}\right)$
+
+\end{document}

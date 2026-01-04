@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Osnova prave četvorostrane piramide je pravougaonik dijagonale $d$ i ugla $\alpha$ među dijagonalama. Ako bočne ivice obrazuju sa osnovom piramide ugao $\beta$, tada je zapremina ove piramide jednaka:
+\[
+\text{(A)}~\frac{d^3}{12}\sin\alpha\ctg\beta\quad
+\text{(B)}~\frac{d^3}{12}\sin\alpha\tg\beta\quad
+\text{(C)}~\frac{d^3}{4}\sin\alpha\ctg\beta\quad
+\text{(D)}~\frac{d^3}{12}\sin\frac{\alpha}{2}\tg\beta\quad
+\text{(E)}~\frac{d^3}{12}\cos\alpha\tg\beta.
+\]
+
+\subsection*{Solution}
+Zapremina piramide je
+\[
+V=\frac13\,S\,h,
+\]
+gde je $S$ površina osnove, a $h$ visina.
+
+\textbf{Površina osnove.} Diagonale pravougaonika imaju jednake dužine $d$ i seku se pod uglom $\alpha$. Za paralelogram važi formula
+\[
+S=\frac12\,d_1d_2\sin\alpha,
+\]
+pa ovde ($d_1=d_2=d$):
+\[
+S=\frac12\,d^2\sin\alpha.
+\]
+
+\textbf{Visina.} Kod prave piramide temena je iznad preseka dijagonala osnove. Projekcija bočne ivice na ravan osnove je duž od centra do temena osnove, tj.\ polovina dijagonale: $\frac d2$.
+
+Ako bočna ivica dužine $l$ obrazuje sa osnovom ugao $\beta$, tada je njen horizontalni (ravanski) projekat $l\cos\beta$, pa
+\[
+l\cos\beta=\frac d2 \;\Rightarrow\; l=\frac{d}{2\cos\beta}.
+\]
+Visina je vertikalna komponenta: $h=l\sin\beta$, dakle
+\[
+h=\frac{d}{2\cos\beta}\sin\beta=\frac d2\tg\beta.
+\]
+
+Zato je
+\[
+V=\frac13\cdot\frac12 d^2\sin\alpha\cdot\frac d2\tg\beta
+=\frac{d^3}{12}\sin\alpha\,\tg\beta.
+\]
+
+\subsection*{Answer}
+$\dfrac{d^3}{12}\sin\alpha\,\tg\beta$ (option \textbf{B}).
+
+\end{document}
+

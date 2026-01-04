@@ -1,0 +1,21 @@
+1) A) sqrt5
+2) B) nema resenja
+3) C) -3
+4) B) cos x cos y
+5) B) 1
+6) A) 2 R^2 sin(alpha) sin(beta) sin(gamma)
+7) B) 1 resenje: x = 2/7
+8) A) nema medjusobno jednakih funkcija (razliciti domeni)
+9) E) 14
+10) E) 3
+11) B) 2
+12) C) 2 resenja: x = 0, x = pi/6
+13) C) {-1} U [2, +inf)
+14) D) 4/3
+15) D) 2! 3! 4! 5!
+16) A) 2
+17) B) 2^9 (-1 + i)
+18) A) (10^(n+1) - 10 - 9n) / 81
+19) D) 5 - 3 sqrt3
+20) C) geometrijska progresija (npr. a1=2, r=sqrt6/2; a2=sqrt6, a5=9/2)
+

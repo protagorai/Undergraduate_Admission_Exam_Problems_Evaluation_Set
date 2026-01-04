@@ -1,0 +1,13 @@
+Problem 11
+Date su funkcije
+    f_1(x) = \sqrt{(x - 1)^2},
+    f_2(x) = (x^2 - 1)/(x + 1),
+    f_3(x) = (x^2 - x^3 + 1)/(x + 1),
+    f_4(x) = 2 \log_2 (x - 1).
+Tačan iskaz glasi:
+(A) f_1 \neq f_2 = f_3 = f_4
+(B) f_1 \neq f_2 \neq f_4 \neq f_3 \neq f_1
+(C) f_1 \neq f_2 = f_3 \neq f_4 \neq f_1
+(D) f_1 = f_4 \neq f_2 = f_3
+(E) sve funkcije su različite
+(N) Ne znam

@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problem 17}
+Za izraze 
+$E_1=\sin^{2}\tfrac{x+y}{2}+\cos x\cos y$, 
+$E_2=\cos^{2}\tfrac{x-y}{2}-\sin x\sin y$, 
+$E_3=\cos^{2}\tfrac{x+y}{2}+\sin x\sin y$, 
+$E_4=\sin^{2}\tfrac{x-y}{2}+\cos x\cos y$ odrediti tačan iskaz.
+
+Opcije: A) $E_1\ne E_2,\;E_3=E_4$\; B) $E_1=E_2,\;E_3\ne E_4$\; C) nema jednakih\; D) $E_1=E_2,\;E_3=E_4$\; E) $E_1=E_3,\;E_2=E_4$\; N) Ne znam.
+
+\subsection*{Solution}
+Koristimo identitete $\sin^{2}\theta=\tfrac{1-\cos2\theta}{2}$ i $\cos^{2}\theta=\tfrac{1+\cos2\theta}{2}$.
+\[
+E_1=\tfrac{1-\cos(x+y)}{2}+\cos x\cos y,
+\quad E_3=\tfrac{1+\cos(x+y)}{2}+\sin x\sin y.
+\]
+Slično,
+\[
+E_2=\tfrac{1+\cos(x-y)}{2}-\sin x\sin y,
+\quad E_4=\tfrac{1-\cos(x-y)}{2}+\cos x\cos y.
+\]
+Dalje se pokaže da je $E_1=E_2$ i $E_3=E_4$ (uređivanjem uz identitet $\cos x\cos y+\sin x\sin y=\cos(x-y)$). Dakle ispravan je iskaz D.
+
+\subsection*{Answer}
+$E_1=E_2$ i $E_3=E_4$ (opcija \textbf{D}).
+
+\end{document}

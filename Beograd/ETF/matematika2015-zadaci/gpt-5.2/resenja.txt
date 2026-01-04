@@ -1,0 +1,21 @@
+1) D) k = 6
+2) D) d = 2\sqrt{3}/3
+3) C) y^2 + (a+1)y + (a^2 - a + 1) = 0
+4) A) k = 3/5
+5) B) 30^\circ
+6) E) 7 : 4
+7) D) c < b < a
+8) B) 82/125
+9) B) 0 (nema realnih resenja)
+10) C) 72
+11) E) 3
+12) C) 84
+13) D) N = 427608 \in [4\cdot 10^5, 5\cdot 10^5)
+14) B) 93
+15) A) (-\infty,0)\cup(\log_{4/3}4,\log_{4/3}7)\cup(\log_{4/3}12,\infty)
+16) E) 5
+17) C) 3
+18) B) 2/e
+19) B) (\pi/6, \pi/4]
+20) A) x = 2 (resenja u [\sqrt3,2\sqrt3))
+

@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+The equation of the circle whose center is on the x-axis and which is tangent to the parabola $y^2 = 12x$ at point $A(3,6)$ has the common tangent:
+
+\subsection*{Solution}
+First, let's verify that point $A(3,6)$ is on the parabola $y^2 = 12x$:
+$6^2 = 36$ and $12 \cdot 3 = 36$ ✓
+
+For the parabola $y^2 = 12x$, we can find the slope of the tangent at point $(3,6)$.
+Differentiating implicitly: $2y \frac{dy}{dx} = 12$
+So $\frac{dy}{dx} = \frac{6}{y}$
+
+At point $(3,6)$: $\frac{dy}{dx} = \frac{6}{6} = 1$
+
+The tangent line to the parabola at $A(3,6)$ has slope $m = 1$ and equation:
+$y - 6 = 1(x - 3)$
+$y = x + 3$
+
+Since the circle is tangent to the parabola at $A(3,6)$, the circle and parabola share the same tangent line at this point.
+
+Let the center of the circle be $(h,0)$ since it's on the x-axis.
+The radius of the circle is the distance from $(h,0)$ to $(3,6)$:
+$r = \sqrt{(3-h)^2 + 6^2} = \sqrt{(3-h)^2 + 36}$
+
+For the circle to be tangent to the line $y = x + 3$ at point $(3,6)$, the distance from the center $(h,0)$ to the line $x - y + 3 = 0$ must equal the radius.
+
+Distance from $(h,0)$ to line $x - y + 3 = 0$:
+$d = \frac{|h - 0 + 3|}{\sqrt{1^2 + (-1)^2}} = \frac{|h + 3|}{\sqrt{2}}$
+
+Setting this equal to the radius:
+$\frac{|h + 3|}{\sqrt{2}} = \sqrt{(3-h)^2 + 36}$
+
+Squaring both sides:
+$\frac{(h + 3)^2}{2} = (3-h)^2 + 36$
+
+$(h + 3)^2 = 2[(3-h)^2 + 36]$
+$(h + 3)^2 = 2(9 - 6h + h^2 + 36)$
+$(h + 3)^2 = 2(h^2 - 6h + 45)$
+$h^2 + 6h + 9 = 2h^2 - 12h + 90$
+$0 = h^2 - 18h + 81$
+$0 = (h - 9)^2$
+
+So $h = 9$.
+
+The center is $(9,0)$ and the radius is:
+$r = \sqrt{(3-9)^2 + 36} = \sqrt{36 + 36} = \sqrt{72} = 6\sqrt{2}$
+
+The equation of the circle is:
+$(x - 9)^2 + y^2 = 72$
+$x^2 - 18x + 81 + y^2 = 72$
+$x^2 + y^2 - 18x + 9 = 0$
+
+Wait, let me double-check this. We have:
+$(x - 9)^2 + y^2 = 72$
+$x^2 - 18x + 81 + y^2 = 72$
+$x^2 + y^2 - 18x + 9 = 0$
+
+Comparing with the given options:
+(A) $(x-3)^2 + y^2 = 9$ → $x^2 + y^2 - 6x = 0$
+(B) $(x-6)^2 + y^2 = 36$ → $x^2 + y^2 - 12x = 0$  
+(C) $(x-9)^2 + y^2 = 81$ → $x^2 + y^2 - 18x = 0$
+(D) $(x-9)^2 + y^2 = 72$ → $x^2 + y^2 - 18x + 9 = 0$
+
+My calculation gives option (D), but let me verify by checking if $(x-9)^2 + y^2 = 72$ passes through $(3,6)$:
+$(3-9)^2 + 6^2 = 36 + 36 = 72$ ✓
+
+\subsection*{Answer}
+$(x-9)^2 + y^2 = 72$ (option \textbf{D}).
+
+\end{document}

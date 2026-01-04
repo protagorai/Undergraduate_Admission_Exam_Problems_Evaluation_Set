@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Skup svih realnih rešenja nejednačine
+\[
+\sqrt{(2x+1)^4-(2x+1)^2}+(2x+1)^2 \ge 0
+\]
+je oblika (za neke $a, b, c \in \mathbb{R}$, za koje važi $a < b < c$):
+
+(A) $(-\infty, a] \cup \{b\} \cup [c, +\infty)$ \quad (B) $[a, b) \cup (b, c]$ \quad (C) $[a, b] \cup [c, +\infty)$ \quad (D) $(-\infty, a] \cup [b, c]$ \quad (E) $\{a, b, c\}$
+
+\subsection*{Solution}
+Pošto je $(2x+1)^2 \ge 0$ za sve realne $x$, leva strana je nenegativna čim je koren definisan.
+Zato je potrebno i dovoljno da važi
+\[
+(2x+1)^4-(2x+1)^2 \ge 0.
+\]
+Neka je $t=2x+1$. Tada
+\[
+t^4-t^2=t^2(t^2-1)\ge 0.
+\]
+Kako je $t^2\ge 0$, dobijamo $t=0$ ili $t^2-1\ge 0$, tj. $|t|\ge 1$.
+Vraćajući $t=2x+1$:
+\[
+2x+1=0 \Rightarrow x=-\frac12,\qquad |2x+1|\ge 1 \Rightarrow x\le -1 \ \text{ili}\ x\ge 0.
+\]
+Dakle,
+\[
+S=(-\infty,-1]\cup\left\{-\frac12\right\}\cup[0,\infty),
+\]
+što je oblika $(-\infty,a]\cup\{b\}\cup[c,\infty)$ za $a=-1$, $b=-\frac12$, $c=0$.
+
+\subsection*{Answer}
+$(-\infty, a] \cup \{b\} \cup [c, +\infty)$ (opcija \textbf{(A)}).
+
+\end{document}
+
+

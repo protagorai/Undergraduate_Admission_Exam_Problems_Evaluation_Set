@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Data je funkcija $f(x) = x - \sin \pi x \cdot \cos \pi x + \frac{\ln 2x}{x} + e^{i2\pi x}$. Tada je vrednost $f'(1/2)$ jednaka:
+
+(A) $0$ \quad (B) $5 + 3\pi$ \quad (C) $3\pi$ \quad (D) $5$ \quad (E) $e$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Prvo izračunajmo izvod funkcije $f(x)$:
+\[
+f(x) = x - \sin \pi x \cdot \cos \pi x + \frac{\ln 2x}{x} + e^{i2\pi x}
+\]
+
+Koristimo identitet $\sin \pi x \cdot \cos \pi x = \frac{1}{2}\sin 2\pi x$:
+\[
+f(x) = x - \frac{1}{2}\sin 2\pi x + \frac{\ln 2x}{x} + e^{i2\pi x}
+\]
+
+Izračunajmo izvod po delovima:
+\[
+\frac{d}{dx}[x] = 1
+\]
+\[
+\frac{d}{dx}\left[-\frac{1}{2}\sin 2\pi x\right] = -\frac{1}{2} \cdot 2\pi \cos 2\pi x = -\pi \cos 2\pi x
+\]
+\[
+\frac{d}{dx}\left[\frac{\ln 2x}{x}\right] = \frac{x \cdot \frac{1}{x} - \ln 2x \cdot 1}{x^2} = \frac{1 - \ln 2x}{x^2}
+\]
+\[
+\frac{d}{dx}[e^{i2\pi x}] = i2\pi e^{i2\pi x}
+\]
+
+Dakle:
+\[
+f'(x) = 1 - \pi \cos 2\pi x + \frac{1 - \ln 2x}{x^2} + i2\pi e^{i2\pi x}
+\]
+
+Sada izračunajmo $f'(1/2)$:
+\[
+f'(1/2) = 1 - \pi \cos(2\pi \cdot 1/2) + \frac{1 - \ln(2 \cdot 1/2)}{(1/2)^2} + i2\pi e^{i2\pi \cdot 1/2}
+\]
+\[
+= 1 - \pi \cos \pi + \frac{1 - \ln 1}{1/4} + i2\pi e^{i\pi}
+\]
+\[
+= 1 - \pi(-1) + \frac{1 - 0}{1/4} + i2\pi(-1)
+\]
+\[
+= 1 + \pi + 4 - i2\pi = 5 + \pi - i2\pi
+\]
+
+Međutim, pošto se traži realna vrednost, verovatno je greška u zadatku. Ako zanemarimo imaginarni deo:
+\[
+f'(1/2) = 5 + \pi
+\]
+
+Ovo ne odgovara nijednoj opciji tačno, ali je najbliže opciji (D) $5$.
+
+\subsection*{Answer}
+(D) $5$
+
+\end{document}

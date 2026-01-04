@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Skup svih realnih rešenja nejednačine $(2\sin x)^{\sin x - \sin 2x} \geq 1$ na intervalu $(0, \pi)$ je:
+
+\subsection*{Solution}
+Imamo nejednačinu $(2\sin x)^{\sin x - \sin 2x} \geq 1$ na $(0, \pi)$.
+
+Na intervalu $(0, \pi)$, $\sin x > 0$, pa je $2\sin x > 0$.
+
+Neka je $a = 2\sin x$ i $b = \sin x - \sin 2x = \sin x - 2\sin x \cos x = \sin x(1 - 2\cos x)$.
+
+Nejednačina je $a^b \geq 1$.
+
+\textbf{Slučaj 1:} $a = 1$, tj. $2\sin x = 1$, $\sin x = \frac{1}{2}$
+
+Na $(0, \pi)$: $x = \frac{\pi}{6}$ ili $x = \frac{5\pi}{6}$
+
+Za ove vrednosti, $a^b = 1^b = 1 \geq 1$ ✓
+
+\textbf{Slučaj 2:} $a > 1$, tj. $\sin x > \frac{1}{2}$
+
+Na $(0, \pi)$: $x \in \left(\frac{\pi}{6}, \frac{5\pi}{6}\right)$
+
+Za $a > 1$, $a^b \geq 1$ ako i samo ako $b \geq 0$.
+
+$b = \sin x(1 - 2\cos x) \geq 0$
+
+Pošto je $\sin x > 0$ na $(0, \pi)$, potrebno je $1 - 2\cos x \geq 0$, tj. $\cos x \leq \frac{1}{2}$.
+
+Na $(0, \pi)$: $\cos x \leq \frac{1}{2}$ kada $x \in \left[\frac{\pi}{3}, \pi\right)$
+
+Presek sa $\left(\frac{\pi}{6}, \frac{5\pi}{6}\right)$: $x \in \left[\frac{\pi}{3}, \frac{5\pi}{6}\right)$
+
+\textbf{Slučaj 3:} $0 < a < 1$, tj. $0 < \sin x < \frac{1}{2}$
+
+Na $(0, \pi)$: $x \in \left(0, \frac{\pi}{6}\right) \cup \left(\frac{5\pi}{6}, \pi\right)$
+
+Za $0 < a < 1$, $a^b \geq 1$ ako i samo ako $b \leq 0$.
+
+$b = \sin x(1 - 2\cos x) \leq 0$
+
+Pošto je $\sin x > 0$, potrebno je $1 - 2\cos x \leq 0$, tj. $\cos x \geq \frac{1}{2}$.
+
+Na $(0, \pi)$: $\cos x \geq \frac{1}{2}$ kada $x \in \left(0, \frac{\pi}{3}\right]$
+
+Presek sa $\left(0, \frac{\pi}{6}\right)$: $x \in \left(0, \frac{\pi}{6}\right)$
+
+Presek sa $\left(\frac{5\pi}{6}, \pi\right)$: prazan skup (jer je $\cos x < 0$ za $x > \frac{\pi}{2}$)
+
+\textbf{Kombinujemo sve slučajeve:}
+\[
+\left(0, \frac{\pi}{6}\right) \cup \left\{\frac{\pi}{6}\right\} \cup \left[\frac{\pi}{3}, \frac{5\pi}{6}\right) \cup \left\{\frac{5\pi}{6}\right\}
+\]
+\[
+= \left(0, \frac{\pi}{6}\right] \cup \left[\frac{\pi}{3}, \frac{5\pi}{6}\right]
+\]
+
+\subsection*{Answer}
+$\left(0, \frac{\pi}{6}\right] \cup \left[\frac{\pi}{3}, \frac{5\pi}{6}\right]$ (opcija \textbf{D}).
+
+\end{document}

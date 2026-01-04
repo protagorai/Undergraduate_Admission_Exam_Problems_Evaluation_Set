@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 7}
+U kocku $K_1$ ivice 1 cm upisana je lopta $L_1$, zatim je u loptu $L_1$ upisana kocka $K_2$, zatim u nju lopta $L_2$ i zatim se postupak nastavlja na isti način. Zbir površina (u cm$^2$) svih kocki $K_n$, $n \in N$, iznosi:
+
+(A) 2 \quad (B) 8 \quad (C) 18 \quad (D) 4 \quad (E) 9
+
+\subsection*{Solution}
+Neka je $a_n$ ivica kocke $K_n$.
+Ivica prve kocke $a_1 = 1$.
+Površina prve kocke $P_1 = 6a_1^2 = 6$.
+
+Lopta $L_n$ je upisana u kocku $K_n$, pa je njen prečnik jednak ivici kocke: $2r_n = a_n \Rightarrow r_n = a_n/2$.
+Kocka $K_{n+1}$ je upisana u loptu $L_n$, pa je njena prostorna dijagonala jednaka prečniku lopte: $D_{n+1} = a_{n+1}\sqrt{3} = 2r_n = a_n$.
+Dakle:
+\[
+a_{n+1}\sqrt{3} = a_n \Rightarrow a_{n+1} = \frac{a_n}{\sqrt{3}}
+\]
+Površina kocke $K_{n+1}$ je:
+\[
+P_{n+1} = 6a_{n+1}^2 = 6 \left(\frac{a_n}{\sqrt{3}}\right)^2 = 6 \frac{a_n^2}{3} = \frac{1}{3} P_n
+\]
+Površine čine geometrijski niz sa prvim članom $P_1 = 6$ i količnikom $q = 1/3$.
+Traženi zbir je suma beskonačnog geometrijskog niza:
+\[
+S = \frac{P_1}{1-q} = \frac{6}{1 - 1/3} = \frac{6}{2/3} = \frac{18}{2} = 9
+\]
+
+\subsection*{Answer}
+$9$ (opcija \textbf{(E)}).
+
+\end{document}

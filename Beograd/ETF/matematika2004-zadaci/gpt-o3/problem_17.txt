@@ -1,0 +1,2 @@
+Dati su izrazi $E_1 = \sin^2 \frac{x+y}{2} + \cos x \cos y, E_2 = \cos^2 \frac{x-y}{2} - \sin x \sin y, E_3 = \cos^2 \frac{x+y}{2} + \sin x \sin y, E_4 = \sin^2 \frac{x-y}{2} + \cos x \cos y$. Tačan je iskaz:
+A) $E_1 \ne E_2, E_3 = E_4$; B) $E_1 = E_2, E_3 \ne E_4$; C) Među datim izrazima nema međusobno jednakih; D) $E_1 = E_2, E_3 = E_4$; E) $E_1 = E_3, E_2 = E_4$; N) Ne znam.

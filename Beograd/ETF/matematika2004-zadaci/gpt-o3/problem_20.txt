@@ -1,0 +1,2 @@
+Ako su $a, b$ i $c$ istovremeno peti, sedamnaesti i trideset sedmi član i aritmetičke i geometrijske progresije, tada je $a^{b-c} \cdot b^{c-a} \cdot c^{a-b}$ jednako:
+A) $\frac{1}{3}$; B) 1; C) $\frac{1}{2}$; D) $\frac{1}{4}$; E) 2; N) Ne znam.

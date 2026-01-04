@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+A sphere is inscribed in a regular truncated square pyramid (a right square frustum).
+The slant height of a lateral face is $\sqrt3$ cm, and the angle between a lateral edge and an edge of the larger base is $60^\circ$.
+Find the ratio of volumes (frustum : sphere).
+
+\subsection*{Solution}
+Let the side lengths of the larger and smaller bases be $a$ and $b$ ($a>b$), and let the frustum height be $h$.
+
+\medskip
+\noindent\textbf{Step 1: Use the $60^\circ$ condition.}
+Consider a lateral edge from a vertex of the larger base to the corresponding vertex of the smaller base.
+Its horizontal displacement in the base plane has components $\frac{a-b}{2}$ in two perpendicular directions, so the horizontal length is
+\[
+d=\sqrt{\left(\frac{a-b}{2}\right)^2+\left(\frac{a-b}{2}\right)^2}=\frac{a-b}{\sqrt2}.
+\]
+Thus the lateral edge length is
+\[
+s=\sqrt{h^2+d^2}=\sqrt{h^2+\frac{(a-b)^2}{2}}.
+\]
+The angle between this edge and a base edge (direction along one axis) is $60^\circ$, so
+\[
+\cos 60^\circ=\frac{\text{(absolute value of x-component)}}{\text{edge length}}
+=\frac{\frac{a-b}{2}}{s}=\frac12,
+\]
+which gives $s=a-b$. Squaring:
+\[
+(a-b)^2=h^2+\frac{(a-b)^2}{2}
+\quad\Longrightarrow\quad
+h^2=\frac{(a-b)^2}{2}
+\quad\Longrightarrow\quad
+h=\frac{a-b}{\sqrt2}.
+\]
+
+\medskip
+\noindent\textbf{Step 2: Use the slant height $l=\sqrt3$.}
+The slant height of a lateral face (distance between midpoints of corresponding edges) satisfies
+\[
+l^2=h^2+\left(\frac{a-b}{2}\right)^2
+=\frac{(a-b)^2}{2}+\frac{(a-b)^2}{4}
+=\frac{3}{4}(a-b)^2.
+\]
+So
+\[
+l=\frac{\sqrt3}{2}(a-b)=\sqrt3 \quad\Longrightarrow\quad a-b=2.
+\]
+Hence
+\[
+h=\frac{2}{\sqrt2}=\sqrt2.
+\]
+
+\medskip
+\noindent\textbf{Step 3: Condition for an inscribed sphere.}
+Take the axial cross-section through the axis and midpoints of two opposite base edges; it is an isosceles trapezoid with bases $a$ and $b$ and legs equal to the slant height $l$.
+Such a trapezoid has an incircle (and corresponds to an insphere here) iff the sum of bases equals the sum of legs:
+\[
+a+b=2l=2\sqrt3.
+\]
+Together with $a-b=2$:
+\[
+a=\sqrt3+1,\qquad b=\sqrt3-1.
+\]
+
+\medskip
+\noindent\textbf{Step 4: Volumes.}
+Frustum volume:
+\[
+V_f=\frac{h}{3}\left(a^2+b^2+\sqrt{a^2b^2}\right).
+\]
+Compute:
+\[
+a^2=(\sqrt3+1)^2=4+2\sqrt3,\quad b^2=(\sqrt3-1)^2=4-2\sqrt3,
+\]
+\[
+\sqrt{a^2b^2}=\sqrt{(4+2\sqrt3)(4-2\sqrt3)}=\sqrt{16-12}=2.
+\]
+Thus
+\[
+V_f=\frac{\sqrt2}{3}\,( (4+2\sqrt3)+(4-2\sqrt3)+2)=\frac{\sqrt2}{3}\cdot 10=\frac{10\sqrt2}{3}.
+\]
+Since the sphere is tangent to both bases, its diameter equals the frustum height, so
+\[
+2r=h\Rightarrow r=\frac{h}{2}=\frac{\sqrt2}{2}.
+\]
+Sphere volume:
+\[
+V_s=\frac{4}{3}\pi r^3=\frac{4}{3}\pi\left(\frac{\sqrt2}{2}\right)^3
+=\frac{\sqrt2}{3}\pi.
+\]
+Therefore
+\[
+V_f:V_s=\frac{10\sqrt2}{3}:\frac{\sqrt2}{3}\pi=10:\pi.
+\]
+
+\subsection*{Answer}
+$10:\pi$ (option \textbf{D}).
+
+\end{document}
+

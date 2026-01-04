@@ -1,0 +1,8 @@
+Problem 8
+Domen funkcije y = \sqrt{\log_3(3x^2 - 2x)} je skup oblika (za neke realne brojeve a, b, c, d takve da je -\infty < a < b < c < d < +\infty):
+(A) [a, b) \cup (c, d]
+(B) (-\infty, a) \cup (b, +\infty)
+(C) {a, b} \cup {c, d}
+(D) (a, b)
+(E) [a, b] \cup [c, d)
+(N) Ne znam

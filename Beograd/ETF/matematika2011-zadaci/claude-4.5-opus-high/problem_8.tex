@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Let $\alpha$, $\beta$, and $\gamma$ be angles in an arbitrary triangle, and let $a$, $b$, $c$ be the lengths of the sides opposite to these angles, with $R$ being the circumradius. Find the value of:
+\[
+\frac{a^2 + b^2 + c^2}{3 - \cos^2\alpha - \cos^2\beta - \cos^2\gamma}
+\]
+
+\subsection*{Solution}
+By the Law of Sines: $a = 2R\sin\alpha$, $b = 2R\sin\beta$, $c = 2R\sin\gamma$.
+
+So:
+\[
+a^2 + b^2 + c^2 = 4R^2(\sin^2\alpha + \sin^2\beta + \sin^2\gamma)
+\]
+
+For the denominator, we use $\sin^2\theta = 1 - \cos^2\theta$:
+\[
+3 - \cos^2\alpha - \cos^2\beta - \cos^2\gamma = 3 - (1 - \sin^2\alpha) - (1 - \sin^2\beta) - (1 - \sin^2\gamma)
+\]
+\[
+= 3 - 3 + \sin^2\alpha + \sin^2\beta + \sin^2\gamma = \sin^2\alpha + \sin^2\beta + \sin^2\gamma
+\]
+
+Therefore:
+\[
+\frac{a^2 + b^2 + c^2}{3 - \cos^2\alpha - \cos^2\beta - \cos^2\gamma} = \frac{4R^2(\sin^2\alpha + \sin^2\beta + \sin^2\gamma)}{\sin^2\alpha + \sin^2\beta + \sin^2\gamma} = 4R^2
+\]
+
+\subsection*{Answer}
+\textbf{(D)} $4R^2$
+
+\end{document}

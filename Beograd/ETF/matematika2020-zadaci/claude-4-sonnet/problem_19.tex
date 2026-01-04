@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Given points $A(2,2)$, $A'(-2,-2)$, $B(4,-4)$, and $B'(-4,4)$. Lines $AA'$ and $BB'$ are axes of an ellipse $\mathcal{E}$. If $Y(0,y_0)$, $y_0 > 0$, is a point on the ellipse $\mathcal{E}$, then $y_0$ equals:
+
+\subsection*{Solution}
+First, let's find the equations of lines $AA'$ and $BB'$.
+
+Line $AA'$ passes through $A(2,2)$ and $A'(-2,-2)$:
+The slope is $\frac{-2-2}{-2-2} = \frac{-4}{-4} = 1$.
+The equation is $y = x$.
+
+Line $BB'$ passes through $B(4,-4)$ and $B'(-4,4)$:
+The slope is $\frac{4-(-4)}{-4-4} = \frac{8}{-8} = -1$.
+The equation is $y = -x$.
+
+These lines are perpendicular and intersect at the origin $(0,0)$, which is the center of the ellipse.
+
+Since the axes of the ellipse are $y = x$ and $y = -x$, we need to rotate our coordinate system by $45°$ to align with the standard ellipse form.
+
+The rotation transformation is:
+\[
+\begin{pmatrix} u \\ v \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}
+\]
+
+So $u = \frac{x+y}{\sqrt{2}}$ and $v = \frac{-x+y}{\sqrt{2}}$.
+
+In the $(u,v)$ coordinate system:
+- $A(2,2) \rightarrow u = \frac{2+2}{\sqrt{2}} = 2\sqrt{2}, v = \frac{-2+2}{\sqrt{2}} = 0$
+- $A'(-2,-2) \rightarrow u = \frac{-2-2}{\sqrt{2}} = -2\sqrt{2}, v = \frac{2-2}{\sqrt{2}} = 0$
+- $B(4,-4) \rightarrow u = \frac{4-4}{\sqrt{2}} = 0, v = \frac{-4-4}{\sqrt{2}} = -4\sqrt{2}$
+- $B'(-4,4) \rightarrow u = \frac{-4+4}{\sqrt{2}} = 0, v = \frac{4+4}{\sqrt{2}} = 4\sqrt{2}$
+
+So in the $(u,v)$ system, the ellipse has vertices at $(\pm 2\sqrt{2}, 0)$ and $(0, \pm 4\sqrt{2})$.
+
+This means $a = 4\sqrt{2}$ (semi-major axis) and $b = 2\sqrt{2}$ (semi-minor axis).
+
+The ellipse equation in the $(u,v)$ system is:
+\[
+\frac{u^2}{(2\sqrt{2})^2} + \frac{v^2}{(4\sqrt{2})^2} = 1
+\]
+
+\[
+\frac{u^2}{8} + \frac{v^2}{32} = 1
+\]
+
+For point $Y(0, y_0)$ in the original $(x,y)$ system:
+$u = \frac{0 + y_0}{\sqrt{2}} = \frac{y_0}{\sqrt{2}}$ and $v = \frac{0 + y_0}{\sqrt{2}} = \frac{y_0}{\sqrt{2}}$.
+
+Substituting into the ellipse equation:
+\[
+\frac{(y_0/\sqrt{2})^2}{8} + \frac{(y_0/\sqrt{2})^2}{32} = 1
+\]
+
+\[
+\frac{y_0^2/2}{8} + \frac{y_0^2/2}{32} = 1
+\]
+
+\[
+\frac{y_0^2}{16} + \frac{y_0^2}{64} = 1
+\]
+
+\[
+\frac{4y_0^2 + y_0^2}{64} = 1
+\]
+
+\[
+\frac{5y_0^2}{64} = 1
+\]
+
+\[
+y_0^2 = \frac{64}{5}
+\]
+
+\[
+y_0 = \frac{8}{\sqrt{5}} = \frac{8\sqrt{5}}{5}
+\]
+
+\subsection*{Answer}
+$\frac{8\sqrt{5}}{5}$ (option \textbf{C}).
+
+\end{document}

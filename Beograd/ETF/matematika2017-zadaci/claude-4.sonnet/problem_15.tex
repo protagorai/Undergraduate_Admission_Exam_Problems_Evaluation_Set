@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Ukupan broj realnih rešenja sistema jednačina $y \cdot (|x| - 2)^{\log_5(|x|-2)} = (|x| - 2)^{\frac{1}{2}}$, $\log_4 y \cdot \log_y (y - 3e - 1) = 1$, jednak je:
+
+(A) $0$ \quad (B) $2$ \quad (C) $1$ \quad (D) $4$ \quad (E) $3$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Analizirajmo sistem jednačina.
+
+\textbf{Prva jednačina:} $y \cdot (|x| - 2)^{\log_5(|x|-2)} = (|x| - 2)^{\frac{1}{2}}$
+
+Za da bi logaritam bio definisan, potrebno je $|x| - 2 > 0$, tj. $|x| > 2$.
+
+Označimo $t = |x| - 2 > 0$. Tada je:
+\[
+y \cdot t^{\log_5 t} = t^{1/2}
+\]
+\[
+y = \frac{t^{1/2}}{t^{\log_5 t}} = t^{1/2 - \log_5 t}
+\]
+
+\textbf{Druga jednačina:} $\log_4 y \cdot \log_y (y - 3e - 1) = 1$
+
+Za da bi logaritmi bili definisani, potrebno je:
+- $y > 0$
+- $y \neq 1$
+- $y - 3e - 1 > 0$, tj. $y > 3e + 1$
+
+Iz druge jednačine:
+\[
+\frac{\ln y}{\ln 4} \cdot \frac{\ln(y - 3e - 1)}{\ln y} = 1
+\]
+\[
+\frac{\ln(y - 3e - 1)}{\ln 4} = 1
+\]
+\[
+\ln(y - 3e - 1) = \ln 4
+\]
+\[
+y - 3e - 1 = 4
+\]
+\[
+y = 3e + 5
+\]
+
+Sada zamenimo u prvu jednačinu:
+\[
+3e + 5 = t^{1/2 - \log_5 t}
+\]
+
+Ovo je transcendentna jednačina u $t$. Pošto je $t > 0$ i $3e + 5 > 0$, možemo analizirati da li postoji rešenje.
+
+Za $t = 1$: $t^{1/2 - \log_5 t} = 1^{1/2 - 0} = 1$, što nije jednako $3e + 5 \approx 13.15$.
+
+Za velike vrednosti $t$, $\log_5 t$ raste, pa $1/2 - \log_5 t$ postaje negativan, što znači da $t^{1/2 - \log_5 t}$ teži ka 0.
+
+Analizom kontinuiranih funkcija, postoji tačno jedno rešenje za $t$.
+
+Pošto je $t = |x| - 2$, za svako pozitivno $t$ imamo dva rešenja za $x$: $x = \pm(t + 2)$.
+
+Dakle, ukupan broj realnih rešenja sistema je 2.
+
+\subsection*{Answer}
+(B) $2$
+
+\end{document}

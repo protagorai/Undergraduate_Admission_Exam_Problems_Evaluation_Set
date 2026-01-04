@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 5}
+U jednakokraki trougao čija je osnovica $a=10$ cm i krak $b=13$ cm upisan je kvadrat tako da mu dva temena leže na osnovici trougla, a druga dva na kracima. Dužina stranice kvadrata (u cm) jednaka je:
+\[ (A)\ \frac{64}{11} \quad (B)\ \frac{63}{11} \quad (C)\ \frac{62}{11} \quad (D)\ \frac{61}{11} \quad (E)\ \frac{60}{11} \quad (N)\ \text{Ne znam} \]
+
+\subsection*{Solution}
+Let the base of the isosceles triangle be $AB = a = 10$ and the equal sides be $AC = BC = b = 13$.
+Let $h$ be the altitude to the base.
+\[ h = \sqrt{b^2 - (a/2)^2} = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \sqrt{144} = 12 \text{ cm} \]
+Let $x$ be the side length of the inscribed square.
+The square cuts off a smaller triangle at the top which is similar to the original triangle.
+The base of the smaller triangle lies on the top side of the square, so its length is $x$.
+The altitude of the smaller triangle is $h - x$.
+Using similarity of triangles:
+\[ \frac{\text{base}_{\text{small}}}{\text{base}_{\text{large}}} = \frac{\text{height}_{\text{small}}}{\text{height}_{\text{large}}} \]
+\[ \frac{x}{a} = \frac{h - x}{h} \]
+Substitute the values:
+\[ \frac{x}{10} = \frac{12 - x}{12} \]
+\[ 12x = 10(12 - x) \]
+\[ 12x = 120 - 10x \]
+\[ 22x = 120 \]
+\[ x = \frac{120}{22} = \frac{60}{11} \]
+
+\subsection*{Answer}
+$\frac{60}{11}$ (option \textbf{E}).
+
+\end{document}

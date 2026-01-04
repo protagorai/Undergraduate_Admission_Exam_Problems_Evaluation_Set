@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+In $\triangle ABC$, $AC=3$ cm, $BC=2$ cm, and $\angle C=60^\circ$. Let $D$ be the intersection of the angle bisector of $\angle C$ with $AB$. Let $E\in BC$ such that $DE\parallel AC$. Find the area of $\triangle CDE$ (in cm$^2$).
+
+\subsection*{Solution}
+Place coordinates: let $C=(0,0)$, put $CA$ on the $x$-axis, so $A=(3,0)$.
+Since $BC=2$ and $\angle C=60^\circ$, take
+\[
+B=(2\cos 60^\circ,2\sin 60^\circ)=(1,\sqrt3).
+\]
+By the angle bisector theorem,
+\[
+\frac{AD}{DB}=\frac{AC}{BC}=\frac{3}{2}.
+\]
+Thus $D$ divides $AB$ internally in ratio $3:2$, hence
+\[
+D=\frac{2A+3B}{5}
+=\frac{2(3,0)+3(1,\sqrt3)}{5}
+=\left(\frac{9}{5},\frac{3\sqrt3}{5}\right).
+\]
+Since $DE\parallel AC$ and $AC$ is the $x$-axis, $DE$ is horizontal, so $E$ is the intersection of the line
+\[
+y=\frac{3\sqrt3}{5}
+\]
+with segment $BC$. Points on $BC$ have form $tB=(t,t\sqrt3)$, $0\le t\le 1$. Solve
+\[
+t\sqrt3=\frac{3\sqrt3}{5}\quad\Longrightarrow\quad t=\frac{3}{5}.
+\]
+Therefore
+\[
+E=\left(\frac{3}{5},\frac{3\sqrt3}{5}\right).
+\]
+Now $DE$ is horizontal, with length
+\[
+|DE|=\frac{9}{5}-\frac{3}{5}=\frac{6}{5},
+\]
+and the height from $C$ to the line $DE$ equals $y=\dfrac{3\sqrt3}{5}$.
+Thus the area is
+\[
+[CDE]=\frac12\cdot \frac{6}{5}\cdot \frac{3\sqrt3}{5}
+=\frac{9\sqrt3}{25}.
+\]
+
+\subsection*{Answer}
+$\dfrac{9\sqrt3}{25}$ (option \textbf{E}).
+
+\end{document}
+

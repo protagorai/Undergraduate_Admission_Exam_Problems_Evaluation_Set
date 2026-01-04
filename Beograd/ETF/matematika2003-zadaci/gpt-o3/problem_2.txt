@@ -1,0 +1,2 @@
+2. Jednačina x - \frac{7}{x-3} = 3 - \frac{7}{x-3} :
+A) ima bezbroj celobrojnih rešenja;   B) nema rešenja;   C) ima jedno celobrojno rešenje;   D) ima dva jednaka celobrojna rešenja;   E) ima dva jednaka necelobrojna rešenja;   N) Ne znam.

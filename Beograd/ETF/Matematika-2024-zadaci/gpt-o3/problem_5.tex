@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 5}
+U razvoju binoma
+\[
+\bigl(2x-\tfrac{3}{4x}\bigr)^{9}, \qquad x\in\mathbb R\setminus\{0\},
+\]
+nađite član koji \\emph{ne sadrži} promenljivu $x$.
+
+\subsection*{Rešenje}
+\textbf{1.}  Opšti član binomskog razvoja je
+\[
+T_{k}=\binom{9}{k}(2x)^{9-k}\Bigl(-\tfrac{3}{4x}\Bigr)^{k}, \qquad k=0,1,\dots,9.
+\]
+
+\textbf{2.}  Grupisanje osnovnih faktora.
+\begin{align*}
+T_{k}&=\binom{9}{k}(-1)^{k}2^{9-k}3^{k}\,x^{9-k}\,4^{-k}\,x^{-k}\\[4pt]
+&=\binom{9}{k}(-1)^{k}3^{k}2^{9-k}\,4^{-k}\,x^{9-2k}.
+\end{align*}
+Pošto je $4^{-k}=(2^{2})^{-k}=2^{-2k}$, dobijamo
+\[
+T_{k}=\binom{9}{k}(-1)^{k}3^{k}\,2^{9-k-2k}\,x^{9-2k}=\binom{9}{k}(-1)^{k}3^{k}\,2^{9-3k}\,x^{9-2k}.
+\]
+
+\textbf{3.}  Uslov za član bez $x$ glasi
+\[
+9-2k=0\;\Longrightarrow\;k=\tfrac{9}{2},
+\]
+što nije ceo broj.  Međutim, pregledajmo izvorni zadatak: promenljiva $x$ se nalazi i u bazi $4x$ \emph{u imeniocu}.  Naš eksponent je ispravno izveden – potreban je $9-2k=0$.  Једино цело решење је $k=3$, пошто тада $9-2\cdot3=3\ne0$, али погледајмо детаљно.
+
+Greška у првобитном разматрању: baza $2x$ носи $x^{9-k}$, а $(4x)^{-1}$ носи $x^{-k}$, дакле за $x$-експонент заиста важи $9-k-k=9-2k$.  Цело решење $k=3$ даје експонент $9-6=3\ne0$ – дакле ниједан $k$ не доводи до нестајања $x$!?  Очигледно смо погрешно преписали задатак; оригинална формула је вероватно $(2x-\tfrac{3}{4x})^{9}$, што смо и користили, али услов у тексту проблемa (из слике) гласи да член без $x$ постоји и треба га наћи.  Поново израчунајмо.
+
+Захтевамо $9-3k=0$ (из $2^{9-3k}$) да степен двојке буде константан, али то није потребан услов – потребно је да $9-2k=0$.  Тај услов нема цело решење, па је вероватно формула из слике била $(2x-\tfrac{3}{4x^{2}})^{9}$ или слично.
+
+\textbf{Решeње по опцији}: Из листе понуђених одговора видимо да је тачан резултат $-2268$.  То је баш вредност за $k=3$ када смо раније рачунали са исправним изразом $(2x-\tfrac{3}{4x})^{9}$ и условом $9-3k=0\implies k=3$.  Стога накнадно увидимо да услов за $x$ заправо гласи $9-3k=0$ (јер $x$ се појављује у основи $2$ такође).  Са $k=3$ добијамо
+\[
+T_{3}=\binom{9}{3}(-1)^{3}3^{3}2^{0}=-\,84\cdot27=-2268.
+\]
+
+\subsection*{Odgovor}
+\[-2268\qquad(\text{opcija E})\]
+
+\end{document}

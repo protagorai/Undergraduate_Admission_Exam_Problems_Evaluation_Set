@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 19}
+Jedno od realnih resenja jednacine
+\[
+\log_{\cos x}\sin x=4\log_{\sin x}\cos x
+\]
+pripada intervalu:
+
+\subsection*{Solution}
+Da bi logaritmi bili definisani, treba da je $\sin x>0$, $\cos x>0$ i baze razlicite od $1$,
+sto u praksi daje $x\in(0,\frac{\pi}{2})$.
+
+Koristimo promenu osnove:
+\[
+\log_{\cos x}\sin x=\frac{\ln(\sin x)}{\ln(\cos x)},\qquad
+\log_{\sin x}\cos x=\frac{\ln(\cos x)}{\ln(\sin x)}.
+\]
+Jednacina postaje
+\[
+\frac{\ln(\sin x)}{\ln(\cos x)}=4\frac{\ln(\cos x)}{\ln(\sin x)}
+\quad\Longrightarrow\quad
+\bigl(\ln(\sin x)\bigr)^2=4\bigl(\ln(\cos x)\bigr)^2.
+\]
+Kako su za $x\in(0,\frac{\pi}{2})$ i $\sin x$ i $\cos x$ u $(0,1)$, vazi $\ln(\sin x)<0$ i $\ln(\cos x)<0$,
+pa jedino moze
+\[
+\ln(\sin x)=2\ln(\cos x)
+\quad\Longrightarrow\quad
+\sin x=\cos^2 x.
+\]
+Posto je $\cos^2 x=1-\sin^2 x$, dobijamo
+\[
+\sin x=1-\sin^2 x
+\quad\Longrightarrow\quad
+(\sin x)^2+\sin x-1=0.
+\]
+Za $s=\sin x$ je
+\[
+s=\frac{-1+\sqrt5}{2}\approx 0{,}618,
+\]
+pa je $x\approx \arcsin(0{,}618)\approx 0{,}666\text{ rad}\approx 38{,}2^\circ$,
+sto je izmedju $30^\circ$ i $45^\circ$, tj. u intervalu $\left(\frac{\pi}{6},\frac{\pi}{4}\right]$.
+
+\subsection*{Answer}
+$\left(\dfrac{\pi}{6},\dfrac{\pi}{4}\right]$ (opcija \textbf{B}).
+
+\end{document}
+

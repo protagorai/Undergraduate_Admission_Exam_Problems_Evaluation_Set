@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+How many six-digit numbers have the first three digits even (not necessarily distinct),
+and the last three digits distinct odd digits?
+
+\subsection*{Solution}
+Even digits are $\{0,2,4,6,8\}$.
+The first digit of a six-digit number cannot be $0$, so the first digit has $4$ choices: $\{2,4,6,8\}$.
+The second and third digits can be any even digit, so each has $5$ choices.
+
+Odd digits are $\{1,3,5,7,9\}$. The last three digits must be distinct odd digits, so there are
+\[
+5\cdot 4\cdot 3=60
+\]
+ways to choose them in order.
+
+Total count:
+\[
+4\cdot 5\cdot 5\cdot 60=6000.
+\]
+
+\subsection*{Answer}
+$6000$ (option \textbf{Д}).
+
+\end{document}
+
+
+
+
+
+
+
+
+
+

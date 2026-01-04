@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Proizvod svih realnih rešenja jednačine $\displaystyle\frac{2013x}{2014} = 2013^{\log_x 2014}$ pripada skupu:
+
+(A) $(0, 1]$ \quad (B) $(1, 2]$ \quad (C) $(2, 3]$ \quad (D) $(3, 4]$ \quad (E) $(4, +\infty)$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $y = \log_x 2014$, which means $x^y = 2014$.
+
+The equation becomes:
+\[
+\frac{2013x}{2014} = 2013^y
+\]
+
+Taking logarithm base 2013:
+\[
+\log_{2013}\left(\frac{2013x}{2014}\right) = y
+\]
+\[
+\log_{2013}(2013x) - \log_{2013}(2014) = y
+\]
+\[
+1 + \log_{2013}x - \log_{2013}(2014) = y
+\]
+
+Since $y = \log_x 2014 = \frac{\ln 2014}{\ln x}$, and $\log_{2013} x = \frac{\ln x}{\ln 2013}$.
+
+Let $a = \ln x$ and $b = \ln 2013$, $c = \ln 2014$.
+
+Then $y = \frac{c}{a}$ and the equation becomes:
+\[
+1 + \frac{a}{b} - \frac{c}{b} = \frac{c}{a}
+\]
+\[
+\frac{b + a - c}{b} = \frac{c}{a}
+\]
+\[
+a(b + a - c) = bc
+\]
+\[
+a^2 + ab - ac - bc = 0
+\]
+\[
+a^2 + a(b-c) - bc = 0
+\]
+
+Using the quadratic formula with $a$ as variable:
+\[
+a = \frac{-(b-c) \pm \sqrt{(b-c)^2 + 4bc}}{2} = \frac{(c-b) \pm \sqrt{(b-c)^2 + 4bc}}{2}
+\]
+
+Note that $(b-c)^2 + 4bc = b^2 - 2bc + c^2 + 4bc = b^2 + 2bc + c^2 = (b+c)^2$.
+
+So:
+\[
+a = \frac{(c-b) \pm (b+c)}{2}
+\]
+
+This gives $a_1 = \frac{c-b+b+c}{2} = c$ and $a_2 = \frac{c-b-b-c}{2} = -b$.
+
+So $\ln x_1 = c = \ln 2014 \implies x_1 = 2014$
+
+And $\ln x_2 = -b = -\ln 2013 \implies x_2 = \frac{1}{2013}$
+
+The product of solutions:
+\[
+x_1 \cdot x_2 = 2014 \cdot \frac{1}{2013} = \frac{2014}{2013} \approx 1.0005
+\]
+
+Since $\frac{2014}{2013} > 1$ and $\frac{2014}{2013} < 2$, the product belongs to $(1, 2]$.
+
+\subsection*{Answer}
+$(1, 2]$ (option \textbf{B}).
+
+\end{document}

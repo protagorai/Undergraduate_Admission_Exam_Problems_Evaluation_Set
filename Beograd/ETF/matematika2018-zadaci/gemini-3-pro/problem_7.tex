@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 7}
+The set of points in the $xOy$ plane for which the distance to point $A(1,0)$ is twice the distance to point $B(-2,0)$ represents:
+
+\subsection*{Solution}
+Let $P(x,y)$ be a point in the set.
+The condition is given by $d(P,A) = 2 d(P,B)$.
+Using the distance formula:
+\[ \sqrt{(x-1)^2 + y^2} = 2 \sqrt{(x+2)^2 + y^2} \]
+Square both sides:
+\[ (x-1)^2 + y^2 = 4 \left( (x+2)^2 + y^2 \right) \]
+Expand the terms:
+\[ x^2 - 2x + 1 + y^2 = 4 (x^2 + 4x + 4 + y^2) \]
+\[ x^2 - 2x + 1 + y^2 = 4x^2 + 16x + 16 + 4y^2 \]
+Rearrange to one side:
+\[ 3x^2 + 18x + 3y^2 + 15 = 0 \]
+Divide by 3:
+\[ x^2 + 6x + y^2 + 5 = 0 \]
+Complete the square for $x$:
+\[ (x+3)^2 - 9 + y^2 + 5 = 0 \]
+\[ (x+3)^2 + y^2 = 4 \]
+This is the equation of a circle centered at $(-3, 0)$ with radius $2$.
+
+\subsection*{Answer}
+circle (option \textbf{B}).
+
+\end{document}

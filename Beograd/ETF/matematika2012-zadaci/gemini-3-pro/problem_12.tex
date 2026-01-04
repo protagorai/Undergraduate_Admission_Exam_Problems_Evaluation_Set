@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 12}
+Vrednost izraza $8\sin^2 80^\circ - 2\sqrt{3}\sin 40^\circ - 2\cos 40^\circ$ jednaka je:
+
+\subsection*{Solution}
+Let $V = 8\sin^2 80^\circ - 2\sqrt{3}\sin 40^\circ - 2\cos 40^\circ$.
+Use $\sin^2 \alpha = \frac{1 - \cos 2\alpha}{2}$:
+\[
+8\sin^2 80^\circ = 4(1 - \cos 160^\circ) = 4 - 4\cos 160^\circ = 4 + 4\cos 20^\circ
+\]
+Now consider the rest:
+\[
+- 2\sqrt{3}\sin 40^\circ - 2\cos 40^\circ = -4 \left(\frac{\sqrt{3}}{2}\sin 40^\circ + \frac{1}{2}\cos 40^\circ\right)
+\]
+\[
+= -4 (\sin 60^\circ \sin 40^\circ + \cos 60^\circ \cos 40^\circ) = -4 \cos(60^\circ - 40^\circ) = -4 \cos 20^\circ
+\]
+So:
+\[
+V = (4 + 4\cos 20^\circ) - 4\cos 20^\circ = 4
+\]
+
+\subsection*{Answer}
+(D) 4
+
+\end{document}

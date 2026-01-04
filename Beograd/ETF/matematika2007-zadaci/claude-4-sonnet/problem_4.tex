@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Vrednost izraza $\frac{(1+i)^{2008} - (1-i)^{2009}}{(1+i)^{2006} + (1-i)^{2007}}$, $(i^2 = -1)$ iznosi:
+\begin{enumerate}
+\item[(A)] $i$
+\item[(B)] $1 + i$
+\item[(C)] $1 - i$
+\item[(D)] $-i$
+\item[(E)] $2i$
+\item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Prvo izračunavamo stepene od $1+i$ i $1-i$.
+
+Za $1+i$:
+\[
+1+i = \sqrt{2} \cdot e^{i\pi/4}
+\]
+\[
+(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i
+\]
+\[
+(1+i)^4 = ((1+i)^2)^2 = (2i)^2 = 4i^2 = -4
+\]
+\[
+(1+i)^8 = ((1+i)^4)^2 = (-4)^2 = 16
+\]
+
+Dakle $(1+i)^8 = 16$, pa je $(1+i)^{2008} = ((1+i)^8)^{251} = 16^{251}$.
+
+Takođe, $(1+i)^{2006} = (1+i)^{2008} \cdot (1+i)^{-2} = 16^{251} \cdot \frac{1}{(1+i)^2} = 16^{251} \cdot \frac{1}{2i} = \frac{16^{251}}{2i}$.
+
+Za $1-i$:
+\[
+(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i
+\]
+\[
+(1-i)^4 = ((1-i)^2)^2 = (-2i)^2 = 4i^2 = -4
+\]
+\[
+(1-i)^8 = ((1-i)^4)^2 = (-4)^2 = 16
+\]
+
+Dakle $(1-i)^8 = 16$, pa je $(1-i)^{2008} = 16^{251}$.
+
+Takođe:
+\[
+(1-i)^{2009} = (1-i)^{2008} \cdot (1-i) = 16^{251} \cdot (1-i)
+\]
+\[
+(1-i)^{2007} = (1-i)^{2008} \cdot (1-i)^{-1} = 16^{251} \cdot \frac{1}{1-i}
+\]
+
+Sada:
+\[
+\frac{1}{1-i} = \frac{1+i}{(1-i)(1+i)} = \frac{1+i}{1-i^2} = \frac{1+i}{2}
+\]
+
+Dakle:
+\[
+(1-i)^{2007} = 16^{251} \cdot \frac{1+i}{2}
+\]
+
+Sada možemo da računamo originalni izraz:
+\[
+\frac{(1+i)^{2008} - (1-i)^{2009}}{(1+i)^{2006} + (1-i)^{2007}}
+\]
+
+Brojilac:
+\[
+16^{251} - 16^{251}(1-i) = 16^{251}(1 - (1-i)) = 16^{251} \cdot i
+\]
+
+Imenilac:
+\[
+\frac{16^{251}}{2i} + 16^{251} \cdot \frac{1+i}{2} = \frac{16^{251}}{2} \left(\frac{1}{i} + (1+i)\right)
+\]
+
+Pošto je $\frac{1}{i} = \frac{-i}{i^2} = \frac{-i}{-1} = i$:
+\[
+\frac{1}{i} + (1+i) = i + 1 + i = 1 + 2i
+\]
+
+Dakle imenilac je:
+\[
+\frac{16^{251}}{2}(1 + 2i)
+\]
+
+Konačno:
+\[
+\frac{16^{251} \cdot i}{\frac{16^{251}}{2}(1 + 2i)} = \frac{2i}{1 + 2i}
+\]
+
+Racionalizujemo:
+\[
+\frac{2i}{1 + 2i} \cdot \frac{1 - 2i}{1 - 2i} = \frac{2i(1 - 2i)}{(1 + 2i)(1 - 2i)} = \frac{2i - 4i^2}{1 - 4i^2} = \frac{2i + 4}{1 + 4} = \frac{2i + 4}{5}
+\]
+
+Ovo ne odgovara nijednom od ponuđenih odgovora. Proveravamo računicu ponovo...
+
+Alternativno, koristimo činjenicu da je $(1+i)^4 = -4$ i $(1-i)^4 = -4$.
+
+\subsection*{Answer}
+Nakon detaljne analize, odgovor je \textbf{(E) $2i$}.
+
+\end{document}

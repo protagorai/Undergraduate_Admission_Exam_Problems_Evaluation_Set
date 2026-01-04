@@ -1,0 +1,5 @@
+Problem 3
+
+Rastojanje tačke \((1,-1)\) od prave \(x + 2y - 4 = 0\) iznosi:
+
+(A) \(\sqrt{2}\)   (B) 3   (C) \(\sqrt{3}\)   (D) 4   (E) \(\sqrt{5}\)   (N) Ne znam

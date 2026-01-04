@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Neka je $s = 1 + q + q^2 + \cdots$ $(|q| < 1)$ i $S = 1 + Q + Q^2 + \cdots$ $(|Q| < 1)$, gde su $s$ i $S$ dati brojevi. Tada je zbir $1 + qQ + q^2Q^2 + q^3Q^3 + \cdots$ jednak:
+
+(A) $\displaystyle\frac{s \cdot S}{s+S-1}$ \quad (B) $\displaystyle\frac{s \cdot S}{2 \cdot s \cdot S - s - S + 1}$ \quad (C) $\displaystyle\frac{s \cdot S}{s \cdot S + s + S - 2}$ \quad (D) $\displaystyle\frac{2s \cdot S - 1}{s + S - 1}$ \quad (E) $s \cdot S$ \quad (N) Ne znam
+
+\subsection*{Solution}
+For a geometric series with first term 1 and ratio $r$ where $|r| < 1$:
+\[
+1 + r + r^2 + \cdots = \frac{1}{1-r}
+\]
+
+So we have:
+\[
+s = \frac{1}{1-q} \implies q = \frac{s-1}{s}
+\]
+\[
+S = \frac{1}{1-Q} \implies Q = \frac{S-1}{S}
+\]
+
+The sum $1 + qQ + (qQ)^2 + \cdots$ is a geometric series with ratio $qQ$:
+\[
+\sum_{n=0}^{\infty} (qQ)^n = \frac{1}{1-qQ}
+\]
+
+Now compute $qQ$:
+\[
+qQ = \frac{s-1}{s} \cdot \frac{S-1}{S} = \frac{(s-1)(S-1)}{sS}
+\]
+
+Therefore:
+\[
+1 - qQ = 1 - \frac{(s-1)(S-1)}{sS} = \frac{sS - (s-1)(S-1)}{sS}
+\]
+
+Expanding $(s-1)(S-1) = sS - s - S + 1$:
+\[
+1 - qQ = \frac{sS - sS + s + S - 1}{sS} = \frac{s + S - 1}{sS}
+\]
+
+Therefore:
+\[
+\frac{1}{1-qQ} = \frac{sS}{s + S - 1}
+\]
+
+\subsection*{Answer}
+$\displaystyle\frac{s \cdot S}{s+S-1}$ (option \textbf{A}).
+
+\end{document}

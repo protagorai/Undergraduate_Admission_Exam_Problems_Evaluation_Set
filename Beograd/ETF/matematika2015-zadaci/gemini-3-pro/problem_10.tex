@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+Ako je $A = \frac{1}{6}\left((\log_2 3)^3 - (\log_2 6)^3 - (\log_2 12)^3 + (\log_2 24)^3\right)$, tada je vrednost izraza $2^A$ jednaka:
+
+\subsection*{Solution}
+Označi $x = \log_2 3$.
+Tada je:
+$\log_2 6 = \log_2 (2 \cdot 3) = 1 + x$
+$\log_2 12 = \log_2 (4 \cdot 3) = 2 + x$
+$\log_2 24 = \log_2 (8 \cdot 3) = 3 + x$
+
+Izraz za $6A$ postaje:
+$6A = x^3 - (x+1)^3 - (x+2)^3 + (x+3)^3$
+$6A = x^3 + (x^3 + 9x^2 + 27x + 27) - (x^3 + 3x^2 + 3x + 1) - (x^3 + 6x^2 + 12x + 8)$
+$6A = 2x^3 + 9x^2 + 27x + 27 - (2x^3 + 9x^2 + 15x + 9)$
+$6A = (27x - 15x) + (27 - 9)$
+$6A = 12x + 18$
+$A = 2x + 3$.
+
+Sada vraćamo vrednost $x$:
+$A = 2 \log_2 3 + 3 = \log_2 3^2 + \log_2 2^3 = \log_2 9 + \log_2 8 = \log_2 72$.
+Tražena vrednost je $2^A = 2^{\log_2 72} = 72$.
+
+\subsection*{Answer}
+$72$ (option \textbf{C}).
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\section*{Problem 15}
+Zbir svih realnih rešenja jednačine $\sqrt{\sin^2 x + \frac{1}{2}} + \sqrt{\cos^2 x + \frac{1}{2}} = 2$ na segmentu $[0, 2\pi]$ iznosi:
+\[
+(A)\; \pi \quad (B)\; 2\pi \quad (C)\; 3\pi \quad (D)\; 4\pi \quad (E)\; \text{Nijedan od ponuđenih odgovora}
+\]
+
+\subsection*{Solution}
+Kvadriranjem jednačine dobijamo:
+\[
+\left(\sqrt{\sin^2 x + \frac{1}{2}} + \sqrt{\cos^2 x + \frac{1}{2}}\right)^2 = 4
+\]
+\[
+\sin^2 x + \frac{1}{2} + \cos^2 x + \frac{1}{2} + 2\sqrt{\left(\sin^2 x + \frac{1}{2}\right)\left(\cos^2 x + \frac{1}{2}\right)} = 4
+\]
+Kako je $\sin^2 x + \cos^2 x = 1$, imamo:
+\[
+2 + 2\sqrt{\dots} = 4 \Rightarrow 2\sqrt{\dots} = 2 \Rightarrow \sqrt{\dots} = 1
+\]
+Kvadriranjem korena:
+\[
+\left(\sin^2 x + \frac{1}{2}\right)\left(\cos^2 x + \frac{1}{2}\right) = 1
+\]
+Neka je $t = \sin^2 x$. Tada je $\cos^2 x = 1-t$.
+\[
+\left(t + \frac{1}{2}\right)\left(1 - t + \frac{1}{2}\right) = 1
+\]
+\[
+(t + 0.5)(1.5 - t) = 1
+\]
+\[
+1.5t - t^2 + 0.75 - 0.5t = 1
+\]
+\[
+-t^2 + t + 0.75 = 1
+\]
+\[
+t^2 - t + 0.25 = 0 \Rightarrow (t - 0.5)^2 = 0 \Rightarrow t = 0.5
+\]
+Dakle, $\sin^2 x = \frac{1}{2}$, što znači $\sin x = \pm \frac{1}{\sqrt{2}}$.
+Na segmentu $[0, 2\pi]$ rešenja su:
+\begin{itemize}
+    \item $\sin x = \frac{\sqrt{2}}{2} \Rightarrow x_1 = \frac{\pi}{4}, x_2 = \frac{3\pi}{4}$
+    \item $\sin x = -\frac{\sqrt{2}}{2} \Rightarrow x_3 = \frac{5\pi}{4}, x_4 = \frac{7\pi}{4}$
+\end{itemize}
+Zbir rešenja:
+\[
+\frac{\pi}{4} + \frac{3\pi}{4} + \frac{5\pi}{4} + \frac{7\pi}{4} = \frac{16\pi}{4} = 4\pi
+\]
+
+\subsection*{Answer}
+$4\pi$ (option \textbf{D}).
+
+\end{document}

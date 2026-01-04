@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 1}
+Ako je $i$ imaginarna jedinica onda je količnik $\frac{i^{2004}+i^{2005}}{i^{2003}+i^{2002}}$ jednak:
+
+A) $0$; \quad B) $-i$; \quad C) $1$; \quad D) $-1$; \quad E) $i$; \quad N) Ne znam.
+
+\subsection*{Rešenje}
+Koristimo činjenicu da su stepeni imaginarne jedinice periodični sa periodom 4:
+\[
+i^1 = i, \quad i^2 = -1, \quad i^3 = -i, \quad i^4 = 1, \quad i^5 = i, \ldots
+\]
+
+Odredimo ostatke pri deljenju sa 4:
+\begin{align*}
+2004 &= 501 \cdot 4 + 0 \Rightarrow i^{2004} = i^0 = 1\\
+2005 &= 501 \cdot 4 + 1 \Rightarrow i^{2005} = i^1 = i\\
+2003 &= 500 \cdot 4 + 3 \Rightarrow i^{2003} = i^3 = -i\\
+2002 &= 500 \cdot 4 + 2 \Rightarrow i^{2002} = i^2 = -1
+\end{align*}
+
+Sada računamo:
+\[
+\frac{i^{2004}+i^{2005}}{i^{2003}+i^{2002}} = \frac{1+i}{-i-1} = \frac{1+i}{-(1+i)} = -1
+\]
+
+\subsection*{Odgovor}
+$-1$ (opcija \textbf{D}).
+
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 9}
+Skup re\u{s}enja nejedna\u{c}ine
+\[
+-\frac35\le x+x^2+x^3+\cdots+x^n+\cdots<1,\qquad x\in\mathbb{R},
+\]
+je oblika (za neke realne brojeve $a<b$):
+
+\subsection*{Solution}
+Za konvergenciju beskona\u{c}nog geometrijskog reda potrebno je $|x|<1$, a tada
+\[
+x+x^2+x^3+\cdots=\frac{x}{1-x}.
+\]
+Dakle, tra\u{z}imo $x$ takvo da je $|x|<1$ i
+\[
+-\frac35\le \frac{x}{1-x}<1.
+\]
+Po\u{s}to je $x<1$, va\u{z}i $1-x>0$, pa mo\u{z}emo mno\u{z}iti bez promene smera nejedna\u{c}ina.
+
+Desna nejedna\u{c}ina:
+\[
+\frac{x}{1-x}<1 \;\Longleftrightarrow\; x<1-x \;\Longleftrightarrow\; 2x<1 \;\Longleftrightarrow\; x<\frac12.
+\]
+Leva nejedna\u{c}ina:
+\[
+\frac{x}{1-x}\ge -\frac35
+\;\Longleftrightarrow\; 5x\ge -3(1-x)=-3+3x
+\;\Longleftrightarrow\; 2x\ge -3
+\;\Longleftrightarrow\; x\ge -\frac32.
+\]
+Sa uslovom $|x|<1$ dobijamo
+\[
+(-1,\tfrac12).
+\]
+
+\subsection*{Answer}
+$(-1,\tfrac12)$ (option \textbf{E}).
+
+\end{document}
+
+

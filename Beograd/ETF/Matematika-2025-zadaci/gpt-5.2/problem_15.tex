@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section*{Problem 15}
+Broj realnih i različitih rešenja jednačine
+\[
+\tan^2 x=\frac{1-\cos x}{1-\sin x}
+\]
+na segmentu $[0,2\pi]$ je.
+
+\subsection*{Solution}
+Zapišimo jednačinu preko $\sin x$ i $\cos x$:
+\[
+\frac{\sin^2 x}{\cos^2 x}=\frac{1-\cos x}{1-\sin x},
+\]
+pri čemu mora važiti $\cos x\ne 0$ i $\sin x\ne 1$.
+Prebacivanjem dobijamo
+\[
+\sin^2 x(1-\sin x)=\cos^2 x(1-\cos x).
+\]
+To je ekvivalentno
+\[
+\sin^2 x-\cos^2 x=\sin^3 x-\cos^3 x.
+\]
+Faktorišemo:
+\[
+(\sin x-\cos x)(\sin x+\cos x)=(\sin x-\cos x)(\sin^2 x+\sin x\cos x+\cos^2 x).
+\]
+Dakle, ili je $\sin x=\cos x$, ili
+\[
+\sin x+\cos x=\sin^2 x+\sin x\cos x+\cos^2 x=1+\sin x\cos x.
+\]
+\textbf{1) $\sin x=\cos x$:} tada je $\tan x=1$, pa
+\[
+x=\frac{\pi}{4},\ \frac{5\pi}{4}\ \text{na }[0,2\pi].
+\]
+
+\medskip
+\noindent\textbf{2) $\sin x+\cos x=1+\sin x\cos x$:}
+Neka su $p=\sin x+\cos x$, $q=\sin x\cos x$. Tada je $p=1+q$.
+Takođe,
+\[
+p^2=\sin^2 x+\cos^2 x+2\sin x\cos x=1+2q.
+\]
+Zamenom $q=p-1$ dobijamo $p^2=1+2(p-1)=2p-1$, tj. $(p-1)^2=0$, pa je $p=1$ i $q=0$.
+Dakle $\sin x+\cos x=1$ i $\sin x\cos x=0$.
+Pošto $\cos x=0$ nije dozvoljeno, mora biti $\sin x=0$ i $\cos x=1$, pa je $x=0$ ili $x=2\pi$.
+
+Ukupno su rešenja: $0,\ 2\pi,\ \pi/4,\ 5\pi/4$, ukupno $4$.
+
+\subsection*{Answer}
+$4$ (option \textbf{B}).
+
+\end{document}
+
+

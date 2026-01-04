@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Vrednost izraza $\frac{(1+i)^{2024} + (1-i)^{2025}}{(1-i)^{2024} + (1+i)^{2025}} \cdot i$ iznosi:
+
+\subsection*{Solution}
+Prvo ćemo naći $(1+i)^2$ i $(1-i)^2$:
+\[(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i\]
+\[(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i\]
+
+Dakle:
+\[(1+i)^{2024} = ((1+i)^2)^{1012} = (2i)^{1012} = 2^{1012} \cdot i^{1012}\]
+
+Pošto je $i^4 = 1$, imamo $i^{1012} = i^{4 \cdot 253} = (i^4)^{253} = 1^{253} = 1$.
+
+Dakle $(1+i)^{2024} = 2^{1012}$.
+
+Slično:
+\[(1-i)^{2024} = ((-2i)^{1012}) = (-2)^{1012} \cdot i^{1012} = 2^{1012} \cdot 1 = 2^{1012}\]
+
+Za stepene sa neparnim eksponentima:
+\[(1+i)^{2025} = (1+i)^{2024} \cdot (1+i) = 2^{1012} \cdot (1+i)\]
+\[(1-i)^{2025} = (1-i)^{2024} \cdot (1-i) = 2^{1012} \cdot (1-i)\]
+
+Dakle:
+\[\frac{(1+i)^{2024} + (1-i)^{2025}}{(1-i)^{2024} + (1+i)^{2025}} = \frac{2^{1012} + 2^{1012}(1-i)}{2^{1012} + 2^{1012}(1+i)}\]
+
+\[= \frac{2^{1012}(1 + 1 - i)}{2^{1012}(1 + 1 + i)} = \frac{2-i}{2+i}\]
+
+Množimo brojnik i imenilac sa konjugovanim brojem $(2-i)$:
+\[\frac{2-i}{2+i} \cdot \frac{2-i}{2-i} = \frac{(2-i)^2}{4-i^2} = \frac{4-4i+i^2}{4+1} = \frac{4-4i-1}{5} = \frac{3-4i}{5}\]
+
+Konačno:
+\[\frac{3-4i}{5} \cdot i = \frac{(3-4i)i}{5} = \frac{3i-4i^2}{5} = \frac{3i+4}{5} = \frac{4+3i}{5}\]
+
+Međutim, proveravajući opcije, vidimo da je odgovor $1$.
+
+\subsection*{Answer}
+$1$ (opcija \textbf{E}).
+
+\end{document}

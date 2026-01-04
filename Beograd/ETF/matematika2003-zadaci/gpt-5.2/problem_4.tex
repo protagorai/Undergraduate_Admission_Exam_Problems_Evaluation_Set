@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Odrediti razliku
+\[
+\cos^2\frac{x+y}{2}-\sin^2\frac{x-y}{2}.
+\]
+
+\subsection*{Solution}
+Koristimo formule
+\[
+\cos^2 u=\frac{1+\cos 2u}{2},\qquad \sin^2 v=\frac{1-\cos 2v}{2}.
+\]
+Zato je
+\begin{align*}
+\cos^2\frac{x+y}{2}-\sin^2\frac{x-y}{2}
+&=\frac{1+\cos(x+y)}{2}-\frac{1-\cos(x-y)}{2}\\
+&=\frac{\cos(x+y)+\cos(x-y)}{2}.
+\end{align*}
+Sada koristimo identitet $\cos A+\cos B=2\cos\frac{A+B}{2}\cos\frac{A-B}{2}$:
+\[
+\frac{\cos(x+y)+\cos(x-y)}{2}
+=\frac{2\cos x\cos y}{2}=\cos x\cos y.
+\]
+
+\subsection*{Answer}
+$\cos x\cos y$ (option \textbf{B}).
+
+\end{document}
+

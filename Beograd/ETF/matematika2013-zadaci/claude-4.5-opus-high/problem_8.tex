@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Find the complex number $\displaystyle\frac{\cos\alpha + i\sin\alpha + 1}{\cos\alpha + i\sin\alpha - 1}$ (where $i = \sqrt{-1}$, $\alpha \neq 2k\pi$, $k \in \mathbf{Z}$).
+
+Options: (A) $-i \cdot \cot\frac{\alpha}{2}$ \quad (B) $-i \cdot \frac{2\sin\alpha}{1 - \cos\alpha}$ \quad (C) $-i \cdot \frac{2\sin\alpha}{2 - \cos\alpha}$ \quad (D) $-i \cdot \frac{\sin\alpha}{2(1 - \cos\alpha)}$ \quad (E) $-i \cdot \tan\frac{\alpha}{2}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Let $z = \cos\alpha + i\sin\alpha = e^{i\alpha}$.
+
+The expression becomes:
+\[
+\frac{z + 1}{z - 1} = \frac{e^{i\alpha} + 1}{e^{i\alpha} - 1}
+\]
+
+Factor out $e^{i\alpha/2}$:
+\[
+= \frac{e^{i\alpha/2}(e^{i\alpha/2} + e^{-i\alpha/2})}{e^{i\alpha/2}(e^{i\alpha/2} - e^{-i\alpha/2})}
+= \frac{e^{i\alpha/2} + e^{-i\alpha/2}}{e^{i\alpha/2} - e^{-i\alpha/2}}
+\]
+
+Using Euler's formula:
+\[
+= \frac{2\cos(\alpha/2)}{2i\sin(\alpha/2)} = \frac{\cos(\alpha/2)}{i\sin(\alpha/2)}
+\]
+
+Multiply numerator and denominator by $-i$:
+\[
+= \frac{-i\cos(\alpha/2)}{-i \cdot i\sin(\alpha/2)} = \frac{-i\cos(\alpha/2)}{\sin(\alpha/2)}
+\]
+
+Therefore:
+\[
+= -i \cdot \frac{\cos(\alpha/2)}{\sin(\alpha/2)} = -i \cdot \cot\frac{\alpha}{2}
+\]
+
+\subsection*{Answer}
+$-i \cdot \cot\frac{\alpha}{2}$ (option \textbf{A}).
+
+\end{document}

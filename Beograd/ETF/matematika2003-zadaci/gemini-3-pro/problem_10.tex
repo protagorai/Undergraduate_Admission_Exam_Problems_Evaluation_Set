@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 10}
+Jednačina $x^3 + x^2 + ax + b = 0$ ($a,b \in \mathbf{R}$) ima rešenja $1-\sqrt{2}$ i $1+\sqrt{2}$. Proizvod svih rešenja date jednačine je:
+
+A) -2; B) -3; C) 2; D) 0; E) 3; N) Ne znam.
+
+\subsection*{Solution}
+Neka su $x_1, x_2, x_3$ rešenja kubne jednačine.
+Data su dva rešenja: $x_1 = 1-\sqrt{2}$ i $x_2 = 1+\sqrt{2}$.
+Prema Vijetovim formulama za jednačinu $A x^3 + B x^2 + C x + D = 0$:
+\[ x_1 + x_2 + x_3 = -\frac{B}{A} \]
+\[ x_1 x_2 x_3 = -\frac{D}{A} \]
+Ovde je $A=1, B=1, D=b$.
+Zbir rešenja:
+\[ (1-\sqrt{2}) + (1+\sqrt{2}) + x_3 = -1 \]
+\[ 2 + x_3 = -1 \]
+\[ x_3 = -3 \]
+Traži se proizvod svih rešenja $P = x_1 x_2 x_3$.
+Proizvod prva dva rešenja:
+\[ x_1 x_2 = (1-\sqrt{2})(1+\sqrt{2}) = 1^2 - (\sqrt{2})^2 = 1 - 2 = -1 \]
+Ukupan proizvod:
+\[ P = x_1 x_2 x_3 = (-1) \cdot (-3) = 3 \]
+
+\subsection*{Answer}
+3 (option \textbf{E}).
+\end{document}

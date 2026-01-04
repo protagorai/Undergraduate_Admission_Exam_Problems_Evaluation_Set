@@ -1,0 +1,2 @@
+Data je funkcija $f(x)=2x-x^2$. Tada je $f(f(f(1-x)))$ jednako:
+A) $2x^4-x^8$; B) $2x-x^{16}$; C) $1-(1-x)^8$; D) $2x^3-x^8$; E) $1-x^8$; N) Ne znam.

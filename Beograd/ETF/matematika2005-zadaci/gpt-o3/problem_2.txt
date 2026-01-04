@@ -1,0 +1,7 @@
+Problem 2: Ako je f(x) = x^2 + x + 1, tada je
+
+    f(x + 2) - 2 f(x + 1) + f(x)
+
+za svako x jednako:
+
+(A) 2   (B) 0   (C) x + 2   (D) x   (E) x + 3   (N) Ne znam

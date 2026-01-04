@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 6}
+Date su funkcije:
+\[
+f_1(x)=\ln\!\big((x+3)^5(x-1)^2\big),\quad
+f_2(x)=5\ln(x+3)+\ln\!\big((x-1)^2\big),
+\]
+\[
+f_3(x)=\ln\!\big((x+3)^5\big)+2\ln(x-1),\quad
+f_4(x)=5\ln(x+3)+2\ln(x-1).
+\]
+Odrediti tačan iskaz o njihovoj jednakosti.
+
+\subsection*{Solution}
+\textbf{1) Poređenje $f_1$ i $f_2$.}
+Da bi $f_1$ bila definisana, potrebno je $(x+3)^5(x-1)^2>0$ i $x\neq 1$.
+Pošto je $(x-1)^2>0$ za $x\neq 1$, znak proizvoda određuje $x+3$, pa je domen
+\[
+{\rm Dom}(f_1)=(-3,1)\cup(1,\infty).
+\]
+Za $x>-3$ važi $(x+3)^5>0$ i $(x-1)^2>0$, pa se može primeniti $\ln(ab)=\ln a+\ln b$:
+\[
+f_1(x)=\ln((x+3)^5)+\ln((x-1)^2)=5\ln(x+3)+\ln((x-1)^2)=f_2(x),
+\]
+za sve $x\in(-3,1)\cup(1,\infty)$, tj. $f_1=f_2$ kao funkcije (isti domen i iste vrednosti).
+
+\medskip
+\textbf{2) Poređenje $f_3$ i $f_4$.}
+Ovde se pojavljuje $\ln(x-1)$, pa mora biti $x-1>0$, tj. $x>1$.
+Na domenу $(1,\infty)$ važi $\ln((x+3)^5)=5\ln(x+3)$, pa dobijamo
+\[
+f_3(x)=5\ln(x+3)+2\ln(x-1)=f_4(x)\qquad (x>1).
+\]
+
+\medskip
+\textbf{3) Zaključak.}
+Iako je $f_1=f_2$ na $(-3,1)\cup(1,\infty)$, a $f_3=f_4$ na $(1,\infty)$,
+funkcije $f_1,f_2$ nisu jednake funkcijama $f_3,f_4$ kao funkcije jer imaju različite domene
+($f_1,f_2$ su definisane i na $(-3,1)$, dok $f_3,f_4$ nisu).
+
+\subsection*{Answer}
+$f_1=f_2\neq f_3=f_4$ (option \textbf{C}).
+
+\end{document}
+

@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 17}
+Neka je oko trougla čije su stranice $a, b$ i $c$ i površina $P = 15\sqrt{3} \, \mathrm{cm}^2$, opisana kružnica poluprečnika $R = \frac{14\sqrt{3}}{3} \, \mathrm{cm}$. Ako je $a$ stranica dužine $10 \, \mathrm{cm}$, koja se nalazi naspram jednog oštrog ugla, zbir dužina stranica $b$ i $c$ iznosi (u cm):
+
+\subsection*{Solution}
+Neka je $\alpha$ ugao naspram stranice $a$.
+Veza između stranice i poluprečnika opisanog kruga je $a = 2R \sin \alpha$.
+$10 = 2 \cdot \frac{14\sqrt{3}}{3} \sin \alpha$
+$5 = \frac{14\sqrt{3}}{3} \sin \alpha$
+$\sin \alpha = \frac{15}{14\sqrt{3}} = \frac{15\sqrt{3}}{42} = \frac{5\sqrt{3}}{14}$.
+
+Kako je ugao $\alpha$ oštar (dato u zadatku), $\cos \alpha > 0$.
+$\cos \alpha = \sqrt{1 - \sin^2 \alpha} = \sqrt{1 - \frac{25 \cdot 3}{196}} = \sqrt{1 - \frac{75}{196}} = \sqrt{\frac{121}{196}} = \frac{11}{14}$.
+
+Površina trougla je $P = \frac{1}{2} bc \sin \alpha$.
+$15\sqrt{3} = \frac{1}{2} bc \frac{5\sqrt{3}}{14}$
+$30 = bc \frac{5}{14}$
+$bc = \frac{30 \cdot 14}{5} = 6 \cdot 14 = 84$.
+
+Kosinusna teorema za stranicu $a$:
+$a^2 = b^2 + c^2 - 2bc \cos \alpha$
+$10^2 = b^2 + c^2 - 2(84) \frac{11}{14}$
+$100 = b^2 + c^2 - 12 \cdot 11$
+$100 = b^2 + c^2 - 132$
+$b^2 + c^2 = 232$.
+
+Tražimo $b+c$.
+$(b+c)^2 = b^2 + c^2 + 2bc = 232 + 2(84) = 232 + 168 = 400$.
+$b+c = \sqrt{400} = 20$.
+
+\subsection*{Answer}
+$20$ (option \textbf{D}).
+
+\end{document}
+

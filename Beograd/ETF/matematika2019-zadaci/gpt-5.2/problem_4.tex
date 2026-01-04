@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ako je
+\[
+f(x)=x(x+1)(x+2)(x+3)(x+4),
+\]
+odrediti $f'(-2)$.
+
+\subsection*{Solution}
+Neka su nule polinoma $0,-1,-2,-3,-4$. Važi
+\[
+f(x)=\prod_{k\in\{0,1,2,3,4\}}(x+k).
+\]
+Za polinom oblika $f(x)=\prod (x-r_i)$ važi $f'(r_j)=\prod_{i\neq j}(r_j-r_i)$.
+Ovde je $r_j=-2$, pa
+\[
+f'(-2)=(-2-0)(-2-(-1))(-2-(-3))(-2-(-4)).
+\]
+Odnosno
+\[
+f'(-2)=(-2)(-1)(1)(2)=4.
+\]
+
+\subsection*{Answer}
+$4$ (option \textbf{D}).
+
+\end{document}
+

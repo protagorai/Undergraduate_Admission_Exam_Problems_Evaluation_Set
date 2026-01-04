@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+If the solution to the equation $4^{x+\sqrt{x^2-2}} - 5 \cdot 2^{x-1+\sqrt{x^2-2}} = 6$ is of the form $\frac{p}{q}$, find $p + q$.
+
+\subsection*{Solution}
+Let $y = 2^{x+\sqrt{x^2-2}}$. Note that $4^{x+\sqrt{x^2-2}} = (2^2)^{x+\sqrt{x^2-2}} = 2^{2(x+\sqrt{x^2-2})} = y^2$.
+
+Also, $2^{x-1+\sqrt{x^2-2}} = 2^{x+\sqrt{x^2-2}} \cdot 2^{-1} = \frac{y}{2}$.
+
+The equation becomes:
+\[
+y^2 - 5 \cdot \frac{y}{2} = 6
+\]
+\[
+y^2 - \frac{5y}{2} - 6 = 0
+\]
+\[
+2y^2 - 5y - 12 = 0
+\]
+
+Using the quadratic formula:
+\[
+y = \frac{5 \pm \sqrt{25 + 96}}{4} = \frac{5 \pm \sqrt{121}}{4} = \frac{5 \pm 11}{4}
+\]
+
+So $y = 4$ or $y = -\frac{3}{2}$.
+
+Since $y = 2^{x+\sqrt{x^2-2}} > 0$, we have $y = 4$.
+
+Thus $2^{x+\sqrt{x^2-2}} = 4 = 2^2$, so $x + \sqrt{x^2-2} = 2$.
+
+\[
+\sqrt{x^2-2} = 2 - x
+\]
+
+For this to be valid, we need $2 - x \geq 0$, i.e., $x \leq 2$.
+
+Squaring both sides:
+\[
+x^2 - 2 = (2-x)^2 = 4 - 4x + x^2
+\]
+\[
+-2 = 4 - 4x
+\]
+\[
+4x = 6
+\]
+\[
+x = \frac{3}{2}
+\]
+
+Check: $x = 3/2 \leq 2$ ✓, and $\sqrt{(3/2)^2 - 2} = \sqrt{9/4 - 8/4} = \sqrt{1/4} = 1/2$.
+$x + \sqrt{x^2-2} = 3/2 + 1/2 = 2$ ✓
+
+So $x = \frac{3}{2} = \frac{p}{q}$ where $p = 3$, $q = 2$.
+
+$p + q = 3 + 2 = 5$
+
+\subsection*{Answer}
+$5$ (option \textbf{C}).
+
+\end{document}

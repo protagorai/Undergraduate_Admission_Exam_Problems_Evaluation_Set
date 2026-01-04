@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 10}
+U trouglu $ABC$ je $|BC| = 3 \cdot |AB|$ i $\angle ABC = 60°$. Tada je zbir $\cos \angle BAC + \cos \angle ACB$ jednak:
+
+(A) $\frac{1}{\sqrt{7}}$ \quad (B) $\frac{2}{\sqrt{7}}$ \quad (C) $\frac{3}{\sqrt{7}}$ \quad (D) $\frac{4}{\sqrt{7}}$ \quad (E) $\frac{5}{\sqrt{7}}$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Označimo $|AB| = c$, $|BC| = a = 3c$, $|AC| = b$, i $\angle ABC = 60°$.
+
+Koristimo kosinusov zakon da nađemo $b$:
+\[
+b^2 = a^2 + c^2 - 2ac \cos 60°
+\]
+\[
+b^2 = (3c)^2 + c^2 - 2 \cdot 3c \cdot c \cdot \frac{1}{2} = 9c^2 + c^2 - 3c^2 = 7c^2
+\]
+\[
+b = c\sqrt{7}
+\]
+
+Sada koristimo sinusov zakon:
+\[
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
+\]
+
+Gde je $A = \angle BAC$, $B = \angle ABC = 60°$, $C = \angle ACB$.
+
+\[
+\frac{3c}{\sin A} = \frac{c\sqrt{7}}{\sin 60°} = \frac{c\sqrt{7}}{\frac{\sqrt{3}}{2}} = \frac{2c\sqrt{7}}{\sqrt{3}}
+\]
+
+Dakle:
+\[
+\sin A = \frac{3c \cdot \sqrt{3}}{2c\sqrt{7}} = \frac{3\sqrt{3}}{2\sqrt{7}}
+\]
+
+Slično:
+\[
+\frac{c}{\sin C} = \frac{2c\sqrt{7}}{\sqrt{3}}
+\]
+\[
+\sin C = \frac{c \cdot \sqrt{3}}{2c\sqrt{7}} = \frac{\sqrt{3}}{2\sqrt{7}}
+\]
+
+Sada možemo naći kosinuse:
+\[
+\cos^2 A = 1 - \sin^2 A = 1 - \frac{27}{28} = \frac{1}{28}
+\]
+\[
+\cos A = \frac{1}{2\sqrt{7}}
+\]
+
+\[
+\cos^2 C = 1 - \sin^2 C = 1 - \frac{3}{28} = \frac{25}{28}
+\]
+\[
+\cos C = \frac{5}{2\sqrt{7}}
+\]
+
+Dakle:
+\[
+\cos A + \cos C = \frac{1}{2\sqrt{7}} + \frac{5}{2\sqrt{7}} = \frac{6}{2\sqrt{7}} = \frac{3}{\sqrt{7}}
+\]
+
+\subsection*{Answer}
+(C) $\frac{3}{\sqrt{7}}$
+
+\end{document}

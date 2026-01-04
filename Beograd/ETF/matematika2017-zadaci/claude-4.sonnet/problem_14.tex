@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 14}
+Skup svih realnih rešenja nejednačine $\frac{|3^x - 1| - |3 - 3^x| - 2}{\sqrt{4^x - 2^{x+3} + 16}} \geq 0$ je oblika (za neke realne brojeve $a$, $b$, $c$ i $d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+(A) $(a,b)$ \quad (B) $[a,b) \cup (b,+\infty)$ \quad (C) $[a,+\infty)$ \quad (D) $(a,b) \cup [c,d)$ \quad (E) $(-\infty,a] \cup [b,c]$ \quad (N) Ne znam
+
+\subsection*{Solution}
+Analizirajmo nejednačinu korak po korak.
+
+Prvo, imenilac mora biti pozitivan:
+\[
+\sqrt{4^x - 2^{x+3} + 16} > 0
+\]
+\[
+4^x - 8 \cdot 2^x + 16 > 0
+\]
+\[
+(2^x)^2 - 8 \cdot 2^x + 16 > 0
+\]
+
+Označimo $t = 2^x > 0$:
+\[
+t^2 - 8t + 16 > 0
+\]
+\[
+(t - 4)^2 > 0
+\]
+
+Ovo je tačno za sve $t \neq 4$, tj. $2^x \neq 4$, što znači $x \neq 2$.
+
+Sada analizirajmo brojilac $|3^x - 1| - |3 - 3^x| - 2$.
+
+Kritične tačke su gde su izrazi pod apsolutnim vrednostima jednaki nuli:
+- $3^x - 1 = 0 \Rightarrow x = 0$
+- $3 - 3^x = 0 \Rightarrow 3^x = 3 \Rightarrow x = 1$
+
+\textbf{Slučaj 1:} $x < 0$
+$3^x < 1$, pa $3^x - 1 < 0$ i $3 - 3^x > 0$
+\[
+|3^x - 1| - |3 - 3^x| - 2 = -(3^x - 1) - (3 - 3^x) - 2 = -3^x + 1 - 3 + 3^x - 2 = -4 < 0
+\]
+
+\textbf{Slučaj 2:} $0 \leq x < 1$
+$1 \leq 3^x < 3$, pa $3^x - 1 \geq 0$ i $3 - 3^x > 0$
+\[
+|3^x - 1| - |3 - 3^x| - 2 = (3^x - 1) - (3 - 3^x) - 2 = 3^x - 1 - 3 + 3^x - 2 = 2 \cdot 3^x - 6
+\]
+
+Za $2 \cdot 3^x - 6 \geq 0$: $3^x \geq 3$, tj. $x \geq 1$. Ali u ovom slučaju je $x < 1$, pa je izraz negativan.
+
+\textbf{Slučaj 3:} $x \geq 1$
+$3^x \geq 3$, pa $3^x - 1 > 0$ i $3 - 3^x \leq 0$
+\[
+|3^x - 1| - |3 - 3^x| - 2 = (3^x - 1) - (-(3 - 3^x)) - 2 = 3^x - 1 + 3 - 3^x - 2 = 0
+\]
+
+Dakle, brojilac je 0 za $x \geq 1$ (osim $x = 2$ gde imenilac nije definisan).
+
+Nejednačina $\frac{0}{\text{pozitivan broj}} \geq 0$ je tačna.
+
+Dakle, rešenje je $[1,2) \cup (2,+\infty)$.
+
+\subsection*{Answer}
+(B) $[a,b) \cup (b,+\infty)$
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Zbir svih realnih rešenja jednačine $8^x - \frac{21}{4} \cdot 4^x + \frac{21}{4} \cdot 2^x - 1 = 0$ iznosi:
+
+\subsection*{Solution}
+
+Let $t = 2^x$. Then $8^x = t^3$ and $4^x = t^2$.
+The equation becomes:
+\[
+t^3 - \frac{21}{4}t^2 + \frac{21}{4}t - 1 = 0.
+\]
+Multiply by 4 to clear fractions:
+\[
+4t^3 - 21t^2 + 21t - 4 = 0.
+\]
+We observe that $t=1$ is a solution: $4 - 21 + 21 - 4 = 0$.
+Perform polynomial division by $(t-1)$:
+\[
+4t^3 - 4t^2 - 17t^2 + 17t + 4t - 4 = 0
+\]
+\[
+4t^2(t-1) - 17t(t-1) + 4(t-1) = 0
+\]
+\[
+(t-1)(4t^2 - 17t + 4) = 0.
+\]
+Solve $4t^2 - 17t + 4 = 0$:
+\[
+t = \frac{17 \pm \sqrt{289 - 64}}{8} = \frac{17 \pm 15}{8}.
+\]
+$t_2 = \frac{32}{8} = 4$, $t_3 = \frac{2}{8} = \frac{1}{4}$.
+The values for $t$ are $1, 4, \frac{1}{4}$.
+Since $t = 2^x$:
+1) $2^x = 1 \implies x = 0$.
+2) $2^x = 4 \implies x = 2$.
+3) $2^x = \frac{1}{4} \implies x = -2$.
+The sum of real solutions is $0 + 2 + (-2) = 0$.
+
+
+\subsection*{Answer}
+0 (option \textbf{B}).
+
+\end{document}

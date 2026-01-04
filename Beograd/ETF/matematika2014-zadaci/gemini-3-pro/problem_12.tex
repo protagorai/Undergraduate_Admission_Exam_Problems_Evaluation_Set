@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Krug sadrži tri tačke čije su koordinate $(0,6), (0,10)$ i $(8,0)$. Apscisa druge tačke u kojoj dati krug seče $x$-osu, jednaka je:
+\begin{enumerate}
+    \item[(A)] $7$
+    \item[(B)] $7,25$
+    \item[(C)] $7,5$
+    \item[(D)] $7,75$
+    \item[(E)] $9$
+    \item[(N)] Ne znam
+\end{enumerate}
+
+\subsection*{Solution}
+Let the circle equation be $x^2 + y^2 + Dx + Ey + F = 0$.
+Substitute $(0,6)$:
+$36 + 6E + F = 0$ (1)
+Substitute $(0,10)$:
+$100 + 10E + F = 0$ (2)
+Subtract (1) from (2):
+$64 + 4E = 0 \implies 4E = -64 \implies E = -16$.
+Substitute $E$ into (1):
+$36 + 6(-16) + F = 0 \implies 36 - 96 + F = 0 \implies F = 60$.
+Now substitute $(8,0)$:
+$64 + 8D + F = 0$.
+$64 + 8D + 60 = 0 \implies 124 + 8D = 0 \implies 8D = -124 \implies D = -\frac{124}{8} = -\frac{31}{2} = -15.5$.
+The equation is $x^2 + y^2 - 15.5x - 16y + 60 = 0$.
+To find x-intercepts, set $y=0$:
+$x^2 - 15.5x + 60 = 0$.
+We know one root is $x=8$. Let the other be $x_2$.
+By Vieta's formulas, $x_1 + x_2 = 15.5$.
+$8 + x_2 = 15.5 \implies x_2 = 7.5$.
+Alternatively, $x_1 x_2 = 60 \implies 8 x_2 = 60 \implies x_2 = 60/8 = 7.5$.
+
+\subsection*{Answer}
+$7,5$ (option \textbf{(C)}).
+
+\end{document}

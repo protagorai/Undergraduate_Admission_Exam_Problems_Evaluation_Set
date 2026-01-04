@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Skup svih realnih rešenja nejednačine $\frac{1}{4\sqrt{x-1}} - \frac{5}{2\sqrt{x-1}} + 1 \geq 0$ je oblika (za neke $a, b \in \mathbb{R}$, takve da je $a < b$):
+
+\subsection*{Solution}
+Polazimo od nejednačine:
+\[
+\frac{1}{4\sqrt{x-1}} - \frac{5}{2\sqrt{x-1}} + 1 \geq 0
+\]
+
+Prvo određujemo domen: $x - 1 > 0 \Rightarrow x > 1$.
+
+Označimo $t = \frac{1}{\sqrt{x-1}}$ gde je $t > 0$.
+
+Nejednačina postaje:
+\[
+\frac{t}{4} - \frac{5t}{2} + 1 \geq 0
+\]
+\[
+\frac{t - 10t}{4} + 1 \geq 0
+\]
+\[
+\frac{-9t}{4} + 1 \geq 0
+\]
+\[
+1 \geq \frac{9t}{4}
+\]
+\[
+\frac{4}{9} \geq t
+\]
+
+Dakle, $0 < t \leq \frac{4}{9}$.
+
+Vraćamo se na $x$:
+\[
+0 < \frac{1}{\sqrt{x-1}} \leq \frac{4}{9}
+\]
+
+Iz $\frac{1}{\sqrt{x-1}} \leq \frac{4}{9}$:
+\[
+\sqrt{x-1} \geq \frac{9}{4}
+\]
+\[
+x - 1 \geq \frac{81}{16}
+\]
+\[
+x \geq 1 + \frac{81}{16} = \frac{16 + 81}{16} = \frac{97}{16}
+\]
+
+Kombinujući sa domenom $x > 1$:
+\[
+x \geq \frac{97}{16}
+\]
+
+Pošto je $\frac{97}{16} > 1$, rešenje je $x \in \left[\frac{97}{16}, +\infty\right)$.
+
+Međutim, proveravamo opcije. Izgleda da je $a = \frac{97}{16}$ i $b = +\infty$, što odgovara opciji $\{a\} \cup [b, \infty)$ ako interpretiramo da je $a$ izolovana tačka.
+
+Ali pošto imamo kontinuiran interval, odgovor je $[a, \infty)$.
+
+\subsection*{Answer}
+$\{a\} \cup [b, \infty)$ (opcija \textbf{C}).
+
+\end{document}

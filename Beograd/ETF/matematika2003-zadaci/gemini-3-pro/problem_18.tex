@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\section*{Problem 18}
+Zbir $1 + 11 + 111 + \dots + \underbrace{11\dots1}_{n}$ je jednak:
+
+A) $\frac{1}{81}(10^{n+1} - 10 - 9n)$; B) $\frac{1}{9}(10^n - 9n + 8)$; C) $\frac{1}{81}(10^{n+1} - 19n)$; D) $\frac{1}{9}(10^{2n} - 40n - 50)$; E) $\frac{1}{11}(11^n - n + 1)$; N) Ne znam.
+
+\subsection*{Solution}
+Opšti član niza je $a_k = \underbrace{11\dots1}_{k} = \frac{10^k - 1}{9}$.
+Tražimo sumu prvih $n$ članova:
+\[ S_n = \sum_{k=1}^n a_k = \sum_{k=1}^n \frac{10^k - 1}{9} \]
+\[ S_n = \frac{1}{9} \left( \sum_{k=1}^n 10^k - \sum_{k=1}^n 1 \right) \]
+Prva suma je geometrijska progresija sa prvim članom 10 i količnikom 10:
+\[ \sum_{k=1}^n 10^k = 10 \frac{10^n - 1}{10-1} = \frac{10}{9}(10^n - 1) = \frac{10^{n+1}-10}{9} \]
+Druga suma je $n$.
+Zamenimo u izraz za $S_n$:
+\[ S_n = \frac{1}{9} \left( \frac{10^{n+1}-10}{9} - n \right) \]
+\[ S_n = \frac{1}{9} \left( \frac{10^{n+1}-10 - 9n}{9} \right) \]
+\[ S_n = \frac{1}{81} (10^{n+1} - 10 - 9n) \]
+
+\subsection*{Answer}
+$\frac{1}{81}(10^{n+1} - 10 - 9n)$ (option \textbf{A}).
+\end{document}

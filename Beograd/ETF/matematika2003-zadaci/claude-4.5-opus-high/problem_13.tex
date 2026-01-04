@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 13}
+Skup svih realnih brojeva $x$ za koje važi $(x-1)\sqrt{x^2 - x - 2} \geq 0$ je:
+
+\textbf{A)} $(0, 1)$; \quad \textbf{B)} $(-\infty, -2)$; \quad \textbf{C)} $\{-1\} \cup [2, +\infty)$; \quad \textbf{D)} $(1, 2)$; \quad \textbf{E)} $(\frac{1}{2}, 1)$
+
+\subsection*{Solution}
+Prvo, izraz pod korenom mora biti nenegativan:
+\[
+x^2 - x - 2 \geq 0
+\]
+\[
+(x-2)(x+1) \geq 0
+\]
+
+Ovo važi za $x \leq -1$ ili $x \geq 2$.
+
+Sada analiziramo nejednakost $(x-1)\sqrt{x^2 - x - 2} \geq 0$:
+
+Pošto je $\sqrt{x^2 - x - 2} \geq 0$ uvek (kada je definisano), imamo dva slučaja:
+
+\textbf{Slučaj 1:} $\sqrt{x^2 - x - 2} = 0$
+
+To znači $x^2 - x - 2 = 0$, tj. $x = 2$ ili $x = -1$.
+
+Za ove vrednosti, ceo izraz je 0, što zadovoljava $\geq 0$.
+
+\textbf{Slučaj 2:} $\sqrt{x^2 - x - 2} > 0$ i $x - 1 \geq 0$
+
+Tada mora biti $x \geq 1$.
+
+Kombinujući sa uslovom $x \leq -1$ ili $x \geq 2$:
+- $x \geq 1$ i $x \leq -1$: nema rešenja
+- $x \geq 1$ i $x \geq 2$: $x \geq 2$
+
+Dakle, za $x > 2$, nejednakost važi (strogo).
+
+\textbf{Ukupno rešenje:}
+- $x = -1$ (iz slučaja 1)
+- $x \geq 2$ (uključujući $x = 2$ iz slučaja 1)
+
+Skup rešenja: $\{-1\} \cup [2, +\infty)$
+
+\subsection*{Answer}
+$\{-1\} \cup [2, +\infty)$ (option \textbf{C}).
+
+\end{document}

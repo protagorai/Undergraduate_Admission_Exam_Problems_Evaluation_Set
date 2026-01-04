@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+The number of real solutions of the equation $3^x + 4^x = 5^x$ is:
+
+\subsection*{Solution}
+We need to solve $3^x + 4^x = 5^x$.
+
+Dividing both sides by $5^x$ (which is always positive):
+$\frac{3^x}{5^x} + \frac{4^x}{5^x} = 1$
+
+$\left(\frac{3}{5}\right)^x + \left(\frac{4}{5}\right)^x = 1$
+
+Let $f(x) = \left(\frac{3}{5}\right)^x + \left(\frac{4}{5}\right)^x$.
+
+Since $\frac{3}{5} < 1$ and $\frac{4}{5} < 1$, both terms are decreasing functions.
+
+Let's analyze the behavior of $f(x)$:
+
+- As $x \to +\infty$: $f(x) \to 0 + 0 = 0$
+- As $x \to -\infty$: $f(x) \to +\infty + +\infty = +\infty$
+- At $x = 0$: $f(0) = 1 + 1 = 2$
+
+Since $f(x)$ is strictly decreasing (as the sum of two strictly decreasing functions) and continuous, and since:
+- $f(0) = 2 > 1$
+- $\lim_{x \to +\infty} f(x) = 0 < 1$
+
+By the Intermediate Value Theorem, there exists exactly one value of $x > 0$ such that $f(x) = 1$.
+
+Let's check a few values:
+- $f(1) = \frac{3}{5} + \frac{4}{5} = \frac{7}{5} = 1.4 > 1$
+- $f(2) = \left(\frac{3}{5}\right)^2 + \left(\frac{4}{5}\right)^2 = \frac{9}{25} + \frac{16}{25} = \frac{25}{25} = 1$
+
+So $x = 2$ is the solution!
+
+Let's verify: $3^2 + 4^2 = 9 + 16 = 25 = 5^2$ ✓
+
+Since $f(x)$ is strictly decreasing and we found that $f(2) = 1$, this is the unique solution.
+
+\subsection*{Answer}
+1 (option \textbf{B}).
+
+\end{document}

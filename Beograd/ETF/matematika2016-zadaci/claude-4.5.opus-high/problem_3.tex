@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 3}
+Given the complex number $z = \dfrac{\sqrt{2016} + i^{2019}}{\sqrt{2016} + i^{2017}}$, where $i^2 = -1$, find the value of $\dfrac{z + \bar{z}}{2}$ (where $\bar{z}$ is the complex conjugate of $z$).
+
+\subsection*{Solution}
+First, let's simplify the powers of $i$:
+\begin{align*}
+i^1 &= i, \quad i^2 = -1, \quad i^3 = -i, \quad i^4 = 1 \text{ (cycle of 4)}\\
+i^{2019} &= i^{4 \cdot 504 + 3} = i^3 = -i\\
+i^{2017} &= i^{4 \cdot 504 + 1} = i^1 = i
+\end{align*}
+
+So we have:
+\[z = \frac{\sqrt{2016} + (-i)}{\sqrt{2016} + i} = \frac{\sqrt{2016} - i}{\sqrt{2016} + i}\]
+
+Let $a = \sqrt{2016}$. Then:
+\[z = \frac{a - i}{a + i}\]
+
+To find $\frac{z + \bar{z}}{2}$, note that this is the real part of $z$, i.e., $\text{Re}(z)$.
+
+Multiply numerator and denominator by the conjugate of the denominator:
+\[z = \frac{(a-i)(a-i)}{(a+i)(a-i)} = \frac{a^2 - 2ai + i^2}{a^2 - i^2} = \frac{a^2 - 2ai - 1}{a^2 + 1}\]
+
+Since $a^2 = 2016$:
+\[z = \frac{2016 - 1 - 2ai}{2016 + 1} = \frac{2015 - 2ai}{2017} = \frac{2015}{2017} - \frac{2a}{2017}i\]
+
+Therefore:
+\[\frac{z + \bar{z}}{2} = \text{Re}(z) = \frac{2015}{2017}\]
+
+\subsection*{Answer}
+$\dfrac{2015}{2017}$ (option \textbf{C}).
+
+\end{document}

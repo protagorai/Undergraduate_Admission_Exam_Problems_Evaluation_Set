@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 2}
+Find the sum of all integer solutions of
+\[
+3|x-1|+x\le 4.
+\]
+
+\subsection*{Solution}
+Split by $x\ge 1$ and $x<1$.
+
+\paragraph{Case 1: $x\ge 1$.}
+Then $|x-1|=x-1$ and
+\[
+3(x-1)+x\le 4 \;\Rightarrow\; 4x-3\le 4 \;\Rightarrow\; x\le \tfrac{7}{4}.
+\]
+With $x\in\mathbb Z$ and $x\ge 1$, we get $x=1$.
+
+\paragraph{Case 2: $x<1$.}
+Then $|x-1|=1-x$ and
+\[
+3(1-x)+x\le 4 \;\Rightarrow\; 3-2x\le 4 \;\Rightarrow\; x\ge -\tfrac12.
+\]
+With $x\in\mathbb Z$ and $x<1$, we get $x=0$.
+
+Thus the integer solutions are $\{0,1\}$ and their sum is $0+1=1$.
+
+\subsection*{Answer}
+$1$ (option \textbf{Б}).
+
+\end{document}
+
+
+
+
+
+
+
+
+
+

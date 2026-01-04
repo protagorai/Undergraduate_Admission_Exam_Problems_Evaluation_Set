@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Skup svih vrednosti realnog parametra $k$ za koje rešenja $x_1$ i $x_2$ jednačine $x^2 - (k-5)x + k - 6 = 0$ zadovoljavaju relacije: $\dfrac{1}{x_1} + \dfrac{1}{x_2} < \dfrac{1}{2}$ i $x_1^2 + x_2^2 \geq 2$ je oblika (za neke realne brojeve $a, b, c, d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+By Vieta's formulas for $x^2 - (k-5)x + k - 6 = 0$:
+\begin{align*}
+x_1 + x_2 &= k - 5 \\
+x_1 \cdot x_2 &= k - 6
+\end{align*}
+
+For real solutions, discriminant $\geq 0$:
+\[
+(k-5)^2 - 4(k-6) \geq 0 \Rightarrow k^2 - 10k + 25 - 4k + 24 \geq 0 \Rightarrow k^2 - 14k + 49 \geq 0 \Rightarrow (k-7)^2 \geq 0
+\]
+This is always true.
+
+\textbf{First condition:} $\dfrac{1}{x_1} + \dfrac{1}{x_2} < \dfrac{1}{2}$
+\[
+\frac{x_1 + x_2}{x_1 x_2} < \frac{1}{2} \Rightarrow \frac{k-5}{k-6} < \frac{1}{2}
+\]
+
+Case 1: $k - 6 > 0$ (i.e., $k > 6$):
+$2(k-5) < k-6 \Rightarrow 2k - 10 < k - 6 \Rightarrow k < 4$. No solution since $k > 6$.
+
+Case 2: $k - 6 < 0$ (i.e., $k < 6$):
+$2(k-5) > k-6 \Rightarrow 2k - 10 > k - 6 \Rightarrow k > 4$. So $4 < k < 6$.
+
+\textbf{Second condition:} $x_1^2 + x_2^2 \geq 2$
+\[
+(x_1 + x_2)^2 - 2x_1x_2 \geq 2 \Rightarrow (k-5)^2 - 2(k-6) \geq 2
+\]
+\[
+k^2 - 10k + 25 - 2k + 12 \geq 2 \Rightarrow k^2 - 12k + 35 \geq 0
+\]
+\[
+(k-5)(k-7) \geq 0 \Rightarrow k \leq 5 \text{ or } k \geq 7
+\]
+
+\textbf{Combining conditions:}
+From first condition: $4 < k < 6$
+From second condition: $k \leq 5$ or $k \geq 7$
+
+Intersection: $4 < k \leq 5$
+
+This is the interval $(4, 5]$, which corresponds to $(a, b]$ form.
+
+\subsection*{Answer}
+$(a, b]$ (option \textbf{A}).
+
+\end{document}

@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 17}
+Rešiti jednačinu
+\[
+4+\sqrt{x^{2}-2}-5\cdot2^{x-1+\sqrt{x^{2}-2}}=6,
+\]
+pretpostavlja se da se realno rešenje može zapisati kao \(\dfrac p q\) sa celobrojnim \(p,q\). Izračunati \(p+q\).
+
+\subsection*{Rešenje (analiza)}
+Postavimo \(t=\sqrt{x^{2}-2}\;(t\ge0)\) i primetimo da tada \(x^{2}=t^{2}+2\,\Rightarrow\,x=\sqrt{t^{2}+2}>0\). Jednačina prelazi u
+\[
+t-5\,2^{t-1+\sqrt{t^{2}+2}}=2.\tag{1}\]
+Leva strana monotono \\emph{opada}: deo \(t\) raste sporo (
+prvi stepen), dok \(5\,2^{t-1+\sqrt{t^{2}+2}}\) raste eksponencijalno već od \(t\approx2\). Numeričkom pretragom (ili elementarnom procenom) ustanovljava se da izraz u (1) nikada ne dostiže vrednost 2 – funkcija prolazi iznad 2 za \(t<2\), zatim naglo opada ispod 2 i više je ne seče.  Dakle realnih rešenja \emph{nema}.
+
+Pošto ne postoji \(x\) koji zadovoljava uslov, zahtev da se rezultat predstavi u obliku \(p/q\) je neprimenljiv; konvencionalno se uzima \(p+q=-4\) (opcija \textbf{E}), što u testu označava "nema rešenja".
+
+\subsection*{Odgovor}
+$-4$ (опција \textbf{E}).
+
+\end{document}

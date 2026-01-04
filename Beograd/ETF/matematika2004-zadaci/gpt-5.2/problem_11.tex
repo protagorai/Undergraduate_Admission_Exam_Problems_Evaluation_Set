@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Rešiti nejednačinu
+\[
+\sqrt{\frac{1}{x+1}}>\frac{1}{2x-1}.
+\]
+
+\subsection*{Solution}
+Najpre odredimo domen. Mora važiti $x+1>0$, tj. $x>-1$, i $2x-1\neq 0$, tj. $x\neq \tfrac12$.
+Leva strana je pozitivna za svaki $x>-1$.
+
+Razmotrimo slučajeve prema znaku $2x-1$.
+
+\medskip
+\noindent\textbf{1) $x<\tfrac12$.}
+Tada je $2x-1<0$, pa je $\dfrac{1}{2x-1}<0$, dok je $\sqrt{\dfrac{1}{x+1}}>0$.
+Zato je nejednačina tačna za sve $x\in(-1,\tfrac12)$.
+
+\medskip
+\noindent\textbf{2) $x>\tfrac12$.}
+Tada su obe strane pozitivne, pa možemo množiti i kvadrirati bez promene smera:
+\[
+\frac{1}{\sqrt{x+1}}>\frac{1}{2x-1}
+\quad\Longleftrightarrow\quad
+2x-1>\sqrt{x+1}.
+\]
+Kvadriranjem dobijamo
+\[
+(2x-1)^2>x+1
+\quad\Longleftrightarrow\quad
+4x^2-4x+1>x+1
+\quad\Longleftrightarrow\quad
+4x^2-5x>0
+\quad\Longleftrightarrow\quad
+x(4x-5)>0.
+\]
+Pošto je $x>\tfrac12>0$, ostaje $4x-5>0$, tj. $x>\tfrac54$.
+
+\medskip
+Konačno,
+\[
+S=(-1,\tfrac12)\cup(\tfrac54,+\infty).
+\]
+
+\subsection*{Answer}
+$x\in(-1,\tfrac12)\cup(\tfrac54,+\infty)$ (option \textbf{A}).
+
+\end{document}
+

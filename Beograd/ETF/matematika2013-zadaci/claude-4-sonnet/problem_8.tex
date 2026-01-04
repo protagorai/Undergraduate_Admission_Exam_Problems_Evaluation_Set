@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 8}
+Kompleksan broj $\frac{\cos\alpha + i\sin\alpha + 1}{\cos\alpha + i\sin\alpha - 1}$ ($i = \sqrt{-1}$, $\alpha \neq 2k\pi$, $k \in \mathbb{Z}$), jednak je:
+
+\subsection*{Solution}
+Označimo $z = \cos\alpha + i\sin\alpha = e^{i\alpha}$.
+
+Tada je naš izraz:
+\[
+\frac{z + 1}{z - 1} = \frac{\cos\alpha + i\sin\alpha + 1}{\cos\alpha + i\sin\alpha - 1}
+\]
+
+Pomnožimo brojilac i imenilac sa konjugovanim od imenioca:
+\[
+\frac{(\cos\alpha + i\sin\alpha + 1)(\cos\alpha - i\sin\alpha - 1)}{(\cos\alpha + i\sin\alpha - 1)(\cos\alpha - i\sin\alpha - 1)}
+\]
+
+Imenilac:
+\[
+(\cos\alpha - 1)^2 + \sin^2\alpha = \cos^2\alpha - 2\cos\alpha + 1 + \sin^2\alpha = 2 - 2\cos\alpha = 2(1 - \cos\alpha)
+\]
+
+Brojilac:
+\[
+(\cos\alpha + 1)(\cos\alpha - 1) - i^2\sin^2\alpha = \cos^2\alpha - 1 + \sin^2\alpha = 0
+\]
+
+Čini se da sam napravio grešku. Pokušajmo drugačiji pristup.
+
+Koristimo formulu $1 + e^{i\alpha} = 2\cos(\alpha/2)e^{i\alpha/2}$ i $e^{i\alpha} - 1 = 2i\sin(\alpha/2)e^{i\alpha/2}$:
+
+\[
+\frac{1 + e^{i\alpha}}{e^{i\alpha} - 1} = \frac{2\cos(\alpha/2)e^{i\alpha/2}}{2i\sin(\alpha/2)e^{i\alpha/2}} = \frac{\cos(\alpha/2)}{i\sin(\alpha/2)} = -i\cot(\alpha/2)
+\]
+
+\subsection*{Answer}
+$-i \cdot \text{ctg}\frac{\alpha}{2}$ (option \textbf{A}).
+
+\end{document}

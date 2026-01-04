@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 18}
+Neka je $S$ skup svih realnih rešenja nejednačine
+\[
+\tan x\,(1-\tan^2 x)\,(1-3\tan^2 x)\,\bigl(1+\tan^2 x\cdot \tan 3x\bigr)>0
+\]
+i neka je $S_1\subset S$. Tada skup $S_1$ može biti:
+\[
+\text{(A) }\left(-\frac{\pi}{2},\frac{\pi}{2}\right)\quad
+\text{(B) }\left(\frac{\pi}{3},\frac{\pi}{2}\right)\quad
+\text{(C) }\left(\frac{3\pi}{4},\pi\right)\quad
+\text{(D) }\left(\frac{7\pi}{6},\frac{3\pi}{2}\right)\quad
+\text{(E) }\left(\frac{\pi}{2},\frac{5\pi}{6}\right).
+\]
+
+\subsection*{Solution}
+Radimo u promenljivoj $t=\tan x$ (uz uslov da su $\tan x$ i $\tan 3x$ definisani).
+Koristimo formulu
+\[
+\tan 3x=\frac{3t-t^3}{1-3t^2}\qquad (1-3t^2\neq 0).
+\]
+Tada
+\begin{align*}
+(1-3t^2)\bigl(1+t^2\tan 3x\bigr)
+&=(1-3t^2)+t^2(3t-t^3)\\
+&=1-3t^2+3t^3-t^5.
+\end{align*}
+Zato se proizvod u nejednačini svodi na
+\[
+t(1-t^2)\bigl(1-3t^2+3t^3-t^5\bigr)>0.
+\]
+Može se proveriti da je $t=1$ nultočka polinoma $1-3t^2+3t^3-t^5$, pa se posle faktorisanja dobija
+\[
+t(t-1)^2(t+1)\bigl(t^2+at+1\bigr)\bigl(t^2+bt+1\bigr)>0,
+\]
+gde su $a=\frac{1+\sqrt{17}}{2}>0$ i $b=\frac{1-\sqrt{17}}{2}<0$.
+Kvadrat $ (t-1)^2$ ne utiče na znak, a kvadratni faktor $t^2+bt+1$ je uvek pozitivan (diskriminanta je negativna).
+
+Za $x\in\left(\frac{\pi}{3},\frac{\pi}{2}\right)$ važi $t=\tan x>\tan\frac{\pi}{3}=\sqrt3>0$,
+pa su i $t>0$ i $t+1>0$, a $t^2+at+1>0$ (jer je $t>0$).
+Tako je ceo proizvod strogo pozitivan na tom intervalu.
+Takođe, u tom intervalu nema tačaka gde je $\tan x$ ili $\tan 3x$ nedefinisan (granice su isključene).
+Zato je
+\[
+\left(\frac{\pi}{3},\frac{\pi}{2}\right)\subset S,
+\]
+pa $S_1$ može biti baš taj interval.
+
+\subsection*{Answer}
+$\left(\dfrac{\pi}{3},\dfrac{\pi}{2}\right)$ (option \textbf{B}).
+
+\end{document}
+

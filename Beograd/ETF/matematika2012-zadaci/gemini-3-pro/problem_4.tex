@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Problem 4}
+Rešenje jednačine $2^{16^x} = 16^{2^x}$ jeste:
+
+\subsection*{Solution}
+We rewrite the bases to base 2. Note that $16 = 2^4$.
+The equation becomes:
+\[
+2^{16^x} = (2^4)^{2^x}
+\]
+\[
+2^{16^x} = 2^{4 \cdot 2^x}
+\]
+Equating exponents:
+\[
+16^x = 4 \cdot 2^x
+\]
+Substitute $16 = 2^4$ and $4 = 2^2$:
+\[
+(2^4)^x = 2^2 \cdot 2^x
+\]
+\[
+2^{4x} = 2^{2+x}
+\]
+Equating exponents again:
+\[
+4x = 2 + x
+\]
+\[
+3x = 2 \implies x = \frac{2}{3}
+\]
+
+\subsection*{Answer}
+(B) $\frac{2}{3}$
+
+\end{document}

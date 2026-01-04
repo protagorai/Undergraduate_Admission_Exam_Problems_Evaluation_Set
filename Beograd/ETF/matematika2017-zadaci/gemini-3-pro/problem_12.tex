@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 12}
+Ukupan broj realnih rešenja jednačine $\sin 3|x| + \sqrt{3} \cos 3x = \sqrt{2}$ na intervalu $[-\frac{\pi}{2}, \pi]$ jednak je:
+(A) 2
+(B) 3
+(C) 4
+(D) 5
+(E) 6
+(N) Ne znam
+
+\subsection*{Solution}
+Divide the equation by 2:
+\[ \frac{1}{2}\sin 3|x| + \frac{\sqrt{3}}{2} \cos 3x = \frac{\sqrt{2}}{2}. \]
+This equation involves $|x|$. We split into cases based on the sign of $x$.
+
+\textbf{Case 1: $x \ge 0$.} Then $|x| = x$.
+The equation becomes:
+\[ \frac{1}{2}\sin 3x + \frac{\sqrt{3}}{2} \cos 3x = \frac{\sqrt{2}}{2}. \]
+Recognize $\sin \frac{\pi}{6} = \frac{1}{2}$ and $\cos \frac{\pi}{6} = \frac{\sqrt{3}}{2}$.
+\[ \sin \frac{\pi}{6} \sin 3x + \cos \frac{\pi}{6} \cos 3x = \frac{\sqrt{2}}{2} \]
+\[ \cos(3x - \frac{\pi}{6}) = \frac{\sqrt{2}}{2}. \]
+The general solutions are $3x - \frac{\pi}{6} = \pm \frac{\pi}{4} + 2k\pi$.
+1a) $3x - \frac{\pi}{6} = \frac{\pi}{4} + 2k\pi \implies 3x = \frac{5\pi}{12} + 2k\pi \implies x = \frac{5\pi}{36} + \frac{2k\pi}{3}$.
+   - $k=0: x = \frac{5\pi}{36}$. (Valid, $\in [0, \pi]$)
+   - $k=1: x = \frac{5\pi}{36} + \frac{24\pi}{36} = \frac{29\pi}{36}$. (Valid, $<\pi$)
+   - $k=2: x > \pi$.
+1b) $3x - \frac{\pi}{6} = -\frac{\pi}{4} + 2k\pi \implies 3x = -\frac{\pi}{12} + 2k\pi \implies x = -\frac{\pi}{36} + \frac{2k\pi}{3}$.
+   - $k=0: x < 0$. (Invalid for Case 1)
+   - $k=1: x = -\frac{\pi}{36} + \frac{24\pi}{36} = \frac{23\pi}{36}$. (Valid)
+   - $k=2: x > \pi$.
+So from Case 1 ($x \ge 0$), we have 3 solutions.
+
+\textbf{Case 2: $x < 0$.} Then $|x| = -x$.
+The equation becomes:
+\[ \frac{1}{2}\sin (-3x) + \frac{\sqrt{3}}{2} \cos 3x = \frac{\sqrt{2}}{2} \]
+\[ -\frac{1}{2}\sin 3x + \frac{\sqrt{3}}{2} \cos 3x = \frac{\sqrt{2}}{2} \]
+\[ \cos \frac{\pi}{6} \cos 3x - \sin \frac{\pi}{6} \sin 3x = \frac{\sqrt{2}}{2} \]
+\[ \cos(3x + \frac{\pi}{6}) = \frac{\sqrt{2}}{2}. \]
+The general solutions are $3x + \frac{\pi}{6} = \pm \frac{\pi}{4} + 2k\pi$.
+2a) $3x + \frac{\pi}{6} = \frac{\pi}{4} + 2k\pi \implies 3x = \frac{\pi}{12} + 2k\pi \implies x = \frac{\pi}{36} + \frac{2k\pi}{3}$.
+   - $k=0: x > 0$. (Invalid for Case 2)
+   - $k=-1: x = \frac{\pi}{36} - \frac{24\pi}{36} = -\frac{23\pi}{36}$.
+     Since $-\frac{23\pi}{36} \approx -115^\circ$ and the interval lower bound is $-\frac{\pi}{2} = -90^\circ$, this solution is outside $[-\frac{\pi}{2}, 0)$.
+2b) $3x + \frac{\pi}{6} = -\frac{\pi}{4} + 2k\pi \implies 3x = -\frac{5\pi}{12} + 2k\pi \implies x = -\frac{5\pi}{36} + \frac{2k\pi}{3}$.
+   - $k=0: x = -\frac{5\pi}{36} \approx -25^\circ$. (Valid, $> -90^\circ$)
+   - $k=-1: x = -\frac{29\pi}{36} < -\frac{\pi}{2}$. (Invalid)
+So from Case 2 ($x < 0$), we have 1 solution.
+
+\textbf{Total}: 3 + 1 = 4 solutions.
+
+\subsection*{Answer}
+4 (option \textbf{C}).
+
+\end{document}

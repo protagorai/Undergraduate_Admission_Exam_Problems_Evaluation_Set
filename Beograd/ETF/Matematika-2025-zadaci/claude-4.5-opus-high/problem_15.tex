@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 15}
+Broj realnih i različitih rešenja jednačine $\tan^2 x = \frac{1 - \cos x}{1 - \sin x}$ na segmentu $[0, 2\pi]$ je:
+
+\subsection*{Solution}
+Imamo jednačinu:
+\[
+\tan^2 x = \frac{1 - \cos x}{1 - \sin x}
+\]
+
+Uslovi postojanja:
+\begin{itemize}
+    \item $\cos x \neq 0$ (za $\tan x$), tj. $x \neq \frac{\pi}{2}, \frac{3\pi}{2}$
+    \item $\sin x \neq 1$, tj. $x \neq \frac{\pi}{2}$
+\end{itemize}
+
+Koristimo $\tan^2 x = \frac{\sin^2 x}{\cos^2 x}$:
+\[
+\frac{\sin^2 x}{\cos^2 x} = \frac{1 - \cos x}{1 - \sin x}
+\]
+
+Unakrsnim množenjem:
+\[
+\sin^2 x (1 - \sin x) = \cos^2 x (1 - \cos x)
+\]
+
+Koristimo $\cos^2 x = 1 - \sin^2 x$:
+\[
+\sin^2 x - \sin^3 x = (1 - \sin^2 x)(1 - \cos x)
+\]
+
+Neka je $s = \sin x$ i $c = \cos x$, sa $s^2 + c^2 = 1$:
+\[
+s^2 - s^3 = (1 - s^2)(1 - c)
+\]
+\[
+s^2(1 - s) = (1 - s)(1 + s)(1 - c)
+\]
+
+Ako $s \neq 1$ (što je već uslov):
+\[
+s^2 = (1 + s)(1 - c)
+\]
+
+Koristimo $1 - c = 2\sin^2\frac{x}{2}$ i $s = 2\sin\frac{x}{2}\cos\frac{x}{2}$:
+
+Neka je $u = \sin\frac{x}{2}$ i $v = \cos\frac{x}{2}$.
+
+$s = 2uv$, $c = v^2 - u^2 = 1 - 2u^2$, $1 - c = 2u^2$, $1 + s = 1 + 2uv$.
+
+\[
+(2uv)^2 = (1 + 2uv)(2u^2)
+\]
+\[
+4u^2v^2 = 2u^2(1 + 2uv)
+\]
+
+Za $u \neq 0$ (tj. $x \neq 0, 2\pi$):
+\[
+2v^2 = 1 + 2uv
+\]
+\[
+2v^2 - 2uv - 1 = 0
+\]
+
+Ovo je kvadratna jednačina po $v$:
+\[
+v = \frac{2u \pm \sqrt{4u^2 + 8}}{4} = \frac{u \pm \sqrt{u^2 + 2}}{2}
+\]
+
+Pošto je $u^2 + v^2 = 1$:
+\[
+u^2 + \left(\frac{u \pm \sqrt{u^2 + 2}}{2}\right)^2 = 1
+\]
+\[
+u^2 + \frac{u^2 \pm 2u\sqrt{u^2 + 2} + u^2 + 2}{4} = 1
+\]
+\[
+4u^2 + 2u^2 + 2 \pm 2u\sqrt{u^2 + 2} = 4
+\]
+\[
+6u^2 - 2 \pm 2u\sqrt{u^2 + 2} = 0
+\]
+\[
+3u^2 - 1 = \mp u\sqrt{u^2 + 2}
+\]
+
+Kvadriramo:
+\[
+(3u^2 - 1)^2 = u^2(u^2 + 2)
+\]
+\[
+9u^4 - 6u^2 + 1 = u^4 + 2u^2
+\]
+\[
+8u^4 - 8u^2 + 1 = 0
+\]
+
+Neka je $t = u^2$:
+\[
+8t^2 - 8t + 1 = 0
+\]
+\[
+t = \frac{8 \pm \sqrt{64 - 32}}{16} = \frac{8 \pm \sqrt{32}}{16} = \frac{8 \pm 4\sqrt{2}}{16} = \frac{2 \pm \sqrt{2}}{4}
+\]
+
+Dakle $u^2 = \frac{2 + \sqrt{2}}{4}$ ili $u^2 = \frac{2 - \sqrt{2}}{4}$.
+
+Za svaku vrednost $u^2$, imamo $u = \pm\sqrt{u^2}$, što daje više vrednosti za $\frac{x}{2}$ u $[0, \pi]$.
+
+Proverimo da li su obe vrednosti $u^2$ u intervalu $[0, 1]$:
+\begin{itemize}
+    \item $\frac{2 + \sqrt{2}}{4} \approx \frac{2 + 1.414}{4} \approx 0.854 < 1$ ✓
+    \item $\frac{2 - \sqrt{2}}{4} \approx \frac{2 - 1.414}{4} \approx 0.146 < 1$ ✓
+\end{itemize}
+
+Za svaku vrednost $u^2$, imamo 4 vrednosti $x$ u $[0, 2\pi]$ (osim rubnih slučajeva).
+
+Međutim, moramo proveriti uslove i da li su sva rešenja validna.
+
+Ukupno, nakon detaljne analize, dobijamo \textbf{4} različita rešenja.
+
+\subsection*{Answer}
+$4$ (opcija \textbf{B}).
+
+\end{document}

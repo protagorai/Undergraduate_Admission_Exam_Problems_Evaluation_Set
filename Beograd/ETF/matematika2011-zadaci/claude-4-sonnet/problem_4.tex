@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 4}
+Ukupan broj realnih rešenja jednačine $\frac{\sqrt{(x + 1)^2}}{x + 1} = |x + 1|$ je:
+
+(A) $0$ \quad (B) $1$ \quad (C) $2$ \quad (D) $3$ \quad (E) $4$ \quad (N) Ne znam
+
+\subsection*{Solution}
+First, let's analyze the left side of the equation. We know that $\sqrt{(x + 1)^2} = |x + 1|$.
+
+So the equation becomes:
+$$\frac{|x + 1|}{x + 1} = |x + 1|$$
+
+For this equation to be defined, we need $x + 1 \neq 0$, so $x \neq -1$.
+
+Now let's consider two cases:
+
+\textbf{Case 1:} $x + 1 > 0$ (i.e., $x > -1$)
+In this case, $|x + 1| = x + 1$, so:
+$$\frac{x + 1}{x + 1} = x + 1$$
+$$1 = x + 1$$
+$$x = 0$$
+
+Since $0 > -1$, this solution is valid for this case.
+
+\textbf{Case 2:} $x + 1 < 0$ (i.e., $x < -1$)
+In this case, $|x + 1| = -(x + 1)$, so:
+$$\frac{-(x + 1)}{x + 1} = -(x + 1)$$
+$$-1 = -(x + 1)$$
+$$-1 = -x - 1$$
+$$0 = -x$$
+$$x = 0$$
+
+But $x = 0$ does not satisfy $x < -1$, so this is not a valid solution for this case.
+
+Let's verify our solution $x = 0$:
+- Left side: $\frac{\sqrt{(0 + 1)^2}}{0 + 1} = \frac{\sqrt{1}}{1} = \frac{1}{1} = 1$
+- Right side: $|0 + 1| = |1| = 1$
+
+Both sides equal 1, so $x = 0$ is indeed a solution.
+
+Therefore, there is exactly 1 real solution.
+
+\subsection*{Answer}
+(B) $1$
+
+\end{document}

@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 16}
+Skup svih realnih rešenja nejednačine $\frac{\log_3|2x+3|-3}{\log_3 x} > 0$ je oblika (za neke realne brojeve $a,b,c,d$ takve da je $-\infty < a < b < c < d < +\infty$):
+
+\subsection*{Solution}
+Domain: $x > 0, x \neq 1$.
+Case 1: Denom $> 0 \implies x > 1$.
+Num $> 0 \implies \log_3|2x+3| > 3 \implies |2x+3| > 27$.
+$2x+3 > 27 \implies x > 12$. ($2x+3 < -27 \implies x < -15$ ignored since $x>1$).
+Interval: $(12, \infty)$.
+Case 2: Denom $< 0 \implies 0 < x < 1$.
+Num $< 0 \implies |2x+3| < 27 \implies -27 < 2x+3 < 27 \implies -15 < x < 12$.
+Intersection with $(0,1)$ is $(0,1)$.
+Total solution: $(0,1) \cup (12, \infty)$.
+Form matches $(a,b) \cup (c, \infty)$.
+
+
+\subsection*{Answer}
+$(a,b) \cup (c, +\infty)$ (option \textbf{D})
+
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\section*{Problem 11}
+Proizvod svih realnih rešenja jednačine
+\[
+\frac{2013x}{2014}=2013^{\log_x 2014}
+\]
+pripada skupu:
+\[
+\text{(A) }(0,1)\quad
+\text{(B) }(1,2]\quad
+\text{(C) }(2,3)\quad
+\text{(D) }(3,4]\quad
+\text{(E) }(4,+\infty).
+\]
+
+\subsection*{Solution}
+Zbog $\log_x 2014$ važi $x>0$ i $x\neq 1$.
+Uvedimo smenu $x=2014^{a}$ $(a\neq 0)$. Tada je
+\[
+\log_x 2014=\log_{2014^{a}}2014=\frac{1}{a}.
+\]
+Jednačina postaje
+\[
+\frac{2013}{2014}\,2014^{a}=2013^{1/a}
+\quad\Longleftrightarrow\quad
+2013\cdot 2014^{a-1}=2013^{1/a}.
+\]
+Ako je $a=1$, dobijamo rešenje $x=2014$.
+
+Ako je $a\neq 1$, logaritmovanjem sledi
+\[
+\ln 2013+(a-1)\ln 2014=\frac{1}{a}\ln 2013
+\ \Longleftrightarrow\
+(a-1)\ln 2014=-\frac{a-1}{a}\ln 2013,
+\]
+pa (deljenjem sa $a-1$) dobijamo
+\[
+a=-\frac{\ln 2013}{\ln 2014}.
+\]
+Otuda je drugo rešenje
+\[
+x=2014^{a}=2014^{-\ln 2013/\ln 2014}=e^{-\ln 2013}=\frac{1}{2013}.
+\]
+Proizvod rešenja je
+\[
+2014\cdot \frac{1}{2013}=\frac{2014}{2013}\in(1,2].
+\]
+
+\subsection*{Answer}
+$(1,2]$ (option \textbf{B}), jer je proizvod $\dfrac{2014}{2013}$.
+
+\end{document}
+
